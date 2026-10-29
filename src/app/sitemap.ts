@@ -19,6 +19,7 @@ const sitemap = (): MetadataRoute.Sitemap => {
 		{ path: "/research", priority: 0.6, changeFrequency: "weekly" as const },
 		{ path: "/research/queue", priority: 0.5, changeFrequency: "weekly" as const },
 		{ path: "/walls", priority: 0.6, changeFrequency: "weekly" as const },
+		{ path: "/builder-base/walls", priority: 0.6, changeFrequency: "weekly" as const },
 	];
 
 	return routes.map(({ path, priority, changeFrequency }) => ({

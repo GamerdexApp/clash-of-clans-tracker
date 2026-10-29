@@ -1,8 +1,8 @@
 import { usePlaythrough } from "@/lib/contexts/PlaythroughContext";
 import { wallsText } from "@/lib/messages/walls";
-import { moveWalls, setWallCount, wallCount } from "@/service/walls";
 import { useToast } from "@/comps/ui/Toast";
 import type { Playthrough } from "@/types/app";
+import type { WallRules } from "@/types/app/walls";
 
 interface WallActions {
   move: (from: number, to: number, count: number) => void;
@@ -10,9 +10,11 @@ interface WallActions {
 }
 
 /** Changes only the walls record on the latest saved village. Every change offers Undo. */
-export const useWallActions = (village: Playthrough): WallActions => {
+export const useWallActions = (village: Playthrough, rules: WallRules): WallActions => {
   const { updateData } = usePlaythrough();
   const showToast = useToast();
+
+  const { moveWalls, setWallCount, wallCount } = rules;
 
   const apply = (change: (current: Playthrough) => Playthrough) =>
     updateData((data) => ({

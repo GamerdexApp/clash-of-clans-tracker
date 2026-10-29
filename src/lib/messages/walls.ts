@@ -49,3 +49,19 @@ export const wallsText = {
     undo: "Undo",
   },
 } as const;
+
+export const builderWallsText = {
+  ...wallsText,
+  title: "Builder Base walls",
+  subline: (name: string, builderHall: number, highest: number) =>
+    `${name}, Builder Hall ${builderHall}, Highest wall level ${highest}`,
+  tiles: { ...wallsText.tiles, total: "Total at this Builder Hall" },
+  cost: {
+    ...wallsText.cost,
+    note: "Level 2 to 6 walls cost Builder Gold. Level 7 and up cost Builder Gold or Builder Elixir.",
+  },
+  empty: {
+    title: "No walls yet",
+    description: "Set your Builder Hall level on the Builder Base Upgrades page to see its walls.",
+  },
+} as const;

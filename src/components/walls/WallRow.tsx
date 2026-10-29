@@ -5,7 +5,6 @@ import { useState } from "react";
 
 import { formatNumber } from "@/lib/format";
 import { wallsText } from "@/lib/messages/walls";
-import { movePrice, wallLevelsAt } from "@/service/walls";
 import { Button } from "@/comps/ui/Button";
 import { Card } from "@/comps/ui/Card";
 import { Field } from "@/comps/ui/Field";
@@ -16,16 +15,16 @@ import { CountField } from "./CountField";
 
 const text = wallsText.row;
 
-export const WallRow = ({ level, count, maxCount, highest, townHall, nextCost, onMove, onSetCount }: WallRowProps) => {
+export const WallRow = ({ rules, level, count, maxCount, highest, hall, nextCost, onMove, onSetCount }: WallRowProps) => {
 	const [moveText, setMoveText] = useState("");
 	const [chosenTo, setChosenTo] = useState<number | null>(null);
 
-	const targets = wallLevelsAt(townHall).filter((candidate) => candidate.level > level.level);
+	const targets = rules.wallLevelsAt(hall).filter((candidate) => candidate.level > level.level);
 	const toLevel = chosenTo !== null && chosenTo > level.level ? chosenTo : level.level + 1;
 	const typed = Math.floor(Number(moveText));
 	const typedValid = moveText.trim() !== "" && typed > 0 && typed <= count;
 	const preview = (walls: number) => {
-		const price = movePrice(level.level, toLevel, walls);
+		const price = rules.movePrice(level.level, toLevel, walls);
 		return text.preview(walls, level.level, toLevel, formatNumber(price.amount), price.resource);
 	};
 
