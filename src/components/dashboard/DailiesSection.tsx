@@ -7,6 +7,7 @@ import { RiArrowRightLine } from "react-icons/ri";
 import { useEffect, useRef, useState } from "react";
 import { usePlaythrough } from "@/lib/contexts/PlaythroughContext";
 import { toPublicImageUrl } from "@/lib/utils/imageHelpers";
+import { defaultDailies } from "@/service/defaultDailies";
 import {
   isAvailable,
   msUntilNextReset,
@@ -26,39 +27,6 @@ const getCurrentMonthKey = (): string  => {
   const now = new Date();
   return `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, "0")}`;
 }
-
-const emptyTimer: DailyTimerData = { resetTime: null, lastCollectedAt: null };
-
-export const defaultDailies: DailiesData = {
-  helpers: {
-    prospectorUnlocked: false,
-    prospector: { ...emptyTimer },
-    alchemist: { ...emptyTimer },
-    buildersApprentice: { ...emptyTimer },
-    labAssistant: { ...emptyTimer },
-  },
-  starBonus: { ...emptyTimer },
-  capitalGold: { ...emptyTimer },
-  goldPass: {
-    builderBoostPct: 0,
-    researchBoostPct: 0,
-    monthKey: "",
-    hoggyBankUnlocked: false,
-    gemDonationsUnlocked: false,
-    autoForgeUnlocked: false,
-    requestTimeReductionUnlocked: false,
-  },
-  autoForge: { endsAt: null, resourceType: "gold", resourceAmount: 0, capitalGoldOutput: 0, durationMs: 0 },
-  forgeSlots: Array.from({ length: 4 }, () => ({
-    resourceType: null,
-    endsAt: null,
-    durationMs: 0,
-    capitalGoldOutput: 0,
-    resourceCost: 0,
-  })),
-};
-
-
 
 const TimerChip = ({ label, imageUrl, timer, onCollect, onAdjust }: TimerChipProps) => {
   const available = isAvailable(timer);

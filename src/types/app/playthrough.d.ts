@@ -22,7 +22,10 @@ export type HelperAssignmentTarget =
   | { type: "building"; recordKey: "defenses" | "armyBuildings" | "resourceBuildings" | "traps"; buildingId: string; instanceIndex: number }
   | { type: "hero"; name: string }
   | { type: "research"; researchKey: "troops" | "spells" | "siegeMachines"; name: string }
-  | { type: "pet"; name: string };
+  | { type: "pet"; name: string }
+  | { type: "townHall" }
+  | { type: "townHallWeapon" }
+  | { type: "crafted"; defenseId: string; moduleIndex: number };
 
 export interface HelperAssignment {
   target: HelperAssignmentTarget;

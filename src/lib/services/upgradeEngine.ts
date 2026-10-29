@@ -1,6 +1,7 @@
 import { home } from "clash-of-clans-data";
 
 import { applyBoost, applyBuilderBoostCost, applyResearchBoostCost, getBuildingUpgradeSteps } from "@/lib/utils/upgradeHelpers";
+import { dropAssignmentsFor } from "./helperAssignments";
 import type { Playthrough } from "@/types/app";
 import type {
   BoostPercent,
@@ -185,7 +186,7 @@ const withClockTower = (
   bbExtras: { ...village.bbExtras, clockTower: change(village.bbExtras?.clockTower ?? { level: 0 }) },
 });
 
-const writeUpgrade = (village: Playthrough, target: UpgradeTarget, upgrade: UpgradeState | undefined): Playthrough => {
+export const writeUpgrade = (village: Playthrough, target: UpgradeTarget, upgrade: UpgradeState | undefined): Playthrough => {
   switch (target.kind) {
     case "bbBuilding":
       return withBuilderBase(village, (bb) => writeBuildingInstance(bb, target, (instance) => ({ ...instance, upgrade })));
@@ -501,7 +502,7 @@ export const startUpgrade = (
 };
 
 export const cancelUpgrade = (village: Playthrough, target: UpgradeTarget): Playthrough =>
-  writeUpgrade(village, target, undefined);
+  dropAssignmentsFor(writeUpgrade(village, target, undefined), target);
 
 const maxNormalLevel = (buildingId: string): number => {
   const steps = getBuildingUpgradeSteps(buildingId, 0, 99, 0, 0);
@@ -526,7 +527,10 @@ const nextBuildingStepIsSupercharge = (village: Playthrough, target: Extract<Upg
 };
 
 /** Raises the level, clears the timer and writes the fields the finish changes. */
-export const completeUpgrade = (village: Playthrough, target: UpgradeTarget, now: Date): Playthrough => {
+export const completeUpgrade = (village: Playthrough, target: UpgradeTarget, now: Date): Playthrough =>
+  dropAssignmentsFor(raiseLevel(village, target, now), target);
+
+const raiseLevel = (village: Playthrough, target: UpgradeTarget, now: Date): Playthrough => {
   switch (target.kind) {
     case "building": {
       const supercharge = nextBuildingStepIsSupercharge(village, target);

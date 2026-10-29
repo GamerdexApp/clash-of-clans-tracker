@@ -50,3 +50,23 @@ export const formatNumber = (value: number) => new Intl.NumberFormat().format(va
 
 export const formatFinishTime = (date: Date) =>
   new Intl.DateTimeFormat(undefined, { weekday: "short", hour: "numeric", minute: "2-digit" }).format(date);
+
+/** A daily timer countdown: "03:12:48". */
+export const formatClock = (ms: number): string => {
+  const left = Math.max(0, Math.ceil(ms / SECOND_MS));
+  const hours = Math.floor(left / 3600);
+  const minutes = Math.floor((left % 3600) / 60);
+  return [hours, minutes, left % 60].map((part) => String(part).padStart(2, "0")).join(":");
+};
+
+/** Time left on a run: "1d 4h 12m" for a day or more, "15h 42m 08s" below a day. */
+export const formatTimeLeft = (ms: number): string => {
+  const left = Math.max(0, Math.floor(ms / SECOND_MS));
+  const days = Math.floor(left / 86_400);
+  const hours = Math.floor((left % 86_400) / 3600);
+  const minutes = Math.floor((left % 3600) / 60);
+  const seconds = String(left % 60).padStart(2, "0");
+  if (days > 0) return `${days}d ${hours}h ${minutes}m`;
+  if (hours > 0) return `${hours}h ${minutes}m ${seconds}s`;
+  return `${minutes}m ${seconds}s`;
+};

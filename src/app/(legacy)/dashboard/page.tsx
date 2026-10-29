@@ -8,7 +8,8 @@ import { PlayerHeader } from "@/comps/dashboard/PlayerHeader";
 import { HomeVillageSection } from "@/comps/dashboard/HomeVillageSection";
 import { BuilderBaseSection } from "@/comps/dashboard/BuilderBaseSection";
 import { ClanCapitalSection } from "@/comps/dashboard/ClanCapitalSection";
-import { DailiesSection, defaultDailies } from "@/comps/dashboard/DailiesSection";
+import { DailiesSection } from "@/comps/dashboard/DailiesSection";
+import { defaultDailies } from "@/service/defaultDailies";
 import { calcAchievementsProgress } from "@/lib/utils/progressHelpers";
 
 const DashboardPage = () => {

@@ -1,6 +1,7 @@
 import type { AppData } from "@/types/app";
 
-import { defaultDailies, defaultSettings, migratePlaythrough } from "./migrate";
+import { defaultDailies } from "./defaultDailies";
+import { defaultSettings, migratePlaythrough } from "./migrate";
 
 export { defaultDailies, defaultSettings };
 
