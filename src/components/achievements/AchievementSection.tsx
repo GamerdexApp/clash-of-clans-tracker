@@ -1,43 +1,67 @@
 "use client";
 
 import { useState } from "react";
-import { HiChevronDown, HiChevronRight } from "react-icons/hi";
-import { AchievementRow } from "./AchievementRow";
-import type { AchievementSectionProps } from "@/types/components/achievements";
+import type { TrackedAchievement } from "@/types/app/game";
+import { formatNumber } from "@/lib/format";
+import { achievementsText } from "@/lib/messages/achievements";
+import type { RewardTotals, StarProgress } from "@/service/achievements";
+import type { AchievementEdit } from "@/service/achievements";
+import { Button } from "@/comps/ui/Button";
+import { Masonry } from "@/comps/ui/Masonry";
+import { Section } from "@/comps/ui/Section";
+import { AchievementCard } from "./AchievementCard";
 
-export const AchievementSection = ({ title, achievements, onUpdate }: AchievementSectionProps) => {
-  const [collapsed, setCollapsed] = useState(false);
+const text = achievementsText.sections;
+const FIRST_SHOWN = 12;
 
-  if (achievements.length === 0) return null;
+interface AchievementSectionProps {
+	title: string;
+	achievements: TrackedAchievement[];
+	progress: StarProgress;
+	/** Gems and XP the section's stars give, earned out of possible. */
+	rewards: { gems: RewardTotals; xp: RewardTotals };
+	onEdit: (achievement: TrackedAchievement, edit: AchievementEdit) => void;
+}
 
-  return (
-    <div className="mb-4 overflow-hidden rounded-lg border border-secondary/80">
-      <button
-        type="button"
-        onClick={() => setCollapsed((v) => !v)}
-        className="flex w-full cursor-pointer items-center bg-secondary px-3 py-2.5"
-      >
-        <span className="flex-1 text-left text-sm font-bold uppercase tracking-widest text-accent">
-          {title}
-        </span>
-        {collapsed ? (
-          <HiChevronRight className="h-4 w-4 shrink-0 text-accent" />
-        ) : (
-          <HiChevronDown className="h-4 w-4 shrink-0 text-accent" />
-        )}
-      </button>
+/** A collapsible group of achievement cards. A long group shows its first cards and a button for the rest. */
+export const AchievementSection = ({
+	title,
+	achievements,
+	progress,
+	rewards,
+	onEdit,
+}: AchievementSectionProps) => {
+	const [expanded, setExpanded] = useState(false);
+	const shown = expanded ? achievements : achievements.slice(0, FIRST_SHOWN);
+	const hidden = achievements.length - shown.length;
 
-      {!collapsed && (
-        <div className="bg-primary p-3">
-          {achievements.map((tracked, i) => (
-            <AchievementRow
-              key={`${tracked.name}-${i}`}
-              tracked={tracked}
-              onUpdate={(updates) => onUpdate(tracked.name, tracked.village, updates)}
-            />
-          ))}
-        </div>
-      )}
-    </div>
-  );
+	return (
+		<Section
+			title={title}
+			description={text.summary(
+				achievements.length,
+				progress.stars,
+				progress.maxStars,
+				`${formatNumber(rewards.gems.earned)} / ${formatNumber(rewards.gems.total)}`,
+				`${formatNumber(rewards.xp.earned)} / ${formatNumber(rewards.xp.total)}`
+			)}
+		>
+			<Masonry>
+				{shown.map((achievement) => (
+					<AchievementCard
+						key={`${achievement.village}::${achievement.name}`}
+						achievement={achievement}
+						onEdit={(edit) => onEdit(achievement, edit)}
+					/>
+				))}
+			</Masonry>
+			{achievements.length > FIRST_SHOWN && (
+				<div>
+					<Button onClick={() => setExpanded(!expanded)}>
+						{expanded ? text.less : text.more(hidden, title)}
+					</Button>
+				</div>
+			)}
+		</Section>
+	);
 };
