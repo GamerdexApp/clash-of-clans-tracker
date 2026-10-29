@@ -2,10 +2,11 @@ import Link from "next/link";
 
 import { upgradeText } from "@/lib/messages/upgrades";
 
-/** Builder Base keeps its own page until Mass edit takes it over. */
 const massEditHref = (scope: "home" | "builder", tab?: string) => {
-	const base = scope === "home" ? "/mass-edit" : "/mass-edit/builder";
-	return tab ? `${base}?tab=${tab}` : base;
+	const params = new URLSearchParams(scope === "home" ? {} : { scope });
+	if (tab) params.set("tab", tab);
+	const query = params.toString();
+	return query ? `/mass-edit?${query}` : "/mass-edit";
 };
 
 /** A line that points to Mass edit. The tab names the scope Mass edit opens on. */

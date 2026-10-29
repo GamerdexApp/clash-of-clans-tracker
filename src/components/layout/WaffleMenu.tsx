@@ -17,7 +17,7 @@ const APP_ITEMS: AppItem[] = [
     id: "mass-edit-builder",
     label: "Mass Edit Builder Base",
     image: "/images/builder/builder-hall/normal/level-10.png",
-    href: "/mass-edit/builder",
+    href: "/mass-edit?scope=builder",
     minTH: 6,
   },
   {

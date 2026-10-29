@@ -4,7 +4,7 @@ import Image from "next/image";
 
 import { massEditText } from "@/lib/messages/massEdit";
 import { readRow, rowMax, type MassCategory, type MassRow, type RowChange } from "@/service/massEdit";
-import { homeWalls } from "@/service/walls";
+import { builderWalls, homeWalls } from "@/service/walls";
 import { Button } from "@/comps/ui/Button";
 import { NumberStepper } from "@/comps/ui/NumberStepper";
 import { SummaryTile } from "@/comps/ui/SummaryTile";
@@ -23,15 +23,16 @@ interface WallsPanelProps {
 
 /** Wall counts per level. A count stops at the walls still to place, so the total is never passed. */
 export const WallsPanel = ({ category, draft, saved, onChange, onPlan }: WallsPanelProps) => {
-	const hall = homeWalls.hallLevel(draft);
-	const total = homeWalls.totalWallsAt(hall);
-	const placed = homeWalls.placedWalls(draft);
+	const rules = category.side === "builder" ? builderWalls : homeWalls;
+	const hall = rules.hallLevel(draft);
+	const total = rules.totalWallsAt(hall);
+	const placed = rules.placedWalls(draft);
 	const top = category.rows[category.rows.length - 1];
 
 	const maxAll = () => {
 		if (!top) return;
 		const from = readRow(draft, top.ref);
-		onPlan([{ row: top, from, to: from + Math.max(0, homeWalls.unplacedWalls(draft)) }].filter((change) => change.to !== change.from));
+		onPlan([{ row: top, from, to: from + Math.max(0, rules.unplacedWalls(draft)) }].filter((change) => change.to !== change.from));
 	};
 
 	const resetAll = () =>

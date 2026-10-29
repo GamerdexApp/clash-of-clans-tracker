@@ -4,13 +4,18 @@ import {
   allRows,
   applyBulk,
   applyChanges,
+  builderCategories,
+  builderProfileRows,
   categoryProgress,
   changedRows,
   homeCategories,
   lowers,
+  planBuilderHallLowering,
   planBulk,
   readRow,
   rowMax,
+  scopeOf,
+  setBuilderHall,
   writeRow,
 } from "@/service/massEdit";
 import { writeUpgrade } from "@/service/upgradeEngine";
@@ -146,3 +151,53 @@ describe("Mass edit bulk actions", () => {
 
 const planAndApplyMax = (village: Playthrough, id: string) =>
   applyBulk(village, planBulk(village, category(village, id).rows, { kind: "max" }), NOW);
+
+describe("Mass edit Builder Base scope", () => {
+  const builderVillage = (hall: number): Playthrough => {
+    const village = structuredClone(freshVillage("v", "V"));
+    village.data.homeVillage.townHallLevel = 12;
+    village.data.builderBase.builderHallLevel = hall;
+    return village;
+  };
+  const bbCategory = (village: Playthrough, id: string) => builderCategories(village).find((entry) => entry.id === id)!;
+
+  it("lists seven categories and numbers every instance", () => {
+    const village = builderVillage(8);
+    expect(builderCategories(village).map((entry) => entry.id)).toEqual(["defenses", "army", "resources", "traps", "troops", "heroes", "walls"]);
+    expect(bbCategory(village, "defenses").rows.some((row) => row.label === "Archer Tower #1")).toBe(true);
+    expect(scopeOf(bbCategory(village, "defenses").rows[0].ref)).toBe("builder");
+  });
+
+  it("counts Builder Base walls against the Builder Hall total", () => {
+    const village = builderVillage(8);
+    const walls = bbCategory(village, "walls");
+    const draft = writeRow(village, walls.rows[0].ref, 10_000, NOW);
+    expect(readRow(draft, walls.rows[0].ref)).toBe(rowMax(village, walls.rows[0]));
+    expect(categoryProgress(draft, walls).total).toBeGreaterThan(0);
+  });
+
+  it("lowers only the rows above the new Builder Hall limit", () => {
+    const village = builderVillage(8);
+    const maxed = applyBulk(village, planBulk(village, bbCategory(village, "defenses").rows, { kind: "max" }), NOW);
+    const lowered = planBuilderHallLowering(maxed, 5);
+    expect(lowered.length).toBeGreaterThan(0);
+    expect(lowered.every((change) => change.to < change.from)).toBe(true);
+    const draft = setBuilderHall(maxed, 5, lowered, NOW);
+    expect(draft.data.builderBase.builderHallLevel).toBe(5);
+    expect(planBuilderHallLowering(draft, 5)).toEqual([]);
+  });
+
+  it("raising the Builder Hall changes no row", () => {
+    const village = builderVillage(5);
+    expect(planBuilderHallLowering(village, 8)).toEqual([]);
+    expect(setBuilderHall(village, 8, [], NOW).data.builderBase.builderHallLevel).toBe(8);
+  });
+
+  it("counts the Builder Hall and profile fields as changes", () => {
+    const village = builderVillage(8);
+    let draft = writeRow(village, { kind: "profile", field: "trophies" }, 3000, NOW);
+    draft = writeRow(draft, { kind: "upgrade", target: { kind: "builderHall" } }, 9, NOW);
+    const changes = changedRows(builderProfileRows(), village, draft);
+    expect(changes.map((change) => change.row.label)).toEqual(expect.arrayContaining(["Trophies", "Builder Hall level", "Best trophies"]));
+  });
+});

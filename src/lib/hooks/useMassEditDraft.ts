@@ -7,9 +7,14 @@ import {
   allRows,
   applyBulk,
   applyChanges,
+  builderCategories,
+  builderProfileRows,
   changedRows,
   homeCategories,
+  scopeOf,
   type MassCategory,
+  type MassRow,
+  type MassScope,
   type RowChange,
 } from "@/service/massEdit";
 import { useToast } from "@/comps/ui/Toast";
@@ -17,8 +22,10 @@ import type { Playthrough } from "@/types/app";
 
 export interface MassEditDraft {
   draft: Playthrough;
-  categories: MassCategory[];
+  categories: Record<"home" | "builder", MassCategory[]>;
   changes: RowChange[];
+  /** The unsaved changes of one scope. */
+  countFor: (scope: MassScope) => number;
   edit: (change: (draft: Playthrough, now: Date) => Playthrough) => void;
   applyChanges: (changes: RowChange[]) => void;
   discard: () => void;
@@ -32,6 +39,17 @@ interface DraftState {
   draft: Playthrough;
 }
 
+/** The rows of both scopes. The Builder Base rows of the base and of the draft both count, because the Builder Hall decides which rows exist. */
+const rowsToCompare = (base: Playthrough, categories: Record<"home" | "builder", MassCategory[]>): MassRow[] => {
+  const all = [
+    ...allRows(categories.home),
+    ...allRows(builderCategories(base)),
+    ...allRows(categories.builder),
+    ...builderProfileRows(),
+  ];
+  return [...new Map(all.map((row) => [row.key, row])).values()];
+};
+
 /**
  * One staged draft of the active village. Every edit changes the draft only. Save copies the
  * changed rows onto the latest saved village, so a timer that finished meanwhile is kept.
@@ -41,8 +59,11 @@ export const useMassEditDraft = (village: Playthrough): MassEditDraft => {
   const { registerDraft } = useLeaveGuard();
   const showToast = useToast();
   const [state, setState] = useState<DraftState>({ source: village, base: village, draft: village });
-  const categories = useMemo(() => homeCategories(state.base), [state.base]);
-  const rows = useMemo(() => allRows(categories), [categories]);
+  const categories = useMemo(
+    () => ({ home: homeCategories(state.base), builder: builderCategories(state.draft) }),
+    [state.base, state.draft],
+  );
+  const rows = useMemo(() => rowsToCompare(state.base, categories), [state.base, categories]);
   const changes = useMemo(() => changedRows(rows, state.base, state.draft), [rows, state]);
   const count = changes.length;
 
@@ -86,6 +107,7 @@ export const useMassEditDraft = (village: Playthrough): MassEditDraft => {
     changes,
     edit: (change) => setState((current) => ({ ...current, draft: change(current.draft, new Date()) })),
     applyChanges: (planned) => setState((current) => ({ ...current, draft: applyBulk(current.draft, planned, new Date()) })),
+    countFor: (scope) => changes.filter((change) => scopeOf(change.row.ref) === scope).length,
     discard,
     save,
   };
