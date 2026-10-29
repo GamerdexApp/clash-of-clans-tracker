@@ -46,6 +46,8 @@ export interface NavItem {
   label: string;
   href: string;
   icon: IconType;
+  /** Pages that sit under this item but not under its own path. */
+  alsoActiveFor?: string[];
 }
 
 export interface NavGroup {
@@ -77,7 +79,7 @@ export const navGroups: NavGroup[] = [
     id: "builderBase",
     label: "Builder Base",
     items: [
-      { id: "builderBaseUpgrades", label: "Upgrades", href: "/builder-base/upgrades", icon: LuHammer },
+      { id: "builderBaseUpgrades", label: "Upgrades", href: "/builder-base/upgrades", icon: LuHammer, alsoActiveFor: ["/builder-base/queue"] },
       { id: "builderBaseTroops", label: "Troops", href: "/builder-base/troops", icon: LuSwords },
       { id: "builderBaseWalls", label: "Walls", href: "/builder-base/walls", icon: LuLayers },
     ],
@@ -116,7 +118,7 @@ export const settingsNavItem: NavItem = {
 const allItems = [...navGroups.flatMap((group) => group.items), settingsNavItem];
 
 export const isNavItemActive = (item: NavItem, pathname: string) =>
-  pathname === item.href || pathname.startsWith(`${item.href}/`);
+  [item.href, ...(item.alsoActiveFor ?? [])].some((href) => pathname === href || pathname.startsWith(`${href}/`));
 
 const PAGES_OUTSIDE_SIDEBAR: Record<string, string> = { [VILLAGES_HREF]: "My Villages" };
 

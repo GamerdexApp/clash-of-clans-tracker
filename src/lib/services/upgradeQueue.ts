@@ -2,7 +2,13 @@ import { advanceToActiveWindow } from "@/lib/utils/activeHoursHelpers";
 import { applyBoost } from "@/lib/utils/upgradeHelpers";
 import type { Playthrough } from "@/types/app";
 import type { BuilderSlotState, LaneKind, UpgradeTarget } from "@/types/app/engine";
-import type { AnyQueueItem, BuilderQueueItem, PetQueueItem, ResearchQueueItem } from "@/types/app/queue";
+import type {
+  AnyQueueItem,
+  BuilderBaseQueueItem,
+  BuilderQueueItem,
+  PetQueueItem,
+  ResearchQueueItem,
+} from "@/types/app/queue";
 import type {
   ActiveBlock,
   LaneSchedule,
@@ -20,6 +26,8 @@ import {
   readLevel,
   readUpgrade,
   requirementBlock,
+  bbBuilderSlots,
+  bbResearchSlots,
   researchSlots,
   startUpgrade,
 } from "./upgradeEngine";
@@ -29,11 +37,13 @@ import { upgradeSteps } from "./upgradeSteps";
 const TOWN_HALL_ID = "town-hall";
 const TOWN_HALL_WEAPON_ID = "town-hall-weapon";
 
+const isBuilderBaseItem = (item: AnyQueueItem): item is BuilderBaseQueueItem => "target" in item;
 const isBuilderItem = (item: AnyQueueItem): item is BuilderQueueItem => "buildingId" in item;
 const isResearchItem = (item: AnyQueueItem): item is ResearchQueueItem => "category" in item && !isBuilderItem(item);
 
 /** Queue items keep the stored shape: heroes by id, the Town Hall and weapon by fixed ids, crafted modules by index. */
 export const targetForItem = (item: AnyQueueItem): UpgradeTarget => {
+  if (isBuilderBaseItem(item)) return item.target;
   if (isResearchItem(item)) return { kind: "research", record: item.category, name: item.name };
   if (!isBuilderItem(item)) return { kind: "pet", name: item.name };
   switch (item.category) {
@@ -62,6 +72,7 @@ const isSuperchargeItem = (item: AnyQueueItem) => isBuilderItem(item) && item.is
 
 /** Two items with the same key are the same level of the same thing. */
 export const queueKey = (item: AnyQueueItem) => {
+  if (isBuilderBaseItem(item)) return `bb:${JSON.stringify(item.target)}:${item.targetLevel}`;
   if (isBuilderItem(item)) {
     return `${item.buildingId}:${item.instanceIndex}:${item.targetLevel}${item.isSupercharge ? ":sc" : ""}`;
   }
@@ -70,6 +81,7 @@ export const queueKey = (item: AnyQueueItem) => {
 
 /** Items in one group are levels of the same thing, so they must run in level order. */
 const levelGroupKey = (item: AnyQueueItem) => {
+  if (isBuilderBaseItem(item)) return `bb:${JSON.stringify(item.target)}`;
   if (isBuilderItem(item)) return `${item.buildingId}:${item.instanceIndex}:${item.isSupercharge ? "sc" : "n"}`;
   return `${isResearchItem(item) ? `research:${item.category}` : "pet"}:${item.name}`;
 };
@@ -81,6 +93,8 @@ const PET_LANE_KEY = "1";
 /** The pet queue is stored as one list. It reads as a single lane so every queue works the same way. */
 const queuesOf = (village: Playthrough, lane: LaneKind): Record<string, AnyQueueItem[]> => {
   const hv = village.data.homeVillage;
+  if (lane === "bbBuilder") return village.bbQueue?.builder ?? {};
+  if (lane === "bbResearch") return village.bbQueue?.research ?? {};
   if (lane === "builder") return hv.builderQueues ?? {};
   if (lane === "research") return hv.researchQueue ?? {};
   return { [PET_LANE_KEY]: hv.petQueue ?? [] };
@@ -88,6 +102,10 @@ const queuesOf = (village: Playthrough, lane: LaneKind): Record<string, AnyQueue
 
 const withQueues = (village: Playthrough, lane: LaneKind, queues: Record<string, AnyQueueItem[]>): Playthrough => {
   const hv = village.data.homeVillage;
+  if (lane === "bbBuilder" || lane === "bbResearch") {
+    const bbQueues = queues as Record<string, BuilderBaseQueueItem[]>;
+    return { ...village, bbQueue: { ...village.bbQueue, [lane === "bbBuilder" ? "builder" : "research"]: bbQueues } };
+  }
   const written = {
     builder: { builderQueues: queues as Record<string, BuilderQueueItem[]> },
     research: { researchQueue: queues as Record<string, ResearchQueueItem[]> },
@@ -136,13 +154,15 @@ export const moveQueueItem = (
 const levelAfterRunning = (village: Playthrough, target: UpgradeTarget) =>
   readLevel(village, target) + (readUpgrade(village, target) ? 1 : 0);
 
+const requiredBuildingNames = { laboratory: "Laboratory", "pet-house": "Pet House", "star-laboratory": "Star Laboratory" };
+
 const requirementText = (village: Playthrough, target: UpgradeTarget, item: AnyQueueItem): string | null => {
-  if (target.kind !== "research" && target.kind !== "pet") return null;
+  if (target.kind !== "research" && target.kind !== "pet" && target.kind !== "bbTroop") return null;
   const step = upgradeSteps(village, target).find((candidate) => candidate.level === item.targetLevel);
   const missing = step ? requirementBlock(village, step) : null;
   if (!missing) return null;
   if (missing.building === "pet-house" && missing.builtLevel === 0) return "Build a Pet House first";
-  return `Requires ${missing.building === "laboratory" ? "Laboratory" : "Pet House"} ${missing.level}`;
+  return `Requires ${requiredBuildingNames[missing.building]} ${missing.level}`;
 };
 
 /** Why a queued item cannot start yet, or null. The earlier level must be finished first. */
@@ -251,6 +271,8 @@ const findConflicts = (village: Playthrough, lanes: LaneSchedule[]): QueueConfli
 export const laneSlots = (village: Playthrough, lane: LaneKind, goblinEnabled: boolean) => {
   if (lane === "builder") return builderSlots(village, goblinEnabled);
   if (lane === "research") return researchSlots(village, goblinEnabled);
+  if (lane === "bbBuilder") return bbBuilderSlots(village);
+  if (lane === "bbResearch") return bbResearchSlots(village);
   return petSlots(village);
 };
 

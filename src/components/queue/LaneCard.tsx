@@ -6,7 +6,7 @@ import { formatCountdown, formatDuration, formatNumber } from "@/lib/format";
 import { queueText } from "@/lib/messages/queue";
 import { queueStartBlocker, stepForItem, targetForItem } from "@/service/upgradeQueue";
 import { boostedStep } from "@/service/upgradeEngine";
-import { goldPassBoosts } from "@/service/goldPass";
+import { boostForLane } from "@/service/goldPass";
 import { targetName } from "@/service/upgradeLabels";
 import { Badge } from "@/comps/ui/Badge";
 import { Button } from "@/comps/ui/Button";
@@ -15,13 +15,12 @@ import { IconButton } from "@/comps/ui/IconButton";
 import { ProgressBar } from "@/comps/ui/ProgressBar";
 import { Select } from "@/comps/ui/Select";
 import type { LaneCardProps } from "@/types/components/upgradeQueue";
-import { queueLanes } from "./queueLanes";
 
 const text = queueText.lane;
 
 export const LaneCard = ({ lane: kind, village, schedule: lane, lanes, conflicts, now, onAdd, onRemove, onMove, onStartNow }: LaneCardProps) => {
 	const laneText = queueText.lanes[kind];
-	const boostPercent = goldPassBoosts(village, new Date(now))[queueLanes[kind].boost];
+	const boostPercent = boostForLane(kind, village, new Date(now));
 	const conflictFor = (itemId: string) => conflicts.find((conflict) => conflict.itemId === itemId);
 	const others = lanes.filter((other) => other.slot.id !== lane.slot.id);
 	const first = lane.blocks[0]?.item;

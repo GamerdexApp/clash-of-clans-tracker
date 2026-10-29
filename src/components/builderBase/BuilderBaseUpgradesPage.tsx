@@ -88,6 +88,8 @@ const UpgradesContent = ({ village }: { village: Playthrough }) => {
 						emptyNote={text.upgrades.strip.noBuilders}
 						unassignedHelp={text.upgrades.strip.unassignedHelp}
 						gridClassName="sm:grid-cols-2"
+						queueHref="/builder-base/queue"
+						queueLabel={text.upgrades.strip.openQueue}
 						actions={
 							<HideMaxToggle
 								checked={hideMax}

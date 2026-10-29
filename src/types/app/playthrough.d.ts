@@ -94,6 +94,11 @@ export interface Playthrough {
   clanCapitalEnabled?: boolean;
   oreStock?: { shiny: number; glowing: number; starry: number };
   /** Builder Base things that have no place in the saved Builder Base data. */
+  /** The Builder Base queues by lane id: the two builders and the Star Laboratory. */
+  bbQueue?: {
+    builder?: Record<string, import("@/types/app/queue").BuilderBaseQueueItem[]>;
+    research?: Record<string, import("@/types/app/queue").BuilderBaseQueueItem[]>;
+  };
   bbExtras?: { clockTower?: { level: number; upgrade?: UpgradeState }; builderHallUpgrade?: UpgradeState };
   dailies?: DailiesData;
   data: VillageData;

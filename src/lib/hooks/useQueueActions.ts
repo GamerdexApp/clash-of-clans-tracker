@@ -1,5 +1,5 @@
 import { usePlaythrough } from "@/lib/contexts/PlaythroughContext";
-import { goldPassBoosts } from "@/service/goldPass";
+import { boostForLane } from "@/service/goldPass";
 import { queueText } from "@/lib/messages/queue";
 import {
   addToQueue,
@@ -59,11 +59,7 @@ export const useQueueActions = (village: Playthrough, lane: LaneKind): QueueActi
 
     startNow: (laneId, item) => {
       const previous = apply((current, now) => {
-        const boosts = goldPassBoosts(current, now);
-        return startFromQueue(current, lane, laneId, item.id, {
-          boostPercent: lane === "builder" ? boosts.builder : boosts.research,
-          now,
-        });
+        return startFromQueue(current, lane, laneId, item.id, { boostPercent: boostForLane(lane, current, now), now });
       });
       if (!previous) return;
       showToast({ variant: "success", title: queueText.lane.started(targetName(targetForItem(item))) });

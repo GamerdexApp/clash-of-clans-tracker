@@ -10,7 +10,7 @@ import { useUpgradeActions } from "@/lib/hooks/useUpgradeActions";
 import { queueText } from "@/lib/messages/queue";
 import { settingsText } from "@/lib/messages/settings";
 import { scheduleQueue } from "@/service/upgradeQueue";
-import { goldPassBoosts } from "@/service/goldPass";
+import { boostForLane } from "@/service/goldPass";
 import { ActiveHoursForm } from "@/comps/settings/ActiveHoursCard";
 import { PageHeader } from "@/comps/shell/PageHeader";
 import { VillageGate } from "@/comps/shell/VillageGate";
@@ -46,11 +46,12 @@ const QueueContent = ({ village, lane }: { village: Playthrough; lane: LaneKind 
 	const laneText = text.lanes[lane];
 	const config = queueLanes[lane];
 	const petsLocked = lane === "pet" && village.data.homeVillage.townHallLevel < PETS_TOWN_HALL;
+	const isBuilderBase = lane === "bbBuilder" || lane === "bbResearch";
 	const now = useNow();
 	const [optionsOpen, setOptionsOpen] = useState(false);
 	const [adding, setAdding] = useState<{ laneId: number | null } | null>(null);
 
-	const boostPercent = goldPassBoosts(village, new Date(now))[config.boost];
+	const boostPercent = boostForLane(lane, village, new Date(now));
 	const goblinEnabled = config.goblinSetting ? appSettings[config.goblinSetting] : false;
 	const schedule = scheduleQueue(village, lane, goblinEnabled, {
 		now: new Date(now),
@@ -70,7 +71,7 @@ const QueueContent = ({ village, lane }: { village: Playthrough; lane: LaneKind 
 		<>
 			<PageHeader
 				title={laneText.title}
-				subline={laneText.subline(village.name)}
+				subline={laneText.subline(village.name, village.data.builderBase.builderHallLevel)}
 				actions={
 					<>
 						<Button onClick={() => setOptionsOpen(true)}>{text.options.open}</Button>
@@ -79,9 +80,11 @@ const QueueContent = ({ village, lane }: { village: Playthrough; lane: LaneKind 
 				}
 			/>
 			<Card className="flex flex-col gap-4 p-4">
-				<div className="flex flex-wrap items-center gap-3">
-					<Badge tone={boostPercent > 0 ? "kept" : "locked"}>{text.goldPass(boostPercent)}</Badge>
-				</div>
+				{!isBuilderBase && (
+					<div className="flex flex-wrap items-center gap-3">
+						<Badge tone={boostPercent > 0 ? "kept" : "locked"}>{text.goldPass(boostPercent)}</Badge>
+					</div>
+				)}
 				<div className="grid grid-cols-2 gap-4 lg:grid-cols-5">
 					<Total label={laneText.free} value={text.totals.freeValue(totals.freeBuilders, totals.totalBuilders)} />
 					<Total label={text.totals.queued} value={String(totals.queuedCount)} />
@@ -167,7 +170,7 @@ const QueueContent = ({ village, lane }: { village: Playthrough; lane: LaneKind 
 					});
 				}}
 				onAdd={actions.add}
-				onUnlock={(group) => upgradeActions.changeLevel(group.target, 1)}
+				onUnlock={(group) => upgradeActions.changeLevel(group.target, group.unlockLevel ?? 1)}
 				onClose={() => setAdding(null)}
 			/>
 		</>

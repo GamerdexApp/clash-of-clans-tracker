@@ -11,7 +11,6 @@ import type {
   FinishResult,
   LaneKind,
   RunningUpgrade,
-  UpgradeLaneKind,
   StartBlocker,
   UpgradeTarget,
 } from "@/types/app/engine";
@@ -296,7 +295,7 @@ export const runningBBTroops = (village: Playthrough): RunningUpgrade[] =>
     troop.upgrade ? [{ target: { kind: "bbTroop" as const, name: troop.name }, upgrade: troop.upgrade }] : [],
   );
 
-export const laneKindOf = (target: UpgradeTarget): UpgradeLaneKind => {
+export const laneKindOf = (target: UpgradeTarget): LaneKind => {
   if (target.kind === "bbTroop") return "bbResearch";
   if (target.kind === "bbBuilding" || target.kind === "bbHero" || target.kind === "clockTower" || target.kind === "builderHall") {
     return "bbBuilder";
@@ -430,7 +429,7 @@ export const spreadSharedBuilders = (village: Playthrough): Playthrough => {
 export const boostedStep = (
   step: UpgradeStep,
   boostPercent: BoostPercent,
-  lane: UpgradeLaneKind = "builder",
+  lane: LaneKind = "builder",
 ): { durationMs: number; cost: number } => {
   if (lane === "bbBuilder" || lane === "bbResearch") return { durationMs: step.durationMs, cost: step.cost };
   const boostCost = lane === "builder" ? applyBuilderBoostCost : applyResearchBoostCost;

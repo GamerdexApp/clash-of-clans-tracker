@@ -4,12 +4,12 @@ import { useState } from "react";
 import type { ReactNode } from "react";
 
 import { useUpgradeActions } from "@/lib/hooks/useUpgradeActions";
-import { goldPassBoosts } from "@/service/goldPass";
+import { boostForLane } from "@/service/goldPass";
 import { CancelUpgradeDialog } from "@/comps/upgrades/CancelUpgradeDialog";
 import { FinishUpgradeDialog } from "@/comps/upgrades/FinishUpgradeDialog";
 import { StartUpgradeDialog } from "@/comps/upgrades/StartUpgradeDialog";
 import type { Playthrough } from "@/types/app";
-import type { BoostPercent, BuilderSlotState, UpgradeLaneKind, UpgradeTarget } from "@/types/app/engine";
+import type { BoostPercent, BuilderSlotState, LaneKind, UpgradeTarget } from "@/types/app/engine";
 import type { UpgradeHandlers } from "@/types/components/builder";
 import type { RunningSubject, StartUpgradeSubject } from "@/types/components/upgrades";
 
@@ -17,18 +17,14 @@ import type { RunningSubject, StartUpgradeSubject } from "@/types/components/upg
 export const useUpgradeFlow = (
 	village: Playthrough,
 	now: number,
-	lane: UpgradeLaneKind,
+	lane: LaneKind,
 	lanes: BuilderSlotState[],
 ): { handlers: UpgradeHandlers; dialogs: ReactNode } => {
 	const actions = useUpgradeActions(village);
 	const [starting, setStarting] = useState<{ subject: StartUpgradeSubject; target: UpgradeTarget } | null>(null);
 	const [finishing, setFinishing] = useState<RunningSubject | null>(null);
 	const [cancelling, setCancelling] = useState<RunningSubject | null>(null);
-	const boosts = goldPassBoosts(village, new Date(now));
-	const boostFor = (kind: UpgradeLaneKind): BoostPercent => {
-		if (kind === "builder") return boosts.builder;
-		return kind === "bbBuilder" || kind === "bbResearch" ? 0 : boosts.research;
-	};
+	const boostFor = (kind: LaneKind): BoostPercent => boostForLane(kind, village, new Date(now));
 
 	const handlers: UpgradeHandlers = {
 		onStart: (subject, target) => setStarting({ subject, target }),

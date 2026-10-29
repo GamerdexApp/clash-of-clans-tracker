@@ -29,7 +29,7 @@ const LOCKED_SHOWN = 5;
 const stepsUpTo = (group: AvailableGroup, level: number) => group.steps.filter((step) => step.level <= level);
 
 const groupLabel = (group: AvailableGroup) =>
-	group.target.kind === "building" ? `${group.name} #${group.target.instanceIndex + 1}` : group.name;
+	group.target.kind === "building" || group.target.kind === "bbBuilding" ? `${group.name} #${group.target.instanceIndex + 1}` : group.name;
 
 const GroupCard = ({ lane, group, boostPercent, onAdd }: GroupCardProps) => {
 	const [showAll, setShowAll] = useState(false);

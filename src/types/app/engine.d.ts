@@ -17,11 +17,8 @@ export type UpgradeTarget =
 /** The targets a builder works on. Research and pets wait on the Laboratory and the Pet House. */
 export type BuilderTarget = Exclude<UpgradeTarget, { kind: "research" | "pet" | "bbBuilding" | "bbHero" | "clockTower" | "builderHall" | "bbTroop" }>;
 
-/** The queue of workers an upgrade waits on: builders, the Laboratory or the Pet House. */
-export type LaneKind = "builder" | "research" | "pet";
-
-/** Every queue of workers an upgrade can wait on. Only the first three have queue pages so far. */
-export type UpgradeLaneKind = LaneKind | "bbBuilder" | "bbResearch";
+/** The queue of workers an upgrade waits on: builders, the Laboratory, the Pet House, the Builder Base builders or the Star Laboratory. */
+export type LaneKind = "builder" | "research" | "pet" | "bbBuilder" | "bbResearch";
 
 export interface RunningUpgrade {
   target: UpgradeTarget;

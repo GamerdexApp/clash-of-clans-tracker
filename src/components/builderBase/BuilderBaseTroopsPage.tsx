@@ -62,6 +62,8 @@ const TroopsContent = ({ village }: { village: Playthrough }) => {
 				emptyNote={text.strip.noLanes}
 				unassignedHelp={text.strip.unassignedHelp}
 				gridClassName="sm:grid-cols-2"
+				queueHref="/builder-base/troops/queue"
+				queueLabel={text.strip.openQueue}
 				stats={[
 					{
 						label: text.strip.levelLabel,

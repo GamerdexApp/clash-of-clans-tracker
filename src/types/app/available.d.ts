@@ -19,6 +19,8 @@ export interface AvailableGroup {
   name: string;
   imageUrl: string;
   category: string;
+  /** The level that marks a locked item as unlocked, when the first level is not 1. */
+  unlockLevel?: number;
   /** Steps that are not running and not queued yet, lowest level first. */
   steps: UpgradeStep[];
 }

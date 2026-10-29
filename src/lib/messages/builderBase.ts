@@ -15,6 +15,7 @@ export const builderBaseText = {
     strip: {
       title: "Builders",
       noBuilders: "The Builder Base has two builders.",
+      openQueue: "Open queue and timeline",
       unassignedHelp: "Some upgrades are saved on a builder that another upgrade already uses. Finish or cancel them.",
     },
   },
@@ -69,6 +70,7 @@ export const builderBaseTroopsText = {
   strip: {
     title: "Star Laboratory",
     noLanes: "The Star Laboratory is not available.",
+    openQueue: "Open queue and timeline",
     unassignedHelp: "More than one troop research is saved on the Star Laboratory. Finish or cancel the extra one.",
     levelLabel: "Star Laboratory level",
     level: (level: number, max: number) => `${level} of ${max}`,
