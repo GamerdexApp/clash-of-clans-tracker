@@ -343,3 +343,37 @@ export const getCapitalSpells = (districtHallLevels: Record<string, number>): It
   }
   return result;
 }
+
+export interface CapitalArmyCatalogEntry {
+  name: string;
+  kind: "troops" | "spells";
+  imageUrl: string;
+  /** The zone whose District Hall unlocks this troop or spell, or null when the data names none. */
+  district: string | null;
+  /** The District Hall level each level needs, lowest level first. */
+  levels: Array<{ level: number; districtHallRequired: number }>;
+}
+
+/** Every Clan Capital troop and spell, whether or not the village can use it yet. */
+export const getCapitalArmyCatalog = (): CapitalArmyCatalogEntry[]  => {
+  type RawItem = {
+    name: string;
+    levels: Array<{ level: number; districtHallRequired?: number; images?: { normal?: string } }>;
+    images?: { icon?: string };
+  };
+  const read = (source: any, kind: "troops" | "spells", districts: Record<string, string>) =>
+    Object.getOwnPropertyNames(Object.getPrototypeOf(source))
+      .filter((method) => method !== "constructor")
+      .map((method): CapitalArmyCatalogEntry => {
+        const item: RawItem = source[method]().data[0];
+        const icon = item.images?.icon ?? item.levels[0]?.images?.normal;
+        return {
+          name: item.name,
+          kind,
+          imageUrl: icon ? toPublicImageUrl(icon) : "",
+          district: districts[item.name] ?? null,
+          levels: item.levels.map((l) => ({ level: l.level, districtHallRequired: l.districtHallRequired ?? 0 })),
+        };
+      });
+  return [...read(_cap.troops(), "troops", TROOP_DISTRICT_MAP), ...read(_cap.spells(), "spells", SPELL_DISTRICT_MAP)];
+}

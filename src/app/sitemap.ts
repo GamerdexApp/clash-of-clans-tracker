@@ -21,6 +21,8 @@ const sitemap = (): MetadataRoute.Sitemap => {
 		{ path: "/walls", priority: 0.6, changeFrequency: "weekly" as const },
 		{ path: "/builder-base/walls", priority: 0.6, changeFrequency: "weekly" as const },
 		{ path: "/builder-base/queue", priority: 0.5, changeFrequency: "weekly" as const },
+		{ path: "/clan-capital/districts", priority: 0.6, changeFrequency: "weekly" as const },
+		{ path: "/clan-capital/troops", priority: 0.6, changeFrequency: "weekly" as const },
 		{ path: "/builder-base/troops/queue", priority: 0.5, changeFrequency: "weekly" as const },
 	];
 
