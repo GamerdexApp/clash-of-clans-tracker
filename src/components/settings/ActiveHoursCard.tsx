@@ -25,7 +25,7 @@ const savedWindow = (settings: ReturnType<typeof usePlaythrough>["appSettings"])
 	};
 };
 
-export const ActiveHoursCard = () => {
+export const ActiveHoursForm = () => {
 	const { appSettings, updateSettings } = usePlaythrough();
 	const saved = savedWindow(appSettings);
 	const [draft, setDraft] = useState<ActiveHoursLocal>(saved ?? DEFAULT_WINDOW);
@@ -42,7 +42,7 @@ export const ActiveHoursCard = () => {
 	};
 
 	return (
-		<SettingsCard title={text.title} description={text.description}>
+		<>
 			<div className="grid gap-4 sm:grid-cols-2">
 				<Field label={text.start}>
 					<Input
@@ -77,6 +77,12 @@ export const ActiveHoursCard = () => {
 				</Button>
 				{saved && <Button onClick={clear}>{text.clear}</Button>}
 			</div>
-		</SettingsCard>
+		</>
 	);
 };
+
+export const ActiveHoursCard = () => (
+	<SettingsCard title={text.title} description={text.description}>
+		<ActiveHoursForm />
+	</SettingsCard>
+);

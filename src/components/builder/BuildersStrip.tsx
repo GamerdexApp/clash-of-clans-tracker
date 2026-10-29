@@ -61,7 +61,7 @@ export const BuildersStrip = ({ village, goblin, now }: { village: Playthrough; 
 					<h2 className="text-base font-semibold">{text.title}</h2>
 					<Badge tone={free > 0 ? "kept" : "warn"}>{text.free(free, state.slots.length)}</Badge>
 				</div>
-				<ButtonLink href="/upgrade/home/builder/queue" variant="secondary">
+				<ButtonLink href="/builder/queue" variant="secondary">
 					{text.openQueue}
 				</ButtonLink>
 			</div>
