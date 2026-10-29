@@ -216,6 +216,24 @@ export const builderLabelFor = (id: number): string => {
   return `Builder ${id}`;
 };
 
+/**
+ * Gives each slot the first running upgrade that names it. An upgrade that no slot shows, because
+ * its builder is not built or another upgrade already holds it, is returned as unassigned so the
+ * player can see and fix it.
+ */
+const fillSlots = (
+  slots: Array<Omit<BuilderSlotState, "running">>,
+  running: RunningUpgrade[],
+): BuilderSlots => {
+  const shown = new Set<RunningUpgrade>();
+  const filled: BuilderSlotState[] = slots.map((slot) => {
+    const held = running.find((entry) => entry.upgrade.builderId === slot.id) ?? null;
+    if (held) shown.add(held);
+    return { ...slot, running: held };
+  });
+  return { slots: filled, unassigned: running.filter((entry) => !shown.has(entry)) };
+};
+
 export const laneLabelFor = (target: UpgradeTarget, id: number): string => {
   if (target.kind === "research") return id === GOBLIN_SLOT_ID ? "Goblin Researcher" : "Laboratory";
   if (target.kind === "pet") return "Pet House";
@@ -224,29 +242,19 @@ export const laneLabelFor = (target: UpgradeTarget, id: number): string => {
 
 /** The Laboratory lane, plus the Goblin Researcher lane while its setting is on. */
 export const researchSlots = (village: Playthrough, goblinResearchEnabled: boolean): BuilderSlots => {
-  const running = runningResearch(village);
   const slotIds = goblinResearchEnabled ? [LABORATORY_SLOT_ID, GOBLIN_SLOT_ID] : [LABORATORY_SLOT_ID];
-  const slots: BuilderSlotState[] = slotIds.map((id) => ({
-    id,
-    label: id === GOBLIN_SLOT_ID ? "Goblin Researcher" : "Laboratory",
-    kind: id === GOBLIN_SLOT_ID ? "goblin" : "laboratory",
-    running: running.find((entry) => entry.upgrade.builderId === id) ?? null,
-  }));
-  return { slots, unassigned: running.filter((entry) => !slotIds.includes(entry.upgrade.builderId)) };
+  return fillSlots(
+    slotIds.map((id) => ({
+      id,
+      label: id === GOBLIN_SLOT_ID ? "Goblin Researcher" : "Laboratory",
+      kind: id === GOBLIN_SLOT_ID ? "goblin" : "laboratory",
+    })),
+    runningResearch(village),
+  );
 };
 
-export const petSlots = (village: Playthrough): BuilderSlots => {
-  const running = runningPets(village);
-  const slots: BuilderSlotState[] = [
-    {
-      id: PET_HOUSE_SLOT_ID,
-      label: "Pet House",
-      kind: "petHouse",
-      running: running.find((entry) => entry.upgrade.builderId === PET_HOUSE_SLOT_ID) ?? null,
-    },
-  ];
-  return { slots, unassigned: running.filter((entry) => entry.upgrade.builderId !== PET_HOUSE_SLOT_ID) };
-};
+export const petSlots = (village: Playthrough): BuilderSlots =>
+  fillSlots([{ id: PET_HOUSE_SLOT_ID, label: "Pet House", kind: "petHouse" }], runningPets(village));
 
 /**
  * Builders 1 to 5 are the Builder's Huts, 6 is B.O.B and 7 is the Goblin Builder. A slot exists
@@ -263,17 +271,44 @@ export const builderSlots = (village: Playthrough, goblinBuilderEnabled: boolean
   if (bobBuilt) slotIds.push(BOB_SLOT_ID);
   if (goblinBuilderEnabled) slotIds.push(GOBLIN_SLOT_ID);
 
-  const slots: BuilderSlotState[] = slotIds.map((id) => ({
-    id,
-    label: builderLabelFor(id),
-    kind: id === BOB_SLOT_ID ? "bob" : id === GOBLIN_SLOT_ID ? "goblin" : "hut",
-    running: running.find((entry) => entry.upgrade.builderId === id) ?? null,
-  }));
-  const known = new Set(slotIds);
-  return { slots, unassigned: running.filter((entry) => !known.has(entry.upgrade.builderId)) };
+  return fillSlots(
+    slotIds.map((id) => ({
+      id,
+      label: builderLabelFor(id),
+      kind: id === BOB_SLOT_ID ? "bob" : id === GOBLIN_SLOT_ID ? "goblin" : "hut",
+    })),
+    running,
+  );
 };
 
 export const freeBuilderCount = ({ slots }: BuilderSlots) => slots.filter((slot) => slot.running === null).length;
+
+/**
+ * Moves upgrades that share a builder, or name a builder that is not built, to free builders.
+ * The upgrade that started first keeps its builder. One that finds no free builder stays as it is
+ * and shows as unassigned. The Goblin Builder is never a target, because its setting is not known here.
+ */
+export const spreadSharedBuilders = (village: Playthrough): Playthrough => {
+  const builtIds = builderSlots(village, false).slots.map((slot) => slot.id);
+  const validIds = new Set([...builtIds, GOBLIN_SLOT_ID]);
+  const taken = new Set<number>();
+  const displaced: RunningUpgrade[] = [];
+
+  const byStart = [...runningUpgrades(village)].sort(
+    (a, b) => Date.parse(a.upgrade.upgradeStartedAt) - Date.parse(b.upgrade.upgradeStartedAt),
+  );
+  for (const entry of byStart) {
+    const { builderId } = entry.upgrade;
+    if (validIds.has(builderId) && !taken.has(builderId)) taken.add(builderId);
+    else displaced.push(entry);
+  }
+
+  const free = builtIds.filter((id) => !taken.has(id));
+  return displaced.reduce((current, entry) => {
+    const builderId = free.shift();
+    return builderId === undefined ? current : writeUpgrade(current, entry.target, { ...entry.upgrade, builderId });
+  }, village);
+};
 
 /** The time and cost a player pays with the boost on. Gem costs are never discounted. */
 export const boostedStep = (

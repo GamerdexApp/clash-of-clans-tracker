@@ -1,3 +1,4 @@
+import { spreadSharedBuilders } from "./upgradeEngine";
 import type { AppSettings, Playthrough } from "@/types/app";
 import type { HomeVillageData, BuilderBaseData } from "@/types/app/game";
 import type { DailiesData } from "@/types/app/playthrough";
@@ -81,7 +82,7 @@ const migrateDailies = (existing: DailiesData | undefined): DailiesData  => {
 
 export const migratePlaythrough = (p: Playthrough): Playthrough  => {
   if (!p.data) return p;
-  return {
+  return spreadSharedBuilders({
     ...p,
     dailies: migrateDailies(p.dailies),
     data: {
@@ -89,5 +90,5 @@ export const migratePlaythrough = (p: Playthrough): Playthrough  => {
       homeVillage: migrateHomeVillage(p.data.homeVillage),
       builderBase: migrateBuilderBase(p.data.builderBase),
     },
-  };
+  });
 }

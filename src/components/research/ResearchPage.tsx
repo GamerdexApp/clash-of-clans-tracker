@@ -14,7 +14,6 @@ import { upgradeSteps } from "@/service/upgradeSteps";
 import { PageHeader } from "@/comps/shell/PageHeader";
 import { VillageGate } from "@/comps/shell/VillageGate";
 import { EmptyState } from "@/comps/ui/EmptyState";
-import { Masonry } from "@/comps/ui/Masonry";
 import { Tabs } from "@/comps/ui/Tabs";
 import { HideMaxToggle } from "@/comps/upgrades/HideMaxToggle";
 import { ItemCard } from "@/comps/upgrades/ItemCard";
@@ -65,7 +64,7 @@ const Items = ({
 	if (shown.length === 0) return <EmptyState title={text.empty.title} description={text.empty.allMax} />;
 
 	return (
-		<Masonry>
+		<div className="grid items-start gap-4 md:grid-cols-2 2xl:grid-cols-3">
 			{shown.map((item) => {
 				const target = targetFor(tab, item.name);
 				const step = upgradeSteps(village, target)[0];
@@ -87,7 +86,7 @@ const Items = ({
 					/>
 				);
 			})}
-		</Masonry>
+		</div>
 	);
 };
 

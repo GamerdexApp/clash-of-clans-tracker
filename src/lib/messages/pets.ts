@@ -4,7 +4,7 @@ export const petsText = {
   strip: {
     title: "Pet House",
     noPetHouse: "Build a Pet House first. Set its level on the Builder page, Army tab.",
-    unassignedHelp: "This pet upgrade runs on a lane that no longer exists. Finish or cancel it.",
+    unassignedHelp: "More than one pet upgrade is saved on the Pet House. Finish or cancel the extra one.",
     levelLabel: "Pet House level",
     level: (level: number, max: number) => `${level} of ${max}`,
     notBuilt: "Not built",
