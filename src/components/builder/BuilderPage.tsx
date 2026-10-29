@@ -19,6 +19,7 @@ import { PageHeader } from "@/comps/shell/PageHeader";
 import { VillageGate } from "@/comps/shell/VillageGate";
 import { Tabs } from "@/comps/ui/Tabs";
 import { HideMaxToggle } from "@/comps/upgrades/HideMaxToggle";
+import { MassEditLink } from "@/comps/upgrades/MassEditLink";
 import { useUpgradeFlow } from "@/comps/upgrades/useUpgradeFlow";
 import type { Playthrough } from "@/types/app";
 import type { BuildingRecordKey } from "@/types/app/game";
@@ -104,6 +105,7 @@ const BuilderContent = ({ village }: { village: Playthrough }) => {
 	return (
 		<>
 			<PageHeader title={text.title} subline={text.subline(village.name, townHall)} />
+			<MassEditLink tab={tab} />
 			<BuildersStrip
 				village={village}
 				goblin={actions.goblinBuilderEnabled}

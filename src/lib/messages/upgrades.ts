@@ -1,4 +1,8 @@
 export const upgradeText = {
+  massEdit: {
+    hint: "Levels can also be set in Mass edit.",
+    link: "Open Mass edit",
+  },
   hideMax: "Hide Max",
   strip: {
     free: (free: number, total: number) => `${free} of ${total} free`,

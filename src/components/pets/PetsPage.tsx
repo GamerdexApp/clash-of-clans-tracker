@@ -19,6 +19,7 @@ import { EmptyState } from "@/comps/ui/EmptyState";
 import { Masonry } from "@/comps/ui/Masonry";
 import { Note } from "@/comps/ui/Note";
 import { HideMaxToggle } from "@/comps/upgrades/HideMaxToggle";
+import { MassEditLink } from "@/comps/upgrades/MassEditLink";
 import { ItemCard } from "@/comps/upgrades/ItemCard";
 import { LanesStrip } from "@/comps/upgrades/LanesStrip";
 import { useUpgradeFlow } from "@/comps/upgrades/useUpgradeFlow";
@@ -92,6 +93,7 @@ const PetsContent = ({ village }: { village: Playthrough }) => {
 	return (
 		<>
 			<PageHeader title={text.title} subline={text.subline(village.name, townHall)} />
+			<MassEditLink tab="pets" />
 			<LanesStrip
 				title={text.strip.title}
 				village={village}

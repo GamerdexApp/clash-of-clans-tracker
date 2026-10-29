@@ -122,6 +122,8 @@ export interface QueueWindows {
 
 export interface UiSettings {
   hideMax?: boolean;
+  /** Equipment: take the ore out of the stock on upgrade. A missing value reads as on. */
+  deductOre?: boolean;
   builderTab?: string;
   massEdit?: { scope?: string; tab?: string; collapsedGroups?: string[] };
   queueWindows?: QueueWindows;

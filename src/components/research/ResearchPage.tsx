@@ -16,6 +16,7 @@ import { VillageGate } from "@/comps/shell/VillageGate";
 import { EmptyState } from "@/comps/ui/EmptyState";
 import { Tabs } from "@/comps/ui/Tabs";
 import { HideMaxToggle } from "@/comps/upgrades/HideMaxToggle";
+import { MassEditLink } from "@/comps/upgrades/MassEditLink";
 import { ItemCard } from "@/comps/upgrades/ItemCard";
 import { LanesStrip } from "@/comps/upgrades/LanesStrip";
 import { useUpgradeFlow } from "@/comps/upgrades/useUpgradeFlow";
@@ -107,6 +108,7 @@ const ResearchContent = ({ village }: { village: Playthrough }) => {
 	return (
 		<>
 			<PageHeader title={text.title} subline={text.subline(village.name, townHall)} />
+			<MassEditLink tab={tab} />
 			<LanesStrip
 				title={text.strip.title}
 				village={village}

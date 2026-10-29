@@ -15,6 +15,7 @@ const nextConfig: NextConfig = {
       { source: "/upgrade/home/research", destination: "/research", permanent: true },
       { source: "/upgrade/home/research/queue", destination: "/research/queue", permanent: true },
       { source: "/upgrade/home/pets", destination: "/pets", permanent: true },
+      { source: "/upgrade/home/equipment", destination: "/equipment", permanent: true },
       { source: "/upgrade/home/pets/queue", destination: "/pets/queue", permanent: true },
       { source: "/upgrade/home/defenses", destination: "/builder?tab=defenses", permanent: true },
       { source: "/upgrade/home/structures", destination: "/builder?tab=defenses", permanent: true },
