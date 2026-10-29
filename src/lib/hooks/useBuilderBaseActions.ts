@@ -4,6 +4,8 @@ import { useToast } from "@/comps/ui/Toast";
 import type { Playthrough } from "@/types/app";
 
 interface BuilderBaseActions {
+  /** Applies a change to the latest saved village. Profile fields save as they are edited, without a toast. */
+  update: (change: (village: Playthrough) => Playthrough) => void;
   setBuilderHall: (level: number, options: { setDaysToToday: boolean }) => void;
 }
 
@@ -16,6 +18,14 @@ export const useBuilderBaseActions = (village: Playthrough): BuilderBaseActions 
   const showToast = useToast();
 
   return {
+    update: (change) => {
+      updateData((data) => ({
+        ...data,
+        playthroughs: data.playthroughs.map((candidate) =>
+          candidate.id === village.id ? { ...change(candidate), lastModified: new Date().toISOString() } : candidate,
+        ),
+      }));
+    },
     setBuilderHall: (level, { setDaysToToday }) => {
       const from = village.data.builderBase.builderHallLevel;
       const now = new Date();

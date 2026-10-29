@@ -90,3 +90,15 @@ export const builderBaseTroopsText = {
     allMax: "Every troop is at its maximum. Turn off Hide Max to see them.",
   },
 } as const;
+
+export const builderBaseProfileText = {
+  title: "Builder Base profile",
+  trophies: "Trophies",
+  bestTrophies: "Best trophies",
+  bestHint: "Never below your trophies.",
+  league: "League",
+  leagueNone: "Not set",
+  matchTrophies: "Match trophies",
+  since: "At this Builder Hall since",
+  sinceToday: "Set to today",
+} as const;

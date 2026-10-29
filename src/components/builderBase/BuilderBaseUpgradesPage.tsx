@@ -26,6 +26,7 @@ import type { Playthrough } from "@/types/app";
 import type { BuildingRecordKey } from "@/types/app/game";
 import { BuilderBaseHeroesTab } from "./BuilderBaseHeroesTab";
 import { BuilderBaseOtherTab } from "./BuilderBaseOtherTab";
+import { BuilderBaseProfileCard } from "./BuilderBaseProfileCard";
 import { BuilderHallTile } from "./BuilderHallTile";
 
 const text = builderBaseText;
@@ -71,6 +72,7 @@ const UpgradesContent = ({ village }: { village: Playthrough }) => {
 				subline={hall > 0 ? text.upgrades.subline(village.name, hall) : text.upgrades.sublineNotSet(village.name)}
 			/>
 			<MassEditLink scope="builder" />
+			<BuilderBaseProfileCard village={village} />
 			{hall === 0 ? (
 				<>
 					<EmptyState title={text.notSet.title} description={text.notSet.description} />
