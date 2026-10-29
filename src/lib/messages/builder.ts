@@ -12,18 +12,14 @@ export const builderText = {
     guardians: "Guardians",
     townHall: "Town Hall",
   },
-  hideMax: "Hide Max",
-  hideMaxHelp: "Hide buildings that are fully upgraded.",
   builders: {
     title: "Builders",
-    free: (free: number, total: number) => `${free} of ${total} free`,
+    boostLabel: "Gold Pass builder boost",
+    boostValue: (percent: number) => (percent > 0 ? `-${percent}% time and cost` : "None"),
     openQueue: "Open queue and timeline",
-    idle: "Free",
-    unassigned: "Unassigned",
     unassignedHelp: "This upgrade runs on a builder that is no longer built. Finish or cancel it.",
     noBuilders:
       "This village has no builders yet. Build the first Builder's Hut from the Defenses tab. It is free and instant.",
-    taskLevels: (from: number, to: number) => `Lv ${from} to ${to}`,
   },
   gate: {
     requires: (townHall: number) => `Requires Town Hall ${townHall}`,

@@ -12,6 +12,8 @@ const nextConfig: NextConfig = {
       { source: "/playthrough/new", destination: "/villages?new=1", permanent: true },
       { source: "/upgrade/home/builder", destination: "/builder", permanent: true },
       { source: "/upgrade/home/builder/queue", destination: "/builder/queue", permanent: true },
+      { source: "/upgrade/home/research", destination: "/research", permanent: true },
+      { source: "/upgrade/home/pets", destination: "/pets", permanent: true },
       { source: "/upgrade/home/defenses", destination: "/builder?tab=defenses", permanent: true },
       { source: "/upgrade/home/structures", destination: "/builder?tab=defenses", permanent: true },
       { source: "/upgrade/home/army", destination: "/builder?tab=army", permanent: true },

@@ -1,11 +1,19 @@
-import type { BuildingRecordKey, UpgradeState } from "./game";
+import type { BuildingRecordKey, ResearchKey, UpgradeState } from "./game";
 
 export type UpgradeTarget =
   | { kind: "building"; record: BuildingRecordKey; buildingId: string; instanceIndex: number }
   | { kind: "hero"; name: string }
   | { kind: "townHall" }
   | { kind: "townHallWeapon" }
-  | { kind: "crafted"; defenseId: string; moduleIndex: number };
+  | { kind: "crafted"; defenseId: string; moduleIndex: number }
+  | { kind: "research"; record: ResearchKey; name: string }
+  | { kind: "pet"; name: string };
+
+/** The targets a builder works on. Research and pets wait on the Laboratory and the Pet House. */
+export type BuilderTarget = Exclude<UpgradeTarget, { kind: "research" | "pet" }>;
+
+/** The queue of workers an upgrade waits on: builders, the Laboratory or the Pet House. */
+export type LaneKind = "builder" | "research" | "pet";
 
 export interface RunningUpgrade {
   target: UpgradeTarget;
@@ -16,7 +24,7 @@ export type FinishMethod = "timePassed" | "gems" | "book" | "hammer";
 
 export type BoostPercent = 0 | 10 | 15 | 20;
 
-export type SlotKind = "hut" | "bob" | "goblin";
+export type SlotKind = "hut" | "bob" | "goblin" | "laboratory" | "petHouse";
 
 export interface BuilderSlotState {
   id: number;

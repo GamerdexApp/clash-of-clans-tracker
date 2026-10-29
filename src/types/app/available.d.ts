@@ -1,4 +1,4 @@
-import type { UpgradeTarget } from "./engine";
+import type { BuilderTarget } from "./engine";
 import type { UpgradeStep } from "./upgrade";
 
 export type AvailableCategory =
@@ -14,7 +14,7 @@ export type AvailableCategory =
 
 export interface UpgradeGroup {
   key: string;
-  target: UpgradeTarget;
+  target: BuilderTarget;
   name: string;
   imageUrl: string;
   category: AvailableCategory;

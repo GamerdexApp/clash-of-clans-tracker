@@ -1,4 +1,11 @@
 export const upgradeText = {
+  hideMax: "Hide Max",
+  strip: {
+    free: (free: number, total: number) => `${free} of ${total} free`,
+    idle: "Free",
+    unassigned: "Unassigned",
+    taskLevels: (from: number, to: number) => `Lv ${from} to ${to}`,
+  },
   start: {
     title: "Start upgrade",
     levelChange: (from: number, to: number) => (from === 0 ? `Build to Lv ${to}` : `Lv ${from} to ${to}`),
@@ -10,9 +17,28 @@ export const upgradeText = {
     resource: (resource: string) => resource,
     storedNote: "this boosted time is stored",
     instant: "This build takes no time. It finishes at once and uses no builder.",
-    builderLabel: "Builder",
-    chooseBuilder: "Choose a builder to start.",
-    noFreeBuilder: "Every builder is busy. Cancel or finish an upgrade first.",
+    lanes: {
+      builder: {
+        label: "Builder",
+        choose: "Choose a builder to start.",
+        noneFree: "Every builder is busy. Cancel or finish an upgrade first.",
+      },
+      research: {
+        label: "Research lane",
+        choose: "Choose a lane to start.",
+        noneFree: "Every research lane is busy. Cancel or finish a research first.",
+      },
+      pet: {
+        label: "Pet House",
+        choose: "Choose the Pet House to start.",
+        noneFree: "The Pet House is busy. Cancel or finish the pet upgrade first.",
+      },
+    },
+    requires: {
+      laboratory: (level: number) => `Requires Laboratory ${level}`,
+      "pet-house": (level: number) => `Requires Pet House ${level}`,
+      noPetHouse: "Build a Pet House first",
+    },
     free: "Free",
     cancel: "Cancel",
     confirm: "Start upgrade",
@@ -55,7 +81,7 @@ export const upgradeText = {
     refundTitle: "Refund in the game: 50%",
     refundBody: (refund: string, paid: string, resource: string) =>
       `Cancelling in Clash of Clans gives back ${refund} ${resource} of the ${paid} you paid. This app does not track your resources, so check your storages after you cancel.`,
-    undoNote: "You can undo for 10 seconds after cancelling. After that, start the upgrade again from the Builder page.",
+    undoNote: "You can undo for 10 seconds after cancelling. After that, start the upgrade again.",
     keep: "Keep upgrading",
     confirm: "Cancel upgrade",
   },

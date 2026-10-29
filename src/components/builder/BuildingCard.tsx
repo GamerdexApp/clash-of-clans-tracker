@@ -47,14 +47,16 @@ export const BuildingCard = ({
 	return (
 		<Card role="group" aria-labelledby={titleId} className="flex flex-col gap-3 p-4">
 			<div className="flex items-start gap-3">
-				<Image
-					src={building.imageUrl}
-					alt=""
-					width={48}
-					height={48}
-					style={{ width: 48, height: 48 }}
-					className="shrink-0 object-contain"
-				/>
+				{building.imageUrl && (
+					<Image
+						src={building.imageUrl}
+						alt=""
+						width={48}
+						height={48}
+						style={{ width: 48, height: 48 }}
+						className="shrink-0 object-contain"
+					/>
+				)}
 				<div className="flex min-w-0 flex-1 flex-col gap-1">
 					<h3 id={titleId} className="truncate text-base font-semibold">
 						{building.name}

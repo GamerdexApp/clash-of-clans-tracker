@@ -12,6 +12,9 @@ export const targetName = (target: UpgradeTarget): string => {
       return "Town Hall";
     case "townHallWeapon":
       return "Town Hall weapon";
+    case "research":
+    case "pet":
+      return target.name;
     case "crafted":
       return `${getCraftedDefenseName(target.defenseId)}, ${getCraftedDefenseModuleName(target.defenseId, target.moduleIndex)}`;
   }

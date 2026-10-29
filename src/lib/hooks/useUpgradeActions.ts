@@ -3,6 +3,7 @@ import { goldPassBoosts } from "@/service/goldPass";
 import {
   cancelUpgrade,
   finishUpgrade,
+  laneKindOf,
   readLevel,
   setLevel,
   startUpgrade,
@@ -14,8 +15,12 @@ import type { Playthrough } from "@/types/app";
 import type { FinishMethod, UpgradeTarget } from "@/types/app/engine";
 import type { UpgradeStep } from "@/types/app/upgrade";
 
+/** Research and pet upgrades use the research boost. */
+const boostKey = (target: UpgradeTarget) => (laneKindOf(target) === "builder" ? "builder" : "research");
+
 interface UpgradeActions {
   goblinBuilderEnabled: boolean;
+  goblinResearchEnabled: boolean;
   start: (target: UpgradeTarget, step: UpgradeStep, builderId: number) => void;
   finish: (target: UpgradeTarget, method: FinishMethod) => void;
   cancel: (target: UpgradeTarget, fromLevel: number) => void;
@@ -43,10 +48,11 @@ export const useUpgradeActions = (village: Playthrough): UpgradeActions => {
 
   return {
     goblinBuilderEnabled: appSettings.goblinBuilderEnabled,
+    goblinResearchEnabled: appSettings.goblinResearchEnabled,
 
     start: (target, step, builderId) => {
       const fromLevel = readLevel(village, target);
-      const previous = apply((current, now) => startUpgrade(current, target, step, builderId, { boostPercent: goldPassBoosts(current, now).builder, now }));
+      const previous = apply((current, now) => startUpgrade(current, target, step, builderId, { boostPercent: goldPassBoosts(current, now)[boostKey(target)], now }));
       if (!previous) return;
       showToast({
         variant: "success",

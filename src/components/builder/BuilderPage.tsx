@@ -1,6 +1,6 @@
 "use client";
 
-import { Suspense, useState } from "react";
+import { Suspense } from "react";
 
 import { usePlaythrough } from "@/lib/contexts/PlaythroughContext";
 import { useNow } from "@/lib/hooks/useNow";
@@ -14,19 +14,14 @@ import {
 	getResourceBuildingsAtTH,
 	getTrapsAtTH,
 } from "@/lib/utils/massEditHelpers";
-import { goldPassBoosts } from "@/service/goldPass";
-import { runningUpgrades } from "@/service/upgradeEngine";
+import { builderSlots, runningUpgrades } from "@/service/upgradeEngine";
 import { PageHeader } from "@/comps/shell/PageHeader";
 import { VillageGate } from "@/comps/shell/VillageGate";
-import { SwitchRow } from "@/comps/ui/Switch";
 import { Tabs } from "@/comps/ui/Tabs";
-import { CancelUpgradeDialog } from "@/comps/upgrades/CancelUpgradeDialog";
-import { FinishUpgradeDialog } from "@/comps/upgrades/FinishUpgradeDialog";
-import { StartUpgradeDialog } from "@/comps/upgrades/StartUpgradeDialog";
+import { HideMaxToggle } from "@/comps/upgrades/HideMaxToggle";
+import { useUpgradeFlow } from "@/comps/upgrades/useUpgradeFlow";
 import type { Playthrough } from "@/types/app";
-import type { UpgradeTarget } from "@/types/app/engine";
 import type { BuildingRecordKey } from "@/types/app/game";
-import type { RunningSubject, StartUpgradeSubject } from "@/types/components/upgrades";
 import { BuildersStrip } from "./BuildersStrip";
 import { BuildingsTab } from "./BuildingsTab";
 import { CraftedTab } from "./CraftedTab";
@@ -76,18 +71,15 @@ const BuilderContent = ({ village }: { village: Playthrough }) => {
 	const actions = useUpgradeActions(village);
 	const now = useNow();
 	const [tab, setTab] = useUrlTab(TAB_IDS, "defenses");
-	const [starting, setStarting] = useState<{ subject: StartUpgradeSubject; target: UpgradeTarget } | null>(null);
-	const [finishing, setFinishing] = useState<RunningSubject | null>(null);
-	const [cancelling, setCancelling] = useState<RunningSubject | null>(null);
+	const { handlers, dialogs } = useUpgradeFlow(
+		village,
+		now,
+		"builder",
+		builderSlots(village, actions.goblinBuilderEnabled).slots,
+	);
 
 	const townHall = village.data.homeVillage.townHallLevel;
 	const hideMax = appSettings.ui?.hideMax ?? false;
-	const handlers = {
-		onStart: (subject: StartUpgradeSubject, target: UpgradeTarget) => setStarting({ subject, target }),
-		onFinish: setFinishing,
-		onCancel: setCancelling,
-		onLevelChange: actions.changeLevel,
-	};
 	const tabProps = { village, hideMax, now, ...handlers };
 
 	const renderTab = () => {
@@ -112,7 +104,17 @@ const BuilderContent = ({ village }: { village: Playthrough }) => {
 	return (
 		<>
 			<PageHeader title={text.title} subline={text.subline(village.name, townHall)} />
-			<BuildersStrip village={village} goblin={actions.goblinBuilderEnabled} now={now} />
+			<BuildersStrip
+				village={village}
+				goblin={actions.goblinBuilderEnabled}
+				now={now}
+				actions={
+					<HideMaxToggle
+						checked={hideMax}
+						onChange={(checked) => updateSettings({ ui: { ...appSettings.ui, hideMax: checked } })}
+					/>
+				}
+			/>
 			<Tabs
 				label={text.tabsLabel}
 				tabs={TAB_IDS.map((id) => ({
@@ -125,42 +127,10 @@ const BuilderContent = ({ village }: { village: Playthrough }) => {
 				onChange={setTab}
 			>
 				<div className="flex flex-col gap-4">
-					{tab !== "townHall" && (
-						<div className="max-w-sm">
-							<SwitchRow
-								label={text.hideMax}
-								description={text.hideMaxHelp}
-								checked={hideMax}
-								onChange={(checked) =>
-									updateSettings({ ui: { ...appSettings.ui, hideMax: checked } })
-								}
-							/>
-						</div>
-					)}
 					{renderTab()}
 				</div>
 			</Tabs>
-			<StartUpgradeDialog
-				subject={starting?.subject ?? null}
-				village={village}
-				boostPercent={goldPassBoosts(village, new Date(now)).builder}
-				now={now}
-				goblinBuilderEnabled={actions.goblinBuilderEnabled}
-				onConfirm={(builderId) => starting && actions.start(starting.target, starting.subject.step, builderId)}
-				onClose={() => setStarting(null)}
-			/>
-			<FinishUpgradeDialog
-				subject={finishing}
-				now={now}
-				onConfirm={(method) => finishing && actions.finish(finishing.target, method)}
-				onClose={() => setFinishing(null)}
-			/>
-			<CancelUpgradeDialog
-				subject={cancelling}
-				now={now}
-				onConfirm={() => cancelling && actions.cancel(cancelling.target, cancelling.fromLevel)}
-				onClose={() => setCancelling(null)}
-			/>
+			{dialogs}
 		</>
 	);
 };

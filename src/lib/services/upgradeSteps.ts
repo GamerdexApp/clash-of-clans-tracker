@@ -2,6 +2,8 @@ import {
   getBuildingUpgradeSteps,
   getCraftedDefenseUpgradeSteps,
   getHeroUpgradeSteps,
+  getPetUpgradeSteps,
+  getResearchUpgradeSteps,
   getTownHallUpgradeStep,
   getTownHallWeaponUpgradeSteps,
 } from "@/lib/utils/upgradeHelpers";
@@ -32,6 +34,10 @@ export const upgradeSteps = (village: Playthrough, target: UpgradeTarget): Upgra
       return getTownHallWeaponUpgradeSteps(hv.townHallLevel, level);
     case "crafted":
       return getCraftedDefenseUpgradeSteps(target.defenseId, target.moduleIndex, level);
+    case "research":
+      return getResearchUpgradeSteps(target.name, level, hv.townHallLevel);
+    case "pet":
+      return getPetUpgradeSteps(target.name, level);
   }
 };
 

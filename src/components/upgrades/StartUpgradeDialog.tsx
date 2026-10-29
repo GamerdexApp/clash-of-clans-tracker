@@ -4,7 +4,7 @@ import { useState } from "react";
 
 import { formatDuration, formatFinishTime, formatNumber } from "@/lib/format";
 import { upgradeText } from "@/lib/messages/upgrades";
-import { boostedStep, builderSlots, isInstantStep } from "@/service/upgradeEngine";
+import { boostedStep, isInstantStep, requirementBlock } from "@/service/upgradeEngine";
 import { Button } from "@/comps/ui/Button";
 import { Dialog } from "@/comps/ui/Dialog";
 import { Note } from "@/comps/ui/Note";
@@ -17,18 +17,21 @@ const StartContent = ({
 	subject,
 	village,
 	boostPercent,
-	goblinBuilderEnabled,
+	lane,
+	lanes,
 	now,
 	onConfirm,
 	onClose,
 }: Omit<StartUpgradeDialogProps, "subject"> & { subject: StartUpgradeSubject }) => {
 	const { step } = subject;
 	const instant = isInstantStep(step);
-	const boosted = boostedStep(step, boostPercent);
-	const freeSlots = builderSlots(village, goblinBuilderEnabled).slots.filter((slot) => slot.running === null);
+	const laneText = text.lanes[lane];
+	const boosted = boostedStep(step, boostPercent, lane);
+	const missing = requirementBlock(village, step);
+	const freeSlots = lanes.filter((slot) => slot.running === null);
 	const [chosen, setChosen] = useState<number | null>(freeSlots.length === 1 ? freeSlots[0].id : null);
 	const builderId = instant ? 0 : chosen;
-	const canStart = instant || builderId !== null;
+	const canStart = missing === null && (instant || builderId !== null);
 
 	const doneAt = new Date(now + boosted.durationMs);
 	const costChanged = boosted.cost !== step.cost;
@@ -79,19 +82,21 @@ const StartContent = ({
 					{!instant && <dd className="text-muted text-xs">{text.storedNote}</dd>}
 				</div>
 			</dl>
-			{instant ? (
+			{missing ? (
+				<Note tone="warning">{text.requires[missing.building](missing.level)}</Note>
+			) : instant ? (
 				<Note>{text.instant}</Note>
 			) : freeSlots.length === 0 ? (
-				<Note tone="warning">{text.noFreeBuilder}</Note>
+				<Note tone="warning">{laneText.noneFree}</Note>
 			) : (
 				<>
 					<RadioGroup
-						label={text.builderLabel}
+						label={laneText.label}
 						options={freeSlots.map((slot) => ({ id: String(slot.id), label: `${slot.label}, ${text.free}` }))}
 						value={chosen === null ? "" : String(chosen)}
 						onChange={(id) => setChosen(Number(id))}
 					/>
-					{chosen === null && <p className="text-muted">{text.chooseBuilder}</p>}
+					{chosen === null && <p className="text-muted">{laneText.choose}</p>}
 				</>
 			)}
 		</Dialog>

@@ -2,7 +2,7 @@
 
 import { formatCountdown } from "@/lib/format";
 import { builderText } from "@/lib/messages/builder";
-import { builderLabelFor, readLevel, readUpgrade } from "@/service/upgradeEngine";
+import { laneLabelFor, readLevel, readUpgrade } from "@/service/upgradeEngine";
 import { nextStep } from "@/service/upgradeSteps";
 import { Button } from "@/comps/ui/Button";
 import { ValueStepper } from "@/comps/ui/ValueStepper";
@@ -21,6 +21,8 @@ export const TargetRow = ({
 	prefix,
 	note,
 	hideStepperAtZero = true,
+	unlock,
+	startBlocker,
 	onStart,
 	onFinish,
 	onCancel,
@@ -35,7 +37,7 @@ export const TargetRow = ({
 		name,
 		fromLevel: level,
 		finishesAt,
-		builderLabel: builderLabelFor(builderId),
+		builderLabel: laneLabelFor(target, builderId),
 		step,
 	});
 
@@ -51,7 +53,7 @@ export const TargetRow = ({
 				<span className="flex items-center gap-2">
 					{prefix}
 					{hideStepperAtZero && level === 0 && !running ? (
-						<span className="text-muted">{text.notBuilt}</span>
+						<span className="text-muted">{unlock?.label ?? text.notBuilt}</span>
 					) : (
 						<ValueStepper
 							label={name}
@@ -81,10 +83,19 @@ export const TargetRow = ({
 						{text.cancel}
 					</Button>
 				</div>
+			) : unlock && level === 0 ? (
+				<Button onClick={() => onLevelChange(target, 1)}>{unlock.action}</Button>
 			) : step ? (
-				<Button variant="primary" onClick={() => onStart({ name, fromLevel: level, step }, target)}>
-					{upgradeLabel()}
-				</Button>
+				<span className="flex flex-wrap items-center justify-end gap-2">
+					{startBlocker && <span className="text-muted text-xs">{startBlocker}</span>}
+					<Button
+						variant="primary"
+						disabled={startBlocker !== undefined}
+						onClick={() => onStart({ name, fromLevel: level, step }, target)}
+					>
+						{upgradeLabel()}
+					</Button>
+				</span>
 			) : (
 				<span className="text-muted font-medium">{text.maxed}</span>
 			)}

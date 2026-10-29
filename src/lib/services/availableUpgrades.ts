@@ -14,7 +14,7 @@ import {
 } from "@/lib/utils/upgradeHelpers";
 import type { Playthrough } from "@/types/app";
 import type { AvailableCategory, UpgradeGroup } from "@/types/app/available";
-import type { UpgradeTarget } from "@/types/app/engine";
+import type { BuilderTarget } from "@/types/app/engine";
 import type { BuildingRecordKey } from "@/types/app/game";
 import type { BuilderQueueItem } from "@/types/app/queue";
 import type { UpgradeStep } from "@/types/app/upgrade";
@@ -37,13 +37,13 @@ const keyFor = (buildingId: string, instanceIndex: number, step: UpgradeStep) =>
   `${buildingId}:${instanceIndex}:${step.level}${step.isSupercharge ? ":sc" : ""}`;
 
 /** A running upgrade holds the next level, so the steps that can be queued start after it. */
-const stepsAfterRunning = (village: Playthrough, target: UpgradeTarget): UpgradeStep[] => {
+const stepsAfterRunning = (village: Playthrough, target: BuilderTarget): UpgradeStep[] => {
   const steps = upgradeSteps(village, target);
   return readUpgrade(village, target) ? steps.slice(1) : steps;
 };
 
 interface Source {
-  target: UpgradeTarget;
+  target: BuilderTarget;
   name: string;
   imageUrl: string;
   category: AvailableCategory;
@@ -74,7 +74,7 @@ const buildingSources = (
 ): Source[] =>
   list.flatMap((building) =>
     Array.from({ length: building.instanceCount }, (_, instanceIndex) => ({
-      target: { kind: "building", record, buildingId: building.id, instanceIndex } as UpgradeTarget,
+      target: { kind: "building", record, buildingId: building.id, instanceIndex } as BuilderTarget,
       name: building.name,
       imageUrl: building.imageUrl,
       category,
@@ -96,7 +96,7 @@ export const availableUpgrades = (village: Playthrough): UpgradeGroup[] => {
       ? buildingSources(getGuardiansAtTH(townHall), "defenses", "guardians")
       : []),
     ...getHeroesAtTH(townHall).map((hero) => ({
-      target: { kind: "hero", name: hero.name } as UpgradeTarget,
+      target: { kind: "hero", name: hero.name } as BuilderTarget,
       name: hero.name,
       imageUrl: hero.imageUrl,
       category: "heroes" as const,
@@ -165,7 +165,7 @@ const buildingIdOf = (group: UpgradeGroup): string => {
   }
 };
 
-const instanceIndexOf = (target: UpgradeTarget): number => {
+const instanceIndexOf = (target: BuilderTarget): number => {
   if (target.kind === "building") return target.instanceIndex;
   if (target.kind === "crafted") return target.moduleIndex;
   return 0;

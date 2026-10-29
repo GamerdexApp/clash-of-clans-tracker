@@ -23,6 +23,10 @@ export interface TargetRowProps extends UpgradeHandlers {
   note?: ReactNode;
   /** The level at which the target counts as built, for the Not built text. Defaults to the level 0 check. */
   hideStepperAtZero?: boolean;
+  /** Replaces the Not built text at level 0 and shows a button that sets level 1. */
+  unlock?: { label: string; action: string };
+  /** Disables Upgrade and says why. */
+  startBlocker?: string;
 }
 
 export interface BuildingsTabProps extends UpgradeHandlers {

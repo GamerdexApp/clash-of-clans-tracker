@@ -1,6 +1,6 @@
 import { home } from "clash-of-clans-data";
 
-import { applyBoost, applyBuilderBoostCost, getBuildingUpgradeSteps } from "@/lib/utils/upgradeHelpers";
+import { applyBoost, applyBuilderBoostCost, applyResearchBoostCost, getBuildingUpgradeSteps } from "@/lib/utils/upgradeHelpers";
 import type { Playthrough } from "@/types/app";
 import type {
   BoostPercent,
@@ -9,6 +9,7 @@ import type {
   CompletedUpgrade,
   FinishMethod,
   FinishResult,
+  LaneKind,
   RunningUpgrade,
   StartBlocker,
   UpgradeTarget,
@@ -19,7 +20,9 @@ import type {
   BuildingRecordKey,
   CraftedDefenseData,
   HomeVillageData,
+  ResearchKey,
   TrackedHero,
+  TrackedItem,
   UpgradeState,
 } from "@/types/app/game";
 import type { UpgradeStep } from "@/types/app/upgrade";
@@ -27,8 +30,11 @@ import type { UpgradeStep } from "@/types/app/upgrade";
 const BUILDING_RECORDS: BuildingRecordKey[] = ["defenses", "armyBuildings", "resourceBuildings", "traps"];
 const BUILDER_HUT = "builders-hut";
 const BOB_HUT = "bobs-hut";
+export const LABORATORY_SLOT_ID = 1;
+export const PET_HOUSE_SLOT_ID = 1;
 export const BOB_SLOT_ID = 6;
 export const GOBLIN_SLOT_ID = 7;
+const RESEARCH_RECORDS: ResearchKey[] = ["troops", "spells", "siegeMachines"];
 const HUT_SLOT_COUNT = 5;
 const WEAPON_TOWN_HALL = 17;
 const MODULES_PER_CRAFTED_DEFENSE = 3;
@@ -65,6 +71,10 @@ export const readUpgrade = (village: Playthrough, target: UpgradeTarget): Upgrad
       return hv.townHallWeaponUpgrade;
     case "crafted":
       return craftedUpgrade(hv.craftedDefenses[target.defenseId], target.moduleIndex);
+    case "research":
+      return hv[target.record].find((item) => item.name === target.name)?.upgrade;
+    case "pet":
+      return hv.pets.find((pet) => pet.name === target.name)?.upgrade;
   }
 };
 
@@ -81,6 +91,10 @@ export const readLevel = (village: Playthrough, target: UpgradeTarget): number =
       return hv.townHallWeaponLevel ?? 0;
     case "crafted":
       return hv.craftedDefenses[target.defenseId]?.modules[target.moduleIndex] ?? 0;
+    case "research":
+      return hv[target.record].find((item) => item.name === target.name)?.level ?? 0;
+    case "pet":
+      return hv.pets.find((pet) => pet.name === target.name)?.level ?? 0;
   }
 };
 
@@ -123,6 +137,12 @@ const mapHero = (hv: HomeVillageData, name: string, change: (hero: TrackedHero) 
   return { ...hv, heroes: heroes.map((hero) => (hero.name === name ? change(hero) : hero)) };
 };
 
+/** An item the player has not started tracking is added at level 0 when it first changes. */
+const mapTracked = (items: TrackedItem[], name: string, change: (item: TrackedItem) => TrackedItem): TrackedItem[] => {
+  const present = items.some((item) => item.name === name) ? items : [...items, { name, level: 0 }];
+  return present.map((item) => (item.name === name ? change(item) : item));
+};
+
 const writeUpgrade = (village: Playthrough, target: UpgradeTarget, upgrade: UpgradeState | undefined): Playthrough =>
   withHome(village, (hv) => {
     switch (target.kind) {
@@ -136,6 +156,10 @@ const writeUpgrade = (village: Playthrough, target: UpgradeTarget, upgrade: Upgr
         return { ...hv, townHallWeaponUpgrade: upgrade };
       case "crafted":
         return writeCraftedModule(hv, target, (level) => ({ level, upgrade }));
+      case "research":
+        return { ...hv, [target.record]: mapTracked(hv[target.record], target.name, (item) => ({ ...item, upgrade })) };
+      case "pet":
+        return { ...hv, pets: mapTracked(hv.pets, target.name, (pet) => ({ ...pet, upgrade })) };
     }
   });
 
@@ -165,10 +189,63 @@ export const runningUpgrades = (village: Playthrough): RunningUpgrade[] => {
   return found;
 };
 
+/** Every research and pet upgrade that holds the Laboratory, the Goblin Researcher or the Pet House. */
+export const runningResearch = (village: Playthrough): RunningUpgrade[] => {
+  const hv = homeOf(village);
+  return RESEARCH_RECORDS.flatMap((record) =>
+    hv[record].flatMap((item) =>
+      item.upgrade ? [{ target: { kind: "research" as const, record, name: item.name }, upgrade: item.upgrade }] : [],
+    ),
+  );
+};
+
+export const runningPets = (village: Playthrough): RunningUpgrade[] =>
+  homeOf(village).pets.flatMap((pet) =>
+    pet.upgrade ? [{ target: { kind: "pet" as const, name: pet.name }, upgrade: pet.upgrade }] : [],
+  );
+
+export const laneKindOf = (target: UpgradeTarget): LaneKind => {
+  if (target.kind === "research") return "research";
+  if (target.kind === "pet") return "pet";
+  return "builder";
+};
+
 export const builderLabelFor = (id: number): string => {
   if (id === BOB_SLOT_ID) return "B.O.B";
   if (id === GOBLIN_SLOT_ID) return "Goblin Builder";
   return `Builder ${id}`;
+};
+
+export const laneLabelFor = (target: UpgradeTarget, id: number): string => {
+  if (target.kind === "research") return id === GOBLIN_SLOT_ID ? "Goblin Researcher" : "Laboratory";
+  if (target.kind === "pet") return "Pet House";
+  return builderLabelFor(id);
+};
+
+/** The Laboratory lane, plus the Goblin Researcher lane while its setting is on. */
+export const researchSlots = (village: Playthrough, goblinResearchEnabled: boolean): BuilderSlots => {
+  const running = runningResearch(village);
+  const slotIds = goblinResearchEnabled ? [LABORATORY_SLOT_ID, GOBLIN_SLOT_ID] : [LABORATORY_SLOT_ID];
+  const slots: BuilderSlotState[] = slotIds.map((id) => ({
+    id,
+    label: id === GOBLIN_SLOT_ID ? "Goblin Researcher" : "Laboratory",
+    kind: id === GOBLIN_SLOT_ID ? "goblin" : "laboratory",
+    running: running.find((entry) => entry.upgrade.builderId === id) ?? null,
+  }));
+  return { slots, unassigned: running.filter((entry) => !slotIds.includes(entry.upgrade.builderId)) };
+};
+
+export const petSlots = (village: Playthrough): BuilderSlots => {
+  const running = runningPets(village);
+  const slots: BuilderSlotState[] = [
+    {
+      id: PET_HOUSE_SLOT_ID,
+      label: "Pet House",
+      kind: "petHouse",
+      running: running.find((entry) => entry.upgrade.builderId === PET_HOUSE_SLOT_ID) ?? null,
+    },
+  ];
+  return { slots, unassigned: running.filter((entry) => entry.upgrade.builderId !== PET_HOUSE_SLOT_ID) };
 };
 
 /**
@@ -199,10 +276,37 @@ export const builderSlots = (village: Playthrough, goblinBuilderEnabled: boolean
 export const freeBuilderCount = ({ slots }: BuilderSlots) => slots.filter((slot) => slot.running === null).length;
 
 /** The time and cost a player pays with the boost on. Gem costs are never discounted. */
-export const boostedStep = (step: UpgradeStep, boostPercent: BoostPercent): { durationMs: number; cost: number } => ({
-  durationMs: applyBoost(step.durationMs, boostPercent),
-  cost: step.costResource === "Gems" ? step.cost : applyBuilderBoostCost(step.cost, boostPercent),
-});
+export const boostedStep = (
+  step: UpgradeStep,
+  boostPercent: BoostPercent,
+  lane: LaneKind = "builder",
+): { durationMs: number; cost: number } => {
+  const boostCost = lane === "builder" ? applyBuilderBoostCost : applyResearchBoostCost;
+  return {
+    durationMs: applyBoost(step.durationMs, boostPercent),
+    cost: step.costResource === "Gems" ? step.cost : boostCost(step.cost, boostPercent),
+  };
+};
+
+export interface RequirementBlock {
+  building: "laboratory" | "pet-house";
+  level: number;
+  builtLevel: number;
+}
+
+/**
+ * A step waits on the Laboratory or Pet House level it names. A village that tracks no Laboratory
+ * is not blocked, because research data can come from a player lookup without building levels. A
+ * Pet House is always required.
+ */
+export const requirementBlock = (village: Playthrough, step: UpgradeStep): RequirementBlock | null => {
+  const { requires } = step;
+  if (!requires) return null;
+  const builtLevel = homeOf(village).armyBuildings[requires.building]?.[0]?.level ?? 0;
+  const untrackedLaboratory = requires.building === "laboratory" && builtLevel === 0;
+  if (untrackedLaboratory || builtLevel >= requires.level) return null;
+  return { building: requires.building, level: requires.level, builtLevel };
+};
 
 /** A build with no build time finishes the moment it starts and never holds a builder. */
 export const isInstantStep = (step: UpgradeStep) => step.durationMs === 0;
@@ -305,6 +409,20 @@ export const completeUpgrade = (village: Playthrough, target: UpgradeTarget, now
       return withHome(village, (hv) =>
         writeCraftedModule(hv, target, (level) => ({ level: level + 1, upgrade: undefined })),
       );
+    case "research":
+      return withHome(village, (hv) => ({
+        ...hv,
+        [target.record]: mapTracked(hv[target.record], target.name, (item) => ({
+          ...item,
+          level: item.level + 1,
+          upgrade: undefined,
+        })),
+      }));
+    case "pet":
+      return withHome(village, (hv) => ({
+        ...hv,
+        pets: mapTracked(hv.pets, target.name, (pet) => ({ ...pet, level: pet.level + 1, upgrade: undefined })),
+      }));
   }
 };
 
@@ -329,7 +447,7 @@ export const completeExpiredUpgrades = (
   village: Playthrough,
   now: Date,
 ): { village: Playthrough; completed: CompletedUpgrade[] } => {
-  const expired = runningUpgrades(village)
+  const expired = [...runningUpgrades(village), ...runningResearch(village), ...runningPets(village)]
     .filter(({ upgrade }) => Date.parse(upgrade.finishesAt) <= now.getTime())
     .sort((a, b) => Date.parse(a.upgrade.finishesAt) - Date.parse(b.upgrade.finishesAt));
 
@@ -376,5 +494,15 @@ export const setLevel = (village: Playthrough, target: UpgradeTarget, level: num
       return withHome(village, (hv) => ({ ...hv, townHallWeaponLevel: next }));
     case "crafted":
       return withHome(village, (hv) => writeCraftedModule(hv, target, (_level, upgrade) => ({ level: next, upgrade })));
+    case "research":
+      return withHome(village, (hv) => ({
+        ...hv,
+        [target.record]: mapTracked(hv[target.record], target.name, (item) => ({ ...item, level: next })),
+      }));
+    case "pet":
+      return withHome(village, (hv) => ({
+        ...hv,
+        pets: mapTracked(hv.pets, target.name, (pet) => ({ ...pet, level: next })),
+      }));
   }
 };

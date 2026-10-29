@@ -230,6 +230,7 @@ export const getResearchUpgradeSteps = (
       costResource: l.researchCostResource ?? "Elixir",
       buildTime: normalizeTime(l.researchTime ?? {}),
       durationMs: timeToDurationMs(l.researchTime ?? {}),
+      ...(l.laboratoryRequired ? { requires: { building: "laboratory" as const, level: l.laboratoryRequired } } : {}),
       // data package sometimes maps wrong level number in image filename; override with actual level
       imageUrl: toPublicImageUrl(l.images?.normal?.replace(/level-\d+\.png$/, `level-${l.level}.png`)),
     }));
@@ -241,6 +242,7 @@ type RawPetLevel = {
   upgradeCost?: number;
   upgradeCostResource?: string;
   upgradeTime?: RawBuildTime;
+  petHouseLevelRequired?: number;
   images?: { normal?: string };
 };
 
@@ -262,6 +264,7 @@ export const getPetUpgradeSteps = (name: string, currentLevel: number): UpgradeS
       costResource: l.upgradeCostResource ?? "Dark Elixir",
       buildTime: normalizeTime(l.upgradeTime ?? {}),
       durationMs: timeToDurationMs(l.upgradeTime ?? {}),
+      ...(l.petHouseLevelRequired ? { requires: { building: "pet-house" as const, level: l.petHouseLevelRequired } } : {}),
       imageUrl: toPublicImageUrl(l.images?.normal),
     }));
 }
