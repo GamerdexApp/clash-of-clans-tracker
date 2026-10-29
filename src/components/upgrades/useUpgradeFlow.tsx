@@ -27,7 +27,7 @@ export const useUpgradeFlow = (
 	const boosts = goldPassBoosts(village, new Date(now));
 	const boostFor = (kind: UpgradeLaneKind): BoostPercent => {
 		if (kind === "builder") return boosts.builder;
-		return kind === "bbBuilder" ? 0 : boosts.research;
+		return kind === "bbBuilder" || kind === "bbResearch" ? 0 : boosts.research;
 	};
 
 	const handlers: UpgradeHandlers = {

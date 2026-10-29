@@ -38,6 +38,11 @@ export const upgradeText = {
         choose: "Choose a builder to start.",
         noneFree: "Both builders are busy. Cancel or finish an upgrade first.",
       },
+      bbResearch: {
+        label: "Star Laboratory",
+        choose: "Choose the Star Laboratory to start.",
+        noneFree: "The Star Laboratory is busy. Cancel or finish the research first.",
+      },
       pet: {
         label: "Pet House",
         choose: "Choose the Pet House to start.",
@@ -47,6 +52,7 @@ export const upgradeText = {
     requires: {
       laboratory: (level: number) => `Requires Laboratory ${level}`,
       "pet-house": (level: number) => `Requires Pet House ${level}`,
+      "star-laboratory": (level: number) => `Requires Star Laboratory ${level}`,
       noPetHouse: "Build a Pet House first",
     },
     free: "Free",

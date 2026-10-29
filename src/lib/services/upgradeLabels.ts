@@ -23,6 +23,8 @@ export const targetName = (target: UpgradeTarget): string => {
       return "Clock Tower";
     case "builderHall":
       return "Builder Hall";
+    case "bbTroop":
+      return target.name;
     case "crafted":
       return `${getCraftedDefenseName(target.defenseId)}, ${getCraftedDefenseModuleName(target.defenseId, target.moduleIndex)}`;
   }

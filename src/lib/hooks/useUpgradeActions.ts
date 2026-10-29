@@ -19,7 +19,7 @@ import type { UpgradeStep } from "@/types/app/upgrade";
 const boostFor = (target: UpgradeTarget, boosts: ReturnType<typeof goldPassBoosts>): BoostPercent => {
   const lane = laneKindOf(target);
   if (lane === "builder") return boosts.builder;
-  return lane === "bbBuilder" ? 0 : boosts.research;
+  return lane === "bbBuilder" || lane === "bbResearch" ? 0 : boosts.research;
 };
 
 interface UpgradeActions {

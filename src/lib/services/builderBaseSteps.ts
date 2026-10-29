@@ -67,8 +67,28 @@ const buildingsOf = (record: BuildingRecordKey): RawBuilding[] => {
   }
 };
 
+interface RawTroopLevel {
+  level: number;
+  researchCost?: number;
+  researchCostResource?: string;
+  researchTime?: RawTime;
+  starLabRequired?: number;
+  images?: { normal?: string };
+}
+
+interface RawTroop {
+  id: string;
+  name: string;
+  builderBarracksRequired: number;
+  images?: { icon?: string };
+  levels: RawTroopLevel[];
+}
+
 const heroes = catalog.heroes().get() as unknown as RawHero[];
 const clockTower = (catalog.otherBuildings().get() as unknown as RawBuilding[]).find((building) => building.id === "clock-tower");
+const troops = catalog.troops().get() as unknown as RawTroop[];
+const starLaboratory = (catalog.armyBuildings().get() as unknown as RawBuilding[]).find((building) => building.id === "star-laboratory");
+const barracks = (catalog.armyBuildings().get() as unknown as RawBuilding[]).find((building) => building.id === "builder-barracks");
 const builderHall = (catalog.builderHall().get() as unknown as RawBuilding[])[0];
 
 const stepFrom = (
@@ -143,4 +163,53 @@ export const bbBuildingName = (buildingId: string): string => {
     if (found) return found.name;
   }
   return buildingId;
+};
+
+/** The highest Star Laboratory level this Builder Hall allows. It caps every troop. */
+const starLaboratoryMaxAt = (builderHallLevel: number): number =>
+  (starLaboratory?.levels ?? []).filter((level) => (level.builderHallRequired ?? 0) <= builderHallLevel).at(-1)?.level ?? 0;
+
+export interface BuilderBaseTroop {
+  id: string;
+  name: string;
+  imageUrl: string;
+  /** The level a troop starts at once unlocked. Some troops start above level 1. */
+  firstLevel: number;
+  /** The highest level this Builder Hall allows, or 0 when the troop is not available yet. */
+  maxLevel: number;
+  barracksRequired: number;
+  /** The Builder Hall the needed Builder Barracks level comes with. */
+  builderHallRequired: number;
+}
+
+/** Every troop, with what it needs. A troop whose Builder Barracks level is out of reach has max level 0. */
+export const bbTroopCatalog = (builderHallLevel: number): BuilderBaseTroop[] => {
+  const starMax = starLaboratoryMaxAt(builderHallLevel);
+  return troops.map((troop) => {
+    const hallRequired = barracks?.levels.find((level) => level.level === troop.builderBarracksRequired)?.builderHallRequired ?? 0;
+    const reachable = hallRequired <= builderHallLevel;
+    const allowed = troop.levels.filter((level) => (level.starLabRequired ?? 0) <= starMax);
+    return {
+      id: troop.id,
+      name: troop.name,
+      imageUrl: troop.images?.icon ? toPublicImageUrl(troop.images.icon) : "",
+      firstLevel: troop.levels[0]?.level ?? 1,
+      maxLevel: reachable ? (allowed.at(-1)?.level ?? 0) : 0,
+      barracksRequired: troop.builderBarracksRequired,
+      builderHallRequired: hallRequired,
+    };
+  });
+};
+
+/** Research steps above the current level, up to the Builder Hall cap. A level 0 troop starts at its free first level. */
+export const bbTroopSteps = (troopName: string, level: number, builderHallLevel: number): UpgradeStep[] => {
+  const troop = troops.find((candidate) => candidate.name === troopName);
+  if (!troop) return [];
+  const starMax = starLaboratoryMaxAt(builderHallLevel);
+  return troop.levels
+    .filter((candidate) => candidate.level > level && (candidate.starLabRequired ?? 0) <= starMax)
+    .map((candidate) => ({
+      ...stepFrom(candidate.level, candidate.researchCost, candidate.researchCostResource, candidate.researchTime, candidate.images?.normal),
+      ...(candidate.starLabRequired ? { requires: { building: "star-laboratory" as const, level: candidate.starLabRequired } } : {}),
+    }));
 };

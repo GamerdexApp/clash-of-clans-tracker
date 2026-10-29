@@ -1,5 +1,5 @@
 import { countActivePets, countActiveResearch } from "@/lib/utils/upgradeHelpers";
-import { runningBuilderBase, runningUpgrades } from "@/service/upgradeEngine";
+import { runningBBTroops, runningBuilderBase, runningUpgrades } from "@/service/upgradeEngine";
 import type { NavItemId } from "@/data/nav";
 import type { Playthrough } from "@/types/app";
 
@@ -11,4 +11,5 @@ export const navCounts = (village: Playthrough): NavCounts => ({
   research: countActiveResearch(village.data.homeVillage),
   pets: countActivePets(village.data.homeVillage),
   builderBaseUpgrades: runningBuilderBase(village).length,
+  builderBaseTroops: runningBBTroops(village).length,
 });

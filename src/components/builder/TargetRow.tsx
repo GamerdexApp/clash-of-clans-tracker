@@ -84,7 +84,7 @@ export const TargetRow = ({
 					</Button>
 				</div>
 			) : unlock && level === 0 ? (
-				<Button onClick={() => onLevelChange(target, 1)}>{unlock.action}</Button>
+				<Button onClick={() => onLevelChange(target, unlock.level ?? 1)}>{unlock.action}</Button>
 			) : step ? (
 				<span className="flex flex-wrap items-center justify-end gap-2">
 					{startBlocker && <span className="text-muted text-xs">{startBlocker}</span>}

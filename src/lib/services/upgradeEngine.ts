@@ -91,6 +91,8 @@ export const readUpgrade = (village: Playthrough, target: UpgradeTarget): Upgrad
       return village.bbExtras?.clockTower?.upgrade;
     case "builderHall":
       return village.bbExtras?.builderHallUpgrade;
+    case "bbTroop":
+      return village.data.builderBase.troops.find((troop) => troop.name === target.name)?.upgrade;
   }
 };
 
@@ -119,6 +121,8 @@ export const readLevel = (village: Playthrough, target: UpgradeTarget): number =
       return village.bbExtras?.clockTower?.level ?? 0;
     case "builderHall":
       return village.data.builderBase.builderHallLevel;
+    case "bbTroop":
+      return village.data.builderBase.troops.find((troop) => troop.name === target.name)?.level ?? 0;
   }
 };
 
@@ -192,6 +196,11 @@ const writeUpgrade = (village: Playthrough, target: UpgradeTarget, upgrade: Upgr
       return withClockTower(village, (clockTower) => ({ ...clockTower, upgrade }));
     case "builderHall":
       return { ...village, bbExtras: { ...village.bbExtras, builderHallUpgrade: upgrade } };
+    case "bbTroop":
+      return withBuilderBase(village, (bb) => ({
+        ...bb,
+        troops: mapTracked(bb.troops, target.name, (troop) => ({ ...troop, upgrade })),
+      }));
     default:
       return withHome(village, (hv) => writeHomeUpgrade(hv, target, upgrade));
   }
@@ -199,7 +208,7 @@ const writeUpgrade = (village: Playthrough, target: UpgradeTarget, upgrade: Upgr
 
 const writeHomeUpgrade = (
   hv: HomeVillageData,
-  target: Exclude<UpgradeTarget, { kind: "bbBuilding" | "bbHero" | "clockTower" | "builderHall" }>,
+  target: Exclude<UpgradeTarget, { kind: "bbBuilding" | "bbHero" | "clockTower" | "builderHall" | "bbTroop" }>,
   upgrade: UpgradeState | undefined,
 ): HomeVillageData => {
   switch (target.kind) {
@@ -281,7 +290,14 @@ export const runningBuilderBase = (village: Playthrough): RunningUpgrade[] => {
   return found;
 };
 
+/** Every Builder Base troop research. They wait on the Star Laboratory, not on a builder. */
+export const runningBBTroops = (village: Playthrough): RunningUpgrade[] =>
+  village.data.builderBase.troops.flatMap((troop) =>
+    troop.upgrade ? [{ target: { kind: "bbTroop" as const, name: troop.name }, upgrade: troop.upgrade }] : [],
+  );
+
 export const laneKindOf = (target: UpgradeTarget): UpgradeLaneKind => {
+  if (target.kind === "bbTroop") return "bbResearch";
   if (target.kind === "bbBuilding" || target.kind === "bbHero" || target.kind === "clockTower" || target.kind === "builderHall") {
     return "bbBuilder";
   }
@@ -315,6 +331,7 @@ const fillSlots = (
 };
 
 export const laneLabelFor = (target: UpgradeTarget, id: number): string => {
+  if (target.kind === "bbTroop") return "Star Laboratory";
   if (laneKindOf(target) === "bbBuilder") return `Builder ${id}`;
   if (target.kind === "research") return id === GOBLIN_SLOT_ID ? "Goblin Researcher" : "Laboratory";
   if (target.kind === "pet") return "Pet House";
@@ -341,6 +358,15 @@ export const bbBuilderSlots = (village: Playthrough): BuilderSlots =>
   fillSlots(
     BB_SLOT_IDS.map((id) => ({ id, label: `Builder ${id}`, kind: "builderBase" as const })),
     runningBuilderBase(village),
+  );
+
+const STAR_LABORATORY_SLOT_ID = 1;
+
+/** The Star Laboratory researches one troop at a time. */
+export const bbResearchSlots = (village: Playthrough): BuilderSlots =>
+  fillSlots(
+    [{ id: STAR_LABORATORY_SLOT_ID, label: "Star Laboratory", kind: "starLaboratory" as const }],
+    runningBBTroops(village),
   );
 
 export const petSlots = (village: Playthrough): BuilderSlots =>
@@ -406,7 +432,7 @@ export const boostedStep = (
   boostPercent: BoostPercent,
   lane: UpgradeLaneKind = "builder",
 ): { durationMs: number; cost: number } => {
-  if (lane === "bbBuilder") return { durationMs: step.durationMs, cost: step.cost };
+  if (lane === "bbBuilder" || lane === "bbResearch") return { durationMs: step.durationMs, cost: step.cost };
   const boostCost = lane === "builder" ? applyBuilderBoostCost : applyResearchBoostCost;
   return {
     durationMs: applyBoost(step.durationMs, boostPercent),
@@ -415,21 +441,23 @@ export const boostedStep = (
 };
 
 export interface RequirementBlock {
-  building: "laboratory" | "pet-house";
+  building: "laboratory" | "pet-house" | "star-laboratory";
   level: number;
   builtLevel: number;
 }
 
 /**
- * A step waits on the Laboratory or Pet House level it names. A village that tracks no Laboratory
- * is not blocked, because research data can come from a player lookup without building levels. A
- * Pet House is always required.
+ * A step waits on the Laboratory, Star Laboratory or Pet House level it names. A village that tracks
+ * no Laboratory or Star Laboratory is not blocked, because research data can come from a player
+ * lookup without building levels. A Pet House is always required.
  */
 export const requirementBlock = (village: Playthrough, step: UpgradeStep): RequirementBlock | null => {
   const { requires } = step;
   if (!requires) return null;
-  const builtLevel = homeOf(village).armyBuildings[requires.building]?.[0]?.level ?? 0;
-  const untrackedLaboratory = requires.building === "laboratory" && builtLevel === 0;
+  const buildings =
+    requires.building === "star-laboratory" ? village.data.builderBase.armyBuildings : homeOf(village).armyBuildings;
+  const builtLevel = buildings[requires.building]?.[0]?.level ?? 0;
+  const untrackedLaboratory = requires.building !== "pet-house" && builtLevel === 0;
   if (untrackedLaboratory || builtLevel >= requires.level) return null;
   return { building: requires.building, level: requires.level, builtLevel };
 };
@@ -565,6 +593,11 @@ export const completeUpgrade = (village: Playthrough, target: UpgradeTarget, now
         bbExtras: { ...village.bbExtras, builderHallUpgrade: undefined },
         bhChangedAt: startOfUtcDay(now),
       };
+    case "bbTroop":
+      return withBuilderBase(village, (bb) => ({
+        ...bb,
+        troops: mapTracked(bb.troops, target.name, (troop) => ({ ...troop, level: troop.level + 1, upgrade: undefined })),
+      }));
   }
 };
 
@@ -594,6 +627,7 @@ export const completeExpiredUpgrades = (
     ...runningResearch(village),
     ...runningPets(village),
     ...runningBuilderBase(village),
+    ...runningBBTroops(village),
   ]
     .filter(({ upgrade }) => Date.parse(upgrade.finishesAt) <= now.getTime())
     .sort((a, b) => Date.parse(a.upgrade.finishesAt) - Date.parse(b.upgrade.finishesAt));
@@ -662,5 +696,10 @@ export const setLevel = (village: Playthrough, target: UpgradeTarget, level: num
         ...withBuilderBase(village, (bb) => ({ ...bb, builderHallLevel: Math.min(next, MAX_BUILDER_HALL) })),
         bhChangedAt: startOfUtcDay(now),
       };
+    case "bbTroop":
+      return withBuilderBase(village, (bb) => ({
+        ...bb,
+        troops: mapTracked(bb.troops, target.name, (troop) => ({ ...troop, level: next })),
+      }));
   }
 };

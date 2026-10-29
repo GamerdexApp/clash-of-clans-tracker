@@ -80,7 +80,7 @@ const StartContent = ({
 					<dt className="text-muted text-xs">{text.doneAt}</dt>
 					<dd className="font-mono font-medium">{instant ? "Now" : formatFinishTime(doneAt)}</dd>
 					{!instant && (
-						<dd className="text-muted text-xs">{lane === "bbBuilder" ? text.storedNoteUnboosted : text.storedNote}</dd>
+						<dd className="text-muted text-xs">{lane === "bbBuilder" || lane === "bbResearch" ? text.storedNoteUnboosted : text.storedNote}</dd>
 					)}
 				</div>
 			</dl>

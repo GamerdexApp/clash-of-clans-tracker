@@ -24,7 +24,7 @@ export interface TargetRowProps extends UpgradeHandlers {
   /** The level at which the target counts as built, for the Not built text. Defaults to the level 0 check. */
   hideStepperAtZero?: boolean;
   /** Replaces the Not built text at level 0 and shows a button that sets level 1. */
-  unlock?: { label: string; action: string };
+  unlock?: { label: string; action: string; /** The level the button sets. Defaults to 1. */ level?: number };
   /** Disables Upgrade and says why. */
   startBlocker?: string;
 }
