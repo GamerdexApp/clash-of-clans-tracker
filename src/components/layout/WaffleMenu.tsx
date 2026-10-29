@@ -24,7 +24,7 @@ const APP_ITEMS: AppItem[] = [
     id: "mass-edit-capital",
     label: "Mass Edit Clan Capital",
     image: "/images/clan-capital/halls/capital-hall/normal/level-10.png",
-    href: "/mass-edit/capital",
+    href: "/mass-edit?scope=capital",
     minTH: 3,
   },
   {

@@ -9,6 +9,8 @@ import {
   applyChanges,
   builderCategories,
   builderProfileRows,
+  capitalCategories,
+  capitalProfileRows,
   changedRows,
   homeCategories,
   scopeOf,
@@ -22,7 +24,7 @@ import type { Playthrough } from "@/types/app";
 
 export interface MassEditDraft {
   draft: Playthrough;
-  categories: Record<"home" | "builder", MassCategory[]>;
+  categories: Record<MassScope, MassCategory[]>;
   changes: RowChange[];
   /** The unsaved changes of one scope. */
   countFor: (scope: MassScope) => number;
@@ -40,12 +42,15 @@ interface DraftState {
 }
 
 /** The rows of both scopes. The Builder Base rows of the base and of the draft both count, because the Builder Hall decides which rows exist. */
-const rowsToCompare = (base: Playthrough, categories: Record<"home" | "builder", MassCategory[]>): MassRow[] => {
+const rowsToCompare = (base: Playthrough, categories: Record<MassScope, MassCategory[]>): MassRow[] => {
   const all = [
     ...allRows(categories.home),
     ...allRows(builderCategories(base)),
     ...allRows(categories.builder),
     ...builderProfileRows(),
+    ...allRows(capitalCategories(base)),
+    ...allRows(categories.capital),
+    ...capitalProfileRows(),
   ];
   return [...new Map(all.map((row) => [row.key, row])).values()];
 };
@@ -60,7 +65,7 @@ export const useMassEditDraft = (village: Playthrough): MassEditDraft => {
   const showToast = useToast();
   const [state, setState] = useState<DraftState>({ source: village, base: village, draft: village });
   const categories = useMemo(
-    () => ({ home: homeCategories(state.base), builder: builderCategories(state.draft) }),
+    () => ({ home: homeCategories(state.base), builder: builderCategories(state.draft), capital: capitalCategories(state.draft) }),
     [state.base, state.draft],
   );
   const rows = useMemo(() => rowsToCompare(state.base, categories), [state.base, categories]);

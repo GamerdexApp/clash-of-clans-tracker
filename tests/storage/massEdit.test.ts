@@ -6,6 +6,8 @@ import {
   applyChanges,
   builderCategories,
   builderProfileRows,
+  capitalCategories,
+  capitalProfileRows,
   categoryProgress,
   changedRows,
   homeCategories,
@@ -199,5 +201,75 @@ describe("Mass edit Builder Base scope", () => {
     draft = writeRow(draft, { kind: "upgrade", target: { kind: "builderHall" } }, 9, NOW);
     const changes = changedRows(builderProfileRows(), village, draft);
     expect(changes.map((change) => change.row.label)).toEqual(expect.arrayContaining(["Trophies", "Builder Hall level", "Best trophies"]));
+  });
+});
+
+describe("Mass edit Clan Capital scope", () => {
+  const capitalVillage = (capitalHall: number, district = 0): Playthrough => {
+    const village = structuredClone(freshVillage("v", "V"));
+    village.data.homeVillage.townHallLevel = 12;
+    village.data.clanCapital.capitalPeak.hallLevel = capitalHall;
+    village.data.clanCapital.barbarianCamp.hallLevel = district;
+    return village;
+  };
+  const zone = (village: Playthrough, id: string) => capitalCategories(village).find((entry) => entry.id === id)!;
+
+  it("lists Capital Peak, eight districts, troops and spells", () => {
+    expect(capitalCategories(capitalVillage(5)).map((entry) => entry.id)).toEqual([
+      "capitalPeak", "barbarianCamp", "wizardValley", "balloonLagoon", "buildersWorkshop", "dragonCliffs", "golemQuarry", "skeletonPark", "goblinMines", "troops", "spells",
+    ]);
+  });
+
+  it("dims a district until the Capital Hall opens it", () => {
+    expect(zone(capitalVillage(1), "wizardValley").requirement).toBe("Capital Hall 3");
+    expect(zone(capitalVillage(3), "wizardValley").requirement).toBeUndefined();
+  });
+
+  it("splits a zone into sections and counts them together", () => {
+    const peak = zone(capitalVillage(5), "capitalPeak");
+    expect(peak.parts?.map((part) => part.id)).toContain("defenses");
+    expect(peak.rows.length).toBe(peak.parts!.reduce((sum, part) => sum + part.rows.length, 0));
+  });
+
+  it("writes a building level and reports the change in the capital scope", () => {
+    const village = capitalVillage(5);
+    const row = zone(village, "capitalPeak").parts![0].rows[0];
+    const draft = writeRow(village, row.ref, 2, NOW);
+    expect(readRow(draft, row.ref)).toBe(2);
+    expect(scopeOf(row.ref)).toBe("capital");
+  });
+
+  it("clamps zone walls to the zone total", () => {
+    const village = capitalVillage(5);
+    const walls = zone(village, "capitalPeak").parts!.find((part) => part.isWalls);
+    if (!walls) return;
+    const draft = writeRow(village, walls.rows[0].ref, 1_000_000, NOW);
+    expect(readRow(draft, walls.rows[0].ref)).toBe(rowMax(village, walls.rows[0]));
+  });
+
+  it("lists only the troops a District Hall unlocks", () => {
+    const none = zone(capitalVillage(5, 0), "troops").rows.length;
+    const some = zone(capitalVillage(5, 2), "troops").rows.length;
+    expect(some).toBeGreaterThanOrEqual(none);
+  });
+
+  it("counts the zone halls and contributions as changes", () => {
+    const village = capitalVillage(5);
+    let draft = writeRow(village, { kind: "capitalHall", zone: "barbarianCamp" }, 2, NOW);
+    draft = writeRow(draft, { kind: "profile", field: "contributions" }, 5000, NOW);
+    expect(changedRows(capitalProfileRows(), village, draft).map((change) => change.row.label)).toEqual(
+      expect.arrayContaining(["Barbarian Camp District Hall", "Contributions"]),
+    );
+  });
+
+  it("applies a hall change before the rows that depend on it", () => {
+    const village = capitalVillage(5, 1);
+    const row = zone(village, "barbarianCamp").parts![0].rows[0];
+    let draft = writeRow(village, { kind: "capitalHall", zone: "barbarianCamp" }, 2, NOW);
+    draft = writeRow(draft, row.ref, 2, NOW);
+    const changes = changedRows([...allRows(capitalCategories(draft)), ...capitalProfileRows()], village, draft);
+    const saved = applyChanges(village, changes, NOW);
+    expect(saved.data.clanCapital.barbarianCamp.hallLevel).toBe(2);
+    expect(readRow(saved, row.ref)).toBe(2);
   });
 });

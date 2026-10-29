@@ -20,7 +20,7 @@ interface BulkToolbarProps {
 	rows: MassRow[];
 	selected: Set<string>;
 	/** The hall name and level that cap the rows of this scope. */
-	hall: { name: string; level: number };
+	hall?: { name: string; level: number };
 	onSelectAll: (selected: boolean) => void;
 	onClearSelection: () => void;
 	onAction: (action: ToolbarAction, rows: MassRow[]) => void;
@@ -33,7 +33,7 @@ export const BulkToolbar = ({ categoryLabel, rows, selected, hall: hallInfo, onS
 	const chosen = rows.filter((row) => selected.has(row.key));
 	const target = chosen.length > 0 ? chosen : rows;
 	const hasSelection = chosen.length > 0;
-	const halls = Array.from({ length: hallInfo.level }, (_, index) => hallInfo.level - index);
+	const halls = Array.from({ length: hallInfo?.level ?? 0 }, (_, index) => (hallInfo?.level ?? 0) - index);
 
 	return (
 		<div role="group" aria-label={text.label} className="flex flex-col gap-3">
@@ -73,6 +73,7 @@ export const BulkToolbar = ({ categoryLabel, rows, selected, hall: hallInfo, onS
 						{text.applyLevel(chosen.length)}
 					</Button>
 				</div>
+				{hallInfo && (
 				<Field label={text.hallLabel}>
 					<Select
 						value={hall}
@@ -82,14 +83,15 @@ export const BulkToolbar = ({ categoryLabel, rows, selected, hall: hallInfo, onS
 							if (next) onAction({ kind: "hall", hall: next }, target);
 						}}
 					>
-						<option value="">{text.hallPlaceholder(hallInfo.name)}</option>
+						<option value="">{text.hallPlaceholder(hallInfo!.name)}</option>
 						{halls.map((option) => (
 							<option key={option} value={option}>
-								{option === hallInfo.level ? text.hallCurrent(hallInfo.name, option) : text.hallOption(hallInfo.name, option)}
+								{option === hallInfo!.level ? text.hallCurrent(hallInfo!.name, option) : text.hallOption(hallInfo!.name, option)}
 							</option>
 						))}
 					</Select>
 				</Field>
+				)}
 			</div>
 		</div>
 	);
