@@ -14,7 +14,7 @@ const HeroesUpgradePage = () => {
 
   useEffect(() => {
     if (!isLoaded) return;
-    if (!activePlaythrough) router.push("/playthrough/list");
+    if (!activePlaythrough) router.push("/villages");
   }, [isLoaded, activePlaythrough, router]);
 
   const hv = activePlaythrough?.data.homeVillage;

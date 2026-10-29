@@ -39,7 +39,7 @@ const MassEditCapitalPage = () => {
 
   useEffect(() => {
     if (!isLoaded) return;
-    if (!activePlaythrough) router.push("/playthrough/list");
+    if (!activePlaythrough) router.push("/villages");
   }, [isLoaded, activePlaythrough, router]);
 
   const cc = activePlaythrough?.data.clanCapital;

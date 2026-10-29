@@ -93,6 +93,9 @@ describe("editing", () => {
 
     const second = appData.addPlaythrough(first, freshVillage("y", "Y"));
     expect(second.activePlaythroughId).toBe(first.activePlaythroughId);
+
+    const third = appData.addPlaythrough(second, freshVillage("z", "Z"), { makeActive: true });
+    expect(third.activePlaythroughId).toBe(third.playthroughs[2].id);
   });
 
   it("deleting the active village activates the most recently updated one", () => {

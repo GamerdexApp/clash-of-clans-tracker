@@ -78,7 +78,7 @@ const BuilderQueuePage = () => {
 
   useEffect(() => {
     if (!isLoaded) return;
-    if (!activePlaythrough) router.push("/playthrough/list");
+    if (!activePlaythrough) router.push("/villages");
   }, [isLoaded, activePlaythrough, router]);
 
   const [panelSlotId, setPanelSlotId] = useState<number | undefined>(undefined);

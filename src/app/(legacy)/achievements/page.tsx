@@ -24,7 +24,7 @@ const AchievementsPage = () => {
         <Card className="max-w-md text-center">
           <h2 className="text-xl font-semibold text-white">No Active Village</h2>
           <p className="text-white/80">Select or create a village to see your achievements.</p>
-          <Button as={Link} href="/playthrough/list" color="action">
+          <Button as={Link} href="/villages" color="action">
             <HiViewGrid className="mr-2 h-5 w-5" />
             Go to Villages
           </Button>

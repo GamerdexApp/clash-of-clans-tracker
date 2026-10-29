@@ -107,7 +107,7 @@ const Home = () => {
 								<div className="mt-10 flex items-center justify-center gap-x-6">
 									<Button
 										as={Link}
-										href="/playthrough/list"
+										href="/villages"
 										color="action"
 										size="lg"
 									>
@@ -225,7 +225,7 @@ const Home = () => {
 								<ul role="list" className="mt-6 space-y-4">
 									<li>
 										<Link
-											href="/playthrough/list"
+											href="/villages"
 											className="text-sm/6 text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
 										>
 											Villages

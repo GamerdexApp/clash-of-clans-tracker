@@ -11,15 +11,15 @@ export interface PlaythroughContextType {
   isLoaded: boolean;
   appSettings: AppSettings;
   setActivePlaythrough: (id: string | null) => void;
+  /** Returns the new village id, or null when the write failed. */
   addPlaythrough: (
     playthrough: Omit<Playthrough, "id" | "createdAt" | "lastModified">,
-  ) => void;
+    options?: { makeActive?: boolean },
+  ) => string | null;
   updatePlaythrough: (id: string, updates: Partial<Playthrough>) => void;
-  deletePlaythrough: (id: string) => void;
+  /** Returns the data before the delete, or null when the write failed. */
+  deletePlaythrough: (id: string) => AppData | null;
   updateSettings: (patch: Partial<AppSettings>) => void;
-  importData: (jsonString: string) => { success: boolean; error?: string };
-  exportData: () => string;
-  clearAllData: () => void;
 }
 
 export interface UIContextType {

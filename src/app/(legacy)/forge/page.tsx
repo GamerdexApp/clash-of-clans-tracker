@@ -25,7 +25,7 @@ const ForgePage = () => {
 
   useEffect(() => {
     if (activePlaythrough === null) {
-      router.replace("/playthrough/list");
+      router.replace("/villages");
     }
   }, [activePlaythrough, router]);
 

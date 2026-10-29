@@ -4,11 +4,16 @@ import { defaultSettings } from "./migrate";
 
 export type NewPlaythrough = Omit<Playthrough, "id" | "createdAt" | "lastModified">;
 
+interface AddOptions {
+  makeActive?: boolean;
+  now?: Date;
+  id?: string;
+}
+
 export const addPlaythrough = (
   current: AppData,
   input: NewPlaythrough,
-  now = new Date(),
-  id = crypto.randomUUID(),
+  { makeActive = false, now = new Date(), id = crypto.randomUUID() }: AddOptions = {},
 ): AppData => {
   const timestamp = now.toISOString();
   const created: Playthrough = { ...input, id, createdAt: timestamp, lastModified: timestamp };
@@ -16,7 +21,7 @@ export const addPlaythrough = (
     ...current,
     playthroughs: [...current.playthroughs, created],
     activePlaythroughId:
-      current.playthroughs.length === 0 ? created.id : current.activePlaythroughId,
+      makeActive || current.playthroughs.length === 0 ? created.id : current.activePlaythroughId,
   };
 };
 

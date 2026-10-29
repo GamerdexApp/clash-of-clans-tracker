@@ -118,6 +118,10 @@ const allItems = [...navGroups.flatMap((group) => group.items), settingsNavItem]
 export const isNavItemActive = (item: NavItem, pathname: string) =>
   pathname === item.href || pathname.startsWith(`${item.href}/`);
 
+const PAGES_OUTSIDE_SIDEBAR: Record<string, string> = { [VILLAGES_HREF]: "My Villages" };
+
 export const getPageTitle = (pathname: string) =>
-  allItems.find((item) => isNavItemActive(item, pathname))?.label ?? APP_NAME;
+  allItems.find((item) => isNavItemActive(item, pathname))?.label ??
+  PAGES_OUTSIDE_SIDEBAR[pathname] ??
+  APP_NAME;
 

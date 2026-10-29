@@ -32,20 +32,6 @@ export const PlaythroughProvider = ({ children }: { children: React.ReactNode })
 	const activePlaythrough =
 		data.playthroughs.find((p) => p.id === data.activePlaythroughId) ?? null;
 
-	const importData: PlaythroughContextType["importData"] = (jsonString) => {
-		try {
-			const parsed = JSON.parse(jsonString);
-			if (!Array.isArray(parsed?.playthroughs)) {
-				return { success: false, error: "Invalid data format: missing playthroughs array" };
-			}
-			return storageService.save(parsed)
-				? { success: true }
-				: { success: false, error: "The data could not be saved" };
-		} catch (error) {
-			return { success: false, error: error instanceof Error ? error.message : "Unknown error" };
-		}
-	};
-
 	return (
 		<PlaythroughContext.Provider
 			value={{
@@ -60,21 +46,21 @@ export const PlaythroughProvider = ({ children }: { children: React.ReactNode })
 				setActivePlaythrough: (id) => {
 					updateData((current) => appData.setActivePlaythrough(current, id));
 				},
-				addPlaythrough: (input) => {
-					updateData((current) => appData.addPlaythrough(current, input));
+				addPlaythrough: (input, options) => {
+					const id = crypto.randomUUID();
+					const previous = updateData((current) =>
+						appData.addPlaythrough(current, input, { ...options, id })
+					);
+					return previous ? id : null;
 				},
 				updatePlaythrough: (id, updates) => {
 					updateData((current) => appData.updatePlaythrough(current, id, updates));
 				},
-				deletePlaythrough: (id) => {
-					updateData((current) => appData.deletePlaythrough(current, id));
-				},
+				deletePlaythrough: (id) =>
+					updateData((current) => appData.deletePlaythrough(current, id)),
 				updateSettings: (patch) => {
 					updateData((current) => appData.updateSettings(current, patch));
 				},
-				importData,
-				exportData: () => JSON.stringify(storageService.load(), null, 2),
-				clearAllData: () => storageService.clear(),
 			}}
 		>
 			{children}

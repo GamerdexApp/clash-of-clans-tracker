@@ -12,7 +12,7 @@ const SeasonPassPage = () => {
 
   useEffect(() => {
     if (activePlaythrough === null) {
-      router.replace("/playthrough/list");
+      router.replace("/villages");
     }
   }, [activePlaythrough, router]);
 

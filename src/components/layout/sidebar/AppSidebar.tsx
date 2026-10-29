@@ -81,9 +81,9 @@ export const AppSidebar = () => {
 
                 <SidebarItem
                   as={Link}
-                  href="/playthrough/list"
+                  href="/villages"
                   icon={HiViewGrid}
-                  active={pathname === "/playthrough/list"}
+                  active={pathname === "/villages"}
                   onClick={() => setSidebarOpen(false)}
                 >
                   Villages

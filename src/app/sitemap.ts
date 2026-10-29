@@ -13,8 +13,6 @@ const sitemap = (): MetadataRoute.Sitemap => {
 		{ path: "/mass-edit/home", priority: 0.6, changeFrequency: "monthly" as const },
 		{ path: "/mass-edit/builder", priority: 0.6, changeFrequency: "monthly" as const },
 		{ path: "/mass-edit/capital", priority: 0.6, changeFrequency: "monthly" as const },
-		{ path: "/playthrough/list", priority: 0.5, changeFrequency: "monthly" as const },
-		{ path: "/playthrough/new", priority: 0.5, changeFrequency: "monthly" as const },
 		{ path: "/upgrade/home/army", priority: 0.6, changeFrequency: "weekly" as const },
 		{ path: "/upgrade/home/builder", priority: 0.6, changeFrequency: "weekly" as const },
 		{ path: "/upgrade/home/builder/queue", priority: 0.5, changeFrequency: "weekly" as const },
