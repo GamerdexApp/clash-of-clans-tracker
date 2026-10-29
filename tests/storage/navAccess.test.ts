@@ -67,3 +67,14 @@ describe("sidebar locks", () => {
     expect(lockedRequirement("districts", village(3, { clanCapitalEnabled: false }))).toBeNull();
   });
 });
+
+describe("sidebar counts", () => {
+  it("counts crafted modules and the Town Hall weapon in the Builder badge", async () => {
+    const { navCounts } = await import("@/service/navCounts");
+    const running = { upgradeStartedAt: "a", finishesAt: "2099-01-01T00:00:00.000Z", builderId: 1 };
+    const busy = village(18);
+    busy.data.homeVillage.craftedDefenses = { roaster: { modules: [0, 0, 0], moduleUpgrades: [running, undefined, undefined] } };
+    busy.data.homeVillage.townHallWeaponUpgrade = running;
+    expect(navCounts(busy).builder).toBe(2);
+  });
+});

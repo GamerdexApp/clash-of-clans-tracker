@@ -3,6 +3,7 @@ import { IBM_Plex_Mono, IBM_Plex_Sans, Lilita_One } from "next/font/google";
 import { PlaythroughProvider } from "@/lib/contexts/PlaythroughContext";
 import { UIProvider } from "@/lib/contexts/UIContext";
 import { ActiveHoursSync } from "@/comps/layout/ActiveHoursSync";
+import { ExpiredUpgradeSync } from "@/comps/layout/ExpiredUpgradeSync";
 import { ThemeSync } from "@/comps/layout/ThemeSync";
 import { ToastProvider } from "@/comps/ui/Toast";
 import { STORAGE_KEY } from "@/service/storage";
@@ -110,6 +111,7 @@ const RootLayout = ({
 						<PlaythroughProvider>
 							<ThemeSync />
 							<ActiveHoursSync />
+							<ExpiredUpgradeSync />
 							{children}
 						</PlaythroughProvider>
 					</ToastProvider>

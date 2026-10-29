@@ -133,6 +133,8 @@ const _buildingMap = new Map<string, RawBuilding>(
   allHomeBuildings().map((b) => [b.id, b])
 );
 
+export const getBuildingName = (buildingId: string): string => _buildingMap.get(buildingId)?.name ?? buildingId;
+
 /**
  * Returns all upgrade steps from currentLevel+1 up to the max level
  * available at thLevel for the given building id.
