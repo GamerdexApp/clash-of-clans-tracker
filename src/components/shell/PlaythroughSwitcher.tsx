@@ -12,6 +12,7 @@ import { VILLAGES_HREF } from "@/data/nav";
 import { Dialog } from "@/comps/ui/Dialog";
 import { Menu, MenuItem, MenuLabel, MenuSeparator } from "@/comps/ui/Menu";
 import { SectionLabel } from "@/comps/ui/SectionLabel";
+import { TownHallIcon } from "./TownHallIcon";
 import type { Playthrough } from "@/types/app";
 
 const text = shellText.switcher;
@@ -52,9 +53,12 @@ const VillageChoices = ({ inMenu, close, onNavigate }: ChoicesProps) => {
 									close();
 								}}
 							>
-								<span className="flex min-w-0 flex-col">
-									<span className="truncate font-medium">{village.name}</span>
-									<span className="text-muted truncate text-xs">{hallLine(village)}</span>
+								<span className="flex min-w-0 items-center gap-2.5">
+									<TownHallIcon level={village.data.homeVillage.townHallLevel} size={28} />
+									<span className="flex min-w-0 flex-col">
+										<span className="truncate font-medium">{village.name}</span>
+										<span className="text-muted truncate text-xs">{hallLine(village)}</span>
+									</span>
 								</span>
 								{isActive && (
 									<span className="text-primary font-mono text-xs font-medium">
@@ -105,9 +109,13 @@ export const PlaythroughSwitcher = ({ onNavigate }: { onNavigate?: () => void })
 			<span className="flex min-w-0 items-center gap-2.5">
 				<span
 					aria-hidden="true"
-					className="bg-sb-line flex size-7 shrink-0 items-center justify-center overflow-hidden rounded"
+					className="bg-sb-line flex size-8 shrink-0 items-center justify-center overflow-hidden rounded"
 				>
-					<Image src="/clash-of-clans-icon.png" alt="" width={28} height={28} className="size-7 object-contain" />
+					{activePlaythrough ? (
+						<TownHallIcon level={activePlaythrough.data.homeVillage.townHallLevel} size={32} />
+					) : (
+						<Image src="/clash-of-clans-icon.png" alt="" width={32} height={32} className="size-8 object-contain" />
+					)}
 				</span>
 				<span className="flex min-w-0 flex-col">
 					<span className="truncate font-medium">{triggerName}</span>
