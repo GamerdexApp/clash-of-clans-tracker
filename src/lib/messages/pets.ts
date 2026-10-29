@@ -3,6 +3,7 @@ export const petsText = {
   subline: (name: string, townHall: number) => `${name}, Town Hall ${townHall}`,
   strip: {
     title: "Pet House",
+    openQueue: "Open queue and timeline",
     noPetHouse: "Build a Pet House first. Set its level on the Builder page, Army tab.",
     unassignedHelp: "More than one pet upgrade is saved on the Pet House. Finish or cancel the extra one.",
     levelLabel: "Pet House level",

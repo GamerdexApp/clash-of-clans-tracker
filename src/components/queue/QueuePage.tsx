@@ -6,9 +6,10 @@ import { usePlaythrough } from "@/lib/contexts/PlaythroughContext";
 import { formatDuration, formatNumber } from "@/lib/format";
 import { useNow } from "@/lib/hooks/useNow";
 import { useQueueActions } from "@/lib/hooks/useQueueActions";
+import { useUpgradeActions } from "@/lib/hooks/useUpgradeActions";
 import { queueText } from "@/lib/messages/queue";
 import { settingsText } from "@/lib/messages/settings";
-import { scheduleQueue } from "@/service/builderQueue";
+import { scheduleQueue } from "@/service/upgradeQueue";
 import { goldPassBoosts } from "@/service/goldPass";
 import { ActiveHoursForm } from "@/comps/settings/ActiveHoursCard";
 import { PageHeader } from "@/comps/shell/PageHeader";
@@ -20,12 +21,15 @@ import { Dialog } from "@/comps/ui/Dialog";
 import { EmptyState } from "@/comps/ui/EmptyState";
 import { SwitchRow } from "@/comps/ui/Switch";
 import type { Playthrough } from "@/types/app";
+import type { LaneKind } from "@/types/app/engine";
 import { AddUpgradeFlyout } from "./AddUpgradeFlyout";
 import { LaneCard } from "./LaneCard";
 import { QueueTimeline } from "./QueueTimeline";
+import { queueLanes } from "./queueLanes";
 
 const text = queueText;
 const DEFAULT_ZOOM_DAYS = 14;
+const PETS_TOWN_HALL = 14;
 
 const Total = ({ label, value, detail }: { label: string; value: string; detail?: string }) => (
 	<div className="flex flex-col">
@@ -35,22 +39,27 @@ const Total = ({ label, value, detail }: { label: string; value: string; detail?
 	</div>
 );
 
-const QueueContent = ({ village }: { village: Playthrough }) => {
+const QueueContent = ({ village, lane }: { village: Playthrough; lane: LaneKind }) => {
 	const { appSettings, updateSettings } = usePlaythrough();
-	const actions = useQueueActions(village);
+	const actions = useQueueActions(village, lane);
+	const upgradeActions = useUpgradeActions(village);
+	const laneText = text.lanes[lane];
+	const config = queueLanes[lane];
+	const petsLocked = lane === "pet" && village.data.homeVillage.townHallLevel < PETS_TOWN_HALL;
 	const now = useNow();
 	const [optionsOpen, setOptionsOpen] = useState(false);
 	const [adding, setAdding] = useState<{ laneId: number | null } | null>(null);
 
-	const boostPercent = goldPassBoosts(village, new Date(now)).builder;
-	const schedule = scheduleQueue(village, appSettings.goblinBuilderEnabled, {
+	const boostPercent = goldPassBoosts(village, new Date(now))[config.boost];
+	const goblinEnabled = config.goblinSetting ? appSettings[config.goblinSetting] : false;
+	const schedule = scheduleQueue(village, lane, goblinEnabled, {
 		now: new Date(now),
 		boostPercent,
 		activeHours: appSettings.activeHours,
 	});
 	const { totals } = schedule;
-	const zoomDays = Number(appSettings.ui?.queueWindows?.builder ?? DEFAULT_ZOOM_DAYS);
-	const hiddenCategories = appSettings.ui?.hiddenCategories?.builder ?? [];
+	const zoomDays = Number(appSettings.ui?.queueWindows?.[config.windowKey] ?? DEFAULT_ZOOM_DAYS);
+	const hiddenCategories = (config.hiddenKey && appSettings.ui?.hiddenCategories?.[config.hiddenKey]) || [];
 
 	const costText = Object.entries(totals.costByResource)
 		.map(([resource, amount]) => `${formatNumber(amount)} ${resource}`)
@@ -60,12 +69,12 @@ const QueueContent = ({ village }: { village: Playthrough }) => {
 	return (
 		<>
 			<PageHeader
-				title={text.title}
-				subline={text.subline(village.name)}
+				title={laneText.title}
+				subline={laneText.subline(village.name)}
 				actions={
 					<>
 						<Button onClick={() => setOptionsOpen(true)}>{text.options.open}</Button>
-						<ButtonLink href="/builder">{text.back}</ButtonLink>
+						<ButtonLink href={config.backHref}>{laneText.back}</ButtonLink>
 					</>
 				}
 			/>
@@ -74,7 +83,7 @@ const QueueContent = ({ village }: { village: Playthrough }) => {
 					<Badge tone={boostPercent > 0 ? "kept" : "locked"}>{text.goldPass(boostPercent)}</Badge>
 				</div>
 				<div className="grid grid-cols-2 gap-4 lg:grid-cols-5">
-					<Total label={text.totals.free} value={text.totals.freeValue(totals.freeBuilders, totals.totalBuilders)} />
+					<Total label={laneText.free} value={text.totals.freeValue(totals.freeBuilders, totals.totalBuilders)} />
 					<Total label={text.totals.queued} value={String(totals.queuedCount)} />
 					<Total label={text.totals.time} value={totals.queuedCount === 0 ? text.totals.none : formatDuration(totals.queuedMs)} />
 					<Total
@@ -84,8 +93,8 @@ const QueueContent = ({ village }: { village: Playthrough }) => {
 					<Total label={text.totals.cost} value={costText || text.totals.noCost} />
 				</div>
 			</Card>
-			{schedule.lanes.length === 0 ? (
-				<EmptyState title={text.title} description={text.gate} actions={<ButtonLink href="/builder" variant="primary">{text.back}</ButtonLink>} />
+			{schedule.lanes.length === 0 || petsLocked ? (
+				<EmptyState title={laneText.title} description={laneText.gate} actions={<ButtonLink href={config.backHref} variant="primary">{laneText.back}</ButtonLink>} />
 			) : (
 				<>
 					<QueueTimeline
@@ -94,16 +103,17 @@ const QueueContent = ({ village }: { village: Playthrough }) => {
 						zoomDays={zoomDays}
 						onZoomChange={(days) =>
 							updateSettings({
-								ui: { ...appSettings.ui, queueWindows: { ...appSettings.ui?.queueWindows, builder: String(days) } },
+								ui: { ...appSettings.ui, queueWindows: { ...appSettings.ui?.queueWindows, [config.windowKey]: String(days) } },
 							})
 						}
 					/>
 					<div className="grid items-start gap-4 lg:grid-cols-2 2xl:grid-cols-3">
-						{schedule.lanes.map((lane) => (
+						{schedule.lanes.map((slot) => (
 							<LaneCard
-								key={lane.slot.id}
-								village={village}
+								key={slot.slot.id}
 								lane={lane}
+								village={village}
+								schedule={slot}
 								lanes={schedule.lanes}
 								conflicts={schedule.conflicts}
 								now={now}
@@ -124,12 +134,14 @@ const QueueContent = ({ village }: { village: Playthrough }) => {
 				footer={<Button variant="primary" onClick={() => setOptionsOpen(false)}>{text.options.done}</Button>}
 			>
 				<div className="flex flex-col gap-5">
-					<SwitchRow
-						label={text.goblin.label}
-						description={text.goblin.help}
-						checked={appSettings.goblinBuilderEnabled}
-						onChange={(goblinBuilderEnabled) => updateSettings({ goblinBuilderEnabled })}
-					/>
+					{config.goblinSetting && "goblin" in laneText && (
+						<SwitchRow
+							label={laneText.goblin.label}
+							description={laneText.goblin.help}
+							checked={goblinEnabled}
+							onChange={(enabled) => config.goblinSetting && updateSettings({ [config.goblinSetting]: enabled })}
+						/>
+					)}
 					<div className="flex flex-col gap-3">
 						<h3 className="text-base font-semibold">{settingsText.activeHours.title}</h3>
 						<p className="text-muted">{settingsText.activeHours.description}</p>
@@ -138,26 +150,32 @@ const QueueContent = ({ village }: { village: Playthrough }) => {
 				</div>
 			</Dialog>
 			<AddUpgradeFlyout
-				open={adding !== null && schedule.lanes.length > 0}
+				open={adding !== null && schedule.lanes.length > 0 && !petsLocked}
+				lane={lane}
 				village={village}
 				lanes={schedule.lanes}
 				initialLaneId={adding?.laneId ?? null}
 				boostPercent={boostPercent}
 				hiddenCategories={hiddenCategories}
-				onHiddenCategoriesChange={(categories) =>
+				onHiddenCategoriesChange={(categories) => {
+					if (!config.hiddenKey) return;
 					updateSettings({
-						ui: { ...appSettings.ui, hiddenCategories: { ...appSettings.ui?.hiddenCategories, builder: categories } },
-					})
-				}
+						ui: {
+							...appSettings.ui,
+							hiddenCategories: { ...appSettings.ui?.hiddenCategories, [config.hiddenKey]: categories },
+						},
+					});
+				}}
 				onAdd={actions.add}
+				onUnlock={(group) => upgradeActions.changeLevel(group.target, 1)}
 				onClose={() => setAdding(null)}
 			/>
 		</>
 	);
 };
 
-export const BuilderQueuePage = () => (
+export const QueuePage = ({ lane }: { lane: LaneKind }) => (
 	<Suspense fallback={null}>
-		<VillageGate title={text.title}>{(village) => <QueueContent village={village} />}</VillageGate>
+		<VillageGate title={text.lanes[lane].title}>{(village) => <QueueContent village={village} lane={lane} />}</VillageGate>
 	</Suspense>
 );

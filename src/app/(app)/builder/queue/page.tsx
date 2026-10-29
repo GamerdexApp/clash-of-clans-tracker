@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-import { BuilderQueuePage } from "@/comps/builder/queue/BuilderQueuePage";
+import { QueuePage } from "@/comps/queue/QueuePage";
 
 export const metadata: Metadata = {
 	title: "Builder queue",
@@ -8,5 +8,5 @@ export const metadata: Metadata = {
 	alternates: { canonical: "/builder/queue" },
 };
 
-const Page = () => <BuilderQueuePage />;
+const Page = () => <QueuePage lane="builder" />;
 export default Page;

@@ -9,7 +9,7 @@ import {
   scheduleQueue,
   startFromQueue,
   targetForItem,
-} from "@/service/builderQueue";
+} from "@/service/upgradeQueue";
 import { readLevel, readUpgrade } from "@/service/upgradeEngine";
 import type { Playthrough } from "@/types/app";
 import type { BuilderQueueItem } from "@/types/app/queue";
@@ -48,25 +48,25 @@ const options = { now: NOW, boostPercent: 0 as const };
 
 describe("queue edits", () => {
   it("adds to a lane in order and refuses a duplicate", () => {
-    let village = addToQueue(villageWith(), 1, item("a"));
-    village = addToQueue(village, 1, item("b", { targetLevel: 12 }));
-    expect(laneQueue(village, 1).map((queued) => queued.id)).toEqual(["a", "b"]);
-    expect(addToQueue(village, 2, item("c"))).toBe(village);
+    let village = addToQueue(villageWith(), "builder", 1, item("a"));
+    village = addToQueue(village, "builder", 1, item("b", { targetLevel: 12 }));
+    expect(laneQueue(village, "builder", 1).map((queued) => queued.id)).toEqual(["a", "b"]);
+    expect(addToQueue(village, "builder", 2, item("c"))).toBe(village);
   });
 
   it("removes an item from any lane", () => {
-    const village = addToQueue(addToQueue(villageWith(), 1, item("a")), 2, item("b", { instanceIndex: 1, targetLevel: 6 }));
-    expect(laneQueue(removeFromQueue(village, "b"), 2)).toEqual([]);
+    const village = addToQueue(addToQueue(villageWith(), "builder", 1, item("a")), "builder", 2, item("b", { instanceIndex: 1, targetLevel: 6 }));
+    expect(laneQueue(removeFromQueue(village, "builder", "b"), "builder", 2)).toEqual([]);
   });
 
   it("reorders inside a lane and moves between lanes", () => {
-    let village = addToQueue(villageWith(), 1, item("a"));
-    village = addToQueue(village, 1, item("b", { targetLevel: 12 }));
-    village = addToQueue(village, 1, item("c", { targetLevel: 13 }));
-    expect(laneQueue(moveQueueItem(village, "c", 1, 0), 1).map((queued) => queued.id)).toEqual(["c", "a", "b"]);
-    const moved = moveQueueItem(village, "a", 2, 0);
-    expect(laneQueue(moved, 1).map((queued) => queued.id)).toEqual(["b", "c"]);
-    expect(laneQueue(moved, 2).map((queued) => queued.id)).toEqual(["a"]);
+    let village = addToQueue(villageWith(), "builder", 1, item("a"));
+    village = addToQueue(village, "builder", 1, item("b", { targetLevel: 12 }));
+    village = addToQueue(village, "builder", 1, item("c", { targetLevel: 13 }));
+    expect(laneQueue(moveQueueItem(village, "builder", "c", 1, 0), "builder", 1).map((queued) => queued.id)).toEqual(["c", "a", "b"]);
+    const moved = moveQueueItem(village, "builder", "a", 2, 0);
+    expect(laneQueue(moved, "builder", 1).map((queued) => queued.id)).toEqual(["b", "c"]);
+    expect(laneQueue(moved, "builder", 2).map((queued) => queued.id)).toEqual(["a"]);
   });
 });
 
@@ -78,10 +78,10 @@ describe("schedule", () => {
         upgrade: { upgradeStartedAt: NOW.toISOString(), finishesAt: new Date(NOW.getTime() + 4 * HOUR).toISOString(), builderId: 1 },
       };
     });
-    village = addToQueue(village, 1, item("a"));
-    village = addToQueue(village, 1, item("b", { targetLevel: 12 }));
+    village = addToQueue(village, "builder", 1, item("a"));
+    village = addToQueue(village, "builder", 1, item("b", { targetLevel: 12 }));
 
-    const { lanes, totals } = scheduleQueue(village, false, options);
+    const { lanes, totals } = scheduleQueue(village, "builder", false, options);
     const lane = lanes[0];
     expect(lane.blocks[0].startsAt.getTime()).toBe(NOW.getTime() + 4 * HOUR);
     expect(lane.blocks[1].startsAt.getTime()).toBe(NOW.getTime() + 14 * HOUR);
@@ -91,16 +91,16 @@ describe("schedule", () => {
   });
 
   it("uses the boosted duration for the schedule and the totals", () => {
-    const village = addToQueue(villageWith(), 1, item("a"));
-    const plain = scheduleQueue(village, false, options).totals.queuedMs;
-    const boosted = scheduleQueue(village, false, { now: NOW, boostPercent: 20 }).totals.queuedMs;
+    const village = addToQueue(villageWith(), "builder", 1, item("a"));
+    const plain = scheduleQueue(village, "builder", false, options).totals.queuedMs;
+    const boosted = scheduleQueue(village, "builder", false, { now: NOW, boostPercent: 20 }).totals.queuedMs;
     expect(boosted).toBeLessThan(plain);
   });
 
   it("waits for the active window when a block ends outside it", () => {
-    const village = addToQueue(addToQueue(villageWith(), 1, item("a", { durationMs: 2 * HOUR })), 1, item("b", { targetLevel: 12, durationMs: HOUR }));
+    const village = addToQueue(addToQueue(villageWith(), "builder", 1, item("a", { durationMs: 2 * HOUR })), "builder", 1, item("b", { targetLevel: 12, durationMs: HOUR }));
     const hours = { startUtcMinutes: 15 * 60, endUtcMinutes: 22 * 60 };
-    const { lanes } = scheduleQueue(village, false, { now: NOW, boostPercent: 0, activeHours: hours });
+    const { lanes } = scheduleQueue(village, "builder", false, { now: NOW, boostPercent: 0, activeHours: hours });
     expect(lanes[0].blocks[0].startsAt.getUTCHours()).toBe(15);
     expect(lanes[0].blocks[1].startsAt.getTime()).toBeGreaterThanOrEqual(lanes[0].blocks[0].endsAt.getTime());
   });
@@ -108,23 +108,23 @@ describe("schedule", () => {
 
 describe("conflicts", () => {
   it("flags only the item that is scheduled before its earlier level", () => {
-    let village = addToQueue(villageWith(), 1, item("high", { targetLevel: 12 }));
-    village = addToQueue(village, 1, item("low", { targetLevel: 11 }));
-    const { conflicts } = scheduleQueue(village, false, options);
+    let village = addToQueue(villageWith(), "builder", 1, item("high", { targetLevel: 12 }));
+    village = addToQueue(village, "builder", 1, item("low", { targetLevel: 11 }));
+    const { conflicts } = scheduleQueue(village, "builder", false, options);
     expect(conflicts.map((conflict) => conflict.itemId)).toEqual(["high"]);
     expect(conflicts[0].fix).toContain("after level 11");
   });
 
   it("does not flag levels in order on one lane", () => {
-    let village = addToQueue(villageWith(), 1, item("low", { targetLevel: 11 }));
-    village = addToQueue(village, 1, item("high", { targetLevel: 12 }));
-    expect(scheduleQueue(village, false, options).conflicts).toEqual([]);
+    let village = addToQueue(villageWith(), "builder", 1, item("low", { targetLevel: 11 }));
+    village = addToQueue(village, "builder", 1, item("high", { targetLevel: 12 }));
+    expect(scheduleQueue(village, "builder", false, options).conflicts).toEqual([]);
   });
 
   it("flags a higher level that starts on another lane before the lower level ends", () => {
-    let village = addToQueue(villageWith(), 1, item("low", { targetLevel: 11 }));
-    village = addToQueue(village, 2, item("high", { targetLevel: 12 }));
-    expect(scheduleQueue(village, false, options).conflicts.map((conflict) => conflict.itemId)).toEqual(["high"]);
+    let village = addToQueue(villageWith(), "builder", 1, item("low", { targetLevel: 11 }));
+    village = addToQueue(village, "builder", 2, item("high", { targetLevel: 12 }));
+    expect(scheduleQueue(village, "builder", false, options).conflicts.map((conflict) => conflict.itemId)).toEqual(["high"]);
   });
 
   it("does not flag a higher level on another lane that starts after the lower level ends", () => {
@@ -134,14 +134,14 @@ describe("conflicts", () => {
         upgrade: { upgradeStartedAt: NOW.toISOString(), finishesAt: new Date(NOW.getTime() + 12 * HOUR).toISOString(), builderId: 2 },
       };
     });
-    village = addToQueue(village, 1, item("low", { targetLevel: 11 }));
-    village = addToQueue(village, 2, item("high", { targetLevel: 12 }));
-    expect(scheduleQueue(village, false, options).conflicts).toEqual([]);
+    village = addToQueue(village, "builder", 1, item("low", { targetLevel: 11 }));
+    village = addToQueue(village, "builder", 2, item("high", { targetLevel: 12 }));
+    expect(scheduleQueue(village, "builder", false, options).conflicts).toEqual([]);
   });
 
   it("flags a level the village already reached", () => {
-    const village = addToQueue(villageWith(), 1, item("stale", { targetLevel: 10 }));
-    expect(scheduleQueue(village, false, options).conflicts[0]).toMatchObject({ itemId: "stale", fix: "Remove it from the queue." });
+    const village = addToQueue(villageWith(), "builder", 1, item("stale", { targetLevel: 10 }));
+    expect(scheduleQueue(village, "builder", false, options).conflicts[0]).toMatchObject({ itemId: "stale", fix: "Remove it from the queue." });
   });
 });
 
@@ -153,10 +153,10 @@ describe("starting from the queue", () => {
   });
 
   it("removes the item and starts it with the boosted time", () => {
-    const queued = addToQueue(villageWith(), 1, item("a"));
-    const started = startFromQueue(queued, 1, "a", { boostPercent: 0, now: NOW });
+    const queued = addToQueue(villageWith(), "builder", 1, item("a"));
+    const started = startFromQueue(queued, "builder", 1, "a", { boostPercent: 0, now: NOW });
     const target = targetForItem(item("a"));
-    expect(laneQueue(started, 1)).toEqual([]);
+    expect(laneQueue(started, "builder", 1)).toEqual([]);
     expect(readUpgrade(started, target)?.finishesAt).toBe(new Date(NOW.getTime() + 10 * HOUR).toISOString());
     expect(readLevel(started, target)).toBe(10);
   });

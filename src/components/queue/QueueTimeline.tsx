@@ -3,7 +3,7 @@
 import { queueText } from "@/lib/messages/queue";
 import { SegmentedControl } from "@/comps/ui/SegmentedControl";
 import { Card } from "@/comps/ui/Card";
-import type { QueueTimelineProps } from "@/types/components/builderQueue";
+import type { QueueTimelineProps } from "@/types/components/upgradeQueue";
 
 const text = queueText.timeline;
 const ZOOMS = ["3", "7", "14", "30", "90"] as const;
@@ -27,7 +27,7 @@ export const QueueTimeline = ({ schedule, now, zoomDays, onZoomChange }: QueueTi
 					onChange={(id) => onZoomChange(Number(id))}
 				/>
 			</div>
-			<div className="relative ms-24 h-5" aria-hidden="true">
+			<div className="relative ms-34 h-5" aria-hidden="true">
 				{ticks.map((tick) => (
 					<span
 						key={tick}
@@ -41,7 +41,7 @@ export const QueueTimeline = ({ schedule, now, zoomDays, onZoomChange }: QueueTi
 			<ul className="flex flex-col gap-2">
 				{schedule.lanes.map((lane) => (
 					<li key={lane.slot.id} className="flex items-center gap-2">
-						<span className="text-muted w-22 shrink-0 truncate font-mono text-xs">{lane.slot.label}</span>
+						<span className="text-muted w-32 shrink-0 truncate font-mono text-xs">{lane.slot.label}</span>
 						<div
 							role="img"
 							aria-label={text.laneLabel(lane.slot.label)}

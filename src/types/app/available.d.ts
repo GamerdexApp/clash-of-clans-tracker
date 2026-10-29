@@ -1,4 +1,4 @@
-import type { BuilderTarget } from "./engine";
+import type { BuilderTarget, UpgradeTarget } from "./engine";
 import type { UpgradeStep } from "./upgrade";
 
 export type AvailableCategory =
@@ -12,12 +12,26 @@ export type AvailableCategory =
   | "guardians"
   | "supercharges";
 
-export interface UpgradeGroup {
+/** What the Add flyout lists for any queue: one thing and the levels a player can still queue for it. */
+export interface AvailableGroup {
   key: string;
-  target: BuilderTarget;
+  target: UpgradeTarget;
   name: string;
   imageUrl: string;
-  category: AvailableCategory;
+  category: string;
   /** Steps that are not running and not queued yet, lowest level first. */
   steps: UpgradeStep[];
+}
+
+export interface UpgradeGroup extends AvailableGroup {
+  target: BuilderTarget;
+  category: AvailableCategory;
+}
+
+export type ResearchCategory = "troops" | "spells" | "siegeMachines" | "pets";
+
+/** Research and pets at level 0 are not unlocked yet, so they have no steps to queue. */
+export interface ResearchAvailability {
+  groups: AvailableGroup[];
+  locked: AvailableGroup[];
 }

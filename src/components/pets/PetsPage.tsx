@@ -97,6 +97,8 @@ const PetsContent = ({ village }: { village: Playthrough }) => {
 				village={village}
 				state={state}
 				now={now}
+				queueHref="/pets/queue"
+				queueLabel={text.strip.openQueue}
 				emptyNote={text.strip.noPetHouse}
 				unassignedHelp={text.strip.unassignedHelp}
 				gridClassName="sm:grid-cols-2"

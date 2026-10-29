@@ -1,8 +1,8 @@
 import type { BuilderSlotState, BoostPercent, UpgradeTarget } from "./engine";
-import type { BuilderQueueItem } from "./queue";
+import type { AnyQueueItem } from "./queue";
 
 export interface ScheduledBlock {
-  item: BuilderQueueItem;
+  item: AnyQueueItem;
   startsAt: Date;
   endsAt: Date;
   boostedMs: number;

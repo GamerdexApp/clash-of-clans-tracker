@@ -6,6 +6,7 @@ export const researchText = {
   strip: {
     title: "Laboratory",
     noLanes: "No research lane is available.",
+    openQueue: "Open queue and timeline",
     unassignedHelp: "Some research is saved on a lane that is off, or on a lane another research already uses. Finish or cancel it.",
     levelLabel: "Laboratory level",
     level: (level: number, max: number) => `${level} of ${max}`,

@@ -7,21 +7,22 @@ import {
   removeFromQueue,
   startFromQueue,
   targetForItem,
-} from "@/service/builderQueue";
+} from "@/service/upgradeQueue";
 import { targetName } from "@/service/upgradeLabels";
 import { useToast } from "@/comps/ui/Toast";
 import type { Playthrough } from "@/types/app";
-import type { BuilderQueueItem } from "@/types/app/queue";
+import type { LaneKind } from "@/types/app/engine";
+import type { AnyQueueItem } from "@/types/app/queue";
 
 interface QueueActions {
-  add: (builderId: number, items: BuilderQueueItem[], label: string) => void;
-  remove: (item: BuilderQueueItem) => void;
-  move: (itemId: string, builderId: number, index: number) => void;
-  startNow: (builderId: number, item: BuilderQueueItem) => void;
+  add: (laneId: number, items: AnyQueueItem[], label: string) => void;
+  remove: (item: AnyQueueItem) => void;
+  move: (itemId: string, laneId: number, index: number) => void;
+  startNow: (laneId: number, item: AnyQueueItem) => void;
 }
 
 /** Applies each queue change to the latest stored village and offers Undo where something is removed. */
-export const useQueueActions = (village: Playthrough): QueueActions => {
+export const useQueueActions = (village: Playthrough, lane: LaneKind): QueueActions => {
   const { updateData } = usePlaythrough();
   const showToast = useToast();
 
@@ -36,14 +37,14 @@ export const useQueueActions = (village: Playthrough): QueueActions => {
   };
 
   return {
-    add: (builderId, items, label) => {
-      const previous = apply((current) => items.reduce((next, item) => addToQueue(next, builderId, item), current));
+    add: (laneId, items, label) => {
+      const previous = apply((current) => items.reduce((next, item) => addToQueue(next, lane, laneId, item), current));
       if (!previous) return;
-      showToast({ variant: "success", title: items.length === 1 ? `${label} added` : `${items.length} levels of ${label} added` });
+      showToast({ variant: "success", title: queueText.add.added(items.length, label) });
     },
 
     remove: (item) => {
-      const previous = apply((current) => removeFromQueue(current, item.id));
+      const previous = apply((current) => removeFromQueue(current, lane, item.id));
       if (!previous) return;
       showToast({
         variant: "success",
@@ -52,14 +53,18 @@ export const useQueueActions = (village: Playthrough): QueueActions => {
       });
     },
 
-    move: (itemId, builderId, index) => {
-      apply((current) => moveQueueItem(current, itemId, builderId, index));
+    move: (itemId, laneId, index) => {
+      apply((current) => moveQueueItem(current, lane, itemId, laneId, index));
     },
 
-    startNow: (builderId, item) => {
-      const previous = apply((current, now) =>
-        startFromQueue(current, builderId, item.id, { boostPercent: goldPassBoosts(current, now).builder, now }),
-      );
+    startNow: (laneId, item) => {
+      const previous = apply((current, now) => {
+        const boosts = goldPassBoosts(current, now);
+        return startFromQueue(current, lane, laneId, item.id, {
+          boostPercent: lane === "builder" ? boosts.builder : boosts.research,
+          now,
+        });
+      });
       if (!previous) return;
       showToast({ variant: "success", title: queueText.lane.started(targetName(targetForItem(item))) });
     },

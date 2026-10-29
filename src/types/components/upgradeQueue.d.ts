@@ -1,19 +1,20 @@
 import type { Playthrough } from "@/types/app";
-import type { UpgradeGroup } from "@/types/app/available";
-import type { BoostPercent } from "@/types/app/engine";
-import type { BuilderQueueItem } from "@/types/app/queue";
+import type { AvailableGroup } from "@/types/app/available";
+import type { BoostPercent, LaneKind } from "@/types/app/engine";
+import type { AnyQueueItem } from "@/types/app/queue";
 import type { LaneSchedule, QueueConflict, QueueSchedule } from "@/types/app/queueEngine";
 
 export interface LaneCardProps {
+  lane: LaneKind;
   village: Playthrough;
-  lane: LaneSchedule;
+  schedule: LaneSchedule;
   lanes: LaneSchedule[];
   conflicts: QueueConflict[];
   now: number;
-  onAdd: (builderId: number) => void;
-  onRemove: (item: BuilderQueueItem) => void;
-  onMove: (itemId: string, builderId: number, index: number) => void;
-  onStartNow: (builderId: number, item: BuilderQueueItem) => void;
+  onAdd: (laneId: number) => void;
+  onRemove: (item: AnyQueueItem) => void;
+  onMove: (itemId: string, laneId: number, index: number) => void;
+  onStartNow: (laneId: number, item: AnyQueueItem) => void;
 }
 
 export interface QueueTimelineProps {
@@ -25,18 +26,21 @@ export interface QueueTimelineProps {
 
 export interface AddUpgradeFlyoutProps {
   open: boolean;
+  lane: LaneKind;
   village: Playthrough;
   lanes: LaneSchedule[];
   initialLaneId: number | null;
   boostPercent: BoostPercent;
   hiddenCategories: string[];
   onHiddenCategoriesChange: (categories: string[]) => void;
-  onAdd: (builderId: number, items: BuilderQueueItem[], label: string) => void;
+  onAdd: (laneId: number, items: AnyQueueItem[], label: string) => void;
+  onUnlock: (group: AvailableGroup) => void;
   onClose: () => void;
 }
 
 export interface GroupCardProps {
-  group: UpgradeGroup;
+  lane: LaneKind;
+  group: AvailableGroup;
   boostPercent: BoostPercent;
   onAdd: (level: number, upTo: boolean) => void;
 }

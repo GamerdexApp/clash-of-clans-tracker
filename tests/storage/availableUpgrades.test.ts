@@ -2,7 +2,7 @@ import { describe, expect, it } from "vitest";
 
 import { availableUpgrades, queueItemFor, stepsUpTo } from "@/service/availableUpgrades";
 import { getBuildingUpgradeSteps } from "@/lib/utils/upgradeHelpers";
-import { addToQueue, targetForItem } from "@/service/builderQueue";
+import { addToQueue, targetForItem } from "@/service/upgradeQueue";
 import type { Playthrough } from "@/types/app";
 
 import { freshVillage } from "./fixtures";
@@ -36,7 +36,7 @@ describe("availableUpgrades", () => {
 
   it("leaves out levels that are already queued", () => {
     const group = cannonGroup(villageWith(12))!;
-    const queued = addToQueue(villageWith(12), 1, queueItemFor(group, group.steps[0], "q1"));
+    const queued = addToQueue(villageWith(12), "builder", 1, queueItemFor(group, group.steps[0], "q1"));
     expect(cannonGroup(queued)!.steps[0].level).toBe(12);
   });
 

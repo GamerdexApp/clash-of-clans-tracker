@@ -20,7 +20,7 @@ import type { BuilderQueueItem } from "@/types/app/queue";
 import type { UpgradeStep } from "@/types/app/upgrade";
 
 import { heroIdForName, readUpgrade } from "./upgradeEngine";
-import { laneQueue, queueKey, townHallItemIds } from "./builderQueue";
+import { laneQueue, queueKey, townHallItemIds } from "./upgradeQueue";
 import { upgradeSteps } from "./upgradeSteps";
 
 const CRAFTED_AND_GUARDIAN_TOWN_HALL = 18;
@@ -28,7 +28,7 @@ const CRAFTED_AND_GUARDIAN_TOWN_HALL = 18;
 const queuedKeys = (village: Playthrough): Set<string> => {
   const keys = new Set<string>();
   for (const lane of Object.keys(village.data.homeVillage.builderQueues ?? {})) {
-    for (const item of laneQueue(village, Number(lane))) keys.add(queueKey(item));
+    for (const item of laneQueue(village, "builder", Number(lane))) keys.add(queueKey(item));
   }
   return keys;
 };

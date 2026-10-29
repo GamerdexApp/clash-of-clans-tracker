@@ -4,7 +4,7 @@ import { LuArrowDown, LuArrowUp, LuPlus, LuTrash2 } from "react-icons/lu";
 
 import { formatCountdown, formatDuration, formatNumber } from "@/lib/format";
 import { queueText } from "@/lib/messages/queue";
-import { queueStartBlocker, targetForItem } from "@/service/builderQueue";
+import { queueStartBlocker, stepForItem, targetForItem } from "@/service/upgradeQueue";
 import { boostedStep } from "@/service/upgradeEngine";
 import { goldPassBoosts } from "@/service/goldPass";
 import { targetName } from "@/service/upgradeLabels";
@@ -14,13 +14,14 @@ import { Card } from "@/comps/ui/Card";
 import { IconButton } from "@/comps/ui/IconButton";
 import { ProgressBar } from "@/comps/ui/ProgressBar";
 import { Select } from "@/comps/ui/Select";
-import type { LaneCardProps } from "@/types/components/builderQueue";
-import { stepForItem } from "@/service/builderQueue";
+import type { LaneCardProps } from "@/types/components/upgradeQueue";
+import { queueLanes } from "./queueLanes";
 
 const text = queueText.lane;
 
-export const LaneCard = ({ village, lane, lanes, conflicts, now, onAdd, onRemove, onMove, onStartNow }: LaneCardProps) => {
-	const boostPercent = goldPassBoosts(village, new Date(now)).builder;
+export const LaneCard = ({ lane: kind, village, schedule: lane, lanes, conflicts, now, onAdd, onRemove, onMove, onStartNow }: LaneCardProps) => {
+	const laneText = queueText.lanes[kind];
+	const boostPercent = goldPassBoosts(village, new Date(now))[queueLanes[kind].boost];
 	const conflictFor = (itemId: string) => conflicts.find((conflict) => conflict.itemId === itemId);
 	const others = lanes.filter((other) => other.slot.id !== lane.slot.id);
 	const first = lane.blocks[0]?.item;
@@ -37,7 +38,7 @@ export const LaneCard = ({ village, lane, lanes, conflicts, now, onAdd, onRemove
 				<h3 className="text-base font-semibold">{lane.slot.label}</h3>
 				<Button onClick={() => onAdd(lane.slot.id)}>
 					<LuPlus size={16} aria-hidden="true" />
-					{text.add}
+					{laneText.add.title}
 				</Button>
 			</div>
 			{lane.active ? (
@@ -56,7 +57,7 @@ export const LaneCard = ({ village, lane, lanes, conflicts, now, onAdd, onRemove
 					{lane.blocks.map(({ item, boostedMs }, index) => {
 						const conflict = conflictFor(item.id);
 						const target = targetForItem(item);
-						const cost = boostedStep(stepForItem(item), boostPercent).cost;
+						const cost = boostedStep(stepForItem(item), boostPercent, kind).cost;
 						return (
 							<li
 								key={item.id}
@@ -137,7 +138,7 @@ export const LaneCard = ({ village, lane, lanes, conflicts, now, onAdd, onRemove
 							{text.startNow}
 						</Button>
 					</div>
-					{(laneBusy || firstBlocker) && <p className="text-muted text-xs">{laneBusy ? text.laneBusy : firstBlocker}</p>}
+					{(laneBusy || firstBlocker) && <p className="text-muted text-xs">{laneBusy ? laneText.laneBusy : firstBlocker}</p>}
 				</div>
 			)}
 		</Card>
