@@ -10,7 +10,7 @@ const sitemap = (): MetadataRoute.Sitemap => {
 		{ path: "/forge", priority: 0.8, changeFrequency: "weekly" as const },
 		{ path: "/season-pass", priority: 0.7, changeFrequency: "weekly" as const },
 		{ path: "/helpers", priority: 0.7, changeFrequency: "monthly" as const },
-		{ path: "/mass-edit/home", priority: 0.6, changeFrequency: "monthly" as const },
+		{ path: "/mass-edit", priority: 0.6, changeFrequency: "monthly" as const },
 		{ path: "/mass-edit/builder", priority: 0.6, changeFrequency: "monthly" as const },
 		{ path: "/mass-edit/capital", priority: 0.6, changeFrequency: "monthly" as const },
 		{ path: "/equipment", priority: 0.6, changeFrequency: "weekly" as const },

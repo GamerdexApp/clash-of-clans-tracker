@@ -1,7 +1,9 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useLeaveGuard } from "@/lib/contexts/LeaveGuardContext";
 import { usePlaythrough } from "@/lib/contexts/PlaythroughContext";
+import { massEditText } from "@/lib/messages/massEdit";
 import { uiText } from "@/lib/messages/ui";
 
 const REFRESH_MS = 30_000;
@@ -36,6 +38,19 @@ export function useSavedLabel() {
 
 export function SavedChip() {
 	const label = useSavedLabel();
+	const { unsavedCount } = useLeaveGuard();
+
+	if (unsavedCount > 0) {
+		return (
+			<span
+				role="status"
+				className="border-warn bg-surface text-warn inline-flex h-8 items-center gap-2 rounded-full border-[1.5px] px-3 text-xs"
+			>
+				<span aria-hidden="true" className="bg-warn size-1.5 rounded-full" />
+				{massEditText.chip}
+			</span>
+		);
+	}
 
 	return (
 		<span

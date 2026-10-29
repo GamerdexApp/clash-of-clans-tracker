@@ -5,9 +5,11 @@ interface CheckboxProps {
 	checked: boolean;
 	onChange: (checked: boolean) => void;
 	disabled?: boolean;
+	/** Keeps the label for screen readers only, for a box inside a row that already names itself. */
+	hideLabel?: boolean;
 }
 
-export function Checkbox({ label, checked, onChange, disabled = false }: CheckboxProps) {
+export function Checkbox({ label, checked, onChange, disabled = false, hideLabel = false }: CheckboxProps) {
 	return (
 		<label
 			className={`flex min-h-11 items-center gap-3 has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-offset-2 has-[:focus-visible]:outline-(--ring) lg:min-h-9 ${
@@ -29,7 +31,7 @@ export function Checkbox({ label, checked, onChange, disabled = false }: Checkbo
 			>
 				{checked && <LuCheck size={14} />}
 			</span>
-			{label}
+			{hideLabel ? <span className="sr-only">{label}</span> : label}
 		</label>
 	);
 }

@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useState } from "react";
+import { useLeaveGuard } from "@/lib/contexts/LeaveGuardContext";
 import type { ButtonHTMLAttributes } from "react";
 import { LuChevronDown, LuPlus } from "react-icons/lu";
 
@@ -29,6 +30,7 @@ interface ChoicesProps {
 
 const VillageChoices = ({ inMenu, close, onNavigate }: ChoicesProps) => {
 	const { playthroughs, activePlaythrough, setActivePlaythrough } = usePlaythrough();
+	const { guardedAction } = useLeaveGuard();
 	const role = inMenu ? "menuitem" : "button";
 	const followLink = () => {
 		close();
@@ -49,8 +51,8 @@ const VillageChoices = ({ inMenu, close, onNavigate }: ChoicesProps) => {
 								active={isActive}
 								className="justify-between gap-2"
 								onSelect={() => {
-									setActivePlaythrough(village.id);
 									close();
+									guardedAction(() => setActivePlaythrough(village.id));
 								}}
 							>
 								<span className="flex min-w-0 items-center gap-2.5">

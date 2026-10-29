@@ -53,7 +53,7 @@ export const capitalText = {
     title: "Clan Capital is locked",
     description: (townHall: number) =>
       `Clan Capital opens at Town Hall 3. This village is at Town Hall ${townHall}. Anything already saved shows again at Town Hall 3.`,
-    action: "Change Town Hall in Mass edit",
+    action: "Change Town Hall in Villages",
   },
   notSet: {
     title: "Clan Capital is not set up",

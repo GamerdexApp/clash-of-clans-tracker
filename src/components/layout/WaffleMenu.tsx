@@ -11,7 +11,7 @@ const APP_ITEMS: AppItem[] = [
     id: "mass-edit-home",
     label: "Mass Edit Home Village",
     image: "/images/home/town-hall/normal/level-18.png",
-    href: "/mass-edit/home",
+    href: "/mass-edit",
   },
   {
     id: "mass-edit-builder",

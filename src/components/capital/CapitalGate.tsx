@@ -43,7 +43,7 @@ export const CapitalGate = ({ title, children }: { title: string; children: (vil
 						<EmptyState
 							title={text.locked.title}
 							description={text.locked.description(village.data.homeVillage.townHallLevel)}
-							actions={<ButtonLink href="/mass-edit/home?tab=townHall" variant="primary">{text.locked.action}</ButtonLink>}
+							actions={<ButtonLink href="/villages" variant="primary">{text.locked.action}</ButtonLink>}
 						/>
 					</>
 				);
