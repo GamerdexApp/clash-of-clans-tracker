@@ -20,6 +20,7 @@ export const BuildingCard = ({
 	village,
 	building,
 	record,
+	base = "home",
 	now,
 	onStart,
 	onFinish,
@@ -31,8 +32,9 @@ export const BuildingCard = ({
 	const instances = Array.from({ length: building.instanceCount }, (_, index) => index);
 	const visible = expanded ? instances : instances.slice(0, COLLAPSED_ROWS);
 
+	const builderBase = base === "builderBase";
 	const targetFor = (instanceIndex: number): UpgradeTarget => ({
-		kind: "building",
+		kind: builderBase ? "bbBuilding" : "building",
 		record,
 		buildingId: building.id,
 		instanceIndex,
@@ -61,7 +63,7 @@ export const BuildingCard = ({
 					<h3 id={titleId} className="truncate text-base font-semibold">
 						{building.name}
 					</h3>
-					<span className="text-muted text-xs">{text.maxAtHall(building.maxLevel)}</span>
+					<span className="text-muted text-xs">{builderBase ? text.maxAtBuilderHall(building.maxLevel) : text.maxAtHall(building.maxLevel)}</span>
 					<ProgressBar
 						value={maxTotal === 0 ? 1 : totalLevels / maxTotal}
 						label={text.progress(building.name)}
@@ -72,7 +74,7 @@ export const BuildingCard = ({
 			<ul className="flex flex-col gap-2">
 				{visible.map((instanceIndex) => {
 					const target = targetFor(instanceIndex);
-					const instance = village.data.homeVillage[record][building.id]?.[instanceIndex];
+					const instance = (builderBase ? village.data.builderBase : village.data.homeVillage)[record][building.id]?.[instanceIndex];
 
 					return (
 						<TargetRow

@@ -10,10 +10,10 @@ import { BuildingCard } from "./BuildingCard";
 
 const text = builderText.empty;
 
-export const BuildingsTab = ({ village, buildings, record, hideMax, ...handlers }: BuildingsTabProps) => {
+export const BuildingsTab = ({ village, buildings, record, base = "home", hideMax, ...handlers }: BuildingsTabProps) => {
 	const isFullyUpgraded = (building: BuildingsTabProps["buildings"][number]) =>
 		Array.from({ length: building.instanceCount }, (_, instanceIndex) => ({
-			kind: "building" as const,
+			kind: base === "builderBase" ? ("bbBuilding" as const) : ("building" as const),
 			record,
 			buildingId: building.id,
 			instanceIndex,
@@ -34,6 +34,7 @@ export const BuildingsTab = ({ village, buildings, record, hideMax, ...handlers 
 					village={village}
 					building={building}
 					record={record}
+					base={base}
 					{...handlers}
 				/>
 			))}

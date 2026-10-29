@@ -79,7 +79,9 @@ const StartContent = ({
 				<div className="flex flex-col">
 					<dt className="text-muted text-xs">{text.doneAt}</dt>
 					<dd className="font-mono font-medium">{instant ? "Now" : formatFinishTime(doneAt)}</dd>
-					{!instant && <dd className="text-muted text-xs">{text.storedNote}</dd>}
+					{!instant && (
+						<dd className="text-muted text-xs">{lane === "bbBuilder" ? text.storedNoteUnboosted : text.storedNote}</dd>
+					)}
 				</div>
 			</dl>
 			{missing ? (

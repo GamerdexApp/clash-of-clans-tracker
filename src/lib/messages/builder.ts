@@ -35,6 +35,7 @@ export const builderText = {
   },
   card: {
     maxAtHall: (level: number) => `Max Lv ${level} at this Town Hall`,
+    maxAtBuilderHall: (level: number) => `Max Lv ${level} at this Builder Hall`,
     progress: (name: string) => `${name} progress`,
     notBuilt: "Not built",
     level: (level: number, max: number) => `Lv ${level} of ${max}`,

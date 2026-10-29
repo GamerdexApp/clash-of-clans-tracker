@@ -1,7 +1,7 @@
 import type { ReactNode } from "react";
 
 import type { Playthrough } from "@/types/app";
-import type { BoostPercent, BuilderSlotState, BuilderSlots, FinishMethod, LaneKind, UpgradeTarget } from "@/types/app/engine";
+import type { BoostPercent, BuilderSlotState, BuilderSlots, FinishMethod, UpgradeLaneKind, UpgradeTarget } from "@/types/app/engine";
 import type { UpgradeStep } from "@/types/app/upgrade";
 
 export interface StartUpgradeSubject {
@@ -14,7 +14,7 @@ export interface StartUpgradeDialogProps {
   subject: StartUpgradeSubject | null;
   village: Playthrough;
   boostPercent: BoostPercent;
-  lane: LaneKind;
+  lane: UpgradeLaneKind;
   lanes: BuilderSlotState[];
   now: number;
   onConfirm: (builderId: number) => void;

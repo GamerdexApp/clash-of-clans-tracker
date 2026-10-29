@@ -1,3 +1,4 @@
+import { bbBuildingName } from "./builderBaseSteps";
 import { getBuildingName, getCraftedDefenseModuleName, getCraftedDefenseName } from "@/lib/utils/upgradeHelpers";
 import type { CompletedUpgrade, UpgradeTarget } from "@/types/app/engine";
 
@@ -14,7 +15,14 @@ export const targetName = (target: UpgradeTarget): string => {
       return "Town Hall weapon";
     case "research":
     case "pet":
+    case "bbHero":
       return target.name;
+    case "bbBuilding":
+      return `${bbBuildingName(target.buildingId)} #${target.instanceIndex + 1}`;
+    case "clockTower":
+      return "Clock Tower";
+    case "builderHall":
+      return "Builder Hall";
     case "crafted":
       return `${getCraftedDefenseName(target.defenseId)}, ${getCraftedDefenseModuleName(target.defenseId, target.moduleIndex)}`;
   }

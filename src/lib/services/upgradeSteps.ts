@@ -11,6 +11,7 @@ import type { Playthrough } from "@/types/app";
 import type { UpgradeTarget } from "@/types/app/engine";
 import type { UpgradeStep } from "@/types/app/upgrade";
 
+import { bbBuildingSteps, bbHeroSteps, builderHallSteps, clockTowerSteps } from "./builderBaseSteps";
 import { heroIdForName, readLevel } from "./upgradeEngine";
 
 /** Every step from the target's current level up to the most the village can reach. */
@@ -38,6 +39,14 @@ export const upgradeSteps = (village: Playthrough, target: UpgradeTarget): Upgra
       return getResearchUpgradeSteps(target.name, level, hv.townHallLevel);
     case "pet":
       return getPetUpgradeSteps(target.name, level);
+    case "bbBuilding":
+      return bbBuildingSteps(target.record, target.buildingId, level, village.data.builderBase.builderHallLevel);
+    case "bbHero":
+      return bbHeroSteps(target.name, level, village.data.builderBase.builderHallLevel);
+    case "clockTower":
+      return clockTowerSteps(level, village.data.builderBase.builderHallLevel);
+    case "builderHall":
+      return builderHallSteps(level);
   }
 };
 

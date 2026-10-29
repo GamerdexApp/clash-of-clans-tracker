@@ -9,7 +9,7 @@ import { CancelUpgradeDialog } from "@/comps/upgrades/CancelUpgradeDialog";
 import { FinishUpgradeDialog } from "@/comps/upgrades/FinishUpgradeDialog";
 import { StartUpgradeDialog } from "@/comps/upgrades/StartUpgradeDialog";
 import type { Playthrough } from "@/types/app";
-import type { BuilderSlotState, LaneKind, UpgradeTarget } from "@/types/app/engine";
+import type { BoostPercent, BuilderSlotState, UpgradeLaneKind, UpgradeTarget } from "@/types/app/engine";
 import type { UpgradeHandlers } from "@/types/components/builder";
 import type { RunningSubject, StartUpgradeSubject } from "@/types/components/upgrades";
 
@@ -17,7 +17,7 @@ import type { RunningSubject, StartUpgradeSubject } from "@/types/components/upg
 export const useUpgradeFlow = (
 	village: Playthrough,
 	now: number,
-	lane: LaneKind,
+	lane: UpgradeLaneKind,
 	lanes: BuilderSlotState[],
 ): { handlers: UpgradeHandlers; dialogs: ReactNode } => {
 	const actions = useUpgradeActions(village);
@@ -25,6 +25,10 @@ export const useUpgradeFlow = (
 	const [finishing, setFinishing] = useState<RunningSubject | null>(null);
 	const [cancelling, setCancelling] = useState<RunningSubject | null>(null);
 	const boosts = goldPassBoosts(village, new Date(now));
+	const boostFor = (kind: UpgradeLaneKind): BoostPercent => {
+		if (kind === "builder") return boosts.builder;
+		return kind === "bbBuilder" ? 0 : boosts.research;
+	};
 
 	const handlers: UpgradeHandlers = {
 		onStart: (subject, target) => setStarting({ subject, target }),
@@ -38,7 +42,7 @@ export const useUpgradeFlow = (
 			<StartUpgradeDialog
 				subject={starting?.subject ?? null}
 				village={village}
-				boostPercent={lane === "builder" ? boosts.builder : boosts.research}
+				boostPercent={boostFor(lane)}
 				lane={lane}
 				lanes={lanes}
 				now={now}

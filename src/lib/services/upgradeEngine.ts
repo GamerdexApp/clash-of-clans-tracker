@@ -11,12 +11,14 @@ import type {
   FinishResult,
   LaneKind,
   RunningUpgrade,
+  UpgradeLaneKind,
   StartBlocker,
   UpgradeTarget,
 } from "@/types/app/engine";
 import type {
   BuildingInstance,
   BuildingRecord,
+  BuilderBaseData,
   BuildingRecordKey,
   CraftedDefenseData,
   HomeVillageData,
@@ -38,6 +40,7 @@ const RESEARCH_RECORDS: ResearchKey[] = ["troops", "spells", "siegeMachines"];
 const HUT_SLOT_COUNT = 5;
 const WEAPON_TOWN_HALL = 17;
 const MODULES_PER_CRAFTED_DEFENSE = 3;
+const MAX_BUILDER_HALL = 10;
 
 const rawHeroes = home().heroes().get() as unknown as Array<{ id: string; name: string }>;
 
@@ -49,6 +52,11 @@ const homeOf = (village: Playthrough) => village.data.homeVillage;
 const withHome = (village: Playthrough, change: (home: HomeVillageData) => HomeVillageData): Playthrough => ({
   ...village,
   data: { ...village.data, homeVillage: change(homeOf(village)) },
+});
+
+const withBuilderBase = (village: Playthrough, change: (bb: BuilderBaseData) => BuilderBaseData): Playthrough => ({
+  ...village,
+  data: { ...village.data, builderBase: change(village.data.builderBase) },
 });
 
 const instanceAt = (record: BuildingRecord, buildingId: string, index: number): BuildingInstance | undefined =>
@@ -75,6 +83,14 @@ export const readUpgrade = (village: Playthrough, target: UpgradeTarget): Upgrad
       return hv[target.record].find((item) => item.name === target.name)?.upgrade;
     case "pet":
       return hv.pets.find((pet) => pet.name === target.name)?.upgrade;
+    case "bbBuilding":
+      return instanceAt(village.data.builderBase[target.record], target.buildingId, target.instanceIndex)?.upgrade;
+    case "bbHero":
+      return village.data.builderBase.heroes.find((hero) => hero.name === target.name)?.upgrade;
+    case "clockTower":
+      return village.bbExtras?.clockTower?.upgrade;
+    case "builderHall":
+      return village.bbExtras?.builderHallUpgrade;
   }
 };
 
@@ -95,14 +111,25 @@ export const readLevel = (village: Playthrough, target: UpgradeTarget): number =
       return hv[target.record].find((item) => item.name === target.name)?.level ?? 0;
     case "pet":
       return hv.pets.find((pet) => pet.name === target.name)?.level ?? 0;
+    case "bbBuilding":
+      return instanceAt(village.data.builderBase[target.record], target.buildingId, target.instanceIndex)?.level ?? 0;
+    case "bbHero":
+      return village.data.builderBase.heroes.find((hero) => hero.name === target.name)?.level ?? 0;
+    case "clockTower":
+      return village.bbExtras?.clockTower?.level ?? 0;
+    case "builderHall":
+      return village.data.builderBase.builderHallLevel;
   }
 };
 
-const writeBuildingInstance = (
-  hv: HomeVillageData,
-  target: Extract<UpgradeTarget, { kind: "building" }>,
+/** What the Home Village and the Builder Base share: four building records and the heroes. */
+type BuildingHolder = Pick<HomeVillageData, BuildingRecordKey | "heroes">;
+
+const writeBuildingInstance = <Holder extends BuildingHolder>(
+  hv: Holder,
+  target: { record: BuildingRecordKey; buildingId: string; instanceIndex: number },
   change: (instance: BuildingInstance) => BuildingInstance,
-): HomeVillageData => {
+): Holder => {
   const record = hv[target.record];
   const instances = [...(record[target.buildingId] ?? [])];
   while (instances.length <= target.instanceIndex) instances.push({ level: 0 });
@@ -130,7 +157,11 @@ const writeCraftedModule = (
 };
 
 /** A hero the player has not started tracking is added at level 0 when it first changes. */
-const mapHero = (hv: HomeVillageData, name: string, change: (hero: TrackedHero) => TrackedHero): HomeVillageData => {
+const mapHero = <Holder extends BuildingHolder>(
+  hv: Holder,
+  name: string,
+  change: (hero: TrackedHero) => TrackedHero,
+): Holder => {
   const heroes = hv.heroes.some((hero) => hero.name === name)
     ? hv.heroes
     : [...hv.heroes, { name, level: 0, equipment: [] }];
@@ -143,25 +174,51 @@ const mapTracked = (items: TrackedItem[], name: string, change: (item: TrackedIt
   return present.map((item) => (item.name === name ? change(item) : item));
 };
 
-const writeUpgrade = (village: Playthrough, target: UpgradeTarget, upgrade: UpgradeState | undefined): Playthrough =>
-  withHome(village, (hv) => {
-    switch (target.kind) {
-      case "building":
-        return writeBuildingInstance(hv, target, (instance) => ({ ...instance, upgrade }));
-      case "hero":
-        return mapHero(hv, target.name, (hero) => ({ ...hero, upgrade }));
-      case "townHall":
-        return { ...hv, townHallUpgrade: upgrade };
-      case "townHallWeapon":
-        return { ...hv, townHallWeaponUpgrade: upgrade };
-      case "crafted":
-        return writeCraftedModule(hv, target, (level) => ({ level, upgrade }));
-      case "research":
-        return { ...hv, [target.record]: mapTracked(hv[target.record], target.name, (item) => ({ ...item, upgrade })) };
-      case "pet":
-        return { ...hv, pets: mapTracked(hv.pets, target.name, (pet) => ({ ...pet, upgrade })) };
-    }
-  });
+const withClockTower = (
+  village: Playthrough,
+  change: (clockTower: { level: number; upgrade?: UpgradeState }) => { level: number; upgrade?: UpgradeState },
+): Playthrough => ({
+  ...village,
+  bbExtras: { ...village.bbExtras, clockTower: change(village.bbExtras?.clockTower ?? { level: 0 }) },
+});
+
+const writeUpgrade = (village: Playthrough, target: UpgradeTarget, upgrade: UpgradeState | undefined): Playthrough => {
+  switch (target.kind) {
+    case "bbBuilding":
+      return withBuilderBase(village, (bb) => writeBuildingInstance(bb, target, (instance) => ({ ...instance, upgrade })));
+    case "bbHero":
+      return withBuilderBase(village, (bb) => mapHero(bb, target.name, (hero) => ({ ...hero, upgrade })));
+    case "clockTower":
+      return withClockTower(village, (clockTower) => ({ ...clockTower, upgrade }));
+    case "builderHall":
+      return { ...village, bbExtras: { ...village.bbExtras, builderHallUpgrade: upgrade } };
+    default:
+      return withHome(village, (hv) => writeHomeUpgrade(hv, target, upgrade));
+  }
+};
+
+const writeHomeUpgrade = (
+  hv: HomeVillageData,
+  target: Exclude<UpgradeTarget, { kind: "bbBuilding" | "bbHero" | "clockTower" | "builderHall" }>,
+  upgrade: UpgradeState | undefined,
+): HomeVillageData => {
+  switch (target.kind) {
+    case "building":
+      return writeBuildingInstance(hv, target, (instance) => ({ ...instance, upgrade }));
+    case "hero":
+      return mapHero(hv, target.name, (hero) => ({ ...hero, upgrade }));
+    case "townHall":
+      return { ...hv, townHallUpgrade: upgrade };
+    case "townHallWeapon":
+      return { ...hv, townHallWeaponUpgrade: upgrade };
+    case "crafted":
+      return writeCraftedModule(hv, target, (level) => ({ level, upgrade }));
+    case "research":
+      return { ...hv, [target.record]: mapTracked(hv[target.record], target.name, (item) => ({ ...item, upgrade })) };
+    case "pet":
+      return { ...hv, pets: mapTracked(hv.pets, target.name, (pet) => ({ ...pet, upgrade })) };
+  }
+};
 
 /** Every upgrade that holds a builder: buildings, heroes, the Town Hall, its weapon and crafted modules. */
 export const runningUpgrades = (village: Playthrough): RunningUpgrade[] => {
@@ -204,7 +261,30 @@ export const runningPets = (village: Playthrough): RunningUpgrade[] =>
     pet.upgrade ? [{ target: { kind: "pet" as const, name: pet.name }, upgrade: pet.upgrade }] : [],
   );
 
-export const laneKindOf = (target: UpgradeTarget): LaneKind => {
+/** Every Builder Base upgrade: buildings, heroes and the Clock Tower. All of them wait on Builder 1 or 2. */
+export const runningBuilderBase = (village: Playthrough): RunningUpgrade[] => {
+  const bb = village.data.builderBase;
+  const found: RunningUpgrade[] = [];
+  const add = (target: UpgradeTarget, upgrade: UpgradeState | undefined) => {
+    if (upgrade) found.push({ target, upgrade });
+  };
+  for (const record of BUILDING_RECORDS) {
+    for (const [buildingId, instances] of Object.entries(bb[record])) {
+      instances.forEach((instance, instanceIndex) =>
+        add({ kind: "bbBuilding", record, buildingId, instanceIndex }, instance.upgrade),
+      );
+    }
+  }
+  bb.heroes.forEach((hero) => add({ kind: "bbHero", name: hero.name }, hero.upgrade));
+  add({ kind: "clockTower" }, village.bbExtras?.clockTower?.upgrade);
+  add({ kind: "builderHall" }, village.bbExtras?.builderHallUpgrade);
+  return found;
+};
+
+export const laneKindOf = (target: UpgradeTarget): UpgradeLaneKind => {
+  if (target.kind === "bbBuilding" || target.kind === "bbHero" || target.kind === "clockTower" || target.kind === "builderHall") {
+    return "bbBuilder";
+  }
   if (target.kind === "research") return "research";
   if (target.kind === "pet") return "pet";
   return "builder";
@@ -235,6 +315,7 @@ const fillSlots = (
 };
 
 export const laneLabelFor = (target: UpgradeTarget, id: number): string => {
+  if (laneKindOf(target) === "bbBuilder") return `Builder ${id}`;
   if (target.kind === "research") return id === GOBLIN_SLOT_ID ? "Goblin Researcher" : "Laboratory";
   if (target.kind === "pet") return "Pet House";
   return builderLabelFor(id);
@@ -252,6 +333,15 @@ export const researchSlots = (village: Playthrough, goblinResearchEnabled: boole
     runningResearch(village),
   );
 };
+
+const BB_SLOT_IDS = [1, 2];
+
+/** The Builder Base always has two builders. */
+export const bbBuilderSlots = (village: Playthrough): BuilderSlots =>
+  fillSlots(
+    BB_SLOT_IDS.map((id) => ({ id, label: `Builder ${id}`, kind: "builderBase" as const })),
+    runningBuilderBase(village),
+  );
 
 export const petSlots = (village: Playthrough): BuilderSlots =>
   fillSlots([{ id: PET_HOUSE_SLOT_ID, label: "Pet House", kind: "petHouse" }], runningPets(village));
@@ -314,8 +404,9 @@ export const spreadSharedBuilders = (village: Playthrough): Playthrough => {
 export const boostedStep = (
   step: UpgradeStep,
   boostPercent: BoostPercent,
-  lane: LaneKind = "builder",
+  lane: UpgradeLaneKind = "builder",
 ): { durationMs: number; cost: number } => {
+  if (lane === "bbBuilder") return { durationMs: step.durationMs, cost: step.cost };
   const boostCost = lane === "builder" ? applyBuilderBoostCost : applyResearchBoostCost;
   return {
     durationMs: applyBoost(step.durationMs, boostPercent),
@@ -458,6 +549,22 @@ export const completeUpgrade = (village: Playthrough, target: UpgradeTarget, now
         ...hv,
         pets: mapTracked(hv.pets, target.name, (pet) => ({ ...pet, level: pet.level + 1, upgrade: undefined })),
       }));
+    case "bbBuilding":
+      return withBuilderBase(village, (bb) =>
+        writeBuildingInstance(bb, target, (instance) => ({ ...instance, level: instance.level + 1, upgrade: undefined })),
+      );
+    case "bbHero":
+      return withBuilderBase(village, (bb) =>
+        mapHero(bb, target.name, (hero) => ({ ...hero, level: hero.level + 1, upgrade: undefined })),
+      );
+    case "clockTower":
+      return withClockTower(village, (clockTower) => ({ level: clockTower.level + 1 }));
+    case "builderHall":
+      return {
+        ...withBuilderBase(village, (bb) => ({ ...bb, builderHallLevel: bb.builderHallLevel + 1 })),
+        bbExtras: { ...village.bbExtras, builderHallUpgrade: undefined },
+        bhChangedAt: startOfUtcDay(now),
+      };
   }
 };
 
@@ -482,7 +589,12 @@ export const completeExpiredUpgrades = (
   village: Playthrough,
   now: Date,
 ): { village: Playthrough; completed: CompletedUpgrade[] } => {
-  const expired = [...runningUpgrades(village), ...runningResearch(village), ...runningPets(village)]
+  const expired = [
+    ...runningUpgrades(village),
+    ...runningResearch(village),
+    ...runningPets(village),
+    ...runningBuilderBase(village),
+  ]
     .filter(({ upgrade }) => Date.parse(upgrade.finishesAt) <= now.getTime())
     .sort((a, b) => Date.parse(a.upgrade.finishesAt) - Date.parse(b.upgrade.finishesAt));
 
@@ -539,5 +651,16 @@ export const setLevel = (village: Playthrough, target: UpgradeTarget, level: num
         ...hv,
         pets: mapTracked(hv.pets, target.name, (pet) => ({ ...pet, level: next })),
       }));
+    case "bbBuilding":
+      return withBuilderBase(village, (bb) => writeBuildingInstance(bb, target, (instance) => ({ ...instance, level: next })));
+    case "bbHero":
+      return withBuilderBase(village, (bb) => mapHero(bb, target.name, (hero) => ({ ...hero, level: next })));
+    case "clockTower":
+      return withClockTower(village, (clockTower) => ({ ...clockTower, level: next }));
+    case "builderHall":
+      return {
+        ...withBuilderBase(village, (bb) => ({ ...bb, builderHallLevel: Math.min(next, MAX_BUILDER_HALL) })),
+        bhChangedAt: startOfUtcDay(now),
+      };
   }
 };

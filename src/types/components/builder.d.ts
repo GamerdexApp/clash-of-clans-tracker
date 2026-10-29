@@ -33,6 +33,8 @@ export interface BuildingsTabProps extends UpgradeHandlers {
   village: Playthrough;
   buildings: BuildingEditData[];
   record: BuildingRecordKey;
+  /** The Builder Base lists use the Builder Base data and its upgrade targets. */
+  base?: "home" | "builderBase";
   hideMax: boolean;
   now: number;
 }
@@ -41,6 +43,7 @@ export interface BuildingCardProps extends UpgradeHandlers {
   village: Playthrough;
   building: BuildingEditData;
   record: BuildingRecordKey;
+  base?: "home" | "builderBase";
   now: number;
 }
 

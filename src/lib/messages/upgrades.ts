@@ -20,6 +20,7 @@ export const upgradeText = {
     wasCost: (base: string, resource: string) => `${resource}, was ${base}`,
     resource: (resource: string) => resource,
     storedNote: "this boosted time is stored",
+    storedNoteUnboosted: "this time is stored",
     instant: "This build takes no time. It finishes at once and uses no builder.",
     lanes: {
       builder: {
@@ -31,6 +32,11 @@ export const upgradeText = {
         label: "Research lane",
         choose: "Choose a lane to start.",
         noneFree: "Every research lane is busy. Cancel or finish a research first.",
+      },
+      bbBuilder: {
+        label: "Builder",
+        choose: "Choose a builder to start.",
+        noneFree: "Both builders are busy. Cancel or finish an upgrade first.",
       },
       pet: {
         label: "Pet House",

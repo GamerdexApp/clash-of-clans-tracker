@@ -12,11 +12,15 @@ import { targetName } from "@/service/upgradeLabels";
 import { useToast } from "@/comps/ui/Toast";
 import { formatDuration } from "@/lib/format";
 import type { Playthrough } from "@/types/app";
-import type { FinishMethod, UpgradeTarget } from "@/types/app/engine";
+import type { BoostPercent, FinishMethod, UpgradeTarget } from "@/types/app/engine";
 import type { UpgradeStep } from "@/types/app/upgrade";
 
-/** Research and pet upgrades use the research boost. */
-const boostKey = (target: UpgradeTarget) => (laneKindOf(target) === "builder" ? "builder" : "research");
+/** Research and pet upgrades use the research boost. The Builder Base has no boost. */
+const boostFor = (target: UpgradeTarget, boosts: ReturnType<typeof goldPassBoosts>): BoostPercent => {
+  const lane = laneKindOf(target);
+  if (lane === "builder") return boosts.builder;
+  return lane === "bbBuilder" ? 0 : boosts.research;
+};
 
 interface UpgradeActions {
   goblinBuilderEnabled: boolean;
@@ -52,7 +56,7 @@ export const useUpgradeActions = (village: Playthrough): UpgradeActions => {
 
     start: (target, step, builderId) => {
       const fromLevel = readLevel(village, target);
-      const previous = apply((current, now) => startUpgrade(current, target, step, builderId, { boostPercent: goldPassBoosts(current, now)[boostKey(target)], now }));
+      const previous = apply((current, now) => startUpgrade(current, target, step, builderId, { boostPercent: boostFor(target, goldPassBoosts(current, now)), now }));
       if (!previous) return;
       showToast({
         variant: "success",

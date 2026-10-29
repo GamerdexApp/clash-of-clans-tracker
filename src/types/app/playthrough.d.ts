@@ -93,6 +93,8 @@ export interface Playthrough {
   /** Whether the user has opted into tracking Clan Capital */
   clanCapitalEnabled?: boolean;
   oreStock?: { shiny: number; glowing: number; starry: number };
+  /** Builder Base things that have no place in the saved Builder Base data. */
+  bbExtras?: { clockTower?: { level: number; upgrade?: UpgradeState }; builderHallUpgrade?: UpgradeState };
   dailies?: DailiesData;
   data: VillageData;
 }
