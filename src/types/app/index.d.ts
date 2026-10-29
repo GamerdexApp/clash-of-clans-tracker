@@ -1,4 +1,4 @@
-export type { AppData, AppSettings, Playthrough } from "./playthrough";
+export type { AppData, AppSettings, Playthrough, ThemeChoice } from "./playthrough";
 export type { BuilderSlot, UpgradeStep } from "./upgrade";
 export type { PlayerApiResponse } from "./player-api";
 export type {

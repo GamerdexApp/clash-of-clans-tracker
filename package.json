@@ -19,6 +19,7 @@
         "build": "next build",
         "start": "next start",
         "lint": "eslint .",
+        "test": "vitest run",
         "format": "prettier . --write",
         "format:check": "prettier . --check",
         "postinstall": "bash scripts/copy-game-assets.sh"
@@ -27,6 +28,7 @@
         "@dnd-kit/core": "^6.3.1",
         "@dnd-kit/sortable": "^10.0.0",
         "@dnd-kit/utilities": "^3.2.2",
+        "@gamerdexapp/gamerdex-sync": "0.5.0",
         "clash-of-clans-data": "0.18.0",
         "flowbite-react": "^0.12.17",
         "nanoid": "^6.0.1",
@@ -44,10 +46,13 @@
         "@types/react-dom": "^19.3.0",
         "eslint": "^9.39.5",
         "eslint-config-next": "16.3.6",
+        "happy-dom": "^21.0.4",
         "prettier": "^3.9.9",
         "prettier-plugin-tailwindcss": "^0.8.1",
         "react-icons": "^5.7.0",
         "tailwindcss": "^4.3.3",
-        "typescript": "^6.0.3"
+        "typescript": "^6.0.3",
+        "vite": "^8.3.5",
+        "vitest": "^5.0.5"
     }
 }

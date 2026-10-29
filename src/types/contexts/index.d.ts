@@ -1,6 +1,11 @@
-import { AppSettings, Playthrough } from "@/types/app";
+import { AppData, AppSettings, Playthrough } from "@/types/app";
 
 export interface PlaythroughContextType {
+  appData: AppData;
+  lastSavedAt: Date | null;
+  saveFailed: boolean;
+  /** Applies `update` to the latest stored data. Returns the data before the change, or null when the write failed. */
+  updateData: (update: (current: AppData) => AppData) => AppData | null;
   playthroughs: Playthrough[];
   activePlaythrough: Playthrough | null;
   isLoaded: boolean;
@@ -21,6 +26,9 @@ export interface UIContextType {
   sidebarOpen: boolean;
   toggleSidebar: () => void;
   setSidebarOpen: (open: boolean) => void;
+  drawerOpen: boolean;
+  openDrawer: () => void;
+  closeDrawer: () => void;
 }
 
 export interface SaveFABProps {

@@ -2,11 +2,17 @@
 
 import { customTheme } from "@/app/theme";
 import { ThemeProvider } from "flowbite-react";
+import { useEffect } from "react";
 import { ToastContainer } from "react-toastify";
 import { AppNavbar } from "@/comps/layout/AppNavbar";
 import { AppSidebar } from "@/comps/layout/sidebar/AppSidebar";
 
 export const LayoutWrapper = ({ children }: { children: React.ReactNode }) => {
+	useEffect(() => {
+		document.documentElement.classList.add("legacy-palette");
+		return () => document.documentElement.classList.remove("legacy-palette");
+	}, []);
+
 	return (
 		<ThemeProvider theme={customTheme}>
 			<div className="flex h-screen flex-col overflow-hidden">

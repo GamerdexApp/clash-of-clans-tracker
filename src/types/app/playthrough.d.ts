@@ -92,6 +92,7 @@ export interface Playthrough {
   bhChangedAt?: string;
   /** Whether the user has opted into tracking Clan Capital */
   clanCapitalEnabled?: boolean;
+  oreStock?: { shiny: number; glowing: number; starry: number };
   dailies?: DailiesData;
   data: VillageData;
 }
@@ -103,10 +104,37 @@ export interface ActiveHours {
   endUtcMinutes: number;
 }
 
+export type ThemeChoice = "light" | "dark" | "system";
+
+export interface ActiveHoursLocal {
+  /** "HH:MM" on the local clock */
+  start: string;
+  end: string;
+}
+
+export interface QueueWindows {
+  builder?: string;
+  research?: string;
+  pets?: string;
+  bbBuilder?: string;
+  bbResearch?: string;
+}
+
+export interface UiSettings {
+  hideMax?: boolean;
+  builderTab?: string;
+  massEdit?: { scope?: string; tab?: string; collapsedGroups?: string[] };
+  queueWindows?: QueueWindows;
+  hiddenCategories?: { builder?: string[]; research?: string[] };
+}
+
 export interface AppSettings {
   goblinBuilderEnabled: boolean;
   goblinResearchEnabled: boolean;
   activeHours?: ActiveHours;
+  theme?: ThemeChoice;
+  activeHoursLocal?: ActiveHoursLocal;
+  ui?: UiSettings;
 }
 
 export interface AppData {

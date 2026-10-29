@@ -1,0 +1,52 @@
+export const shellText = {
+  skipToContent: "Skip to content",
+  closeMenu: "Close menu",
+  openMenu: "Open menu",
+  menuLabel: "Site menu",
+  mainNav: "Main",
+  brandTitle: "Clash of Clans",
+  brandSubtitle: "Tracker",
+  switcher: {
+    sectionLabel: "Village",
+    loading: "Loading",
+    none: "No village",
+    noneDetail: "Create one to start",
+    switch: "Switch village",
+    villages: "Villages",
+    active: "Active",
+    all: "All villages",
+    create: "New village",
+    halls: (townHall: number, builderHall: number) =>
+      builderHall > 0 ? `TH ${townHall} · BH ${builderHall}` : `TH ${townHall}`,
+  },
+  locked: {
+    townHall: (level: number) => `Town Hall ${level}`,
+    blacksmith: "Blacksmith",
+    helperHut: "Helper Hut",
+    off: "Off",
+    srLabel: (requirement: string) => `Requires ${requirement}`,
+  },
+  footer: {
+    tagline:
+      "A free progress tracker for Clash of Clans. Your data stays in your browser, or in your own cloud storage if you turn on sync.",
+    support: "Support",
+    about: "About",
+    settings: "Settings",
+    discord: "Discord",
+    github: "GitHub",
+    game: "Official game site",
+    privacy: "Privacy policy",
+    terms: "Terms of service",
+    disclaimerTitle: "Disclaimer",
+    disclaimer:
+      "This project is not affiliated with, endorsed by, or connected to Supercell or Clash of Clans.",
+    framework: "Built with the Gamerdex framework, a shared base for free game progress trackers.",
+    visitGamerdex: "Visit Gamerdex",
+  },
+  notFound: {
+    title: "Page not found",
+    body: "That page does not exist or has moved.",
+    toOverview: "Go to Overview",
+    toHome: "Go home",
+  },
+} as const;

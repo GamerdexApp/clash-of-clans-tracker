@@ -1,20 +1,32 @@
-import { ThemeModeScript } from "flowbite-react";
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { IBM_Plex_Mono, IBM_Plex_Sans, Lilita_One } from "next/font/google";
 import { PlaythroughProvider } from "@/lib/contexts/PlaythroughContext";
 import { UIProvider } from "@/lib/contexts/UIContext";
-import { LayoutWrapper } from "@/comps/layout/LayoutWrapper";
+import { ThemeSync } from "@/comps/layout/ThemeSync";
+import { ToastProvider } from "@/comps/ui/Toast";
+import { STORAGE_KEY } from "@/service/storage";
 import "./globals.css";
 
-const geistSans = Geist({
-	variable: "--font-geist-sans",
+const plexSans = IBM_Plex_Sans({
+	variable: "--font-plex-sans",
 	subsets: ["latin"],
+	weight: ["400", "500", "600"],
 });
 
-const geistMono = Geist_Mono({
-	variable: "--font-geist-mono",
+const plexMono = IBM_Plex_Mono({
+	variable: "--font-plex-mono",
 	subsets: ["latin"],
+	weight: ["400", "500"],
 });
+
+const lilita = Lilita_One({
+	variable: "--font-lilita",
+	subsets: ["latin"],
+	weight: "400",
+});
+
+// Runs before the first paint so a dark theme never flashes light.
+const applyThemeBeforePaint = `try{var s=JSON.parse(localStorage.getItem("${STORAGE_KEY}")||"{}").settings;var t=s&&s.theme||"system";var d=t==="dark"||(t==="system"&&matchMedia("(prefers-color-scheme: dark)").matches);document.documentElement.classList.toggle("dark",d)}catch(e){}`;
 
 const siteUrl = "https://coc.gamerdex.app";
 
@@ -83,20 +95,25 @@ const RootLayout = ({
 	children: React.ReactNode;
 }>) => {
 	return (
-		<html lang="en" suppressHydrationWarning className="h-full">
+		<html
+			lang="en"
+			suppressHydrationWarning
+			className={`${plexSans.variable} ${plexMono.variable} ${lilita.variable} h-full`}
+		>
 			<head>
-				<ThemeModeScript />
+				<script dangerouslySetInnerHTML={{ __html: applyThemeBeforePaint }} />
 			</head>
-			<body
-				className={`${geistSans.variable} ${geistMono.variable} min-h-screen bg-highlight antialiased dark:bg-gray-900`}
-			>
+			<body className="bg-bg min-h-dvh antialiased">
 				<UIProvider>
-					<PlaythroughProvider>
-						<LayoutWrapper>{children}</LayoutWrapper>
-					</PlaythroughProvider>
+					<ToastProvider>
+						<PlaythroughProvider>
+							<ThemeSync />
+							{children}
+						</PlaythroughProvider>
+					</ToastProvider>
 				</UIProvider>
 			</body>
 		</html>
 	);
-}
+};
 export default RootLayout;
