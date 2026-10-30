@@ -6,6 +6,7 @@ import { SyncProvider } from "@/lib/contexts/SyncContext";
 import { UIProvider } from "@/lib/contexts/UIContext";
 import { STORAGE_KEY } from "@/service/storage";
 import { ActiveHoursSync } from "@/comps/layout/ActiveHoursSync";
+import { LegacyKeysMigration } from "@/comps/layout/LegacyKeysMigration";
 import { ExpiredUpgradeSync } from "@/comps/layout/ExpiredUpgradeSync";
 import { ThemeSync } from "@/comps/layout/ThemeSync";
 import { ToastProvider } from "@/comps/ui/Toast";
@@ -115,6 +116,7 @@ const RootLayout = ({
 								<SyncProvider>
 									<ThemeSync />
 									<ActiveHoursSync />
+									<LegacyKeysMigration />
 									<ExpiredUpgradeSync />
 									{children}
 								</SyncProvider>
