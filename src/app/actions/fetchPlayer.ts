@@ -4,7 +4,9 @@ import { headers } from "next/headers";
 
 import type { PlayerApiResponse } from "@/types/app";
 
-const COC_API_URL = "https://api.clashofclans.com/v1";
+// The official API only accepts the IP addresses listed on the key. A host without a fixed outbound IP sets
+// COC_API_BASE_URL to a proxy, such as https://cocproxy.royaleapi.dev/v1, and lists the proxy IP on the key.
+const COC_API_URL = process.env.COC_API_BASE_URL ?? "https://api.clashofclans.com/v1";
 
 // Module-level singleton: survives across requests in the same server process.
 // Keyed by client IP → timestamp of last successful call.
