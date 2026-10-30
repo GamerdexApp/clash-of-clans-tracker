@@ -1,0 +1,86 @@
+{
+  "header": {
+    "label": "Seitenbereiche",
+    "features": "Funktionen",
+    "faq": "FAQ",
+    "villages": "Dörfer",
+    "settings": "Einstellungen"
+  },
+  "hero": {
+    "title": "Verfolge deinen Clash-of-Clans-Fortschritt",
+    "description": "Behalte jedes Dorf an einem Ort: Gebäude, Truppen, Helden, Upgrades und Tägliches für dein Heimatdorf, deine Bauarbeiterbasis und deine Clanhauptstadt.",
+    "note": "Kostenlos. Kein Konto. Alle Daten bleiben in deinem Browser.",
+    "continue": "Weiter mit",
+    "continueLine": "{builderHall, plural, =0 {Rathaus {townHall}, aktualisiert {updated}} other {Rathaus {townHall}, Bauarbeiterhalle {builderHall}, aktualisiert {updated}}}"
+  },
+  "cta": {
+    "create": "Erstes Dorf erstellen",
+    "learnMore": "Mehr erfahren",
+    "overview": "Zur Übersicht",
+    "newVillage": "Neues Dorf"
+  },
+  "features": {
+    "label": "Alles, was du brauchst",
+    "title": "Dein ganzer Fortschritt an einem Ort",
+    "description": "Vom Rathaus bis zur Clanhauptstadt: Jede Stufe, die du verfolgst, wird im Moment der Änderung gespeichert.",
+    "items": {
+      "item1": {
+        "title": "Mehrere Dörfer",
+        "text": "Erstelle und verwalte unbegrenzt viele Dörfer. Verfolge verschiedene Konten und Basen getrennt."
+      },
+      "item2": {
+        "title": "Fortschrittsverfolgung",
+        "text": "Verfolge genau, was du in jedem Dorf abgeschlossen, gesammelt oder freigeschaltet hast."
+      },
+      "item3": {
+        "title": "Übersicht",
+        "text": "Sieh deinen Fortschritt auf einen Blick mit Kennzahlen, täglichen Timern und Abschlussanzeigen."
+      },
+      "item4": {
+        "title": "Backup und Sync",
+        "text": "Exportiere deinen Fortschritt als JSON-Datei oder synchronisiere ihn mit deinem eigenen Cloud-Speicher auf mehrere Geräte."
+      },
+      "item5": {
+        "title": "Privat",
+        "text": "Deine Daten bleiben in deinem Browser. Der einzige Serveraufruf ist die optionale Suche per Spieler-Tag, die Supercell nach deinen öffentlichen Werten fragt."
+      },
+      "item6": {
+        "title": "Dunkelmodus",
+        "text": "Angenehm bei Tag und Nacht. Wähle in den Einstellungen Hell, Dunkel oder folge deinem Gerät."
+      }
+    }
+  },
+  "faq": {
+    "label": "Fragen?",
+    "title": "Häufig gestellte Fragen",
+    "items": {
+      "item1": {
+        "question": "Was ist Clash of Clans Tracker?",
+        "answer": "Ein Fortschrittstracker für Clash of Clans. Er hilft dir, mehrere Konten zu verwalten und deine Upgrades, Erfolge, Tägliches und deinen Gesamtfortschritt an einem Ort zu verfolgen."
+      },
+      "item2": {
+        "question": "Wie speichert er meine Daten?",
+        "answer": "Alles wird in deinem Browser gespeichert, daher ist dein Fortschritt privat und braucht kein Konto. Du kannst ihn als JSON-Datei exportieren und importieren, als Backup. Die optionale Suche per Spieler-Tag sendet das Tag an eine kleine Server-Aktion, die die Supercell-API nach deinen öffentlichen Werten fragt."
+      },
+      "item3": {
+        "question": "Kann ich mehrere Dörfer verfolgen?",
+        "answer": "Ja. Erstelle so viele Dörfer, wie du willst, jedes mit eigenem Fortschritt, und wechsle in der Seitenleiste zwischen ihnen."
+      },
+      "item4": {
+        "question": "Wird er auf mehreren Geräten synchronisiert?",
+        "answer": "Ja, wenn du es willst. Öffne die Einstellungen und verbinde GitHub, Google Drive, Dropbox oder OneDrive. Deine Daten liegen in deinem eigenen Konto und der Sync bleibt aus, bis du ihn einschaltest."
+      },
+      "item5": {
+        "question": "Ist die App kostenlos?",
+        "answer": "Ja. Sie ist kostenlos, ohne Abo, ohne Werbung und ohne Anmeldung."
+      }
+    }
+  },
+  "final": {
+    "title": "Verfolge deine Dörfer ab heute",
+    "description": "Kein Konto und keine Anmeldung. Für dein erstes Dorf brauchst du nur einen Namen."
+  },
+  "updated": {
+    "justNow": "gerade eben"
+  }
+}

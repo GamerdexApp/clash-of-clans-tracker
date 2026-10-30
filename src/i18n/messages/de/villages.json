@@ -1,0 +1,119 @@
+{
+  "title": "Meine Dörfer",
+  "subline": "{amount} {count, plural, one {Dorf} other {Dörfer}}",
+  "sublineActive": "{amount} {count, plural, one {Dorf} other {Dörfer}}, {name} ist aktiv",
+  "newVillage": "Neues Dorf",
+  "empty": {
+    "title": "Noch keine Dörfer",
+    "deletedTitle": "Keine Dörfer mehr",
+    "description": "Erstelle ein Dorf, um Upgrades, Forschung und Erfolge zu verfolgen.",
+    "restore": "Aus Backup wiederherstellen"
+  },
+  "filters": {
+    "search": "Dörfer suchen",
+    "sortLabel": "Sortieren nach",
+    "sort": {
+      "lastModified": "Zuletzt geändert",
+      "createdAt": "Erstellungsdatum",
+      "name": "Name"
+    },
+    "showing": "{shown} von {total} angezeigt",
+    "clear": "Suche löschen"
+  },
+  "noMatch": {
+    "title": "Keine Dörfer passen zu „{query}“",
+    "description": "Prüfe die Schreibweise oder lösche die Suche."
+  },
+  "card": {
+    "active": "Aktiv",
+    "openOverview": "Übersicht öffnen",
+    "setActive": "Aktiv setzen",
+    "edit": "Bearbeiten",
+    "delete": "Löschen",
+    "halls": "{builderHall, plural, =0 {Rathaus {townHall}} other {Rathaus {townHall}, Bauarbeiterhalle {builderHall}}}",
+    "daysAtTownHall": "Tage beim Rathaus",
+    "daysAtBuilderHall": "Tage bei der Bauarbeiterhalle",
+    "notSet": "Nicht gesetzt",
+    "clanCapital": "Clanhauptstadt",
+    "clanCapitalStates": {
+      "on": "An",
+      "off": "Aus",
+      "locked": "Gesperrt"
+    },
+    "created": "Erstellt {date}",
+    "lastModified": "Geändert {date}",
+    "switched": "{name} ist jetzt aktiv"
+  },
+  "fields": {
+    "name": "Dorfname",
+    "namePlaceholder": "Mein Hauptaccount",
+    "nameRequired": "Gib dem Dorf einen Namen.",
+    "description": "Beschreibung",
+    "descriptionPlaceholder": "Beschreibung für dieses Dorf hinzufügen",
+    "townHallLevel": "Rathausstufe",
+    "builderHallLevel": "Stufe der Bauarbeiterhalle",
+    "builderHallHelp": "Die Bauarbeiterbasis wird bei Rathaus 6 freigeschaltet.",
+    "townHallUpgraded": "Rathaus upgegradet",
+    "builderHallUpgraded": "Bauarbeiterhalle upgegradet",
+    "level": "Stufe {level}",
+    "trackCapital": "Clanhauptstadt verfolgen",
+    "trackCapitalHelp": "Beim Ausschalten werden die Seiten der Clanhauptstadt ausgeblendet und deine Daten bleiben erhalten.",
+    "trackCapitalLocked": "Braucht Rathaus 3",
+    "cancel": "Abbrechen"
+  },
+  "create": {
+    "title": "Neues Dorf",
+    "submit": "Dorf erstellen",
+    "modeLabel": "Wie starten",
+    "modes": {
+      "fresh": "Neu starten",
+      "import": "Importieren"
+    },
+    "modeNotes": {
+      "fresh": "Mit leeren Daten starten.",
+      "import": "Ein Spieler-Tag lesen, mit optionaler Gebäudedatei."
+    },
+    "makeActive": "Dieses Dorf zum aktiven Dorf machen",
+    "done": "{name} erstellt",
+    "importNeedsLookup": "Rufe zuerst ein Spieler-Tag ab."
+  },
+  "lookup": {
+    "step1": "Schritt 1: Spielerdaten abrufen",
+    "step2": "Schritt 2: Gebäudedaten (optional)",
+    "tagLabel": "Spieler-Tag",
+    "tagPlaceholder": "#PPV2YV9R",
+    "fetch": "Abrufen",
+    "refresh": "Aktualisieren",
+    "wait": "Warte {seconds} s",
+    "serverNote": "Die Suche sendet das Tag an den Gamerdex-Server, der die Supercell-API fragt. Sonst verlässt nichts deinen Browser.",
+    "unavailable": "Die Spielersuche ist gerade nicht verfügbar. Versuche es später erneut.",
+    "found": "{name}, Rathaus {townHall}{builderHall, plural, =0 {} other {, Bauarbeiterhalle {builderHall}}}. {achievements} Erfolge und {troops} Truppen gelesen.",
+    "buildingHelp": "Die Spieler-API enthält keine Gebäudestufen. Wähle ein Dorf-Backup aus den Einstellungen oder die Datei exportData.json aus dem Spiel.",
+    "buildingLabel": "Gebäudedatendatei",
+    "buildingLoaded": "Gebäudedaten aus {name} geladen.",
+    "buildingInvalid": "Diese Datei enthält keine Gebäudedaten. Nutze ein Dorf-Backup aus den Einstellungen oder exportData.json aus dem Spiel.",
+    "buildingNotJson": "Diese Datei ist kein gültiges JSON."
+  },
+  "edit": {
+    "title": "Dorf bearbeiten",
+    "submit": "Speichern",
+    "refreshTitle": "Per Spieler-Tag aktualisieren",
+    "updatedTitle": "Aktualisiert",
+    "untouchedTitle": "Nie angefasst",
+    "dateSet": "Das Upgrade-Datum ist auf heute gesetzt. Du kannst es ändern.",
+    "done": "{name} gespeichert"
+  },
+  "delete": {
+    "title": "Dorf löschen",
+    "description": "Das entfernt das Dorf aus diesem Browser.",
+    "question": "{name} löschen? Upgrades, Forschung, Erfolge und Tägliches werden entfernt.",
+    "activeNext": "{next} wird das aktive Dorf.",
+    "activeLast": "Kein Dorf wird aktiv sein.",
+    "exportFirst": "Exportiere zuerst ein Backup",
+    "cancel": "Abbrechen",
+    "confirm": "Dorf löschen",
+    "done": "{name} gelöscht",
+    "doneMessage": "Du kannst das zehn Sekunden lang rückgängig machen.",
+    "undo": "Rückgängig"
+  }
+}

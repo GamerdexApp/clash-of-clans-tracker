@@ -1,0 +1,112 @@
+{
+  "title": "개요",
+  "description": "마을을 한눈에: 진행 상황, 일일 타이머, 저장된 모든 통계.",
+  "subline": "{name}, 계산된 값, 보기 전용",
+  "header": {
+    "clanLevel": "{hasRole, select, true {클랜 레벨 {level}, {role}} other {클랜 레벨 {level}}}",
+    "achievements": "업적",
+    "ringCaption": "별 {maxStars}개 중 {stars}개",
+    "viewAll": "모두 보기",
+    "townHall": "TH{level}"
+  },
+  "dailies": {
+    "title": "일일 과제",
+    "closedTitle": "일일 과제는 타운홀 3에서 열려요",
+    "closedBody": "포지, 도우미, 시즌 패스는 타운홀이 오르면서 열려요.",
+    "closedLink": "열린 항목 보기",
+    "groups": {
+      "helpers": "도우미",
+      "daily": "일일",
+      "goldPass": "골드 패스"
+    },
+    "requires": "{requirement} 필요",
+    "openForge": "포지 열기",
+    "openHelpers": "도우미 열기",
+    "unlockProspector": "시즌 패스에서 해제",
+    "helperHut": "도우미 오두막",
+    "townHall": "타운홀 {level}",
+    "starBonus": "스타 보너스",
+    "capitalGold": "캐피탈 골드",
+    "autoForge": "자동 포지",
+    "forgeSlots": "포지 슬롯",
+    "notRunning": "중지됨",
+    "running": "진행 중",
+    "stopAuto": "자동 포지 중지",
+    "autoLine": "{resource} {amount}으로 캐피탈 골드 {capitalGold}",
+    "slotsLine": "슬롯 {open}개 중 {running}개 진행 중",
+    "slotsDone": "{done, plural, other {슬롯 {amount}개 완료}}",
+    "autoPerk": "자동 포지 혜택",
+    "helperPreview": "지금 사용: 남은 {before}이(가) {after}으로 바뀌어요",
+    "goldPass": {
+      "edit": "시즌 패스에서 수정",
+      "builder": "빌더 부스트",
+      "research": "연구 부스트",
+      "hoggyBank": "호기 뱅크",
+      "gemDonations": "1보석 기부",
+      "autoForge": "자동 포지",
+      "requestReduction": "요청 시간 단축",
+      "on": "켜짐",
+      "off": "꺼짐",
+      "resets": "부스트는 {date}에 0%로 돌아가요.",
+      "readOnly": "개요를 열어도 마을이나 마지막 수정 시간은 바뀌지 않아요."
+    }
+  },
+  "league": {
+    "open": "{name} 보상 보기",
+    "homeKind": "본거지 리그",
+    "builderKind": "빌더 기지 리그",
+    "noData": "이 타운홀에는 이 리그의 데이터가 없어요.",
+    "battle": "전투 결과",
+    "stars": "별",
+    "attacker": "공격자 빌더 골드",
+    "defender": "방어자 빌더 엘릭서"
+  },
+  "builder": {
+    "title": "빌더 기지",
+    "hall": "빌더 홀 {level}",
+    "trophies": "트로피 {trophies}",
+    "daysAt": "BH{level} 보낸 일수",
+    "notSetTitle": "빌더 홀 미설정",
+    "notSetBody": "빌더 기지는 타운홀 6에서 열리지만, 이 마을의 빌더 홀은 0이에요. 레벨이 1 이상이면 진행도, 트로피, 병력이 표시돼요.",
+    "notSetAction": "빌더 홀 레벨 설정",
+    "lockedBody": "타운홀 6 필요",
+    "troops": "병력",
+    "heroes": "영웅"
+  },
+  "capital": {
+    "title": "클랜 캐피탈",
+    "hall": "캐피탈 홀 {level}",
+    "notSetTitle": "클랜 캐피탈이 설정되지 않았어요",
+    "notSetBody": "Capital Peak에 홀 레벨이 아직 없어서 보여 줄 지구 진행도가 없어요. 캐피탈 홀 레벨을 설정하면 추적을 시작해요.",
+    "notSetAction": "캐피탈 홀 레벨 설정",
+    "lockedBody": "타운홀 3 필요",
+    "districtHall": "지구 홀 {level}",
+    "notUnlocked": "해제 안 됨",
+    "unlocksAt": "캐피탈 홀 {level}에서 해제",
+    "needsDistrictHall": "지구 홀을 설정해 시작하세요",
+    "noData": "데이터 없음",
+    "more": "지구 {count}개 더 보기",
+    "showFewer": "간단히 보기",
+    "openDistricts": "지구 열기"
+  },
+  "home": {
+    "title": "본거지",
+    "townHall": "타운홀 {level}",
+    "daysAt": "TH{level} 보낸 일수",
+    "perHour": "시간당",
+    "stored": "보관 중",
+    "cards": {
+      "locked": "{requirement} 필요"
+    },
+    "queue": "열기",
+    "troops": "병력",
+    "spells": "주문",
+    "heroes": "영웅",
+    "siege": "시즈 머신",
+    "pets": "펫",
+    "legend": "초록 테두리: 이 타운홀의 최대 레벨. 점선 테두리: 잠김. 시계: 업그레이드 진행 중.",
+    "tile": "{hasRequirement, select, true {{name}, {requirement} 필요} other {{name}, 레벨 {level}{max, plural, =0 {} other { / {max}}}}}",
+    "heroLocked": "{requirement} 필요",
+    "petsLocked": "타운홀 14 필요"
+  }
+}

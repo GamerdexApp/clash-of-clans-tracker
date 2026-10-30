@@ -1,0 +1,51 @@
+{
+  "title": "Ouvrier",
+  "subline": "{name}, Hôtel de ville {townHall}",
+  "tabsLabel": "Sections Ouvrier",
+  "tabs": {
+    "defenses": "Défenses",
+    "army": "Armée",
+    "resources": "Ressources",
+    "crafted": "Défenses fabriquées",
+    "traps": "Pièges",
+    "heroes": "Héros",
+    "guardians": "Gardiens",
+    "townHall": "Hôtel de ville"
+  },
+  "builders": {
+    "title": "Ouvriers",
+    "boostLabel": "Boost d'ouvrier du Pass Or",
+    "boostValue": "{percent, plural, =0 {Aucun} other {-{percent} % de temps et de coût}}",
+    "openQueue": "Ouvrir la file et la chronologie",
+    "unassignedHelp": "Certaines améliorations sont enregistrées sur un ouvrier non construit, ou sur un ouvrier déjà pris par une autre amélioration. Terminez-les ou annulez-les.",
+    "noBuilders": "Ce village n'a pas encore d'ouvrier. Construisez la première Cabane d'ouvrier depuis l'onglet Défenses. Elle est gratuite et instantanée."
+  },
+  "gate": {
+    "requires": "Nécessite l'Hôtel de ville {townHall}",
+    "where": "Ce village est à l'Hôtel de ville {townHall}. Atteignez l'Hôtel de ville {required} pour débloquer cet onglet.",
+    "fix": "Aller à l'onglet Hôtel de ville"
+  },
+  "empty": {
+    "title": "Rien ici pour le moment",
+    "description": "Aucun bâtiment de ce type n'est disponible à ce niveau d'Hôtel de ville.",
+    "allMax": "Tous les bâtiments ici sont au maximum. Désactivez Masquer le max pour les voir."
+  },
+  "card": {
+    "maxAtHall": "Niv. max {level} à cet Hôtel de ville",
+    "maxAtBuilderHall": "Niv. max {level} à cet Hôtel des ouvriers",
+    "progress": "Progression de {name}",
+    "notBuilt": "Non construit",
+    "level": "Niv. {level} sur {max}",
+    "build": "Construire",
+    "upgradeTo": "Améliorer au niv. {level}",
+    "superchargeTo": "Suralimenter au palier {tier}",
+    "maxed": "Max",
+    "running": "Amélioration au niv. {to}",
+    "finish": "Terminer",
+    "cancel": "Annuler",
+    "showAll": "Afficher les {count}",
+    "showFewer": "Afficher moins",
+    "instance": "#{number}",
+    "supercharge": "Suralimentation {tier} sur {tiers}"
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "title": "總覽",
+  "description": "一眼掌握你的村莊：進度、每日計時器與所有已儲存的數據。",
+  "subline": "{name}，推算結果，僅供檢視",
+  "header": {
+    "clanLevel": "{hasRole, select, true {部落等級 {level}，{role}} other {部落等級 {level}}}",
+    "achievements": "成就",
+    "ringCaption": "{stars} / {maxStars} 顆星星",
+    "viewAll": "查看全部",
+    "townHall": "TH{level}"
+  },
+  "dailies": {
+    "title": "每日",
+    "closedTitle": "每日內容在大本營 3 開放",
+    "closedBody": "鍛造廠、助手與賽季通行證會隨大本營提升而開放。",
+    "closedLink": "查看已開放的內容",
+    "groups": {
+      "helpers": "助手",
+      "daily": "每日",
+      "goldPass": "黃金通行證"
+    },
+    "requires": "需要{requirement}",
+    "openForge": "開啟鍛造廠",
+    "openHelpers": "開啟助手",
+    "unlockProspector": "在賽季通行證解鎖",
+    "helperHut": "助手小屋",
+    "townHall": "大本營 {level}",
+    "starBonus": "星星獎勵",
+    "capitalGold": "首都金幣",
+    "autoForge": "自動鍛造",
+    "forgeSlots": "鍛造欄位",
+    "notRunning": "未執行",
+    "running": "進行中",
+    "stopAuto": "停止自動鍛造",
+    "autoLine": "{amount} {resource}換 {capitalGold} 首都金幣",
+    "slotsLine": "{open} 個欄位中有 {running} 個進行中",
+    "slotsDone": "{done, plural, other {{amount} 個欄位已完成}}",
+    "autoPerk": "自動鍛造特權",
+    "helperPreview": "立即使用：剩餘 {before} 變為 {after}",
+    "goldPass": {
+      "edit": "到賽季通行證編輯",
+      "builder": "建築工人加速",
+      "research": "研究加速",
+      "hoggyBank": "豬豬撲滿",
+      "gemDonations": "1 寶石捐贈",
+      "autoForge": "自動鍛造",
+      "requestReduction": "縮短請求時間",
+      "on": "開",
+      "off": "關",
+      "resets": "加速將於 {date} 回到 0%。",
+      "readOnly": "開啟總覽絕不會變更村莊或其最後修改時間。"
+    }
+  },
+  "league": {
+    "open": "顯示{name}的獎勵",
+    "homeKind": "主村莊聯賽",
+    "builderKind": "建築工人基地聯賽",
+    "noData": "此大本營沒有這個聯賽的資料。",
+    "battle": "戰鬥結果",
+    "stars": "星星",
+    "attacker": "攻擊方建築工人金幣",
+    "defender": "防守方建築工人聖水"
+  },
+  "builder": {
+    "title": "建築工人基地",
+    "hall": "建築工人大本營 {level}",
+    "trophies": "{trophies} 獎盃",
+    "daysAt": "BH{level} 天數",
+    "notSetTitle": "尚未設定建築工人大本營",
+    "notSetBody": "建築工人基地在大本營 6 開放，但此村莊的建築工人大本營為 0。等級達到 1 以上後，才會顯示進度、獎盃與部隊。",
+    "notSetAction": "設定建築工人大本營等級",
+    "lockedBody": "需要大本營 6",
+    "troops": "部隊",
+    "heroes": "英雄"
+  },
+  "capital": {
+    "title": "部落首都",
+    "hall": "首都大廳 {level}",
+    "notSetTitle": "部落首都尚未設定",
+    "notSetBody": "Capital Peak 還沒有大廳等級，所以沒有區域進度可顯示。設定首都大廳等級即可開始追蹤。",
+    "notSetAction": "設定首都大廳等級",
+    "lockedBody": "需要大本營 3",
+    "districtHall": "區域大廳 {level}",
+    "notUnlocked": "未解鎖",
+    "unlocksAt": "首都大廳 {level} 解鎖",
+    "needsDistrictHall": "請先設定區域大廳",
+    "noData": "沒有資料",
+    "more": "再顯示 {count} 個區域",
+    "showFewer": "顯示較少",
+    "openDistricts": "開啟區域"
+  },
+  "home": {
+    "title": "主村莊",
+    "townHall": "大本營 {level}",
+    "daysAt": "TH{level} 天數",
+    "perHour": "每小時",
+    "stored": "已儲存",
+    "cards": {
+      "locked": "需要{requirement}"
+    },
+    "queue": "開啟",
+    "troops": "部隊",
+    "spells": "法術",
+    "heroes": "英雄",
+    "siege": "攻城機器",
+    "pets": "寵物",
+    "legend": "綠色外框：已達此大本營的上限。虛線外框：未解鎖。時鐘：升級進行中。",
+    "tile": "{hasRequirement, select, true {{name}，需要{requirement}} other {{name}，等級 {level}{max, plural, =0 {} other { / {max}}}}}",
+    "heroLocked": "需要{requirement}",
+    "petsLocked": "需要大本營 14"
+  }
+}

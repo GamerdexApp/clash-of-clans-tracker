@@ -1,0 +1,86 @@
+{
+  "header": {
+    "label": "Bahagian halaman",
+    "features": "Ciri",
+    "faq": "Soalan lazim",
+    "villages": "Kampung",
+    "settings": "Tetapan"
+  },
+  "hero": {
+    "title": "Jejaki Kemajuan Clash of Clans Anda",
+    "description": "Simpan setiap kampung di satu tempat: bangunan, pasukan, wira, naik taraf dan harian untuk Kampung Utama, Pangkalan Pembina dan Ibu Kota Klan anda.",
+    "note": "Percuma. Tanpa akaun. Semua data kekal dalam pelayar anda.",
+    "continue": "Teruskan dengan",
+    "continueLine": "{builderHall, plural, =0 {Dewan Bandar {townHall}, dikemas kini {updated}} other {Dewan Bandar {townHall}, Dewan Pembina {builderHall}, dikemas kini {updated}}}"
+  },
+  "cta": {
+    "create": "Cipta kampung pertama anda",
+    "learnMore": "Ketahui lebih lanjut",
+    "overview": "Pergi ke Gambaran keseluruhan",
+    "newVillage": "Kampung baharu"
+  },
+  "features": {
+    "label": "Semua yang anda perlukan",
+    "title": "Semua kemajuan anda di satu tempat",
+    "description": "Dari Dewan Bandar hingga Ibu Kota Klan, setiap tahap yang anda jejaki disimpan sebaik sahaja anda mengubahnya.",
+    "items": {
+      "item1": {
+        "title": "Pelbagai kampung",
+        "text": "Cipta dan urus kampung tanpa had. Jejaki akaun dan pangkalan berbeza secara berasingan."
+      },
+      "item2": {
+        "title": "Penjejakan kemajuan",
+        "text": "Jejaki dengan tepat apa yang telah anda siapkan, kutip atau buka merentas setiap kampung."
+      },
+      "item3": {
+        "title": "Gambaran keseluruhan",
+        "text": "Lihat kemajuan anda sekilas pandang dengan statistik ringkasan, pemasa harian dan penunjuk kesiapan."
+      },
+      "item4": {
+        "title": "Sandaran dan segerak",
+        "text": "Eksport kemajuan anda sebagai fail JSON, atau segerakkannya merentas peranti dengan storan awan anda sendiri."
+      },
+      "item5": {
+        "title": "Peribadi",
+        "text": "Data anda kekal dalam pelayar anda. Satu-satunya panggilan pelayan ialah carian tag pemain pilihan, yang meminta statistik awam anda daripada Supercell."
+      },
+      "item6": {
+        "title": "Mod gelap",
+        "text": "Selesa digunakan siang atau malam. Pilih cerah, gelap atau ikut peranti anda dalam Tetapan."
+      }
+    }
+  },
+  "faq": {
+    "label": "Ada soalan?",
+    "title": "Soalan lazim",
+    "items": {
+      "item1": {
+        "question": "Apakah Clash of Clans Tracker?",
+        "answer": "Ia ialah penjejak kemajuan untuk Clash of Clans. Ia membantu anda mengurus beberapa akaun dan menjejaki naik taraf, pencapaian, harian dan kemajuan keseluruhan di satu tempat."
+      },
+      "item2": {
+        "question": "Bagaimana data saya disimpan?",
+        "answer": "Semuanya disimpan dalam pelayar anda, jadi kemajuan anda peribadi dan tidak memerlukan akaun. Anda boleh mengeksport dan mengimportnya sebagai fail JSON untuk sandaran. Carian tag pemain pilihan menghantar tag kepada tindakan pelayan kecil yang meminta statistik awam anda daripada API Supercell."
+      },
+      "item3": {
+        "question": "Bolehkah saya menjejaki beberapa kampung?",
+        "answer": "Ya. Cipta seberapa banyak kampung yang anda mahu, masing-masing dengan kemajuan sendiri, dan tukar antaranya di bar sisi."
+      },
+      "item4": {
+        "question": "Adakah ia menyegerak merentas peranti?",
+        "answer": "Ya, jika anda mahu. Buka Tetapan dan sambung GitHub, Google Drive, Dropbox atau OneDrive. Data anda disimpan dalam akaun anda sendiri, dan segerak kekal mati sehingga anda menghidupkannya."
+      },
+      "item5": {
+        "question": "Adakah aplikasi ini percuma?",
+        "answer": "Ya. Ia percuma, tanpa langganan, tanpa iklan dan tanpa pendaftaran."
+      }
+    }
+  },
+  "final": {
+    "title": "Mula menjejaki kampung anda hari ini",
+    "description": "Tanpa akaun dan tanpa pendaftaran. Kampung pertama anda hanya memerlukan satu nama."
+  },
+  "updated": {
+    "justNow": "baru sahaja"
+  }
+}

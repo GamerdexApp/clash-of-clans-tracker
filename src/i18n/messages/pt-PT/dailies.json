@@ -1,0 +1,255 @@
+{
+  "locked": {
+    "title": "Diárias",
+    "subline": "{name}, Centro da Aldeia {townHall}, nada aqui está aberto ainda",
+    "open": "Aberto",
+    "lockedBadge": "Bloqueado",
+    "now": "Esta aldeia está no Centro da Aldeia {townHall}.",
+    "nowNoHut": "Esta aldeia ainda não tem Cabana dos Ajudantes.",
+    "needsHut": "Precisa da Cabana dos Ajudantes",
+    "toBuilder": "Abrir Construtor",
+    "cards": {
+      "forge": {
+        "title": "Forja",
+        "what": "Transforma recursos de sobra em Ouro da Capital e recolhe o Ouro da Capital diário."
+      },
+      "helpers": {
+        "title": "Ajudantes",
+        "what": "Acompanha o Aprendiz do Construtor, o Assistenta de Laboratório, o Alquimista e o Prospetor."
+      },
+      "seasonPass": {
+        "title": "Passe de Temporada",
+        "what": "Define os bónus e vantagens do Passe de Ouro que encurtam os tempos de melhoria."
+      },
+      "starBonus": {
+        "title": "Bónus de Estrelas",
+        "what": "O temporizador diário do Bónus de Estrelas está no Resumo.",
+        "open": "Abrir Resumo"
+      }
+    }
+  },
+  "timer": {
+    "notSet": "Define a hora do teu reinício diário",
+    "setTime": "Definir hora de reinício",
+    "setAndUse": "Definir e marcar como usado",
+    "notSetHelp": "Definir a hora não marca a recompensa como usada.",
+    "savedIn": "A hora é guardada em {zone}.",
+    "available": "Disponível",
+    "use": "Usar",
+    "adjust": "Ajustar",
+    "adjustTitle": "Ajustar hora de reinício",
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "resetsAt": "Reinicia todos os dias às {time}, {zone}",
+    "untilReset": "até ao reinício às {time}, {zone}",
+    "usedAt": "Usado às {time}.",
+    "timeLabel": "Hora de reinício",
+    "deviceClock": "relógio do dispositivo",
+    "used": "Marcado como usado: {name}",
+    "undo": "Anular"
+  },
+  "forge": {
+    "title": "Forja",
+    "description": "Transforma recursos de sobra em Ouro da Capital e recolhe o Ouro da Capital diário.",
+    "subline": "{builderHall, plural, =0 {{name}, Centro da Aldeia {townHall}, produção de Ouro da Capital} other {{name}, Centro da Aldeia {townHall}, Centro do Construtor {builderHall}, produção de Ouro da Capital}}",
+    "daily": {
+      "title": "Ouro da Capital diário",
+      "amount": "+{gold} Ouro da Capital todos os dias no Centro da Aldeia {townHall}",
+      "none": "O Ouro da Capital diário começa no Centro da Aldeia 6.",
+      "name": "Ouro da Capital diário"
+    },
+    "slots": {
+      "title": "Vagas da Forja",
+      "craftingTime": "Tempo de fabrico de 3 dias",
+      "open": "{open} de {total} vagas abertas no Centro da Aldeia {townHall}",
+      "boost": "Bónus de construtor de {percent}% aplicado: {time}",
+      "slot": "Vaga {number}",
+      "requires": "Requer o Centro da Aldeia {townHall}",
+      "locked": "Bloqueada",
+      "idle": "Livre",
+      "idleHelp": "Escolhe o que forjar",
+      "running": "Em curso",
+      "done": "Concluída",
+      "result": "Resultado",
+      "start": "Iniciar",
+      "stop": "Parar",
+      "reset": "Repor",
+      "resource": "Recurso",
+      "rate": "{amount} {resource} por {capitalGold} Ouro da Capital, pronto em {time}",
+      "left": "Faltam {time}",
+      "ready": "Pronto: {capitalGold} Ouro da Capital.",
+      "finished": "Terminou há {ago}.",
+      "stopped": "Vaga {number} parada. Execução limpa.",
+      "resetDone": "Vaga {number} reposta. Execução de {resource} limpa.",
+      "runningTitle": "{resource}, {amount}"
+    },
+    "auto": {
+      "title": "Forja Automática",
+      "subtitle": "Vantagem do Passe de Ouro, repete-se sozinha",
+      "repeats": "{amount} {resource} por {capitalGold} Ouro da Capital a cada {time}",
+      "nextRun": "A próxima execução começa sozinha quando esta terminar.",
+      "stop": "Parar Forja Automática",
+      "stopped": "Forja Automática parada. Ciclo limpo.",
+      "confirm": {
+        "title": "Parar a Forja Automática?",
+        "body": "O ciclo em curso será limpo: {amount} {resource} por {capitalGold} Ouro da Capital, com {time} em falta. A Forja Automática deixa de se repetir até a iniciares de novo na página Forja. A vantagem do Passe de Ouro continua ligada no Passe de Temporada.",
+        "undoHint": "O botão Anular fica no ecrã durante alguns segundos depois de a parares.",
+        "keep": "Continuar",
+        "stop": "Parar Forja Automática"
+      }
+    },
+    "rates": {
+      "title": "Taxas da Forja",
+      "description": "{builderHall, plural, =0 {Centro da Aldeia {townHall}, uma execução numa vaga} other {Centro da Aldeia {townHall} e Centro do Construtor {builderHall}, uma execução numa vaga}}",
+      "autoTitle": "Taxas da Forja Automática",
+      "autoDescription": "Preço do Passe de Ouro, metade do custo manual",
+      "resource": "Recurso",
+      "cost": "Custo",
+      "capitalGold": "Ouro da Capital",
+      "requires": "Requer {requirement}"
+    }
+  },
+  "helpers": {
+    "title": "Ajudantes",
+    "description": "Acompanha o Aprendiz do Construtor, o Assistenta de Laboratório, o Alquimista e o Prospetor.",
+    "subline": "{builderHall, plural, =0 {{name}, Centro da Aldeia {townHall}, assistentas da Cabana dos Ajudantes} other {{name}, Centro da Aldeia {townHall}, Centro do Construtor {builderHall}, assistentas da Cabana dos Ajudantes}}",
+    "banner": "Cabana dos Ajudantes construída. Cada ajudante desbloqueia por Centro da Aldeia: Assistenta de Laboratório 9, Aprendiz do Construtor 10, Prospetor 10, Alquimista 11.",
+    "names": {
+      "buildersApprentice": "Aprendiz do Construtor",
+      "labAssistant": "Assistenta de Laboratório",
+      "alchemist": "Alquimista",
+      "prospector": "Prospetor"
+    },
+    "from": "Centro da Aldeia {townHall} ou superior",
+    "lockedCard": "Requer o Centro da Aldeia {townHall}",
+    "dailyUse": "Uso diário",
+    "level": "Nível",
+    "levelOption": "Nível {level}",
+    "levelTownHall": "TH {townHall}",
+    "none": "Nenhum",
+    "noLevel": "Seleciona o teu nível para ver as estatísticas.",
+    "noLevelCalculator": "Seleciona o teu nível para usar a calculadora.",
+    "nextLevel": "{gems, select, 0 {O nível {level} é grátis} other {O nível {level} custa {gems} gemas}}",
+    "saves": "Poupa {time} por uso",
+    "levelRequires": "Requer o Centro da Aldeia {townHall}",
+    "assignment": {
+      "builderTitle": "Melhoria a acelerar",
+      "researchTitle": "Investigação a acelerar",
+      "none": "Nenhuma",
+      "builderHelp": "Lista os edifícios, heróis, Centro da Aldeia, arma do Centro da Aldeia e módulos de defesas fabricadas que estão a ser melhorados agora.",
+      "researchHelp": "Só investigação: lista as tropas, feitiços e máquinas de cerco que estão a ser melhorados agora.",
+      "builderEmpty": "Não há melhorias de construtor ativas para atribuir.",
+      "researchEmpty": "Não há investigação de laboratório ativa para atribuir.",
+      "once": "Uso único",
+      "untilDone": "Até terminar",
+      "assignedTo": "Atribuído a",
+      "clearsAfterUse": "Limpa-se após um uso.",
+      "staysUntilDone": "Mantém-se até a melhoria terminar.",
+      "clear": "Limpar atribuição",
+      "cleared": "Atribuição limpa.",
+      "select": "Melhoria atribuída",
+      "mode": "Modo de atribuição",
+      "preview": "Usar agora: restantes {before} passam a {after}.",
+      "previewDone": "Usar agora: restantes {before}, a melhoria termina.",
+      "upgradeTo": "{name} para o nível {level}, restantes {left}"
+    },
+    "used": {
+      "plain": "Marcado como usado: {name}",
+      "saved": "{name} usado em {target}, {time} poupados"
+    },
+    "alchemist": {
+      "stats": {
+        "goldElixir": "Máx. de Ouro ou Elixir",
+        "darkElixir": "Máx. de Elixir Negro",
+        "bonus": "Bónus de conversão"
+      },
+      "calculator": "Calculadora de conversão",
+      "from": "De",
+      "to": "Para",
+      "amount": "Quantidade a converter",
+      "result": "{amount} {from} dão {output} {to}",
+      "help": "Inclui o bónus de conversão de {bonus}% e a taxa de 150 para 1.",
+      "nothingSaved": "Nada aqui é guardado."
+    },
+    "prospector": {
+      "lockedTitle": "Bloqueado até o desbloqueares com 2.200 Pontos de Desafio de Temporada",
+      "lockedHelp": "Liga-o na página Passe de Temporada depois de o desbloqueares no jogo.",
+      "toSeasonPass": "Abrir Passe de Temporada",
+      "subtitle": "Centro da Aldeia 10 ou superior, desbloqueado com Pontos de Desafio de Temporada",
+      "lockedBadge": "Bloqueado",
+      "unlockedBadge": "Desbloqueado",
+      "levelOnly": "Nível 1 (o único nível)",
+      "limits": {
+        "shiny": "Máx. de Shiny Ore",
+        "glowy": "Máx. de Glowy Ore",
+        "starry": "Máx. de Starry Ore"
+      },
+      "calculator": "Calculadora de conversão de minério",
+      "ores": {
+        "shiny": "Shiny Ore",
+        "glowy": "Glowy Ore",
+        "starry": "Starry Ore"
+      },
+      "help": "10 Shiny Ore fazem 1 Glowy Ore. 100 Glowy Ore fazem 1 Starry Ore."
+    }
+  },
+  "seasonPass": {
+    "title": "Passe de Temporada",
+    "description": "Define os bónus e vantagens do Passe de Ouro que encurtam os tempos de melhoria.",
+    "subline": "{name}, Centro da Aldeia {townHall}, vantagens do Passe de Ouro ativas nesta temporada",
+    "lockedTitle": "O Passe de Temporada está bloqueado",
+    "lockedBody": "O Passe de Ouro precisa do Centro da Aldeia 7. Esta aldeia está no Centro da Aldeia {townHall}.",
+    "month": {
+      "title": "{month}",
+      "subtitle": "Os bónus reiniciam em {reset}, as vantagens mantêm-se.",
+      "key": "Chave do mês",
+      "rolled": "Começou um novo mês. O bónus de construtor e o bónus de investigação foram repostos a 0%. As vantagens mantêm-se.",
+      "undoReset": "Anular reposição",
+      "dismiss": "Dispensar",
+      "restored": "Bónus recuperados para este mês.",
+      "undo": "Anular"
+    },
+    "boosts": {
+      "title": "Vantagens de bónus",
+      "description": "O Passe de Ouro encurta os tempos de melhoria nesta temporada.",
+      "builder": "Bónus de construtor",
+      "research": "Bónus de investigação",
+      "applies": "Aplica-se aos tempos de Construtor, Investigação e Mascotes, às cronologias das filas e ao tempo de fabrico da Forja.",
+      "saved": "Guardado com este mês.",
+      "value": "{percent, plural, =0 {Desligado} other {{percent}%}}",
+      "option": "{percent, plural, =0 {0%} other {{percent}%}}",
+      "builderEffect": "{percent, plural, =0 {O tempo de fabrico da Forja é de 3d.} other {O tempo de fabrico da Forja é {time}.}}",
+      "researchEffect": "{percent, plural, =0 {Os tempos de investigação e de mascotes não mudam.} other {Os tempos de investigação e de mascotes são {percent}% mais curtos.}}"
+    },
+    "unlocks": {
+      "title": "Desbloqueios do Desafio de Temporada",
+      "description": "Não faz parte do Passe de Ouro",
+      "prospector": "Prospetor",
+      "prospectorHelp": "Ajudante para o Centro da Aldeia 10 ou superior, custa 2.200 Pontos de Desafio de Temporada",
+      "shows": "Aparece na página Ajudantes"
+    },
+    "perks": {
+      "title": "Vantagens do Passe de Ouro",
+      "description": "Vantagens do Passe de Ouro ativas nesta temporada",
+      "referenceOnly": "Apenas referência",
+      "referenceNote": "Não altera mais nada na aplicação.",
+      "hoggyBank": {
+        "label": "Hoggy Bank",
+        "note": "Guarda recursos enquanto jogas, recolhe no fim da temporada"
+      },
+      "gemDonations": {
+        "label": "Doações de 1 gema",
+        "note": "Doa tropas e feitiços por apenas 1 gema cada"
+      },
+      "autoForge": {
+        "label": "Forja Automática",
+        "note": "Converte recursos em Ouro da Capital automaticamente"
+      },
+      "autoForgeEffect": "Liga a linha da Forja Automática na página Forja e o indicador do Resumo.",
+      "requestTimeReduction": {
+        "label": "Redução do Tempo de Pedido",
+        "note": "Reduz o temporizador de espera do pedido de tropas"
+      }
+    }
+  }
+}

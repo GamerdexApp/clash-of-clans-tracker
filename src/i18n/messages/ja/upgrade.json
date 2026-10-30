@@ -1,0 +1,108 @@
+{
+  "massEdit": {
+    "hint": "レベルは一括編集でも設定できます。",
+    "link": "一括編集を開く"
+  },
+  "hideMax": "最大を非表示",
+  "strip": {
+    "free": "{total}中{free}が空き",
+    "idle": "空き",
+    "unassigned": "未割り当て",
+    "taskLevels": "Lv {from}からLv {to}"
+  },
+  "start": {
+    "title": "アップグレードを開始",
+    "levelChange": "{from, plural, =0 {Lv {to}まで建設} other {Lv {from}からLv {to}}}",
+    "time": "時間",
+    "cost": "コスト",
+    "doneAt": "完了時刻",
+    "wasBoosted": "元は{base}、ゴールドパス -{percent}%",
+    "wasCost": "{resource}、元は{base}",
+    "resource": "{resource}",
+    "storedNote": "このブースト後の時間が保存されます",
+    "storedNoteUnboosted": "この時間が保存されます",
+    "instant": "この建設に時間はかかりません。すぐに完了し、ビルダーも使いません。",
+    "lanes": {
+      "builder": {
+        "label": "ビルダー",
+        "choose": "開始するビルダーを選んでください。",
+        "noneFree": "すべてのビルダーが作業中です。先にアップグレードをキャンセルするか完了してください。"
+      },
+      "research": {
+        "label": "研究レーン",
+        "choose": "開始するレーンを選んでください。",
+        "noneFree": "すべての研究レーンが作業中です。先に研究をキャンセルするか完了してください。"
+      },
+      "bbBuilder": {
+        "label": "ビルダー",
+        "choose": "開始するビルダーを選んでください。",
+        "noneFree": "2人のビルダーとも作業中です。先にアップグレードをキャンセルするか完了してください。"
+      },
+      "bbResearch": {
+        "label": "スターラボラトリー",
+        "choose": "開始するにはスターラボラトリーを選んでください。",
+        "noneFree": "スターラボラトリーは作業中です。先に研究をキャンセルするか完了してください。"
+      },
+      "pet": {
+        "label": "ペットハウス",
+        "choose": "開始するにはペットハウスを選んでください。",
+        "noneFree": "ペットハウスは作業中です。先にペットのアップグレードをキャンセルするか完了してください。"
+      }
+    },
+    "requires": {
+      "laboratory": "ラボラトリー {level}が必要",
+      "pet-house": "ペットハウス {level}が必要",
+      "star-laboratory": "スターラボラトリー {level}が必要",
+      "noPetHouse": "先にペットハウスを建設してください"
+    },
+    "free": "無料",
+    "cancel": "キャンセル",
+    "confirm": "アップグレードを開始",
+    "confirmInstant": "今すぐ建設"
+  },
+  "finish": {
+    "title": "早期完了",
+    "left": "残り",
+    "methodLabel": "どのように完了しましたか?",
+    "methods": {
+      "timePassed": {
+        "label": "時間経過",
+        "description": "ゲーム内でタイマーがすでに終わっています。何も消費しません。"
+      },
+      "gems": {
+        "label": "ジェム",
+        "description": "ゲーム内でジェムを払ってすぐに完了します。コストは残り時間が減るほど下がります。"
+      },
+      "book": {
+        "label": "建築の本",
+        "description": "実行中の建物のアップグレードを即座に完了します。"
+      },
+      "hammer": {
+        "label": "建築のハンマー",
+        "description": "建物を次のレベルに即座にアップグレードします。"
+      }
+    },
+    "stores": "ビレッジに保存される内容",
+    "storesLevel": "レベル {level}。タイマーはクリアされます。",
+    "storesSaved": "{time}が短縮時間に加算されます。",
+    "storesSavedNone": "短縮時間は変わりません。",
+    "gemFigure": "約{gems}ジェム(ゲームデータの規則による値で、ゲーム内のコストとは異なる場合があります)。",
+    "notTracked": {
+      "timePassed": "",
+      "gems": "使用したジェムは記録されません。",
+      "book": "所持している本は記録されません。",
+      "hammer": "所持しているハンマーは記録されません。"
+    },
+    "keep": "アップグレードを続ける",
+    "confirm": "アップグレードを完了"
+  },
+  "cancel": {
+    "title": "このアップグレードをキャンセルしますか?",
+    "body": "キャンセルするとタイマーが止まります。{name}はLv {level}のままで、{builder}は再び空きになります。",
+    "refundTitle": "ゲーム内の返金: 50%",
+    "refundBody": "Clash of Clans でキャンセルすると、支払った{paid}のうち{refund} {resource}が戻ります。このアプリは資源を記録しないため、キャンセル後は貯蔵庫を確認してください。",
+    "undoNote": "キャンセル後10秒間は元に戻せます。それを過ぎたら、アップグレードをもう一度開始してください。",
+    "keep": "アップグレードを続ける",
+    "confirm": "アップグレードをキャンセル"
+  }
+}

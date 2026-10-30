@@ -1,0 +1,138 @@
+{
+  "title": "批次編輯",
+  "description": "一次變更多個等級。在你按下儲存變更之前，不會儲存任何內容。",
+  "subline": "{name}，大本營 {townHall}，暫存的變更",
+  "scopes": {
+    "home": "主村莊",
+    "builder": "建築工人基地",
+    "capital": "部落首都"
+  },
+  "scopeNav": "範圍",
+  "requires": "需要{requirement}",
+  "trackingOff": "追蹤已關閉",
+  "changedCount": "{count, plural, other {{amount} 項變更}}",
+  "chip": "未儲存的變更",
+  "bar": {
+    "unsaved": "{count, plural, other {{amount} 項未儲存的變更}}",
+    "none": "沒有未儲存的變更",
+    "discard": "捨棄",
+    "save": "儲存變更"
+  },
+  "saved": "{count, plural, other {已儲存 {amount} 項變更}}",
+  "undo": "復原",
+  "discardDialog": {
+    "title": "{count, plural, other {要捨棄 {amount} 項未儲存的變更嗎？}}",
+    "body": "每一列都會回到已儲存的等級。",
+    "keep": "繼續編輯",
+    "discard": "捨棄變更"
+  },
+  "leave": {
+    "title": "{count, plural, other {你有 {amount} 項未儲存的變更}}",
+    "body": "離開前請先儲存，或將它們捨棄。",
+    "save": "儲存並離開",
+    "discard": "捨棄並離開",
+    "keep": "繼續編輯"
+  },
+  "toolbar": {
+    "label": "批次操作",
+    "selectAll": "選取全部 {count} 列",
+    "selected": "{count, plural, other {已選取 {amount} 列}}",
+    "clearSelection": "清除選取",
+    "scopeAll": "套用到{category}的全部 {count} 列",
+    "scopeSelected": "{count, plural, other {套用到已選取的 {amount} 列}}",
+    "max": "全部滿級",
+    "maxSelected": "選取項目設為滿級",
+    "reset": "全部重設",
+    "resetSelected": "重設選取項目",
+    "setLevel": "設定等級",
+    "levelLabel": "選取列的等級",
+    "applyLevel": "{count, plural, other {套用到 {amount} 列}}",
+    "hallLabel": "設為該大廳等級的最高值",
+    "hallCurrent": "{hall} {level}（目前）",
+    "hallOption": "{hall} {level}",
+    "hallPlaceholder": "選擇{hall}"
+  },
+  "confirm": {
+    "title": "{count, plural, other {要降低 {amount} 列嗎？}}",
+    "body": "這只會變更草稿。在你按下儲存變更之前，不會儲存任何內容。",
+    "superchargeNote": "低於最高等級的建築也會失去它的超級強化階級。",
+    "apply": "套用到草稿",
+    "cancel": "取消",
+    "line": "{name}：{from} 至 {to}",
+    "more": "以及另外 {count} 項"
+  },
+  "rows": {
+    "notBuilt": "未建造",
+    "toMax": "距離滿級 {count}",
+    "atMax": "已滿級",
+    "changed": "已從 {from} 變更為 {to}",
+    "level": "{name}等級",
+    "raise": "提高{name}",
+    "lower": "降低{name}",
+    "max": "滿級",
+    "select": "選取{name}",
+    "selectGroup": "選取所有{name}",
+    "supercharge": "超級強化",
+    "reachFirst": "請先達到等級 {level}",
+    "slider": "{name}滑桿",
+    "groupBuilt": "已建造 {count} 座，最高等級 {max}",
+    "expand": "顯示{name}",
+    "collapse": "隱藏{name}"
+  },
+  "category": {
+    "atMax": "{hall} {level} 的上限中，{done} / {total} 已滿級",
+    "rowsAtMax": "{done} / {total} 已滿級",
+    "empty": "此分類還沒有可編輯的內容。",
+    "locked": "需要{requirement}",
+    "lockedSuffix": "（未解鎖）",
+    "nav": "分類"
+  },
+  "walls": {
+    "total": "總計",
+    "allocated": "已分配",
+    "remaining": "剩餘",
+    "maxAll": "全部滿級",
+    "resetAll": "全部重設",
+    "maxAllHelp": "將所有剩餘的城牆移至最高等級",
+    "level": "等級 {level} 的城牆"
+  },
+  "builder": {
+    "profile": "建築工人基地檔案",
+    "hall": "建築工人大本營等級",
+    "hallHelp": "建築工人大本營 {level} 決定下方每一列的最高等級。降低它之前會先詢問，且只會降低超出新上限的列。",
+    "none": "此建築工人大本營等級沒有可用的建築",
+    "raise": "提高建築工人大本營",
+    "lower": "降低建築工人大本營",
+    "trophies": "獎盃",
+    "bestTrophies": "最佳獎盃",
+    "league": "聯賽",
+    "hallConfirmTitle": "要將建築工人大本營降到 {level} 嗎？"
+  },
+  "hallNames": {
+    "home": "大本營",
+    "builder": "建築工人大本營",
+    "district": "區域大廳",
+    "capital": "首都大廳"
+  },
+  "capital": {
+    "profile": "部落首都檔案",
+    "hall": "首都大廳",
+    "none": "無",
+    "level": "首都大廳 {level}",
+    "contributions": "部落首都貢獻",
+    "unit": "首都金幣",
+    "districtHall": "區域大廳",
+    "districtNone": "無",
+    "districtLevel": "區域大廳 {level}",
+    "requiresCapitalHall": "需要首都大廳 {level}",
+    "unlockHint": "請先在上方設定{label}，即可解鎖建築。",
+    "parts": "區塊",
+    "off": "部落首都追蹤已關閉",
+    "offBody": "請從部落首都頁面重新開啟追蹤。沒有任何內容被刪除。",
+    "offAction": "開啟部落首都"
+  },
+  "empty": {
+    "title": "沒有使用中的村莊",
+    "description": "選擇或建立一個村莊，即可使用批次編輯。"
+  }
+}

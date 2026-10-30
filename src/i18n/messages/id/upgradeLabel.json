@@ -1,0 +1,24 @@
+{
+  "levelTo": "{name} {from}→{to}",
+  "toast": {
+    "undo": "Urungkan",
+    "started": "{name} Lv {from} ke {to} dimulai",
+    "finished": "{name} selesai di Lv {level}",
+    "timeSaved": "{time} ditambahkan ke waktu hemat.",
+    "cancelled": "{name} Lv {from} ke {to} dibatalkan",
+    "levelChanged": "{name} Lv {from} ke {to}"
+  },
+  "queue": {
+    "buildPetHouse": "Bangun Rumah Hewan dulu",
+    "requires": "Butuh {building} {level}",
+    "alreadyUpgrading": "{name} sedang ditingkatkan",
+    "finishFirst": "Level {level} harus selesai dulu",
+    "alreadyAt": "Sudah di level {level}"
+  },
+  "conflict": {
+    "alreadyAt": "{name} sudah di level {level}, jadi level {target} selesai.",
+    "removeFix": "Hapus dari antrean.",
+    "scheduledBefore": "{name} level {level} dijadwalkan sebelum level {earlier} selesai.",
+    "moveFix": "Pindahkan level {level} setelah level {earlier}."
+  }
+}

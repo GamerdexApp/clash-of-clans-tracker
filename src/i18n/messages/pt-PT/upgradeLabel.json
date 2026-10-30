@@ -1,0 +1,24 @@
+{
+  "levelTo": "{name} {from}→{to}",
+  "toast": {
+    "undo": "Anular",
+    "started": "Iniciado: {name} nív. {from} a {to}",
+    "finished": "Concluído: {name} no nív. {level}",
+    "timeSaved": "{time} acrescentado ao tempo poupado.",
+    "cancelled": "Cancelado: {name} nív. {from} a {to}",
+    "levelChanged": "{name} nív. {from} a {to}"
+  },
+  "queue": {
+    "buildPetHouse": "Constrói primeiro uma Casa das Mascotes",
+    "requires": "Requer {building} {level}",
+    "alreadyUpgrading": "{name} já está em melhoria",
+    "finishFirst": "O nível {level} tem de terminar primeiro",
+    "alreadyAt": "Já está no nível {level}"
+  },
+  "conflict": {
+    "alreadyAt": "{name} já está no nível {level}, por isso o nível {target} está concluído.",
+    "removeFix": "Remove-o da fila.",
+    "scheduledBefore": "O nível {level} de {name} está agendado antes de o nível {earlier} estar concluído.",
+    "moveFix": "Move o nível {level} para depois do nível {earlier}."
+  }
+}

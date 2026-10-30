@@ -1,0 +1,8 @@
+{
+  "days": "{count}日",
+  "hours": "{count}時間",
+  "minutes": "{count}分",
+  "seconds": "{count}秒",
+  "paddedSeconds": "{count}秒",
+  "join": "{first} {second}"
+}

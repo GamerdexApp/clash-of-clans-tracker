@@ -1,0 +1,63 @@
+{
+  "upgrades": {
+    "title": "Naik taraf",
+    "subline": "{name}, Dewan Pembina {hall}",
+    "sublineNotSet": "{name}, Dewan Pembina belum ditetapkan",
+    "tabsLabel": "Bahagian Pangkalan Pembina",
+    "tabs": {
+      "defenses": "Pertahanan",
+      "army": "Tentera",
+      "resources": "Sumber",
+      "traps": "Perangkap",
+      "heroes": "Wira",
+      "other": "Lain-lain"
+    },
+    "strip": {
+      "title": "Pembina",
+      "noBuilders": "Pangkalan Pembina mempunyai dua pembina.",
+      "openQueue": "Buka giliran dan garis masa",
+      "unassignedHelp": "Sesetengah naik taraf disimpan pada pembina yang sudah digunakan naik taraf lain. Siapkan atau batalkannya."
+    }
+  },
+  "locked": {
+    "title": "Memerlukan Dewan Bandar 6",
+    "description": "Kampung ini berada pada Dewan Bandar {townHall}. Pangkalan Pembina dibuka pada Dewan Bandar 6, atau apabila anda menetapkan tahap Dewan Pembina."
+  },
+  "notSet": {
+    "action": "Tetapkan tahap Dewan Pembina",
+    "troopsDescription": "Pasukan Pangkalan Pembina mengikut tahap Dewan Pembina. Tetapkannya di halaman Naik taraf, tab Lain-lain.",
+    "title": "Pilih tahap Dewan Pembina anda untuk mula menjejaki",
+    "description": "Tetapkan tahap Dewan Pembina dalam jubin di bawah. Senarai Pangkalan Pembina mengikutnya."
+  },
+  "hall": {
+    "title": "Dewan Pembina",
+    "notSet": "Belum ditetapkan",
+    "option": "Dewan Pembina {level}",
+    "since": "{amount} {days, plural, other {hari}} pada Dewan Pembina {level}",
+    "confirm": {
+      "title": "Tukar Dewan Pembina kepada {level}?",
+      "raising": "Menaikkan tahap menunjukkan lebih banyak bangunan dan had lebih tinggi. Tiada yang anda simpan dibuang.",
+      "lowering": "Menurunkan tahap menyembunyikan bangunan dan had di atasnya. Tahap yang anda simpan dikekalkan.",
+      "clearing": "Mengosongkan tahap menyembunyikan setiap senarai Pangkalan Pembina. Tahap yang anda simpan dikekalkan.",
+      "setDays": "Tetapkan Hari pada Dewan Pembina kepada hari ini",
+      "cancel": "Batal",
+      "confirm": "Tukar tahap"
+    },
+    "toast": "Dewan Pembina {from, plural, =0 {belum ditetapkan} other {{from}}} ke {to, plural, =0 {belum ditetapkan} other {{to}}}",
+    "undo": "Buat asal"
+  },
+  "other": {
+    "clockTower": "Menara Jam",
+    "clockTowerMax": "Maks Thp {level} pada Dewan Pembina ini",
+    "clockTowerProgress": "Kemajuan Menara Jam"
+  },
+  "empty": {
+    "title": "Belum ada apa-apa di sini",
+    "description": "Tiada bangunan jenis ini pada tahap Dewan Pembina ini.",
+    "allMax": "Semuanya di sini sudah pada tahap maksimum. Matikan Sembunyi Maks untuk melihatnya."
+  },
+  "heroes": {
+    "maxAtHall": "Maks Thp {level} pada Dewan Pembina ini",
+    "progress": "Kemajuan {name}"
+  }
+}

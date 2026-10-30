@@ -1,0 +1,139 @@
+{
+  "districts": {
+    "title": "الأحياء",
+    "subline": "{hall, plural, =0 {{name}، قاعة العاصمة غير محددة} other {{name}، قاعة العاصمة {hall}}}",
+    "description": "أحياء ومناطق عاصمة عشيرتك."
+  },
+  "troops": {
+    "title": "القوات والتعاويذ",
+    "subline": "{name}، قوات وتعاويذ عاصمة العشيرة",
+    "tiles": {
+      "troops": "القوات",
+      "spells": "التعاويذ",
+      "caption": "{current} من {max} مستوى"
+    },
+    "sections": {
+      "troops": "القوات",
+      "spells": "التعاويذ"
+    },
+    "card": {
+      "level": "مستوى {name}",
+      "raise": "رفع {name}",
+      "lower": "خفض {name}",
+      "maxAt": "المستوى الأقصى الآن {level}",
+      "from": "من {zone}",
+      "progress": "تقدم {name}"
+    },
+    "locked": {
+      "title": "غير متاح بعد",
+      "districtHall": "يتطلب قاعة الحي {level} في {zone}",
+      "capitalHall": "يتطلب قاعة العاصمة {level} لفتح {zone}",
+      "kept": "المستوى المحفوظ {level} باقٍ"
+    },
+    "empty": {
+      "title": "كل شيء في أقصى مستوى",
+      "description": "أوقف إخفاء الأقصى لعرض كل القوات والتعاويذ."
+    }
+  },
+  "tracking": {
+    "label": "تتبع عاصمة العشيرة",
+    "onHelp": "إيقافه يُبقي كل البيانات.",
+    "turnOnTitle": "تتبع عاصمة العشيرة مفعّل",
+    "turnedOn": "تتبع عاصمة العشيرة مفعّل.",
+    "undo": "تراجع",
+    "offDialog": {
+      "title": "إيقاف تتبع عاصمة العشيرة؟",
+      "body": "ستُخفى صفحات عاصمة العشيرة وبطاقة نظرة عامة وتبويب التعديل الجماعي. لا يُحذف شيء.",
+      "confirm": "إيقاف",
+      "cancel": "إلغاء"
+    }
+  },
+  "off": {
+    "title": "تتبع عاصمة العشيرة متوقف",
+    "description": "تبقى أحياؤك وقواتك وتعاويذك محفوظة. فعّل التتبع لعرضها من جديد.",
+    "turnOn": "تفعيل التتبع",
+    "keptTitle": "ما الذي يبقى",
+    "kept": "تبقى كل بيانات عاصمة العشيرة في هذه القرية."
+  },
+  "locked": {
+    "title": "عاصمة العشيرة مقفلة",
+    "description": "تُفتح عاصمة العشيرة عند قاعة المدينة 3. هذه القرية على قاعة المدينة {townHall}. يظهر ما حُفظ سابقًا من جديد عند قاعة المدينة 3.",
+    "action": "غيّر قاعة المدينة في القرى"
+  },
+  "notSet": {
+    "title": "عاصمة العشيرة غير معدّة",
+    "description": "حدد مستوى قاعة العاصمة لبدء تتبع الأحياء والقوات والتعاويذ.",
+    "action": "تحديد مستوى قاعة العاصمة"
+  },
+  "hall": {
+    "label": "قاعة العاصمة",
+    "none": "لا شيء",
+    "level": "المستوى {level}",
+    "nextCost": "قاعة العاصمة {level} تكلف {cost} ذهب العاصمة{hasOpens, select, true { وتفتح {opens}} other {}}. رفع القاعة لا يعيد ضبط المستويات أبدًا.",
+    "atTop": "قاعة العاصمة في أعلى مستوى.",
+    "raised": "رُفعت قاعة العاصمة من {from} إلى {to}. لم يُعد ضبط أي مستوى.",
+    "changed": "تغيّرت قاعة العاصمة من {from} إلى {to}.",
+    "districtRaised": "رُفعت قاعة الحي في {zone} من {from} إلى {to}.",
+    "districtChanged": "تغيّرت قاعة الحي في {zone} من {from} إلى {to}."
+  },
+  "contributions": {
+    "label": "المساهمات",
+    "unit": "ذهب العاصمة",
+    "help": "إجمالي ما قدمته لعشيرتك. استيراد وسم اللاعب يملؤه، ويمكنك كتابته أيضًا."
+  },
+  "tiles": {
+    "progress": "تقدم العاصمة",
+    "progressCaption": "{current} من {max} مستوى",
+    "zones": "المناطق المفتوحة",
+    "zonesCaption": "{open} من {total}"
+  },
+  "zones": {
+    "title": "المناطق",
+    "help": "اختر منطقة لتعديلها أدناه",
+    "hall": "{level, plural, =0 {لا توجد قاعة حي} other {قاعة الحي {level}}}",
+    "peakHall": "قاعة العاصمة {level}",
+    "locked": "مقفلة، تحتاج قاعة العاصمة {hall}",
+    "levels": "{current} من {max}"
+  },
+  "panel": {
+    "districtHall": "قاعة الحي",
+    "requires": "يتطلب قاعة العاصمة {hall}",
+    "noHall": "لا توجد قاعة حي",
+    "empty": "لا شيء للبناء هنا عند مستوى هذه القاعة.",
+    "groupsLabel": "مجموعات المباني",
+    "groups": {
+      "defenses": "الدفاعات",
+      "traps": "الفخاخ",
+      "army": "الجيش",
+      "walls": "الجدران"
+    },
+    "max": "أقصى",
+    "clear": "مسح",
+    "maxAll": "أقصى الكل",
+    "resetAll": "إعادة ضبط الكل",
+    "instances": "{amount} {count, plural, zero {مبانٍ} one {مبنى} two {مبنيان} few {مبانٍ} many {مبنى} other {مبنى}}",
+    "maxLevel": "المستوى الأقصى {level}",
+    "instance": "{name} {index}",
+    "raise": "رفع {name}",
+    "lower": "خفض {name}",
+    "wallLevel": "المستوى {level}",
+    "wallsLeft": "متبقي {left} من {total} جدارًا للوضع",
+    "wallsNote": "لا يمكن أن تتجاوز الأعداد الجدران المتبقية.",
+    "wallsNone": "لا جدران عند مستوى هذه القاعة.",
+    "wallCount": "الجدران في المستوى {level}",
+    "wallRaise": "جدار إضافي في المستوى {level}",
+    "wallLower": "جدار أقل في المستوى {level}",
+    "groupMaxed": "{zone}: تم ضبط {group} على الأقصى",
+    "groupCleared": "{zone}: تم مسح {group}"
+  },
+  "confirm": {
+    "title": "خفض هذه القاعة؟",
+    "description": "لم تعد هذه المستويات مناسبة وسيُعاد ضبطها. يبقى كل شيء آخر.",
+    "confirm": "خفض القاعة",
+    "cancel": "إبقاء القاعة",
+    "more": "و{count} أخرى"
+  },
+  "toast": {
+    "undo": "تراجع"
+  }
+}

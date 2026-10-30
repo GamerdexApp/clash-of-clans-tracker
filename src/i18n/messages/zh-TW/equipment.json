@@ -1,0 +1,61 @@
+{
+  "title": "裝備",
+  "subline": "{name}，大本營 {townHall}，鐵匠鋪等級 {blacksmith}",
+  "massEdit": "裝備等級也可以在批次編輯中設定。",
+  "locked": {
+    "title": "需要鐵匠鋪",
+    "description": "建造鐵匠鋪即可追蹤英雄裝備。請在建築工人頁面的軍隊分頁設定它的等級。",
+    "action": "前往建築工人"
+  },
+  "ore": {
+    "title": "礦石庫存",
+    "description": "你持有的礦石。不足僅為建議，絕不會阻擋升級。",
+    "names": {
+      "shiny": "Shiny Ore",
+      "glowing": "Glowing Ore",
+      "starry": "Starry Ore"
+    },
+    "short": {
+      "shiny": "Shiny",
+      "glowing": "Glowing",
+      "starry": "Starry"
+    },
+    "needed": "列出的裝備共需：{amount}",
+    "enough": "庫存足夠",
+    "shortBy": "不足 {amount}",
+    "deduct": "升級時扣除礦石",
+    "deductHelp": "升級會從庫存扣除所需礦石，最低為 0。復原會把礦石加回去。"
+  },
+  "hideMax": "隱藏已滿級",
+  "heroFilter": "英雄",
+  "allHeroes": "所有英雄",
+  "section": "{pieces} 件，已擁有 {owned} 件",
+  "empty": {
+    "title": "這裡還沒有內容",
+    "allMax": "所有裝備都已達最高等級。關閉「隱藏已滿級」即可查看。"
+  },
+  "card": {
+    "heroLine": "{hero}",
+    "level": "等級 {level} / {max}",
+    "notOwned": "未擁有",
+    "max": "滿級",
+    "setLevel": "{name}等級",
+    "stepLevel": "等級 {level}",
+    "free": "免費",
+    "time": "時間：立即",
+    "requires": "需要鐵匠鋪 {level}",
+    "moreLevels": "{count, plural, other {還有 {amount} 級}}",
+    "add": "以等級 1 加入",
+    "upgradeTo": "升級至等級 {level}",
+    "lockedUntil": "鐵匠鋪 {level} 才會解鎖",
+    "allows": "鐵匠鋪 {blacksmith} 最高可升至等級 {level}",
+    "allowsNone": "鐵匠鋪 {blacksmith} 尚不支援這件裝備",
+    "footer": "{levels, plural, other {剩餘 {amount} 級}}",
+    "progress": "{name}進度"
+  },
+  "toast": {
+    "upgraded": "{name} Lv {from} 至 {to}",
+    "levelSet": "{name} Lv {from} 至 {to}",
+    "undo": "復原"
+  }
+}

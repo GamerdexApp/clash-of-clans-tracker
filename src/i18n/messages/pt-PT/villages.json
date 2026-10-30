@@ -1,0 +1,119 @@
+{
+  "title": "As Minhas Aldeias",
+  "subline": "{amount} {count, plural, one {aldeia} other {aldeias}}",
+  "sublineActive": "{amount} {count, plural, one {aldeia} other {aldeias}}, {name} está ativa",
+  "newVillage": "Nova aldeia",
+  "empty": {
+    "title": "Ainda não há aldeias",
+    "deletedTitle": "Já não há aldeias",
+    "description": "Cria uma aldeia para acompanhares melhorias, investigação e conquistas.",
+    "restore": "Restaurar a partir de uma cópia de segurança"
+  },
+  "filters": {
+    "search": "Pesquisar aldeias",
+    "sortLabel": "Ordenar por",
+    "sort": {
+      "lastModified": "Última modificação",
+      "createdAt": "Data de criação",
+      "name": "Nome"
+    },
+    "showing": "A mostrar {shown} de {total}",
+    "clear": "Limpar pesquisa"
+  },
+  "noMatch": {
+    "title": "Nenhuma aldeia corresponde a \"{query}\"",
+    "description": "Verifica a ortografia ou limpa a pesquisa."
+  },
+  "card": {
+    "active": "Ativa",
+    "openOverview": "Abrir resumo",
+    "setActive": "Tornar ativa",
+    "edit": "Editar",
+    "delete": "Eliminar",
+    "halls": "{builderHall, plural, =0 {Centro da Aldeia {townHall}} other {Centro da Aldeia {townHall}, Centro do Construtor {builderHall}}}",
+    "daysAtTownHall": "Dias no Centro da Aldeia",
+    "daysAtBuilderHall": "Dias no Centro do Construtor",
+    "notSet": "Não definido",
+    "clanCapital": "Capital do Clã",
+    "clanCapitalStates": {
+      "on": "Ligada",
+      "off": "Desligada",
+      "locked": "Bloqueada"
+    },
+    "created": "Criada em {date}",
+    "lastModified": "Modificada em {date}",
+    "switched": "{name} é agora a aldeia ativa"
+  },
+  "fields": {
+    "name": "Nome da aldeia",
+    "namePlaceholder": "A minha conta principal",
+    "nameRequired": "Introduz um nome para a aldeia.",
+    "description": "Descrição",
+    "descriptionPlaceholder": "Acrescenta uma descrição a esta aldeia",
+    "townHallLevel": "Nível do Centro da Aldeia",
+    "builderHallLevel": "Nível do Centro do Construtor",
+    "builderHallHelp": "A Base do Construtor desbloqueia no Centro da Aldeia 6.",
+    "townHallUpgraded": "Centro da Aldeia melhorado",
+    "builderHallUpgraded": "Centro do Construtor melhorado",
+    "level": "Nível {level}",
+    "trackCapital": "Acompanhar a Capital do Clã",
+    "trackCapitalHelp": "Desligar oculta as páginas da Capital do Clã e mantém os dados.",
+    "trackCapitalLocked": "Requer o Centro da Aldeia 3",
+    "cancel": "Cancelar"
+  },
+  "create": {
+    "title": "Nova aldeia",
+    "submit": "Criar aldeia",
+    "modeLabel": "Como começar",
+    "modes": {
+      "fresh": "Começar do zero",
+      "import": "Importar"
+    },
+    "modeNotes": {
+      "fresh": "Começa com dados vazios.",
+      "import": "Lê uma etiqueta de jogador, com um ficheiro de edifícios opcional."
+    },
+    "makeActive": "Tornar esta a aldeia ativa",
+    "done": "{name} criada",
+    "importNeedsLookup": "Obtém primeiro uma etiqueta de jogador."
+  },
+  "lookup": {
+    "step1": "Passo 1: Obter dados do jogador",
+    "step2": "Passo 2: Dados dos edifícios (opcional)",
+    "tagLabel": "Etiqueta de jogador",
+    "tagPlaceholder": "#PPV2YV9R",
+    "fetch": "Obter",
+    "refresh": "Atualizar",
+    "wait": "Aguarda {seconds} s",
+    "serverNote": "A pesquisa envia a etiqueta para o servidor do Gamerdex, que consulta a API da Supercell. Mais nada sai do navegador.",
+    "unavailable": "A pesquisa de jogador não está disponível neste momento. Tenta mais tarde.",
+    "found": "{name}, Centro da Aldeia {townHall}{builderHall, plural, =0 {} other {, Centro do Construtor {builderHall}}}. {achievements} conquistas e {troops} tropas lidas.",
+    "buildingHelp": "A API de jogador não tem níveis de edifícios. Escolhe uma cópia de segurança de aldeia nas Definições ou o ficheiro exportData.json do jogo.",
+    "buildingLabel": "Ficheiro de dados dos edifícios",
+    "buildingLoaded": "Dados dos edifícios carregados de {name}.",
+    "buildingInvalid": "Este ficheiro não tem dados de edifícios. Usa uma cópia de segurança de aldeia das Definições ou o exportData.json do jogo.",
+    "buildingNotJson": "Este ficheiro não é um JSON válido."
+  },
+  "edit": {
+    "title": "Editar aldeia",
+    "submit": "Guardar",
+    "refreshTitle": "Atualizar a partir da etiqueta de jogador",
+    "updatedTitle": "Atualizado",
+    "untouchedTitle": "Nunca alterado",
+    "dateSet": "A data de melhoria foi definida como hoje. Podes alterá-la.",
+    "done": "{name} guardada"
+  },
+  "delete": {
+    "title": "Eliminar aldeia",
+    "description": "Isto remove a aldeia deste navegador.",
+    "question": "Eliminar {name}? As melhorias, a investigação, as conquistas e as diárias são removidas.",
+    "activeNext": "{next} passa a ser a aldeia ativa.",
+    "activeLast": "Nenhuma aldeia ficará ativa.",
+    "exportFirst": "Exportar antes uma cópia de segurança",
+    "cancel": "Cancelar",
+    "confirm": "Eliminar aldeia",
+    "done": "{name} eliminada",
+    "doneMessage": "Podes anular durante dez segundos.",
+    "undo": "Anular"
+  }
+}

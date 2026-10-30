@@ -1,0 +1,108 @@
+{
+  "massEdit": {
+    "hint": "Les niveaux peuvent aussi être définis dans Édition en masse.",
+    "link": "Ouvrir Édition en masse"
+  },
+  "hideMax": "Masquer le max",
+  "strip": {
+    "free": "{free} libres sur {total}",
+    "idle": "Libre",
+    "unassigned": "Non assigné",
+    "taskLevels": "Niv. {from} à {to}"
+  },
+  "start": {
+    "title": "Démarrer l'amélioration",
+    "levelChange": "{from, plural, =0 {Construire au niv. {to}} other {Niv. {from} à {to}}}",
+    "time": "Durée",
+    "cost": "Coût",
+    "doneAt": "Fin à",
+    "wasBoosted": "était {base}, Pass Or -{percent} %",
+    "wasCost": "{resource}, était {base}",
+    "resource": "{resource}",
+    "storedNote": "cette durée avec boost est enregistrée",
+    "storedNoteUnboosted": "cette durée est enregistrée",
+    "instant": "Cette construction est instantanée. Elle se termine tout de suite et n'utilise aucun ouvrier.",
+    "lanes": {
+      "builder": {
+        "label": "Ouvrier",
+        "choose": "Choisissez un ouvrier pour démarrer.",
+        "noneFree": "Tous les ouvriers sont occupés. Annulez ou terminez d'abord une amélioration."
+      },
+      "research": {
+        "label": "Voie de recherche",
+        "choose": "Choisissez une voie pour démarrer.",
+        "noneFree": "Toutes les voies de recherche sont occupées. Annulez ou terminez d'abord une recherche."
+      },
+      "bbBuilder": {
+        "label": "Ouvrier",
+        "choose": "Choisissez un ouvrier pour démarrer.",
+        "noneFree": "Les deux ouvriers sont occupés. Annulez ou terminez d'abord une amélioration."
+      },
+      "bbResearch": {
+        "label": "Laboratoire d'étoiles",
+        "choose": "Choisissez le Laboratoire d'étoiles pour démarrer.",
+        "noneFree": "Le Laboratoire d'étoiles est occupé. Annulez ou terminez d'abord la recherche."
+      },
+      "pet": {
+        "label": "Maison des familiers",
+        "choose": "Choisissez la Maison des familiers pour démarrer.",
+        "noneFree": "La Maison des familiers est occupée. Annulez ou terminez d'abord l'amélioration du familier."
+      }
+    },
+    "requires": {
+      "laboratory": "Nécessite le Laboratoire {level}",
+      "pet-house": "Nécessite la Maison des familiers {level}",
+      "star-laboratory": "Nécessite le Laboratoire d'étoiles {level}",
+      "noPetHouse": "Construisez d'abord une Maison des familiers"
+    },
+    "free": "Gratuit",
+    "cancel": "Annuler",
+    "confirm": "Démarrer l'amélioration",
+    "confirmInstant": "Construire maintenant"
+  },
+  "finish": {
+    "title": "Terminer plus tôt",
+    "left": "restant",
+    "methodLabel": "Comment s'est-elle terminée ?",
+    "methods": {
+      "timePassed": {
+        "label": "Temps écoulé",
+        "description": "Le minuteur est déjà arrivé à zéro dans le jeu. Rien n'est dépensé."
+      },
+      "gems": {
+        "label": "Gemmes",
+        "description": "Payez des gemmes dans le jeu pour la terminer maintenant. Le coût baisse à mesure que le temps s'écoule."
+      },
+      "book": {
+        "label": "Livre de construction",
+        "description": "Termine instantanément une amélioration de bâtiment en cours."
+      },
+      "hammer": {
+        "label": "Marteau de construction",
+        "description": "Améliore instantanément un bâtiment au niveau suivant."
+      }
+    },
+    "stores": "Ce que le village enregistre",
+    "storesLevel": "Niveau {level}. Le minuteur est effacé.",
+    "storesSaved": "{time} est ajouté au temps économisé.",
+    "storesSavedNone": "Le temps économisé reste inchangé.",
+    "gemFigure": "Environ {gems} gemmes (règle des données du jeu, le coût réel en jeu peut différer).",
+    "notTracked": {
+      "timePassed": "",
+      "gems": "Les gemmes dépensées ne sont pas suivies.",
+      "book": "Les livres possédés ne sont pas suivis.",
+      "hammer": "Les marteaux possédés ne sont pas suivis."
+    },
+    "keep": "Continuer l'amélioration",
+    "confirm": "Terminer l'amélioration"
+  },
+  "cancel": {
+    "title": "Annuler cette amélioration ?",
+    "body": "Annuler arrête le minuteur. {name} reste au niv. {level} et {builder} est de nouveau libre.",
+    "refundTitle": "Remboursement dans le jeu : 50 %",
+    "refundBody": "Annuler dans Clash of Clans rend {refund} {resource} sur les {paid} payés. Cette appli ne suit pas vos ressources, vérifiez donc vos stockages après l'annulation.",
+    "undoNote": "Vous pouvez annuler pendant 10 secondes après l'annulation. Ensuite, relancez l'amélioration.",
+    "keep": "Continuer l'amélioration",
+    "confirm": "Annuler l'amélioration"
+  }
+}

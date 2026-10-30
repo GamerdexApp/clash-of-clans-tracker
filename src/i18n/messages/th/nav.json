@@ -1,0 +1,29 @@
+{
+  "groups": {
+    "homeVillage": "หมู่บ้านหลัก",
+    "builderBase": "บิลเดอร์เบส",
+    "clanCapital": "แคลนแคปิตอล",
+    "dailies": "ภารกิจประจำวัน",
+    "tools": "เครื่องมือ"
+  },
+  "items": {
+    "overview": "ภาพรวม",
+    "achievements": "ความสำเร็จ",
+    "builder": "ช่างก่อสร้าง",
+    "research": "การวิจัย",
+    "pets": "สัตว์เลี้ยง",
+    "equipment": "อุปกรณ์",
+    "walls": "กำแพง",
+    "builderBaseUpgrades": "การอัปเกรด",
+    "builderBaseTroops": "ทหาร",
+    "builderBaseWalls": "กำแพง",
+    "districts": "ดิสทริกต์",
+    "capitalTroops": "ทหารและคาถา",
+    "forge": "โรงหลอม",
+    "helpers": "ผู้ช่วย",
+    "seasonPass": "ซีซันพาส",
+    "massEdit": "แก้ไขหลายรายการ",
+    "settings": "ตั้งค่า"
+  },
+  "villages": "หมู่บ้านของฉัน"
+}

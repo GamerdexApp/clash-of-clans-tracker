@@ -1,0 +1,37 @@
+{
+  "resources": {
+    "gold": "Ouro",
+    "elixir": "Elixir",
+    "darkElixir": "Elixir Negro",
+    "darkElixirShort": "Negro",
+    "builderGold": "Ouro do Construtor",
+    "builderGoldShort": "Ouro Constr.",
+    "builderElixir": "Elixir do Construtor",
+    "builderElixirShort": "Elixir Constr.",
+    "capitalGold": "Ouro da Capital",
+    "shinyOre": "Shiny Ore",
+    "glowyOre": "Glowy Ore",
+    "starryOre": "Starry Ore"
+  },
+  "halls": {
+    "townHall": "Centro de Vila {level}",
+    "builderHall": "Salão do Construtor {level}",
+    "capitalHall": "Salão da Capital {level}",
+    "heroHall": "Salão dos Heróis {level}",
+    "starLaboratory": "Laboratório Estelar {level}",
+    "blacksmith": "Ferreiro"
+  },
+  "places": {
+    "townHall": "Centro de Vila",
+    "townHallWeapon": "Arma do Centro de Vila",
+    "builderHall": "Salão do Construtor",
+    "clockTower": "Torre do Relógio",
+    "laboratory": "Laboratório",
+    "goblinResearcher": "Pesquisador Goblin",
+    "goblinBuilder": "Construtor Goblin",
+    "starLaboratory": "Laboratório Estelar",
+    "petHouse": "Casa de Mascotes",
+    "capitalPeak": "Pico da Capital",
+    "builder": "Construtor {id}"
+  }
+}

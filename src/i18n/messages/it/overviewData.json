@@ -1,0 +1,40 @@
+{
+  "stats": {
+    "level": "Livello",
+    "warStars": "Stelle guerra",
+    "trophies": "Trofei",
+    "bestTrophies": "Trofei migliori",
+    "donations": "Donazioni",
+    "received": "Donazioni ricevute",
+    "war": "Preferenza guerra",
+    "attacks": "Attacchi vinti",
+    "defenses": "Difese vinte",
+    "builderTrophies": "Trofei Costruttore",
+    "bestBuilderTrophies": "Trofei Costruttore migliori",
+    "contributions": "Contributi alla Capitale",
+    "warIn": "Sì",
+    "warOut": "No"
+  },
+  "cards": {
+    "structures": "Strutture",
+    "traps": "Trappole",
+    "supercharge": "Supercarica",
+    "crafted": "Difese Create",
+    "lab": "Lab",
+    "heroes": "Eroi",
+    "equipment": "Equipaggiamento",
+    "pets": "Animali",
+    "walls": "Mura",
+    "districts": "Distretti",
+    "troops": "Truppe",
+    "spells": "Magie"
+  },
+  "subs": {
+    "structures": "Difese, esercito, risorse",
+    "lab": "Truppe, magie, assedio",
+    "builderLab": "Truppe del Costruttore",
+    "walls": "{total} mura, livello massimo {max}",
+    "districts": "{active} di {total} attivi",
+    "available": "{count} disponibili"
+  }
+}

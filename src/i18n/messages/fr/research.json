@@ -1,0 +1,32 @@
+{
+  "title": "Recherche",
+  "subline": "{name}, Hôtel de ville {townHall}",
+  "tabsLabel": "Sections de la recherche",
+  "tabs": {
+    "troops": "Troupes",
+    "spells": "Sorts",
+    "siegeMachines": "Siège"
+  },
+  "strip": {
+    "title": "Laboratoire",
+    "noLanes": "Aucune voie de recherche n'est disponible.",
+    "openQueue": "Ouvrir la file et la chronologie",
+    "unassignedHelp": "Certaines recherches sont enregistrées sur une voie désactivée, ou sur une voie déjà prise par une autre recherche. Terminez-les ou annulez-les.",
+    "levelLabel": "Niveau du Laboratoire",
+    "level": "{level} sur {max}",
+    "notTracked": "Non défini",
+    "boostLabel": "Boost de recherche du Pass Or"
+  },
+  "card": {
+    "notUnlocked": "Non débloqué",
+    "markUnlocked": "Marquer comme débloqué",
+    "maxAtHall": "Niv. max {level} à cet Hôtel de ville",
+    "progress": "Progression de {name}"
+  },
+  "empty": {
+    "title": "Rien ici pour le moment",
+    "none": "Rien dans cette section n'est disponible à ce niveau d'Hôtel de ville.",
+    "allMax": "Tout ici est au maximum. Désactivez Masquer le max pour le voir."
+  },
+  "boostValue": "{percent, plural, =0 {Aucun} other {-{percent} % de temps et de coût}}"
+}

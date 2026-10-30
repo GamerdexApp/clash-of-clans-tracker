@@ -1,0 +1,48 @@
+{
+  "title": "กำแพง",
+  "subline": "{name}, ทาวน์ฮอลล์ {townHall}, ระดับกำแพงสูงสุด {highest}",
+  "massEdit": "ปรับจำนวนกำแพงได้ในแก้ไขหลายรายการเช่นกัน",
+  "tiles": {
+    "total": "ทั้งหมดที่ทาวน์ฮอลล์นี้",
+    "totalCaption": "ระดับกำแพงสูงสุด {highest}",
+    "placed": "วางแล้ว",
+    "placedCaption": "กำแพงในแต่ละระดับ",
+    "notPlaced": "ยังไม่ได้วาง",
+    "allPlaced": "วางครบแล้ว",
+    "stillToPlace": "เหลือ {amount} {count, plural, other {กำแพง}}ที่ต้องวาง",
+    "over": "เกิน {count}"
+  },
+  "hideEmpty": "{hidden, plural, =0 {ซ่อนระดับว่างที่ต่ำกว่าระดับต่ำสุดของคุณ} other {ซ่อนระดับว่างที่ต่ำกว่าระดับต่ำสุดของคุณ (ซ่อน {hidden})}}",
+  "row": {
+    "level": "ระดับ {level}",
+    "own": "คุณมี",
+    "ownLabel": "กำแพงที่คุณมีที่ระดับ {level}",
+    "lower": "ลดกำแพงระดับ {level} ลงหนึ่ง",
+    "raise": "เพิ่มกำแพงระดับ {level} อีกหนึ่ง",
+    "nextCost": "ระดับถัดไป: {price} {resource} ต่อกำแพง",
+    "toMove": "กำแพงที่จะย้าย",
+    "toLevel": "ไปยังระดับ",
+    "plusOne": "+1",
+    "move": "ย้าย",
+    "moveAll": "ย้ายทั้งหมด",
+    "preview": "ย้าย {amount} {walls, plural, other {กำแพง}}จากระดับ {from} ไป {to}: {price} {resource}",
+    "nothingToMove": "ไม่มีอะไรให้ย้าย",
+    "noWalls": "ไม่มีกำแพงในระดับนี้ให้ย้าย"
+  },
+  "cost": {
+    "title": "ต้นทุนเพื่ออัปเกรดกำแพงทั้งหมดเป็นระดับ {level}",
+    "row": "ระดับ {level}, {amount} {walls, plural, other {กำแพง}}",
+    "total": "รวม",
+    "none": "กำแพงที่วางแล้วทุกชิ้นอยู่ที่ระดับสูงสุด หรือยังไม่ได้วางเลย",
+    "note": "กำแพงระดับ 2 ถึง 4 ใช้ทอง ระดับ 5 ขึ้นไปใช้ทองหรืออีลิกเซอร์"
+  },
+  "empty": {
+    "title": "ยังไม่มีกำแพง",
+    "description": "กำแพงปลดล็อกที่ทาวน์ฮอลล์ 2"
+  },
+  "toast": {
+    "moved": "ย้าย {amount} {walls, plural, other {กำแพง}}จากระดับ {from} ไประดับ {to} แล้ว",
+    "counted": "กำแพงระดับ {level} จาก {from} เป็น {to}",
+    "undo": "เลิกทำ"
+  }
+}

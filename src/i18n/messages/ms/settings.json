@@ -1,0 +1,178 @@
+{
+  "title": "Tetapan",
+  "subline": "Keutamaan, sandaran dan data anda",
+  "tabsLabel": "Bahagian tetapan",
+  "tabs": {
+    "sync": "Segerak awan",
+    "preferences": "Keutamaan",
+    "data": "Sandaran dan data",
+    "about": "Perihal"
+  },
+  "appearance": {
+    "title": "Penampilan",
+    "description": "Pilih rupa aplikasi.",
+    "themeLabel": "Tema",
+    "themes": {
+      "light": "Cerah",
+      "dark": "Gelap",
+      "system": "Sistem"
+    },
+    "themeNote": "Sistem mengikut peranti anda. Sekarang: {mode}."
+  },
+  "builders": {
+    "title": "Tetapan Pembina",
+    "description": "Pembantu acara yang menambah slot pada giliran anda.",
+    "goblinBuilder": "Pembina Goblin",
+    "goblinBuilderHelp": "Menambah satu slot pembina tambahan, yang ketujuh, untuk bangunan.",
+    "goblinResearch": "Kajian Goblin",
+    "goblinResearchHelp": "Menambah satu slot kajian tambahan di Makmal."
+  },
+  "activeHours": {
+    "title": "Waktu aktif",
+    "description": "Tetapkan waktu anda bermain setiap hari. Garis masa giliran menambah sela apabila naik taraf siap di luar waktu ini.",
+    "start": "Waktu mula",
+    "end": "Waktu tamat",
+    "save": "Simpan",
+    "clear": "Kosongkan",
+    "status": "Aktif dari {start} hingga {end}, mengikut jam tempatan anda.",
+    "none": "Tiada waktu aktif ditetapkan. Setiap jam dikira aktif.",
+    "sameTime": "Waktu mula dan tamat sama. Pilih dua waktu berbeza, atau kosongkan tempoh ini.",
+    "overnight": "Tempoh ini berlanjutan semalaman, dari {start} hingga {end} pada hari berikutnya.",
+    "unsaved": "Anda mempunyai perubahan yang belum disimpan.",
+    "clockChanged": "Anjakan jam anda berubah. Waktu aktif masih meliputi {start} hingga {end} pada jam anda."
+  },
+  "data": {
+    "title": "Pengurusan data",
+    "storageNote": {
+      "title": "Disimpan dalam pelayar ini.",
+      "body": "Memadam data pelayar akan membuang kampung anda. Eksport sandaran dari semasa ke semasa."
+    },
+    "export": {
+      "title": "Eksport",
+      "description": "Muat turun semua kampung dan tetapan anda sebagai satu fail.",
+      "button": "Eksport semua kampung",
+      "done": "Sandaran dimuat turun"
+    },
+    "import": {
+      "title": "Import",
+      "fileLabel": "Fail sandaran",
+      "chooseFile": "Pilih fail",
+      "noFile": "Tiada fail dipilih",
+      "description": "Pilih fail sandaran. Anda menyemaknya sebelum apa-apa berubah.",
+      "review": "Semak import",
+      "merged": "Sandaran digabungkan",
+      "replaced": "Sandaran menggantikan data anda",
+      "undo": "Buat asal"
+    },
+    "reset": {
+      "title": "Set semula semua data",
+      "warning": "Memadam setiap kampung dan tetapan dalam pelayar ini.",
+      "button": "Set semula semua data",
+      "confirmTitle": "Padam semuanya?",
+      "confirmBody": "Ini membuang {names}. Anda boleh membuat asal dalam masa sepuluh saat.",
+      "cancel": "Batal",
+      "confirm": "Padam semuanya",
+      "done": "Semua data dipadam",
+      "doneMessage": "{amount} {count, plural, other {kampung}} dibuang.",
+      "doneMessageDisconnected": "{amount} {count, plural, other {kampung}} dibuang. Segerak diputuskan pada pelayar ini.",
+      "syncedCopy": "Padam juga salinan yang disegerakkan dalam {provider}",
+      "syncedOn": "Segerak kekal hidup. Peranti anda yang lain kehilangan kampung ini pada segerak seterusnya. Eksport sandaran dahulu jika anda tidak pasti.",
+      "syncedOff": "Tanpa ini, segerak diputuskan pada pelayar ini supaya segerak seterusnya tidak dapat membawa kampung kembali.",
+      "undo": "Buat asal"
+    },
+    "villages": {
+      "title": "Kampung",
+      "description": "Cipta, sunting, tukar dan padam kampung.",
+      "manage": "Urus kampung"
+    },
+    "villageCount": "{amount} {count, plural, other {kampung}}"
+  },
+  "importDialog": {
+    "title": "Semak import",
+    "fileInfo": "{name}, {size}",
+    "bytes": "{count} B",
+    "kilobytes": "{count} KB",
+    "cancel": "Batal",
+    "close": "Tutup",
+    "merge": "Gabung ke peranti ini",
+    "replace": "Ganti peranti ini",
+    "failedTitle": "Fail ini tidak dapat diimport.",
+    "errors": {
+      "notJson": "Fail ini bukan JSON yang sah.",
+      "playthroughsMissing": "Fail ini bukan sandaran Clash of Clans Tracker. Ia tidak mempunyai senarai kampung."
+    },
+    "checksTitle": "Semakan lulus.",
+    "checks": "Fail ini menyenaraikan {read} kampung dan {kept} boleh dibaca.",
+    "skipped": "{amount} {count, plural, other {entri}} dilangkau.",
+    "howToApply": "Cara melaksanakan",
+    "modeLabel": "Mod import",
+    "modes": {
+      "merge": "Gabung",
+      "replace": "Ganti"
+    },
+    "modeNotes": {
+      "merge": "Menambah kampung yang baru dan mengekalkan salinan yang lebih baharu bagi kampung yang wujud di kedua-dua pihak. Tetapan dan kampung aktif anda kekal.",
+      "replace": "Hanya menggunakan isi fail. Kampung yang tiada dalam fail dibuang."
+    },
+    "whatChanges": "Apa yang berubah",
+    "columns": {
+      "village": "Kampung",
+      "inFile": "Dalam fail",
+      "onDevice": "Pada peranti",
+      "result": "Hasil"
+    },
+    "notThere": "Tiada",
+    "results": {
+      "added": "Ditambah",
+      "updated": "Dikemas kini daripada fail",
+      "kept": "Dikekalkan",
+      "replaced": "Diganti",
+      "removed": "Dibuang"
+    },
+    "summary": {
+      "added": "{count} ditambah",
+      "updated": "{count} dikemas kini",
+      "kept": "{count} dikekalkan",
+      "replaced": "{count} diganti",
+      "removed": "{count} dibuang"
+    },
+    "noVillages": "Fail ini tiada kampung.",
+    "undoNote": "Anda boleh membuat asal import dalam masa sepuluh saat."
+  },
+  "about": {
+    "version": "Versi {version}",
+    "summary": "Penjejak kemajuan percuma untuk Clash of Clans. Jejaki naik taraf, kajian, pencapaian dan banyak lagi merentas beberapa kampung.",
+    "officialGame": "Laman rasmi Clash of Clans",
+    "disclaimer": "Projek ini tidak berkaitan dengan, disokong oleh, atau dihubungkan dengan Supercell atau Clash of Clans."
+  },
+  "region": {
+    "title": "Bahasa dan rantau",
+    "description": "Cara aplikasi memaparkan teks, nombor dan tarikh pada peranti ini. Pilihan ini tidak disimpan bersama kampung anda, tidak dieksport dan tidak disegerakkan.",
+    "language": {
+      "label": "Bahasa",
+      "hint": "Bahasa aplikasi. Nama daripada permainan kekal dalam bahasa Inggeris."
+    },
+    "numberFormat": {
+      "label": "Format nombor",
+      "hint": "Contoh: {example}",
+      "options": {
+        "auto": "Automatik (ikut bahasa)",
+        "us": "1,234,567.89 (AS)",
+        "european": "1.234.567,89 (Eropah)",
+        "french": "1 234 567,89 (Perancis)",
+        "swiss": "1’234’567.89 (Switzerland)",
+        "indian": "12,34,567.89 (India)"
+      }
+    },
+    "dateFormat": {
+      "label": "Format tarikh",
+      "hint": "Contoh: {example}",
+      "options": {
+        "auto": "Automatik (ikut bahasa)",
+        "mdy": "Bulan/Hari/Tahun",
+        "dmy": "Hari/Bulan/Tahun",
+        "ymd": "Tahun-Bulan-Hari"
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "stats": {
+    "level": "ระดับ",
+    "warStars": "ดาวสงคราม",
+    "trophies": "ถ้วยรางวัล",
+    "bestTrophies": "ถ้วยรางวัลสูงสุด",
+    "donations": "การบริจาค",
+    "received": "การบริจาคที่ได้รับ",
+    "war": "ความต้องการเข้าสงคราม",
+    "attacks": "ชัยชนะจากการโจมตี",
+    "defenses": "ชัยชนะจากการป้องกัน",
+    "builderTrophies": "ถ้วยรางวัลบิลเดอร์",
+    "bestBuilderTrophies": "ถ้วยรางวัลบิลเดอร์สูงสุด",
+    "contributions": "การสมทบแคปิตอล",
+    "warIn": "เข้าร่วม",
+    "warOut": "ไม่เข้าร่วม"
+  },
+  "cards": {
+    "structures": "สิ่งปลูกสร้าง",
+    "traps": "กับดัก",
+    "supercharge": "ซูเปอร์ชาร์จ",
+    "crafted": "ป้องกันคราฟต์",
+    "lab": "ห้องทดลอง",
+    "heroes": "ฮีโร่",
+    "equipment": "อุปกรณ์",
+    "pets": "สัตว์เลี้ยง",
+    "walls": "กำแพง",
+    "districts": "ดิสทริกต์",
+    "troops": "ทหาร",
+    "spells": "คาถา"
+  },
+  "subs": {
+    "structures": "สิ่งป้องกัน กองทัพ ทรัพยากร",
+    "lab": "ทหาร คาถา เครื่องจักรปิดล้อม",
+    "builderLab": "ทหารบิลเดอร์",
+    "walls": "{total} กำแพง, ระดับสูงสุด {max}",
+    "districts": "ใช้งานอยู่ {active} จาก {total}",
+    "available": "ใช้ได้ {count}"
+  }
+}

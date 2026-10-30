@@ -1,0 +1,32 @@
+{
+  "gate": {
+    "title": "활성 마을 없음",
+    "description": "이 페이지를 보려면 마을을 고르거나 새로 만드세요.",
+    "newVillage": "새 마을",
+    "chooseVillage": "마을 선택"
+  },
+  "townHallTab": {
+    "title": "타운홀",
+    "supercharge": "슈퍼차지",
+    "superchargeDone": "이 타운홀에서 열린 슈퍼차지 단계 {max}개 중 {current}개를 완료했어요.",
+    "superchargeProgress": "슈퍼차지 진행도"
+  },
+  "heroesUnlock": "영웅은 영웅 홀로 해제돼요.",
+  "progressLabel": "{name} 진행도",
+  "countdownLabel": "{name} 카운트다운",
+  "capitalGold": "캐피탈 골드",
+  "queue": {
+    "conflict": "충돌",
+    "level": "Lv {level}",
+    "levelSupercharge": "Lv {level} 슈퍼차지",
+    "now": "지금",
+    "itemTitle": "{name} Lv {level}"
+  },
+  "finishDescription": "{name}, Lv {from}에서 {to}, {method}, {time} {unit}",
+  "lookupError": {
+    "rateLimit": "{seconds}초 기다린 뒤 다시 가져오세요.",
+    "notFound": "플레이어 {tag}을(를) 찾을 수 없어요.",
+    "api": "Supercell API가 {status}으로 응답했어요.",
+    "network": "플레이어 조회가 서버에 연결되지 못했어요."
+  }
+}

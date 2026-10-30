@@ -1,0 +1,178 @@
+{
+  "title": "Pengaturan",
+  "subline": "Preferensi, cadangan, dan datamu",
+  "tabsLabel": "Bagian pengaturan",
+  "tabs": {
+    "sync": "Sinkron cloud",
+    "preferences": "Preferensi",
+    "data": "Cadangan dan data",
+    "about": "Tentang"
+  },
+  "appearance": {
+    "title": "Tampilan",
+    "description": "Pilih tampilan aplikasi.",
+    "themeLabel": "Tema",
+    "themes": {
+      "light": "Terang",
+      "dark": "Gelap",
+      "system": "Sistem"
+    },
+    "themeNote": "Sistem mengikuti perangkatmu. Sekarang: {mode}."
+  },
+  "builders": {
+    "title": "Pengaturan pembangun",
+    "description": "Pembantu event yang menambah slot ke antreanmu.",
+    "goblinBuilder": "Pembangun Goblin",
+    "goblinBuilderHelp": "Menambah satu slot pembangun ekstra, yang ketujuh, untuk bangunan.",
+    "goblinResearch": "Riset Goblin",
+    "goblinResearchHelp": "Menambah satu slot riset ekstra di Laboratorium."
+  },
+  "activeHours": {
+    "title": "Jam aktif",
+    "description": "Atur jam bermainmu setiap hari. Linimasa antrean menambah jeda saat peningkatan selesai di luar rentang ini.",
+    "start": "Waktu mulai",
+    "end": "Waktu selesai",
+    "save": "Simpan",
+    "clear": "Hapus",
+    "status": "Aktif dari {start} sampai {end}, menurut jam lokalmu.",
+    "none": "Jam aktif belum diatur. Setiap jam dihitung aktif.",
+    "sameTime": "Waktu mulai dan selesai sama. Pilih dua waktu berbeda, atau hapus rentangnya.",
+    "overnight": "Rentang ini melewati tengah malam, dari {start} sampai {end} keesokan harinya.",
+    "unsaved": "Ada perubahan yang belum disimpan.",
+    "clockChanged": "Selisih jam kamu berubah. Jam aktif tetap mencakup {start} sampai {end} menurut jammu."
+  },
+  "data": {
+    "title": "Pengelolaan data",
+    "storageNote": {
+      "title": "Disimpan di browser ini.",
+      "body": "Menghapus data browser menghapus desamu. Ekspor cadangan sesekali."
+    },
+    "export": {
+      "title": "Ekspor",
+      "description": "Unduh semua desa dan pengaturanmu sebagai satu file.",
+      "button": "Ekspor semua desa",
+      "done": "Cadangan diunduh"
+    },
+    "import": {
+      "title": "Impor",
+      "fileLabel": "File cadangan",
+      "chooseFile": "Pilih file",
+      "noFile": "Belum ada file dipilih",
+      "description": "Pilih file cadangan. Kamu meninjaunya sebelum ada yang berubah.",
+      "review": "Tinjau impor",
+      "merged": "Cadangan digabung",
+      "replaced": "Cadangan menggantikan datamu",
+      "undo": "Urungkan"
+    },
+    "reset": {
+      "title": "Reset semua data",
+      "warning": "Menghapus semua desa dan pengaturan di browser ini.",
+      "button": "Reset semua data",
+      "confirmTitle": "Hapus semuanya?",
+      "confirmBody": "Ini menghapus {names}. Kamu bisa mengurungkannya selama sepuluh detik.",
+      "cancel": "Batal",
+      "confirm": "Hapus semuanya",
+      "done": "Semua data dihapus",
+      "doneMessage": "{amount} {count, plural, other {desa}} dihapus.",
+      "doneMessageDisconnected": "{amount} {count, plural, other {desa}} dihapus. Sinkron diputus di browser ini.",
+      "syncedCopy": "Hapus juga salinan tersinkron di {provider}",
+      "syncedOn": "Sinkron tetap menyala. Perangkat lainmu kehilangan desa ini saat sinkron berikutnya. Ekspor cadangan dulu jika kamu ragu.",
+      "syncedOff": "Tanpa ini, sinkron diputus di browser ini agar sinkron berikutnya tidak membawa desa itu kembali.",
+      "undo": "Urungkan"
+    },
+    "villages": {
+      "title": "Desa",
+      "description": "Buat, ubah, ganti, dan hapus desa.",
+      "manage": "Kelola desa"
+    },
+    "villageCount": "{amount} {count, plural, other {desa}}"
+  },
+  "importDialog": {
+    "title": "Tinjau impor",
+    "fileInfo": "{name}, {size}",
+    "bytes": "{count} B",
+    "kilobytes": "{count} KB",
+    "cancel": "Batal",
+    "close": "Tutup",
+    "merge": "Gabung ke perangkat ini",
+    "replace": "Ganti perangkat ini",
+    "failedTitle": "File ini tidak bisa diimpor.",
+    "errors": {
+      "notJson": "File ini bukan JSON yang valid.",
+      "playthroughsMissing": "File ini bukan cadangan Clash of Clans Tracker. File ini tidak punya daftar desa."
+    },
+    "checksTitle": "Pemeriksaan lolos.",
+    "checks": "File mencantumkan {read} desa dan {kept} bisa dibaca.",
+    "skipped": "{amount} {count, plural, other {entri}} dilewati.",
+    "howToApply": "Cara menerapkan",
+    "modeLabel": "Mode impor",
+    "modes": {
+      "merge": "Gabung",
+      "replace": "Ganti"
+    },
+    "modeNotes": {
+      "merge": "Menambah desa yang baru dan menyimpan salinan yang lebih baru dari desa yang ada di keduanya. Pengaturan dan desa aktifmu tetap.",
+      "replace": "Hanya memakai isi file. Desa yang tidak ada di file dihapus."
+    },
+    "whatChanges": "Yang berubah",
+    "columns": {
+      "village": "Desa",
+      "inFile": "Di file",
+      "onDevice": "Di perangkat",
+      "result": "Hasil"
+    },
+    "notThere": "Tidak ada",
+    "results": {
+      "added": "Ditambahkan",
+      "updated": "Diperbarui dari file",
+      "kept": "Dipertahankan",
+      "replaced": "Diganti",
+      "removed": "Dihapus"
+    },
+    "summary": {
+      "added": "{count} ditambahkan",
+      "updated": "{count} diperbarui",
+      "kept": "{count} dipertahankan",
+      "replaced": "{count} diganti",
+      "removed": "{count} dihapus"
+    },
+    "noVillages": "File tidak berisi desa.",
+    "undoNote": "Kamu bisa mengurungkan impor selama sepuluh detik."
+  },
+  "about": {
+    "version": "Versi {version}",
+    "summary": "Pelacak progres gratis untuk Clash of Clans. Lacak peningkatan, riset, pencapaian, dan lainnya di banyak desa.",
+    "officialGame": "Situs resmi Clash of Clans",
+    "disclaimer": "Proyek ini tidak berafiliasi dengan, didukung oleh, atau terhubung dengan Supercell atau Clash of Clans."
+  },
+  "region": {
+    "title": "Bahasa dan wilayah",
+    "description": "Cara aplikasi menampilkan teks, angka, dan tanggal di perangkat ini. Pilihan ini tidak disimpan bersama desamu, tidak diekspor, dan tidak disinkronkan.",
+    "language": {
+      "label": "Bahasa",
+      "hint": "Bahasa aplikasi. Nama dari game tetap dalam bahasa Inggris."
+    },
+    "numberFormat": {
+      "label": "Format angka",
+      "hint": "Contoh: {example}",
+      "options": {
+        "auto": "Otomatis (mengikuti bahasa)",
+        "us": "1,234,567.89 (AS)",
+        "european": "1.234.567,89 (Eropa)",
+        "french": "1 234 567,89 (Prancis)",
+        "swiss": "1’234’567.89 (Swiss)",
+        "indian": "12,34,567.89 (India)"
+      }
+    },
+    "dateFormat": {
+      "label": "Format tanggal",
+      "hint": "Contoh: {example}",
+      "options": {
+        "auto": "Otomatis (mengikuti bahasa)",
+        "mdy": "Bulan/Hari/Tahun",
+        "dmy": "Hari/Bulan/Tahun",
+        "ymd": "Tahun-Bulan-Hari"
+      }
+    }
+  }
+}

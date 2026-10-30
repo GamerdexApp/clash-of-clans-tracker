@@ -1,0 +1,119 @@
+{
+  "title": "我的村莊",
+  "subline": "{count, plural, other {{amount} 個村莊}}",
+  "sublineActive": "{count, plural, other {{amount} 個村莊}}，使用中的是{name}",
+  "newVillage": "新增村莊",
+  "empty": {
+    "title": "還沒有村莊",
+    "deletedTitle": "沒有剩下的村莊",
+    "description": "建立一個村莊，開始追蹤升級、研究與成就。",
+    "restore": "從備份還原"
+  },
+  "filters": {
+    "search": "搜尋村莊",
+    "sortLabel": "排序方式",
+    "sort": {
+      "lastModified": "最後修改",
+      "createdAt": "建立日期",
+      "name": "名稱"
+    },
+    "showing": "顯示 {shown} / {total}",
+    "clear": "清除搜尋"
+  },
+  "noMatch": {
+    "title": "沒有符合「{query}」的村莊",
+    "description": "請檢查拼字，或清除搜尋。"
+  },
+  "card": {
+    "active": "使用中",
+    "openOverview": "開啟總覽",
+    "setActive": "設為使用中",
+    "edit": "編輯",
+    "delete": "刪除",
+    "halls": "{builderHall, plural, =0 {大本營 {townHall}} other {大本營 {townHall}，建築工人大本營 {builderHall}}}",
+    "daysAtTownHall": "大本營天數",
+    "daysAtBuilderHall": "建築工人大本營天數",
+    "notSet": "未設定",
+    "clanCapital": "部落首都",
+    "clanCapitalStates": {
+      "on": "開啟",
+      "off": "關閉",
+      "locked": "未解鎖"
+    },
+    "created": "建立於 {date}",
+    "lastModified": "修改於 {date}",
+    "switched": "{name}現在是使用中的村莊"
+  },
+  "fields": {
+    "name": "村莊名稱",
+    "namePlaceholder": "我的主帳號",
+    "nameRequired": "請輸入村莊名稱。",
+    "description": "說明",
+    "descriptionPlaceholder": "為此村莊加入說明",
+    "townHallLevel": "大本營等級",
+    "builderHallLevel": "建築工人大本營等級",
+    "builderHallHelp": "建築工人基地在大本營 6 解鎖。",
+    "townHallUpgraded": "大本營升級日",
+    "builderHallUpgraded": "建築工人大本營升級日",
+    "level": "等級 {level}",
+    "trackCapital": "追蹤部落首都",
+    "trackCapitalHelp": "關閉後會隱藏部落首都頁面，並保留你的資料。",
+    "trackCapitalLocked": "需要大本營 3",
+    "cancel": "取消"
+  },
+  "create": {
+    "title": "新增村莊",
+    "submit": "建立村莊",
+    "modeLabel": "開始方式",
+    "modes": {
+      "fresh": "從頭開始",
+      "import": "匯入"
+    },
+    "modeNotes": {
+      "fresh": "從空白資料開始。",
+      "import": "讀取玩家標籤，並可選擇搭配建築檔案。"
+    },
+    "makeActive": "設為使用中的村莊",
+    "done": "已建立{name}",
+    "importNeedsLookup": "請先取得玩家標籤。"
+  },
+  "lookup": {
+    "step1": "步驟 1：取得玩家資料",
+    "step2": "步驟 2：建築資料（選填）",
+    "tagLabel": "玩家標籤",
+    "tagPlaceholder": "#PPV2YV9R",
+    "fetch": "取得",
+    "refresh": "重新整理",
+    "wait": "請等待 {seconds} 秒",
+    "serverNote": "查詢會把標籤傳送到 Gamerdex 伺服器，由它向 Supercell API 取得資料。除此之外沒有任何內容會離開你的瀏覽器。",
+    "unavailable": "玩家查詢目前無法使用。請稍後再試。",
+    "found": "{name}，大本營 {townHall}{builderHall, plural, =0 {} other {，建築工人大本營 {builderHall}}}。已讀取 {achievements} 項成就與 {troops} 種部隊。",
+    "buildingHelp": "玩家 API 沒有建築等級。請選擇設定中的村莊備份，或遊戲中的 exportData.json 檔案。",
+    "buildingLabel": "建築資料檔案",
+    "buildingLoaded": "已從 {name} 載入建築資料。",
+    "buildingInvalid": "此檔案不是建築資料。請使用設定中的村莊備份，或遊戲中的 exportData.json。",
+    "buildingNotJson": "此檔案不是有效的 JSON。"
+  },
+  "edit": {
+    "title": "編輯村莊",
+    "submit": "儲存",
+    "refreshTitle": "依玩家標籤重新整理",
+    "updatedTitle": "已更新",
+    "untouchedTitle": "從未變更",
+    "dateSet": "升級日期已設為今天，你可以修改。",
+    "done": "已儲存{name}"
+  },
+  "delete": {
+    "title": "刪除村莊",
+    "description": "這會從此瀏覽器移除該村莊。",
+    "question": "要刪除{name}嗎？它的升級、研究、成就與每日資料都會被移除。",
+    "activeNext": "{next}會成為使用中的村莊。",
+    "activeLast": "將沒有使用中的村莊。",
+    "exportFirst": "請先匯出備份",
+    "cancel": "取消",
+    "confirm": "刪除村莊",
+    "done": "已刪除{name}",
+    "doneMessage": "你有十秒鐘可以復原。",
+    "undo": "復原"
+  }
+}

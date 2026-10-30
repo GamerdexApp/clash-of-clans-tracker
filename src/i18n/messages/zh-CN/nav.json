@@ -1,0 +1,29 @@
+{
+  "groups": {
+    "homeVillage": "主村庄",
+    "builderBase": "建筑大师基地",
+    "clanCapital": "部落首都",
+    "dailies": "每日任务",
+    "tools": "工具"
+  },
+  "items": {
+    "overview": "总览",
+    "achievements": "成就",
+    "builder": "建筑工人",
+    "research": "研究",
+    "pets": "宠物",
+    "equipment": "装备",
+    "walls": "城墙",
+    "builderBaseUpgrades": "升级",
+    "builderBaseTroops": "兵种",
+    "builderBaseWalls": "城墙",
+    "districts": "区域",
+    "capitalTroops": "兵种和法术",
+    "forge": "熔炉",
+    "helpers": "助手",
+    "seasonPass": "赛季通行证",
+    "massEdit": "批量编辑",
+    "settings": "设置"
+  },
+  "villages": "我的村庄"
+}

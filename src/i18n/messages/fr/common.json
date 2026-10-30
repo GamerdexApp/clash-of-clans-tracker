@@ -1,0 +1,32 @@
+{
+  "gate": {
+    "title": "Aucun village actif",
+    "description": "Choisissez un village ou créez-en un pour voir cette page.",
+    "newVillage": "Nouveau village",
+    "chooseVillage": "Choisir un village"
+  },
+  "townHallTab": {
+    "title": "Hôtel de ville",
+    "supercharge": "Suralimentation",
+    "superchargeDone": "{current} paliers de suralimentation sur {max} débloqués à cet Hôtel de ville sont terminés.",
+    "superchargeProgress": "Progression de la suralimentation"
+  },
+  "heroesUnlock": "Les héros se débloquent avec l'Hôtel des héros.",
+  "progressLabel": "Progression de {name}",
+  "countdownLabel": "Compte à rebours de {name}",
+  "capitalGold": "Or de la capitale",
+  "queue": {
+    "conflict": "Conflit",
+    "level": "Niv. {level}",
+    "levelSupercharge": "Suralimentation niv. {level}",
+    "now": "Maintenant",
+    "itemTitle": "{name} niv. {level}"
+  },
+  "finishDescription": "{name}, niv. {from} à {to}, {method}, {time} {unit}",
+  "lookupError": {
+    "rateLimit": "Veuillez attendre {seconds} s avant de réessayer.",
+    "notFound": "Le joueur {tag} est introuvable.",
+    "api": "L'API de Supercell a répondu {status}.",
+    "network": "La recherche du joueur n'a pas pu joindre le serveur."
+  }
+}

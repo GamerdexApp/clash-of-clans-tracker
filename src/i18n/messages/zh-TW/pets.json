@@ -1,0 +1,30 @@
+{
+  "title": "寵物",
+  "subline": "{name}，大本營 {townHall}",
+  "strip": {
+    "title": "寵物屋",
+    "openQueue": "開啟佇列與時間軸",
+    "noPetHouse": "請先建造寵物屋。在建築工人頁面的軍隊分頁設定它的等級。",
+    "unassignedHelp": "寵物屋上儲存了不只一項寵物升級。請完成或取消多出的那一項。",
+    "levelLabel": "寵物屋等級",
+    "level": "{level} / {max}",
+    "notBuilt": "未建造",
+    "boostLabel": "黃金通行證研究加速"
+  },
+  "boostValue": "{percent, plural, =0 {無} other {時間與費用 -{percent}%}}",
+  "locked": {
+    "title": "寵物在大本營 14 解鎖",
+    "body": "此村莊目前為大本營 {townHall}。以下是你之後會獲得的寵物。",
+    "needs": "大本營 {townHall}，寵物屋 {petHouse}"
+  },
+  "card": {
+    "notUnlocked": "未解鎖",
+    "markUnlocked": "標記為已解鎖",
+    "maxAtHall": "最高 Lv {level}",
+    "progress": "{name}進度"
+  },
+  "empty": {
+    "title": "這裡還沒有內容",
+    "allMax": "所有寵物都已達最高等級。關閉「隱藏已滿級」即可查看。"
+  }
+}

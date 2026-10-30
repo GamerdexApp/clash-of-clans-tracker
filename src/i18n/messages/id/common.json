@@ -1,0 +1,32 @@
+{
+  "gate": {
+    "title": "Tidak ada desa aktif",
+    "description": "Pilih desa atau buat desa baru untuk melihat halaman ini.",
+    "newVillage": "Desa baru",
+    "chooseVillage": "Pilih desa"
+  },
+  "townHallTab": {
+    "title": "Balai Kota",
+    "supercharge": "Supercharge",
+    "superchargeDone": "{current} dari {max} tingkat supercharge yang terbuka di Balai Kota ini sudah selesai.",
+    "superchargeProgress": "Progres supercharge"
+  },
+  "heroesUnlock": "Pahlawan terbuka dengan Balai Pahlawan.",
+  "progressLabel": "Progres {name}",
+  "countdownLabel": "Hitung mundur {name}",
+  "capitalGold": "Emas Ibu Kota",
+  "queue": {
+    "conflict": "Konflik",
+    "level": "Lv {level}",
+    "levelSupercharge": "Supercharge Lv {level}",
+    "now": "Sekarang",
+    "itemTitle": "{name} Lv {level}"
+  },
+  "finishDescription": "{name}, Lv {from} ke {to}, {method}, {time} {unit}",
+  "lookupError": {
+    "rateLimit": "Tunggu {seconds} d sebelum mengambil lagi.",
+    "notFound": "Pemain {tag} tidak ditemukan.",
+    "api": "API Supercell menjawab {status}.",
+    "network": "Pencarian pemain tidak dapat menjangkau server."
+  }
+}

@@ -1,0 +1,139 @@
+{
+  "districts": {
+    "title": "Distretti",
+    "subline": "{hall, plural, =0 {{name}, Sala della Capitale non impostata} other {{name}, Sala della Capitale {hall}}}",
+    "description": "Distretti e zone della tua Capitale del Clan."
+  },
+  "troops": {
+    "title": "Truppe e magie",
+    "subline": "{name}, truppe e magie della Capitale del Clan",
+    "tiles": {
+      "troops": "Truppe",
+      "spells": "Magie",
+      "caption": "{current} di {max} livelli"
+    },
+    "sections": {
+      "troops": "Truppe",
+      "spells": "Magie"
+    },
+    "card": {
+      "level": "Livello di {name}",
+      "raise": "Aumenta {name}",
+      "lower": "Diminuisci {name}",
+      "maxAt": "Livello massimo {level} ora",
+      "from": "Da {zone}",
+      "progress": "Progresso di {name}"
+    },
+    "locked": {
+      "title": "Non ancora disponibile",
+      "districtHall": "Richiede la Sala del Distretto {level} in {zone}",
+      "capitalHall": "Richiede la Sala della Capitale {level} per aprire {zone}",
+      "kept": "Il livello salvato {level} viene mantenuto"
+    },
+    "empty": {
+      "title": "Tutto è al massimo",
+      "description": "Disattiva Nascondi massimo per vedere ogni truppa e magia."
+    }
+  },
+  "tracking": {
+    "label": "Segui la Capitale del Clan",
+    "onHelp": "Disattivarlo mantiene tutti i dati.",
+    "turnOnTitle": "Il tracciamento della Capitale del Clan è attivo",
+    "turnedOn": "Il tracciamento della Capitale del Clan è attivo.",
+    "undo": "Annulla",
+    "offDialog": {
+      "title": "Disattivare il tracciamento della Capitale del Clan?",
+      "body": "Le pagine della Capitale del Clan, la scheda nella Panoramica e la scheda Modifica di massa vengono nascoste. Nulla viene eliminato.",
+      "confirm": "Disattiva",
+      "cancel": "Annulla"
+    }
+  },
+  "off": {
+    "title": "Il tracciamento della Capitale del Clan è spento",
+    "description": "I tuoi distretti, truppe e magie vengono mantenuti. Attiva il tracciamento per vederli di nuovo.",
+    "turnOn": "Attiva il tracciamento",
+    "keptTitle": "Cosa viene mantenuto",
+    "kept": "Tutti i dati della Capitale del Clan restano in questo villaggio."
+  },
+  "locked": {
+    "title": "La Capitale del Clan è bloccata",
+    "description": "La Capitale del Clan si apre al Municipio 3. Questo villaggio è al Municipio {townHall}. Ciò che è già salvato ricompare al Municipio 3.",
+    "action": "Cambia Municipio in Villaggi"
+  },
+  "notSet": {
+    "title": "La Capitale del Clan non è configurata",
+    "description": "Imposta il livello della Sala della Capitale per iniziare a seguire distretti, truppe e magie.",
+    "action": "Imposta il livello della Sala della Capitale"
+  },
+  "hall": {
+    "label": "Sala della Capitale",
+    "none": "Nessuna",
+    "level": "Livello {level}",
+    "nextCost": "La Sala della Capitale {level} costa {cost} Oro Capitale{hasOpens, select, true { e apre {opens}} other {}}. Aumentare una sala non azzera mai i livelli.",
+    "atTop": "La Sala della Capitale è al livello massimo.",
+    "raised": "Sala della Capitale aumentata da {from} a {to}. Nessun livello è stato azzerato.",
+    "changed": "Sala della Capitale cambiata da {from} a {to}.",
+    "districtRaised": "Sala del Distretto di {zone} aumentata da {from} a {to}.",
+    "districtChanged": "Sala del Distretto di {zone} cambiata da {from} a {to}."
+  },
+  "contributions": {
+    "label": "Contributi",
+    "unit": "Oro Capitale",
+    "help": "Totale che hai dato al tuo clan. L'importazione dal tag giocatore lo compila, puoi anche scriverlo tu."
+  },
+  "tiles": {
+    "progress": "Progresso della Capitale",
+    "progressCaption": "{current} di {max} livelli",
+    "zones": "Zone aperte",
+    "zonesCaption": "{open} di {total}"
+  },
+  "zones": {
+    "title": "Zone",
+    "help": "Seleziona una zona per modificarla qui sotto",
+    "hall": "{level, plural, =0 {Nessuna Sala del Distretto} other {Sala del Distretto {level}}}",
+    "peakHall": "Sala della Capitale {level}",
+    "locked": "Bloccata, richiede la Sala della Capitale {hall}",
+    "levels": "{current} di {max}"
+  },
+  "panel": {
+    "districtHall": "Sala del Distretto",
+    "requires": "Richiede la Sala della Capitale {hall}",
+    "noHall": "Nessuna Sala del Distretto",
+    "empty": "Niente da costruire qui a questo livello di sala.",
+    "groupsLabel": "Gruppi di edifici",
+    "groups": {
+      "defenses": "Difese",
+      "traps": "Trappole",
+      "army": "Esercito",
+      "walls": "Mura"
+    },
+    "max": "Max",
+    "clear": "Cancella",
+    "maxAll": "Max tutto",
+    "resetAll": "Reimposta tutto",
+    "instances": "{amount} {count, plural, one {edificio} other {edifici}}",
+    "maxLevel": "Livello massimo {level}",
+    "instance": "{name} {index}",
+    "raise": "Aumenta {name}",
+    "lower": "Diminuisci {name}",
+    "wallLevel": "Livello {level}",
+    "wallsLeft": "{left} di {total} mura ancora da posizionare",
+    "wallsNote": "Il numero non può superare le mura rimanenti.",
+    "wallsNone": "Nessun muro a questo livello di sala.",
+    "wallCount": "Mura di livello {level}",
+    "wallRaise": "Un muro in più al livello {level}",
+    "wallLower": "Un muro in meno al livello {level}",
+    "groupMaxed": "{zone}: {group} impostato al massimo",
+    "groupCleared": "{zone}: {group} cancellato"
+  },
+  "confirm": {
+    "title": "Abbassare questa sala?",
+    "description": "Questi livelli non sono più validi e verranno azzerati. Tutto il resto viene mantenuto.",
+    "confirm": "Abbassa sala",
+    "cancel": "Mantieni sala",
+    "more": "e altri {count}"
+  },
+  "toast": {
+    "undo": "Annulla"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "title": "Murailles de la Base des ouvriers",
+  "subline": "{name}, Hôtel des ouvriers {builderHall}, niveau de muraille le plus haut {highest}",
+  "massEdit": "Les nombres de murailles peuvent aussi être ajustés dans Édition en masse.",
+  "tiles": {
+    "total": "Total à cet Hôtel des ouvriers",
+    "totalCaption": "Niveau de muraille le plus haut {highest}",
+    "placed": "Placées",
+    "placedCaption": "Murailles sur un niveau",
+    "notPlaced": "Non placées",
+    "allPlaced": "Toutes placées",
+    "stillToPlace": "{amount} {count, plural, one {muraille} other {murailles}} à placer",
+    "over": "Dépassement de {count}"
+  },
+  "hideEmpty": "{hidden, plural, =0 {Masquer les niveaux vides sous votre plus bas} other {Masquer les niveaux vides sous votre plus bas ({hidden} masqués)}}",
+  "row": {
+    "level": "Niveau {level}",
+    "own": "Vous possédez",
+    "ownLabel": "Murailles possédées au niveau {level}",
+    "lower": "Une muraille de moins au niveau {level}",
+    "raise": "Une muraille de plus au niveau {level}",
+    "nextCost": "Niveau suivant : {price} {resource} par muraille",
+    "toMove": "Murailles à déplacer",
+    "toLevel": "Vers le niveau",
+    "plusOne": "+1",
+    "move": "Déplacer",
+    "moveAll": "Tout déplacer",
+    "preview": "Déplacer {amount} {walls, plural, one {muraille} other {murailles}} du niveau {from} au niveau {to} : {price} {resource}",
+    "nothingToMove": "Rien à déplacer",
+    "noWalls": "Aucune muraille à déplacer à ce niveau."
+  },
+  "cost": {
+    "title": "Coût pour amener toutes les murailles au niveau {level}",
+    "row": "Niveau {level}, {amount} {walls, plural, one {muraille} other {murailles}}",
+    "total": "Total",
+    "none": "Toutes les murailles placées sont au niveau maximal, ou aucune n'est encore placée.",
+    "note": "Les murailles de niveau 2 à 6 coûtent de l'Or des ouvriers. Celles de niveau 7 et plus coûtent de l'Or des ouvriers ou de l'Élixir des ouvriers."
+  },
+  "empty": {
+    "title": "Pas encore de murailles",
+    "description": "Définissez le niveau de votre Hôtel des ouvriers sur la page Améliorations de la Base des ouvriers pour voir ses murailles."
+  },
+  "toast": {
+    "moved": "{amount} {walls, plural, one {muraille déplacée} other {murailles déplacées}} du niveau {from} au niveau {to}",
+    "counted": "Murailles de niveau {level} : {from} à {to}",
+    "undo": "Annuler"
+  }
+}

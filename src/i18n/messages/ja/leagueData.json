@@ -1,0 +1,17 @@
+{
+  "stats": {
+    "attacksPerWeek": "週あたりの攻撃回数",
+    "promoted": "昇格する上位%",
+    "demoted": "降格する下位%",
+    "trophyRange": "トロフィーの範囲",
+    "starsForBonus": "スターボーナスに必要な星"
+  },
+  "sections": {
+    "maxLoot": "獲得できる最大戦利品",
+    "leagueBonus": "最大リーグボーナス",
+    "weeklyStarBonus": "週間スターボーナス",
+    "starBonusReward": "スターボーナスの報酬"
+  },
+  "range": "{min}から{max}",
+  "rangeOpen": "{min}以上"
+}

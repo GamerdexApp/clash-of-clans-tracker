@@ -1,0 +1,51 @@
+{
+  "title": "빌더",
+  "subline": "{name}, 타운홀 {townHall}",
+  "tabsLabel": "빌더 섹션",
+  "tabs": {
+    "defenses": "방어",
+    "army": "군대",
+    "resources": "자원",
+    "crafted": "제작 방어",
+    "traps": "함정",
+    "heroes": "영웅",
+    "guardians": "수호자",
+    "townHall": "타운홀"
+  },
+  "builders": {
+    "title": "빌더",
+    "boostLabel": "골드 패스 빌더 부스트",
+    "boostValue": "{percent, plural, =0 {없음} other {시간과 비용 -{percent}%}}",
+    "openQueue": "대기열과 타임라인 열기",
+    "unassignedHelp": "일부 업그레이드가 지어지지 않은 빌더나, 다른 업그레이드가 이미 쓰는 빌더에 저장돼 있어요. 끝내거나 취소하세요.",
+    "noBuilders": "이 마을에는 아직 빌더가 없어요. 방어 탭에서 첫 빌더 오두막을 지으세요. 무료이고 즉시 완료돼요."
+  },
+  "gate": {
+    "requires": "타운홀 {townHall} 필요",
+    "where": "이 마을은 타운홀 {townHall}이에요. 이 탭을 열려면 타운홀 {required}에 도달하세요.",
+    "fix": "타운홀 탭으로 이동"
+  },
+  "empty": {
+    "title": "아직 아무것도 없어요",
+    "description": "이 타운홀 레벨에서 쓸 수 있는 이 종류의 건물이 없어요.",
+    "allMax": "여기 있는 건물이 모두 최대예요. 최대 숨기기를 끄면 볼 수 있어요."
+  },
+  "card": {
+    "maxAtHall": "이 타운홀에서 최대 Lv {level}",
+    "maxAtBuilderHall": "이 빌더 홀에서 최대 Lv {level}",
+    "progress": "{name} 진행도",
+    "notBuilt": "미건설",
+    "level": "Lv {level} / {max}",
+    "build": "건설",
+    "upgradeTo": "Lv {level}로 업그레이드",
+    "superchargeTo": "슈퍼차지 {tier}단계로",
+    "maxed": "최대",
+    "running": "Lv {to}로 업그레이드 중",
+    "finish": "완료",
+    "cancel": "취소",
+    "showAll": "{count}개 모두 보기",
+    "showFewer": "간단히 보기",
+    "instance": "#{number}",
+    "supercharge": "슈퍼차지 {tiers}단계 중 {tier}단계"
+  }
+}

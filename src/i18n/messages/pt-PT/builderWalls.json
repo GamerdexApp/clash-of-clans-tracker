@@ -1,0 +1,48 @@
+{
+  "title": "Muralhas da Base do Construtor",
+  "subline": "{name}, Centro do Construtor {builderHall}, nível mais alto de muralha {highest}",
+  "massEdit": "Também podes ajustar o número de muralhas na Edição em massa.",
+  "tiles": {
+    "total": "Total neste Centro do Construtor",
+    "totalCaption": "Nível mais alto de muralha {highest}",
+    "placed": "Colocadas",
+    "placedCaption": "Muralhas num nível",
+    "notPlaced": "Não colocadas",
+    "allPlaced": "Todas colocadas",
+    "stillToPlace": "{count, plural, one {Falta {amount} muralha por colocar} other {Faltam {amount} muralhas por colocar}}",
+    "over": "Excede em {count}"
+  },
+  "hideEmpty": "{hidden, plural, =0 {Ocultar níveis vazios abaixo do mais baixo} other {Ocultar níveis vazios abaixo do mais baixo ({hidden} ocultos)}}",
+  "row": {
+    "level": "Nível {level}",
+    "own": "Tens",
+    "ownLabel": "Muralhas que tens no nível {level}",
+    "lower": "Menos uma muralha no nível {level}",
+    "raise": "Mais uma muralha no nível {level}",
+    "nextCost": "Nível seguinte: {price} {resource} por muralha",
+    "toMove": "Muralhas a mover",
+    "toLevel": "Para o nível",
+    "plusOne": "+1",
+    "move": "Mover",
+    "moveAll": "Mover todas",
+    "preview": "Mover {amount} {walls, plural, one {muralha} other {muralhas}} do nível {from} para o {to}: {price} {resource}",
+    "nothingToMove": "Nada para mover",
+    "noWalls": "Não há muralhas neste nível para mover."
+  },
+  "cost": {
+    "title": "Custo para levar todas as muralhas ao nível {level}",
+    "row": "Nível {level}, {amount} {walls, plural, one {muralha} other {muralhas}}",
+    "total": "Total",
+    "none": "Todas as muralhas colocadas estão no nível máximo, ou ainda não há nenhuma colocada.",
+    "note": "As muralhas de nível 2 a 6 custam Ouro do Construtor. As de nível 7 ou superior custam Ouro do Construtor ou Elixir do Construtor."
+  },
+  "empty": {
+    "title": "Ainda não há muralhas",
+    "description": "Define o nível do Centro do Construtor na página Melhorias da Base do Construtor para ver as muralhas."
+  },
+  "toast": {
+    "moved": "{amount} {walls, plural, one {muralha movida} other {muralhas movidas}} do nível {from} para o {to}",
+    "counted": "Muralhas de nível {level}: {from} para {to}",
+    "undo": "Anular"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "stats": {
+    "level": "Tahap",
+    "warStars": "Bintang perang",
+    "trophies": "Trofi",
+    "bestTrophies": "Trofi terbaik",
+    "donations": "Derma",
+    "received": "Derma diterima",
+    "war": "Pilihan perang",
+    "attacks": "Kemenangan serangan",
+    "defenses": "Kemenangan pertahanan",
+    "builderTrophies": "Trofi pembina",
+    "bestBuilderTrophies": "Trofi pembina terbaik",
+    "contributions": "Sumbangan Ibu Kota",
+    "warIn": "Masuk",
+    "warOut": "Keluar"
+  },
+  "cards": {
+    "structures": "Struktur",
+    "traps": "Perangkap",
+    "supercharge": "Supercharge",
+    "crafted": "Pertahanan Buatan",
+    "lab": "Makmal",
+    "heroes": "Wira",
+    "equipment": "Kelengkapan",
+    "pets": "Haiwan",
+    "walls": "Tembok",
+    "districts": "Daerah",
+    "troops": "Pasukan",
+    "spells": "Mantera"
+  },
+  "subs": {
+    "structures": "Pertahanan, tentera, sumber",
+    "lab": "Pasukan, mantera, kepungan",
+    "builderLab": "Pasukan pembina",
+    "walls": "{total} tembok, tahap maks {max}",
+    "districts": "{active} daripada {total} aktif",
+    "available": "{count} tersedia"
+  }
+}

@@ -1,0 +1,177 @@
+{
+  "goldPass": "{percent, plural, =0 {Kein Goldpass-Boost} other {Goldpass -{percent}%}}",
+  "options": {
+    "open": "Warteschlangen-Optionen",
+    "title": "Warteschlangen-Optionen",
+    "description": "Einstellungen, die ändern, wie die Warteschlange geplant wird.",
+    "done": "Fertig"
+  },
+  "totals": {
+    "freeValue": "{free} von {total}",
+    "queued": "Eingeplante Upgrades",
+    "time": "Eingeplante Zeit",
+    "allDone": "Alle Bahnen fertig",
+    "none": "Nichts eingeplant",
+    "cost": "Eingeplante Kosten",
+    "noCost": "Keine Kosten"
+  },
+  "lane": {
+    "idle": "Frei",
+    "queueEmpty": "Auf dieser Bahn ist nichts eingeplant.",
+    "startNow": "Jetzt starten",
+    "remove": "Entfernen",
+    "moveUp": "Nach oben",
+    "moveDown": "Nach unten",
+    "moveToLane": "In Bahn verschieben",
+    "levels": "St. {from} auf {to}",
+    "removed": "{name} aus der Warteschlange entfernt",
+    "started": "{name} gestartet",
+    "undo": "Rückgängig"
+  },
+  "timeline": {
+    "title": "Zeitleiste",
+    "zoomLabel": "Länge der Zeitleiste",
+    "zooms": {
+      "3": "3 Tage",
+      "7": "1 Woche",
+      "14": "2 Wochen",
+      "30": "1 Monat",
+      "90": "3 Monate"
+    },
+    "conflictsTitle": "Konflikte",
+    "noConflicts": "Keine Konflikte. Jedes Upgrade startet nach der Stufe, die es braucht.",
+    "laneLabel": "Zeitleiste von {label}",
+    "now": "Jetzt",
+    "idle": "Frei"
+  },
+  "add": {
+    "search": "Upgrades suchen",
+    "hiddenFromAll": "In Alle ausgeblendet: {names}.",
+    "chooseCategories": "Kategorien wählen",
+    "chooseCategoriesHelp": "Angehakte Kategorien erscheinen in Alle. Nicht angehakte erscheinen nur in ihrem eigenen Chip.",
+    "add": "Hinzufügen",
+    "addUpToHere": "Bis hierher hinzufügen",
+    "showMore": "Mehr Stufen zeigen",
+    "showMoreUpgrades": "Mehr Upgrades zeigen",
+    "nothing": "Hier gibt es nichts hinzuzufügen.",
+    "nothingDescription": "Jede Stufe in dieser Ansicht ist eingeplant, läuft oder ist noch nicht verfügbar.",
+    "added": "{count, plural, one {{name} hinzugefügt} other {{amount} Stufen von {name} hinzugefügt}}",
+    "close": "Fertig",
+    "unlockTitle": "Nicht freigeschaltet",
+    "unlockHelp": "Schalte diese zuerst frei, um ihre Stufen einzuplanen.",
+    "markUnlocked": "Als freigeschaltet markieren",
+    "showAllLocked": "Alle {count} zeigen",
+    "showFewerLocked": "Weniger zeigen",
+    "allLabel": "Alle"
+  },
+  "lanes": {
+    "builder": {
+      "title": "Bauarbeiter-Warteschlange",
+      "subline": "{name}, plane, was jeder Bauarbeiter als Nächstes tut",
+      "back": "Zurück zu Bauarbeiter",
+      "free": "Freie Bauarbeiter",
+      "laneBusy": "Dieser Bauarbeiter ist beschäftigt.",
+      "goblin": {
+        "label": "Goblin-Bauarbeiter",
+        "help": "Fügt eine siebte Bauarbeiter-Bahn hinzu, solange das Event läuft."
+      },
+      "gate": "Baue zuerst eine Bauarbeiterhütte. Die erste ist kostenlos und sofort fertig.",
+      "add": {
+        "title": "Upgrade hinzufügen",
+        "description": "Wähle, was ein Bauarbeiter als Nächstes tut. Hinzugefügte Stufen werden der Reihe nach eingeplant.",
+        "lane": "Bauarbeiter-Bahn",
+        "search": "Upgrades suchen"
+      },
+      "categories": {
+        "defenses": "Verteidigung",
+        "armyBuildings": "Armee",
+        "resourceBuildings": "Ressourcen",
+        "traps": "Fallen",
+        "heroes": "Helden",
+        "townHall": "Rathaus",
+        "craftedDefenses": "Gefertigt",
+        "guardians": "Wächter",
+        "supercharges": "Superladungen"
+      }
+    },
+    "research": {
+      "title": "Forschungs-Warteschlange",
+      "subline": "{name}, plane, was das Labor als Nächstes erforscht",
+      "back": "Zurück zu Forschung",
+      "free": "Freie Labore",
+      "laneBusy": "Diese Bahn ist beschäftigt.",
+      "goblin": {
+        "label": "Goblin-Forscher",
+        "help": "Fügt eine zweite Forschungsbahn hinzu, solange das Event läuft."
+      },
+      "gate": "Keine Forschungsbahn verfügbar.",
+      "add": {
+        "title": "Forschung hinzufügen",
+        "description": "Wähle, was das Labor als Nächstes erforscht. Hinzugefügte Stufen werden der Reihe nach eingeplant.",
+        "lane": "Forschungsbahn",
+        "search": "Forschung suchen"
+      },
+      "categories": {
+        "troops": "Truppen",
+        "spells": "Zauber",
+        "siegeMachines": "Belagerung"
+      }
+    },
+    "pet": {
+      "title": "Haustier-Warteschlange",
+      "subline": "{name}, plane, was das Haustierhaus als Nächstes upgradet",
+      "back": "Zurück zu Haustiere",
+      "free": "Haustierhaus",
+      "laneBusy": "Das Haustierhaus ist beschäftigt.",
+      "gate": "Haustiere werden bei Rathaus 14 freigeschaltet.",
+      "add": {
+        "title": "Haustier-Upgrade hinzufügen",
+        "description": "Wähle, welches Haustier das Haustierhaus als Nächstes upgradet. Hinzugefügte Stufen werden der Reihe nach eingeplant.",
+        "lane": "Haustierhaus",
+        "search": "Haustiere suchen"
+      },
+      "categories": {
+        "pets": "Haustiere"
+      }
+    },
+    "bbBuilder": {
+      "title": "Warteschlange der Bauarbeiterbasis",
+      "subline": "{name}, Bauarbeiterhalle {hall}, plane, was jeder Bauarbeiter als Nächstes tut",
+      "back": "Zurück zur Bauarbeiterbasis",
+      "free": "Freie Bauarbeiter",
+      "laneBusy": "Dieser Bauarbeiter ist beschäftigt.",
+      "gate": "Die Bauarbeiterbasis hat zwei Bauarbeiter.",
+      "add": {
+        "title": "Upgrade hinzufügen",
+        "description": "Wähle, was ein Bauarbeiter der Bauarbeiterbasis als Nächstes tut. Hinzugefügte Stufen werden der Reihe nach eingeplant.",
+        "lane": "Bauarbeiter",
+        "search": "Upgrades suchen"
+      },
+      "categories": {
+        "defenses": "Verteidigung",
+        "armyBuildings": "Armee",
+        "resourceBuildings": "Ressourcen",
+        "traps": "Fallen",
+        "heroes": "Helden",
+        "other": "Sonstiges"
+      }
+    },
+    "bbResearch": {
+      "title": "Warteschlange des Sternenlabors",
+      "subline": "{name}, Bauarbeiterhalle {hall}, plane, was das Sternenlabor als Nächstes erforscht",
+      "back": "Zurück zu Truppen",
+      "free": "Freie Plätze",
+      "laneBusy": "Das Sternenlabor ist beschäftigt.",
+      "gate": "Das Sternenlabor erforscht eine Truppe nach der anderen.",
+      "add": {
+        "title": "Forschung hinzufügen",
+        "description": "Wähle, welche Truppe das Sternenlabor als Nächstes erforscht. Hinzugefügte Stufen werden der Reihe nach eingeplant.",
+        "lane": "Sternenlabor",
+        "search": "Truppen suchen"
+      },
+      "categories": {
+        "troops": "Truppen"
+      }
+    }
+  }
+}

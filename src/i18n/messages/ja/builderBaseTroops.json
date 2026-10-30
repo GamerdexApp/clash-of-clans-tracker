@@ -1,0 +1,29 @@
+{
+  "title": "兵士",
+  "subline": "{name}、ビルダーホール {hall}",
+  "sublineNotSet": "{name}、ビルダーホール未設定",
+  "strip": {
+    "title": "スターラボラトリー",
+    "noLanes": "スターラボラトリーは利用できません。",
+    "openQueue": "キューとタイムラインを開く",
+    "unassignedHelp": "スターラボラトリーに複数の兵士研究が保存されています。余分なものを完了するかキャンセルしてください。",
+    "levelLabel": "スターラボラトリーのレベル",
+    "level": "{level} / {max}",
+    "notSet": "未設定"
+  },
+  "card": {
+    "notUnlocked": "未開放",
+    "markUnlocked": "開放済みにする",
+    "maxAtHall": "このビルダーホールでの最大 Lv {level}",
+    "unlockedBy": "Builder Barracksのレベル {barracks}で開放",
+    "progress": "{name}の進行状況"
+  },
+  "unavailable": {
+    "title": "このビルダーホールでは利用できません",
+    "requires": "Builder Barracks {barracks}が必要です。これにはビルダーホール {hall}が必要です"
+  },
+  "empty": {
+    "title": "まだ何もありません",
+    "allMax": "すべての兵士が最大です。「最大を非表示」をオフにすると表示されます。"
+  }
+}

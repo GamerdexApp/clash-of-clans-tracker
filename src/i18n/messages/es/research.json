@@ -1,0 +1,32 @@
+{
+  "title": "Investigación",
+  "subline": "{name}, Ayuntamiento {townHall}",
+  "tabsLabel": "Secciones de investigación",
+  "tabs": {
+    "troops": "Tropas",
+    "spells": "Hechizos",
+    "siegeMachines": "Asedio"
+  },
+  "strip": {
+    "title": "Laboratorio",
+    "noLanes": "No hay ningún carril de investigación disponible.",
+    "openQueue": "Abrir cola y línea de tiempo",
+    "unassignedHelp": "Hay investigación guardada en un carril desactivado o en un carril que otra investigación ya usa. Termínala o cancélala.",
+    "levelLabel": "Nivel del Laboratorio",
+    "level": "{level} de {max}",
+    "notTracked": "Sin fijar",
+    "boostLabel": "Mejora de investigación del Pase de Oro"
+  },
+  "card": {
+    "notUnlocked": "Sin desbloquear",
+    "markUnlocked": "Marcar como desbloqueada",
+    "maxAtHall": "Nv máx. {level} en este Ayuntamiento",
+    "progress": "Progreso de {name}"
+  },
+  "empty": {
+    "title": "Aún no hay nada aquí",
+    "none": "No hay nada disponible en esta sección con este nivel de Ayuntamiento.",
+    "allMax": "Todo lo de aquí está al máximo. Desactiva Ocultar máx. para verlo."
+  },
+  "boostValue": "{percent, plural, =0 {Ninguna} other {-{percent}% de tiempo y coste}}"
+}

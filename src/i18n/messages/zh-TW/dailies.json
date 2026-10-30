@@ -1,0 +1,255 @@
+{
+  "locked": {
+    "title": "每日",
+    "subline": "{name}，大本營 {townHall}，這裡的內容都尚未開放",
+    "open": "開啟",
+    "lockedBadge": "未解鎖",
+    "now": "此村莊目前為大本營 {townHall}。",
+    "nowNoHut": "此村莊還沒有助手小屋。",
+    "needsHut": "需要助手小屋",
+    "toBuilder": "前往建築工人",
+    "cards": {
+      "forge": {
+        "title": "鍛造廠",
+        "what": "將多餘資源轉換成首都金幣，並領取每日首都金幣。"
+      },
+      "helpers": {
+        "title": "助手",
+        "what": "追蹤建築學徒、實驗助手、煉金術士與探礦員。"
+      },
+      "seasonPass": {
+        "title": "賽季通行證",
+        "what": "設定縮短升級時間的黃金通行證加速與特權。"
+      },
+      "starBonus": {
+        "title": "星星獎勵",
+        "what": "星星獎勵的每日計時器位於總覽。",
+        "open": "開啟總覽"
+      }
+    }
+  },
+  "timer": {
+    "notSet": "設定每日重設時間",
+    "setTime": "設定重設時間",
+    "setAndUse": "設定並標記為已使用",
+    "notSetHelp": "設定時間不會將獎勵標記為已使用。",
+    "savedIn": "時間以 {zone} 儲存。",
+    "available": "可使用",
+    "use": "使用",
+    "adjust": "調整",
+    "adjustTitle": "調整重設時間",
+    "save": "儲存",
+    "cancel": "取消",
+    "resetsAt": "每日 {time} 重設，{zone}",
+    "untilReset": "距離 {time} 重設，{zone}",
+    "usedAt": "於 {time} 使用。",
+    "timeLabel": "重設時間",
+    "deviceClock": "裝置時鐘",
+    "used": "{name}已標記為已使用",
+    "undo": "復原"
+  },
+  "forge": {
+    "title": "鍛造廠",
+    "description": "將多餘資源轉換成首都金幣，並領取每日首都金幣。",
+    "subline": "{builderHall, plural, =0 {{name}，大本營 {townHall}，首都金幣產出} other {{name}，大本營 {townHall}，建築工人大本營 {builderHall}，首都金幣產出}}",
+    "daily": {
+      "title": "每日首都金幣",
+      "amount": "大本營 {townHall} 每天 +{gold} 首都金幣",
+      "none": "每日首都金幣從大本營 6 開始提供。",
+      "name": "每日首都金幣"
+    },
+    "slots": {
+      "title": "鍛造欄位",
+      "craftingTime": "鍛造時間 3 天",
+      "open": "大本營 {townHall} 開放 {open} / {total} 個欄位",
+      "boost": "已套用 {percent}% 建築工人加速：{time}",
+      "slot": "欄位 {number}",
+      "requires": "需要大本營 {townHall}",
+      "locked": "未解鎖",
+      "idle": "閒置",
+      "idleHelp": "選擇要鍛造的資源",
+      "running": "進行中",
+      "done": "完成",
+      "result": "產出",
+      "start": "開始",
+      "stop": "停止",
+      "reset": "重設",
+      "resource": "資源",
+      "rate": "{amount} {resource}換 {capitalGold} 首都金幣，{time}後完成",
+      "left": "剩餘 {time}",
+      "ready": "已完成：{capitalGold} 首都金幣。",
+      "finished": "{ago}前完成。",
+      "stopped": "欄位 {number} 已停止，進度已清除。",
+      "resetDone": "欄位 {number} 已重設，{resource}進度已清除。",
+      "runningTitle": "{resource}，{amount}"
+    },
+    "auto": {
+      "title": "自動鍛造",
+      "subtitle": "黃金通行證特權，自動重複",
+      "repeats": "每 {time} 以 {amount} {resource}換 {capitalGold} 首都金幣",
+      "nextRun": "本次結束後，下一次會自動開始。",
+      "stop": "停止自動鍛造",
+      "stopped": "自動鍛造已停止，循環已清除。",
+      "confirm": {
+        "title": "要停止自動鍛造嗎？",
+        "body": "進行中的循環會被清除：{amount} {resource}換 {capitalGold} 首都金幣，剩餘 {time}。自動鍛造會停止重複，直到你在鍛造廠頁面再次啟動。黃金通行證特權在賽季通行證中仍保持開啟。",
+        "undoHint": "停止後，畫面上會保留幾秒鐘的復原按鈕。",
+        "keep": "繼續執行",
+        "stop": "停止自動鍛造"
+      }
+    },
+    "rates": {
+      "title": "鍛造比率",
+      "description": "{builderHall, plural, =0 {大本營 {townHall}，一個欄位執行一次} other {大本營 {townHall} 與建築工人大本營 {builderHall}，一個欄位執行一次}}",
+      "autoTitle": "自動鍛造比率",
+      "autoDescription": "黃金通行證價格，為手動費用的一半",
+      "resource": "資源",
+      "cost": "費用",
+      "capitalGold": "首都金幣",
+      "requires": "需要{requirement}"
+    }
+  },
+  "helpers": {
+    "title": "助手",
+    "description": "追蹤建築學徒、實驗助手、煉金術士與探礦員。",
+    "subline": "{builderHall, plural, =0 {{name}，大本營 {townHall}，助手小屋的助手} other {{name}，大本營 {townHall}，建築工人大本營 {builderHall}，助手小屋的助手}}",
+    "banner": "助手小屋已建造。各助手依大本營等級解鎖：實驗助手 9、建築學徒 10、探礦員 10、煉金術士 11。",
+    "names": {
+      "buildersApprentice": "建築學徒",
+      "labAssistant": "實驗助手",
+      "alchemist": "煉金術士",
+      "prospector": "探礦員"
+    },
+    "from": "大本營 {townHall} 以上",
+    "lockedCard": "需要大本營 {townHall}",
+    "dailyUse": "每日使用",
+    "level": "等級",
+    "levelOption": "等級 {level}",
+    "levelTownHall": "TH {townHall}",
+    "none": "無",
+    "noLevel": "請選擇等級以查看數據。",
+    "noLevelCalculator": "請選擇等級以使用計算器。",
+    "nextLevel": "{gems, select, 0 {等級 {level} 免費} other {等級 {level} 需要 {gems} 寶石}}",
+    "saves": "每次使用節省 {time}",
+    "levelRequires": "需要大本營 {townHall}",
+    "assignment": {
+      "builderTitle": "選擇要加速的升級",
+      "researchTitle": "選擇要加速的研究",
+      "none": "無",
+      "builderHelp": "列出目前正在升級的建築、英雄、大本營、大本營武器與打造防禦模組。",
+      "researchHelp": "僅限研究：列出目前正在研究的部隊、法術與攻城機器。",
+      "builderEmpty": "沒有可指派的進行中建築升級。",
+      "researchEmpty": "沒有可指派的進行中實驗室研究。",
+      "once": "單次使用",
+      "untilDone": "直到完成",
+      "assignedTo": "指派給",
+      "clearsAfterUse": "使用一次後清除。",
+      "staysUntilDone": "保留到升級完成為止。",
+      "clear": "清除指派",
+      "cleared": "指派已清除。",
+      "select": "指派的升級",
+      "mode": "指派模式",
+      "preview": "立即使用：剩餘 {before} 變為 {after}。",
+      "previewDone": "立即使用：剩餘 {before}，升級完成。",
+      "upgradeTo": "{name}升至等級 {level}，剩餘 {left}"
+    },
+    "used": {
+      "plain": "{name}已標記為已使用",
+      "saved": "{name}已用於{target}，節省 {time}"
+    },
+    "alchemist": {
+      "stats": {
+        "goldElixir": "金幣或聖水上限",
+        "darkElixir": "暗黑聖水上限",
+        "bonus": "轉換加成"
+      },
+      "calculator": "轉換計算器",
+      "from": "從",
+      "to": "轉成",
+      "amount": "轉換數量",
+      "result": "{amount} {from}可換得 {output} {to}",
+      "help": "已包含 {bonus}% 轉換加成與 150 比 1 的比率。",
+      "nothingSaved": "這裡的內容不會儲存。"
+    },
+    "prospector": {
+      "lockedTitle": "需以 2,200 賽季挑戰點數解鎖",
+      "lockedHelp": "在遊戲中解鎖後，請到賽季通行證頁面將它開啟。",
+      "toSeasonPass": "開啟賽季通行證",
+      "subtitle": "大本營 10 以上，以賽季挑戰點數解鎖",
+      "lockedBadge": "未解鎖",
+      "unlockedBadge": "已解鎖",
+      "levelOnly": "等級 1（唯一等級）",
+      "limits": {
+        "shiny": "Shiny Ore 上限",
+        "glowy": "Glowy Ore 上限",
+        "starry": "Starry Ore 上限"
+      },
+      "calculator": "礦石轉換計算器",
+      "ores": {
+        "shiny": "Shiny Ore",
+        "glowy": "Glowy Ore",
+        "starry": "Starry Ore"
+      },
+      "help": "10 個 Shiny Ore 可合成 1 個 Glowy Ore。100 個 Glowy Ore 可合成 1 個 Starry Ore。"
+    }
+  },
+  "seasonPass": {
+    "title": "賽季通行證",
+    "description": "設定縮短升級時間的黃金通行證加速與特權。",
+    "subline": "{name}，大本營 {townHall}，本賽季啟用的黃金通行證特權",
+    "lockedTitle": "賽季通行證未解鎖",
+    "lockedBody": "黃金通行證需要大本營 7。此村莊目前為大本營 {townHall}。",
+    "month": {
+      "title": "{month}",
+      "subtitle": "加速將於 {reset} 重設，特權維持開啟。",
+      "key": "月份代碼",
+      "rolled": "新的月份開始了。建築工人加速與研究加速已重設為 0%，特權維持開啟。",
+      "undoReset": "復原重設",
+      "dismiss": "略過",
+      "restored": "已恢復本月的加速。",
+      "undo": "復原"
+    },
+    "boosts": {
+      "title": "加速特權",
+      "description": "黃金通行證在本賽季縮短升級時間。",
+      "builder": "建築工人加速",
+      "research": "研究加速",
+      "applies": "適用於建築工人、研究與寵物的時間、佇列時間軸，以及鍛造時間。",
+      "saved": "隨本月一併儲存。",
+      "value": "{percent, plural, =0 {關閉} other {{percent}%}}",
+      "option": "{percent, plural, =0 {0%} other {{percent}%}}",
+      "builderEffect": "{percent, plural, =0 {鍛造時間為 3 天。} other {鍛造時間為 {time}。}}",
+      "researchEffect": "{percent, plural, =0 {研究與寵物時間不變。} other {研究與寵物時間縮短 {percent}%。}}"
+    },
+    "unlocks": {
+      "title": "賽季挑戰解鎖",
+      "description": "不屬於黃金通行證",
+      "prospector": "探礦員",
+      "prospectorHelp": "大本營 10 以上的助手，需 2,200 賽季挑戰點數",
+      "shows": "顯示在助手頁面"
+    },
+    "perks": {
+      "title": "黃金通行證特權",
+      "description": "本賽季啟用的黃金通行證特權",
+      "referenceOnly": "僅供參考",
+      "referenceNote": "不會變更應用程式中的其他內容。",
+      "hoggyBank": {
+        "label": "豬豬撲滿",
+        "note": "遊玩時儲存資源，賽季結束時領取"
+      },
+      "gemDonations": {
+        "label": "1 寶石捐贈",
+        "note": "每次僅需 1 寶石即可捐贈部隊與法術"
+      },
+      "autoForge": {
+        "label": "自動鍛造",
+        "note": "自動將資源轉換成首都金幣"
+      },
+      "autoForgeEffect": "開啟鍛造廠頁面的自動鍛造列與總覽的標籤。",
+      "requestTimeReduction": {
+        "label": "縮短請求時間",
+        "note": "縮短部隊請求的冷卻計時"
+      }
+    }
+  }
+}

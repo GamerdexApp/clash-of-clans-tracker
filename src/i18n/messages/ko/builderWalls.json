@@ -1,0 +1,48 @@
+{
+  "title": "빌더 기지 벽",
+  "subline": "{name}, 빌더 홀 {builderHall}, 최고 벽 레벨 {highest}",
+  "massEdit": "벽 개수는 일괄 편집에서도 조정할 수 있어요.",
+  "tiles": {
+    "total": "이 빌더 홀의 총 벽 수",
+    "totalCaption": "최고 벽 레벨 {highest}",
+    "placed": "배치함",
+    "placedCaption": "레벨이 있는 벽",
+    "notPlaced": "미배치",
+    "allPlaced": "모두 배치함",
+    "stillToPlace": "{count, plural, other {배치할 벽 {amount}개 남음}}",
+    "over": "{count}개 초과"
+  },
+  "hideEmpty": "{hidden, plural, =0 {가장 낮은 레벨 아래의 빈 레벨 숨기기} other {가장 낮은 레벨 아래의 빈 레벨 숨기기 ({hidden}개 숨김)}}",
+  "row": {
+    "level": "레벨 {level}",
+    "own": "보유",
+    "ownLabel": "레벨 {level} 보유 벽",
+    "lower": "레벨 {level} 벽 1개 줄이기",
+    "raise": "레벨 {level} 벽 1개 늘리기",
+    "nextCost": "다음 레벨: 벽당 {resource} {price}",
+    "toMove": "옮길 벽",
+    "toLevel": "대상 레벨",
+    "plusOne": "+1",
+    "move": "이동",
+    "moveAll": "모두 이동",
+    "preview": "{walls, plural, other {벽 {amount}개}}를 레벨 {from}에서 {to}로 이동: {resource} {price}",
+    "nothingToMove": "옮길 것이 없어요",
+    "noWalls": "이 레벨에는 옮길 벽이 없어요."
+  },
+  "cost": {
+    "title": "모든 벽을 레벨 {level}로 올리는 비용",
+    "row": "레벨 {level}, {walls, plural, other {벽 {amount}개}}",
+    "total": "합계",
+    "none": "배치한 벽이 모두 최고 레벨이거나, 아직 배치한 벽이 없어요.",
+    "note": "레벨 2~6 벽은 빌더 골드가 들어요. 레벨 7 이상은 빌더 골드 또는 빌더 엘릭서가 들어요."
+  },
+  "empty": {
+    "title": "아직 벽이 없어요",
+    "description": "빌더 기지 업그레이드 페이지에서 빌더 홀 레벨을 설정하면 벽을 볼 수 있어요."
+  },
+  "toast": {
+    "moved": "{walls, plural, other {벽 {amount}개}}를 레벨 {from}에서 {to}로 옮겼어요",
+    "counted": "레벨 {level} 벽 {from}에서 {to}로",
+    "undo": "실행 취소"
+  }
+}

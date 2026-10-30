@@ -1,0 +1,178 @@
+{
+  "title": "Einstellungen",
+  "subline": "Optionen, Backups und deine Daten",
+  "tabsLabel": "Einstellungsbereiche",
+  "tabs": {
+    "sync": "Cloud-Sync",
+    "preferences": "Optionen",
+    "data": "Backup und Daten",
+    "about": "Info"
+  },
+  "appearance": {
+    "title": "Darstellung",
+    "description": "Wähle, wie die App aussieht.",
+    "themeLabel": "Design",
+    "themes": {
+      "light": "Hell",
+      "dark": "Dunkel",
+      "system": "System"
+    },
+    "themeNote": "System folgt deinem Gerät. Gerade ist es {mode}."
+  },
+  "builders": {
+    "title": "Bauarbeiter-Einstellungen",
+    "description": "Event-Helfer, die deinen Warteschlangen einen Platz hinzufügen.",
+    "goblinBuilder": "Goblin-Bauarbeiter",
+    "goblinBuilderHelp": "Fügt einen zusätzlichen Bauarbeiterplatz für Gebäude hinzu, den siebten.",
+    "goblinResearch": "Goblin-Forschung",
+    "goblinResearchHelp": "Fügt einen zusätzlichen Forschungsplatz im Labor hinzu."
+  },
+  "activeHours": {
+    "title": "Aktive Zeiten",
+    "description": "Lege fest, wann du täglich spielst. Zeitleisten der Warteschlangen fügen eine Lücke ein, wenn ein Upgrade außerhalb dieses Zeitfensters endet.",
+    "start": "Startzeit",
+    "end": "Endzeit",
+    "save": "Speichern",
+    "clear": "Löschen",
+    "status": "Aktiv von {start} bis {end} nach deiner Ortszeit.",
+    "none": "Keine aktiven Zeiten gesetzt. Jede Stunde zählt als aktiv.",
+    "sameTime": "Start und Ende sind gleich. Wähle zwei verschiedene Zeiten oder lösche das Zeitfenster.",
+    "overnight": "Dieses Zeitfenster geht über Nacht, von {start} bis {end} am nächsten Tag.",
+    "unsaved": "Du hast nicht gespeicherte Änderungen.",
+    "clockChanged": "Dein Zeitversatz hat sich geändert. Die aktiven Zeiten gelten weiterhin von {start} bis {end} auf deiner Uhr."
+  },
+  "data": {
+    "title": "Datenverwaltung",
+    "storageNote": {
+      "title": "In diesem Browser gespeichert.",
+      "body": "Wenn du die Browserdaten löschst, sind deine Dörfer weg. Exportiere ab und zu ein Backup."
+    },
+    "export": {
+      "title": "Export",
+      "description": "Lade alle Dörfer und deine Einstellungen als eine Datei herunter.",
+      "button": "Alle Dörfer exportieren",
+      "done": "Backup heruntergeladen"
+    },
+    "import": {
+      "title": "Import",
+      "fileLabel": "Backup-Datei",
+      "chooseFile": "Datei wählen",
+      "noFile": "Keine Datei gewählt",
+      "description": "Wähle eine Backup-Datei. Du prüfst sie, bevor sich etwas ändert.",
+      "review": "Import prüfen",
+      "merged": "Backup zusammengeführt",
+      "replaced": "Backup hat deine Daten ersetzt",
+      "undo": "Rückgängig"
+    },
+    "reset": {
+      "title": "Alle Daten zurücksetzen",
+      "warning": "Löscht alle Dörfer und Einstellungen in diesem Browser.",
+      "button": "Alle Daten zurücksetzen",
+      "confirmTitle": "Alles löschen?",
+      "confirmBody": "Das entfernt {names}. Du kannst es zehn Sekunden lang rückgängig machen.",
+      "cancel": "Abbrechen",
+      "confirm": "Alles löschen",
+      "done": "Alle Daten gelöscht",
+      "doneMessage": "{amount} {count, plural, one {Dorf} other {Dörfer}} entfernt.",
+      "doneMessageDisconnected": "{amount} {count, plural, one {Dorf} other {Dörfer}} entfernt. Der Sync ist in diesem Browser getrennt.",
+      "syncedCopy": "Auch die synchronisierte Kopie in {provider} löschen",
+      "syncedOn": "Der Sync bleibt an. Deine anderen Geräte verlieren diese Dörfer bei ihrem nächsten Sync. Exportiere vorher ein Backup, wenn du unsicher bist.",
+      "syncedOff": "Ohne dies wird der Sync in diesem Browser getrennt, damit der nächste Sync die Dörfer nicht zurückbringt.",
+      "undo": "Rückgängig"
+    },
+    "villages": {
+      "title": "Dörfer",
+      "description": "Dörfer erstellen, bearbeiten, wechseln und löschen.",
+      "manage": "Dörfer verwalten"
+    },
+    "villageCount": "{amount} {count, plural, one {Dorf} other {Dörfer}}"
+  },
+  "importDialog": {
+    "title": "Import prüfen",
+    "fileInfo": "{name}, {size}",
+    "bytes": "{count} B",
+    "kilobytes": "{count} KB",
+    "cancel": "Abbrechen",
+    "close": "Schließen",
+    "merge": "In dieses Gerät zusammenführen",
+    "replace": "Dieses Gerät ersetzen",
+    "failedTitle": "Diese Datei kann nicht importiert werden.",
+    "errors": {
+      "notJson": "Diese Datei ist kein gültiges JSON.",
+      "playthroughsMissing": "Diese Datei ist kein Backup von Clash of Clans Tracker. Sie enthält keine Dörferliste."
+    },
+    "checksTitle": "Prüfungen bestanden.",
+    "checks": "Die Datei listet {read} Dörfer auf, {kept} davon sind lesbar.",
+    "skipped": "{amount} {count, plural, one {Eintrag wurde} other {Einträge wurden}} übersprungen.",
+    "howToApply": "So wird angewendet",
+    "modeLabel": "Importmodus",
+    "modes": {
+      "merge": "Zusammenführen",
+      "replace": "Ersetzen"
+    },
+    "modeNotes": {
+      "merge": "Fügt neue Dörfer hinzu und behält die neuere Kopie eines Dorfes, das in beiden existiert. Deine Einstellungen und dein aktives Dorf bleiben.",
+      "replace": "Nutzt nur den Inhalt der Datei. Dörfer, die nicht in der Datei sind, werden entfernt."
+    },
+    "whatChanges": "Was sich ändert",
+    "columns": {
+      "village": "Dorf",
+      "inFile": "In Datei",
+      "onDevice": "Auf Gerät",
+      "result": "Ergebnis"
+    },
+    "notThere": "Nicht vorhanden",
+    "results": {
+      "added": "Hinzugefügt",
+      "updated": "Aus Datei aktualisiert",
+      "kept": "Behalten",
+      "replaced": "Ersetzt",
+      "removed": "Entfernt"
+    },
+    "summary": {
+      "added": "{count} hinzugefügt",
+      "updated": "{count} aktualisiert",
+      "kept": "{count} behalten",
+      "replaced": "{count} ersetzt",
+      "removed": "{count} entfernt"
+    },
+    "noVillages": "Die Datei enthält keine Dörfer.",
+    "undoNote": "Du kannst den Import zehn Sekunden lang rückgängig machen."
+  },
+  "about": {
+    "version": "Version {version}",
+    "summary": "Ein kostenloser Fortschrittstracker für Clash of Clans. Verfolge Upgrades, Forschung, Erfolge und mehr in mehreren Dörfern.",
+    "officialGame": "Offizielle Clash-of-Clans-Seite",
+    "disclaimer": "Dieses Projekt steht in keiner Verbindung zu Supercell oder Clash of Clans und wird weder von ihnen unterstützt noch gebilligt."
+  },
+  "region": {
+    "title": "Sprache und Region",
+    "description": "Wie die App Text, Zahlen und Datumsangaben auf diesem Gerät anzeigt. Diese Auswahl wird nicht mit deinen Dörfern gespeichert, nicht exportiert und nicht synchronisiert.",
+    "language": {
+      "label": "Sprache",
+      "hint": "Die Sprache der App. Namen aus dem Spiel bleiben auf Englisch."
+    },
+    "numberFormat": {
+      "label": "Zahlenformat",
+      "hint": "Beispiel: {example}",
+      "options": {
+        "auto": "Automatisch (folgt der Sprache)",
+        "us": "1,234,567.89 (US)",
+        "european": "1.234.567,89 (europäisch)",
+        "french": "1 234 567,89 (französisch)",
+        "swiss": "1’234’567.89 (Schweiz)",
+        "indian": "12,34,567.89 (indisch)"
+      }
+    },
+    "dateFormat": {
+      "label": "Datumsformat",
+      "hint": "Beispiel: {example}",
+      "options": {
+        "auto": "Automatisch (folgt der Sprache)",
+        "mdy": "Monat/Tag/Jahr",
+        "dmy": "Tag/Monat/Jahr",
+        "ymd": "Jahr-Monat-Tag"
+      }
+    }
+  }
+}

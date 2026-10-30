@@ -1,0 +1,255 @@
+{
+  "locked": {
+    "title": "Günlükler",
+    "subline": "{name}, Belediye Binası {townHall}, burada henüz hiçbir şey açık değil",
+    "open": "Aç",
+    "lockedBadge": "Kilitli",
+    "now": "Bu köy Belediye Binası {townHall} seviyesinde.",
+    "nowNoHut": "Bu köyde henüz Yardımcı Kulübesi yok.",
+    "needsHut": "Yardımcı Kulübesi gerekir",
+    "toBuilder": "İnşaatçıyı aç",
+    "cards": {
+      "forge": {
+        "title": "Dökümhane",
+        "what": "Artan kaynakları Başkent Altınına çevir ve günlük Başkent Altınını topla."
+      },
+      "helpers": {
+        "title": "Yardımcılar",
+        "what": "İnşaatçı Çırağı, Laboratuvar Asistanı, Simyacı ve Maden Arayıcıyı takip et."
+      },
+      "seasonPass": {
+        "title": "Sezon Geçişi",
+        "what": "Yükseltme sürelerini kısaltan Altın Geçiş güçlendirmelerini ve ayrıcalıklarını ayarla."
+      },
+      "starBonus": {
+        "title": "Yıldız Bonusu",
+        "what": "Yıldız Bonusu günlük sayacı Genel Bakış sayfasında.",
+        "open": "Genel Bakışı aç"
+      }
+    }
+  },
+  "timer": {
+    "notSet": "Günlük sıfırlanma saatini ayarla",
+    "setTime": "Sıfırlanma saatini ayarla",
+    "setAndUse": "Ayarla ve kullanıldı işaretle",
+    "notSetHelp": "Saati ayarlamak ödülü kullanıldı olarak işaretlemez.",
+    "savedIn": "Saat {zone} diliminde kaydedilir.",
+    "available": "Kullanılabilir",
+    "use": "Kullan",
+    "adjust": "Düzenle",
+    "adjustTitle": "Sıfırlanma saatini düzenle",
+    "save": "Kaydet",
+    "cancel": "İptal",
+    "resetsAt": "Her gün {time} saatinde sıfırlanır, {zone}",
+    "untilReset": "{time} sıfırlanmasına kadar, {zone}",
+    "usedAt": "{time} saatinde kullanıldı.",
+    "timeLabel": "Sıfırlanma saati",
+    "deviceClock": "cihaz saati",
+    "used": "{name} kullanıldı olarak işaretlendi",
+    "undo": "Geri al"
+  },
+  "forge": {
+    "title": "Dökümhane",
+    "description": "Artan kaynakları Başkent Altınına çevir ve günlük Başkent Altınını topla.",
+    "subline": "{builderHall, plural, =0 {{name}, Belediye Binası {townHall}, Başkent Altını üretimi} other {{name}, Belediye Binası {townHall}, İnşaatçı Salonu {builderHall}, Başkent Altını üretimi}}",
+    "daily": {
+      "title": "Günlük Başkent Altını",
+      "amount": "Belediye Binası {townHall} seviyesinde her gün +{gold} Başkent Altını",
+      "none": "Günlük Başkent Altını Belediye Binası 6 ile başlar.",
+      "name": "Günlük Başkent Altını"
+    },
+    "slots": {
+      "title": "Dökümhane yuvaları",
+      "craftingTime": "3 günlük üretim süresi",
+      "open": "Belediye Binası {townHall} seviyesinde {total} yuvadan {open} tanesi açık",
+      "boost": "%{percent} inşaatçı güçlendirmesi uygulandı: {time}",
+      "slot": "Yuva {number}",
+      "requires": "Belediye Binası {townHall} gerekir",
+      "locked": "Kilitli",
+      "idle": "Boşta",
+      "idleHelp": "Neyin dökeceğini seç",
+      "running": "Çalışıyor",
+      "done": "Bitti",
+      "result": "Sonuç",
+      "start": "Başlat",
+      "stop": "Durdur",
+      "reset": "Sıfırla",
+      "resource": "Kaynak",
+      "rate": "{amount} {resource} için {capitalGold} Başkent Altını, {time} içinde hazır",
+      "left": "{time} kaldı",
+      "ready": "Hazır: {capitalGold} Başkent Altını.",
+      "finished": "{ago} önce bitti.",
+      "stopped": "Yuva {number} durduruldu. Çalışma temizlendi.",
+      "resetDone": "Yuva {number} sıfırlandı. {resource} çalışması temizlendi.",
+      "runningTitle": "{resource}, {amount}"
+    },
+    "auto": {
+      "title": "Otomatik Dökümhane",
+      "subtitle": "Altın Geçiş ayrıcalığı, kendiliğinden tekrarlar",
+      "repeats": "Her {time} sürede {amount} {resource} için {capitalGold} Başkent Altını",
+      "nextRun": "Bu çalışma bitince sonraki kendiliğinden başlar.",
+      "stop": "Otomatik Dökümhaneyi durdur",
+      "stopped": "Otomatik Dökümhane durduruldu. Döngü temizlendi.",
+      "confirm": {
+        "title": "Otomatik Dökümhane durdurulsun mu?",
+        "body": "Çalışan döngü temizlenir: {amount} {resource} için {capitalGold} Başkent Altını, {time} kaldı. Otomatik Dökümhane, onu Dökümhane sayfasından yeniden başlatana kadar tekrarlamayı bırakır. Altın Geçiş ayrıcalığı Sezon Geçişinde açık kalır.",
+        "undoHint": "Durdurduktan sonra birkaç saniye boyunca ekranda bir Geri al düğmesi kalır.",
+        "keep": "Çalışsın",
+        "stop": "Otomatik Dökümhaneyi durdur"
+      }
+    },
+    "rates": {
+      "title": "Dökümhane oranları",
+      "description": "{builderHall, plural, =0 {Belediye Binası {townHall}, bir yuvada tek çalışma} other {Belediye Binası {townHall} ve İnşaatçı Salonu {builderHall}, bir yuvada tek çalışma}}",
+      "autoTitle": "Otomatik Dökümhane oranları",
+      "autoDescription": "Altın Geçiş fiyatı, elle maliyetin yarısı",
+      "resource": "Kaynak",
+      "cost": "Maliyet",
+      "capitalGold": "Başkent Altını",
+      "requires": "{requirement} gerekir"
+    }
+  },
+  "helpers": {
+    "title": "Yardımcılar",
+    "description": "İnşaatçı Çırağı, Laboratuvar Asistanı, Simyacı ve Maden Arayıcıyı takip et.",
+    "subline": "{builderHall, plural, =0 {{name}, Belediye Binası {townHall}, Yardımcı Kulübesi asistanları} other {{name}, Belediye Binası {townHall}, İnşaatçı Salonu {builderHall}, Yardımcı Kulübesi asistanları}}",
+    "banner": "Yardımcı Kulübesi inşa edildi. Her yardımcı Belediye Binası seviyesine göre açılır: Laboratuvar Asistanı 9, İnşaatçı Çırağı 10, Maden Arayıcı 10, Simyacı 11.",
+    "names": {
+      "buildersApprentice": "İnşaatçı Çırağı",
+      "labAssistant": "Laboratuvar Asistanı",
+      "alchemist": "Simyacı",
+      "prospector": "Maden Arayıcı"
+    },
+    "from": "Belediye Binası {townHall} ve üstü",
+    "lockedCard": "Belediye Binası {townHall} gerekir",
+    "dailyUse": "Günlük kullanım",
+    "level": "Seviye",
+    "levelOption": "Seviye {level}",
+    "levelTownHall": "BB {townHall}",
+    "none": "Yok",
+    "noLevel": "İstatistikleri görmek için seviyeni seç.",
+    "noLevelCalculator": "Hesaplayıcıyı kullanmak için seviyeni seç.",
+    "nextLevel": "{gems, select, 0 {Seviye {level} ücretsiz} other {Seviye {level} {gems} elmas}}",
+    "saves": "Kullanım başına {time} kazandırır",
+    "levelRequires": "Belediye Binası {townHall} gerekir",
+    "assignment": {
+      "builderTitle": "Hızlandırılacak yükseltme",
+      "researchTitle": "Hızlandırılacak araştırma",
+      "none": "Yok",
+      "builderHelp": "Şu anda yükseltilen binaları, kahramanları, Belediye Binasını, Belediye Binası silahını ve üretilmiş savunma modüllerini listeler.",
+      "researchHelp": "Yalnızca araştırma: şu anda yükseltilen birlikleri, büyüleri ve kuşatma makinelerini listeler.",
+      "builderEmpty": "Atanacak etkin inşaatçı yükseltmesi yok.",
+      "researchEmpty": "Atanacak etkin laboratuvar araştırması yok.",
+      "once": "1 kez kullanım",
+      "untilDone": "Bitene kadar",
+      "assignedTo": "Atanan",
+      "clearsAfterUse": "Bir kullanımdan sonra temizlenir.",
+      "staysUntilDone": "Yükseltme bitene kadar kalır.",
+      "clear": "Atamayı temizle",
+      "cleared": "Atama temizlendi.",
+      "select": "Atanan yükseltme",
+      "mode": "Atama modu",
+      "preview": "Şimdi kullan: kalan {before}, {after} olur.",
+      "previewDone": "Şimdi kullan: kalan {before}, yükseltme biter.",
+      "upgradeTo": "{name} seviye {level}, {left} kaldı"
+    },
+    "used": {
+      "plain": "{name} kullanıldı olarak işaretlendi",
+      "saved": "{name}, {target} için kullanıldı, {time} kazanıldı"
+    },
+    "alchemist": {
+      "stats": {
+        "goldElixir": "Altın veya İksir maks.",
+        "darkElixir": "Kara İksir maks.",
+        "bonus": "Dönüşüm bonusu"
+      },
+      "calculator": "Dönüşüm hesaplayıcısı",
+      "from": "Kaynak",
+      "to": "Hedef",
+      "amount": "Dönüştürülecek miktar",
+      "result": "{amount} {from}, {output} {to} verir",
+      "help": "%{bonus} dönüşüm bonusunu ve 150'ye 1 oranını içerir.",
+      "nothingSaved": "Burada hiçbir şey kaydedilmez."
+    },
+    "prospector": {
+      "lockedTitle": "2.200 Sezon Görevi Puanıyla açana kadar kilitli",
+      "lockedHelp": "Oyunda açtıktan sonra Sezon Geçişi sayfasında etkinleştir.",
+      "toSeasonPass": "Sezon Geçişini aç",
+      "subtitle": "Belediye Binası 10 ve üstü, Sezon Görevi Puanıyla açılır",
+      "lockedBadge": "Kilitli",
+      "unlockedBadge": "Açık",
+      "levelOnly": "Seviye 1 (tek seviye)",
+      "limits": {
+        "shiny": "Shiny Ore maks.",
+        "glowy": "Glowy Ore maks.",
+        "starry": "Starry Ore maks."
+      },
+      "calculator": "Ore dönüşüm hesaplayıcısı",
+      "ores": {
+        "shiny": "Shiny Ore",
+        "glowy": "Glowy Ore",
+        "starry": "Starry Ore"
+      },
+      "help": "10 Shiny Ore, 1 Glowy Ore yapar. 100 Glowy Ore, 1 Starry Ore yapar."
+    }
+  },
+  "seasonPass": {
+    "title": "Sezon Geçişi",
+    "description": "Yükseltme sürelerini kısaltan Altın Geçiş güçlendirmelerini ve ayrıcalıklarını ayarla.",
+    "subline": "{name}, Belediye Binası {townHall}, bu sezon etkin Altın Geçiş ayrıcalıkları",
+    "lockedTitle": "Sezon Geçişi kilitli",
+    "lockedBody": "Altın Geçiş için Belediye Binası 7 gerekir. Bu köy Belediye Binası {townHall} seviyesinde.",
+    "month": {
+      "title": "{month}",
+      "subtitle": "Güçlendirmeler {reset} tarihinde sıfırlanır, ayrıcalıklar açık kalır.",
+      "key": "Ay anahtarı",
+      "rolled": "Yeni bir ay başladı. İnşaatçı güçlendirmesi ve araştırma güçlendirmesi %0'a sıfırlandı. Ayrıcalıklar açık kalır.",
+      "undoReset": "Sıfırlamayı geri al",
+      "dismiss": "Kapat",
+      "restored": "Güçlendirmeler bu ay için geri getirildi.",
+      "undo": "Geri al"
+    },
+    "boosts": {
+      "title": "Güçlendirme ayrıcalıkları",
+      "description": "Altın Geçiş bu sezon yükseltme sürelerini kısaltır.",
+      "builder": "İnşaatçı güçlendirmesi",
+      "research": "Araştırma güçlendirmesi",
+      "applies": "İnşaatçı, Araştırma ve Evcil Hayvan sürelerine, kuyruk zaman çizelgelerine ve Dökümhane üretim süresine uygulanır.",
+      "saved": "Bu ayla birlikte kaydedilir.",
+      "value": "{percent, plural, =0 {Kapalı} other {%{percent}}}",
+      "option": "{percent, plural, =0 {%0} other {%{percent}}}",
+      "builderEffect": "{percent, plural, =0 {Dökümhane üretim süresi 3g.} other {Dökümhane üretim süresi {time}.}}",
+      "researchEffect": "{percent, plural, =0 {Araştırma ve evcil hayvan süreleri değişmez.} other {Araştırma ve evcil hayvan süreleri %{percent} kısalır.}}"
+    },
+    "unlocks": {
+      "title": "Sezon Görevi kilitleri",
+      "description": "Altın Geçişin parçası değil",
+      "prospector": "Maden Arayıcı",
+      "prospectorHelp": "Belediye Binası 10 ve üstü için yardımcı, 2.200 Sezon Görevi Puanı tutar",
+      "shows": "Yardımcılar sayfasında görünür"
+    },
+    "perks": {
+      "title": "Altın Geçiş ayrıcalıkları",
+      "description": "Bu sezon etkin Altın Geçiş ayrıcalıkları",
+      "referenceOnly": "Yalnızca bilgi",
+      "referenceNote": "Uygulamada başka hiçbir şeyi değiştirmez.",
+      "hoggyBank": {
+        "label": "Hoggy Bank",
+        "note": "Sen oynarken kaynak biriktirir, sezon sonunda topla"
+      },
+      "gemDonations": {
+        "label": "1 Elmaslık Bağışlar",
+        "note": "Birlik ve büyüleri tanesi yalnızca 1 elmasa bağışla"
+      },
+      "autoForge": {
+        "label": "Otomatik Dökümhane",
+        "note": "Kaynakları otomatik olarak Başkent Altınına çevirir"
+      },
+      "autoForgeEffect": "Dökümhane sayfasındaki Otomatik Dökümhane satırını ve Genel Bakış etiketini açar.",
+      "requestTimeReduction": {
+        "label": "İstek Süresi Azaltma",
+        "note": "Birlik isteği bekleme sayacını kısaltır"
+      }
+    }
+  }
+}

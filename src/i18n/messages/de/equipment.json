@@ -1,0 +1,61 @@
+{
+  "title": "Ausrüstung",
+  "subline": "{name}, Rathaus {townHall}, Schmied Stufe {blacksmith}",
+  "massEdit": "Ausrüstungsstufen lassen sich auch in der Massenbearbeitung setzen.",
+  "locked": {
+    "title": "Braucht den Schmied",
+    "description": "Baue den Schmied, um Heldenausrüstung zu verfolgen. Setze seine Stufe auf der Bauarbeiter-Seite im Tab Armee.",
+    "action": "Zu Bauarbeiter"
+  },
+  "ore": {
+    "title": "Erzvorrat",
+    "description": "Das Erz, das du besitzt. Engpässe sind nur ein Hinweis und blockieren nie ein Upgrade.",
+    "names": {
+      "shiny": "Glänzendes Erz",
+      "glowing": "Leuchtendes Erz",
+      "starry": "Sternenerz"
+    },
+    "short": {
+      "shiny": "Glänzend",
+      "glowing": "Leuchtend",
+      "starry": "Sternen"
+    },
+    "needed": "Benötigt für die gelisteten Teile: {amount}",
+    "enough": "Genug auf Vorrat",
+    "shortBy": "Es fehlen {amount}",
+    "deduct": "Erz beim Upgrade abziehen",
+    "deductHelp": "Ein Upgrade nimmt sein Erz aus dem Vorrat, nie unter 0. Rückgängig legt es zurück."
+  },
+  "hideMax": "Max ausblenden",
+  "heroFilter": "Held",
+  "allHeroes": "Alle Helden",
+  "section": "{pieces} Teile, {owned} im Besitz",
+  "empty": {
+    "title": "Hier ist noch nichts",
+    "allMax": "Jedes Teil ist auf Max. Schalte „Max ausblenden“ aus, um sie zu sehen."
+  },
+  "card": {
+    "heroLine": "{hero}",
+    "level": "Stufe {level} von {max}",
+    "notOwned": "Nicht im Besitz",
+    "max": "Max",
+    "setLevel": "Stufe von {name}",
+    "stepLevel": "Stufe {level}",
+    "free": "Kostenlos",
+    "time": "Zeit: sofort",
+    "requires": "Braucht Schmied {level}",
+    "moreLevels": "{amount} weitere {count, plural, one {Stufe} other {Stufen}}",
+    "add": "Auf Stufe 1 hinzufügen",
+    "upgradeTo": "Upgrade auf Stufe {level}",
+    "lockedUntil": "Gesperrt bis Schmied {level}",
+    "allows": "Schmied {blacksmith} erlaubt bis Stufe {level}",
+    "allowsNone": "Schmied {blacksmith} erlaubt dieses Teil noch nicht",
+    "footer": "Noch {amount} {levels, plural, one {Stufe} other {Stufen}}",
+    "progress": "Fortschritt von {name}"
+  },
+  "toast": {
+    "upgraded": "{name} St. {from} auf {to}",
+    "levelSet": "{name} St. {from} auf {to}",
+    "undo": "Rückgängig"
+  }
+}

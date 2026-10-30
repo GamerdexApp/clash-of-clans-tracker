@@ -1,0 +1,177 @@
+{
+  "goldPass": "{percent, plural, =0 {Altın Geçiş güçlendirmesi yok} other {Altın Geçiş -%{percent}}}",
+  "options": {
+    "open": "Kuyruk seçenekleri",
+    "title": "Kuyruk seçenekleri",
+    "description": "Kuyruğun nasıl planlanacağını değiştiren ayarlar.",
+    "done": "Bitti"
+  },
+  "totals": {
+    "freeValue": "{total} hattan {free} boş",
+    "queued": "Kuyruktaki yükseltmeler",
+    "time": "Kuyruk süresi",
+    "allDone": "Tüm hatlar bitti",
+    "none": "Kuyrukta bir şey yok",
+    "cost": "Kuyruk maliyeti",
+    "noCost": "Maliyet yok"
+  },
+  "lane": {
+    "idle": "Boş",
+    "queueEmpty": "Bu hatta kuyrukta bir şey yok.",
+    "startNow": "Şimdi başlat",
+    "remove": "Kaldır",
+    "moveUp": "Yukarı taşı",
+    "moveDown": "Aşağı taşı",
+    "moveToLane": "Hatta taşı",
+    "levels": "Sv {from} - {to}",
+    "removed": "{name} kuyruktan kaldırıldı",
+    "started": "{name} başladı",
+    "undo": "Geri al"
+  },
+  "timeline": {
+    "title": "Zaman çizelgesi",
+    "zoomLabel": "Zaman çizelgesi uzunluğu",
+    "zooms": {
+      "3": "3 gün",
+      "7": "1 hafta",
+      "14": "2 hafta",
+      "30": "1 ay",
+      "90": "3 ay"
+    },
+    "conflictsTitle": "Çakışmalar",
+    "noConflicts": "Çakışma yok. Her yükseltme ihtiyaç duyduğu seviyeden sonra başlar.",
+    "laneLabel": "{label} zaman çizelgesi",
+    "now": "Şimdi",
+    "idle": "Boş"
+  },
+  "add": {
+    "search": "Yükseltmelerde ara",
+    "hiddenFromAll": "Tümü içinde gizli: {names}.",
+    "chooseCategories": "Kategorileri seç",
+    "chooseCategoriesHelp": "İşaretli kategoriler Tümü içinde görünür. İşaretsiz olanlar yalnızca kendi etiketinde görünür.",
+    "add": "Ekle",
+    "addUpToHere": "Buraya kadar ekle",
+    "showMore": "Daha fazla seviye göster",
+    "showMoreUpgrades": "Daha fazla yükseltme göster",
+    "nothing": "Burada eklenecek bir şey yok.",
+    "nothingDescription": "Bu görünümdeki her seviye kuyrukta, sürüyor veya henüz kullanılamıyor.",
+    "added": "{count, plural, one {{name} eklendi} other {{name} için {amount} seviye eklendi}}",
+    "close": "Bitti",
+    "unlockTitle": "Açılmadı",
+    "unlockHelp": "Seviyelerini kuyruğa almak için önce bunları aç.",
+    "markUnlocked": "Açıldı olarak işaretle",
+    "showAllLocked": "Tümünü göster ({count})",
+    "showFewerLocked": "Daha az göster",
+    "allLabel": "Tümü"
+  },
+  "lanes": {
+    "builder": {
+      "title": "İnşaatçı kuyruğu",
+      "subline": "{name}, her inşaatçının sıradaki işini planla",
+      "back": "İnşaatçıya dön",
+      "free": "Boş inşaatçılar",
+      "laneBusy": "Bu inşaatçı meşgul.",
+      "goblin": {
+        "label": "Goblin İnşaatçı",
+        "help": "Etkinlik sürerken yedinci bir inşaatçı hattı ekler."
+      },
+      "gate": "Önce bir İnşaatçı Kulübesi inşa et. İlki ücretsiz ve anında biter.",
+      "add": {
+        "title": "Yükseltme ekle",
+        "description": "Bir inşaatçının sıradaki işini seç. Eklediğin seviyeler sırayla kuyruğa girer.",
+        "lane": "İnşaatçı hattı",
+        "search": "Yükseltmelerde ara"
+      },
+      "categories": {
+        "defenses": "Savunmalar",
+        "armyBuildings": "Ordu",
+        "resourceBuildings": "Kaynaklar",
+        "traps": "Tuzaklar",
+        "heroes": "Kahramanlar",
+        "townHall": "Belediye Binası",
+        "craftedDefenses": "Üretilmiş",
+        "guardians": "Koruyucular",
+        "supercharges": "Süper Şarjlar"
+      }
+    },
+    "research": {
+      "title": "Araştırma kuyruğu",
+      "subline": "{name}, Laboratuvarın sıradaki araştırmasını planla",
+      "back": "Araştırmaya dön",
+      "free": "Boş laboratuvarlar",
+      "laneBusy": "Bu hat meşgul.",
+      "goblin": {
+        "label": "Goblin Araştırmacı",
+        "help": "Etkinlik sürerken ikinci bir araştırma hattı ekler."
+      },
+      "gate": "Kullanılabilir araştırma hattı yok.",
+      "add": {
+        "title": "Araştırma ekle",
+        "description": "Laboratuvarın sıradaki araştırmasını seç. Eklediğin seviyeler sırayla kuyruğa girer.",
+        "lane": "Araştırma hattı",
+        "search": "Araştırmalarda ara"
+      },
+      "categories": {
+        "troops": "Birlikler",
+        "spells": "Büyüler",
+        "siegeMachines": "Kuşatma"
+      }
+    },
+    "pet": {
+      "title": "Evcil hayvan kuyruğu",
+      "subline": "{name}, Evcil Hayvan Evinin sıradaki yükseltmesini planla",
+      "back": "Evcil Hayvanlara dön",
+      "free": "Evcil Hayvan Evi",
+      "laneBusy": "Evcil Hayvan Evi meşgul.",
+      "gate": "Evcil hayvanlar Belediye Binası 14 ile açılır.",
+      "add": {
+        "title": "Evcil hayvan yükseltmesi ekle",
+        "description": "Evcil Hayvan Evinin sıradaki hangi evcil hayvanı yükselteceğini seç. Eklediğin seviyeler sırayla kuyruğa girer.",
+        "lane": "Evcil Hayvan Evi",
+        "search": "Evcil hayvanlarda ara"
+      },
+      "categories": {
+        "pets": "Evcil Hayvanlar"
+      }
+    },
+    "bbBuilder": {
+      "title": "İnşaatçı Üssü kuyruğu",
+      "subline": "{name}, İnşaatçı Salonu {hall}, her inşaatçının sıradaki işini planla",
+      "back": "İnşaatçı Üssüne dön",
+      "free": "Boş inşaatçılar",
+      "laneBusy": "Bu inşaatçı meşgul.",
+      "gate": "İnşaatçı Üssünde iki inşaatçı var.",
+      "add": {
+        "title": "Yükseltme ekle",
+        "description": "Bir İnşaatçı Üssü inşaatçısının sıradaki işini seç. Eklediğin seviyeler sırayla kuyruğa girer.",
+        "lane": "İnşaatçı",
+        "search": "Yükseltmelerde ara"
+      },
+      "categories": {
+        "defenses": "Savunmalar",
+        "armyBuildings": "Ordu",
+        "resourceBuildings": "Kaynaklar",
+        "traps": "Tuzaklar",
+        "heroes": "Kahramanlar",
+        "other": "Diğer"
+      }
+    },
+    "bbResearch": {
+      "title": "Yıldız Laboratuvarı kuyruğu",
+      "subline": "{name}, İnşaatçı Salonu {hall}, Yıldız Laboratuvarının sıradaki araştırmasını planla",
+      "back": "Birliklere dön",
+      "free": "Boş yuvalar",
+      "laneBusy": "Yıldız Laboratuvarı meşgul.",
+      "gate": "Yıldız Laboratuvarı aynı anda bir birlik araştırır.",
+      "add": {
+        "title": "Araştırma ekle",
+        "description": "Yıldız Laboratuvarının sıradaki hangi birliği araştıracağını seç. Eklediğin seviyeler sırayla kuyruğa girer.",
+        "lane": "Yıldız Laboratuvarı",
+        "search": "Birliklerde ara"
+      },
+      "categories": {
+        "troops": "Birlikler"
+      }
+    }
+  }
+}

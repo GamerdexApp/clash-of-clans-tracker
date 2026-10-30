@@ -1,0 +1,48 @@
+{
+  "title": "الجدران",
+  "subline": "{name}، قاعة المدينة {townHall}، أعلى مستوى جدار {highest}",
+  "massEdit": "يمكن أيضًا تعديل أعداد الجدران في التعديل الجماعي.",
+  "tiles": {
+    "total": "الإجمالي عند قاعة المدينة هذه",
+    "totalCaption": "أعلى مستوى جدار {highest}",
+    "placed": "الموضوعة",
+    "placedCaption": "جدران في مستوى",
+    "notPlaced": "غير موضوعة",
+    "allPlaced": "كلها موضوعة",
+    "stillToPlace": "{amount} {count, plural, zero {جدران} one {جدار} two {جداران} few {جدران} many {جدارًا} other {جدار}} متبقية للوضع",
+    "over": "زيادة بمقدار {count}"
+  },
+  "hideEmpty": "{hidden, plural, =0 {إخفاء المستويات الفارغة تحت أدنى مستوى لديك} other {إخفاء المستويات الفارغة تحت أدنى مستوى لديك ({hidden} مخفية)}}",
+  "row": {
+    "level": "المستوى {level}",
+    "own": "تملك",
+    "ownLabel": "الجدران التي تملكها في المستوى {level}",
+    "lower": "جدار أقل في المستوى {level}",
+    "raise": "جدار إضافي في المستوى {level}",
+    "nextCost": "المستوى التالي: {price} {resource} لكل جدار",
+    "toMove": "جدران للنقل",
+    "toLevel": "إلى المستوى",
+    "plusOne": "+1",
+    "move": "نقل",
+    "moveAll": "نقل الكل",
+    "preview": "نقل {amount} {walls, plural, zero {جدران} one {جدار} two {جدارين} few {جدران} many {جدارًا} other {جدار}} من المستوى {from} إلى {to}: {price} {resource}",
+    "nothingToMove": "لا شيء للنقل",
+    "noWalls": "لا جدران في هذا المستوى لنقلها."
+  },
+  "cost": {
+    "title": "تكلفة رفع كل الجدران إلى المستوى {level}",
+    "row": "المستوى {level}، {amount} {walls, plural, zero {جدران} one {جدار} two {جداران} few {جدران} many {جدارًا} other {جدار}}",
+    "total": "الإجمالي",
+    "none": "كل جدار موضوع في أعلى مستوى، أو لم يوضع أي جدار بعد.",
+    "note": "جدران المستوى 2 إلى 4 تكلف الذهب. المستوى 5 فأعلى يكلف الذهب أو الإكسير."
+  },
+  "empty": {
+    "title": "لا جدران بعد",
+    "description": "تُفتح الجدران عند قاعة المدينة 2."
+  },
+  "toast": {
+    "moved": "نُقل {amount} {walls, plural, zero {جدران} one {جدار} two {جداران} few {جدران} many {جدارًا} other {جدار}} من المستوى {from} إلى {to}",
+    "counted": "جدران المستوى {level} من {from} إلى {to}",
+    "undo": "تراجع"
+  }
+}

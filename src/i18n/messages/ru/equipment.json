@@ -1,0 +1,61 @@
+{
+  "title": "Снаряжение",
+  "subline": "{name}, Ратуша {townHall}, Кузнец уровня {blacksmith}",
+  "massEdit": "Уровни снаряжения можно задать и в разделе «Массовое изменение».",
+  "locked": {
+    "title": "Нужен Кузнец",
+    "description": "Постройте Кузнеца, чтобы отслеживать снаряжение героев. Укажите его уровень на странице «Строитель», вкладка «Армия».",
+    "action": "Перейти к «Строитель»"
+  },
+  "ore": {
+    "title": "Запас руды",
+    "description": "Руда, которая у вас есть. Нехватка руды только подсказка и не блокирует улучшение.",
+    "names": {
+      "shiny": "Shiny Ore",
+      "glowing": "Glowing Ore",
+      "starry": "Starry Ore"
+    },
+    "short": {
+      "shiny": "Shiny",
+      "glowing": "Glowing",
+      "starry": "Starry"
+    },
+    "needed": "Нужно для перечисленных предметов: {amount}",
+    "enough": "В запасе достаточно",
+    "shortBy": "Не хватает: {amount}",
+    "deduct": "Списывать руду при улучшении",
+    "deductHelp": "Улучшение забирает руду из запаса, но не ниже 0. Отмена возвращает её."
+  },
+  "hideMax": "Скрыть макс.",
+  "heroFilter": "Герой",
+  "allHeroes": "Все герои",
+  "section": "Предметов: {pieces}, имеется: {owned}",
+  "empty": {
+    "title": "Пока ничего нет",
+    "allMax": "Все предметы на максимуме. Выключите «Скрыть макс.», чтобы увидеть их."
+  },
+  "card": {
+    "heroLine": "{hero}",
+    "level": "Уровень {level} из {max}",
+    "notOwned": "Нет в наличии",
+    "max": "Макс.",
+    "setLevel": "{name}: уровень",
+    "stepLevel": "Уровень {level}",
+    "free": "Бесплатно",
+    "time": "Время: мгновенно",
+    "requires": "Нужен Кузнец {level}",
+    "moreLevels": "Ещё {amount} {count, plural, one {уровень} few {уровня} many {уровней} other {уровня}}",
+    "add": "Добавить на уровне 1",
+    "upgradeTo": "Улучшить до уровня {level}",
+    "lockedUntil": "Закрыто до Кузнеца {level}",
+    "allows": "Кузнец {blacksmith} позволяет до уровня {level}",
+    "allowsNone": "Кузнец {blacksmith} пока не позволяет этот предмет",
+    "footer": "Осталось {amount} {levels, plural, one {уровень} few {уровня} many {уровней} other {уровня}}",
+    "progress": "{name}: прогресс"
+  },
+  "toast": {
+    "upgraded": "{name}: ур. {from} → {to}",
+    "levelSet": "{name}: ур. {from} → {to}",
+    "undo": "Отменить"
+  }
+}

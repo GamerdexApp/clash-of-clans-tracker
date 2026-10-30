@@ -1,0 +1,112 @@
+{
+  "title": "Übersicht",
+  "description": "Dein Dorf auf einen Blick: Fortschritt, tägliche Timer und alle gespeicherten Werte.",
+  "subline": "{name}, abgeleitet, nur Ansicht",
+  "header": {
+    "clanLevel": "{hasRole, select, true {Clanstufe {level}, {role}} other {Clanstufe {level}}}",
+    "achievements": "Erfolge",
+    "ringCaption": "{stars} von {maxStars} Sternen",
+    "viewAll": "Alle ansehen",
+    "townHall": "RH{level}"
+  },
+  "dailies": {
+    "title": "Tägliches",
+    "closedTitle": "Tägliches öffnet sich bei Rathaus 3",
+    "closedBody": "Schmiede, Helfer und Saisonpass öffnen sich mit steigendem Rathaus.",
+    "closedLink": "Sieh, was offen ist",
+    "groups": {
+      "helpers": "Helfer",
+      "daily": "Täglich",
+      "goldPass": "Goldpass"
+    },
+    "requires": "Braucht {requirement}",
+    "openForge": "Schmiede öffnen",
+    "openHelpers": "Helfer öffnen",
+    "unlockProspector": "Im Saisonpass freischalten",
+    "helperHut": "Helferhütte",
+    "townHall": "Rathaus {level}",
+    "starBonus": "Sternbonus",
+    "capitalGold": "Hauptstadtgold",
+    "autoForge": "Auto-Schmiede",
+    "forgeSlots": "Schmiedeplätze",
+    "notRunning": "Läuft nicht",
+    "running": "Läuft",
+    "stopAuto": "Auto-Schmiede stoppen",
+    "autoLine": "{amount} {resource} zu {capitalGold} Hauptstadtgold",
+    "slotsLine": "{running} von {open} Plätzen laufen",
+    "slotsDone": "{done, plural, one {1 Platz ist fertig} other {{amount} Plätze sind fertig}}",
+    "autoPerk": "den Vorteil Auto-Schmiede",
+    "helperPreview": "Jetzt nutzen: aus {before} Rest werden {after}",
+    "goldPass": {
+      "edit": "Im Saisonpass bearbeiten",
+      "builder": "Bauarbeiter-Boost",
+      "research": "Forschungs-Boost",
+      "hoggyBank": "Hoggy-Bank",
+      "gemDonations": "Spenden für 1 Edelstein",
+      "autoForge": "Auto-Schmiede",
+      "requestReduction": "Kürzere Anfragezeit",
+      "on": "An",
+      "off": "Aus",
+      "resets": "Boosts gehen am {date} auf 0% zurück.",
+      "readOnly": "Das Öffnen der Übersicht ändert das Dorf und seine letzte Änderungszeit nie."
+    }
+  },
+  "league": {
+    "open": "Belohnungen von {name} zeigen",
+    "homeKind": "Liga des Heimatdorfs",
+    "builderKind": "Liga der Bauarbeiterbasis",
+    "noData": "Keine Daten für diese Liga bei diesem Rathaus.",
+    "battle": "Kampfergebnisse",
+    "stars": "Sterne",
+    "attacker": "Bauarbeiter-Gold für Angreifer",
+    "defender": "Bauarbeiter-Elixier für Verteidiger"
+  },
+  "builder": {
+    "title": "Bauarbeiterbasis",
+    "hall": "Bauarbeiterhalle {level}",
+    "trophies": "{trophies} Trophäen",
+    "daysAt": "Tage bei BH{level}",
+    "notSetTitle": "Bauarbeiterhalle nicht gesetzt",
+    "notSetBody": "Die Bauarbeiterbasis ist ab Rathaus 6 offen, aber dieses Dorf hat Bauarbeiterhalle 0. Fortschritt, Trophäen und Truppen erscheinen ab Stufe 1.",
+    "notSetAction": "Stufe der Bauarbeiterhalle setzen",
+    "lockedBody": "Braucht Rathaus 6",
+    "troops": "Truppen",
+    "heroes": "Helden"
+  },
+  "capital": {
+    "title": "Clanhauptstadt",
+    "hall": "Hauptstadthalle {level}",
+    "notSetTitle": "Die Clanhauptstadt ist nicht eingerichtet",
+    "notSetBody": "Der Hauptstadtgipfel hat noch keine Hallenstufe, daher gibt es keinen Bezirksfortschritt zu zeigen. Setze die Stufe der Hauptstadthalle, um zu starten.",
+    "notSetAction": "Stufe der Hauptstadthalle setzen",
+    "lockedBody": "Braucht Rathaus 3",
+    "districtHall": "Bezirkshalle {level}",
+    "notUnlocked": "Nicht freigeschaltet",
+    "unlocksAt": "Wird bei Hauptstadthalle {level} freigeschaltet",
+    "needsDistrictHall": "Setze eine Bezirkshalle, um zu starten",
+    "noData": "Keine Daten",
+    "more": "{count} weitere Bezirke zeigen",
+    "showFewer": "Weniger zeigen",
+    "openDistricts": "Bezirke öffnen"
+  },
+  "home": {
+    "title": "Heimatdorf",
+    "townHall": "Rathaus {level}",
+    "daysAt": "Tage bei RH{level}",
+    "perHour": "pro Stunde",
+    "stored": "gelagert",
+    "cards": {
+      "locked": "Braucht {requirement}"
+    },
+    "queue": "Öffnen",
+    "troops": "Truppen",
+    "spells": "Zauber",
+    "heroes": "Helden",
+    "siege": "Belagerungsmaschinen",
+    "pets": "Haustiere",
+    "legend": "Grüner Rand: auf dem Maximum für dieses Rathaus. Gestrichelter Rand: gesperrt. Uhr: Ein Upgrade läuft.",
+    "tile": "{hasRequirement, select, true {{name}, braucht {requirement}} other {{name}, Stufe {level}{max, plural, =0 {} other { von {max}}}}}",
+    "heroLocked": "Braucht {requirement}",
+    "petsLocked": "Braucht Rathaus 14"
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "upgrades": {
+    "title": "Upgrades",
+    "subline": "{name}, Bauarbeiterhalle {hall}",
+    "sublineNotSet": "{name}, Bauarbeiterhalle nicht gesetzt",
+    "tabsLabel": "Bauarbeiterbasis-Bereiche",
+    "tabs": {
+      "defenses": "Verteidigung",
+      "army": "Armee",
+      "resources": "Ressourcen",
+      "traps": "Fallen",
+      "heroes": "Helden",
+      "other": "Sonstiges"
+    },
+    "strip": {
+      "title": "Bauarbeiter",
+      "noBuilders": "Die Bauarbeiterbasis hat zwei Bauarbeiter.",
+      "openQueue": "Warteschlange und Zeitleiste öffnen",
+      "unassignedHelp": "Einige Upgrades sind bei einem Bauarbeiter gespeichert, den schon ein anderes Upgrade nutzt. Beende oder brich sie ab."
+    }
+  },
+  "locked": {
+    "title": "Braucht Rathaus 6",
+    "description": "Dieses Dorf hat Rathaus {townHall}. Die Bauarbeiterbasis wird bei Rathaus 6 freigeschaltet oder wenn du eine Stufe der Bauarbeiterhalle setzt."
+  },
+  "notSet": {
+    "action": "Stufe der Bauarbeiterhalle setzen",
+    "troopsDescription": "Die Truppen der Bauarbeiterbasis folgen der Stufe der Bauarbeiterhalle. Setze sie auf der Upgrade-Seite im Tab Sonstiges.",
+    "title": "Wähle die Stufe deiner Bauarbeiterhalle, um zu starten",
+    "description": "Setze die Stufe der Bauarbeiterhalle in der Kachel unten. Die Listen der Bauarbeiterbasis folgen ihr."
+  },
+  "hall": {
+    "title": "Bauarbeiterhalle",
+    "notSet": "Nicht gesetzt",
+    "option": "Bauarbeiterhalle {level}",
+    "since": "{amount} {days, plural, one {Tag} other {Tage}} bei Bauarbeiterhalle {level}",
+    "confirm": {
+      "title": "Bauarbeiterhalle auf {level} ändern?",
+      "raising": "Eine höhere Stufe zeigt mehr Gebäude und höhere Limits. Gespeichertes wird nicht entfernt.",
+      "lowering": "Eine niedrigere Stufe blendet Gebäude und Limits darüber aus. Deine gespeicherten Stufen bleiben erhalten.",
+      "clearing": "Das Löschen der Stufe blendet alle Listen der Bauarbeiterbasis aus. Deine gespeicherten Stufen bleiben erhalten.",
+      "setDays": "Tage bei Bauarbeiterhalle auf heute setzen",
+      "cancel": "Abbrechen",
+      "confirm": "Stufe ändern"
+    },
+    "toast": "Bauarbeiterhalle {from, plural, =0 {nicht gesetzt} other {{from}}} auf {to, plural, =0 {nicht gesetzt} other {{to}}}",
+    "undo": "Rückgängig"
+  },
+  "other": {
+    "clockTower": "Uhrturm",
+    "clockTowerMax": "Max. St. {level} bei dieser Bauarbeiterhalle",
+    "clockTowerProgress": "Fortschritt des Uhrturms"
+  },
+  "empty": {
+    "title": "Hier ist noch nichts",
+    "description": "Auf dieser Stufe der Bauarbeiterhalle gibt es keine Gebäude dieser Art.",
+    "allMax": "Alles hier ist auf Max. Schalte „Max ausblenden“ aus, um es zu sehen."
+  },
+  "heroes": {
+    "maxAtHall": "Max. St. {level} bei dieser Bauarbeiterhalle",
+    "progress": "Fortschritt von {name}"
+  }
+}

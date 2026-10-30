@@ -1,0 +1,61 @@
+{
+  "title": "Trang bị",
+  "subline": "{name}, Nhà Chính {townHall}, Thợ Rèn cấp {blacksmith}",
+  "massEdit": "Cấp trang bị cũng có thể đặt trong Sửa hàng loạt.",
+  "locked": {
+    "title": "Cần Thợ Rèn",
+    "description": "Xây Thợ Rèn để theo dõi trang bị anh hùng. Đặt cấp của nó ở trang Thợ Xây, tab Quân đội.",
+    "action": "Đến Thợ Xây"
+  },
+  "ore": {
+    "title": "Kho ore",
+    "description": "Số ore bạn đang có. Thiếu ore chỉ là lời khuyên và không bao giờ chặn nâng cấp.",
+    "names": {
+      "shiny": "Shiny Ore",
+      "glowing": "Glowing Ore",
+      "starry": "Starry Ore"
+    },
+    "short": {
+      "shiny": "Shiny",
+      "glowing": "Glowing",
+      "starry": "Starry"
+    },
+    "needed": "Cần cho các món đã liệt kê: {amount}",
+    "enough": "Đủ trong kho",
+    "shortBy": "Thiếu {amount}",
+    "deduct": "Trừ ore khi tôi nâng cấp",
+    "deductHelp": "Nâng cấp lấy ore ra khỏi kho, không bao giờ xuống dưới 0. Hoàn tác sẽ trả lại."
+  },
+  "hideMax": "Ẩn tối đa",
+  "heroFilter": "Anh hùng",
+  "allHeroes": "Tất cả anh hùng",
+  "section": "{pieces} món, đã có {owned}",
+  "empty": {
+    "title": "Chưa có gì ở đây",
+    "allMax": "Mọi món đã tối đa. Tắt Ẩn tối đa để xem chúng."
+  },
+  "card": {
+    "heroLine": "{hero}",
+    "level": "Cấp {level} trên {max}",
+    "notOwned": "Chưa có",
+    "max": "Tối đa",
+    "setLevel": "Cấp {name}",
+    "stepLevel": "Cấp {level}",
+    "free": "Miễn phí",
+    "time": "Thời gian: Tức thì",
+    "requires": "Cần Thợ Rèn {level}",
+    "moreLevels": "Thêm {amount} {count, plural, other {cấp}}",
+    "add": "Thêm ở cấp 1",
+    "upgradeTo": "Nâng lên cấp {level}",
+    "lockedUntil": "Khóa đến khi có Thợ Rèn {level}",
+    "allows": "Thợ Rèn {blacksmith} cho phép tối đa cấp {level}",
+    "allowsNone": "Thợ Rèn {blacksmith} chưa cho phép món này",
+    "footer": "Còn {amount} {levels, plural, other {cấp}}",
+    "progress": "Tiến độ {name}"
+  },
+  "toast": {
+    "upgraded": "{name} cấp {from} lên {to}",
+    "levelSet": "{name} cấp {from} lên {to}",
+    "undo": "Hoàn tác"
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "skipToContent": "Ir para o conteúdo",
+  "closeMenu": "Fechar menu",
+  "openMenu": "Abrir menu",
+  "menuLabel": "Menu do site",
+  "mainNav": "Principal",
+  "brandTitle": "Clash of Clans",
+  "brandSubtitle": "Tracker",
+  "switcher": {
+    "sectionLabel": "Vila",
+    "loading": "Carregando",
+    "none": "Nenhuma vila",
+    "noneDetail": "Crie uma para começar",
+    "switch": "Trocar de vila",
+    "villages": "Vilas",
+    "active": "Ativa",
+    "all": "Todas as vilas",
+    "create": "Nova vila",
+    "halls": "{builderHall, plural, =0 {CV {townHall}} other {CV {townHall} · SC {builderHall}}}"
+  },
+  "locked": {
+    "townHall": "Centro de Vila {level}",
+    "blacksmith": "Ferreiro",
+    "helperHut": "Cabana dos Ajudantes",
+    "off": "Desativado",
+    "srLabel": "Requer {requirement}"
+  },
+  "footer": {
+    "tagline": "Um acompanhador de progresso gratuito para Clash of Clans. Seus dados ficam no seu navegador, ou no seu próprio armazenamento na nuvem se você ativar a sincronização.",
+    "support": "Suporte",
+    "about": "Sobre",
+    "settings": "Configurações",
+    "discord": "Discord",
+    "github": "GitHub",
+    "game": "Site oficial do jogo",
+    "privacy": "Política de privacidade",
+    "terms": "Termos de serviço",
+    "disclaimerTitle": "Aviso legal",
+    "disclaimer": "Este projeto não é afiliado, endossado nem conectado à Supercell ou ao Clash of Clans.",
+    "framework": "Criado com o framework Gamerdex, uma base compartilhada para acompanhadores gratuitos de progresso em jogos.",
+    "visitGamerdex": "Visitar o Gamerdex"
+  },
+  "notFound": {
+    "title": "Esta página não existe",
+    "body": "O link pode ser antigo ou estar digitado errado. Suas vilas estão seguras e nada foi alterado.",
+    "toOverview": "Ir para a Visão geral",
+    "toVillages": "Ir para Vilas",
+    "toHome": "Voltar ao início",
+    "didYouMean": "Você quis dizer",
+    "noVillage": "Nenhuma vila está selecionada, então a Visão geral não tem nada para mostrar. Escolha uma na página Vilas.",
+    "jumpTo": "Ou vá para"
+  },
+  "error": {
+    "title": "Algo deu errado",
+    "body": "O app encontrou um erro. Seus dados salvos não foram alterados.",
+    "digest": "resumo {digest}",
+    "tryAgain": "Tentar de novo",
+    "download": "Baixar os dados brutos",
+    "clear": "Limpar dados e reiniciar",
+    "confirmTitle": "Limpar todos os dados salvos?",
+    "confirmBody": "Isso remove tudo o que o app guardou neste navegador. Uma cópia dos dados brutos é baixada antes, para que possam ser reparados depois. As vilas sincronizadas com uma conta na nuvem continuam lá.",
+    "cancel": "Cancelar",
+    "confirm": "Baixar e limpar",
+    "noData": "Não há dados salvos neste navegador."
+  }
+}

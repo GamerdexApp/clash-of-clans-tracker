@@ -1,0 +1,66 @@
+{
+  "skipToContent": "Vai al contenuto",
+  "closeMenu": "Chiudi menu",
+  "openMenu": "Apri menu",
+  "menuLabel": "Menu del sito",
+  "mainNav": "Principale",
+  "brandTitle": "Clash of Clans",
+  "brandSubtitle": "Tracker",
+  "switcher": {
+    "sectionLabel": "Villaggio",
+    "loading": "Caricamento",
+    "none": "Nessun villaggio",
+    "noneDetail": "Creane uno per iniziare",
+    "switch": "Cambia villaggio",
+    "villages": "Villaggi",
+    "active": "Attivo",
+    "all": "Tutti i villaggi",
+    "create": "Nuovo villaggio",
+    "halls": "{builderHall, plural, =0 {MU {townHall}} other {MU {townHall} · SC {builderHall}}}"
+  },
+  "locked": {
+    "townHall": "Municipio {level}",
+    "blacksmith": "Fabbro",
+    "helperHut": "Capanna degli Aiutanti",
+    "off": "Spento",
+    "srLabel": "Richiede {requirement}"
+  },
+  "footer": {
+    "tagline": "Un tracker gratuito dei progressi per Clash of Clans. I tuoi dati restano nel browser, o nel tuo cloud se attivi la sincronizzazione.",
+    "support": "Supporto",
+    "about": "Info",
+    "settings": "Impostazioni",
+    "discord": "Discord",
+    "github": "GitHub",
+    "game": "Sito ufficiale del gioco",
+    "privacy": "Informativa sulla privacy",
+    "terms": "Termini di servizio",
+    "disclaimerTitle": "Avvertenza",
+    "disclaimer": "Questo progetto non è affiliato, approvato o collegato a Supercell o a Clash of Clans.",
+    "framework": "Creato con il framework Gamerdex, una base condivisa per tracker gratuiti dei progressi nei giochi.",
+    "visitGamerdex": "Visita Gamerdex"
+  },
+  "notFound": {
+    "title": "Questa pagina non esiste",
+    "body": "Il link potrebbe essere vecchio o scritto male. I tuoi villaggi sono al sicuro e non è cambiato nulla.",
+    "toOverview": "Vai alla Panoramica",
+    "toVillages": "Vai ai Villaggi",
+    "toHome": "Torna alla home",
+    "didYouMean": "Intendevi",
+    "noVillage": "Nessun villaggio selezionato, quindi la Panoramica non ha nulla da mostrare. Scegline uno nella pagina Villaggi.",
+    "jumpTo": "Oppure vai a"
+  },
+  "error": {
+    "title": "Qualcosa è andato storto",
+    "body": "L'app ha riscontrato un errore. I tuoi dati salvati non sono cambiati.",
+    "digest": "digest {digest}",
+    "tryAgain": "Riprova",
+    "download": "Scarica i dati grezzi",
+    "clear": "Cancella i dati e riavvia",
+    "confirmTitle": "Cancellare tutti i dati salvati?",
+    "confirmBody": "Questo rimuove tutto ciò che l'app ha salvato in questo browser. Prima viene scaricata una copia dei dati grezzi, così potranno essere riparati in seguito. I villaggi sincronizzati su un account cloud restano lì.",
+    "cancel": "Annulla",
+    "confirm": "Scarica e cancella",
+    "noData": "In questo browser non ci sono dati salvati."
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "header": {
+    "label": "Secções da página",
+    "features": "Funcionalidades",
+    "faq": "Perguntas frequentes",
+    "villages": "Aldeias",
+    "settings": "Definições"
+  },
+  "hero": {
+    "title": "Acompanha o Teu Progresso no Clash of Clans",
+    "description": "Junta todas as aldeias num só lugar: edifícios, tropas, heróis, melhorias e diárias da Aldeia Principal, da Base do Construtor e da Capital do Clã.",
+    "note": "Grátis. Sem conta. Todos os dados ficam no teu navegador.",
+    "continue": "Continuar com",
+    "continueLine": "{builderHall, plural, =0 {Centro da Aldeia {townHall}, atualizada {updated}} other {Centro da Aldeia {townHall}, Centro do Construtor {builderHall}, atualizada {updated}}}"
+  },
+  "cta": {
+    "create": "Criar a primeira aldeia",
+    "learnMore": "Saber mais",
+    "overview": "Ir para o Resumo",
+    "newVillage": "Nova aldeia"
+  },
+  "features": {
+    "label": "Tudo o que precisas",
+    "title": "Todo o teu progresso num só lugar",
+    "description": "Do Centro da Aldeia à Capital do Clã, cada nível que acompanhas é guardado no momento em que o alteras.",
+    "items": {
+      "item1": {
+        "title": "Várias aldeias",
+        "text": "Cria e gere aldeias sem limite. Acompanha contas e bases diferentes em separado."
+      },
+      "item2": {
+        "title": "Acompanhamento de progresso",
+        "text": "Acompanha com exatidão o que concluíste, recolheste ou desbloqueaste em cada aldeia."
+      },
+      "item3": {
+        "title": "Resumo",
+        "text": "Vê o progresso num relance, com estatísticas, temporizadores diários e indicadores de conclusão."
+      },
+      "item4": {
+        "title": "Cópia de segurança e sincronização",
+        "text": "Exporta o progresso para um ficheiro JSON ou sincroniza-o entre dispositivos com o teu próprio armazenamento na nuvem."
+      },
+      "item5": {
+        "title": "Privado",
+        "text": "Os dados ficam no teu navegador. A única chamada a um servidor é a pesquisa opcional por etiqueta de jogador, que pede à Supercell as tuas estatísticas públicas."
+      },
+      "item6": {
+        "title": "Modo escuro",
+        "text": "Confortável de usar de dia ou de noite. Escolhe claro, escuro ou segue o dispositivo nas Definições."
+      }
+    }
+  },
+  "faq": {
+    "label": "Tens dúvidas?",
+    "title": "Perguntas frequentes",
+    "items": {
+      "item1": {
+        "question": "O que é o Clash of Clans Tracker?",
+        "answer": "É um acompanhamento de progresso para o Clash of Clans. Ajuda a gerir várias contas e a acompanhar melhorias, conquistas, diárias e o progresso geral num só lugar."
+      },
+      "item2": {
+        "question": "Como guarda os meus dados?",
+        "answer": "Tudo é guardado no teu navegador, por isso o progresso é privado e não precisa de conta. Podes exportá-lo e importá-lo como ficheiro JSON para cópia de segurança. A pesquisa opcional por etiqueta de jogador envia a etiqueta para uma pequena ação de servidor que pede à API da Supercell as tuas estatísticas públicas."
+      },
+      "item3": {
+        "question": "Posso acompanhar várias aldeias?",
+        "answer": "Sim. Cria as aldeias que quiseres, cada uma com o seu progresso, e muda entre elas na barra lateral."
+      },
+      "item4": {
+        "question": "Sincroniza entre dispositivos?",
+        "answer": "Sim, se quiseres. Abre as Definições e liga o GitHub, o Google Drive, o Dropbox ou o OneDrive. Os dados ficam guardados na tua própria conta e a sincronização fica desligada até a ligares."
+      },
+      "item5": {
+        "question": "Esta aplicação é gratuita?",
+        "answer": "Sim. É gratuita, sem subscrição, sem anúncios e sem registo."
+      }
+    }
+  },
+  "final": {
+    "title": "Começa hoje a acompanhar as tuas aldeias",
+    "description": "Sem conta e sem registo. A primeira aldeia só precisa de um nome."
+  },
+  "updated": {
+    "justNow": "agora mesmo"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "title": "Tembok",
+  "subline": "{name}, Balai Kota {townHall}, level tembok tertinggi {highest}",
+  "massEdit": "Jumlah tembok juga bisa diatur di Edit massal.",
+  "tiles": {
+    "total": "Total di Balai Kota ini",
+    "totalCaption": "Level tembok tertinggi {highest}",
+    "placed": "Terpasang",
+    "placedCaption": "Tembok pada suatu level",
+    "notPlaced": "Belum terpasang",
+    "allPlaced": "Semua terpasang",
+    "stillToPlace": "{amount} {count, plural, other {tembok}} lagi untuk dipasang",
+    "over": "Kelebihan {count}"
+  },
+  "hideEmpty": "{hidden, plural, =0 {Sembunyikan level kosong di bawah levelmu yang terendah} other {Sembunyikan level kosong di bawah levelmu yang terendah ({hidden} disembunyikan)}}",
+  "row": {
+    "level": "Level {level}",
+    "own": "Kamu punya",
+    "ownLabel": "Tembok yang kamu punya di level {level}",
+    "lower": "Kurangi satu tembok di level {level}",
+    "raise": "Tambah satu tembok di level {level}",
+    "nextCost": "Level berikutnya: {price} {resource} per tembok",
+    "toMove": "Tembok yang dipindah",
+    "toLevel": "Ke level",
+    "plusOne": "+1",
+    "move": "Pindah",
+    "moveAll": "Pindah semua",
+    "preview": "Pindahkan {amount} {walls, plural, other {tembok}} dari level {from} ke {to}: {price} {resource}",
+    "nothingToMove": "Tidak ada yang dipindah",
+    "noWalls": "Tidak ada tembok di level ini untuk dipindah."
+  },
+  "cost": {
+    "title": "Biaya menaikkan semua tembok ke level {level}",
+    "row": "Level {level}, {amount} {walls, plural, other {tembok}}",
+    "total": "Total",
+    "none": "Semua tembok terpasang sudah di level tertinggi, atau belum ada yang terpasang.",
+    "note": "Tembok level 2 sampai 4 butuh Emas. Level 5 ke atas butuh Emas atau Elixir."
+  },
+  "empty": {
+    "title": "Belum ada tembok",
+    "description": "Tembok terbuka di Balai Kota 2."
+  },
+  "toast": {
+    "moved": "{amount} {walls, plural, other {tembok}} dipindah dari level {from} ke {to}",
+    "counted": "Tembok level {level} {from} ke {to}",
+    "undo": "Urungkan"
+  }
+}

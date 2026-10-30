@@ -1,0 +1,17 @@
+{
+  "stats": {
+    "attacksPerWeek": "Lượt tấn công mỗi tuần",
+    "promoted": "% hàng đầu được thăng hạng",
+    "demoted": "% cuối bảng bị xuống hạng",
+    "trophyRange": "Khoảng cúp",
+    "starsForBonus": "Sao để nhận thưởng sao"
+  },
+  "sections": {
+    "maxLoot": "Chiến lợi phẩm tối đa",
+    "leagueBonus": "Thưởng giải đấu tối đa",
+    "weeklyStarBonus": "Thưởng sao hằng tuần",
+    "starBonusReward": "Phần thưởng sao"
+  },
+  "range": "{min} đến {max}",
+  "rangeOpen": "{min}+"
+}

@@ -1,0 +1,29 @@
+{
+  "groups": {
+    "homeVillage": "Ana Köy",
+    "builderBase": "İnşaatçı Üssü",
+    "clanCapital": "Klan Başkenti",
+    "dailies": "Günlükler",
+    "tools": "Araçlar"
+  },
+  "items": {
+    "overview": "Genel Bakış",
+    "achievements": "Başarımlar",
+    "builder": "İnşaatçı",
+    "research": "Araştırma",
+    "pets": "Evcil Hayvanlar",
+    "equipment": "Ekipman",
+    "walls": "Surlar",
+    "builderBaseUpgrades": "Yükseltmeler",
+    "builderBaseTroops": "Birlikler",
+    "builderBaseWalls": "Surlar",
+    "districts": "Bölgeler",
+    "capitalTroops": "Birlikler ve büyüler",
+    "forge": "Dökümhane",
+    "helpers": "Yardımcılar",
+    "seasonPass": "Sezon Geçişi",
+    "massEdit": "Toplu düzenleme",
+    "settings": "Ayarlar"
+  },
+  "villages": "Köylerim"
+}

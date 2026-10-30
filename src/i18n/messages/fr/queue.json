@@ -1,0 +1,177 @@
+{
+  "goldPass": "{percent, plural, =0 {Aucun boost du Pass Or} other {Pass Or -{percent} %}}",
+  "options": {
+    "open": "Options de la file",
+    "title": "Options de la file",
+    "description": "Réglages qui changent la façon dont la file est planifiée.",
+    "done": "Terminé"
+  },
+  "totals": {
+    "freeValue": "{free} sur {total}",
+    "queued": "Améliorations en file",
+    "time": "Durée en file",
+    "allDone": "Toutes les voies terminées",
+    "none": "Rien en file",
+    "cost": "Coût en file",
+    "noCost": "Aucun coût"
+  },
+  "lane": {
+    "idle": "Libre",
+    "queueEmpty": "Rien en file sur cette voie.",
+    "startNow": "Démarrer maintenant",
+    "remove": "Retirer",
+    "moveUp": "Monter",
+    "moveDown": "Descendre",
+    "moveToLane": "Déplacer vers la voie",
+    "levels": "Niv. {from} à {to}",
+    "removed": "{name} retiré de la file",
+    "started": "{name} démarré",
+    "undo": "Annuler"
+  },
+  "timeline": {
+    "title": "Chronologie",
+    "zoomLabel": "Durée de la chronologie",
+    "zooms": {
+      "3": "3 jours",
+      "7": "1 semaine",
+      "14": "2 semaines",
+      "30": "1 mois",
+      "90": "3 mois"
+    },
+    "conflictsTitle": "Conflits",
+    "noConflicts": "Aucun conflit. Chaque amélioration démarre après le niveau dont elle a besoin.",
+    "laneLabel": "Chronologie : {label}",
+    "now": "Maintenant",
+    "idle": "Libre"
+  },
+  "add": {
+    "search": "Rechercher des améliorations",
+    "hiddenFromAll": "Masqué dans Tout : {names}.",
+    "chooseCategories": "Choisir les catégories",
+    "chooseCategoriesHelp": "Les catégories cochées apparaissent dans Tout. Les autres n'apparaissent que dans leur propre pastille.",
+    "add": "Ajouter",
+    "addUpToHere": "Ajouter jusqu'ici",
+    "showMore": "Afficher plus de niveaux",
+    "showMoreUpgrades": "Afficher plus d'améliorations",
+    "nothing": "Rien à ajouter ici.",
+    "nothingDescription": "Chaque niveau de cette vue est en file, en cours ou pas encore disponible.",
+    "added": "{count, plural, one {{name} ajouté} other {{amount} niveaux de {name} ajoutés}}",
+    "close": "Terminé",
+    "unlockTitle": "Non débloqué",
+    "unlockHelp": "Débloquez-les d'abord pour mettre leurs niveaux en file.",
+    "markUnlocked": "Marquer comme débloqué",
+    "showAllLocked": "Afficher les {count}",
+    "showFewerLocked": "Afficher moins",
+    "allLabel": "Tout"
+  },
+  "lanes": {
+    "builder": {
+      "title": "File des ouvriers",
+      "subline": "{name}, planifiez la prochaine tâche de chaque ouvrier",
+      "back": "Retour à Ouvrier",
+      "free": "Ouvriers libres",
+      "laneBusy": "Cet ouvrier est occupé.",
+      "goblin": {
+        "label": "Ouvrier gobelin",
+        "help": "Ajoute une septième voie d'ouvrier pendant l'événement."
+      },
+      "gate": "Construisez d'abord une Cabane d'ouvrier. La première est gratuite et instantanée.",
+      "add": {
+        "title": "Ajouter une amélioration",
+        "description": "Choisissez la prochaine tâche d'un ouvrier. Les niveaux ajoutés sont mis en file dans l'ordre.",
+        "lane": "Voie d'ouvrier",
+        "search": "Rechercher des améliorations"
+      },
+      "categories": {
+        "defenses": "Défenses",
+        "armyBuildings": "Armée",
+        "resourceBuildings": "Ressources",
+        "traps": "Pièges",
+        "heroes": "Héros",
+        "townHall": "Hôtel de ville",
+        "craftedDefenses": "Fabriquées",
+        "guardians": "Gardiens",
+        "supercharges": "Suralimentations"
+      }
+    },
+    "research": {
+      "title": "File de recherche",
+      "subline": "{name}, planifiez la prochaine recherche du Laboratoire",
+      "back": "Retour à Recherche",
+      "free": "Labos libres",
+      "laneBusy": "Cette voie est occupée.",
+      "goblin": {
+        "label": "Chercheur gobelin",
+        "help": "Ajoute une deuxième voie de recherche pendant l'événement."
+      },
+      "gate": "Aucune voie de recherche n'est disponible.",
+      "add": {
+        "title": "Ajouter une recherche",
+        "description": "Choisissez la prochaine recherche du Laboratoire. Les niveaux ajoutés sont mis en file dans l'ordre.",
+        "lane": "Voie de recherche",
+        "search": "Rechercher des recherches"
+      },
+      "categories": {
+        "troops": "Troupes",
+        "spells": "Sorts",
+        "siegeMachines": "Siège"
+      }
+    },
+    "pet": {
+      "title": "File des familiers",
+      "subline": "{name}, planifiez la prochaine amélioration de la Maison des familiers",
+      "back": "Retour à Familiers",
+      "free": "Maison des familiers",
+      "laneBusy": "La Maison des familiers est occupée.",
+      "gate": "Les familiers se débloquent à l'Hôtel de ville 14.",
+      "add": {
+        "title": "Ajouter une amélioration de familier",
+        "description": "Choisissez le prochain familier que la Maison des familiers améliore. Les niveaux ajoutés sont mis en file dans l'ordre.",
+        "lane": "Maison des familiers",
+        "search": "Rechercher des familiers"
+      },
+      "categories": {
+        "pets": "Familiers"
+      }
+    },
+    "bbBuilder": {
+      "title": "File de la Base des ouvriers",
+      "subline": "{name}, Hôtel des ouvriers {hall}, planifiez la prochaine tâche de chaque ouvrier",
+      "back": "Retour à la Base des ouvriers",
+      "free": "Ouvriers libres",
+      "laneBusy": "Cet ouvrier est occupé.",
+      "gate": "La Base des ouvriers a deux ouvriers.",
+      "add": {
+        "title": "Ajouter une amélioration",
+        "description": "Choisissez la prochaine tâche d'un ouvrier de la Base des ouvriers. Les niveaux ajoutés sont mis en file dans l'ordre.",
+        "lane": "Ouvrier",
+        "search": "Rechercher des améliorations"
+      },
+      "categories": {
+        "defenses": "Défenses",
+        "armyBuildings": "Armée",
+        "resourceBuildings": "Ressources",
+        "traps": "Pièges",
+        "heroes": "Héros",
+        "other": "Autres"
+      }
+    },
+    "bbResearch": {
+      "title": "File du Laboratoire d'étoiles",
+      "subline": "{name}, Hôtel des ouvriers {hall}, planifiez la prochaine recherche du Laboratoire d'étoiles",
+      "back": "Retour à Troupes",
+      "free": "Emplacements libres",
+      "laneBusy": "Le Laboratoire d'étoiles est occupé.",
+      "gate": "Le Laboratoire d'étoiles recherche une troupe à la fois.",
+      "add": {
+        "title": "Ajouter une recherche",
+        "description": "Choisissez la prochaine troupe que le Laboratoire d'étoiles recherche. Les niveaux ajoutés sont mis en file dans l'ordre.",
+        "lane": "Laboratoire d'étoiles",
+        "search": "Rechercher des troupes"
+      },
+      "categories": {
+        "troops": "Troupes"
+      }
+    }
+  }
+}

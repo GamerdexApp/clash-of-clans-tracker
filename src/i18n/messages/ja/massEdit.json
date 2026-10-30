@@ -1,0 +1,138 @@
+{
+  "title": "一括編集",
+  "description": "多くのレベルをまとめて変更します。「変更を保存」を押すまで何も保存されません。",
+  "subline": "{name}、タウンホール {townHall}、未保存の変更",
+  "scopes": {
+    "home": "ホームビレッジ",
+    "builder": "ビルダーベース",
+    "capital": "クランキャピタル"
+  },
+  "scopeNav": "対象範囲",
+  "requires": "{requirement}が必要です",
+  "trackingOff": "記録オフ",
+  "changedCount": "{count, plural, other {{amount}件の変更}}",
+  "chip": "未保存の変更",
+  "bar": {
+    "unsaved": "{count, plural, other {未保存の変更{amount}件}}",
+    "none": "未保存の変更はありません",
+    "discard": "破棄",
+    "save": "変更を保存"
+  },
+  "saved": "{count, plural, other {{amount}件の変更を保存しました}}",
+  "undo": "元に戻す",
+  "discardDialog": {
+    "title": "{count, plural, other {未保存の変更{amount}件を破棄しますか?}}",
+    "body": "すべての行が保存済みのレベルに戻ります。",
+    "keep": "編集を続ける",
+    "discard": "変更を破棄"
+  },
+  "leave": {
+    "title": "{count, plural, other {未保存の変更が{amount}件あります}}",
+    "body": "移動する前に保存するか、破棄してください。",
+    "save": "保存して移動",
+    "discard": "破棄して移動",
+    "keep": "編集を続ける"
+  },
+  "toolbar": {
+    "label": "一括操作",
+    "selectAll": "{count}件をすべて選択",
+    "selected": "{count, plural, other {{amount}行を選択中}}",
+    "clearSelection": "選択を解除",
+    "scopeAll": "{category}の{count}行すべてが対象",
+    "scopeSelected": "{count, plural, other {選択した{amount}行が対象}}",
+    "max": "すべて最大",
+    "maxSelected": "選択を最大にする",
+    "reset": "すべてリセット",
+    "resetSelected": "選択をリセット",
+    "setLevel": "レベルを設定",
+    "levelLabel": "選択した行のレベル",
+    "applyLevel": "{count, plural, other {{amount}行に適用}}",
+    "hallLabel": "ホールレベルの最大に設定",
+    "hallCurrent": "{hall} {level}(現在)",
+    "hallOption": "{hall} {level}",
+    "hallPlaceholder": "{hall}を選択"
+  },
+  "confirm": {
+    "title": "{count, plural, other {{amount}行を下げますか?}}",
+    "body": "下書きが変更されます。「変更を保存」を押すまで何も保存されません。",
+    "superchargeNote": "最大レベルを下回る建物は、スーパーチャージの段階も失います。",
+    "apply": "下書きに適用",
+    "cancel": "キャンセル",
+    "line": "{name}: {from}から{to}",
+    "more": "ほか{count}件"
+  },
+  "rows": {
+    "notBuilt": "未建設",
+    "toMax": "最大まで{count}",
+    "atMax": "最大",
+    "changed": "{from}から{to}に変更",
+    "level": "{name}のレベル",
+    "raise": "{name}を上げる",
+    "lower": "{name}を下げる",
+    "max": "最大",
+    "select": "{name}を選択",
+    "selectGroup": "すべての{name}を選択",
+    "supercharge": "スーパーチャージ",
+    "reachFirst": "先にレベル {level}にしてください",
+    "slider": "{name}のスライダー",
+    "groupBuilt": "{count}棟建設済み、最大レベル {max}",
+    "expand": "{name}を表示",
+    "collapse": "{name}を非表示"
+  },
+  "category": {
+    "atMax": "{hall} {level}の最大に達している数: {done} / {total}",
+    "rowsAtMax": "最大に達している数: {done} / {total}",
+    "empty": "このカテゴリには、まだ編集できるものがありません。",
+    "locked": "{requirement}が必要です",
+    "lockedSuffix": "(ロック中)",
+    "nav": "カテゴリ"
+  },
+  "walls": {
+    "total": "合計",
+    "allocated": "割り当て済み",
+    "remaining": "残り",
+    "maxAll": "すべて最大",
+    "resetAll": "すべてリセット",
+    "maxAllHelp": "残りの壁をすべて最高レベルに移します",
+    "level": "レベル {level}の壁"
+  },
+  "builder": {
+    "profile": "ビルダーベースのプロフィール",
+    "hall": "ビルダーホールのレベル",
+    "hallHelp": "ビルダーホール {level}が、下のすべての行の最高レベルを決めます。下げる場合は先に確認があり、新しい上限を超える行だけが下がります。",
+    "none": "このビルダーホールレベルで利用できる建物はありません",
+    "raise": "ビルダーホールを上げる",
+    "lower": "ビルダーホールを下げる",
+    "trophies": "トロフィー",
+    "bestTrophies": "最高トロフィー",
+    "league": "リーグ",
+    "hallConfirmTitle": "ビルダーホールを{level}に下げますか?"
+  },
+  "hallNames": {
+    "home": "タウンホール",
+    "builder": "ビルダーホール",
+    "district": "ディストリクトホール",
+    "capital": "キャピタルホール"
+  },
+  "capital": {
+    "profile": "クランキャピタルのプロフィール",
+    "hall": "キャピタルホール",
+    "none": "なし",
+    "level": "キャピタルホール {level}",
+    "contributions": "クランキャピタルの貢献",
+    "unit": "キャピタルゴールド",
+    "districtHall": "ディストリクトホール",
+    "districtNone": "なし",
+    "districtLevel": "ディストリクトホール {level}",
+    "requiresCapitalHall": "キャピタルホール {level}が必要です",
+    "unlockHint": "建物を開放するには、上で{label}を設定してください。",
+    "parts": "セクション",
+    "off": "クランキャピタルの記録はオフです",
+    "offBody": "クランキャピタルのページで記録をオンに戻せます。削除されたものはありません。",
+    "offAction": "クランキャピタルを開く"
+  },
+  "empty": {
+    "title": "アクティブなビレッジがありません",
+    "description": "一括編集を使うには、ビレッジを選ぶか作成してください。"
+  }
+}

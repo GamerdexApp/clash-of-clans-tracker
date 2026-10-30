@@ -1,0 +1,112 @@
+{
+  "title": "نظرة عامة",
+  "description": "قريتك بنظرة واحدة: التقدم والمؤقتات اليومية وكل إحصاءة مخزنة.",
+  "subline": "{name}، مشتق، للعرض فقط",
+  "header": {
+    "clanLevel": "{hasRole, select, true {مستوى العشيرة {level}، {role}} other {مستوى العشيرة {level}}}",
+    "achievements": "الإنجازات",
+    "ringCaption": "{stars} من {maxStars} نجمة",
+    "viewAll": "عرض الكل",
+    "townHall": "ق.م{level}"
+  },
+  "dailies": {
+    "title": "المهام اليومية",
+    "closedTitle": "تُفتح المهام اليومية عند قاعة المدينة 3",
+    "closedBody": "يُفتح المسبك والمساعدون وتصريح الموسم مع ارتفاع قاعة المدينة.",
+    "closedLink": "اعرف ما هو مفتوح",
+    "groups": {
+      "helpers": "المساعدون",
+      "daily": "يومي",
+      "goldPass": "التصريح الذهبي"
+    },
+    "requires": "يتطلب {requirement}",
+    "openForge": "فتح المسبك",
+    "openHelpers": "فتح المساعدين",
+    "unlockProspector": "افتحه في تصريح الموسم",
+    "helperHut": "كوخ المساعدين",
+    "townHall": "قاعة المدينة {level}",
+    "starBonus": "مكافأة النجوم",
+    "capitalGold": "ذهب العاصمة",
+    "autoForge": "السبك التلقائي",
+    "forgeSlots": "خانات المسبك",
+    "notRunning": "غير قيد العمل",
+    "running": "قيد العمل",
+    "stopAuto": "إيقاف السبك التلقائي",
+    "autoLine": "{amount} {resource} إلى {capitalGold} ذهب العاصمة",
+    "slotsLine": "{running} من {open} خانات قيد العمل",
+    "slotsDone": "{done, plural, zero {{amount} خانة منتهية} one {خانة واحدة منتهية} two {خانتان منتهيتان} few {{amount} خانات منتهية} many {{amount} خانة منتهية} other {{amount} خانة منتهية}}",
+    "autoPerk": "ميزة السبك التلقائي",
+    "helperPreview": "استخدم الآن: المتبقي {before} يصبح {after}",
+    "goldPass": {
+      "edit": "تعديل في تصريح الموسم",
+      "builder": "تعزيز البنّاء",
+      "research": "تعزيز الأبحاث",
+      "hoggyBank": "Hoggy Bank",
+      "gemDonations": "تبرعات بجوهرة واحدة",
+      "autoForge": "السبك التلقائي",
+      "requestReduction": "تقليل وقت الطلب",
+      "on": "مفعّل",
+      "off": "متوقف",
+      "resets": "تعود التعزيزات إلى 0% في {date}.",
+      "readOnly": "فتح نظرة عامة لا يغيّر القرية ولا وقت آخر تعديل لها."
+    }
+  },
+  "league": {
+    "open": "عرض مكافآت {name}",
+    "homeKind": "دوري القرية الرئيسية",
+    "builderKind": "دوري قاعدة البنّاء",
+    "noData": "لا توجد بيانات لهذا الدوري عند قاعة المدينة هذه.",
+    "battle": "نتائج المعركة",
+    "stars": "النجوم",
+    "attacker": "ذهب البنّاء للمهاجم",
+    "defender": "إكسير البنّاء للمدافع"
+  },
+  "builder": {
+    "title": "قاعدة البنّاء",
+    "hall": "قاعة البنّاء {level}",
+    "trophies": "{trophies} كأس",
+    "daysAt": "الأيام عند ق.ب{level}",
+    "notSetTitle": "قاعة البنّاء غير محددة",
+    "notSetBody": "قاعدة البنّاء مفتوحة عند قاعة المدينة 6، لكن هذه القرية على قاعة البنّاء 0. يظهر التقدم والكؤوس والقوات عندما يصبح المستوى 1 أو أعلى.",
+    "notSetAction": "تحديد مستوى قاعة البنّاء",
+    "lockedBody": "يتطلب قاعة المدينة 6",
+    "troops": "القوات",
+    "heroes": "الأبطال"
+  },
+  "capital": {
+    "title": "عاصمة العشيرة",
+    "hall": "قاعة العاصمة {level}",
+    "notSetTitle": "عاصمة العشيرة غير معدّة",
+    "notSetBody": "ليس لقمة العاصمة مستوى قاعة بعد، فلا يوجد تقدم أحياء لعرضه. حدد مستوى قاعة العاصمة لبدء التتبع.",
+    "notSetAction": "تحديد مستوى قاعة العاصمة",
+    "lockedBody": "يتطلب قاعة المدينة 3",
+    "districtHall": "قاعة الحي {level}",
+    "notUnlocked": "غير مفتوح",
+    "unlocksAt": "يُفتح عند قاعة العاصمة {level}",
+    "needsDistrictHall": "حدد قاعة حي للبدء",
+    "noData": "لا توجد بيانات",
+    "more": "عرض {count} أحياء أخرى",
+    "showFewer": "عرض أقل",
+    "openDistricts": "فتح الأحياء"
+  },
+  "home": {
+    "title": "القرية الرئيسية",
+    "townHall": "قاعة المدينة {level}",
+    "daysAt": "الأيام عند ق.م{level}",
+    "perHour": "في الساعة",
+    "stored": "مخزّن",
+    "cards": {
+      "locked": "يتطلب {requirement}"
+    },
+    "queue": "فتح",
+    "troops": "القوات",
+    "spells": "التعاويذ",
+    "heroes": "الأبطال",
+    "siege": "آلات الحصار",
+    "pets": "الحيوانات",
+    "legend": "إطار أخضر: في الأقصى لقاعة المدينة هذه. إطار متقطع: مقفل. ساعة: ترقية قيد العمل.",
+    "tile": "{hasRequirement, select, true {{name}، يتطلب {requirement}} other {{name}، المستوى {level}{max, plural, =0 {} other { من {max}}}}}",
+    "heroLocked": "يتطلب {requirement}",
+    "petsLocked": "يتطلب قاعة المدينة 14"
+  }
+}

@@ -1,0 +1,255 @@
+{
+  "locked": {
+    "title": "Harian",
+    "subline": "{name}, Balai Kota {townHall}, belum ada yang terbuka",
+    "open": "Buka",
+    "lockedBadge": "Terkunci",
+    "now": "Desa ini ada di Balai Kota {townHall}.",
+    "nowNoHut": "Desa ini belum punya Pondok Pembantu.",
+    "needsHut": "Butuh Pondok Pembantu",
+    "toBuilder": "Buka Pembangun",
+    "cards": {
+      "forge": {
+        "title": "Tempa",
+        "what": "Ubah sumber daya cadangan menjadi Emas Ibu Kota dan ambil Emas Ibu Kota harian."
+      },
+      "helpers": {
+        "title": "Pembantu",
+        "what": "Lacak Murid Pembangun, Asisten Lab, Alkemis, dan Prospektor."
+      },
+      "seasonPass": {
+        "title": "Season Pass",
+        "what": "Atur boost dan keuntungan Gold Pass yang mempersingkat waktu peningkatan."
+      },
+      "starBonus": {
+        "title": "Bonus Bintang",
+        "what": "Timer harian Bonus Bintang ada di Ikhtisar.",
+        "open": "Buka Ikhtisar"
+      }
+    }
+  },
+  "timer": {
+    "notSet": "Atur waktu reset harianmu",
+    "setTime": "Atur waktu reset",
+    "setAndUse": "Atur dan tandai terpakai",
+    "notSetHelp": "Mengatur waktu tidak menandai hadiah sebagai terpakai.",
+    "savedIn": "Waktu disimpan dalam {zone}.",
+    "available": "Tersedia",
+    "use": "Pakai",
+    "adjust": "Ubah",
+    "adjustTitle": "Ubah waktu reset",
+    "save": "Simpan",
+    "cancel": "Batal",
+    "resetsAt": "Reset setiap hari pukul {time}, {zone}",
+    "untilReset": "sampai reset pukul {time}, {zone}",
+    "usedAt": "Dipakai pukul {time}.",
+    "timeLabel": "Waktu reset",
+    "deviceClock": "jam perangkat",
+    "used": "{name} ditandai terpakai",
+    "undo": "Urungkan"
+  },
+  "forge": {
+    "title": "Tempa",
+    "description": "Ubah sumber daya cadangan menjadi Emas Ibu Kota dan ambil Emas Ibu Kota harian.",
+    "subline": "{builderHall, plural, =0 {{name}, Balai Kota {townHall}, produksi Emas Ibu Kota} other {{name}, Balai Kota {townHall}, Balai Pembangun {builderHall}, produksi Emas Ibu Kota}}",
+    "daily": {
+      "title": "Emas Ibu Kota harian",
+      "amount": "+{gold} Emas Ibu Kota setiap hari di Balai Kota {townHall}",
+      "none": "Emas Ibu Kota harian dimulai di Balai Kota 6.",
+      "name": "Emas Ibu Kota harian"
+    },
+    "slots": {
+      "title": "Slot Tempa",
+      "craftingTime": "Waktu pembuatan 3 hari",
+      "open": "{open} dari {total} slot terbuka di Balai Kota {townHall}",
+      "boost": "Boost pembangun {percent}% berlaku: {time}",
+      "slot": "Slot {number}",
+      "requires": "Butuh Balai Kota {townHall}",
+      "locked": "Terkunci",
+      "idle": "Kosong",
+      "idleHelp": "Pilih yang akan ditempa",
+      "running": "Berjalan",
+      "done": "Selesai",
+      "result": "Hasil",
+      "start": "Mulai",
+      "stop": "Hentikan",
+      "reset": "Reset",
+      "resource": "Sumber daya",
+      "rate": "{amount} {resource} untuk {capitalGold} Emas Ibu Kota, siap dalam {time}",
+      "left": "{time} lagi",
+      "ready": "Siap: {capitalGold} Emas Ibu Kota.",
+      "finished": "Selesai {ago} lalu.",
+      "stopped": "Slot {number} dihentikan. Proses dihapus.",
+      "resetDone": "Slot {number} direset. Proses {resource} dihapus.",
+      "runningTitle": "{resource}, {amount}"
+    },
+    "auto": {
+      "title": "Tempa Otomatis",
+      "subtitle": "Keuntungan Gold Pass, berulang sendiri",
+      "repeats": "{amount} {resource} untuk {capitalGold} Emas Ibu Kota setiap {time}",
+      "nextRun": "Putaran berikutnya mulai sendiri saat yang ini selesai.",
+      "stop": "Hentikan Tempa Otomatis",
+      "stopped": "Tempa Otomatis dihentikan. Siklus dihapus.",
+      "confirm": {
+        "title": "Hentikan Tempa Otomatis?",
+        "body": "Siklus yang berjalan akan dihapus: {amount} {resource} untuk {capitalGold} Emas Ibu Kota, sisa {time}. Tempa Otomatis berhenti mengulang sampai kamu memulainya lagi dari halaman Tempa. Keuntungan Gold Pass tetap aktif di Season Pass.",
+        "undoHint": "Tombol Urungkan tetap tampil beberapa detik setelah kamu menghentikannya.",
+        "keep": "Biarkan berjalan",
+        "stop": "Hentikan Tempa Otomatis"
+      }
+    },
+    "rates": {
+      "title": "Tarif Tempa",
+      "description": "{builderHall, plural, =0 {Balai Kota {townHall}, satu putaran dalam satu slot} other {Balai Kota {townHall} dan Balai Pembangun {builderHall}, satu putaran dalam satu slot}}",
+      "autoTitle": "Tarif Tempa Otomatis",
+      "autoDescription": "Harga Gold Pass, setengah dari biaya manual",
+      "resource": "Sumber daya",
+      "cost": "Biaya",
+      "capitalGold": "Emas Ibu Kota",
+      "requires": "Butuh {requirement}"
+    }
+  },
+  "helpers": {
+    "title": "Pembantu",
+    "description": "Lacak Murid Pembangun, Asisten Lab, Alkemis, dan Prospektor.",
+    "subline": "{builderHall, plural, =0 {{name}, Balai Kota {townHall}, asisten Pondok Pembantu} other {{name}, Balai Kota {townHall}, Balai Pembangun {builderHall}, asisten Pondok Pembantu}}",
+    "banner": "Pondok Pembantu sudah dibangun. Setiap pembantu terbuka sesuai Balai Kota: Asisten Lab 9, Murid Pembangun 10, Prospektor 10, Alkemis 11.",
+    "names": {
+      "buildersApprentice": "Murid Pembangun",
+      "labAssistant": "Asisten Lab",
+      "alchemist": "Alkemis",
+      "prospector": "Prospektor"
+    },
+    "from": "Balai Kota {townHall} ke atas",
+    "lockedCard": "Butuh Balai Kota {townHall}",
+    "dailyUse": "Pemakaian harian",
+    "level": "Level",
+    "levelOption": "Level {level}",
+    "levelTownHall": "BK {townHall}",
+    "none": "Tidak ada",
+    "noLevel": "Pilih levelmu untuk melihat statistik.",
+    "noLevelCalculator": "Pilih levelmu untuk memakai kalkulator.",
+    "nextLevel": "{gems, select, 0 {Level {level} gratis} other {Level {level} berbiaya {gems} permata}}",
+    "saves": "Hemat {time} per pemakaian",
+    "levelRequires": "Butuh Balai Kota {townHall}",
+    "assignment": {
+      "builderTitle": "Peningkatan yang dipercepat",
+      "researchTitle": "Riset yang dipercepat",
+      "none": "Tidak ada",
+      "builderHelp": "Menampilkan bangunan, pahlawan, Balai Kota, senjata Balai Kota, dan modul pertahanan rakitan yang sedang ditingkatkan.",
+      "researchHelp": "Hanya riset: menampilkan pasukan, mantra, dan mesin pengepungan yang sedang ditingkatkan.",
+      "builderEmpty": "Tidak ada peningkatan pembangun aktif untuk ditetapkan.",
+      "researchEmpty": "Tidak ada riset lab aktif untuk ditetapkan.",
+      "once": "Sekali pakai",
+      "untilDone": "Sampai selesai",
+      "assignedTo": "Ditetapkan ke",
+      "clearsAfterUse": "Dihapus setelah sekali pakai.",
+      "staysUntilDone": "Tetap sampai peningkatan selesai.",
+      "clear": "Hapus penetapan",
+      "cleared": "Penetapan dihapus.",
+      "select": "Peningkatan yang ditetapkan",
+      "mode": "Mode penetapan",
+      "preview": "Pakai sekarang: sisa {before} menjadi {after}.",
+      "previewDone": "Pakai sekarang: sisa {before}, peningkatan selesai.",
+      "upgradeTo": "{name} ke level {level}, sisa {left}"
+    },
+    "used": {
+      "plain": "{name} ditandai terpakai",
+      "saved": "{name} dipakai pada {target}, hemat {time}"
+    },
+    "alchemist": {
+      "stats": {
+        "goldElixir": "Maks Emas atau Elixir",
+        "darkElixir": "Maks Elixir Hitam",
+        "bonus": "Bonus konversi"
+      },
+      "calculator": "Kalkulator konversi",
+      "from": "Dari",
+      "to": "Ke",
+      "amount": "Jumlah yang dikonversi",
+      "result": "{amount} {from} menjadi {output} {to}",
+      "help": "Termasuk bonus konversi {bonus}% dan rasio 150 banding 1.",
+      "nothingSaved": "Tidak ada yang disimpan di sini."
+    },
+    "prospector": {
+      "lockedTitle": "Terkunci sampai dibuka dengan 2.200 Poin Tantangan Musim",
+      "lockedHelp": "Nyalakan di halaman Season Pass setelah kamu membukanya di dalam game.",
+      "toSeasonPass": "Buka Season Pass",
+      "subtitle": "Balai Kota 10 ke atas, dibuka dengan Poin Tantangan Musim",
+      "lockedBadge": "Terkunci",
+      "unlockedBadge": "Terbuka",
+      "levelOnly": "Level 1 (satu-satunya level)",
+      "limits": {
+        "shiny": "Maks Shiny Ore",
+        "glowy": "Maks Glowy Ore",
+        "starry": "Maks Starry Ore"
+      },
+      "calculator": "Kalkulator konversi ore",
+      "ores": {
+        "shiny": "Shiny Ore",
+        "glowy": "Glowy Ore",
+        "starry": "Starry Ore"
+      },
+      "help": "10 Shiny Ore menjadi 1 Glowy Ore. 100 Glowy Ore menjadi 1 Starry Ore."
+    }
+  },
+  "seasonPass": {
+    "title": "Season Pass",
+    "description": "Atur boost dan keuntungan Gold Pass yang mempersingkat waktu peningkatan.",
+    "subline": "{name}, Balai Kota {townHall}, keuntungan Gold Pass aktif musim ini",
+    "lockedTitle": "Season Pass terkunci",
+    "lockedBody": "Gold Pass butuh Balai Kota 7. Desa ini ada di Balai Kota {townHall}.",
+    "month": {
+      "title": "{month}",
+      "subtitle": "Boost direset pada {reset}, keuntungan tetap aktif.",
+      "key": "Kunci bulan",
+      "rolled": "Bulan baru dimulai. Boost pembangun dan boost riset direset ke 0%. Keuntungan tetap aktif.",
+      "undoReset": "Urungkan reset",
+      "dismiss": "Tutup",
+      "restored": "Boost dikembalikan untuk bulan ini.",
+      "undo": "Urungkan"
+    },
+    "boosts": {
+      "title": "Keuntungan boost",
+      "description": "Gold Pass mempersingkat waktu peningkatan musim ini.",
+      "builder": "Boost pembangun",
+      "research": "Boost riset",
+      "applies": "Berlaku untuk waktu Pembangun, Riset, dan Hewan, linimasa antrean, dan waktu pembuatan Tempa.",
+      "saved": "Tersimpan bersama bulan ini.",
+      "value": "{percent, plural, =0 {Mati} other {{percent}%}}",
+      "option": "{percent, plural, =0 {0%} other {{percent}%}}",
+      "builderEffect": "{percent, plural, =0 {Waktu pembuatan Tempa 3h.} other {Waktu pembuatan Tempa {time}.}}",
+      "researchEffect": "{percent, plural, =0 {Waktu riset dan hewan tidak berubah.} other {Waktu riset dan hewan lebih singkat {percent}%.}}"
+    },
+    "unlocks": {
+      "title": "Pembukaan Tantangan Musim",
+      "description": "Bukan bagian dari Gold Pass",
+      "prospector": "Prospektor",
+      "prospectorHelp": "Pembantu untuk Balai Kota 10 ke atas, berbiaya 2.200 Poin Tantangan Musim",
+      "shows": "Tampil di halaman Pembantu"
+    },
+    "perks": {
+      "title": "Keuntungan Gold Pass",
+      "description": "Keuntungan Gold Pass aktif musim ini",
+      "referenceOnly": "Hanya referensi",
+      "referenceNote": "Tidak mengubah hal lain di aplikasi.",
+      "hoggyBank": {
+        "label": "Hoggy Bank",
+        "note": "Menyimpan sumber daya saat kamu bermain, ambil di akhir musim"
+      },
+      "gemDonations": {
+        "label": "Donasi 1 Permata",
+        "note": "Donasikan pasukan dan mantra hanya dengan 1 permata per unit"
+      },
+      "autoForge": {
+        "label": "Tempa Otomatis",
+        "note": "Mengubah sumber daya menjadi Emas Ibu Kota secara otomatis"
+      },
+      "autoForgeEffect": "Menyalakan baris Tempa Otomatis di halaman Tempa dan chip di Ikhtisar.",
+      "requestTimeReduction": {
+        "label": "Pengurangan Waktu Permintaan",
+        "note": "Mengurangi timer jeda permintaan pasukan"
+      }
+    }
+  }
+}

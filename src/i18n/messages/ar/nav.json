@@ -1,0 +1,29 @@
+{
+  "groups": {
+    "homeVillage": "القرية الرئيسية",
+    "builderBase": "قاعدة البنّاء",
+    "clanCapital": "عاصمة العشيرة",
+    "dailies": "المهام اليومية",
+    "tools": "الأدوات"
+  },
+  "items": {
+    "overview": "نظرة عامة",
+    "achievements": "الإنجازات",
+    "builder": "البنّاء",
+    "research": "الأبحاث",
+    "pets": "الحيوانات",
+    "equipment": "المعدات",
+    "walls": "الجدران",
+    "builderBaseUpgrades": "الترقيات",
+    "builderBaseTroops": "القوات",
+    "builderBaseWalls": "الجدران",
+    "districts": "الأحياء",
+    "capitalTroops": "القوات والتعاويذ",
+    "forge": "المسبك",
+    "helpers": "المساعدون",
+    "seasonPass": "تصريح الموسم",
+    "massEdit": "تعديل جماعي",
+    "settings": "الإعدادات"
+  },
+  "villages": "قراي"
+}

@@ -1,0 +1,86 @@
+{
+  "header": {
+    "label": "Sayfa bölümleri",
+    "features": "Özellikler",
+    "faq": "SSS",
+    "villages": "Köyler",
+    "settings": "Ayarlar"
+  },
+  "hero": {
+    "title": "Clash of Clans İlerlemeni Takip Et",
+    "description": "Tüm köylerini tek yerde tut: Ana Köy, İnşaatçı Üssü ve Klan Başkenti için binalar, birlikler, kahramanlar, yükseltmeler ve günlükler.",
+    "note": "Ücretsiz. Hesap yok. Tüm veriler tarayıcında kalır.",
+    "continue": "Devam et:",
+    "continueLine": "{builderHall, plural, =0 {Belediye Binası {townHall}, güncellendi {updated}} other {Belediye Binası {townHall}, İnşaatçı Salonu {builderHall}, güncellendi {updated}}}"
+  },
+  "cta": {
+    "create": "İlk köyünü oluştur",
+    "learnMore": "Daha fazla bilgi",
+    "overview": "Genel Bakışa git",
+    "newVillage": "Yeni köy"
+  },
+  "features": {
+    "label": "İhtiyacın olan her şey",
+    "title": "Tüm ilerlemen tek yerde",
+    "description": "Belediye Binasından Klan Başkentine, takip ettiğin her seviye değiştirdiğin anda kaydedilir.",
+    "items": {
+      "item1": {
+        "title": "Birden çok köy",
+        "text": "Sınırsız köy oluştur ve yönet. Farklı hesapları ve üsleri ayrı ayrı takip et."
+      },
+      "item2": {
+        "title": "İlerleme takibi",
+        "text": "Her köyde nelerin tamamlandığını, toplandığını veya açıldığını tam olarak takip et."
+      },
+      "item3": {
+        "title": "Genel Bakış",
+        "text": "İlerlemeni özet istatistikler, günlük sayaçlar ve tamamlanma göstergeleriyle tek bakışta gör."
+      },
+      "item4": {
+        "title": "Yedek ve senkron",
+        "text": "İlerlemeni JSON dosyası olarak dışa aktar veya kendi bulut depolamanla cihazlar arasında senkronla."
+      },
+      "item5": {
+        "title": "Gizli",
+        "text": "Verilerin tarayıcında kalır. Tek sunucu çağrısı, Supercell'den herkese açık istatistiklerini isteyen isteğe bağlı oyuncu etiketi sorgusudur."
+      },
+      "item6": {
+        "title": "Koyu mod",
+        "text": "Gece gündüz rahat kullanım. Ayarlardan açık, koyu veya cihazını izleyen temayı seç."
+      }
+    }
+  },
+  "faq": {
+    "label": "Sorun mu var?",
+    "title": "Sık sorulan sorular",
+    "items": {
+      "item1": {
+        "question": "Clash of Clans Tracker nedir?",
+        "answer": "Clash of Clans için bir ilerleme takipçisidir. Birden çok hesabı yönetmene ve yükseltmelerini, başarımlarını, günlüklerini ve genel ilerlemeni tek yerde takip etmene yardım eder."
+      },
+      "item2": {
+        "question": "Verilerimi nasıl saklıyor?",
+        "answer": "Her şey tarayıcında kaydedilir, bu yüzden ilerlemen gizlidir ve hesap gerektirmez. Yedek için JSON dosyası olarak dışa ve içe aktarabilirsin. İsteğe bağlı oyuncu etiketi sorgusu etiketi küçük bir sunucu işlemine gönderir, o da Supercell API'den herkese açık istatistiklerini ister."
+      },
+      "item3": {
+        "question": "Birden çok köyü takip edebilir miyim?",
+        "answer": "Evet. Her biri kendi ilerlemesine sahip istediğin kadar köy oluştur ve kenar çubuğundan aralarında geçiş yap."
+      },
+      "item4": {
+        "question": "Cihazlar arasında senkronlanıyor mu?",
+        "answer": "Evet, istersen. Ayarları aç ve GitHub, Google Drive, Dropbox veya OneDrive'ı bağla. Verilerin kendi hesabında saklanır ve sen açana kadar senkron kapalı kalır."
+      },
+      "item5": {
+        "question": "Bu uygulama ücretsiz mi?",
+        "answer": "Evet. Ücretsizdir, abonelik, reklam ve kayıt yoktur."
+      }
+    }
+  },
+  "final": {
+    "title": "Köylerini bugün takip etmeye başla",
+    "description": "Hesap ve kayıt yok. İlk köyün için tek bir ad yeterli."
+  },
+  "updated": {
+    "justNow": "az önce"
+  }
+}

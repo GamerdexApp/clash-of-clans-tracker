@@ -1,0 +1,61 @@
+{
+  "title": "المعدات",
+  "subline": "{name}، قاعة المدينة {townHall}، مستوى الحداد {blacksmith}",
+  "massEdit": "يمكن أيضًا ضبط مستويات المعدات في التعديل الجماعي.",
+  "locked": {
+    "title": "يتطلب الحداد",
+    "description": "ابنِ الحداد لتتبع معدات الأبطال. حدد مستواه في صفحة البنّاء، تبويب الجيش.",
+    "action": "الذهاب إلى البنّاء"
+  },
+  "ore": {
+    "title": "مخزون الخامات",
+    "description": "الخامات التي تملكها. النقص مجرد نصيحة ولا يمنع أي ترقية.",
+    "names": {
+      "shiny": "Shiny Ore",
+      "glowing": "Glowing Ore",
+      "starry": "Starry Ore"
+    },
+    "short": {
+      "shiny": "Shiny",
+      "glowing": "Glowing",
+      "starry": "Starry"
+    },
+    "needed": "المطلوب للقطع المدرجة: {amount}",
+    "enough": "المخزون كافٍ",
+    "shortBy": "ناقص {amount}",
+    "deduct": "اخصم الخامات عند الترقية",
+    "deductHelp": "تأخذ الترقية خاماتها من المخزون، دون أن ينزل عن 0. التراجع يعيدها."
+  },
+  "hideMax": "إخفاء الأقصى",
+  "heroFilter": "البطل",
+  "allHeroes": "كل الأبطال",
+  "section": "{pieces} قطعة، تملك منها {owned}",
+  "empty": {
+    "title": "لا شيء هنا بعد",
+    "allMax": "كل قطعة في أقصى مستوى. أوقف إخفاء الأقصى لعرضها."
+  },
+  "card": {
+    "heroLine": "{hero}",
+    "level": "المستوى {level} من {max}",
+    "notOwned": "غير مملوكة",
+    "max": "أقصى",
+    "setLevel": "مستوى {name}",
+    "stepLevel": "المستوى {level}",
+    "free": "مجاني",
+    "time": "الوقت: فوري",
+    "requires": "يتطلب الحداد {level}",
+    "moreLevels": "{amount} {count, plural, zero {مستويات} one {مستوى} two {مستويان} few {مستويات} many {مستوى} other {مستوى}} أخرى",
+    "add": "إضافة عند المستوى 1",
+    "upgradeTo": "ترقية إلى المستوى {level}",
+    "lockedUntil": "مقفلة حتى الحداد {level}",
+    "allows": "الحداد {blacksmith} يسمح حتى المستوى {level}",
+    "allowsNone": "الحداد {blacksmith} لا يسمح بهذه القطعة بعد",
+    "footer": "متبقي {amount} {levels, plural, zero {مستويات} one {مستوى} two {مستويان} few {مستويات} many {مستوى} other {مستوى}}",
+    "progress": "تقدم {name}"
+  },
+  "toast": {
+    "upgraded": "{name} م {from} إلى {to}",
+    "levelSet": "{name} م {from} إلى {to}",
+    "undo": "تراجع"
+  }
+}

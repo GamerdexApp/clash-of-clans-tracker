@@ -1,0 +1,29 @@
+{
+  "groups": {
+    "homeVillage": "Aldea Principal",
+    "builderBase": "Base del Constructor",
+    "clanCapital": "Capital del Clan",
+    "dailies": "Diarias",
+    "tools": "Herramientas"
+  },
+  "items": {
+    "overview": "Resumen",
+    "achievements": "Logros",
+    "builder": "Constructor",
+    "research": "Investigación",
+    "pets": "Mascotas",
+    "equipment": "Equipo",
+    "walls": "Muros",
+    "builderBaseUpgrades": "Mejoras",
+    "builderBaseTroops": "Tropas",
+    "builderBaseWalls": "Muros",
+    "districts": "Distritos",
+    "capitalTroops": "Tropas y hechizos",
+    "forge": "Forja",
+    "helpers": "Ayudantes",
+    "seasonPass": "Pase de temporada",
+    "massEdit": "Edición masiva",
+    "settings": "Ajustes"
+  },
+  "villages": "Mis aldeas"
+}

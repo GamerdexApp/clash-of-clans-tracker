@@ -1,0 +1,63 @@
+{
+  "upgrades": {
+    "title": "Melhorias",
+    "subline": "{name}, Centro do Construtor {hall}",
+    "sublineNotSet": "{name}, Centro do Construtor não definido",
+    "tabsLabel": "Secções da Base do Construtor",
+    "tabs": {
+      "defenses": "Defesas",
+      "army": "Exército",
+      "resources": "Recursos",
+      "traps": "Armadilhas",
+      "heroes": "Heróis",
+      "other": "Outros"
+    },
+    "strip": {
+      "title": "Construtores",
+      "noBuilders": "A Base do Construtor tem dois construtores.",
+      "openQueue": "Abrir fila e cronologia",
+      "unassignedHelp": "Algumas melhorias estão guardadas num construtor que outra melhoria já usa. Conclui-as ou cancela-as."
+    }
+  },
+  "locked": {
+    "title": "Requer o Centro da Aldeia 6",
+    "description": "Esta aldeia está no Centro da Aldeia {townHall}. A Base do Construtor desbloqueia no Centro da Aldeia 6, ou quando define um nível de Centro do Construtor."
+  },
+  "notSet": {
+    "action": "Definir nível do Centro do Construtor",
+    "troopsDescription": "As tropas da Base do Construtor seguem o nível do Centro do Construtor. Define-o na página Melhorias, separador Outros.",
+    "title": "Escolhe o nível do Centro do Construtor para começar",
+    "description": "Define o nível do Centro do Construtor no bloco abaixo. As listas da Base do Construtor seguem esse nível."
+  },
+  "hall": {
+    "title": "Centro do Construtor",
+    "notSet": "Não definido",
+    "option": "Centro do Construtor {level}",
+    "since": "{amount} {days, plural, one {dia} other {dias}} no Centro do Construtor {level}",
+    "confirm": {
+      "title": "Mudar o Centro do Construtor para {level}?",
+      "raising": "Subir o nível mostra mais edifícios e limites mais altos. Nada do que guardou é removido.",
+      "lowering": "Baixar o nível oculta os edifícios e limites acima dele. Os níveis guardados mantêm-se.",
+      "clearing": "Limpar o nível oculta todas as listas da Base do Construtor. Os níveis guardados mantêm-se.",
+      "setDays": "Definir Dias no Centro do Construtor como hoje",
+      "cancel": "Cancelar",
+      "confirm": "Mudar nível"
+    },
+    "toast": "Centro do Construtor de {from, plural, =0 {não definido} other {{from}}} para {to, plural, =0 {não definido} other {{to}}}",
+    "undo": "Anular"
+  },
+  "other": {
+    "clockTower": "Torre do Relógio",
+    "clockTowerMax": "Nív. máx. {level} neste Centro do Construtor",
+    "clockTowerProgress": "Progresso da Torre do Relógio"
+  },
+  "empty": {
+    "title": "Ainda não há nada aqui",
+    "description": "Não há edifícios deste tipo disponíveis neste nível de Centro do Construtor.",
+    "allMax": "Tudo aqui está no máximo. Desativa Ocultar máx. para ver."
+  },
+  "heroes": {
+    "maxAtHall": "Nív. máx. {level} neste Centro do Construtor",
+    "progress": "Progresso de {name}"
+  }
+}

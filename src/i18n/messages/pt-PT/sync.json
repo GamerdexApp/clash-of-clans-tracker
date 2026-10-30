@@ -1,0 +1,236 @@
+{
+  "tab": {
+    "title": "Sincronização na nuvem"
+  },
+  "unavailable": "A sincronização não está disponível nesta versão.",
+  "provider": {
+    "github": {
+      "name": "GitHub",
+      "tile": "Um repositório privado que é teu, chamado {repository}.",
+      "badge": "Para programadores"
+    },
+    "google": {
+      "name": "Google Drive",
+      "tile": "Uma pasta Gamerdex visível no teu Drive. O Gamerdex vê apenas os ficheiros que cria.",
+      "badge": "Recomendado"
+    },
+    "dropbox": {
+      "name": "Dropbox",
+      "tile": "Uma pasta Gamerdex dentro da pasta Apps do teu Dropbox. O Gamerdex vê apenas essa pasta.",
+      "badge": "Só pasta da aplicação"
+    },
+    "microsoft": {
+      "name": "OneDrive",
+      "tile": "Uma pasta Gamerdex dentro da pasta Apps do teu OneDrive. O Gamerdex vê apenas essa pasta.",
+      "badge": "Contas pessoais"
+    }
+  },
+  "connect": {
+    "title": "Sincronizar entre dispositivos",
+    "pill": "Não ligado",
+    "intro": "Mantém as aldeias iguais no computador e no telemóvel. A sincronização é opcional e gratuita. Escolhe onde fica a cópia.",
+    "pickerLabel": "Onde guardar a cópia",
+    "panelTitle": "Ligar {provider}",
+    "another": "Podes escolher outro serviço antes de iniciares sessão.",
+    "firstSync": "Na primeira sincronização, escolhe o que manter se os dois lados já tiverem dados. Nada é substituído antes de decidires.",
+    "steps": {
+      "google": {
+        "step1": "Inicia sessão com a Google nesta janela.",
+        "step2": "Permite o acesso aos ficheiros que o Gamerdex cria. A aplicação não vê os teus outros ficheiros.",
+        "button": "Ligar Google Drive"
+      },
+      "github": {
+        "step1": "Cria um repositório privado vazio chamado {repository}. Marca Add a README file.",
+        "step2": "Inicia sessão com o GitHub e depois dá ao Gamerdex Sync acesso apenas a esse repositório.",
+        "button": "Ligar GitHub"
+      },
+      "dropbox": {
+        "step1": "Inicia sessão com o Dropbox nesta janela.",
+        "step2": "Permite o acesso à pasta da aplicação Gamerdex. A aplicação não vê os teus outros ficheiros.",
+        "button": "Ligar Dropbox"
+      },
+      "microsoft": {
+        "step1": "Inicia sessão com a tua conta Microsoft pessoal nesta janela.",
+        "step2": "Permite o acesso à pasta da aplicação Gamerdex. A aplicação não vê os teus outros ficheiros.",
+        "button": "Ligar OneDrive"
+      }
+    }
+  },
+  "how": {
+    "title": "Como funciona a sincronização",
+    "points": {
+      "item1": "As aldeias são guardadas num só ficheiro no teu próprio armazenamento, mais um ficheiro pequeno com a lista de dispositivos.",
+      "item2": "O Gamerdex não tem servidor que guarde os teus dados. O navegador fala diretamente com o teu armazenamento.",
+      "item3": "As instâncias de edifícios, tropas, heróis, equipamento, mascotes e conquistas combinam-se uma a uma e o nível mais alto prevalece. Uma reposição passa para o outro lado quando o outro dispositivo não alterou esse nível.",
+      "item4": "Se os dois dispositivos alterarem o mesmo nome, fila, melhoria em curso, número de troféus ou hora de reinício, escolhes qual manter.",
+      "item5": "Cada dispositivo guarda a sua aldeia ativa. A sincronização nunca a altera.",
+      "item6": "Desliga a qualquer momento. As aldeias ficam em todos os dispositivos."
+    }
+  },
+  "repository": {
+    "title": "Configurar o repositório de dados",
+    "body": "Os dados ficam num repositório privado chamado {name} na tua conta do GitHub. O Gamerdex Sync só consegue aceder a esse repositório.",
+    "checking": "A procurar {name}",
+    "checkFailed": "Não foi possível carregar os teus repositórios. Verifica a ligação e tenta de novo.",
+    "public": "O repositório {fullName} é público. Torna-o privado nas definições do GitHub e verifica de novo. Um repositório público não pode ser usado, porque qualquer pessoa poderia ler os teus dados.",
+    "missing": "O repositório {name} não foi encontrado",
+    "steps": {
+      "create": "Cria um repositório privado chamado {name}. Marca Add a README file.",
+      "install": "Dá ao Gamerdex Sync acesso apenas a esse repositório. Escolhe Only select repositories e depois {name}.",
+      "recheck": "Volta aqui e verifica de novo."
+    },
+    "createButton": "Criar repositório",
+    "installButton": "Escolher repositórios no GitHub",
+    "recheckButton": "Verificar de novo"
+  },
+  "connected": {
+    "repository": "Repositório",
+    "lastSync": "Última sincronização",
+    "never": "Ainda não sincronizado",
+    "syncNow": "Sincronizar agora",
+    "signOut": "Terminar sessão",
+    "folder": "Pasta {name}",
+    "signInWith": "Iniciar sessão com {provider}"
+  },
+  "status": {
+    "idle": "Sincronizado",
+    "syncing": "A sincronizar",
+    "offline": "Sem ligação",
+    "reauth": "Inicia sessão de novo",
+    "needsChoice": "Precisa da tua escolha",
+    "error": "A sincronização falhou",
+    "signedOut": "Sem sessão iniciada",
+    "needsRepository": "Escolhe um repositório",
+    "conflicts": "Rever alterações"
+  },
+  "error": {
+    "rateLimit": "O serviço está a limitar os pedidos. A sincronização volta a funcionar dentro de alguns minutos.",
+    "notFound": "O repositório não foi encontrado. Escolhe-o de novo.",
+    "server": "O serviço não respondeu corretamente. Tenta mais tarde.",
+    "data": "Os dados sincronizados não são válidos, por isso nada foi alterado.",
+    "busy": "Outro dispositivo continua a alterar os dados. Tenta de novo daqui a pouco.",
+    "other": "Algo correu mal. Nada foi alterado.",
+    "reauth": "A tua sessão terminou. Inicia sessão de novo para continuares a sincronizar.",
+    "forbidden": "O GitHub recusou o acesso ao repositório. Verifica se o Gamerdex Sync tem acesso Read and write a Contents e sincroniza de novo.",
+    "httpStatus": "O GitHub respondeu {status}.",
+    "notFoundFolder": "Um ficheiro ou pasta em {provider} não foi encontrado. Sincroniza de novo.",
+    "forbiddenFolder": "{provider} recusou o acesso. Inicia sessão de novo e permite o acesso aos ficheiros que o Gamerdex cria.",
+    "httpStatusFolder": "{provider} respondeu {status}."
+  },
+  "choice": {
+    "title": "Este dispositivo e a nuvem têm dados",
+    "body": "Esta é a primeira sincronização deste dispositivo. Escolhe o que fazer. Nada é eliminado da nuvem até escolheres.",
+    "merge": "Combinar ambos",
+    "mergeHint": "Mantém tudo dos dois lados. O nível mais alto prevalece.",
+    "keepLocal": "Manter este dispositivo",
+    "keepLocalHint": "Substitui os dados da nuvem pelos deste dispositivo.",
+    "keepCloud": "Manter a nuvem",
+    "keepCloudHint": "Substitui os dados deste dispositivo pelos da nuvem."
+  },
+  "first": {
+    "thisDevice": "Este dispositivo",
+    "cloud": "Nuvem",
+    "recommended": "Recomendado",
+    "later": "Decidir mais tarde",
+    "apply": "Aplicar escolha",
+    "optionsLabel": "O que manter"
+  },
+  "villageCount": "{count, plural, one {{amount} aldeia} other {{amount} aldeias}}",
+  "conflicts": {
+    "title": "Alterações que não foi possível combinar",
+    "body": "Dois dispositivos alteraram o mesmo valor. O valor da nuvem foi mantido. Escolhe o valor deste dispositivo para o usar em vez dele.",
+    "cloudValue": "Nuvem",
+    "deviceValue": "Este dispositivo",
+    "keepDevice": "Usar o valor deste dispositivo",
+    "dismiss": "Dispensar",
+    "empty": "Nada",
+    "deletedEdited": "Um dispositivo removeu isto e outro alterou. A versão alterada foi mantida."
+  },
+  "banner": {
+    "title": "{count, plural, one {{amount} alteração precisa de decisão} other {{amount} alterações precisam de decisão}}",
+    "body": "Dois dispositivos alteraram o mesmo valor. O valor da nuvem é mantido até decidires.",
+    "review": "Rever",
+    "waiting": "A primeira sincronização aguarda a tua escolha.",
+    "choose": "Escolher"
+  },
+  "villages": {
+    "title": "Aldeias",
+    "thisDevice": "Este dispositivo",
+    "cloud": "Nuvem, última sincronização",
+    "notInCloud": "Ainda não está na nuvem",
+    "review": "Rever",
+    "note": "Eliminar uma aldeia remove-a do ficheiro de sincronização na próxima sincronização.",
+    "status": {
+      "synced": "Sincronizada",
+      "changedHere": "Alterada aqui",
+      "conflict": "Conflito",
+      "newHere": "Nova aqui"
+    },
+    "describe": "Centro da Aldeia {townHall}"
+  },
+  "activity": {
+    "title": "Atividade de sincronização recente",
+    "empty": "Ainda nada foi sincronizado.",
+    "connected": "{provider} ligado neste navegador.",
+    "uploaded": "Alterações deste dispositivo enviadas.",
+    "downloaded": "Alterações da nuvem transferidas.",
+    "merged": "Alterações dos dois lados combinadas.",
+    "conflicts": "{count, plural, one {{amount} alteração precisa de decisão.} other {{amount} alterações precisam de decisão.}}",
+    "failed": "A sincronização falhou."
+  },
+  "settings": {
+    "title": "Definições de sincronização",
+    "auto": "Sincronizar automaticamente",
+    "autoHint": "Sincroniza quando o tracker abre e alguns segundos depois de cada alteração.",
+    "focus": "Verificar alterações quando volto ao separador",
+    "focusHint": "Obtém dados mais recentes da nuvem quando voltas ao tracker.",
+    "metered": "Esperar em ligações com tráfego limitado",
+    "meteredHint": "Ignora as sincronizações automáticas enquanto o navegador indicar uma ligação com poupança de dados. Sincronizar agora continua a funcionar."
+  },
+  "lives": {
+    "title": "Onde ficam os teus dados",
+    "storage": "Armazenamento",
+    "folder": "Pasta",
+    "dataFile": "Ficheiro de dados",
+    "metaFile": "Ficheiro meta",
+    "size": "Tamanho",
+    "kb": "{amount} KB",
+    "note": "O ficheiro de dados guarda as aldeias num formato que a sincronização consegue combinar, por isso não é um ficheiro de cópia de segurança. O ficheiro meta guarda a lista de dispositivos e nenhum dado do jogo. A tua sessão nunca está em nenhum dos ficheiros.",
+    "notes": {
+      "google": "A pasta Gamerdex é visível no teu Drive. O Gamerdex só consegue abrir os ficheiros que criou.",
+      "github": "Mantém o repositório privado. Quem o puder abrir pode ler os teus dados.",
+      "dropbox": "A pasta Gamerdex está dentro da pasta Apps do teu Dropbox. O Gamerdex só consegue abrir essa pasta.",
+      "microsoft": "A pasta Gamerdex está dentro da pasta Apps do teu OneDrive. O Gamerdex só consegue abrir essa pasta."
+    }
+  },
+  "device": {
+    "title": "Este dispositivo",
+    "name": "Nome do dispositivo",
+    "nameHint": "Os ficheiros de sincronização mostram este nome para este dispositivo. Mudar o nome atualiza o ficheiro meta na próxima sincronização.",
+    "activeVillage": "Aldeia ativa",
+    "noVillage": "Nenhuma",
+    "login": "Sessão de sincronização",
+    "loginValue": "Só neste dispositivo",
+    "loginHint": "A aldeia ativa é uma escolha de cada dispositivo e a sincronização nunca a altera. A tua sessão fica neste dispositivo. Nunca está nos dados guardados, no ficheiro de cópia de segurança nem nos ficheiros de sincronização."
+  },
+  "disconnect": {
+    "title": "Desligar",
+    "body": "Pára a sincronização neste navegador. As aldeias ficam neste dispositivo e na nuvem. Os outros dispositivos continuam a sincronizar.",
+    "button": "Desligar {provider}",
+    "hints": {
+      "google": "Para eliminares tu a cópia da nuvem, desliga e depois elimina a pasta Gamerdex no teu Google Drive.",
+      "github": "Para eliminares tu a cópia da nuvem, desliga e depois elimina a pasta Gamerdex no teu repositório.",
+      "dropbox": "Para eliminares tu a cópia da nuvem, desliga e depois elimina a pasta da aplicação em Apps no teu Dropbox.",
+      "microsoft": "Para eliminares tu a cópia da nuvem, desliga e depois elimina a pasta da aplicação em Apps no teu OneDrive."
+    }
+  },
+  "callback": {
+    "title": "A iniciar sessão",
+    "working": "A concluir o início de sessão",
+    "back": "Voltar às Definições",
+    "denied": "O início de sessão foi cancelado.",
+    "state": "Não foi possível verificar o início de sessão. Recomeça nas Definições.",
+    "missing": "O início de sessão não enviou código. Recomeça nas Definições.",
+    "failed": "Não foi possível concluir o início de sessão. Tenta mais tarde."
+  }
+}

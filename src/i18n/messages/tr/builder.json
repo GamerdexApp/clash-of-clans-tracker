@@ -1,0 +1,51 @@
+{
+  "title": "İnşaatçı",
+  "subline": "{name}, Belediye Binası {townHall}",
+  "tabsLabel": "İnşaatçı bölümleri",
+  "tabs": {
+    "defenses": "Savunmalar",
+    "army": "Ordu",
+    "resources": "Kaynaklar",
+    "crafted": "Üretilmiş Savunmalar",
+    "traps": "Tuzaklar",
+    "heroes": "Kahramanlar",
+    "guardians": "Koruyucular",
+    "townHall": "Belediye Binası"
+  },
+  "builders": {
+    "title": "İnşaatçılar",
+    "boostLabel": "Altın Geçiş inşaatçı güçlendirmesi",
+    "boostValue": "{percent, plural, =0 {Yok} other {-%{percent} süre ve maliyet}}",
+    "openQueue": "Kuyruğu ve zaman çizelgesini aç",
+    "unassignedHelp": "Bazı yükseltmeler inşa edilmemiş bir inşaatçıya veya başka bir yükseltmenin zaten kullandığı inşaatçıya kaydedilmiş. Bunları bitir veya iptal et.",
+    "noBuilders": "Bu köyde henüz inşaatçı yok. İlk İnşaatçı Kulübesini Savunmalar sekmesinden inşa et. Ücretsiz ve anında biter."
+  },
+  "gate": {
+    "requires": "Belediye Binası {townHall} gerekir",
+    "where": "Bu köy Belediye Binası {townHall} seviyesinde. Bu sekmeyi açmak için Belediye Binası {required} seviyesine ulaş.",
+    "fix": "Belediye Binası sekmesine git"
+  },
+  "empty": {
+    "title": "Burada henüz bir şey yok",
+    "description": "Bu Belediye Binası seviyesinde bu türden bina yok.",
+    "allMax": "Buradaki her bina maksimumda. Görmek için Maks. gizle seçeneğini kapat."
+  },
+  "card": {
+    "maxAtHall": "Bu Belediye Binasında maks. Sv {level}",
+    "maxAtBuilderHall": "Bu İnşaatçı Salonunda maks. Sv {level}",
+    "progress": "{name} ilerlemesi",
+    "notBuilt": "İnşa edilmedi",
+    "level": "Sv {level} / {max}",
+    "build": "İnşa et",
+    "upgradeTo": "Sv {level} seviyesine yükselt",
+    "superchargeTo": "{tier}. kademeye Süper Şarj",
+    "maxed": "Maks",
+    "running": "Sv {to} seviyesine yükseltiliyor",
+    "finish": "Bitir",
+    "cancel": "İptal",
+    "showAll": "Tümünü göster ({count})",
+    "showFewer": "Daha az göster",
+    "instance": "#{number}",
+    "supercharge": "Süper Şarj {tier} / {tiers}"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "title": "Kajian",
+  "subline": "{name}, Dewan Bandar {townHall}",
+  "tabsLabel": "Bahagian kajian",
+  "tabs": {
+    "troops": "Pasukan",
+    "spells": "Mantera",
+    "siegeMachines": "Kepungan"
+  },
+  "strip": {
+    "title": "Makmal",
+    "noLanes": "Tiada lorong kajian tersedia.",
+    "openQueue": "Buka giliran dan garis masa",
+    "unassignedHelp": "Sesetengah kajian disimpan pada lorong yang dimatikan, atau pada lorong yang sudah digunakan kajian lain. Siapkan atau batalkannya.",
+    "levelLabel": "Tahap Makmal",
+    "level": "{level} daripada {max}",
+    "notTracked": "Belum ditetapkan",
+    "boostLabel": "Rangsangan kajian Gold Pass"
+  },
+  "card": {
+    "notUnlocked": "Belum dibuka",
+    "markUnlocked": "Tandai sebagai dibuka",
+    "maxAtHall": "Maks Thp {level} pada Dewan Bandar ini",
+    "progress": "Kemajuan {name}"
+  },
+  "empty": {
+    "title": "Belum ada apa-apa di sini",
+    "none": "Tiada apa-apa dalam bahagian ini tersedia pada tahap Dewan Bandar ini.",
+    "allMax": "Semuanya di sini sudah pada tahap maksimum. Matikan Sembunyi Maks untuk melihatnya."
+  },
+  "boostValue": "{percent, plural, =0 {Tiada} other {-{percent}% masa dan kos}}"
+}

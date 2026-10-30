@@ -1,0 +1,42 @@
+{
+  "close": "إغلاق",
+  "field": {
+    "optional": "اختياري"
+  },
+  "stepper": {
+    "lower": "خفض {label}",
+    "raise": "رفع {label}",
+    "labelPrefix": "{label}، "
+  },
+  "switch": {
+    "on": "مفعّل",
+    "off": "متوقف"
+  },
+  "tabs": {
+    "locked": " (مقفل)"
+  },
+  "toast": {
+    "dismiss": "إخفاء",
+    "variants": {
+      "success": "نجاح",
+      "info": "معلومة",
+      "warning": "تحذير",
+      "error": "خطأ"
+    },
+    "missingProvider": "useToast must be used within a ToastProvider"
+  },
+  "filters": {
+    "filters": "عوامل التصفية",
+    "activeCount": "{count} نشطة",
+    "clearFilters": "مسح عوامل التصفية",
+    "reset": "إعادة ضبط",
+    "description": "تُطبق التغييرات فورًا. لا تُحفظ عوامل التصفية."
+  },
+  "savedChip": {
+    "automatic": "يُحفظ تلقائيًا",
+    "justNow": "تم الحفظ الآن",
+    "minutesAgo": "تم الحفظ منذ {count} د",
+    "at": "تم الحفظ {time}",
+    "failed": "لم يُحفظ، التخزين ممتلئ"
+  }
+}

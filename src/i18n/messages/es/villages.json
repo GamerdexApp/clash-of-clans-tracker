@@ -1,0 +1,119 @@
+{
+  "title": "Mis aldeas",
+  "subline": "{amount} {count, plural, one {aldea} other {aldeas}}",
+  "sublineActive": "{amount} {count, plural, one {aldea} other {aldeas}}, {name} está activa",
+  "newVillage": "Nueva aldea",
+  "empty": {
+    "title": "Aún no hay aldeas",
+    "deletedTitle": "No quedan aldeas",
+    "description": "Crea una aldea para empezar a seguir mejoras, investigación y logros.",
+    "restore": "Restaurar desde una copia"
+  },
+  "filters": {
+    "search": "Buscar aldeas",
+    "sortLabel": "Ordenar por",
+    "sort": {
+      "lastModified": "Última modificación",
+      "createdAt": "Fecha de creación",
+      "name": "Nombre"
+    },
+    "showing": "Mostrando {shown} de {total}",
+    "clear": "Borrar búsqueda"
+  },
+  "noMatch": {
+    "title": "Ninguna aldea coincide con \"{query}\"",
+    "description": "Revisa la ortografía o borra la búsqueda."
+  },
+  "card": {
+    "active": "Activa",
+    "openOverview": "Abrir resumen",
+    "setActive": "Activar",
+    "edit": "Editar",
+    "delete": "Eliminar",
+    "halls": "{builderHall, plural, =0 {Ayuntamiento {townHall}} other {Ayuntamiento {townHall}, Sala del Constructor {builderHall}}}",
+    "daysAtTownHall": "Días en el Ayuntamiento",
+    "daysAtBuilderHall": "Días en la Sala del Constructor",
+    "notSet": "Sin fijar",
+    "clanCapital": "Capital del Clan",
+    "clanCapitalStates": {
+      "on": "Sí",
+      "off": "No",
+      "locked": "Bloqueada"
+    },
+    "created": "Creada el {date}",
+    "lastModified": "Modificada el {date}",
+    "switched": "{name} es ahora la aldea activa"
+  },
+  "fields": {
+    "name": "Nombre de la aldea",
+    "namePlaceholder": "Mi cuenta principal",
+    "nameRequired": "Escribe un nombre para la aldea.",
+    "description": "Descripción",
+    "descriptionPlaceholder": "Añade una descripción para esta aldea",
+    "townHallLevel": "Nivel del Ayuntamiento",
+    "builderHallLevel": "Nivel de la Sala del Constructor",
+    "builderHallHelp": "La Base del Constructor se desbloquea en el Ayuntamiento 6.",
+    "townHallUpgraded": "Ayuntamiento mejorado",
+    "builderHallUpgraded": "Sala del Constructor mejorada",
+    "level": "Nivel {level}",
+    "trackCapital": "Seguir Capital del Clan",
+    "trackCapitalHelp": "Al desactivarlo se ocultan las páginas de la Capital del Clan y se conservan tus datos.",
+    "trackCapitalLocked": "Requiere Ayuntamiento 3",
+    "cancel": "Cancelar"
+  },
+  "create": {
+    "title": "Nueva aldea",
+    "submit": "Crear aldea",
+    "modeLabel": "Cómo empezar",
+    "modes": {
+      "fresh": "Desde cero",
+      "import": "Importar"
+    },
+    "modeNotes": {
+      "fresh": "Empieza con datos vacíos.",
+      "import": "Lee una etiqueta de jugador, con un archivo de edificios opcional."
+    },
+    "makeActive": "Hacer de esta la aldea activa",
+    "done": "{name} creada",
+    "importNeedsLookup": "Consulta antes una etiqueta de jugador."
+  },
+  "lookup": {
+    "step1": "Paso 1: Obtener datos del jugador",
+    "step2": "Paso 2: Datos de edificios (opcional)",
+    "tagLabel": "Etiqueta de jugador",
+    "tagPlaceholder": "#PPV2YV9R",
+    "fetch": "Obtener",
+    "refresh": "Actualizar",
+    "wait": "Espera {seconds} s",
+    "serverNote": "La búsqueda envía la etiqueta al servidor de Gamerdex, que consulta la API de Supercell. Nada más sale de tu navegador.",
+    "unavailable": "La búsqueda de jugador no está disponible ahora. Inténtalo más tarde.",
+    "found": "{name}, Ayuntamiento {townHall}{builderHall, plural, =0 {} other {, Sala del Constructor {builderHall}}}. Se leyeron {achievements} logros y {troops} tropas.",
+    "buildingHelp": "La API de jugadores no tiene niveles de edificios. Elige una copia de aldea desde Ajustes o el archivo exportData.json del juego.",
+    "buildingLabel": "Archivo de datos de edificios",
+    "buildingLoaded": "Datos de edificios cargados desde {name}.",
+    "buildingInvalid": "Este archivo no contiene datos de edificios. Usa una copia de aldea desde Ajustes o exportData.json del juego.",
+    "buildingNotJson": "Este archivo no es un JSON válido."
+  },
+  "edit": {
+    "title": "Editar aldea",
+    "submit": "Guardar",
+    "refreshTitle": "Actualizar desde la etiqueta de jugador",
+    "updatedTitle": "Actualizado",
+    "untouchedTitle": "Sin tocar",
+    "dateSet": "La fecha de mejora se fija a hoy. Puedes cambiarla.",
+    "done": "{name} guardada"
+  },
+  "delete": {
+    "title": "Eliminar aldea",
+    "description": "Esto quita la aldea de este navegador.",
+    "question": "¿Eliminar {name}? Se quitan sus mejoras, investigación, logros y diarias.",
+    "activeNext": "{next} pasa a ser la aldea activa.",
+    "activeLast": "Ninguna aldea quedará activa.",
+    "exportFirst": "Exporta antes una copia",
+    "cancel": "Cancelar",
+    "confirm": "Eliminar aldea",
+    "done": "{name} eliminada",
+    "doneMessage": "Puedes deshacerlo durante diez segundos.",
+    "undo": "Deshacer"
+  }
+}

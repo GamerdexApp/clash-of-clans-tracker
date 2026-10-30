@@ -1,0 +1,17 @@
+{
+  "stats": {
+    "attacksPerWeek": "จำนวนการโจมตีต่อสัปดาห์",
+    "promoted": "% บนที่เลื่อนขึ้น",
+    "demoted": "% ล่างที่ตกชั้น",
+    "trophyRange": "ช่วงถ้วยรางวัล",
+    "starsForBonus": "ดาวสำหรับโบนัสดาว"
+  },
+  "sections": {
+    "maxLoot": "ของที่ปล้นได้สูงสุด",
+    "leagueBonus": "โบนัสลีกสูงสุด",
+    "weeklyStarBonus": "โบนัสดาวรายสัปดาห์",
+    "starBonusReward": "รางวัลโบนัสดาว"
+  },
+  "range": "{min} ถึง {max}",
+  "rangeOpen": "{min}+"
+}

@@ -1,0 +1,63 @@
+{
+  "upgrades": {
+    "title": "Yükseltmeler",
+    "subline": "{name}, İnşaatçı Salonu {hall}",
+    "sublineNotSet": "{name}, İnşaatçı Salonu ayarlanmadı",
+    "tabsLabel": "İnşaatçı Üssü bölümleri",
+    "tabs": {
+      "defenses": "Savunmalar",
+      "army": "Ordu",
+      "resources": "Kaynaklar",
+      "traps": "Tuzaklar",
+      "heroes": "Kahramanlar",
+      "other": "Diğer"
+    },
+    "strip": {
+      "title": "İnşaatçılar",
+      "noBuilders": "İnşaatçı Üssünde iki inşaatçı var.",
+      "openQueue": "Kuyruğu ve zaman çizelgesini aç",
+      "unassignedHelp": "Bazı yükseltmeler başka bir yükseltmenin zaten kullandığı inşaatçıya kaydedilmiş. Bunları bitir veya iptal et."
+    }
+  },
+  "locked": {
+    "title": "Belediye Binası 6 gerekir",
+    "description": "Bu köy Belediye Binası {townHall} seviyesinde. İnşaatçı Üssü Belediye Binası 6 ile veya bir İnşaatçı Salonu seviyesi ayarlayınca açılır."
+  },
+  "notSet": {
+    "action": "İnşaatçı Salonu seviyesini ayarla",
+    "troopsDescription": "İnşaatçı Üssü birlikleri İnşaatçı Salonu seviyesini izler. Bunu Yükseltmeler sayfasında, Diğer sekmesinde ayarla.",
+    "title": "Takibe başlamak için İnşaatçı Salonu seviyeni seç",
+    "description": "İnşaatçı Salonu seviyesini aşağıdaki kutuda ayarla. İnşaatçı Üssü listeleri bunu izler."
+  },
+  "hall": {
+    "title": "İnşaatçı Salonu",
+    "notSet": "Ayarlanmadı",
+    "option": "İnşaatçı Salonu {level}",
+    "since": "İnşaatçı Salonu {level} seviyesinde {amount} {days, plural, one {gün} other {gün}}",
+    "confirm": {
+      "title": "İnşaatçı Salonu {level} seviyesine değiştirilsin mi?",
+      "raising": "Seviyeyi yükseltmek daha çok bina ve daha yüksek sınırlar gösterir. Kaydettiğin hiçbir şey silinmez.",
+      "lowering": "Seviyeyi düşürmek, üstündeki binaları ve sınırları gizler. Kayıtlı seviyelerin korunur.",
+      "clearing": "Seviyeyi temizlemek tüm İnşaatçı Üssü listelerini gizler. Kayıtlı seviyelerin korunur.",
+      "setDays": "İnşaatçı Salonunda geçen günleri bugüne ayarla",
+      "cancel": "İptal",
+      "confirm": "Seviyeyi değiştir"
+    },
+    "toast": "İnşaatçı Salonu {from, plural, =0 {ayarlanmadı} other {{from}}} değerinden {to, plural, =0 {ayarlanmadı} other {{to}}} değerine",
+    "undo": "Geri al"
+  },
+  "other": {
+    "clockTower": "Saat Kulesi",
+    "clockTowerMax": "Bu İnşaatçı Salonunda maks. Sv {level}",
+    "clockTowerProgress": "Saat Kulesi ilerlemesi"
+  },
+  "empty": {
+    "title": "Burada henüz bir şey yok",
+    "description": "Bu İnşaatçı Salonu seviyesinde bu türden bina yok.",
+    "allMax": "Buradaki her şey maksimumda. Görmek için Maks. gizle seçeneğini kapat."
+  },
+  "heroes": {
+    "maxAtHall": "Bu İnşaatçı Salonunda maks. Sv {level}",
+    "progress": "{name} ilerlemesi"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "title": "Araştırma",
+  "subline": "{name}, Belediye Binası {townHall}",
+  "tabsLabel": "Araştırma bölümleri",
+  "tabs": {
+    "troops": "Birlikler",
+    "spells": "Büyüler",
+    "siegeMachines": "Kuşatma"
+  },
+  "strip": {
+    "title": "Laboratuvar",
+    "noLanes": "Kullanılabilir araştırma hattı yok.",
+    "openQueue": "Kuyruğu ve zaman çizelgesini aç",
+    "unassignedHelp": "Bazı araştırmalar kapalı bir hatta veya başka bir araştırmanın zaten kullandığı hatta kaydedilmiş. Bunları bitir veya iptal et.",
+    "levelLabel": "Laboratuvar seviyesi",
+    "level": "{max} seviyeden {level}",
+    "notTracked": "Ayarlanmadı",
+    "boostLabel": "Altın Geçiş araştırma güçlendirmesi"
+  },
+  "card": {
+    "notUnlocked": "Açılmadı",
+    "markUnlocked": "Açıldı olarak işaretle",
+    "maxAtHall": "Bu Belediye Binasında maks. Sv {level}",
+    "progress": "{name} ilerlemesi"
+  },
+  "empty": {
+    "title": "Burada henüz bir şey yok",
+    "none": "Bu bölümde bu Belediye Binası seviyesinde kullanılabilir bir şey yok.",
+    "allMax": "Buradaki her şey maksimumda. Görmek için Maks. gizle seçeneğini kapat."
+  },
+  "boostValue": "{percent, plural, =0 {Yok} other {-%{percent} süre ve maliyet}}"
+}

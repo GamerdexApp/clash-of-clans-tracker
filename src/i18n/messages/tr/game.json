@@ -1,0 +1,37 @@
+{
+  "resources": {
+    "gold": "Altın",
+    "elixir": "İksir",
+    "darkElixir": "Kara İksir",
+    "darkElixirShort": "Kara",
+    "builderGold": "İnşaatçı Altını",
+    "builderGoldShort": "İ. Altın",
+    "builderElixir": "İnşaatçı İksiri",
+    "builderElixirShort": "İ. İksir",
+    "capitalGold": "Başkent Altını",
+    "shinyOre": "Shiny Ore",
+    "glowyOre": "Glowy Ore",
+    "starryOre": "Starry Ore"
+  },
+  "halls": {
+    "townHall": "Belediye Binası {level}",
+    "builderHall": "İnşaatçı Salonu {level}",
+    "capitalHall": "Başkent Salonu {level}",
+    "heroHall": "Kahraman Salonu {level}",
+    "starLaboratory": "Yıldız Laboratuvarı {level}",
+    "blacksmith": "Demirci"
+  },
+  "places": {
+    "townHall": "Belediye Binası",
+    "townHallWeapon": "Belediye Binası silahı",
+    "builderHall": "İnşaatçı Salonu",
+    "clockTower": "Saat Kulesi",
+    "laboratory": "Laboratuvar",
+    "goblinResearcher": "Goblin Araştırmacı",
+    "goblinBuilder": "Goblin İnşaatçı",
+    "starLaboratory": "Yıldız Laboratuvarı",
+    "petHouse": "Evcil Hayvan Evi",
+    "capitalPeak": "Başkent Zirvesi",
+    "builder": "İnşaatçı {id}"
+  }
+}

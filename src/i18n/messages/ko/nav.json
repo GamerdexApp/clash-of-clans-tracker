@@ -1,0 +1,29 @@
+{
+  "groups": {
+    "homeVillage": "본거지",
+    "builderBase": "빌더 기지",
+    "clanCapital": "클랜 캐피탈",
+    "dailies": "일일 과제",
+    "tools": "도구"
+  },
+  "items": {
+    "overview": "개요",
+    "achievements": "업적",
+    "builder": "빌더",
+    "research": "연구",
+    "pets": "펫",
+    "equipment": "장비",
+    "walls": "벽",
+    "builderBaseUpgrades": "업그레이드",
+    "builderBaseTroops": "병력",
+    "builderBaseWalls": "벽",
+    "districts": "지구",
+    "capitalTroops": "병력과 주문",
+    "forge": "포지",
+    "helpers": "도우미",
+    "seasonPass": "시즌 패스",
+    "massEdit": "일괄 편집",
+    "settings": "설정"
+  },
+  "villages": "내 마을"
+}

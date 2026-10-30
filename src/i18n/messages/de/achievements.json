@@ -1,0 +1,49 @@
+{
+  "title": "Erfolge",
+  "description": "Verfolge Sterne, Werte und Belohnungen jedes Erfolgs.",
+  "subline": "{name}, {count} Erfolge, {stars} von {maxStars} Sternen, {percent}%",
+  "tiles": {
+    "all": "Alle Erfolge",
+    "home": "Heimatdorf",
+    "builder": "Bauarbeiterbasis",
+    "capital": "Clanhauptstadt",
+    "gems": "Verdiente Edelsteine",
+    "xp": "Verdiente EP",
+    "stars": "{stars} von {maxStars} Sternen",
+    "left": "Noch {amount} {unit} zu verdienen",
+    "gemsUnit": "Edelsteine",
+    "xpUnit": "EP"
+  },
+  "sections": {
+    "home": "Heimatdorf",
+    "builderBase": "Bauarbeiterbasis",
+    "clanCapital": "Clanhauptstadt",
+    "summary": "{count} Erfolge, {stars} / {maxStars} Sterne, {gems} Edelsteine, {xp} EP",
+    "more": "{count} weitere Erfolge in {name} zeigen",
+    "less": "Weniger zeigen"
+  },
+  "card": {
+    "manual": "Manuell",
+    "nextStar": "Nächster Stern",
+    "xp": "EP",
+    "gems": "Edelsteine",
+    "edit": "{name} bearbeiten",
+    "done": "Fertig",
+    "stars": "Sterne",
+    "starsHelp": "Tippe erneut auf denselben Stern, um einen Stern zu entfernen.",
+    "star": "{amount} {number, plural, one {Stern} other {Sterne}}",
+    "value": "Wert",
+    "target": "Ziel",
+    "manualLabel": "Manuell (API-Wert überspringen)",
+    "saves": "Änderungen werden beim Tippen gespeichert. Mehr Sterne setzen das Ziel auf die nächste Stufe.",
+    "progress": "Fortschritt von {name}",
+    "starsEarned": "{stars} von 3 Sternen"
+  },
+  "toast": {
+    "stars": "{name} auf {amount} {stars, plural, one {Stern} other {Sterne}} geändert",
+    "targetMoved": "Ziel auf {target} verschoben.",
+    "value": "Wert von {name} auf {value} geändert",
+    "target": "Ziel von {name} auf {target} geändert",
+    "undo": "Rückgängig"
+  }
+}

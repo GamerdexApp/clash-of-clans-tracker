@@ -1,0 +1,48 @@
+{
+  "title": "ビルダーベースの壁",
+  "subline": "{name}、ビルダーホール {builderHall}、最高の壁レベル {highest}",
+  "massEdit": "壁の数は一括編集でも調整できます。",
+  "tiles": {
+    "total": "このビルダーホールでの合計",
+    "totalCaption": "最高の壁レベル {highest}",
+    "placed": "配置済み",
+    "placedCaption": "レベルが付いた壁",
+    "notPlaced": "未配置",
+    "allPlaced": "すべて配置済み",
+    "stillToPlace": "未配置の{amount} {count, plural, other {壁}}",
+    "over": "{count}超過"
+  },
+  "hideEmpty": "{hidden, plural, =0 {最低レベルより下の空のレベルを非表示} other {最低レベルより下の空のレベルを非表示({hidden}件非表示)}}",
+  "row": {
+    "level": "レベル {level}",
+    "own": "所持数",
+    "ownLabel": "レベル {level}の所持している壁",
+    "lower": "レベル {level}の壁を1つ減らす",
+    "raise": "レベル {level}の壁を1つ増やす",
+    "nextCost": "次のレベル: 壁1つにつき{price} {resource}",
+    "toMove": "移す壁",
+    "toLevel": "移動先のレベル",
+    "plusOne": "+1",
+    "move": "移す",
+    "moveAll": "すべて移す",
+    "preview": "レベル {from}からレベル {to}へ{amount} {walls, plural, other {壁}}を移す: {price} {resource}",
+    "nothingToMove": "移すものがありません",
+    "noWalls": "このレベルには移せる壁がありません。"
+  },
+  "cost": {
+    "title": "すべての壁をレベル {level}にするコスト",
+    "row": "レベル {level}、{amount} {walls, plural, other {壁}}",
+    "total": "合計",
+    "none": "配置済みの壁がすべて最高レベルか、まだ配置されていません。",
+    "note": "レベル2から6の壁にはビルダーゴールドが必要です。レベル7以上はビルダーゴールドまたはビルダーエリクサーが必要です。"
+  },
+  "empty": {
+    "title": "まだ壁がありません",
+    "description": "ビルダーベースのアップグレードのページでビルダーホールのレベルを設定すると、壁が表示されます。"
+  },
+  "toast": {
+    "moved": "レベル {from}からレベル {to}へ{amount} {walls, plural, other {壁}}を移しました",
+    "counted": "レベル {level}の壁を{from}から{to}に",
+    "undo": "元に戻す"
+  }
+}

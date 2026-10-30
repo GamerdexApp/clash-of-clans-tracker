@@ -1,0 +1,37 @@
+{
+  "resources": {
+    "gold": "ทอง",
+    "elixir": "อีลิกเซอร์",
+    "darkElixir": "ดาร์กอีลิกเซอร์",
+    "darkElixirShort": "ดาร์ก",
+    "builderGold": "ทองบิลเดอร์",
+    "builderGoldShort": "ทอง BB",
+    "builderElixir": "อีลิกเซอร์บิลเดอร์",
+    "builderElixirShort": "อีลิกเซอร์ BB",
+    "capitalGold": "ทองแคปิตอล",
+    "shinyOre": "Shiny Ore",
+    "glowyOre": "Glowy Ore",
+    "starryOre": "Starry Ore"
+  },
+  "halls": {
+    "townHall": "ทาวน์ฮอลล์ {level}",
+    "builderHall": "บิลเดอร์ฮอลล์ {level}",
+    "capitalHall": "แคปิตอลฮอลล์ {level}",
+    "heroHall": "ฮีโร่ฮอลล์ {level}",
+    "starLaboratory": "ห้องทดลองดาว {level}",
+    "blacksmith": "ช่างตีเหล็ก"
+  },
+  "places": {
+    "townHall": "ทาวน์ฮอลล์",
+    "townHallWeapon": "อาวุธทาวน์ฮอลล์",
+    "builderHall": "บิลเดอร์ฮอลล์",
+    "clockTower": "หอนาฬิกา",
+    "laboratory": "ห้องทดลอง",
+    "goblinResearcher": "นักวิจัยก็อบลิน",
+    "goblinBuilder": "ช่างก็อบลิน",
+    "starLaboratory": "ห้องทดลองดาว",
+    "petHouse": "บ้านสัตว์เลี้ยง",
+    "capitalPeak": "แคปิตอลพีค",
+    "builder": "ช่างก่อสร้าง {id}"
+  }
+}

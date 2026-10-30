@@ -1,0 +1,236 @@
+{
+  "tab": {
+    "title": "Synchro cloud"
+  },
+  "unavailable": "La synchro n'est pas disponible dans cette version.",
+  "provider": {
+    "github": {
+      "name": "GitHub",
+      "tile": "Un dépôt privé qui vous appartient, nommé {repository}.",
+      "badge": "Pour les développeurs"
+    },
+    "google": {
+      "name": "Google Drive",
+      "tile": "Un dossier Gamerdex visible dans votre Drive. Gamerdex ne voit que les fichiers qu'il crée.",
+      "badge": "Recommandé"
+    },
+    "dropbox": {
+      "name": "Dropbox",
+      "tile": "Un dossier Gamerdex dans le dossier Apps de votre Dropbox. Gamerdex ne voit que ce dossier.",
+      "badge": "Dossier d'appli seulement"
+    },
+    "microsoft": {
+      "name": "OneDrive",
+      "tile": "Un dossier Gamerdex dans le dossier Apps de votre OneDrive. Gamerdex ne voit que ce dossier.",
+      "badge": "Comptes personnels"
+    }
+  },
+  "connect": {
+    "title": "Synchroniser entre appareils",
+    "pill": "Non connecté",
+    "intro": "Gardez vos villages identiques sur votre ordinateur et votre téléphone. La synchro est facultative et gratuite. Choisissez où vit la copie.",
+    "pickerLabel": "Où garder la copie",
+    "panelTitle": "Connecter {provider}",
+    "another": "Vous pouvez choisir un autre fournisseur avant de vous connecter.",
+    "firstSync": "Choisissez quoi garder à la première synchro si les deux côtés ont déjà des données. Rien n'est remplacé avant votre décision.",
+    "steps": {
+      "google": {
+        "step1": "Connectez-vous avec Google dans cette fenêtre.",
+        "step2": "Autorisez l'accès aux fichiers créés par Gamerdex. L'appli ne voit pas vos autres fichiers.",
+        "button": "Connecter Google Drive"
+      },
+      "github": {
+        "step1": "Créez un dépôt privé vide nommé {repository}. Cochez Add a README file.",
+        "step2": "Connectez-vous avec GitHub, puis donnez à Gamerdex Sync l'accès à ce dépôt uniquement.",
+        "button": "Connecter GitHub"
+      },
+      "dropbox": {
+        "step1": "Connectez-vous avec Dropbox dans cette fenêtre.",
+        "step2": "Autorisez l'accès au dossier d'appli Gamerdex. L'appli ne voit pas vos autres fichiers.",
+        "button": "Connecter Dropbox"
+      },
+      "microsoft": {
+        "step1": "Connectez-vous avec votre compte Microsoft personnel dans cette fenêtre.",
+        "step2": "Autorisez l'accès au dossier d'appli Gamerdex. L'appli ne voit pas vos autres fichiers.",
+        "button": "Connecter OneDrive"
+      }
+    }
+  },
+  "how": {
+    "title": "Comment fonctionne la synchro",
+    "points": {
+      "item1": "Vos villages sont enregistrés dans un seul fichier de votre propre stockage, plus un petit fichier pour la liste des appareils.",
+      "item2": "Gamerdex n'a aucun serveur qui stocke vos données. Votre navigateur parle directement à votre stockage.",
+      "item3": "Les instances de bâtiments, troupes, héros, équipements, familiers et succès sont fusionnés un par un, et le niveau le plus haut l'emporte. Une réinitialisation est reprise quand l'autre appareil n'a pas changé ce niveau.",
+      "item4": "Si les deux appareils changent le même nom, la même file, la même amélioration en cours, le même nombre de trophées ou la même heure de réinitialisation, vous choisissez lequel garder.",
+      "item5": "Chaque appareil garde son propre village actif. La synchro ne le change jamais.",
+      "item6": "Déconnectez-vous quand vous voulez. Vos villages restent sur chaque appareil."
+    }
+  },
+  "repository": {
+    "title": "Configurer votre dépôt de données",
+    "body": "Vos données sont conservées dans un dépôt privé nommé {name} de votre compte GitHub. Gamerdex Sync ne peut accéder qu'à ce seul dépôt.",
+    "checking": "Recherche de {name}",
+    "checkFailed": "Vos dépôts n'ont pas pu être chargés. Vérifiez votre connexion et revérifiez.",
+    "public": "Le dépôt {fullName} est public. Rendez-le privé dans ses paramètres GitHub, puis revérifiez. Un dépôt public ne peut pas être utilisé, car n'importe qui pourrait lire vos données.",
+    "missing": "Le dépôt {name} est introuvable",
+    "steps": {
+      "create": "Créez un dépôt privé nommé {name}. Cochez Add a README file.",
+      "install": "Donnez à Gamerdex Sync l'accès à ce dépôt uniquement. Choisissez Only select repositories, puis sélectionnez {name}.",
+      "recheck": "Revenez ici et revérifiez."
+    },
+    "createButton": "Créer le dépôt",
+    "installButton": "Choisir les dépôts sur GitHub",
+    "recheckButton": "Revérifier"
+  },
+  "connected": {
+    "repository": "Dépôt",
+    "lastSync": "Dernière synchro",
+    "never": "Pas encore synchronisé",
+    "syncNow": "Synchroniser maintenant",
+    "signOut": "Se déconnecter",
+    "folder": "Dossier {name}",
+    "signInWith": "Se connecter avec {provider}"
+  },
+  "status": {
+    "idle": "Synchronisé",
+    "syncing": "Synchronisation",
+    "offline": "Hors ligne",
+    "reauth": "Reconnectez-vous",
+    "needsChoice": "Votre choix est requis",
+    "error": "Échec de la synchro",
+    "signedOut": "Non connecté",
+    "needsRepository": "Choisissez un dépôt",
+    "conflicts": "Vérifier les changements"
+  },
+  "error": {
+    "rateLimit": "Le fournisseur limite les requêtes. La synchro refonctionnera dans quelques minutes.",
+    "notFound": "Le dépôt est introuvable. Choisissez-le de nouveau.",
+    "server": "Le fournisseur n'a pas répondu correctement. Réessayez plus tard.",
+    "data": "Les données synchronisées ne sont pas valides, donc rien n'a été modifié.",
+    "busy": "Un autre appareil modifie sans cesse les données. Réessayez dans un instant.",
+    "other": "Une erreur s'est produite. Rien n'a été modifié.",
+    "reauth": "Votre connexion a pris fin. Reconnectez-vous pour continuer la synchro.",
+    "forbidden": "GitHub a refusé l'accès au dépôt. Vérifiez que Gamerdex Sync a l'accès Read and write à Contents, puis synchronisez de nouveau.",
+    "httpStatus": "GitHub a répondu {status}.",
+    "notFoundFolder": "Un fichier ou un dossier de {provider} est introuvable. Synchronisez de nouveau.",
+    "forbiddenFolder": "{provider} a refusé l'accès. Reconnectez-vous et autorisez l'accès aux fichiers créés par Gamerdex.",
+    "httpStatusFolder": "{provider} a répondu {status}."
+  },
+  "choice": {
+    "title": "Cet appareil et le cloud ont tous deux des données",
+    "body": "C'est la première synchro depuis cet appareil. Choisissez quoi faire. Rien n'est supprimé du cloud avant votre choix.",
+    "merge": "Fusionner les deux",
+    "mergeHint": "Garde tout des deux côtés. Le niveau le plus haut l'emporte.",
+    "keepLocal": "Garder cet appareil",
+    "keepLocalHint": "Remplace les données du cloud par celles de cet appareil.",
+    "keepCloud": "Garder le cloud",
+    "keepCloudHint": "Remplace les données de cet appareil par celles du cloud."
+  },
+  "first": {
+    "thisDevice": "Cet appareil",
+    "cloud": "Cloud",
+    "recommended": "Recommandé",
+    "later": "Décider plus tard",
+    "apply": "Appliquer le choix",
+    "optionsLabel": "Quoi garder"
+  },
+  "villageCount": "{count, plural, one {{amount} village} other {{amount} villages}}",
+  "conflicts": {
+    "title": "Changements qui n'ont pas pu être fusionnés",
+    "body": "Deux appareils ont modifié la même valeur. La valeur du cloud a été conservée. Choisissez la valeur de cet appareil pour l'utiliser à la place.",
+    "cloudValue": "Cloud",
+    "deviceValue": "Cet appareil",
+    "keepDevice": "Utiliser la valeur de cet appareil",
+    "dismiss": "Fermer",
+    "empty": "Rien",
+    "deletedEdited": "Un appareil l'a supprimé et un autre l'a modifié. La version modifiée a été conservée."
+  },
+  "banner": {
+    "title": "{count, plural, one {{amount} changement demande une décision} other {{amount} changements demandent une décision}}",
+    "body": "Deux appareils ont modifié la même valeur. La valeur du cloud est conservée jusqu'à votre décision.",
+    "review": "Vérifier",
+    "waiting": "La première synchro attend votre choix.",
+    "choose": "Choisir"
+  },
+  "villages": {
+    "title": "Villages",
+    "thisDevice": "Cet appareil",
+    "cloud": "Cloud, dernière synchro",
+    "notInCloud": "Pas encore dans le cloud",
+    "review": "Vérifier",
+    "note": "Supprimer un village le retire du fichier de synchro à la prochaine synchro.",
+    "status": {
+      "synced": "Synchronisé",
+      "changedHere": "Modifié ici",
+      "conflict": "Conflit",
+      "newHere": "Nouveau ici"
+    },
+    "describe": "Hôtel de ville {townHall}"
+  },
+  "activity": {
+    "title": "Activité de synchro récente",
+    "empty": "Rien n'a encore été synchronisé.",
+    "connected": "{provider} connecté sur ce navigateur.",
+    "uploaded": "Changements de cet appareil envoyés.",
+    "downloaded": "Changements du cloud téléchargés.",
+    "merged": "Changements des deux côtés fusionnés.",
+    "conflicts": "{count, plural, one {{amount} changement demande une décision.} other {{amount} changements demandent une décision.}}",
+    "failed": "La synchro a échoué."
+  },
+  "settings": {
+    "title": "Réglages de la synchro",
+    "auto": "Synchroniser automatiquement",
+    "autoHint": "Synchronise à l'ouverture du tracker et quelques secondes après chaque changement.",
+    "focus": "Vérifier les changements quand je reviens sur l'onglet",
+    "focusHint": "Récupère les données du cloud plus récentes quand vous revenez sur le tracker.",
+    "metered": "M'attendre sur une connexion limitée",
+    "meteredHint": "Ignore les synchros automatiques tant que le navigateur signale une connexion en économie de données. Synchroniser maintenant fonctionne toujours."
+  },
+  "lives": {
+    "title": "Où vivent vos données",
+    "storage": "Stockage",
+    "folder": "Dossier",
+    "dataFile": "Fichier de données",
+    "metaFile": "Fichier méta",
+    "size": "Taille",
+    "kb": "{amount} Ko",
+    "note": "Le fichier de données contient vos villages sous une forme que la synchro peut fusionner, ce n'est donc pas un fichier de sauvegarde. Le fichier méta contient la liste des appareils et aucune donnée de jeu. Votre connexion n'est dans aucun des deux fichiers.",
+    "notes": {
+      "google": "Le dossier Gamerdex est visible dans votre Drive. Gamerdex ne peut ouvrir que les fichiers qu'il a créés.",
+      "github": "Gardez le dépôt privé. Quiconque peut l'ouvrir peut lire vos données.",
+      "dropbox": "Le dossier Gamerdex est dans le dossier Apps de votre Dropbox. Gamerdex ne peut ouvrir que ce dossier.",
+      "microsoft": "Le dossier Gamerdex est dans le dossier Apps de votre OneDrive. Gamerdex ne peut ouvrir que ce dossier."
+    }
+  },
+  "device": {
+    "title": "Cet appareil",
+    "name": "Nom de l'appareil",
+    "nameHint": "Les fichiers de synchro affichent ce nom pour cet appareil. Le renommer met à jour le fichier méta à la prochaine synchro.",
+    "activeVillage": "Village actif",
+    "noVillage": "Aucun",
+    "login": "Connexion de synchro",
+    "loginValue": "Sur cet appareil uniquement",
+    "loginHint": "Le village actif est un choix propre à chaque appareil, et la synchro ne le change jamais. Votre connexion reste sur cet appareil. Elle n'est jamais dans les données enregistrées, le fichier de sauvegarde ni les fichiers de synchro."
+  },
+  "disconnect": {
+    "title": "Déconnecter",
+    "body": "Arrête la synchro sur ce navigateur. Vos villages restent sur cet appareil et dans le cloud. Les autres appareils continuent de se synchroniser.",
+    "button": "Déconnecter {provider}",
+    "hints": {
+      "google": "Pour supprimer vous-même la copie cloud, déconnectez-vous, puis supprimez le dossier Gamerdex dans votre Google Drive.",
+      "github": "Pour supprimer vous-même la copie cloud, déconnectez-vous, puis supprimez le dossier Gamerdex dans votre dépôt.",
+      "dropbox": "Pour supprimer vous-même la copie cloud, déconnectez-vous, puis supprimez le dossier d'appli sous Apps dans votre Dropbox.",
+      "microsoft": "Pour supprimer vous-même la copie cloud, déconnectez-vous, puis supprimez le dossier d'appli sous Apps dans votre OneDrive."
+    }
+  },
+  "callback": {
+    "title": "Connexion",
+    "working": "Finalisation de la connexion",
+    "back": "Retour aux Paramètres",
+    "denied": "La connexion a été annulée.",
+    "state": "La connexion n'a pas pu être vérifiée. Recommencez depuis les Paramètres.",
+    "missing": "La connexion n'a envoyé aucun code. Recommencez depuis les Paramètres.",
+    "failed": "La connexion n'a pas pu être terminée. Réessayez plus tard."
+  }
+}

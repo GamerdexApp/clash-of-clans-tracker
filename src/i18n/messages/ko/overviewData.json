@@ -1,0 +1,40 @@
+{
+  "stats": {
+    "level": "레벨",
+    "warStars": "전쟁 별",
+    "trophies": "트로피",
+    "bestTrophies": "최고 트로피",
+    "donations": "기부",
+    "received": "받은 기부",
+    "war": "전쟁 참여 설정",
+    "attacks": "공격 승리",
+    "defenses": "방어 승리",
+    "builderTrophies": "빌더 트로피",
+    "bestBuilderTrophies": "최고 빌더 트로피",
+    "contributions": "캐피탈 기여도",
+    "warIn": "참여",
+    "warOut": "불참"
+  },
+  "cards": {
+    "structures": "구조물",
+    "traps": "함정",
+    "supercharge": "슈퍼차지",
+    "crafted": "제작 방어",
+    "lab": "연구소",
+    "heroes": "영웅",
+    "equipment": "장비",
+    "pets": "펫",
+    "walls": "벽",
+    "districts": "지구",
+    "troops": "병력",
+    "spells": "주문"
+  },
+  "subs": {
+    "structures": "방어, 군대, 자원",
+    "lab": "병력, 주문, 시즈",
+    "builderLab": "빌더 병력",
+    "walls": "벽 {total}개, 최대 레벨 {max}",
+    "districts": "{total}개 중 {active}개 활성",
+    "available": "{count}개 사용 가능"
+  }
+}

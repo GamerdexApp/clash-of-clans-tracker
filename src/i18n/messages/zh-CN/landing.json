@@ -1,0 +1,86 @@
+{
+  "header": {
+    "label": "页面分区",
+    "features": "功能",
+    "faq": "常见问题",
+    "villages": "村庄",
+    "settings": "设置"
+  },
+  "hero": {
+    "title": "追踪你的 Clash of Clans 进度",
+    "description": "把所有村庄集中在一处：主村庄、建筑大师基地和部落首都的建筑、兵种、英雄、升级和每日任务。",
+    "note": "免费。无需账号。所有数据都保存在你的浏览器中。",
+    "continue": "继续使用",
+    "continueLine": "{builderHall, plural, =0 {{townHall}级大本营，更新于{updated}} other {{townHall}级大本营，{builderHall}级建筑大师大本营，更新于{updated}}}"
+  },
+  "cta": {
+    "create": "创建你的第一个村庄",
+    "learnMore": "了解更多",
+    "overview": "前往总览",
+    "newVillage": "新建村庄"
+  },
+  "features": {
+    "label": "你需要的一切",
+    "title": "所有进度集中在一处",
+    "description": "从大本营到部落首都，你追踪的每个等级在更改的瞬间就会保存。",
+    "items": {
+      "item1": {
+        "title": "多个村庄",
+        "text": "创建和管理不限数量的村庄。分别追踪不同的账号和基地。"
+      },
+      "item2": {
+        "title": "进度追踪",
+        "text": "准确追踪你在每个村庄中已完成、已收集或已解锁的内容。"
+      },
+      "item3": {
+        "title": "总览",
+        "text": "通过汇总数据、每日计时器和完成指示，一眼看清你的进度。"
+      },
+      "item4": {
+        "title": "备份和同步",
+        "text": "将进度导出为 JSON 文件，或通过你自己的云存储在多台设备间同步。"
+      },
+      "item5": {
+        "title": "隐私",
+        "text": "你的数据保存在你的浏览器中。唯一的服务器请求是可选的玩家标签查询，它会向 Supercell 获取你的公开数据。"
+      },
+      "item6": {
+        "title": "深色模式",
+        "text": "白天黑夜都舒适。在设置中选择浅色、深色或跟随你的设备。"
+      }
+    }
+  },
+  "faq": {
+    "label": "有疑问？",
+    "title": "常见问题",
+    "items": {
+      "item1": {
+        "question": "Clash of Clans Tracker 是什么？",
+        "answer": "它是一款 Clash of Clans 进度追踪工具。它帮你管理多个账号，并在一处追踪升级、成就、每日任务和整体进度。"
+      },
+      "item2": {
+        "question": "它如何保存我的数据？",
+        "answer": "所有内容都保存在你的浏览器中，所以你的进度是私密的，也无需账号。你可以将数据导出和导入为 JSON 文件来备份。可选的玩家标签查询会把标签发送到一个小型服务器操作，由它向 Supercell API 获取你的公开数据。"
+      },
+      "item3": {
+        "question": "我可以追踪多个村庄吗？",
+        "answer": "可以。你可以创建任意数量的村庄，每个村庄都有自己的进度，并在侧边栏中切换。"
+      },
+      "item4": {
+        "question": "它能在多台设备间同步吗？",
+        "answer": "可以，只要你想用。打开设置并连接 GitHub、Google Drive、Dropbox 或 OneDrive。你的数据保存在你自己的账号中，同步在你开启之前保持关闭。"
+      },
+      "item5": {
+        "question": "这款应用可以免费使用吗？",
+        "answer": "可以。它是免费的，没有订阅，没有广告，也无需注册。"
+      }
+    }
+  },
+  "final": {
+    "title": "今天就开始追踪你的村庄",
+    "description": "无需账号，无需注册。创建第一个村庄只需要一个名字。"
+  },
+  "updated": {
+    "justNow": "刚刚"
+  }
+}

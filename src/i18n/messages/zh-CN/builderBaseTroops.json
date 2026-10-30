@@ -1,0 +1,29 @@
+{
+  "title": "兵种",
+  "subline": "{name}，{hall}级建筑大师大本营",
+  "sublineNotSet": "{name}，未设置建筑大师大本营",
+  "strip": {
+    "title": "星空实验室",
+    "noLanes": "星空实验室不可用。",
+    "openQueue": "打开队列和时间线",
+    "unassignedHelp": "星空实验室中保存了不止一项兵种研究。请完成或取消多余的一项。",
+    "levelLabel": "星空实验室等级",
+    "level": "{level} / {max}",
+    "notSet": "未设置"
+  },
+  "card": {
+    "notUnlocked": "未解锁",
+    "markUnlocked": "标记为已解锁",
+    "maxAtHall": "此建筑大师大本营最高 {level} 级",
+    "unlockedBy": "由{barracks}级建筑大师兵营解锁",
+    "progress": "{name}进度"
+  },
+  "unavailable": {
+    "title": "此建筑大师大本营不可用",
+    "requires": "需要{barracks}级建筑大师兵营，它需要{hall}级建筑大师大本营"
+  },
+  "empty": {
+    "title": "这里还没有内容",
+    "allMax": "所有兵种都已满级。关闭“隐藏已满级”即可查看。"
+  }
+}

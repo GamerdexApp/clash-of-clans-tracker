@@ -1,0 +1,177 @@
+{
+  "goldPass": "{percent, plural, =0 {Tiada rangsangan Gold Pass} other {Gold Pass -{percent}%}}",
+  "options": {
+    "open": "Pilihan giliran",
+    "title": "Pilihan giliran",
+    "description": "Tetapan yang mengubah cara giliran dijadualkan.",
+    "done": "Siap"
+  },
+  "totals": {
+    "freeValue": "{free} daripada {total}",
+    "queued": "Naik taraf dalam giliran",
+    "time": "Masa dalam giliran",
+    "allDone": "Semua lorong siap",
+    "none": "Tiada dalam giliran",
+    "cost": "Kos dalam giliran",
+    "noCost": "Tiada kos"
+  },
+  "lane": {
+    "idle": "Bebas",
+    "queueEmpty": "Tiada apa-apa dalam giliran pada lorong ini.",
+    "startNow": "Mula sekarang",
+    "remove": "Buang",
+    "moveUp": "Alih ke atas",
+    "moveDown": "Alih ke bawah",
+    "moveToLane": "Alih ke lorong",
+    "levels": "Thp {from} ke {to}",
+    "removed": "{name} dibuang daripada giliran",
+    "started": "{name} dimulakan",
+    "undo": "Buat asal"
+  },
+  "timeline": {
+    "title": "Garis masa",
+    "zoomLabel": "Panjang garis masa",
+    "zooms": {
+      "3": "3 hari",
+      "7": "1 minggu",
+      "14": "2 minggu",
+      "30": "1 bulan",
+      "90": "3 bulan"
+    },
+    "conflictsTitle": "Konflik",
+    "noConflicts": "Tiada konflik. Setiap naik taraf bermula selepas tahap yang diperlukan.",
+    "laneLabel": "Garis masa {label}",
+    "now": "Sekarang",
+    "idle": "Bebas"
+  },
+  "add": {
+    "search": "Cari naik taraf",
+    "hiddenFromAll": "Disembunyikan daripada Semua: {names}.",
+    "chooseCategories": "Pilih kategori",
+    "chooseCategoriesHelp": "Kategori yang ditanda dipaparkan dalam Semua. Yang tidak ditanda hanya dipaparkan dalam cipnya sendiri.",
+    "add": "Tambah",
+    "addUpToHere": "Tambah sehingga sini",
+    "showMore": "Tunjuk lebih banyak tahap",
+    "showMoreUpgrades": "Tunjuk lebih banyak naik taraf",
+    "nothing": "Tiada apa-apa untuk ditambah di sini.",
+    "nothingDescription": "Setiap tahap dalam paparan ini sudah dalam giliran, sedang berjalan atau belum tersedia.",
+    "added": "{count, plural, other {{amount} tahap {name} ditambah}}",
+    "close": "Siap",
+    "unlockTitle": "Belum dibuka",
+    "unlockHelp": "Buka ini dahulu untuk memasukkan tahapnya ke dalam giliran.",
+    "markUnlocked": "Tandai sebagai dibuka",
+    "showAllLocked": "Tunjuk semua {count}",
+    "showFewerLocked": "Tunjuk lebih sedikit",
+    "allLabel": "Semua"
+  },
+  "lanes": {
+    "builder": {
+      "title": "Giliran Pembina",
+      "subline": "{name}, rancang apa yang dilakukan setiap pembina seterusnya",
+      "back": "Kembali ke Pembina",
+      "free": "Pembina bebas",
+      "laneBusy": "Pembina ini sibuk.",
+      "goblin": {
+        "label": "Pembina Goblin",
+        "help": "Menambah lorong pembina ketujuh semasa acara berjalan."
+      },
+      "gate": "Bina Pondok Pembina dahulu. Yang pertama percuma dan serta-merta.",
+      "add": {
+        "title": "Tambah naik taraf",
+        "description": "Pilih apa yang dilakukan pembina seterusnya. Tahap yang anda tambah dimasukkan ke dalam giliran mengikut turutan.",
+        "lane": "Lorong pembina",
+        "search": "Cari naik taraf"
+      },
+      "categories": {
+        "defenses": "Pertahanan",
+        "armyBuildings": "Tentera",
+        "resourceBuildings": "Sumber",
+        "traps": "Perangkap",
+        "heroes": "Wira",
+        "townHall": "Dewan Bandar",
+        "craftedDefenses": "Buatan",
+        "guardians": "Penjaga",
+        "supercharges": "Supercharge"
+      }
+    },
+    "research": {
+      "title": "Giliran Kajian",
+      "subline": "{name}, rancang apa yang dikaji Makmal seterusnya",
+      "back": "Kembali ke Kajian",
+      "free": "Makmal bebas",
+      "laneBusy": "Lorong ini sibuk.",
+      "goblin": {
+        "label": "Penyelidik Goblin",
+        "help": "Menambah lorong kajian kedua semasa acara berjalan."
+      },
+      "gate": "Tiada lorong kajian tersedia.",
+      "add": {
+        "title": "Tambah kajian",
+        "description": "Pilih apa yang dikaji Makmal seterusnya. Tahap yang anda tambah dimasukkan ke dalam giliran mengikut turutan.",
+        "lane": "Lorong kajian",
+        "search": "Cari kajian"
+      },
+      "categories": {
+        "troops": "Pasukan",
+        "spells": "Mantera",
+        "siegeMachines": "Kepungan"
+      }
+    },
+    "pet": {
+      "title": "Giliran Haiwan",
+      "subline": "{name}, rancang apa yang dinaik taraf Rumah Haiwan seterusnya",
+      "back": "Kembali ke Haiwan",
+      "free": "Rumah Haiwan",
+      "laneBusy": "Rumah Haiwan sibuk.",
+      "gate": "Haiwan dibuka pada Dewan Bandar 14.",
+      "add": {
+        "title": "Tambah naik taraf haiwan",
+        "description": "Pilih haiwan yang dinaik taraf Rumah Haiwan seterusnya. Tahap yang anda tambah dimasukkan ke dalam giliran mengikut turutan.",
+        "lane": "Rumah Haiwan",
+        "search": "Cari haiwan"
+      },
+      "categories": {
+        "pets": "Haiwan"
+      }
+    },
+    "bbBuilder": {
+      "title": "Giliran Pangkalan Pembina",
+      "subline": "{name}, Dewan Pembina {hall}, rancang apa yang dilakukan setiap pembina seterusnya",
+      "back": "Kembali ke Pangkalan Pembina",
+      "free": "Pembina bebas",
+      "laneBusy": "Pembina ini sibuk.",
+      "gate": "Pangkalan Pembina mempunyai dua pembina.",
+      "add": {
+        "title": "Tambah naik taraf",
+        "description": "Pilih apa yang dilakukan pembina Pangkalan Pembina seterusnya. Tahap yang anda tambah dimasukkan ke dalam giliran mengikut turutan.",
+        "lane": "Pembina",
+        "search": "Cari naik taraf"
+      },
+      "categories": {
+        "defenses": "Pertahanan",
+        "armyBuildings": "Tentera",
+        "resourceBuildings": "Sumber",
+        "traps": "Perangkap",
+        "heroes": "Wira",
+        "other": "Lain-lain"
+      }
+    },
+    "bbResearch": {
+      "title": "Giliran Makmal Bintang",
+      "subline": "{name}, Dewan Pembina {hall}, rancang apa yang dikaji Makmal Bintang seterusnya",
+      "back": "Kembali ke Pasukan",
+      "free": "Slot bebas",
+      "laneBusy": "Makmal Bintang sibuk.",
+      "gate": "Makmal Bintang mengkaji satu pasukan pada satu masa.",
+      "add": {
+        "title": "Tambah kajian",
+        "description": "Pilih pasukan yang dikaji Makmal Bintang seterusnya. Tahap yang anda tambah dimasukkan ke dalam giliran mengikut turutan.",
+        "lane": "Makmal Bintang",
+        "search": "Cari pasukan"
+      },
+      "categories": {
+        "troops": "Pasukan"
+      }
+    }
+  }
+}

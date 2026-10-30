@@ -1,0 +1,32 @@
+{
+  "title": "Ricerca",
+  "subline": "{name}, Municipio {townHall}",
+  "tabsLabel": "Sezioni della ricerca",
+  "tabs": {
+    "troops": "Truppe",
+    "spells": "Magie",
+    "siegeMachines": "Assedio"
+  },
+  "strip": {
+    "title": "Laboratorio",
+    "noLanes": "Nessuna corsia di ricerca è disponibile.",
+    "openQueue": "Apri coda e sequenza temporale",
+    "unassignedHelp": "Una ricerca è salvata su una corsia spenta, o su una corsia già usata da un'altra ricerca. Completala o annullala.",
+    "levelLabel": "Livello del Laboratorio",
+    "level": "{level} di {max}",
+    "notTracked": "Non impostato",
+    "boostLabel": "Potenziamento Ricerca del Pass Oro"
+  },
+  "card": {
+    "notUnlocked": "Non sbloccata",
+    "markUnlocked": "Segna come sbloccata",
+    "maxAtHall": "Lv massimo {level} a questo Municipio",
+    "progress": "Progresso di {name}"
+  },
+  "empty": {
+    "title": "Ancora niente qui",
+    "none": "A questo livello di Municipio nulla in questa sezione è disponibile.",
+    "allMax": "Tutto qui è al massimo. Disattiva Nascondi massimo per vederlo."
+  },
+  "boostValue": "{percent, plural, =0 {Nessuno} other {-{percent}% di tempo e costo}}"
+}

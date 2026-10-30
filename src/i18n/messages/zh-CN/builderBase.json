@@ -1,0 +1,63 @@
+{
+  "upgrades": {
+    "title": "升级",
+    "subline": "{name}，{hall}级建筑大师大本营",
+    "sublineNotSet": "{name}，未设置建筑大师大本营",
+    "tabsLabel": "建筑大师基地分区",
+    "tabs": {
+      "defenses": "防御",
+      "army": "军队",
+      "resources": "资源",
+      "traps": "陷阱",
+      "heroes": "英雄",
+      "other": "其他"
+    },
+    "strip": {
+      "title": "建筑工人",
+      "noBuilders": "建筑大师基地有两名建筑工人。",
+      "openQueue": "打开队列和时间线",
+      "unassignedHelp": "有些升级保存在已被其他升级占用的建筑工人上。请完成或取消它们。"
+    }
+  },
+  "locked": {
+    "title": "需要6级大本营",
+    "description": "此村庄为{townHall}级大本营。建筑大师基地在6级大本营解锁，或在你设置建筑大师大本营等级时解锁。"
+  },
+  "notSet": {
+    "action": "设置建筑大师大本营等级",
+    "troopsDescription": "建筑大师基地的兵种跟随建筑大师大本营等级。请在升级页面的其他标签页中设置。",
+    "title": "选择你的建筑大师大本营等级以开始追踪",
+    "description": "在下方的方块中设置建筑大师大本营等级。建筑大师基地的列表会随之变化。"
+  },
+  "hall": {
+    "title": "建筑大师大本营",
+    "notSet": "未设置",
+    "option": "{level}级建筑大师大本营",
+    "since": "在{level}级建筑大师大本营已 {amount} {days, plural, other {天}}",
+    "confirm": {
+      "title": "将建筑大师大本营改为 {level} 级？",
+      "raising": "提高等级会显示更多建筑和更高的上限。你保存的内容不会被删除。",
+      "lowering": "降低等级会隐藏高于该等级的建筑和上限。你保存的等级会保留。",
+      "clearing": "清除等级会隐藏所有建筑大师基地列表。你保存的等级会保留。",
+      "setDays": "将建筑大师大本营天数设为今天",
+      "cancel": "取消",
+      "confirm": "更改等级"
+    },
+    "toast": "建筑大师大本营 {from, plural, =0 {未设置} other {{from}}} 改为 {to, plural, =0 {未设置} other {{to}}}",
+    "undo": "撤销"
+  },
+  "other": {
+    "clockTower": "时钟塔",
+    "clockTowerMax": "此建筑大师大本营最高 {level} 级",
+    "clockTowerProgress": "时钟塔进度"
+  },
+  "empty": {
+    "title": "这里还没有内容",
+    "description": "此建筑大师大本营等级下没有这类建筑。",
+    "allMax": "这里的所有内容都已满级。关闭“隐藏已满级”即可查看。"
+  },
+  "heroes": {
+    "maxAtHall": "此建筑大师大本营最高 {level} 级",
+    "progress": "{name}进度"
+  }
+}

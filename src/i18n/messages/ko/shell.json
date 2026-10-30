@@ -1,0 +1,66 @@
+{
+  "skipToContent": "본문으로 건너뛰기",
+  "closeMenu": "메뉴 닫기",
+  "openMenu": "메뉴 열기",
+  "menuLabel": "사이트 메뉴",
+  "mainNav": "메인",
+  "brandTitle": "Clash of Clans",
+  "brandSubtitle": "Tracker",
+  "switcher": {
+    "sectionLabel": "마을",
+    "loading": "불러오는 중",
+    "none": "마을 없음",
+    "noneDetail": "시작하려면 마을을 만드세요",
+    "switch": "마을 전환",
+    "villages": "마을",
+    "active": "활성",
+    "all": "모든 마을",
+    "create": "새 마을",
+    "halls": "{builderHall, plural, =0 {TH {townHall}} other {TH {townHall} · BH {builderHall}}}"
+  },
+  "locked": {
+    "townHall": "타운홀 {level}",
+    "blacksmith": "대장장이",
+    "helperHut": "도우미 오두막",
+    "off": "꺼짐",
+    "srLabel": "{requirement} 필요"
+  },
+  "footer": {
+    "tagline": "Clash of Clans용 무료 진행 상황 트래커예요. 데이터는 브라우저에 남고, 동기화를 켜면 내 클라우드 저장소에도 저장돼요.",
+    "support": "지원",
+    "about": "정보",
+    "settings": "설정",
+    "discord": "Discord",
+    "github": "GitHub",
+    "game": "공식 게임 사이트",
+    "privacy": "개인정보 처리방침",
+    "terms": "이용약관",
+    "disclaimerTitle": "면책 조항",
+    "disclaimer": "이 프로젝트는 Supercell 및 Clash of Clans와 제휴, 승인, 연관 관계가 없어요.",
+    "framework": "무료 게임 진행 상황 트래커의 공용 기반인 Gamerdex 프레임워크로 만들었어요.",
+    "visitGamerdex": "Gamerdex 방문"
+  },
+  "notFound": {
+    "title": "이 페이지는 없어요",
+    "body": "링크가 오래됐거나 잘못 입력됐을 수 있어요. 마을은 안전하며 바뀐 것은 없어요.",
+    "toOverview": "개요로 이동",
+    "toVillages": "마을로 이동",
+    "toHome": "홈으로 돌아가기",
+    "didYouMean": "혹시 이 페이지인가요",
+    "noVillage": "선택한 마을이 없어서 개요에 보여 줄 내용이 없어요. 마을 페이지에서 하나를 고르세요.",
+    "jumpTo": "또는 바로 가기"
+  },
+  "error": {
+    "title": "문제가 생겼어요",
+    "body": "앱에서 오류가 발생했어요. 저장된 데이터는 바뀌지 않았어요.",
+    "digest": "다이제스트 {digest}",
+    "tryAgain": "다시 시도",
+    "download": "원본 데이터 내려받기",
+    "clear": "데이터 지우고 다시 시작",
+    "confirmTitle": "저장된 데이터를 모두 지울까요?",
+    "confirmBody": "앱이 이 브라우저에 저장한 모든 내용을 지워요. 나중에 복구할 수 있도록 지우기 전에 원본 데이터 사본을 내려받아요. 클라우드 계정에 동기화된 마을은 그대로 남아요.",
+    "cancel": "취소",
+    "confirm": "내려받고 지우기",
+    "noData": "이 브라우저에 저장된 데이터가 없어요."
+  }
+}

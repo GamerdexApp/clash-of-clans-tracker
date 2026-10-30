@@ -1,0 +1,61 @@
+{
+  "title": "Equipamento",
+  "subline": "{name}, Centro da Aldeia {townHall}, Ferreiro nível {blacksmith}",
+  "massEdit": "Também podes definir os níveis do equipamento na Edição em massa.",
+  "locked": {
+    "title": "Requer o Ferreiro",
+    "description": "Constrói o Ferreiro para acompanhar o equipamento dos heróis. Define o nível dele na página Construtor, separador Exército.",
+    "action": "Ir para Construtor"
+  },
+  "ore": {
+    "title": "Reserva de minério",
+    "description": "O minério que tens. As faltas são apenas um aviso e nunca bloqueiam uma melhoria.",
+    "names": {
+      "shiny": "Shiny Ore",
+      "glowing": "Glowing Ore",
+      "starry": "Starry Ore"
+    },
+    "short": {
+      "shiny": "Shiny",
+      "glowing": "Glowing",
+      "starry": "Starry"
+    },
+    "needed": "Necessário para as peças listadas: {amount}",
+    "enough": "Reserva suficiente",
+    "shortBy": "Faltam {amount}",
+    "deduct": "Descontar minério ao melhorar",
+    "deductHelp": "Uma melhoria retira o minério da reserva, nunca abaixo de 0. Anular devolve-o."
+  },
+  "hideMax": "Ocultar máx.",
+  "heroFilter": "Herói",
+  "allHeroes": "Todos os heróis",
+  "section": "{pieces} peças, {owned} possuídas",
+  "empty": {
+    "title": "Ainda não há nada aqui",
+    "allMax": "Todas as peças estão no máximo. Desativa Ocultar máx. para as ver."
+  },
+  "card": {
+    "heroLine": "{hero}",
+    "level": "Nível {level} de {max}",
+    "notOwned": "Não possuída",
+    "max": "Máx.",
+    "setLevel": "Nível de {name}",
+    "stepLevel": "Nível {level}",
+    "free": "Grátis",
+    "time": "Tempo: Instantâneo",
+    "requires": "Requer o Ferreiro {level}",
+    "moreLevels": "{count, plural, one {Mais {amount} nível} other {Mais {amount} níveis}}",
+    "add": "Acrescentar no nível 1",
+    "upgradeTo": "Melhorar para o nível {level}",
+    "lockedUntil": "Bloqueada até ao Ferreiro {level}",
+    "allows": "O Ferreiro {blacksmith} permite até ao nível {level}",
+    "allowsNone": "O Ferreiro {blacksmith} ainda não permite esta peça",
+    "footer": "{levels, plural, one {Falta {amount} nível} other {Faltam {amount} níveis}}",
+    "progress": "Progresso de {name}"
+  },
+  "toast": {
+    "upgraded": "{name} nív. {from} a {to}",
+    "levelSet": "{name} nív. {from} a {to}",
+    "undo": "Anular"
+  }
+}

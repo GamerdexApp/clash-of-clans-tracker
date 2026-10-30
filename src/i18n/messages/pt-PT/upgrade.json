@@ -1,0 +1,108 @@
+{
+  "massEdit": {
+    "hint": "Também podess definir os níveis na Edição em massa.",
+    "link": "Abrir Edição em massa"
+  },
+  "hideMax": "Ocultar máx.",
+  "strip": {
+    "free": "{free} de {total} livres",
+    "idle": "Livre",
+    "unassigned": "Sem atribuição",
+    "taskLevels": "Nív. {from} a {to}"
+  },
+  "start": {
+    "title": "Iniciar melhoria",
+    "levelChange": "{from, plural, =0 {Construir até nív. {to}} other {Nív. {from} a {to}}}",
+    "time": "Tempo",
+    "cost": "Custo",
+    "doneAt": "Termina em",
+    "wasBoosted": "era {base}, Passe de Ouro -{percent}%",
+    "wasCost": "{resource}, era {base}",
+    "resource": "{resource}",
+    "storedNote": "este tempo com bónus fica guardado",
+    "storedNoteUnboosted": "este tempo fica guardado",
+    "instant": "Esta construção não demora. Termina logo e não usa nenhum construtor.",
+    "lanes": {
+      "builder": {
+        "label": "Construtor",
+        "choose": "Escolhe um construtor para começar.",
+        "noneFree": "Todos os construtores estão ocupados. Cancela ou conclui primeiro uma melhoria."
+      },
+      "research": {
+        "label": "Faixa de investigação",
+        "choose": "Escolhe uma faixa para começar.",
+        "noneFree": "Todas as faixas de investigação estão ocupadas. Cancela ou conclui primeiro uma investigação."
+      },
+      "bbBuilder": {
+        "label": "Construtor",
+        "choose": "Escolhe um construtor para começar.",
+        "noneFree": "Os dois construtores estão ocupados. Cancela ou conclui primeiro uma melhoria."
+      },
+      "bbResearch": {
+        "label": "Laboratório Estelar",
+        "choose": "Escolhe o Laboratório Estelar para começar.",
+        "noneFree": "O Laboratório Estelar está ocupado. Cancela ou conclui primeiro a investigação."
+      },
+      "pet": {
+        "label": "Casa das Mascotes",
+        "choose": "Escolhe a Casa das Mascotes para começar.",
+        "noneFree": "A Casa das Mascotes está ocupada. Cancela ou conclui primeiro a melhoria da mascote."
+      }
+    },
+    "requires": {
+      "laboratory": "Requer o Laboratório {level}",
+      "pet-house": "Requer a Casa das Mascotes {level}",
+      "star-laboratory": "Requer o Laboratório Estelar {level}",
+      "noPetHouse": "Constrói primeiro uma Casa das Mascotes"
+    },
+    "free": "Grátis",
+    "cancel": "Cancelar",
+    "confirm": "Iniciar melhoria",
+    "confirmInstant": "Construir agora"
+  },
+  "finish": {
+    "title": "Concluir mais cedo",
+    "left": "restante",
+    "methodLabel": "Como terminou?",
+    "methods": {
+      "timePassed": {
+        "label": "Tempo esgotado",
+        "description": "O temporizador já terminou no jogo. Não se gasta nada."
+      },
+      "gems": {
+        "label": "Gemas",
+        "description": "Paga gemas no jogo para concluir já. O custo desce à medida que o tempo passa."
+      },
+      "book": {
+        "label": "Livro de Construção",
+        "description": "Conclui de imediato uma melhoria de edifício em curso."
+      },
+      "hammer": {
+        "label": "Martelo de Construção",
+        "description": "Melhora de imediato um edifício para o nível seguinte."
+      }
+    },
+    "stores": "O que a aldeia guarda",
+    "storesLevel": "Nível {level}. O temporizador é limpo.",
+    "storesSaved": "{time} é acrescentado ao tempo poupado.",
+    "storesSavedNone": "O tempo poupado fica como estava.",
+    "gemFigure": "Cerca de {gems} gemas (regra dos dados do jogo, o custo no jogo pode variar).",
+    "notTracked": {
+      "timePassed": "",
+      "gems": "As gemas gastas não são registadas.",
+      "book": "Os livros possuídos não são registados.",
+      "hammer": "Os martelos possuídos não são registados."
+    },
+    "keep": "Continuar a melhorar",
+    "confirm": "Concluir melhoria"
+  },
+  "cancel": {
+    "title": "Cancelar esta melhoria?",
+    "body": "Cancelar pára o temporizador. {name} fica no nív. {level} e {builder} volta a ficar livre.",
+    "refundTitle": "Reembolso no jogo: 50%",
+    "refundBody": "Cancelar no Clash of Clans devolve {refund} {resource} dos {paid} pagos. Esta aplicação não regista os teus recursos, por isso confirma os armazéns depois de cancelar.",
+    "undoNote": "Podes anular durante 10 segundos após cancelar. Depois disso, inicia a melhoria de novo.",
+    "keep": "Continuar a melhorar",
+    "confirm": "Cancelar melhoria"
+  }
+}

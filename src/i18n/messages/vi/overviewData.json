@@ -1,0 +1,40 @@
+{
+  "stats": {
+    "level": "Cấp",
+    "warStars": "Sao chiến tranh",
+    "trophies": "Cúp",
+    "bestTrophies": "Cúp cao nhất",
+    "donations": "Đã hỗ trợ",
+    "received": "Đã nhận hỗ trợ",
+    "war": "Tùy chọn chiến tranh",
+    "attacks": "Trận tấn công thắng",
+    "defenses": "Trận phòng thủ thắng",
+    "builderTrophies": "Cúp Thợ Xây",
+    "bestBuilderTrophies": "Cúp Thợ Xây cao nhất",
+    "contributions": "Đóng góp Thủ Đô",
+    "warIn": "Tham gia",
+    "warOut": "Không tham gia"
+  },
+  "cards": {
+    "structures": "Công trình",
+    "traps": "Bẫy",
+    "supercharge": "Siêu Nạp",
+    "crafted": "Phòng thủ chế tạo",
+    "lab": "Phòng thí nghiệm",
+    "heroes": "Anh hùng",
+    "equipment": "Trang bị",
+    "pets": "Thú Cưng",
+    "walls": "Tường",
+    "districts": "Quận",
+    "troops": "Quân",
+    "spells": "Phép"
+  },
+  "subs": {
+    "structures": "Phòng thủ, quân đội, tài nguyên",
+    "lab": "Quân, phép, công thành",
+    "builderLab": "Quân Thợ Xây",
+    "walls": "{total} tường, cấp tối đa {max}",
+    "districts": "{active} trên {total} đang hoạt động",
+    "available": "{count} khả dụng"
+  }
+}

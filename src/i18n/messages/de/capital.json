@@ -1,0 +1,139 @@
+{
+  "districts": {
+    "title": "Bezirke",
+    "subline": "{hall, plural, =0 {{name}, Hauptstadthalle nicht gesetzt} other {{name}, Hauptstadthalle {hall}}}",
+    "description": "Bezirke und Zonen deiner Clanhauptstadt."
+  },
+  "troops": {
+    "title": "Truppen und Zauber",
+    "subline": "{name}, Truppen und Zauber der Clanhauptstadt",
+    "tiles": {
+      "troops": "Truppen",
+      "spells": "Zauber",
+      "caption": "{current} von {max} Stufen"
+    },
+    "sections": {
+      "troops": "Truppen",
+      "spells": "Zauber"
+    },
+    "card": {
+      "level": "Stufe von {name}",
+      "raise": "{name} erhöhen",
+      "lower": "{name} senken",
+      "maxAt": "Max. Stufe jetzt {level}",
+      "from": "Aus {zone}",
+      "progress": "Fortschritt von {name}"
+    },
+    "locked": {
+      "title": "Noch nicht verfügbar",
+      "districtHall": "Braucht Bezirkshalle {level} in {zone}",
+      "capitalHall": "Braucht Hauptstadthalle {level}, um {zone} zu öffnen",
+      "kept": "Gespeicherte Stufe {level} bleibt erhalten"
+    },
+    "empty": {
+      "title": "Alles ist auf Max",
+      "description": "Schalte „Max ausblenden“ aus, um alle Truppen und Zauber zu sehen."
+    }
+  },
+  "tracking": {
+    "label": "Clanhauptstadt verfolgen",
+    "onHelp": "Beim Ausschalten bleiben alle Daten erhalten.",
+    "turnOnTitle": "Die Verfolgung der Clanhauptstadt ist an",
+    "turnedOn": "Die Verfolgung der Clanhauptstadt ist an.",
+    "undo": "Rückgängig",
+    "offDialog": {
+      "title": "Verfolgung der Clanhauptstadt ausschalten?",
+      "body": "Die Seiten der Clanhauptstadt, die Karte in der Übersicht und der Tab der Massenbearbeitung werden ausgeblendet. Nichts wird gelöscht.",
+      "confirm": "Ausschalten",
+      "cancel": "Abbrechen"
+    }
+  },
+  "off": {
+    "title": "Die Verfolgung der Clanhauptstadt ist aus",
+    "description": "Deine Bezirke, Truppen und Zauber bleiben erhalten. Schalte die Verfolgung ein, um sie wieder zu sehen.",
+    "turnOn": "Verfolgung einschalten",
+    "keptTitle": "Was erhalten bleibt",
+    "kept": "Alle Daten der Clanhauptstadt bleiben in diesem Dorf."
+  },
+  "locked": {
+    "title": "Die Clanhauptstadt ist gesperrt",
+    "description": "Die Clanhauptstadt öffnet sich bei Rathaus 3. Dieses Dorf hat Rathaus {townHall}. Bereits Gespeichertes erscheint bei Rathaus 3 wieder.",
+    "action": "Rathaus unter Dörfer ändern"
+  },
+  "notSet": {
+    "title": "Die Clanhauptstadt ist nicht eingerichtet",
+    "description": "Setze die Stufe deiner Hauptstadthalle, um Bezirke, Truppen und Zauber zu verfolgen.",
+    "action": "Stufe der Hauptstadthalle setzen"
+  },
+  "hall": {
+    "label": "Hauptstadthalle",
+    "none": "Keine",
+    "level": "Stufe {level}",
+    "nextCost": "Hauptstadthalle {level} kostet {cost} Hauptstadtgold{hasOpens, select, true { und öffnet {opens}} other {}}. Das Erhöhen einer Halle setzt nie Stufen zurück.",
+    "atTop": "Die Hauptstadthalle hat ihre höchste Stufe.",
+    "raised": "Hauptstadthalle von {from} auf {to} erhöht. Keine Stufen wurden zurückgesetzt.",
+    "changed": "Hauptstadthalle von {from} auf {to} geändert.",
+    "districtRaised": "Bezirkshalle von {zone} von {from} auf {to} erhöht.",
+    "districtChanged": "Bezirkshalle von {zone} von {from} auf {to} geändert."
+  },
+  "contributions": {
+    "label": "Beiträge",
+    "unit": "Hauptstadtgold",
+    "help": "Gesamtmenge, die du deinem Clan gegeben hast. Der Import per Spieler-Tag füllt sie aus, du kannst sie auch eintippen."
+  },
+  "tiles": {
+    "progress": "Hauptstadtfortschritt",
+    "progressCaption": "{current} von {max} Stufen",
+    "zones": "Offene Zonen",
+    "zonesCaption": "{open} von {total}"
+  },
+  "zones": {
+    "title": "Zonen",
+    "help": "Wähle eine Zone, um sie unten zu bearbeiten",
+    "hall": "{level, plural, =0 {Keine Bezirkshalle} other {Bezirkshalle {level}}}",
+    "peakHall": "Hauptstadthalle {level}",
+    "locked": "Gesperrt, braucht Hauptstadthalle {hall}",
+    "levels": "{current} von {max}"
+  },
+  "panel": {
+    "districtHall": "Bezirkshalle",
+    "requires": "Braucht Hauptstadthalle {hall}",
+    "noHall": "Keine Bezirkshalle",
+    "empty": "Auf dieser Hallenstufe gibt es hier nichts zu bauen.",
+    "groupsLabel": "Gebäudegruppen",
+    "groups": {
+      "defenses": "Verteidigungen",
+      "traps": "Fallen",
+      "army": "Armee",
+      "walls": "Mauern"
+    },
+    "max": "Max",
+    "clear": "Leeren",
+    "maxAll": "Alle auf Max",
+    "resetAll": "Alle zurücksetzen",
+    "instances": "{amount} {count, plural, one {Gebäude} other {Gebäude}}",
+    "maxLevel": "Max. Stufe {level}",
+    "instance": "{name} {index}",
+    "raise": "{name} erhöhen",
+    "lower": "{name} senken",
+    "wallLevel": "Stufe {level}",
+    "wallsLeft": "Noch {left} von {total} Mauern zu platzieren",
+    "wallsNote": "Anzahlen können die restlichen Mauern nicht übersteigen.",
+    "wallsNone": "Keine Mauern auf dieser Hallenstufe.",
+    "wallCount": "Mauern auf Stufe {level}",
+    "wallRaise": "Eine Mauer mehr auf Stufe {level}",
+    "wallLower": "Eine Mauer weniger auf Stufe {level}",
+    "groupMaxed": "{zone}: {group} auf Max gesetzt",
+    "groupCleared": "{zone}: {group} geleert"
+  },
+  "confirm": {
+    "title": "Diese Halle senken?",
+    "description": "Diese Stufen passen nicht mehr und werden zurückgesetzt. Alles andere bleibt erhalten.",
+    "confirm": "Halle senken",
+    "cancel": "Halle behalten",
+    "more": "und {count} weitere"
+  },
+  "toast": {
+    "undo": "Rückgängig"
+  }
+}

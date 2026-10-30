@@ -1,0 +1,177 @@
+{
+  "goldPass": "{percent, plural, =0 {ゴールドパスのブーストなし} other {ゴールドパス -{percent}%}}",
+  "options": {
+    "open": "キューのオプション",
+    "title": "キューのオプション",
+    "description": "キューのスケジュール方法を変える設定です。",
+    "done": "完了"
+  },
+  "totals": {
+    "freeValue": "{free} / {total}",
+    "queued": "キュー内のアップグレード",
+    "time": "キュー内の時間",
+    "allDone": "すべてのレーンが完了",
+    "none": "キューは空です",
+    "cost": "キュー内のコスト",
+    "noCost": "コストなし"
+  },
+  "lane": {
+    "idle": "空き",
+    "queueEmpty": "このレーンのキューは空です。",
+    "startNow": "今すぐ開始",
+    "remove": "削除",
+    "moveUp": "上へ移動",
+    "moveDown": "下へ移動",
+    "moveToLane": "レーンへ移動",
+    "levels": "Lv {from}からLv {to}",
+    "removed": "{name}をキューから削除しました",
+    "started": "{name}を開始しました",
+    "undo": "元に戻す"
+  },
+  "timeline": {
+    "title": "タイムライン",
+    "zoomLabel": "タイムラインの長さ",
+    "zooms": {
+      "3": "3日",
+      "7": "1週間",
+      "14": "2週間",
+      "30": "1か月",
+      "90": "3か月"
+    },
+    "conflictsTitle": "競合",
+    "noConflicts": "競合はありません。すべてのアップグレードは、必要なレベルの後に始まります。",
+    "laneLabel": "{label}のタイムライン",
+    "now": "今",
+    "idle": "空き"
+  },
+  "add": {
+    "search": "アップグレードを検索",
+    "hiddenFromAll": "「すべて」から除外: {names}。",
+    "chooseCategories": "カテゴリを選択",
+    "chooseCategoriesHelp": "チェックしたカテゴリは「すべて」に表示されます。チェックしていないカテゴリは、それぞれのチップにだけ表示されます。",
+    "add": "追加",
+    "addUpToHere": "ここまで追加",
+    "showMore": "さらにレベルを表示",
+    "showMoreUpgrades": "さらにアップグレードを表示",
+    "nothing": "ここに追加できるものはありません。",
+    "nothingDescription": "この表示のすべてのレベルは、キュー済み、実行中、またはまだ利用できません。",
+    "added": "{count, plural, other {{name}を{amount}レベル分追加しました}}",
+    "close": "完了",
+    "unlockTitle": "未開放",
+    "unlockHelp": "レベルをキューに入れるには、先にこれらを開放してください。",
+    "markUnlocked": "開放済みにする",
+    "showAllLocked": "{count}件すべて表示",
+    "showFewerLocked": "表示を減らす",
+    "allLabel": "すべて"
+  },
+  "lanes": {
+    "builder": {
+      "title": "ビルダーのキュー",
+      "subline": "{name}、各ビルダーの次の作業を計画",
+      "back": "ビルダーに戻る",
+      "free": "空いているビルダー",
+      "laneBusy": "このビルダーは作業中です。",
+      "goblin": {
+        "label": "ゴブリンビルダー",
+        "help": "イベント中は7人目のビルダーレーンを追加します。"
+      },
+      "gate": "先にBuilder's Hutを建設してください。最初の1つは無料で即完了します。",
+      "add": {
+        "title": "アップグレードを追加",
+        "description": "ビルダーの次の作業を選びます。追加したレベルは順番にキューに入ります。",
+        "lane": "ビルダーレーン",
+        "search": "アップグレードを検索"
+      },
+      "categories": {
+        "defenses": "防衛設備",
+        "armyBuildings": "軍隊",
+        "resourceBuildings": "資源",
+        "traps": "罠",
+        "heroes": "ヒーロー",
+        "townHall": "タウンホール",
+        "craftedDefenses": "クラフト",
+        "guardians": "ガーディアン",
+        "supercharges": "スーパーチャージ"
+      }
+    },
+    "research": {
+      "title": "研究のキュー",
+      "subline": "{name}、ラボラトリーの次の研究を計画",
+      "back": "研究に戻る",
+      "free": "空いているラボ",
+      "laneBusy": "このレーンは作業中です。",
+      "goblin": {
+        "label": "ゴブリン研究者",
+        "help": "イベント中は2つ目の研究レーンを追加します。"
+      },
+      "gate": "利用できる研究レーンがありません。",
+      "add": {
+        "title": "研究を追加",
+        "description": "ラボラトリーの次の研究を選びます。追加したレベルは順番にキューに入ります。",
+        "lane": "研究レーン",
+        "search": "研究を検索"
+      },
+      "categories": {
+        "troops": "兵士",
+        "spells": "スペル",
+        "siegeMachines": "攻城兵器"
+      }
+    },
+    "pet": {
+      "title": "ペットのキュー",
+      "subline": "{name}、ペットハウスの次のアップグレードを計画",
+      "back": "ペットに戻る",
+      "free": "ペットハウス",
+      "laneBusy": "ペットハウスは作業中です。",
+      "gate": "ペットはタウンホール14で開放されます。",
+      "add": {
+        "title": "ペットのアップグレードを追加",
+        "description": "ペットハウスが次にアップグレードするペットを選びます。追加したレベルは順番にキューに入ります。",
+        "lane": "ペットハウス",
+        "search": "ペットを検索"
+      },
+      "categories": {
+        "pets": "ペット"
+      }
+    },
+    "bbBuilder": {
+      "title": "ビルダーベースのキュー",
+      "subline": "{name}、ビルダーホール {hall}、各ビルダーの次の作業を計画",
+      "back": "ビルダーベースに戻る",
+      "free": "空いているビルダー",
+      "laneBusy": "このビルダーは作業中です。",
+      "gate": "ビルダーベースにはビルダーが2人います。",
+      "add": {
+        "title": "アップグレードを追加",
+        "description": "ビルダーベースのビルダーの次の作業を選びます。追加したレベルは順番にキューに入ります。",
+        "lane": "ビルダー",
+        "search": "アップグレードを検索"
+      },
+      "categories": {
+        "defenses": "防衛設備",
+        "armyBuildings": "軍隊",
+        "resourceBuildings": "資源",
+        "traps": "罠",
+        "heroes": "ヒーロー",
+        "other": "その他"
+      }
+    },
+    "bbResearch": {
+      "title": "スターラボラトリーのキュー",
+      "subline": "{name}、ビルダーホール {hall}、スターラボラトリーの次の研究を計画",
+      "back": "兵士に戻る",
+      "free": "空きスロット",
+      "laneBusy": "スターラボラトリーは作業中です。",
+      "gate": "スターラボラトリーは一度に1つの兵士を研究します。",
+      "add": {
+        "title": "研究を追加",
+        "description": "スターラボラトリーが次に研究する兵士を選びます。追加したレベルは順番にキューに入ります。",
+        "lane": "スターラボラトリー",
+        "search": "兵士を検索"
+      },
+      "categories": {
+        "troops": "兵士"
+      }
+    }
+  }
+}

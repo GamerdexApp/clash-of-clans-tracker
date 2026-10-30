@@ -1,0 +1,119 @@
+{
+  "title": "Desa Saya",
+  "subline": "{amount} {count, plural, other {desa}}",
+  "sublineActive": "{amount} {count, plural, other {desa}}, {name} aktif",
+  "newVillage": "Desa baru",
+  "empty": {
+    "title": "Belum ada desa",
+    "deletedTitle": "Tidak ada desa tersisa",
+    "description": "Buat desa untuk mulai melacak peningkatan, riset, dan pencapaian.",
+    "restore": "Pulihkan dari cadangan"
+  },
+  "filters": {
+    "search": "Cari desa",
+    "sortLabel": "Urutkan menurut",
+    "sort": {
+      "lastModified": "Terakhir diubah",
+      "createdAt": "Tanggal dibuat",
+      "name": "Nama"
+    },
+    "showing": "Menampilkan {shown} dari {total}",
+    "clear": "Hapus pencarian"
+  },
+  "noMatch": {
+    "title": "Tidak ada desa yang cocok dengan \"{query}\"",
+    "description": "Periksa ejaan atau hapus pencarian."
+  },
+  "card": {
+    "active": "Aktif",
+    "openOverview": "Buka ikhtisar",
+    "setActive": "Jadikan aktif",
+    "edit": "Ubah",
+    "delete": "Hapus",
+    "halls": "{builderHall, plural, =0 {Balai Kota {townHall}} other {Balai Kota {townHall}, Balai Pembangun {builderHall}}}",
+    "daysAtTownHall": "Hari di Balai Kota",
+    "daysAtBuilderHall": "Hari di Balai Pembangun",
+    "notSet": "Belum diatur",
+    "clanCapital": "Ibu Kota Klan",
+    "clanCapitalStates": {
+      "on": "Aktif",
+      "off": "Mati",
+      "locked": "Terkunci"
+    },
+    "created": "Dibuat {date}",
+    "lastModified": "Diubah {date}",
+    "switched": "{name} sekarang aktif"
+  },
+  "fields": {
+    "name": "Nama desa",
+    "namePlaceholder": "Akun utamaku",
+    "nameRequired": "Masukkan nama untuk desa.",
+    "description": "Deskripsi",
+    "descriptionPlaceholder": "Tambahkan deskripsi untuk desa ini",
+    "townHallLevel": "Level Balai Kota",
+    "builderHallLevel": "Level Balai Pembangun",
+    "builderHallHelp": "Markas Pembangun terbuka di Balai Kota 6.",
+    "townHallUpgraded": "Balai Kota ditingkatkan",
+    "builderHallUpgraded": "Balai Pembangun ditingkatkan",
+    "level": "Level {level}",
+    "trackCapital": "Lacak Ibu Kota Klan",
+    "trackCapitalHelp": "Mematikannya menyembunyikan halaman Ibu Kota Klan dan tetap menyimpan datamu.",
+    "trackCapitalLocked": "Butuh Balai Kota 3",
+    "cancel": "Batal"
+  },
+  "create": {
+    "title": "Desa baru",
+    "submit": "Buat desa",
+    "modeLabel": "Cara memulai",
+    "modes": {
+      "fresh": "Mulai baru",
+      "import": "Impor"
+    },
+    "modeNotes": {
+      "fresh": "Mulai dengan data kosong.",
+      "import": "Baca player tag, dengan file bangunan opsional."
+    },
+    "makeActive": "Jadikan desa aktif",
+    "done": "{name} dibuat",
+    "importNeedsLookup": "Ambil player tag dulu."
+  },
+  "lookup": {
+    "step1": "Langkah 1: Ambil data pemain",
+    "step2": "Langkah 2: Data bangunan (opsional)",
+    "tagLabel": "Player tag",
+    "tagPlaceholder": "#PPV2YV9R",
+    "fetch": "Ambil",
+    "refresh": "Segarkan",
+    "wait": "Tunggu {seconds} d",
+    "serverNote": "Pencarian mengirim tag ke server Gamerdex, yang meminta API Supercell. Tidak ada hal lain yang keluar dari browsermu.",
+    "unavailable": "Pencarian pemain tidak tersedia saat ini. Coba lagi nanti.",
+    "found": "{name}, Balai Kota {townHall}{builderHall, plural, =0 {} other {, Balai Pembangun {builderHall}}}. {achievements} pencapaian dan {troops} pasukan terbaca.",
+    "buildingHelp": "API pemain tidak punya level bangunan. Pilih cadangan desa dari Pengaturan atau file exportData.json dari game.",
+    "buildingLabel": "File data bangunan",
+    "buildingLoaded": "Data bangunan dimuat dari {name}.",
+    "buildingInvalid": "File ini bukan data bangunan. Pakai cadangan desa dari Pengaturan atau exportData.json dari game.",
+    "buildingNotJson": "File ini bukan JSON yang valid."
+  },
+  "edit": {
+    "title": "Ubah desa",
+    "submit": "Simpan",
+    "refreshTitle": "Segarkan dari player tag",
+    "updatedTitle": "Diperbarui",
+    "untouchedTitle": "Tidak pernah disentuh",
+    "dateSet": "Tanggal peningkatan diatur ke hari ini. Kamu bisa mengubahnya.",
+    "done": "{name} disimpan"
+  },
+  "delete": {
+    "title": "Hapus desa",
+    "description": "Ini menghapus desa dari browser ini.",
+    "question": "Hapus {name}? Peningkatan, riset, pencapaian, dan hariannya ikut dihapus.",
+    "activeNext": "{next} menjadi desa aktif.",
+    "activeLast": "Tidak akan ada desa aktif.",
+    "exportFirst": "Ekspor cadangan dulu",
+    "cancel": "Batal",
+    "confirm": "Hapus desa",
+    "done": "{name} dihapus",
+    "doneMessage": "Kamu bisa mengurungkannya selama sepuluh detik.",
+    "undo": "Urungkan"
+  }
+}

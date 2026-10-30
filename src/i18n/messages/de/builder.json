@@ -1,0 +1,51 @@
+{
+  "title": "Bauarbeiter",
+  "subline": "{name}, Rathaus {townHall}",
+  "tabsLabel": "Bauarbeiter-Bereiche",
+  "tabs": {
+    "defenses": "Verteidigung",
+    "army": "Armee",
+    "resources": "Ressourcen",
+    "crafted": "Gefertigte Verteidigungen",
+    "traps": "Fallen",
+    "heroes": "Helden",
+    "guardians": "Wächter",
+    "townHall": "Rathaus"
+  },
+  "builders": {
+    "title": "Bauarbeiter",
+    "boostLabel": "Goldpass-Bauarbeiter-Boost",
+    "boostValue": "{percent, plural, =0 {Keiner} other {-{percent}% Zeit und Kosten}}",
+    "openQueue": "Warteschlange und Zeitleiste öffnen",
+    "unassignedHelp": "Einige Upgrades sind bei einem Bauarbeiter gespeichert, der nicht gebaut ist oder den schon ein anderes Upgrade nutzt. Beende oder brich sie ab.",
+    "noBuilders": "Dieses Dorf hat noch keine Bauarbeiter. Baue die erste Bauarbeiterhütte im Tab Verteidigung. Sie ist kostenlos und sofort fertig."
+  },
+  "gate": {
+    "requires": "Braucht Rathaus {townHall}",
+    "where": "Dieses Dorf hat Rathaus {townHall}. Erreiche Rathaus {required}, um diesen Tab freizuschalten.",
+    "fix": "Zum Tab Rathaus"
+  },
+  "empty": {
+    "title": "Hier ist noch nichts",
+    "description": "Auf dieser Rathausstufe gibt es keine Gebäude dieser Art.",
+    "allMax": "Jedes Gebäude hier ist auf Max. Schalte „Max ausblenden“ aus, um sie zu sehen."
+  },
+  "card": {
+    "maxAtHall": "Max. St. {level} bei diesem Rathaus",
+    "maxAtBuilderHall": "Max. St. {level} bei dieser Bauarbeiterhalle",
+    "progress": "Fortschritt von {name}",
+    "notBuilt": "Nicht gebaut",
+    "level": "St. {level} von {max}",
+    "build": "Bauen",
+    "upgradeTo": "Upgrade auf St. {level}",
+    "superchargeTo": "Superladung auf Stufe {tier}",
+    "maxed": "Max",
+    "running": "Upgrade auf St. {to}",
+    "finish": "Beenden",
+    "cancel": "Abbrechen",
+    "showAll": "Alle {count} zeigen",
+    "showFewer": "Weniger zeigen",
+    "instance": "#{number}",
+    "supercharge": "Superladung {tier} von {tiers}"
+  }
+}

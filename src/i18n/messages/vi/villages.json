@@ -1,0 +1,119 @@
+{
+  "title": "Làng của tôi",
+  "subline": "{amount} {count, plural, other {làng}}",
+  "sublineActive": "{amount} {count, plural, other {làng}}, {name} đang dùng",
+  "newVillage": "Làng mới",
+  "empty": {
+    "title": "Chưa có làng nào",
+    "deletedTitle": "Không còn làng nào",
+    "description": "Tạo một làng để bắt đầu theo dõi nâng cấp, nghiên cứu và thành tựu.",
+    "restore": "Khôi phục từ bản sao lưu"
+  },
+  "filters": {
+    "search": "Tìm làng",
+    "sortLabel": "Sắp xếp theo",
+    "sort": {
+      "lastModified": "Sửa gần nhất",
+      "createdAt": "Ngày tạo",
+      "name": "Tên"
+    },
+    "showing": "Hiện {shown} trên {total}",
+    "clear": "Xóa tìm kiếm"
+  },
+  "noMatch": {
+    "title": "Không có làng nào khớp \"{query}\"",
+    "description": "Kiểm tra chính tả hoặc xóa tìm kiếm."
+  },
+  "card": {
+    "active": "Đang dùng",
+    "openOverview": "Mở tổng quan",
+    "setActive": "Đặt làm đang dùng",
+    "edit": "Sửa",
+    "delete": "Xóa",
+    "halls": "{builderHall, plural, =0 {Nhà Chính {townHall}} other {Nhà Chính {townHall}, Nhà Thợ Xây {builderHall}}}",
+    "daysAtTownHall": "Số ngày ở Nhà Chính",
+    "daysAtBuilderHall": "Số ngày ở Nhà Thợ Xây",
+    "notSet": "Chưa đặt",
+    "clanCapital": "Thủ Đô Bang Hội",
+    "clanCapitalStates": {
+      "on": "Bật",
+      "off": "Tắt",
+      "locked": "Đã khóa"
+    },
+    "created": "Tạo {date}",
+    "lastModified": "Sửa {date}",
+    "switched": "{name} đang được dùng"
+  },
+  "fields": {
+    "name": "Tên làng",
+    "namePlaceholder": "Tài khoản chính của tôi",
+    "nameRequired": "Nhập tên cho làng.",
+    "description": "Mô tả",
+    "descriptionPlaceholder": "Thêm mô tả cho làng này",
+    "townHallLevel": "Cấp Nhà Chính",
+    "builderHallLevel": "Cấp Nhà Thợ Xây",
+    "builderHallHelp": "Căn Cứ Thợ Xây mở ở Nhà Chính 6.",
+    "townHallUpgraded": "Ngày nâng Nhà Chính",
+    "builderHallUpgraded": "Ngày nâng Nhà Thợ Xây",
+    "level": "Cấp {level}",
+    "trackCapital": "Theo dõi Thủ Đô Bang Hội",
+    "trackCapitalHelp": "Tắt đi sẽ ẩn các trang Thủ Đô Bang Hội và giữ dữ liệu của bạn.",
+    "trackCapitalLocked": "Cần Nhà Chính 3",
+    "cancel": "Hủy"
+  },
+  "create": {
+    "title": "Làng mới",
+    "submit": "Tạo làng",
+    "modeLabel": "Cách bắt đầu",
+    "modes": {
+      "fresh": "Bắt đầu mới",
+      "import": "Nhập"
+    },
+    "modeNotes": {
+      "fresh": "Bắt đầu với dữ liệu trống.",
+      "import": "Đọc một player tag, kèm tệp công trình tùy chọn."
+    },
+    "makeActive": "Đặt làng này làm đang dùng",
+    "done": "Đã tạo {name}",
+    "importNeedsLookup": "Hãy lấy player tag trước."
+  },
+  "lookup": {
+    "step1": "Bước 1: Lấy dữ liệu người chơi",
+    "step2": "Bước 2: Dữ liệu công trình (tùy chọn)",
+    "tagLabel": "Player tag",
+    "tagPlaceholder": "#PPV2YV9R",
+    "fetch": "Lấy",
+    "refresh": "Làm mới",
+    "wait": "Chờ {seconds} giây",
+    "serverNote": "Việc tra cứu gửi tag đến máy chủ Gamerdex, nơi hỏi Supercell API. Không có gì khác rời khỏi trình duyệt của bạn.",
+    "unavailable": "Hiện không thể tra cứu người chơi. Thử lại sau.",
+    "found": "{name}, Nhà Chính {townHall}{builderHall, plural, =0 {} other {, Nhà Thợ Xây {builderHall}}}. Đã đọc {achievements} thành tựu và {troops} quân.",
+    "buildingHelp": "Player API không có cấp công trình. Hãy chọn bản sao lưu làng từ Cài đặt hoặc tệp exportData.json từ game.",
+    "buildingLabel": "Tệp dữ liệu công trình",
+    "buildingLoaded": "Đã tải dữ liệu công trình từ {name}.",
+    "buildingInvalid": "Tệp này không phải dữ liệu công trình. Hãy dùng bản sao lưu làng từ Cài đặt hoặc exportData.json từ game.",
+    "buildingNotJson": "Tệp này không phải JSON hợp lệ."
+  },
+  "edit": {
+    "title": "Sửa làng",
+    "submit": "Lưu",
+    "refreshTitle": "Làm mới từ player tag",
+    "updatedTitle": "Đã cập nhật",
+    "untouchedTitle": "Chưa từng đụng đến",
+    "dateSet": "Ngày nâng cấp được đặt là hôm nay. Bạn có thể đổi.",
+    "done": "Đã lưu {name}"
+  },
+  "delete": {
+    "title": "Xóa làng",
+    "description": "Thao tác này xóa làng khỏi trình duyệt này.",
+    "question": "Xóa {name}? Nâng cấp, nghiên cứu, thành tựu và mục hằng ngày của nó sẽ bị xóa.",
+    "activeNext": "{next} sẽ thành làng đang dùng.",
+    "activeLast": "Sẽ không còn làng nào đang dùng.",
+    "exportFirst": "Hãy xuất bản sao lưu trước",
+    "cancel": "Hủy",
+    "confirm": "Xóa làng",
+    "done": "Đã xóa {name}",
+    "doneMessage": "Bạn có thể hoàn tác trong mười giây.",
+    "undo": "Hoàn tác"
+  }
+}

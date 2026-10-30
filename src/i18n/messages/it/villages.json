@@ -1,0 +1,119 @@
+{
+  "title": "I miei villaggi",
+  "subline": "{amount} {count, plural, one {villaggio} other {villaggi}}",
+  "sublineActive": "{amount} {count, plural, one {villaggio} other {villaggi}}, {name} è attivo",
+  "newVillage": "Nuovo villaggio",
+  "empty": {
+    "title": "Ancora nessun villaggio",
+    "deletedTitle": "Nessun villaggio rimasto",
+    "description": "Crea un villaggio per iniziare a seguire potenziamenti, ricerca e imprese.",
+    "restore": "Ripristina da un backup"
+  },
+  "filters": {
+    "search": "Cerca villaggi",
+    "sortLabel": "Ordina per",
+    "sort": {
+      "lastModified": "Ultima modifica",
+      "createdAt": "Data di creazione",
+      "name": "Nome"
+    },
+    "showing": "Mostrati {shown} di {total}",
+    "clear": "Cancella ricerca"
+  },
+  "noMatch": {
+    "title": "Nessun villaggio corrisponde a \"{query}\"",
+    "description": "Controlla l'ortografia o cancella la ricerca."
+  },
+  "card": {
+    "active": "Attivo",
+    "openOverview": "Apri panoramica",
+    "setActive": "Imposta come attivo",
+    "edit": "Modifica",
+    "delete": "Elimina",
+    "halls": "{builderHall, plural, =0 {Municipio {townHall}} other {Municipio {townHall}, Sala del Costruttore {builderHall}}}",
+    "daysAtTownHall": "Giorni al Municipio",
+    "daysAtBuilderHall": "Giorni alla Sala del Costruttore",
+    "notSet": "Non impostato",
+    "clanCapital": "Capitale del Clan",
+    "clanCapitalStates": {
+      "on": "Attiva",
+      "off": "Spenta",
+      "locked": "Bloccata"
+    },
+    "created": "Creato il {date}",
+    "lastModified": "Modificato il {date}",
+    "switched": "{name} è ora attivo"
+  },
+  "fields": {
+    "name": "Nome del villaggio",
+    "namePlaceholder": "Il mio account principale",
+    "nameRequired": "Inserisci un nome per il villaggio.",
+    "description": "Descrizione",
+    "descriptionPlaceholder": "Aggiungi una descrizione per questo villaggio",
+    "townHallLevel": "Livello Municipio",
+    "builderHallLevel": "Livello Sala del Costruttore",
+    "builderHallHelp": "La Base del Costruttore si sblocca al Municipio 6.",
+    "townHallUpgraded": "Municipio potenziato",
+    "builderHallUpgraded": "Sala del Costruttore potenziata",
+    "level": "Livello {level}",
+    "trackCapital": "Segui la Capitale del Clan",
+    "trackCapitalHelp": "Disattivarlo nasconde le pagine della Capitale del Clan e mantiene i tuoi dati.",
+    "trackCapitalLocked": "Richiede il Municipio 3",
+    "cancel": "Annulla"
+  },
+  "create": {
+    "title": "Nuovo villaggio",
+    "submit": "Crea villaggio",
+    "modeLabel": "Come iniziare",
+    "modes": {
+      "fresh": "Da zero",
+      "import": "Importa"
+    },
+    "modeNotes": {
+      "fresh": "Inizia con dati vuoti.",
+      "import": "Leggi un tag giocatore, con un file degli edifici facoltativo."
+    },
+    "makeActive": "Imposta come villaggio attivo",
+    "done": "{name} creato",
+    "importNeedsLookup": "Recupera prima un tag giocatore."
+  },
+  "lookup": {
+    "step1": "Passo 1: recupera i dati del giocatore",
+    "step2": "Passo 2: dati degli edifici (facoltativo)",
+    "tagLabel": "Tag giocatore",
+    "tagPlaceholder": "#PPV2YV9R",
+    "fetch": "Recupera",
+    "refresh": "Aggiorna",
+    "wait": "Attendi {seconds} s",
+    "serverNote": "La ricerca invia il tag al server di Gamerdex, che interroga l'API di Supercell. Nient'altro esce dal tuo browser.",
+    "unavailable": "La ricerca del giocatore non è disponibile al momento. Riprova più tardi.",
+    "found": "{name}, Municipio {townHall}{builderHall, plural, =0 {} other {, Sala del Costruttore {builderHall}}}. Lette {achievements} imprese e {troops} truppe.",
+    "buildingHelp": "L'API del giocatore non contiene i livelli degli edifici. Scegli un backup del villaggio dalle Impostazioni o il file exportData.json del gioco.",
+    "buildingLabel": "File dati degli edifici",
+    "buildingLoaded": "Dati degli edifici caricati da {name}.",
+    "buildingInvalid": "Questo file non contiene dati degli edifici. Usa un backup del villaggio dalle Impostazioni o exportData.json dal gioco.",
+    "buildingNotJson": "Questo file non è un JSON valido."
+  },
+  "edit": {
+    "title": "Modifica villaggio",
+    "submit": "Salva",
+    "refreshTitle": "Aggiorna dal tag giocatore",
+    "updatedTitle": "Aggiornato",
+    "untouchedTitle": "Mai toccato",
+    "dateSet": "La data del potenziamento è impostata a oggi. Puoi cambiarla.",
+    "done": "{name} salvato"
+  },
+  "delete": {
+    "title": "Elimina villaggio",
+    "description": "Questo rimuove il villaggio da questo browser.",
+    "question": "Eliminare {name}? Vengono rimossi i suoi potenziamenti, la ricerca, le imprese e i giornalieri.",
+    "activeNext": "{next} diventa il villaggio attivo.",
+    "activeLast": "Nessun villaggio sarà attivo.",
+    "exportFirst": "Esporta prima un backup",
+    "cancel": "Annulla",
+    "confirm": "Elimina villaggio",
+    "done": "{name} eliminato",
+    "doneMessage": "Puoi annullare per dieci secondi.",
+    "undo": "Annulla"
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "skipToContent": "Saltar al contenido",
+  "closeMenu": "Cerrar menú",
+  "openMenu": "Abrir menú",
+  "menuLabel": "Menú del sitio",
+  "mainNav": "Principal",
+  "brandTitle": "Clash of Clans",
+  "brandSubtitle": "Tracker",
+  "switcher": {
+    "sectionLabel": "Aldea",
+    "loading": "Cargando",
+    "none": "Sin aldea",
+    "noneDetail": "Crea una para empezar",
+    "switch": "Cambiar de aldea",
+    "villages": "Aldeas",
+    "active": "Activa",
+    "all": "Todas las aldeas",
+    "create": "Nueva aldea",
+    "halls": "{builderHall, plural, =0 {AY {townHall}} other {AY {townHall} · TC {builderHall}}}"
+  },
+  "locked": {
+    "townHall": "Ayuntamiento {level}",
+    "blacksmith": "Herrería",
+    "helperHut": "Cabaña de Ayudantes",
+    "off": "Desactivado",
+    "srLabel": "Requiere {requirement}"
+  },
+  "footer": {
+    "tagline": "Un seguimiento de progreso gratuito para Clash of Clans. Tus datos se quedan en tu navegador, o en tu propio almacenamiento en la nube si activas la sincronización.",
+    "support": "Soporte",
+    "about": "Acerca de",
+    "settings": "Ajustes",
+    "discord": "Discord",
+    "github": "GitHub",
+    "game": "Sitio oficial del juego",
+    "privacy": "Política de privacidad",
+    "terms": "Términos del servicio",
+    "disclaimerTitle": "Aviso legal",
+    "disclaimer": "Este proyecto no está afiliado, respaldado ni conectado con Supercell ni con Clash of Clans.",
+    "framework": "Creado con el framework de Gamerdex, una base compartida para seguimientos de progreso gratuitos de videojuegos.",
+    "visitGamerdex": "Visitar Gamerdex"
+  },
+  "notFound": {
+    "title": "Esta página no existe",
+    "body": "Puede que el enlace sea antiguo o tenga un error. Tus aldeas están a salvo y no se cambió nada.",
+    "toOverview": "Ir al Resumen",
+    "toVillages": "Ir a Aldeas",
+    "toHome": "Volver al inicio",
+    "didYouMean": "¿Quisiste decir",
+    "noVillage": "No hay ninguna aldea seleccionada, así que el Resumen no tiene nada que mostrar. Elige una en la página Aldeas.",
+    "jumpTo": "O ve a"
+  },
+  "error": {
+    "title": "Algo salió mal",
+    "body": "La app encontró un error. Tus datos guardados no han cambiado.",
+    "digest": "digest {digest}",
+    "tryAgain": "Intentar de nuevo",
+    "download": "Descargar los datos sin procesar",
+    "clear": "Borrar datos y reiniciar",
+    "confirmTitle": "¿Borrar todos los datos guardados?",
+    "confirmBody": "Esto elimina todo lo que la app guardó en este navegador. Primero se descarga una copia de los datos sin procesar para poder repararlos después. Las aldeas sincronizadas con una cuenta en la nube se quedan ahí.",
+    "cancel": "Cancelar",
+    "confirm": "Descargar y borrar",
+    "noData": "No hay datos guardados en este navegador."
+  }
+}

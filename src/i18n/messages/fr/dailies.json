@@ -1,0 +1,255 @@
+{
+  "locked": {
+    "title": "Quotidiens",
+    "subline": "{name}, Hôtel de ville {townHall}, rien n'est encore ouvert ici",
+    "open": "Ouvrir",
+    "lockedBadge": "Verrouillé",
+    "now": "Ce village est à l'Hôtel de ville {townHall}.",
+    "nowNoHut": "Ce village n'a pas encore de Cabane des assistants.",
+    "needsHut": "Nécessite la Cabane des assistants",
+    "toBuilder": "Ouvrir Ouvrier",
+    "cards": {
+      "forge": {
+        "title": "Forge",
+        "what": "Transformez vos ressources en trop en Or de la capitale et récupérez l'Or de la capitale quotidien."
+      },
+      "helpers": {
+        "title": "Assistants",
+        "what": "Suivez l'Apprenti ouvrier, l'Assistant de laboratoire, l'Alchimiste et le Prospecteur."
+      },
+      "seasonPass": {
+        "title": "Pass de saison",
+        "what": "Réglez les boosts et avantages du Pass Or qui réduisent les durées d'amélioration."
+      },
+      "starBonus": {
+        "title": "Bonus d'étoiles",
+        "what": "Le minuteur quotidien du Bonus d'étoiles se trouve dans l'Aperçu.",
+        "open": "Ouvrir l'Aperçu"
+      }
+    }
+  },
+  "timer": {
+    "notSet": "Chronométrez votre réinitialisation quotidienne",
+    "setTime": "Définir l'heure",
+    "setAndUse": "Définir et marquer utilisé",
+    "notSetHelp": "Définir l'heure ne marque pas la récompense comme utilisée.",
+    "savedIn": "L'heure est enregistrée dans {zone}.",
+    "available": "Disponible",
+    "use": "Utiliser",
+    "adjust": "Ajuster",
+    "adjustTitle": "Ajuster l'heure de réinitialisation",
+    "save": "Enregistrer",
+    "cancel": "Annuler",
+    "resetsAt": "Réinitialisation quotidienne à {time}, {zone}",
+    "untilReset": "avant la réinitialisation à {time}, {zone}",
+    "usedAt": "Utilisé à {time}.",
+    "timeLabel": "Heure de réinitialisation",
+    "deviceClock": "horloge de l'appareil",
+    "used": "{name} marqué comme utilisé",
+    "undo": "Annuler"
+  },
+  "forge": {
+    "title": "Forge",
+    "description": "Transformez vos ressources en trop en Or de la capitale et récupérez l'Or de la capitale quotidien.",
+    "subline": "{builderHall, plural, =0 {{name}, Hôtel de ville {townHall}, production d'Or de la capitale} other {{name}, Hôtel de ville {townHall}, Hôtel des ouvriers {builderHall}, production d'Or de la capitale}}",
+    "daily": {
+      "title": "Or de la capitale quotidien",
+      "amount": "+{gold} Or de la capitale chaque jour à l'Hôtel de ville {townHall}",
+      "none": "L'Or de la capitale quotidien commence à l'Hôtel de ville 6.",
+      "name": "Or de la capitale quotidien"
+    },
+    "slots": {
+      "title": "Emplacements de la forge",
+      "craftingTime": "Temps de fabrication de 3 jours",
+      "open": "{open} emplacements ouverts sur {total} à l'Hôtel de ville {townHall}",
+      "boost": "Boost d'ouvrier de {percent} % appliqué : {time}",
+      "slot": "Emplacement {number}",
+      "requires": "Nécessite l'Hôtel de ville {townHall}",
+      "locked": "Verrouillé",
+      "idle": "Libre",
+      "idleHelp": "Choisissez quoi forger",
+      "running": "En cours",
+      "done": "Terminé",
+      "result": "Résultat",
+      "start": "Démarrer",
+      "stop": "Arrêter",
+      "reset": "Réinitialiser",
+      "resource": "Ressource",
+      "rate": "{amount} {resource} pour {capitalGold} Or de la capitale, prêt dans {time}",
+      "left": "{time} restant",
+      "ready": "Prêt : {capitalGold} Or de la capitale.",
+      "finished": "Terminé il y a {ago}.",
+      "stopped": "Emplacement {number} arrêté. Cycle effacé.",
+      "resetDone": "Emplacement {number} réinitialisé. Cycle de {resource} effacé.",
+      "runningTitle": "{resource}, {amount}"
+    },
+    "auto": {
+      "title": "Forge auto",
+      "subtitle": "Avantage du Pass Or, se répète seul",
+      "repeats": "{amount} {resource} pour {capitalGold} Or de la capitale toutes les {time}",
+      "nextRun": "Le cycle suivant démarre seul quand celui-ci se termine.",
+      "stop": "Arrêter la Forge auto",
+      "stopped": "Forge auto arrêtée. Cycle effacé.",
+      "confirm": {
+        "title": "Arrêter la Forge auto ?",
+        "body": "Le cycle en cours sera effacé : {amount} {resource} pour {capitalGold} Or de la capitale, avec {time} restant. La Forge auto cesse de se répéter jusqu'à ce que vous la relanciez depuis la page Forge. L'avantage du Pass Or reste actif dans Pass de saison.",
+        "undoHint": "Un bouton Annuler reste à l'écran quelques secondes après l'arrêt.",
+        "keep": "Laisser tourner",
+        "stop": "Arrêter la Forge auto"
+      }
+    },
+    "rates": {
+      "title": "Taux de la forge",
+      "description": "{builderHall, plural, =0 {Hôtel de ville {townHall}, un cycle dans un emplacement} other {Hôtel de ville {townHall} et Hôtel des ouvriers {builderHall}, un cycle dans un emplacement}}",
+      "autoTitle": "Taux de la Forge auto",
+      "autoDescription": "Prix du Pass Or, la moitié du coût manuel",
+      "resource": "Ressource",
+      "cost": "Coût",
+      "capitalGold": "Or de la capitale",
+      "requires": "Nécessite {requirement}"
+    }
+  },
+  "helpers": {
+    "title": "Assistants",
+    "description": "Suivez l'Apprenti ouvrier, l'Assistant de laboratoire, l'Alchimiste et le Prospecteur.",
+    "subline": "{builderHall, plural, =0 {{name}, Hôtel de ville {townHall}, assistants de la Cabane} other {{name}, Hôtel de ville {townHall}, Hôtel des ouvriers {builderHall}, assistants de la Cabane}}",
+    "banner": "Cabane des assistants construite. Chaque assistant se débloque selon l'Hôtel de ville : Assistant de laboratoire 9, Apprenti ouvrier 10, Prospecteur 10, Alchimiste 11.",
+    "names": {
+      "buildersApprentice": "Apprenti ouvrier",
+      "labAssistant": "Assistant de laboratoire",
+      "alchemist": "Alchimiste",
+      "prospector": "Prospecteur"
+    },
+    "from": "Hôtel de ville {townHall} et plus",
+    "lockedCard": "Nécessite l'Hôtel de ville {townHall}",
+    "dailyUse": "Usage quotidien",
+    "level": "Niveau",
+    "levelOption": "Niveau {level}",
+    "levelTownHall": "HdV {townHall}",
+    "none": "Aucun",
+    "noLevel": "Sélectionnez votre niveau pour voir les stats.",
+    "noLevelCalculator": "Sélectionnez votre niveau pour utiliser le calculateur.",
+    "nextLevel": "{gems, select, 0 {Le niveau {level} est gratuit} other {Le niveau {level} coûte {gems} gemmes}}",
+    "saves": "Économise {time} par usage",
+    "levelRequires": "Nécessite l'Hôtel de ville {townHall}",
+    "assignment": {
+      "builderTitle": "Amélioration à accélérer",
+      "researchTitle": "Recherche à accélérer",
+      "none": "Aucune",
+      "builderHelp": "Liste les bâtiments, héros, l'Hôtel de ville, l'arme de l'Hôtel de ville et les modules de défenses fabriquées en cours d'amélioration.",
+      "researchHelp": "Recherche uniquement : liste les troupes, sorts et engins de siège en cours d'amélioration.",
+      "builderEmpty": "Aucune amélioration d'ouvrier active à assigner.",
+      "researchEmpty": "Aucune recherche de laboratoire active à assigner.",
+      "once": "Usage unique",
+      "untilDone": "Jusqu'à la fin",
+      "assignedTo": "Assigné à",
+      "clearsAfterUse": "Se retire après un usage.",
+      "staysUntilDone": "Reste jusqu'à la fin de l'amélioration.",
+      "clear": "Retirer l'assignation",
+      "cleared": "Assignation retirée.",
+      "select": "Amélioration assignée",
+      "mode": "Mode d'assignation",
+      "preview": "Utiliser maintenant : {before} restant devient {after}.",
+      "previewDone": "Utiliser maintenant : {before} restant, l'amélioration se termine.",
+      "upgradeTo": "{name} au niveau {level}, {left} restant"
+    },
+    "used": {
+      "plain": "{name} marqué comme utilisé",
+      "saved": "{name} utilisé sur {target}, {time} économisé"
+    },
+    "alchemist": {
+      "stats": {
+        "goldElixir": "Max Or ou Élixir",
+        "darkElixir": "Max Élixir noir",
+        "bonus": "Bonus de conversion"
+      },
+      "calculator": "Calculateur de conversion",
+      "from": "De",
+      "to": "Vers",
+      "amount": "Quantité à convertir",
+      "result": "{amount} {from} donne {output} {to}",
+      "help": "Inclut le bonus de conversion de {bonus} % et le taux de 150 pour 1.",
+      "nothingSaved": "Rien n'est enregistré ici."
+    },
+    "prospector": {
+      "lockedTitle": "Verrouillé jusqu'au déblocage avec 2 200 points de Défi de saison",
+      "lockedHelp": "Activez-le sur la page Pass de saison après l'avoir débloqué dans le jeu.",
+      "toSeasonPass": "Ouvrir Pass de saison",
+      "subtitle": "Hôtel de ville 10 et plus, débloqué avec des points de Défi de saison",
+      "lockedBadge": "Verrouillé",
+      "unlockedBadge": "Débloqué",
+      "levelOnly": "Niveau 1 (le seul niveau)",
+      "limits": {
+        "shiny": "Max Minerai brillant",
+        "glowy": "Max Minerai luisant",
+        "starry": "Max Minerai étoilé"
+      },
+      "calculator": "Calculateur de conversion de minerai",
+      "ores": {
+        "shiny": "Minerai brillant",
+        "glowy": "Minerai luisant",
+        "starry": "Minerai étoilé"
+      },
+      "help": "10 Minerais brillants font 1 Minerai luisant. 100 Minerais luisants font 1 Minerai étoilé."
+    }
+  },
+  "seasonPass": {
+    "title": "Pass de saison",
+    "description": "Réglez les boosts et avantages du Pass Or qui réduisent les durées d'amélioration.",
+    "subline": "{name}, Hôtel de ville {townHall}, avantages du Pass Or actifs cette saison",
+    "lockedTitle": "Le Pass de saison est verrouillé",
+    "lockedBody": "Le Pass Or nécessite l'Hôtel de ville 7. Ce village est à l'Hôtel de ville {townHall}.",
+    "month": {
+      "title": "{month}",
+      "subtitle": "Les boosts se réinitialisent le {reset}, les avantages restent.",
+      "key": "Clé du mois",
+      "rolled": "Un nouveau mois a commencé. Le boost d'ouvrier et le boost de recherche sont revenus à 0 %. Les avantages restent actifs.",
+      "undoReset": "Annuler la réinitialisation",
+      "dismiss": "Fermer",
+      "restored": "Boosts rétablis pour ce mois.",
+      "undo": "Annuler"
+    },
+    "boosts": {
+      "title": "Avantages de boost",
+      "description": "Le Pass Or réduit les durées d'amélioration cette saison.",
+      "builder": "Boost d'ouvrier",
+      "research": "Boost de recherche",
+      "applies": "S'applique aux durées d'Ouvrier, de Recherche et de Familiers, aux chronologies de file d'attente et au temps de fabrication de la Forge.",
+      "saved": "Enregistré avec ce mois.",
+      "value": "{percent, plural, =0 {Désactivé} other {{percent} %}}",
+      "option": "{percent, plural, =0 {0 %} other {{percent} %}}",
+      "builderEffect": "{percent, plural, =0 {Le temps de fabrication de la Forge est de 3 j.} other {Le temps de fabrication de la Forge est de {time}.}}",
+      "researchEffect": "{percent, plural, =0 {Les durées de recherche et de familiers sont inchangées.} other {Les durées de recherche et de familiers sont réduites de {percent} %.}}"
+    },
+    "unlocks": {
+      "title": "Déblocages des Défis de saison",
+      "description": "Ne fait pas partie du Pass Or",
+      "prospector": "Prospecteur",
+      "prospectorHelp": "Assistant pour l'Hôtel de ville 10 et plus, coûte 2 200 points de Défi de saison",
+      "shows": "Apparaît sur la page Assistants"
+    },
+    "perks": {
+      "title": "Avantages du Pass Or",
+      "description": "Avantages du Pass Or actifs cette saison",
+      "referenceOnly": "Information seulement",
+      "referenceNote": "Ne change rien d'autre dans l'appli.",
+      "hoggyBank": {
+        "label": "Tirelire de Hoggy",
+        "note": "Stocke des ressources pendant que vous jouez, à récupérer en fin de saison"
+      },
+      "gemDonations": {
+        "label": "Dons à 1 gemme",
+        "note": "Donnez des troupes et des sorts pour seulement 1 gemme chacun"
+      },
+      "autoForge": {
+        "label": "Forge auto",
+        "note": "Convertit automatiquement les ressources en Or de la capitale"
+      },
+      "autoForgeEffect": "Active la ligne Forge auto sur la page Forge et la pastille de l'Aperçu.",
+      "requestTimeReduction": {
+        "label": "Réduction du temps de demande",
+        "note": "Réduit le délai avant une nouvelle demande de troupes"
+      }
+    }
+  }
+}

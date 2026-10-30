@@ -1,0 +1,29 @@
+{
+  "groups": {
+    "homeVillage": "ホームビレッジ",
+    "builderBase": "ビルダーベース",
+    "clanCapital": "クランキャピタル",
+    "dailies": "デイリー",
+    "tools": "ツール"
+  },
+  "items": {
+    "overview": "概要",
+    "achievements": "実績",
+    "builder": "ビルダー",
+    "research": "研究",
+    "pets": "ペット",
+    "equipment": "装備",
+    "walls": "壁",
+    "builderBaseUpgrades": "アップグレード",
+    "builderBaseTroops": "兵士",
+    "builderBaseWalls": "壁",
+    "districts": "地区",
+    "capitalTroops": "兵士とスペル",
+    "forge": "鍛造",
+    "helpers": "ヘルパー",
+    "seasonPass": "シーズンパス",
+    "massEdit": "一括編集",
+    "settings": "設定"
+  },
+  "villages": "マイビレッジ"
+}

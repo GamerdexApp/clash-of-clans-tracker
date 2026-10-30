@@ -1,0 +1,86 @@
+{
+  "header": {
+    "label": "頁面分類",
+    "features": "功能",
+    "faq": "常見問題",
+    "villages": "村莊",
+    "settings": "設定"
+  },
+  "hero": {
+    "title": "追蹤你的 Clash of Clans 進度",
+    "description": "把每個村莊集中在一處：主村莊、建築工人基地與部落首都的建築、部隊、英雄、升級與每日事項。",
+    "note": "免費。免註冊帳號。所有資料都留在你的瀏覽器。",
+    "continue": "繼續使用",
+    "continueLine": "{builderHall, plural, =0 {大本營 {townHall}，更新於{updated}} other {大本營 {townHall}，建築工人大本營 {builderHall}，更新於{updated}}}"
+  },
+  "cta": {
+    "create": "建立你的第一個村莊",
+    "learnMore": "了解更多",
+    "overview": "前往總覽",
+    "newVillage": "新增村莊"
+  },
+  "features": {
+    "label": "你需要的一切",
+    "title": "所有進度集中在一處",
+    "description": "從大本營到部落首都，你追蹤的每個等級都會在變更的當下儲存。",
+    "items": {
+      "item1": {
+        "title": "多個村莊",
+        "text": "可建立並管理不限數量的村莊，分開追蹤不同的帳號與基地。"
+      },
+      "item2": {
+        "title": "進度追蹤",
+        "text": "精確追蹤每個村莊中你已完成、已收集或已解鎖的內容。"
+      },
+      "item3": {
+        "title": "總覽",
+        "text": "透過統計摘要、每日計時器與完成度指標，一眼掌握你的進度。"
+      },
+      "item4": {
+        "title": "備份與同步",
+        "text": "將進度匯出成 JSON 檔案，或透過你自己的雲端儲存空間在裝置間同步。"
+      },
+      "item5": {
+        "title": "隱私",
+        "text": "你的資料留在瀏覽器中。唯一的伺服器請求是選用的玩家標籤查詢，它會向 Supercell 取得你的公開數據。"
+      },
+      "item6": {
+        "title": "深色模式",
+        "text": "日夜都能舒適使用。可在設定中選擇淺色、深色或跟隨你的裝置。"
+      }
+    }
+  },
+  "faq": {
+    "label": "有疑問嗎？",
+    "title": "常見問題",
+    "items": {
+      "item1": {
+        "question": "Clash of Clans Tracker 是什麼？",
+        "answer": "這是 Clash of Clans 的進度追蹤工具，幫助你管理多個帳號，並在同一處追蹤升級、成就、每日事項與整體進度。"
+      },
+      "item2": {
+        "question": "它如何儲存我的資料？",
+        "answer": "所有內容都儲存在你的瀏覽器中，所以進度是私人的，也不需要帳號。你可以將它匯出與匯入成 JSON 檔案作為備份。選用的玩家標籤查詢會把標籤傳送到一個小型伺服器動作，由它向 Supercell API 取得你的公開數據。"
+      },
+      "item3": {
+        "question": "我可以追蹤多個村莊嗎？",
+        "answer": "可以。你想建立多少村莊都行，每個都有自己的進度，並可在側邊欄切換。"
+      },
+      "item4": {
+        "question": "它能跨裝置同步嗎？",
+        "answer": "可以，只要你想用。開啟設定並連接 GitHub、Google Drive、Dropbox 或 OneDrive。你的資料會儲存在你自己的帳號中，而且在你開啟之前，同步都是關閉的。"
+      },
+      "item5": {
+        "question": "這個應用程式可以免費使用嗎？",
+        "answer": "可以。完全免費，沒有訂閱、沒有廣告，也不需要註冊。"
+      }
+    }
+  },
+  "final": {
+    "title": "今天就開始追蹤你的村莊",
+    "description": "免帳號、免註冊。建立第一個村莊只需要一個名稱。"
+  },
+  "updated": {
+    "justNow": "剛剛"
+  }
+}

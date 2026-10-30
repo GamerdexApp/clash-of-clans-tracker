@@ -1,0 +1,108 @@
+{
+  "massEdit": {
+    "hint": "Level juga bisa diatur di Edit massal.",
+    "link": "Buka Edit massal"
+  },
+  "hideMax": "Sembunyikan Maks",
+  "strip": {
+    "free": "{free} dari {total} kosong",
+    "idle": "Kosong",
+    "unassigned": "Belum ditetapkan",
+    "taskLevels": "Lv {from} ke {to}"
+  },
+  "start": {
+    "title": "Mulai peningkatan",
+    "levelChange": "{from, plural, =0 {Bangun ke Lv {to}} other {Lv {from} ke {to}}}",
+    "time": "Waktu",
+    "cost": "Biaya",
+    "doneAt": "Selesai pada",
+    "wasBoosted": "semula {base}, Gold Pass -{percent}%",
+    "wasCost": "{resource}, semula {base}",
+    "resource": "{resource}",
+    "storedNote": "waktu yang di-boost ini disimpan",
+    "storedNoteUnboosted": "waktu ini disimpan",
+    "instant": "Bangunan ini tidak butuh waktu. Langsung selesai dan tidak memakai pembangun.",
+    "lanes": {
+      "builder": {
+        "label": "Pembangun",
+        "choose": "Pilih pembangun untuk memulai.",
+        "noneFree": "Semua pembangun sibuk. Batalkan atau selesaikan satu peningkatan dulu."
+      },
+      "research": {
+        "label": "Jalur riset",
+        "choose": "Pilih jalur untuk memulai.",
+        "noneFree": "Semua jalur riset sibuk. Batalkan atau selesaikan satu riset dulu."
+      },
+      "bbBuilder": {
+        "label": "Pembangun",
+        "choose": "Pilih pembangun untuk memulai.",
+        "noneFree": "Kedua pembangun sibuk. Batalkan atau selesaikan satu peningkatan dulu."
+      },
+      "bbResearch": {
+        "label": "Lab Bintang",
+        "choose": "Pilih Lab Bintang untuk memulai.",
+        "noneFree": "Lab Bintang sibuk. Batalkan atau selesaikan risetnya dulu."
+      },
+      "pet": {
+        "label": "Rumah Hewan",
+        "choose": "Pilih Rumah Hewan untuk memulai.",
+        "noneFree": "Rumah Hewan sibuk. Batalkan atau selesaikan peningkatan hewan dulu."
+      }
+    },
+    "requires": {
+      "laboratory": "Butuh Laboratorium {level}",
+      "pet-house": "Butuh Rumah Hewan {level}",
+      "star-laboratory": "Butuh Lab Bintang {level}",
+      "noPetHouse": "Bangun Rumah Hewan dulu"
+    },
+    "free": "Gratis",
+    "cancel": "Batal",
+    "confirm": "Mulai peningkatan",
+    "confirmInstant": "Bangun sekarang"
+  },
+  "finish": {
+    "title": "Selesaikan lebih awal",
+    "left": "lagi",
+    "methodLabel": "Bagaimana selesainya?",
+    "methods": {
+      "timePassed": {
+        "label": "Waktu Habis",
+        "description": "Timer sudah habis di dalam game. Tidak ada yang dikeluarkan."
+      },
+      "gems": {
+        "label": "Permata",
+        "description": "Bayar permata di dalam game untuk menyelesaikannya sekarang. Biaya turun seiring waktu berkurang."
+      },
+      "book": {
+        "label": "Book of Building",
+        "description": "Langsung menyelesaikan peningkatan bangunan yang berjalan."
+      },
+      "hammer": {
+        "label": "Hammer of Building",
+        "description": "Langsung meningkatkan bangunan ke level berikutnya."
+      }
+    },
+    "stores": "Yang disimpan desa",
+    "storesLevel": "Level {level}. Timer dihapus.",
+    "storesSaved": "{time} ditambahkan ke waktu hemat.",
+    "storesSavedNone": "Waktu hemat tetap seperti semula.",
+    "gemFigure": "Sekitar {gems} permata (aturan data game, biaya di game bisa berbeda).",
+    "notTracked": {
+      "timePassed": "",
+      "gems": "Permata yang dipakai tidak dilacak.",
+      "book": "Book yang dimiliki tidak dilacak.",
+      "hammer": "Hammer yang dimiliki tidak dilacak."
+    },
+    "keep": "Lanjutkan peningkatan",
+    "confirm": "Selesaikan peningkatan"
+  },
+  "cancel": {
+    "title": "Batalkan peningkatan ini?",
+    "body": "Pembatalan menghentikan timer. {name} tetap di Lv {level} dan {builder} kosong lagi.",
+    "refundTitle": "Pengembalian di game: 50%",
+    "refundBody": "Membatalkan di Clash of Clans mengembalikan {refund} {resource} dari {paid} yang kamu bayar. Aplikasi ini tidak melacak sumber dayamu, jadi periksa penyimpananmu setelah membatalkan.",
+    "undoNote": "Kamu bisa mengurungkan selama 10 detik setelah membatalkan. Setelah itu, mulai peningkatan lagi.",
+    "keep": "Lanjutkan peningkatan",
+    "confirm": "Batalkan peningkatan"
+  }
+}

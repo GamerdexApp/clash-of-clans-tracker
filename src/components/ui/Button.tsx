@@ -5,7 +5,7 @@ import { LuLoaderCircle } from "react-icons/lu";
 type ButtonVariant = "primary" | "secondary" | "ghost" | "danger" | "link";
 
 const baseClasses =
-	"inline-flex min-h-11 items-center justify-center gap-2 rounded-md border-[1.5px] px-4 font-medium whitespace-nowrap transition-colors disabled:cursor-not-allowed disabled:opacity-50 lg:min-h-9";
+	"inline-flex min-h-11 items-center justify-center gap-2 rounded-md border-[1.5px] px-4 py-1.5 max-w-full text-center font-medium transition-colors disabled:cursor-not-allowed disabled:opacity-50 lg:min-h-9";
 
 const variantClasses: Record<ButtonVariant, string> = {
 	primary: "border-primary bg-primary text-on-primary hover:opacity-90",

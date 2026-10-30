@@ -1,0 +1,236 @@
+{
+  "tab": {
+    "title": "Bulut senkronu"
+  },
+  "unavailable": "Senkron bu sürümde kullanılamıyor.",
+  "provider": {
+    "github": {
+      "name": "GitHub",
+      "tile": "Sana ait, {repository} adlı özel bir depo.",
+      "badge": "Geliştiriciler için"
+    },
+    "google": {
+      "name": "Google Drive",
+      "tile": "Drive'ında görünür bir Gamerdex klasörü. Gamerdex yalnızca kendi oluşturduğu dosyaları görür.",
+      "badge": "Önerilen"
+    },
+    "dropbox": {
+      "name": "Dropbox",
+      "tile": "Dropbox'ının Apps klasöründe bir Gamerdex klasörü. Gamerdex yalnızca o klasörü görür.",
+      "badge": "Yalnızca uygulama klasörü"
+    },
+    "microsoft": {
+      "name": "OneDrive",
+      "tile": "OneDrive'ının Apps klasöründe bir Gamerdex klasörü. Gamerdex yalnızca o klasörü görür.",
+      "badge": "Kişisel hesaplar"
+    }
+  },
+  "connect": {
+    "title": "Cihazlar arasında senkronla",
+    "pill": "Bağlı değil",
+    "intro": "Köylerini bilgisayarında ve telefonunda aynı tut. Senkron isteğe bağlı ve ücretsizdir. Kopyanın nerede duracağını seç.",
+    "pickerLabel": "Kopya nerede tutulsun",
+    "panelTitle": "{provider} bağla",
+    "another": "Giriş yapmadan önce başka bir sağlayıcı seçebilirsin.",
+    "firstSync": "İki tarafta da veri varsa ilk senkronda neyin tutulacağını seç. Sen karar vermeden hiçbir şey değiştirilmez.",
+    "steps": {
+      "google": {
+        "step1": "Bu pencerede Google ile giriş yap.",
+        "step2": "Gamerdex'in oluşturduğu dosyalara erişime izin ver. Uygulama diğer dosyalarını göremez.",
+        "button": "Google Drive'ı bağla"
+      },
+      "github": {
+        "step1": "{repository} adlı boş bir özel depo oluştur. Add a README file seçeneğini işaretle.",
+        "step2": "GitHub ile giriş yap, sonra Gamerdex Sync'e yalnızca o depo için erişim ver.",
+        "button": "GitHub'ı bağla"
+      },
+      "dropbox": {
+        "step1": "Bu pencerede Dropbox ile giriş yap.",
+        "step2": "Gamerdex uygulama klasörüne erişime izin ver. Uygulama diğer dosyalarını göremez.",
+        "button": "Dropbox'ı bağla"
+      },
+      "microsoft": {
+        "step1": "Bu pencerede kişisel Microsoft hesabınla giriş yap.",
+        "step2": "Gamerdex uygulama klasörüne erişime izin ver. Uygulama diğer dosyalarını göremez.",
+        "button": "OneDrive'ı bağla"
+      }
+    }
+  },
+  "how": {
+    "title": "Senkron nasıl çalışır",
+    "points": {
+      "item1": "Köylerin kendi depolama alanında tek dosya olarak, ayrıca cihaz listesi için küçük bir dosya olarak kaydedilir.",
+      "item2": "Gamerdex'in verilerini saklayan bir sunucusu yoktur. Tarayıcın depolama alanınla doğrudan konuşur.",
+      "item3": "Bina örnekleri, birlikler, kahramanlar, ekipman, evcil hayvanlar ve başarımlar tek tek birleştirilir ve yüksek seviye kazanır. Diğer cihaz o seviyeyi değiştirmediyse sıfırlama aktarılır.",
+      "item4": "İki cihaz aynı adı, kuyruğu, süren yükseltmeyi, kupa sayısını veya sıfırlanma saatini değiştirirse hangisinin kalacağını sen seçersin.",
+      "item5": "Her cihaz kendi etkin köyünü tutar. Senkron bunu asla değiştirmez.",
+      "item6": "İstediğin zaman bağlantıyı kes. Köylerin her cihazda kalır."
+    }
+  },
+  "repository": {
+    "title": "Veri deponu kur",
+    "body": "Verilerin GitHub hesabındaki {name} adlı özel bir depoda tutulur. Gamerdex Sync yalnızca bu depoya erişebilir.",
+    "checking": "{name} aranıyor",
+    "checkFailed": "Depoların yüklenemedi. Bağlantını kontrol et ve tekrar dene.",
+    "public": "{fullName} deposu herkese açık. GitHub ayarlarından özel yap, sonra tekrar kontrol et. Herkese açık depo kullanılamaz, çünkü herkes verilerini okuyabilir.",
+    "missing": "{name} deposu bulunamadı",
+    "steps": {
+      "create": "{name} adlı özel bir depo oluştur. Add a README file seçeneğini işaretle.",
+      "install": "Gamerdex Sync'e yalnızca o depo için erişim ver. Only select repositories seçeneğini seç, sonra {name} deposunu seç.",
+      "recheck": "Buraya dön ve tekrar kontrol et."
+    },
+    "createButton": "Depo oluştur",
+    "installButton": "GitHub'da depoları seç",
+    "recheckButton": "Tekrar kontrol et"
+  },
+  "connected": {
+    "repository": "Depo",
+    "lastSync": "Son senkron",
+    "never": "Henüz senkronlanmadı",
+    "syncNow": "Şimdi senkronla",
+    "signOut": "Çıkış yap",
+    "folder": "{name} klasörü",
+    "signInWith": "{provider} ile giriş yap"
+  },
+  "status": {
+    "idle": "Senkronlandı",
+    "syncing": "Senkronlanıyor",
+    "offline": "Çevrimdışı",
+    "reauth": "Tekrar giriş yap",
+    "needsChoice": "Seçimin gerekiyor",
+    "error": "Senkron başarısız",
+    "signedOut": "Giriş yapılmadı",
+    "needsRepository": "Bir depo seç",
+    "conflicts": "Değişiklikleri incele"
+  },
+  "error": {
+    "rateLimit": "Sağlayıcı istekleri sınırlıyor. Senkron birkaç dakika sonra yeniden çalışır.",
+    "notFound": "Depo bulunamadı. Tekrar seç.",
+    "server": "Sağlayıcı doğru yanıt vermedi. Daha sonra tekrar dene.",
+    "data": "Senkronlanan veri geçerli değil, bu yüzden hiçbir şey değişmedi.",
+    "busy": "Başka bir cihaz veriyi değiştirmeye devam ediyor. Biraz sonra tekrar dene.",
+    "other": "Bir şeyler ters gitti. Hiçbir şey değişmedi.",
+    "reauth": "Oturumun sona erdi. Senkrona devam etmek için tekrar giriş yap.",
+    "forbidden": "GitHub depoya erişimi reddetti. Gamerdex Sync'in Contents için Read and write erişimi olduğunu kontrol et, sonra tekrar senkronla.",
+    "httpStatus": "GitHub {status} yanıtı verdi.",
+    "notFoundFolder": "{provider} içinde bir dosya veya klasör bulunamadı. Tekrar senkronla.",
+    "forbiddenFolder": "{provider} erişimi reddetti. Tekrar giriş yap ve Gamerdex'in oluşturduğu dosyalara erişime izin ver.",
+    "httpStatusFolder": "{provider} {status} yanıtı verdi."
+  },
+  "choice": {
+    "title": "Hem bu cihazda hem bulutta veri var",
+    "body": "Bu, bu cihazdan ilk senkron. Ne yapılacağını seç. Sen seçene kadar buluttan hiçbir şey silinmez.",
+    "merge": "İkisini birleştir",
+    "mergeHint": "İkisinden her şeyi tut. Yüksek seviye kazanır.",
+    "keepLocal": "Bu cihazı tut",
+    "keepLocalHint": "Bulut verisini bu cihazdaki veriyle değiştir.",
+    "keepCloud": "Bulutu tut",
+    "keepCloudHint": "Bu cihazdaki veriyi bulut verisiyle değiştir."
+  },
+  "first": {
+    "thisDevice": "Bu cihaz",
+    "cloud": "Bulut",
+    "recommended": "Önerilen",
+    "later": "Sonra karar ver",
+    "apply": "Seçimi uygula",
+    "optionsLabel": "Neyin tutulacağı"
+  },
+  "villageCount": "{count, plural, one {{amount} köy} other {{amount} köy}}",
+  "conflicts": {
+    "title": "Birleştirilemeyen değişiklikler",
+    "body": "İki cihaz aynı değeri değiştirdi. Bulut değeri tutuldu. Onun yerine kullanmak için bu cihazın değerini seç.",
+    "cloudValue": "Bulut",
+    "deviceValue": "Bu cihaz",
+    "keepDevice": "Bu cihazın değerini kullan",
+    "dismiss": "Kapat",
+    "empty": "Hiçbir şey",
+    "deletedEdited": "Bir cihaz bunu kaldırdı, diğeri değiştirdi. Değiştirilen sürüm tutuldu."
+  },
+  "banner": {
+    "title": "{count, plural, one {{amount} değişiklik için karar gerekiyor} other {{amount} değişiklik için karar gerekiyor}}",
+    "body": "İki cihaz aynı değeri değiştirdi. Sen karar verene kadar bulut değeri tutulur.",
+    "review": "İncele",
+    "waiting": "İlk senkron seçimini bekliyor.",
+    "choose": "Seç"
+  },
+  "villages": {
+    "title": "Köyler",
+    "thisDevice": "Bu cihaz",
+    "cloud": "Bulut, son senkron",
+    "notInCloud": "Henüz bulutta değil",
+    "review": "İncele",
+    "note": "Bir köyü silmek, onu sonraki senkronda senkron dosyasından kaldırır.",
+    "status": {
+      "synced": "Senkronlandı",
+      "changedHere": "Burada değişti",
+      "conflict": "Çakışma",
+      "newHere": "Burada yeni"
+    },
+    "describe": "Belediye Binası {townHall}"
+  },
+  "activity": {
+    "title": "Son senkron etkinliği",
+    "empty": "Henüz hiçbir şey senkronlanmadı.",
+    "connected": "{provider} bu tarayıcıda bağlandı.",
+    "uploaded": "Bu cihazdaki değişiklikler yüklendi.",
+    "downloaded": "Buluttaki değişiklikler indirildi.",
+    "merged": "İki tarafın değişiklikleri birleştirildi.",
+    "conflicts": "{count, plural, one {{amount} değişiklik için karar gerekiyor.} other {{amount} değişiklik için karar gerekiyor.}}",
+    "failed": "Senkron başarısız oldu."
+  },
+  "settings": {
+    "title": "Senkron ayarları",
+    "auto": "Otomatik senkronla",
+    "autoHint": "Takipçi açılırken ve her değişiklikten birkaç saniye sonra senkronlar.",
+    "focus": "Sekmeye döndüğümde değişiklikleri kontrol et",
+    "focusHint": "Takipçiye geri döndüğünde daha yeni bulut verisini çeker.",
+    "metered": "Sınırlı bağlantıda ben onaylayana kadar bekle",
+    "meteredHint": "Tarayıcı veri tasarrufu bağlantısı bildirirken otomatik senkronları atlar. Şimdi senkronla yine çalışır."
+  },
+  "lives": {
+    "title": "Verilerin nerede duruyor",
+    "storage": "Depolama",
+    "folder": "Klasör",
+    "dataFile": "Veri dosyası",
+    "metaFile": "Meta dosyası",
+    "size": "Boyut",
+    "kb": "{amount} KB",
+    "note": "Veri dosyası köylerini senkronun birleştirebileceği biçimde tutar, bu yüzden bir yedek dosyası değildir. Meta dosyası cihaz listesini tutar, oyun verisi içermez. Girişin hiçbir dosyada bulunmaz.",
+    "notes": {
+      "google": "Gamerdex klasörü Drive'ında görünür. Gamerdex yalnızca kendi oluşturduğu dosyaları açabilir.",
+      "github": "Depoyu özel tut. Depoyu açabilen herkes verilerini okuyabilir.",
+      "dropbox": "Gamerdex klasörü Dropbox'ının Apps klasöründe. Gamerdex yalnızca o klasörü açabilir.",
+      "microsoft": "Gamerdex klasörü OneDrive'ının Apps klasöründe. Gamerdex yalnızca o klasörü açabilir."
+    }
+  },
+  "device": {
+    "title": "Bu cihaz",
+    "name": "Cihaz adı",
+    "nameHint": "Senkron dosyaları bu cihaz için bu adı gösterir. Adı değiştirmek meta dosyasını sonraki senkronda günceller.",
+    "activeVillage": "Etkin köy",
+    "noVillage": "Yok",
+    "login": "Senkron girişi",
+    "loginValue": "Yalnızca bu cihazda",
+    "loginHint": "Etkin köy her cihazda ayrı bir seçimdir ve senkron onu asla değiştirmez. Girişin bu cihazda kalır. Kayıtlı veride, yedek dosyasında veya senkron dosyalarında asla bulunmaz."
+  },
+  "disconnect": {
+    "title": "Bağlantıyı kes",
+    "body": "Bu tarayıcıda senkronu durdurur. Köylerin bu cihazda ve bulutta kalır. Diğer cihazlar senkronlamaya devam eder.",
+    "button": "{provider} bağlantısını kes",
+    "hints": {
+      "google": "Bulut kopyasını kendin silmek için bağlantıyı kes, sonra Google Drive'ındaki Gamerdex klasörünü sil.",
+      "github": "Bulut kopyasını kendin silmek için bağlantıyı kes, sonra deponun içindeki Gamerdex klasörünü sil.",
+      "dropbox": "Bulut kopyasını kendin silmek için bağlantıyı kes, sonra Dropbox'ında Apps altındaki uygulama klasörünü sil.",
+      "microsoft": "Bulut kopyasını kendin silmek için bağlantıyı kes, sonra OneDrive'ında Apps altındaki uygulama klasörünü sil."
+    }
+  },
+  "callback": {
+    "title": "Giriş yapılıyor",
+    "working": "Giriş tamamlanıyor",
+    "back": "Ayarlara dön",
+    "denied": "Giriş iptal edildi.",
+    "state": "Giriş doğrulanamadı. Ayarlardan yeniden başla.",
+    "missing": "Giriş bir kod göndermedi. Ayarlardan yeniden başla.",
+    "failed": "Giriş tamamlanamadı. Daha sonra tekrar dene."
+  }
+}

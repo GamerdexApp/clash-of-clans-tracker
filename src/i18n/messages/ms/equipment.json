@@ -1,0 +1,61 @@
+{
+  "title": "Kelengkapan",
+  "subline": "{name}, Dewan Bandar {townHall}, tahap Tukang Besi {blacksmith}",
+  "massEdit": "Tahap kelengkapan juga boleh ditetapkan dalam Sunting pukal.",
+  "locked": {
+    "title": "Memerlukan Tukang Besi",
+    "description": "Bina Tukang Besi untuk menjejaki kelengkapan wira. Tetapkan tahapnya di halaman Pembina, tab Tentera.",
+    "action": "Pergi ke Pembina"
+  },
+  "ore": {
+    "title": "Stok ore",
+    "description": "Ore yang anda miliki. Kekurangan hanya nasihat dan tidak pernah menghalang naik taraf.",
+    "names": {
+      "shiny": "Shiny Ore",
+      "glowing": "Glowing Ore",
+      "starry": "Starry Ore"
+    },
+    "short": {
+      "shiny": "Shiny",
+      "glowing": "Glowing",
+      "starry": "Starry"
+    },
+    "needed": "Diperlukan untuk kepingan yang disenaraikan: {amount}",
+    "enough": "Stok mencukupi",
+    "shortBy": "Kurang {amount}",
+    "deduct": "Tolak ore apabila saya naik taraf",
+    "deductHelp": "Naik taraf mengambil ore daripada stok, tidak pernah di bawah 0. Buat asal memulangkannya."
+  },
+  "hideMax": "Sembunyi Maks",
+  "heroFilter": "Wira",
+  "allHeroes": "Semua wira",
+  "section": "{pieces} keping, {owned} dimiliki",
+  "empty": {
+    "title": "Belum ada apa-apa di sini",
+    "allMax": "Setiap keping sudah pada tahap maksimum. Matikan Sembunyi Maks untuk melihatnya."
+  },
+  "card": {
+    "heroLine": "{hero}",
+    "level": "Tahap {level} daripada {max}",
+    "notOwned": "Tidak dimiliki",
+    "max": "Maks",
+    "setLevel": "Tahap {name}",
+    "stepLevel": "Tahap {level}",
+    "free": "Percuma",
+    "time": "Masa: Serta-merta",
+    "requires": "Memerlukan Tukang Besi {level}",
+    "moreLevels": "{amount} lagi {count, plural, other {tahap}}",
+    "add": "Tambah pada tahap 1",
+    "upgradeTo": "Naik taraf ke tahap {level}",
+    "lockedUntil": "Dikunci sehingga Tukang Besi {level}",
+    "allows": "Tukang Besi {blacksmith} membenarkan sehingga tahap {level}",
+    "allowsNone": "Tukang Besi {blacksmith} belum membenarkan keping ini",
+    "footer": "{amount} {levels, plural, other {tahap}} lagi",
+    "progress": "Kemajuan {name}"
+  },
+  "toast": {
+    "upgraded": "{name} Thp {from} ke {to}",
+    "levelSet": "{name} Thp {from} ke {to}",
+    "undo": "Buat asal"
+  }
+}

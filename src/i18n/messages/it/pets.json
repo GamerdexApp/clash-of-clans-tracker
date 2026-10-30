@@ -1,0 +1,30 @@
+{
+  "title": "Animali",
+  "subline": "{name}, Municipio {townHall}",
+  "strip": {
+    "title": "Casa degli Animali",
+    "openQueue": "Apri coda e sequenza temporale",
+    "noPetHouse": "Costruisci prima una Casa degli Animali. Imposta il suo livello nella pagina Costruttore, scheda Esercito.",
+    "unassignedHelp": "Più di un potenziamento di animali è salvato sulla Casa degli Animali. Completa o annulla quello in più.",
+    "levelLabel": "Livello della Casa degli Animali",
+    "level": "{level} di {max}",
+    "notBuilt": "Non costruita",
+    "boostLabel": "Potenziamento Ricerca del Pass Oro"
+  },
+  "boostValue": "{percent, plural, =0 {Nessuno} other {-{percent}% di tempo e costo}}",
+  "locked": {
+    "title": "Gli animali si sbloccano al Municipio 14",
+    "body": "Questo villaggio è al Municipio {townHall}. Questi sono gli animali che otterrai.",
+    "needs": "Municipio {townHall}, Casa degli Animali {petHouse}"
+  },
+  "card": {
+    "notUnlocked": "Non sbloccato",
+    "markUnlocked": "Segna come sbloccato",
+    "maxAtHall": "Lv massimo {level}",
+    "progress": "Progresso di {name}"
+  },
+  "empty": {
+    "title": "Ancora niente qui",
+    "allMax": "Ogni animale è al massimo. Disattiva Nascondi massimo per vederli."
+  }
+}

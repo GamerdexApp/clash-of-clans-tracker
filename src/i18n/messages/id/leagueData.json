@@ -1,0 +1,17 @@
+{
+  "stats": {
+    "attacksPerWeek": "Serangan per minggu",
+    "promoted": "% teratas naik liga",
+    "demoted": "% terbawah turun liga",
+    "trophyRange": "Rentang trofi",
+    "starsForBonus": "Bintang untuk bonus bintang"
+  },
+  "sections": {
+    "maxLoot": "Jarahan maks tersedia",
+    "leagueBonus": "Bonus liga maks",
+    "weeklyStarBonus": "Bonus bintang mingguan",
+    "starBonusReward": "Hadiah bonus bintang"
+  },
+  "range": "{min} sampai {max}",
+  "rangeOpen": "{min}+"
+}

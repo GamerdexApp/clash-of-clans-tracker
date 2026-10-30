@@ -1,0 +1,51 @@
+{
+  "title": "Costruttore",
+  "subline": "{name}, Municipio {townHall}",
+  "tabsLabel": "Sezioni del Costruttore",
+  "tabs": {
+    "defenses": "Difese",
+    "army": "Esercito",
+    "resources": "Risorse",
+    "crafted": "Difese Create",
+    "traps": "Trappole",
+    "heroes": "Eroi",
+    "guardians": "Guardiani",
+    "townHall": "Municipio"
+  },
+  "builders": {
+    "title": "Costruttori",
+    "boostLabel": "Potenziamento Costruttore del Pass Oro",
+    "boostValue": "{percent, plural, =0 {Nessuno} other {-{percent}% di tempo e costo}}",
+    "openQueue": "Apri coda e sequenza temporale",
+    "unassignedHelp": "Alcuni potenziamenti sono salvati su un Costruttore non costruito, o su un Costruttore già usato da un altro potenziamento. Completali o annullali.",
+    "noBuilders": "Questo villaggio non ha ancora Costruttori. Costruisci la prima Capanna del Costruttore dalla scheda Difese. È gratuita e immediata."
+  },
+  "gate": {
+    "requires": "Richiede il Municipio {townHall}",
+    "where": "Questo villaggio è al Municipio {townHall}. Raggiungi il Municipio {required} per sbloccare questa scheda.",
+    "fix": "Vai alla scheda Municipio"
+  },
+  "empty": {
+    "title": "Ancora niente qui",
+    "description": "A questo livello di Municipio non ci sono edifici di questo tipo.",
+    "allMax": "Ogni edificio qui è al massimo. Disattiva Nascondi massimo per vederli."
+  },
+  "card": {
+    "maxAtHall": "Lv massimo {level} a questo Municipio",
+    "maxAtBuilderHall": "Lv massimo {level} a questa Sala del Costruttore",
+    "progress": "Progresso di {name}",
+    "notBuilt": "Non costruito",
+    "level": "Lv {level} di {max}",
+    "build": "Costruisci",
+    "upgradeTo": "Potenzia a Lv {level}",
+    "superchargeTo": "Supercarica al livello {tier}",
+    "maxed": "Max",
+    "running": "Potenziamento a Lv {to}",
+    "finish": "Completa",
+    "cancel": "Annulla",
+    "showAll": "Mostra tutti ({count})",
+    "showFewer": "Mostra meno",
+    "instance": "#{number}",
+    "supercharge": "Supercarica {tier} di {tiers}"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "title": "Succès",
+  "description": "Suivez les étoiles, valeurs et récompenses de chaque succès.",
+  "subline": "{name}, {count} succès, {stars} sur {maxStars} étoiles, {percent} %",
+  "tiles": {
+    "all": "Tous les succès",
+    "home": "Village principal",
+    "builder": "Base des ouvriers",
+    "capital": "Capitale du clan",
+    "gems": "Gemmes gagnées",
+    "xp": "XP gagnée",
+    "stars": "{stars} sur {maxStars} étoiles",
+    "left": "{amount} {unit} restant à gagner",
+    "gemsUnit": "gemmes",
+    "xpUnit": "XP"
+  },
+  "sections": {
+    "home": "Village principal",
+    "builderBase": "Base des ouvriers",
+    "clanCapital": "Capitale du clan",
+    "summary": "{count} succès, {stars} / {maxStars} étoiles, {gems} gemmes, {xp} XP",
+    "more": "Afficher {count} succès de plus ({name})",
+    "less": "Afficher moins"
+  },
+  "card": {
+    "manual": "Manuel",
+    "nextStar": "Étoile suivante",
+    "xp": "XP",
+    "gems": "gemmes",
+    "edit": "Modifier {name}",
+    "done": "Terminé",
+    "stars": "Étoiles",
+    "starsHelp": "Appuyez de nouveau sur la même étoile pour en retirer une.",
+    "star": "{amount} {number, plural, one {étoile} other {étoiles}}",
+    "value": "Valeur",
+    "target": "Objectif",
+    "manualLabel": "Manuel (ignorer la valeur de l'API)",
+    "saves": "Les modifications s'enregistrent à la saisie. Monter les étoiles déplace l'Objectif au palier suivant.",
+    "progress": "Progression de {name}",
+    "starsEarned": "{stars} sur 3 étoiles"
+  },
+  "toast": {
+    "stars": "{name} passé à {amount} {stars, plural, one {étoile} other {étoiles}}",
+    "targetMoved": "Objectif déplacé à {target}.",
+    "value": "Valeur de {name} changée en {value}",
+    "target": "Objectif de {name} changé en {target}",
+    "undo": "Annuler"
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "skipToContent": "跳到正文",
+  "closeMenu": "关闭菜单",
+  "openMenu": "打开菜单",
+  "menuLabel": "站点菜单",
+  "mainNav": "主导航",
+  "brandTitle": "Clash of Clans",
+  "brandSubtitle": "Tracker",
+  "switcher": {
+    "sectionLabel": "村庄",
+    "loading": "加载中",
+    "none": "没有村庄",
+    "noneDetail": "创建一个即可开始",
+    "switch": "切换村庄",
+    "villages": "村庄",
+    "active": "当前",
+    "all": "所有村庄",
+    "create": "新建村庄",
+    "halls": "{builderHall, plural, =0 {TH {townHall}} other {TH {townHall} · BH {builderHall}}}"
+  },
+  "locked": {
+    "townHall": "{level}级大本营",
+    "blacksmith": "铁匠铺",
+    "helperHut": "助手小屋",
+    "off": "关闭",
+    "srLabel": "需要{requirement}"
+  },
+  "footer": {
+    "tagline": "一款免费的 Clash of Clans 进度追踪工具。你的数据保存在浏览器中；开启同步后，则保存在你自己的云存储中。",
+    "support": "支持",
+    "about": "关于",
+    "settings": "设置",
+    "discord": "Discord",
+    "github": "GitHub",
+    "game": "游戏官方网站",
+    "privacy": "隐私政策",
+    "terms": "服务条款",
+    "disclaimerTitle": "免责声明",
+    "disclaimer": "本项目与 Supercell 或 Clash of Clans 没有隶属、认可或关联关系。",
+    "framework": "基于 Gamerdex 框架构建，这是免费游戏进度追踪工具的共用基础。",
+    "visitGamerdex": "访问 Gamerdex"
+  },
+  "notFound": {
+    "title": "此页面不存在",
+    "body": "链接可能已过期或输入有误。你的村庄是安全的，没有任何更改。",
+    "toOverview": "前往总览",
+    "toVillages": "前往村庄",
+    "toHome": "返回首页",
+    "didYouMean": "你是不是想找",
+    "noVillage": "尚未选择村庄，所以总览没有内容可显示。请在村庄页面选择一个。",
+    "jumpTo": "或者跳转到"
+  },
+  "error": {
+    "title": "出错了",
+    "body": "应用遇到了错误。你保存的数据没有被更改。",
+    "digest": "摘要 {digest}",
+    "tryAgain": "重试",
+    "download": "下载原始数据",
+    "clear": "清除数据并重新开始",
+    "confirmTitle": "清除所有已保存的数据？",
+    "confirmBody": "这会删除应用在此浏览器中存储的全部内容。会先下载一份原始数据副本，以便日后修复。已同步到云账号的村庄会保留在云端。",
+    "cancel": "取消",
+    "confirm": "下载并清除",
+    "noData": "此浏览器中没有已保存的数据。"
+  }
+}

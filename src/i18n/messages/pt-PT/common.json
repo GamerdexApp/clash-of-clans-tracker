@@ -1,0 +1,32 @@
+{
+  "gate": {
+    "title": "Nenhuma aldeia ativa",
+    "description": "Escolhe uma aldeia ou crie uma para ver esta página.",
+    "newVillage": "Nova aldeia",
+    "chooseVillage": "Escolher uma aldeia"
+  },
+  "townHallTab": {
+    "title": "Centro da Aldeia",
+    "supercharge": "Sobrecarga",
+    "superchargeDone": "{current} de {max} níveis de sobrecarga desbloqueados neste Centro da Aldeia estão concluídos.",
+    "superchargeProgress": "Progresso da sobrecarga"
+  },
+  "heroesUnlock": "Os heróis desbloqueiam com o Centro de Heróis.",
+  "progressLabel": "Progresso de {name}",
+  "countdownLabel": "Contagem decrescente de {name}",
+  "capitalGold": "Ouro da Capital",
+  "queue": {
+    "conflict": "Conflito",
+    "level": "Nív. {level}",
+    "levelSupercharge": "Sobrecarga nív. {level}",
+    "now": "Agora",
+    "itemTitle": "{name} nív. {level}"
+  },
+  "finishDescription": "{name}, nív. {from} a {to}, {method}, {time} {unit}",
+  "lookupError": {
+    "rateLimit": "Aguarda {seconds} s antes de pesquisar de novo.",
+    "notFound": "O jogador {tag} não foi encontrado.",
+    "api": "A API da Supercell respondeu {status}.",
+    "network": "A pesquisa de jogador não conseguiu contactar o servidor."
+  }
+}

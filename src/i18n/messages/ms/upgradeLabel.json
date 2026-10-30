@@ -1,0 +1,24 @@
+{
+  "levelTo": "{name} {from}→{to}",
+  "toast": {
+    "undo": "Buat asal",
+    "started": "{name} Thp {from} ke {to} dimulakan",
+    "finished": "{name} siap pada Thp {level}",
+    "timeSaved": "{time} ditambah pada masa dijimatkan.",
+    "cancelled": "{name} Thp {from} ke {to} dibatalkan",
+    "levelChanged": "{name} Thp {from} ke {to}"
+  },
+  "queue": {
+    "buildPetHouse": "Bina Rumah Haiwan dahulu",
+    "requires": "Memerlukan {building} {level}",
+    "alreadyUpgrading": "{name} sedang dinaik taraf",
+    "finishFirst": "Tahap {level} mesti siap dahulu",
+    "alreadyAt": "Sudah pada tahap {level}"
+  },
+  "conflict": {
+    "alreadyAt": "{name} sudah pada tahap {level}, jadi tahap {target} sudah siap.",
+    "removeFix": "Buang daripada giliran.",
+    "scheduledBefore": "{name} tahap {level} dijadualkan sebelum tahap {earlier} siap.",
+    "moveFix": "Alih tahap {level} selepas tahap {earlier}."
+  }
+}

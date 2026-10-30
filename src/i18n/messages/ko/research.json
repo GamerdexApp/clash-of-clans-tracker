@@ -1,0 +1,32 @@
+{
+  "title": "연구",
+  "subline": "{name}, 타운홀 {townHall}",
+  "tabsLabel": "연구 섹션",
+  "tabs": {
+    "troops": "병력",
+    "spells": "주문",
+    "siegeMachines": "시즈"
+  },
+  "strip": {
+    "title": "연구소",
+    "noLanes": "사용할 수 있는 연구 레인이 없어요.",
+    "openQueue": "대기열과 타임라인 열기",
+    "unassignedHelp": "일부 연구가 꺼진 레인이나, 다른 연구가 이미 쓰는 레인에 저장돼 있어요. 끝내거나 취소하세요.",
+    "levelLabel": "연구소 레벨",
+    "level": "{max} 중 {level}",
+    "notTracked": "미설정",
+    "boostLabel": "골드 패스 연구 부스트"
+  },
+  "card": {
+    "notUnlocked": "해제 안 됨",
+    "markUnlocked": "해제됨으로 표시",
+    "maxAtHall": "이 타운홀에서 최대 Lv {level}",
+    "progress": "{name} 진행도"
+  },
+  "empty": {
+    "title": "아직 아무것도 없어요",
+    "none": "이 타운홀 레벨에서는 이 섹션에서 쓸 수 있는 항목이 없어요.",
+    "allMax": "여기 있는 항목이 모두 최대예요. 최대 숨기기를 끄면 볼 수 있어요."
+  },
+  "boostValue": "{percent, plural, =0 {없음} other {시간과 비용 -{percent}%}}"
+}

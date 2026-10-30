@@ -1,0 +1,32 @@
+{
+  "gate": {
+    "title": "Chưa có làng đang dùng",
+    "description": "Chọn một làng hoặc tạo làng mới để xem trang này.",
+    "newVillage": "Làng mới",
+    "chooseVillage": "Chọn một làng"
+  },
+  "townHallTab": {
+    "title": "Nhà Chính",
+    "supercharge": "Siêu Nạp",
+    "superchargeDone": "Đã xong {current} trên {max} bậc Siêu Nạp mở ở Nhà Chính này.",
+    "superchargeProgress": "Tiến độ Siêu Nạp"
+  },
+  "heroesUnlock": "Anh hùng mở cùng Nhà Anh Hùng.",
+  "progressLabel": "Tiến độ {name}",
+  "countdownLabel": "Đếm ngược {name}",
+  "capitalGold": "Vàng Thủ Đô",
+  "queue": {
+    "conflict": "Xung đột",
+    "level": "Cấp {level}",
+    "levelSupercharge": "Siêu Nạp cấp {level}",
+    "now": "Bây giờ",
+    "itemTitle": "{name} cấp {level}"
+  },
+  "finishDescription": "{name}, cấp {from} lên {to}, {method}, {time} {unit}",
+  "lookupError": {
+    "rateLimit": "Vui lòng chờ {seconds} giây rồi hãy lấy lại.",
+    "notFound": "Không tìm thấy người chơi {tag}.",
+    "api": "Supercell API phản hồi {status}.",
+    "network": "Việc tra cứu người chơi không kết nối được máy chủ."
+  }
+}

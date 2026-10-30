@@ -1,0 +1,178 @@
+{
+  "title": "Configurações",
+  "subline": "Preferências, backups e seus dados",
+  "tabsLabel": "Seções das configurações",
+  "tabs": {
+    "sync": "Sincronização na nuvem",
+    "preferences": "Preferências",
+    "data": "Backup e dados",
+    "about": "Sobre"
+  },
+  "appearance": {
+    "title": "Aparência",
+    "description": "Escolha como o app aparece.",
+    "themeLabel": "Tema",
+    "themes": {
+      "light": "Claro",
+      "dark": "Escuro",
+      "system": "Sistema"
+    },
+    "themeNote": "O tema Sistema segue o seu dispositivo. Agora ele está {mode}."
+  },
+  "builders": {
+    "title": "Configurações de construtores",
+    "description": "Ajudantes de evento que adicionam um espaço às suas filas.",
+    "goblinBuilder": "Construtor Goblin",
+    "goblinBuilderHelp": "Adiciona um espaço extra de construtor, o sétimo, para construções.",
+    "goblinResearch": "Pesquisa Goblin",
+    "goblinResearchHelp": "Adiciona um espaço extra de pesquisa no Laboratório."
+  },
+  "activeHours": {
+    "title": "Horário ativo",
+    "description": "Defina as horas em que você joga a cada dia. As linhas do tempo da fila adicionam um intervalo quando uma melhoria termina fora dessa janela.",
+    "start": "Hora de início",
+    "end": "Hora de término",
+    "save": "Salvar",
+    "clear": "Limpar",
+    "status": "Ativo das {start} às {end}, no relógio do seu dispositivo.",
+    "none": "Nenhum horário ativo definido. Todas as horas contam como ativas.",
+    "sameTime": "O início e o término são iguais. Escolha dois horários diferentes ou limpe a janela.",
+    "overnight": "Esta janela passa pela madrugada, das {start} às {end} do dia seguinte.",
+    "unsaved": "Você tem alterações não salvas.",
+    "clockChanged": "O deslocamento do seu relógio mudou. O horário ativo continua indo das {start} às {end} no seu relógio."
+  },
+  "data": {
+    "title": "Gerenciamento de dados",
+    "storageNote": {
+      "title": "Salvo neste navegador.",
+      "body": "Limpar os dados do navegador remove suas vilas. Exporte um backup de vez em quando."
+    },
+    "export": {
+      "title": "Exportar",
+      "description": "Baixe todas as vilas e suas configurações em um único arquivo.",
+      "button": "Exportar todas as vilas",
+      "done": "Backup baixado"
+    },
+    "import": {
+      "title": "Importar",
+      "fileLabel": "Arquivo de backup",
+      "chooseFile": "Escolher arquivo",
+      "noFile": "Nenhum arquivo escolhido",
+      "description": "Escolha um arquivo de backup. Você revisa tudo antes de qualquer alteração.",
+      "review": "Revisar importação",
+      "merged": "Backup mesclado",
+      "replaced": "O backup substituiu seus dados",
+      "undo": "Desfazer"
+    },
+    "reset": {
+      "title": "Apagar todos os dados",
+      "warning": "Exclui todas as vilas e configurações deste navegador.",
+      "button": "Apagar todos os dados",
+      "confirmTitle": "Excluir tudo?",
+      "confirmBody": "Isso remove {names}. Você pode desfazer por dez segundos.",
+      "cancel": "Cancelar",
+      "confirm": "Excluir tudo",
+      "done": "Todos os dados excluídos",
+      "doneMessage": "{amount} {count, plural, one {vila removida} other {vilas removidas}}.",
+      "doneMessageDisconnected": "{amount} {count, plural, one {vila removida} other {vilas removidas}}. A sincronização foi desconectada neste navegador.",
+      "syncedCopy": "Excluir também a cópia sincronizada em {provider}",
+      "syncedOn": "A sincronização continua ativa. Seus outros dispositivos perdem essas vilas na próxima sincronização. Exporte um backup antes se não tiver certeza.",
+      "syncedOff": "Sem isso, a sincronização é desconectada neste navegador, para que a próxima sincronização não traga as vilas de volta.",
+      "undo": "Desfazer"
+    },
+    "villages": {
+      "title": "Vilas",
+      "description": "Crie, edite, alterne e exclua vilas.",
+      "manage": "Gerenciar vilas"
+    },
+    "villageCount": "{amount} {count, plural, one {vila} other {vilas}}"
+  },
+  "importDialog": {
+    "title": "Revisar importação",
+    "fileInfo": "{name}, {size}",
+    "bytes": "{count} B",
+    "kilobytes": "{count} KB",
+    "cancel": "Cancelar",
+    "close": "Fechar",
+    "merge": "Mesclar neste dispositivo",
+    "replace": "Substituir neste dispositivo",
+    "failedTitle": "Não foi possível importar este arquivo.",
+    "errors": {
+      "notJson": "Este arquivo não é um JSON válido.",
+      "playthroughsMissing": "Este arquivo não é um backup do Clash of Clans Tracker. Ele não tem uma lista de vilas."
+    },
+    "checksTitle": "Verificações concluídas.",
+    "checks": "O arquivo lista {read} vilas e {kept} podem ser lidas.",
+    "skipped": "{amount} {count, plural, one {item foi ignorado} other {itens foram ignorados}}.",
+    "howToApply": "Como aplicar",
+    "modeLabel": "Modo de importação",
+    "modes": {
+      "merge": "Mesclar",
+      "replace": "Substituir"
+    },
+    "modeNotes": {
+      "merge": "Adiciona as vilas novas e mantém a cópia mais recente de uma vila que existe nos dois lados. Suas configurações e a vila ativa continuam como estão.",
+      "replace": "Usa somente o que está no arquivo. As vilas que não estão no arquivo são removidas."
+    },
+    "whatChanges": "O que muda",
+    "columns": {
+      "village": "Vila",
+      "inFile": "No arquivo",
+      "onDevice": "No dispositivo",
+      "result": "Resultado"
+    },
+    "notThere": "Ausente",
+    "results": {
+      "added": "Adicionada",
+      "updated": "Atualizada pelo arquivo",
+      "kept": "Mantida",
+      "replaced": "Substituída",
+      "removed": "Removida"
+    },
+    "summary": {
+      "added": "{count} adicionadas",
+      "updated": "{count} atualizadas",
+      "kept": "{count} mantidas",
+      "replaced": "{count} substituídas",
+      "removed": "{count} removidas"
+    },
+    "noVillages": "O arquivo não tem vilas.",
+    "undoNote": "Você pode desfazer a importação por dez segundos."
+  },
+  "about": {
+    "version": "Versão {version}",
+    "summary": "Um acompanhador de progresso gratuito para Clash of Clans. Acompanhe melhorias, pesquisas, conquistas e muito mais em várias vilas.",
+    "officialGame": "Site oficial do Clash of Clans",
+    "disclaimer": "Este projeto não é afiliado, endossado nem conectado à Supercell ou ao Clash of Clans."
+  },
+  "region": {
+    "title": "Idioma e região",
+    "description": "Como o app mostra textos, números e datas neste dispositivo. Essas escolhas não são salvas com suas vilas, não são exportadas e não são sincronizadas.",
+    "language": {
+      "label": "Idioma",
+      "hint": "O idioma do app. Os nomes do jogo continuam em inglês."
+    },
+    "numberFormat": {
+      "label": "Formato de número",
+      "hint": "Exemplo: {example}",
+      "options": {
+        "auto": "Automático (segue o idioma)",
+        "us": "1,234,567.89 (EUA)",
+        "european": "1.234.567,89 (europeu)",
+        "french": "1 234 567,89 (francês)",
+        "swiss": "1’234’567.89 (suíço)",
+        "indian": "12,34,567.89 (indiano)"
+      }
+    },
+    "dateFormat": {
+      "label": "Formato de data",
+      "hint": "Exemplo: {example}",
+      "options": {
+        "auto": "Automático (segue o idioma)",
+        "mdy": "Mês/Dia/Ano",
+        "dmy": "Dia/Mês/Ano",
+        "ymd": "Ano-Mês-Dia"
+      }
+    }
+  }
+}

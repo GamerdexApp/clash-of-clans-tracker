@@ -1,0 +1,48 @@
+{
+  "title": "建築工人基地城牆",
+  "subline": "{name}，建築工人大本營 {builderHall}，最高城牆等級 {highest}",
+  "massEdit": "城牆數量也可以在批次編輯中調整。",
+  "tiles": {
+    "total": "此建築工人大本營的總數",
+    "totalCaption": "最高城牆等級 {highest}",
+    "placed": "已放置",
+    "placedCaption": "分配到各等級的城牆",
+    "notPlaced": "未放置",
+    "allPlaced": "全部已放置",
+    "stillToPlace": "{count, plural, other {還有 {amount} 段城牆待放置}}",
+    "over": "超出 {count}"
+  },
+  "hideEmpty": "{hidden, plural, =0 {隱藏低於你最低等級的空等級} other {隱藏低於你最低等級的空等級（已隱藏 {hidden} 個）}}",
+  "row": {
+    "level": "等級 {level}",
+    "own": "你擁有",
+    "ownLabel": "你在等級 {level} 擁有的城牆",
+    "lower": "等級 {level} 城牆少一段",
+    "raise": "等級 {level} 城牆多一段",
+    "nextCost": "下一級：每段城牆 {price} {resource}",
+    "toMove": "要移動的城牆",
+    "toLevel": "移至等級",
+    "plusOne": "+1",
+    "move": "移動",
+    "moveAll": "全部移動",
+    "preview": "將 {walls, plural, other {{amount} 段城牆}}從等級 {from} 移至 {to}：{price} {resource}",
+    "nothingToMove": "沒有可移動的城牆",
+    "noWalls": "此等級沒有可移動的城牆。"
+  },
+  "cost": {
+    "title": "將所有城牆升至等級 {level} 的費用",
+    "row": "等級 {level}，{walls, plural, other {{amount} 段城牆}}",
+    "total": "總計",
+    "none": "所有已放置的城牆都已是最高等級，或尚未放置任何城牆。",
+    "note": "等級 2 到 6 的城牆需要建築工人金幣。等級 7 以上需要建築工人金幣或建築工人聖水。"
+  },
+  "empty": {
+    "title": "還沒有城牆",
+    "description": "請到建築工人基地升級頁面設定建築工人大本營等級，即可查看城牆。"
+  },
+  "toast": {
+    "moved": "已將 {walls, plural, other {{amount} 段城牆}}從等級 {from} 移至 {to}",
+    "counted": "等級 {level} 城牆 {from} 至 {to}",
+    "undo": "復原"
+  }
+}

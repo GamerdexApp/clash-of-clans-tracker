@@ -1,0 +1,17 @@
+{
+  "stats": {
+    "attacksPerWeek": "주간 공격 횟수",
+    "promoted": "승급 상위 %",
+    "demoted": "강등 하위 %",
+    "trophyRange": "트로피 범위",
+    "starsForBonus": "스타 보너스에 필요한 별"
+  },
+  "sections": {
+    "maxLoot": "획득 가능한 최대 전리품",
+    "leagueBonus": "최대 리그 보너스",
+    "weeklyStarBonus": "주간 스타 보너스",
+    "starBonusReward": "스타 보너스 보상"
+  },
+  "range": "{min} ~ {max}",
+  "rangeOpen": "{min}+"
+}

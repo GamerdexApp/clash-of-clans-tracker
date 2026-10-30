@@ -1,0 +1,61 @@
+{
+  "title": "อุปกรณ์",
+  "subline": "{name}, ทาวน์ฮอลล์ {townHall}, ช่างตีเหล็กระดับ {blacksmith}",
+  "massEdit": "ตั้งระดับอุปกรณ์ได้ในแก้ไขหลายรายการเช่นกัน",
+  "locked": {
+    "title": "ต้องมีช่างตีเหล็ก",
+    "description": "สร้างช่างตีเหล็กเพื่อติดตามอุปกรณ์ฮีโร่ ตั้งระดับได้ในหน้าช่างก่อสร้าง แท็บกองทัพ",
+    "action": "ไปที่ช่างก่อสร้าง"
+  },
+  "ore": {
+    "title": "คลังแร่",
+    "description": "แร่ที่คุณมี การขาดแร่เป็นเพียงคำแนะนำ และไม่เคยขวางการอัปเกรด",
+    "names": {
+      "shiny": "Shiny Ore",
+      "glowing": "Glowing Ore",
+      "starry": "Starry Ore"
+    },
+    "short": {
+      "shiny": "Shiny",
+      "glowing": "Glowing",
+      "starry": "Starry"
+    },
+    "needed": "ที่ต้องใช้สำหรับชิ้นที่แสดง: {amount}",
+    "enough": "ในคลังพอแล้ว",
+    "shortBy": "ขาด {amount}",
+    "deduct": "หักแร่เมื่อฉันอัปเกรด",
+    "deductHelp": "การอัปเกรดจะหักแร่ออกจากคลัง และไม่ต่ำกว่า 0 เลิกทำจะคืนแร่"
+  },
+  "hideMax": "ซ่อนที่สูงสุด",
+  "heroFilter": "ฮีโร่",
+  "allHeroes": "ฮีโร่ทั้งหมด",
+  "section": "{pieces} ชิ้น, มี {owned} ชิ้น",
+  "empty": {
+    "title": "ยังไม่มีอะไรที่นี่",
+    "allMax": "ทุกชิ้นอยู่ที่ระดับสูงสุดแล้ว ปิดซ่อนที่สูงสุดเพื่อดู"
+  },
+  "card": {
+    "heroLine": "{hero}",
+    "level": "ระดับ {level} จาก {max}",
+    "notOwned": "ยังไม่มี",
+    "max": "สูงสุด",
+    "setLevel": "ระดับ {name}",
+    "stepLevel": "ระดับ {level}",
+    "free": "ฟรี",
+    "time": "เวลา: ทันที",
+    "requires": "ต้องมีช่างตีเหล็ก {level}",
+    "moreLevels": "อีก {amount} {count, plural, other {ระดับ}}",
+    "add": "เพิ่มที่ระดับ 1",
+    "upgradeTo": "อัปเกรดเป็นระดับ {level}",
+    "lockedUntil": "ล็อกจนกว่าจะมีช่างตีเหล็ก {level}",
+    "allows": "ช่างตีเหล็ก {blacksmith} อนุญาตถึงระดับ {level}",
+    "allowsNone": "ช่างตีเหล็ก {blacksmith} ยังไม่อนุญาตชิ้นนี้",
+    "footer": "เหลืออีก {amount} {levels, plural, other {ระดับ}}",
+    "progress": "ความคืบหน้า {name}"
+  },
+  "toast": {
+    "upgraded": "{name} Lv {from} ไป {to}",
+    "levelSet": "{name} Lv {from} ไป {to}",
+    "undo": "เลิกทำ"
+  }
+}

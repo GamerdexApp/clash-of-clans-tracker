@@ -1,0 +1,112 @@
+{
+  "title": "Visão geral",
+  "description": "Sua vila de relance: progresso, cronômetros diários e todas as estatísticas guardadas.",
+  "subline": "{name}, calculado, somente leitura",
+  "header": {
+    "clanLevel": "{hasRole, select, true {Nível do clã {level}, {role}} other {Nível do clã {level}}}",
+    "achievements": "Conquistas",
+    "ringCaption": "{stars} de {maxStars} estrelas",
+    "viewAll": "Ver tudo",
+    "townHall": "CV{level}"
+  },
+  "dailies": {
+    "title": "Diárias",
+    "closedTitle": "As diárias abrem no Centro de Vila 3",
+    "closedBody": "A Forja, os Ajudantes e o Passe de Temporada abrem conforme o Centro de Vila sobe.",
+    "closedLink": "Ver o que está aberto",
+    "groups": {
+      "helpers": "Ajudantes",
+      "daily": "Diária",
+      "goldPass": "Passe Dourado"
+    },
+    "requires": "Requer {requirement}",
+    "openForge": "Abrir Forja",
+    "openHelpers": "Abrir Ajudantes",
+    "unlockProspector": "Liberar no Passe de Temporada",
+    "helperHut": "Cabana dos Ajudantes",
+    "townHall": "Centro de Vila {level}",
+    "starBonus": "Bônus de Estrelas",
+    "capitalGold": "Ouro da Capital",
+    "autoForge": "Forja Automática",
+    "forgeSlots": "Espaços da Forja",
+    "notRunning": "Parada",
+    "running": "Em andamento",
+    "stopAuto": "Parar Forja Automática",
+    "autoLine": "{amount} {resource} para {capitalGold} Ouro da Capital",
+    "slotsLine": "{running} de {open} espaços em andamento",
+    "slotsDone": "{done, plural, =1 {1 espaço concluído} other {{amount} espaços concluídos}}",
+    "autoPerk": "o benefício da Forja Automática",
+    "helperPreview": "Usar agora: {before} restantes viram {after}",
+    "goldPass": {
+      "edit": "Editar no Passe de Temporada",
+      "builder": "Bônus de construtor",
+      "research": "Bônus de pesquisa",
+      "hoggyBank": "Hoggy Bank",
+      "gemDonations": "Doações por 1 Gema",
+      "autoForge": "Forja Automática",
+      "requestReduction": "Redução do Tempo de Pedido",
+      "on": "Ativado",
+      "off": "Desativado",
+      "resets": "Os bônus voltam a 0% em {date}.",
+      "readOnly": "Abrir a Visão geral nunca altera a vila nem a hora da última modificação."
+    }
+  },
+  "league": {
+    "open": "Mostrar recompensas de {name}",
+    "homeKind": "Liga da Vila Principal",
+    "builderKind": "Liga da Base do Construtor",
+    "noData": "Sem dados para esta liga neste Centro de Vila.",
+    "battle": "Resultados de batalha",
+    "stars": "Estrelas",
+    "attacker": "Ouro do Construtor do atacante",
+    "defender": "Elixir do Construtor do defensor"
+  },
+  "builder": {
+    "title": "Base do Construtor",
+    "hall": "Salão do Construtor {level}",
+    "trophies": "{trophies} troféus",
+    "daysAt": "Dias no SC{level}",
+    "notSetTitle": "Salão do Construtor não definido",
+    "notSetBody": "A Base do Construtor abre no Centro de Vila 6, mas esta vila tem o Salão do Construtor 0. O progresso, os troféus e as tropas aparecem quando o nível for 1 ou superior.",
+    "notSetAction": "Definir nível do Salão do Construtor",
+    "lockedBody": "Requer Centro de Vila 6",
+    "troops": "Tropas",
+    "heroes": "Heróis"
+  },
+  "capital": {
+    "title": "Capital do Clã",
+    "hall": "Salão da Capital {level}",
+    "notSetTitle": "A Capital do Clã não está configurada",
+    "notSetBody": "O Pico da Capital ainda não tem nível de salão, então não há progresso de distritos para mostrar. Defina o nível do Salão da Capital para começar a acompanhar.",
+    "notSetAction": "Definir nível do Salão da Capital",
+    "lockedBody": "Requer Centro de Vila 3",
+    "districtHall": "Salão do Distrito {level}",
+    "notUnlocked": "Não liberado",
+    "unlocksAt": "Liberado no Salão da Capital {level}",
+    "needsDistrictHall": "Defina um Salão do Distrito para começar",
+    "noData": "Sem dados",
+    "more": "Mostrar mais {count} distritos",
+    "showFewer": "Mostrar menos",
+    "openDistricts": "Abrir Distritos"
+  },
+  "home": {
+    "title": "Vila Principal",
+    "townHall": "Centro de Vila {level}",
+    "daysAt": "Dias no CV{level}",
+    "perHour": "por hora",
+    "stored": "armazenado",
+    "cards": {
+      "locked": "Requer {requirement}"
+    },
+    "queue": "Abrir",
+    "troops": "Tropas",
+    "spells": "Feitiços",
+    "heroes": "Heróis",
+    "siege": "Máquinas de Cerco",
+    "pets": "Mascotes",
+    "legend": "Contorno verde: no máximo para este Centro de Vila. Contorno tracejado: bloqueado. Relógio: uma melhoria está em andamento.",
+    "tile": "{hasRequirement, select, true {{name}, requer {requirement}} other {{name}, nível {level}{max, plural, =0 {} other { de {max}}}}}",
+    "heroLocked": "Requer {requirement}",
+    "petsLocked": "Requer Centro de Vila 14"
+  }
+}

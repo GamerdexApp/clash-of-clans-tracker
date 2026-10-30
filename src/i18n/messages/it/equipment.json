@@ -1,0 +1,61 @@
+{
+  "title": "Equipaggiamento",
+  "subline": "{name}, Municipio {townHall}, Fabbro di livello {blacksmith}",
+  "massEdit": "I livelli dell'equipaggiamento si possono impostare anche in Modifica di massa.",
+  "locked": {
+    "title": "Richiede il Fabbro",
+    "description": "Costruisci il Fabbro per seguire l'equipaggiamento degli eroi. Imposta il suo livello nella pagina Costruttore, scheda Esercito.",
+    "action": "Vai a Costruttore"
+  },
+  "ore": {
+    "title": "Scorta di minerali",
+    "description": "I minerali che possiedi. Le carenze sono solo un consiglio e non bloccano mai un potenziamento.",
+    "names": {
+      "shiny": "Minerale Scintillante",
+      "glowing": "Minerale Luminoso",
+      "starry": "Minerale Stellare"
+    },
+    "short": {
+      "shiny": "Scintillante",
+      "glowing": "Luminoso",
+      "starry": "Stellare"
+    },
+    "needed": "Necessari per i pezzi elencati: {amount}",
+    "enough": "Scorta sufficiente",
+    "shortBy": "Ne mancano {amount}",
+    "deduct": "Sottrai i minerali quando potenzio",
+    "deductHelp": "Un potenziamento toglie i suoi minerali dalla scorta, mai sotto 0. Annulla li rimette."
+  },
+  "hideMax": "Nascondi massimo",
+  "heroFilter": "Eroe",
+  "allHeroes": "Tutti gli eroi",
+  "section": "{pieces} pezzi, {owned} posseduti",
+  "empty": {
+    "title": "Ancora niente qui",
+    "allMax": "Ogni pezzo è al massimo. Disattiva Nascondi massimo per vederli."
+  },
+  "card": {
+    "heroLine": "{hero}",
+    "level": "Livello {level} di {max}",
+    "notOwned": "Non posseduto",
+    "max": "Max",
+    "setLevel": "Livello di {name}",
+    "stepLevel": "Livello {level}",
+    "free": "Gratis",
+    "time": "Tempo: istantaneo",
+    "requires": "Richiede il Fabbro {level}",
+    "moreLevels": "{amount} {count, plural, one {livello} other {livelli}} in più",
+    "add": "Aggiungi al livello 1",
+    "upgradeTo": "Potenzia al livello {level}",
+    "lockedUntil": "Bloccato fino al Fabbro {level}",
+    "allows": "Il Fabbro {blacksmith} consente fino al livello {level}",
+    "allowsNone": "Il Fabbro {blacksmith} non consente ancora questo pezzo",
+    "footer": "{amount} {levels, plural, one {livello rimasto} other {livelli rimasti}}",
+    "progress": "Progresso di {name}"
+  },
+  "toast": {
+    "upgraded": "{name} Lv {from} a {to}",
+    "levelSet": "{name} Lv {from} a {to}",
+    "undo": "Annulla"
+  }
+}

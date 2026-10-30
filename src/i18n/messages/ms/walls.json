@@ -1,0 +1,48 @@
+{
+  "title": "Tembok",
+  "subline": "{name}, Dewan Bandar {townHall}, Tahap tembok tertinggi {highest}",
+  "massEdit": "Bilangan tembok juga boleh dilaraskan dalam Sunting pukal.",
+  "tiles": {
+    "total": "Jumlah pada Dewan Bandar ini",
+    "totalCaption": "Tahap tembok tertinggi {highest}",
+    "placed": "Diletakkan",
+    "placedCaption": "Tembok pada sesuatu tahap",
+    "notPlaced": "Belum diletakkan",
+    "allPlaced": "Semua diletakkan",
+    "stillToPlace": "{amount} {count, plural, other {tembok}} masih perlu diletakkan",
+    "over": "Melebihi {count}"
+  },
+  "hideEmpty": "{hidden, plural, =0 {Sembunyi tahap kosong di bawah tahap terendah anda} other {Sembunyi tahap kosong di bawah tahap terendah anda ({hidden} disembunyikan)}}",
+  "row": {
+    "level": "Tahap {level}",
+    "own": "Anda miliki",
+    "ownLabel": "Tembok yang anda miliki pada tahap {level}",
+    "lower": "Kurangkan satu tembok pada tahap {level}",
+    "raise": "Tambah satu tembok pada tahap {level}",
+    "nextCost": "Tahap seterusnya: {price} {resource} setiap tembok",
+    "toMove": "Tembok untuk dialihkan",
+    "toLevel": "Ke tahap",
+    "plusOne": "+1",
+    "move": "Alih",
+    "moveAll": "Alih semua",
+    "preview": "Alih {amount} {walls, plural, other {tembok}} dari tahap {from} ke {to}: {price} {resource}",
+    "nothingToMove": "Tiada apa-apa untuk dialihkan",
+    "noWalls": "Tiada tembok pada tahap ini untuk dialihkan."
+  },
+  "cost": {
+    "title": "Kos untuk membawa semua tembok ke tahap {level}",
+    "row": "Tahap {level}, {amount} {walls, plural, other {tembok}}",
+    "total": "Jumlah",
+    "none": "Setiap tembok yang diletakkan sudah pada tahap teratas, atau belum ada yang diletakkan.",
+    "note": "Tembok tahap 2 hingga 4 berharga Emas. Tahap 5 ke atas berharga Emas atau Elixir."
+  },
+  "empty": {
+    "title": "Belum ada tembok",
+    "description": "Tembok dibuka pada Dewan Bandar 2."
+  },
+  "toast": {
+    "moved": "{amount} {walls, plural, other {tembok}} dialihkan dari tahap {from} ke {to}",
+    "counted": "Tembok tahap {level} {from} ke {to}",
+    "undo": "Buat asal"
+  }
+}

@@ -1,0 +1,178 @@
+{
+  "title": "설정",
+  "subline": "환경설정, 백업, 내 데이터",
+  "tabsLabel": "설정 섹션",
+  "tabs": {
+    "sync": "클라우드 동기화",
+    "preferences": "환경설정",
+    "data": "백업 및 데이터",
+    "about": "정보"
+  },
+  "appearance": {
+    "title": "화면 모드",
+    "description": "앱의 화면 모양을 고르세요.",
+    "themeLabel": "테마",
+    "themes": {
+      "light": "라이트",
+      "dark": "다크",
+      "system": "시스템"
+    },
+    "themeNote": "시스템 설정은 기기를 따라가요. 지금은 {mode} 모드예요."
+  },
+  "builders": {
+    "title": "빌더 설정",
+    "description": "대기열에 슬롯을 추가하는 이벤트 도우미예요.",
+    "goblinBuilder": "고블린 빌더",
+    "goblinBuilderHelp": "건물용 빌더 슬롯을 하나 더 추가해요. 일곱 번째 슬롯이에요.",
+    "goblinResearch": "고블린 연구",
+    "goblinResearchHelp": "연구소에 연구 슬롯을 하나 더 추가해요."
+  },
+  "activeHours": {
+    "title": "활동 시간",
+    "description": "매일 게임을 하는 시간대를 정하세요. 업그레이드가 이 시간대 밖에 끝나면 대기열 타임라인에 공백이 생겨요.",
+    "start": "시작 시간",
+    "end": "종료 시간",
+    "save": "저장",
+    "clear": "지우기",
+    "status": "내 시계 기준으로 {start}부터 {end}까지 활동해요.",
+    "none": "활동 시간이 없어요. 모든 시간을 활동 시간으로 계산해요.",
+    "sameTime": "시작과 종료가 같아요. 서로 다른 시간을 고르거나 시간대를 지우세요.",
+    "overnight": "이 시간대는 밤을 넘겨요. {start}부터 다음 날 {end}까지예요.",
+    "unsaved": "저장하지 않은 변경 사항이 있어요.",
+    "clockChanged": "시계 오프셋이 바뀌었어요. 활동 시간은 내 시계 기준으로 여전히 {start}부터 {end}까지예요."
+  },
+  "data": {
+    "title": "데이터 관리",
+    "storageNote": {
+      "title": "이 브라우저에 저장돼요.",
+      "body": "브라우저 데이터를 지우면 마을이 사라져요. 가끔 백업을 내보내 두세요."
+    },
+    "export": {
+      "title": "내보내기",
+      "description": "모든 마을과 설정을 파일 하나로 내려받아요.",
+      "button": "모든 마을 내보내기",
+      "done": "백업을 내려받았어요"
+    },
+    "import": {
+      "title": "가져오기",
+      "fileLabel": "백업 파일",
+      "chooseFile": "파일 선택",
+      "noFile": "선택한 파일 없음",
+      "description": "백업 파일을 고르세요. 적용하기 전에 내용을 확인할 수 있어요.",
+      "review": "가져오기 확인",
+      "merged": "백업을 병합했어요",
+      "replaced": "백업으로 데이터를 교체했어요",
+      "undo": "실행 취소"
+    },
+    "reset": {
+      "title": "모든 데이터 초기화",
+      "warning": "이 브라우저의 모든 마을과 설정을 삭제해요.",
+      "button": "모든 데이터 초기화",
+      "confirmTitle": "모두 삭제할까요?",
+      "confirmBody": "{names}을(를) 삭제해요. 10초 동안 실행 취소할 수 있어요.",
+      "cancel": "취소",
+      "confirm": "모두 삭제",
+      "done": "모든 데이터를 삭제했어요",
+      "doneMessage": "{count, plural, other {마을 {amount}개를 삭제했어요.}}",
+      "doneMessageDisconnected": "{count, plural, other {마을 {amount}개를 삭제했어요.}} 이 브라우저의 동기화 연결이 해제됐어요.",
+      "syncedCopy": "{provider}에 동기화된 사본도 삭제",
+      "syncedOn": "동기화는 켜진 상태로 유지돼요. 다른 기기는 다음 동기화 때 이 마을들을 잃어요. 확실하지 않다면 먼저 백업을 내보내세요.",
+      "syncedOff": "이 항목을 끄면 이 브라우저의 동기화 연결이 해제돼요. 그래서 다음 동기화로 마을이 되돌아오지 않아요.",
+      "undo": "실행 취소"
+    },
+    "villages": {
+      "title": "마을",
+      "description": "마을을 만들고, 수정하고, 전환하고, 삭제해요.",
+      "manage": "마을 관리"
+    },
+    "villageCount": "{count, plural, other {마을 {amount}개}}"
+  },
+  "importDialog": {
+    "title": "가져오기 확인",
+    "fileInfo": "{name}, {size}",
+    "bytes": "{count} B",
+    "kilobytes": "{count} KB",
+    "cancel": "취소",
+    "close": "닫기",
+    "merge": "이 기기에 병합",
+    "replace": "이 기기 교체",
+    "failedTitle": "이 파일은 가져올 수 없어요.",
+    "errors": {
+      "notJson": "올바른 JSON 파일이 아니에요.",
+      "playthroughsMissing": "Clash of Clans Tracker 백업 파일이 아니에요. 마을 목록이 없어요."
+    },
+    "checksTitle": "검사를 통과했어요.",
+    "checks": "파일에 마을 {read}개가 있고 {kept}개를 읽을 수 있어요.",
+    "skipped": "{count, plural, other {항목 {amount}개를 건너뛰었어요.}}",
+    "howToApply": "적용 방법",
+    "modeLabel": "가져오기 방식",
+    "modes": {
+      "merge": "병합",
+      "replace": "교체"
+    },
+    "modeNotes": {
+      "merge": "새 마을을 추가하고, 양쪽에 있는 마을은 더 최근 사본을 유지해요. 설정과 활성 마을은 그대로예요.",
+      "replace": "파일에 있는 내용만 사용해요. 파일에 없는 마을은 삭제돼요."
+    },
+    "whatChanges": "바뀌는 내용",
+    "columns": {
+      "village": "마을",
+      "inFile": "파일",
+      "onDevice": "기기",
+      "result": "결과"
+    },
+    "notThere": "없음",
+    "results": {
+      "added": "추가됨",
+      "updated": "파일로 갱신됨",
+      "kept": "유지됨",
+      "replaced": "교체됨",
+      "removed": "삭제됨"
+    },
+    "summary": {
+      "added": "{count}개 추가",
+      "updated": "{count}개 갱신",
+      "kept": "{count}개 유지",
+      "replaced": "{count}개 교체",
+      "removed": "{count}개 삭제"
+    },
+    "noVillages": "파일에 마을이 없어요.",
+    "undoNote": "10초 동안 가져오기를 실행 취소할 수 있어요."
+  },
+  "about": {
+    "version": "버전 {version}",
+    "summary": "Clash of Clans용 무료 진행 상황 트래커예요. 여러 마을의 업그레이드, 연구, 업적 등을 기록하세요.",
+    "officialGame": "Clash of Clans 공식 사이트",
+    "disclaimer": "이 프로젝트는 Supercell 및 Clash of Clans와 제휴, 승인, 연관 관계가 없어요."
+  },
+  "region": {
+    "title": "언어 및 지역",
+    "description": "이 기기에서 앱이 텍스트, 숫자, 날짜를 보여 주는 방식이에요. 이 설정은 마을과 함께 저장, 내보내기, 동기화되지 않아요.",
+    "language": {
+      "label": "언어",
+      "hint": "앱의 언어예요. 게임 이름은 영어로 유지돼요."
+    },
+    "numberFormat": {
+      "label": "숫자 형식",
+      "hint": "예시: {example}",
+      "options": {
+        "auto": "자동 (언어를 따라감)",
+        "us": "1,234,567.89 (미국)",
+        "european": "1.234.567,89 (유럽)",
+        "french": "1 234 567,89 (프랑스)",
+        "swiss": "1’234’567.89 (스위스)",
+        "indian": "12,34,567.89 (인도)"
+      }
+    },
+    "dateFormat": {
+      "label": "날짜 형식",
+      "hint": "예시: {example}",
+      "options": {
+        "auto": "자동 (언어를 따라감)",
+        "mdy": "월/일/년",
+        "dmy": "일/월/년",
+        "ymd": "년-월-일"
+      }
+    }
+  }
+}

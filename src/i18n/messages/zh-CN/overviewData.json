@@ -1,0 +1,40 @@
+{
+  "stats": {
+    "level": "等级",
+    "warStars": "战争星星",
+    "trophies": "奖杯",
+    "bestTrophies": "最高奖杯",
+    "donations": "捐兵",
+    "received": "收到的捐兵",
+    "war": "参战偏好",
+    "attacks": "进攻胜利",
+    "defenses": "防守胜利",
+    "builderTrophies": "建筑大师奖杯",
+    "bestBuilderTrophies": "最高建筑大师奖杯",
+    "contributions": "首都贡献",
+    "warIn": "参战",
+    "warOut": "不参战"
+  },
+  "cards": {
+    "structures": "建筑",
+    "traps": "陷阱",
+    "supercharge": "超级充能",
+    "crafted": "定制防御",
+    "lab": "实验室",
+    "heroes": "英雄",
+    "equipment": "装备",
+    "pets": "宠物",
+    "walls": "城墙",
+    "districts": "区域",
+    "troops": "兵种",
+    "spells": "法术"
+  },
+  "subs": {
+    "structures": "防御、军队、资源",
+    "lab": "兵种、法术、攻城机器",
+    "builderLab": "建筑大师基地兵种",
+    "walls": "{total} 段城墙，最高 {max} 级",
+    "districts": "{active} / {total} 已启用",
+    "available": "{count} 个可用"
+  }
+}

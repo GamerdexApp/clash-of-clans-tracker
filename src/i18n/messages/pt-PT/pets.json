@@ -1,0 +1,30 @@
+{
+  "title": "Mascotes",
+  "subline": "{name}, Centro da Aldeia {townHall}",
+  "strip": {
+    "title": "Casa das Mascotes",
+    "openQueue": "Abrir fila e cronologia",
+    "noPetHouse": "Constrói primeiro uma Casa das Mascotes. Define o nível dela na página Construtor, separador Exército.",
+    "unassignedHelp": "Há mais do que uma melhoria de mascote guardada na Casa das Mascotes. Conclui ou cancela a extra.",
+    "levelLabel": "Nível da Casa das Mascotes",
+    "level": "{level} de {max}",
+    "notBuilt": "Não construída",
+    "boostLabel": "Bónus de investigação do Passe de Ouro"
+  },
+  "boostValue": "{percent, plural, =0 {Nenhum} other {-{percent}% de tempo e custo}}",
+  "locked": {
+    "title": "As mascotes desbloqueiam no Centro da Aldeia 14",
+    "body": "Esta aldeia está no Centro da Aldeia {townHall}. Estas são as mascotes que vais obter.",
+    "needs": "Centro da Aldeia {townHall}, Casa das Mascotes {petHouse}"
+  },
+  "card": {
+    "notUnlocked": "Não desbloqueada",
+    "markUnlocked": "Marcar como desbloqueada",
+    "maxAtHall": "Nív. máx. {level}",
+    "progress": "Progresso de {name}"
+  },
+  "empty": {
+    "title": "Ainda não há nada aqui",
+    "allMax": "Todas as mascotes estão no máximo. Desativa Ocultar máx. para as ver."
+  }
+}

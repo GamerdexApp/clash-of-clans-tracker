@@ -1,0 +1,63 @@
+{
+  "upgrades": {
+    "title": "Nâng cấp",
+    "subline": "{name}, Nhà Thợ Xây {hall}",
+    "sublineNotSet": "{name}, chưa đặt Nhà Thợ Xây",
+    "tabsLabel": "Các mục Căn Cứ Thợ Xây",
+    "tabs": {
+      "defenses": "Phòng thủ",
+      "army": "Quân đội",
+      "resources": "Tài nguyên",
+      "traps": "Bẫy",
+      "heroes": "Anh hùng",
+      "other": "Khác"
+    },
+    "strip": {
+      "title": "Thợ Xây",
+      "noBuilders": "Căn Cứ Thợ Xây có hai thợ xây.",
+      "openQueue": "Mở hàng chờ và dòng thời gian",
+      "unassignedHelp": "Một số nâng cấp được lưu trên thợ xây mà nâng cấp khác đang dùng. Hãy hoàn tất hoặc hủy chúng."
+    }
+  },
+  "locked": {
+    "title": "Cần Nhà Chính 6",
+    "description": "Làng này đang ở Nhà Chính {townHall}. Căn Cứ Thợ Xây mở ở Nhà Chính 6, hoặc khi bạn đặt cấp Nhà Thợ Xây."
+  },
+  "notSet": {
+    "action": "Đặt cấp Nhà Thợ Xây",
+    "troopsDescription": "Quân của Căn Cứ Thợ Xây theo cấp Nhà Thợ Xây. Hãy đặt ở trang Nâng cấp, tab Khác.",
+    "title": "Chọn cấp Nhà Thợ Xây để bắt đầu theo dõi",
+    "description": "Đặt cấp Nhà Thợ Xây ở ô bên dưới. Các danh sách của Căn Cứ Thợ Xây sẽ theo cấp đó."
+  },
+  "hall": {
+    "title": "Nhà Thợ Xây",
+    "notSet": "Chưa đặt",
+    "option": "Nhà Thợ Xây {level}",
+    "since": "{amount} {days, plural, other {ngày}} ở Nhà Thợ Xây {level}",
+    "confirm": {
+      "title": "Đổi Nhà Thợ Xây sang {level}?",
+      "raising": "Tăng cấp sẽ hiện thêm công trình và giới hạn cao hơn. Không có gì bạn đã lưu bị xóa.",
+      "lowering": "Giảm cấp sẽ ẩn công trình và giới hạn cao hơn mức đó. Các cấp đã lưu của bạn được giữ.",
+      "clearing": "Xóa cấp sẽ ẩn mọi danh sách của Căn Cứ Thợ Xây. Các cấp đã lưu của bạn được giữ.",
+      "setDays": "Đặt Số ngày ở Nhà Thợ Xây về hôm nay",
+      "cancel": "Hủy",
+      "confirm": "Đổi cấp"
+    },
+    "toast": "Nhà Thợ Xây {from, plural, =0 {chưa đặt} other {{from}}} sang {to, plural, =0 {chưa đặt} other {{to}}}",
+    "undo": "Hoàn tác"
+  },
+  "other": {
+    "clockTower": "Tháp Đồng Hồ",
+    "clockTowerMax": "Tối đa cấp {level} ở Nhà Thợ Xây này",
+    "clockTowerProgress": "Tiến độ Tháp Đồng Hồ"
+  },
+  "empty": {
+    "title": "Chưa có gì ở đây",
+    "description": "Không có công trình loại này ở cấp Nhà Thợ Xây này.",
+    "allMax": "Mọi thứ ở đây đã tối đa. Tắt Ẩn tối đa để xem."
+  },
+  "heroes": {
+    "maxAtHall": "Tối đa cấp {level} ở Nhà Thợ Xây này",
+    "progress": "Tiến độ {name}"
+  }
+}

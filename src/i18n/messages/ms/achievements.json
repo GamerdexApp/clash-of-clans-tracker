@@ -1,0 +1,49 @@
+{
+  "title": "Pencapaian",
+  "description": "Jejaki bintang, nilai dan ganjaran setiap pencapaian.",
+  "subline": "{name}, {count} pencapaian, {stars} daripada {maxStars} bintang, {percent}%",
+  "tiles": {
+    "all": "Semua pencapaian",
+    "home": "Kampung Utama",
+    "builder": "Pangkalan Pembina",
+    "capital": "Ibu Kota Klan",
+    "gems": "Permata diperoleh",
+    "xp": "XP diperoleh",
+    "stars": "{stars} daripada {maxStars} bintang",
+    "left": "{amount} {unit} masih perlu diperoleh",
+    "gemsUnit": "permata",
+    "xpUnit": "XP"
+  },
+  "sections": {
+    "home": "Kampung Utama",
+    "builderBase": "Pangkalan Pembina",
+    "clanCapital": "Ibu Kota Klan",
+    "summary": "{count} pencapaian, {stars} / {maxStars} bintang, {gems} permata, {xp} XP",
+    "more": "Tunjuk {count} lagi pencapaian {name}",
+    "less": "Tunjuk lebih sedikit"
+  },
+  "card": {
+    "manual": "Manual",
+    "nextStar": "Bintang seterusnya",
+    "xp": "XP",
+    "gems": "permata",
+    "edit": "Sunting {name}",
+    "done": "Siap",
+    "stars": "Bintang",
+    "starsHelp": "Tekan bintang yang sama sekali lagi untuk membuang satu bintang.",
+    "star": "{amount} {number, plural, other {bintang}}",
+    "value": "Nilai",
+    "target": "Sasaran",
+    "manualLabel": "Manual (langkau gantian API)",
+    "saves": "Perubahan disimpan semasa anda menaip. Menaikkan bintang memindahkan Sasaran ke peringkat seterusnya.",
+    "progress": "Kemajuan {name}",
+    "starsEarned": "{stars} daripada 3 bintang"
+  },
+  "toast": {
+    "stars": "{name} ditukar kepada {amount} {stars, plural, other {bintang}}",
+    "targetMoved": "Sasaran dipindahkan ke {target}.",
+    "value": "Nilai {name} ditukar kepada {value}",
+    "target": "Sasaran {name} ditukar kepada {target}",
+    "undo": "Buat asal"
+  }
+}

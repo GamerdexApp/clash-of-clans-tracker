@@ -1,0 +1,29 @@
+{
+  "groups": {
+    "homeVillage": "Vila Principal",
+    "builderBase": "Base do Construtor",
+    "clanCapital": "Capital do Clã",
+    "dailies": "Diárias",
+    "tools": "Ferramentas"
+  },
+  "items": {
+    "overview": "Visão geral",
+    "achievements": "Conquistas",
+    "builder": "Construtor",
+    "research": "Pesquisa",
+    "pets": "Mascotes",
+    "equipment": "Equipamentos",
+    "walls": "Muros",
+    "builderBaseUpgrades": "Melhorias",
+    "builderBaseTroops": "Tropas",
+    "builderBaseWalls": "Muros",
+    "districts": "Distritos",
+    "capitalTroops": "Tropas e feitiços",
+    "forge": "Forja",
+    "helpers": "Ajudantes",
+    "seasonPass": "Passe de Temporada",
+    "massEdit": "Edição em massa",
+    "settings": "Configurações"
+  },
+  "villages": "Minhas Vilas"
+}

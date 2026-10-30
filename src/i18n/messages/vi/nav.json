@@ -1,0 +1,29 @@
+{
+  "groups": {
+    "homeVillage": "Làng Chính",
+    "builderBase": "Căn Cứ Thợ Xây",
+    "clanCapital": "Thủ Đô Bang Hội",
+    "dailies": "Hằng ngày",
+    "tools": "Công cụ"
+  },
+  "items": {
+    "overview": "Tổng quan",
+    "achievements": "Thành tựu",
+    "builder": "Thợ Xây",
+    "research": "Nghiên cứu",
+    "pets": "Thú Cưng",
+    "equipment": "Trang bị",
+    "walls": "Tường",
+    "builderBaseUpgrades": "Nâng cấp",
+    "builderBaseTroops": "Quân",
+    "builderBaseWalls": "Tường",
+    "districts": "Quận",
+    "capitalTroops": "Quân và phép",
+    "forge": "Lò Rèn",
+    "helpers": "Trợ Thủ",
+    "seasonPass": "Season Pass",
+    "massEdit": "Sửa hàng loạt",
+    "settings": "Cài đặt"
+  },
+  "villages": "Làng của tôi"
+}

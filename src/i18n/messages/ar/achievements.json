@@ -1,0 +1,49 @@
+{
+  "title": "الإنجازات",
+  "description": "تتبع نجوم وقيم ومكافآت كل إنجاز.",
+  "subline": "{name}، {count} إنجازًا، {stars} من {maxStars} نجمة، {percent}%",
+  "tiles": {
+    "all": "كل الإنجازات",
+    "home": "القرية الرئيسية",
+    "builder": "قاعدة البنّاء",
+    "capital": "عاصمة العشيرة",
+    "gems": "الجواهر المكتسبة",
+    "xp": "الخبرة المكتسبة",
+    "stars": "{stars} من {maxStars} نجمة",
+    "left": "متبقي {amount} {unit} للكسب",
+    "gemsUnit": "جواهر",
+    "xpUnit": "خبرة"
+  },
+  "sections": {
+    "home": "القرية الرئيسية",
+    "builderBase": "قاعدة البنّاء",
+    "clanCapital": "عاصمة العشيرة",
+    "summary": "{count} إنجازًا، {stars} / {maxStars} نجمة، {gems} جوهرة، {xp} خبرة",
+    "more": "عرض {count} إنجازات أخرى في {name}",
+    "less": "عرض أقل"
+  },
+  "card": {
+    "manual": "يدوي",
+    "nextStar": "النجمة التالية",
+    "xp": "خبرة",
+    "gems": "جواهر",
+    "edit": "تعديل {name}",
+    "done": "تم",
+    "stars": "النجوم",
+    "starsHelp": "اضغط على النجمة نفسها مرة أخرى لإزالة نجمة واحدة.",
+    "star": "{amount} {number, plural, zero {نجوم} one {نجمة} two {نجمتان} few {نجوم} many {نجمة} other {نجمة}}",
+    "value": "القيمة",
+    "target": "الهدف",
+    "manualLabel": "يدوي (تخطي تجاوز الواجهة)",
+    "saves": "تُحفظ التغييرات أثناء الكتابة. رفع النجوم ينقل الهدف إلى المستوى التالي.",
+    "progress": "تقدم {name}",
+    "starsEarned": "{stars} من 3 نجوم"
+  },
+  "toast": {
+    "stars": "تغيّر {name} إلى {amount} {stars, plural, zero {نجوم} one {نجمة} two {نجمتين} few {نجوم} many {نجمة} other {نجمة}}",
+    "targetMoved": "انتقل الهدف إلى {target}.",
+    "value": "تغيّرت قيمة {name} إلى {value}",
+    "target": "تغيّر هدف {name} إلى {target}",
+    "undo": "تراجع"
+  }
+}

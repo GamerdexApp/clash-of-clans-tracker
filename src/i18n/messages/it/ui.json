@@ -1,0 +1,42 @@
+{
+  "close": "Chiudi",
+  "field": {
+    "optional": "Facoltativo"
+  },
+  "stepper": {
+    "lower": "Diminuisci {label}",
+    "raise": "Aumenta {label}",
+    "labelPrefix": "{label}, "
+  },
+  "switch": {
+    "on": "Attivo",
+    "off": "Spento"
+  },
+  "tabs": {
+    "locked": " (bloccato)"
+  },
+  "toast": {
+    "dismiss": "Chiudi",
+    "variants": {
+      "success": "Riuscito",
+      "info": "Info",
+      "warning": "Avviso",
+      "error": "Errore"
+    },
+    "missingProvider": "useToast must be used within a ToastProvider"
+  },
+  "filters": {
+    "filters": "Filtri",
+    "activeCount": "{count} attivi",
+    "clearFilters": "Cancella filtri",
+    "reset": "Reimposta",
+    "description": "Le modifiche si applicano subito. I filtri non vengono salvati."
+  },
+  "savedChip": {
+    "automatic": "Salva in automatico",
+    "justNow": "Salvato ora",
+    "minutesAgo": "Salvato {count} min fa",
+    "at": "Salvato {time}",
+    "failed": "Non salvato, memoria piena"
+  }
+}

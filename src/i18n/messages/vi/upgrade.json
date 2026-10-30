@@ -1,0 +1,108 @@
+{
+  "massEdit": {
+    "hint": "Cấp cũng có thể đặt trong Sửa hàng loạt.",
+    "link": "Mở Sửa hàng loạt"
+  },
+  "hideMax": "Ẩn tối đa",
+  "strip": {
+    "free": "{free} trên {total} rảnh",
+    "idle": "Rảnh",
+    "unassigned": "Chưa gán",
+    "taskLevels": "Cấp {from} lên {to}"
+  },
+  "start": {
+    "title": "Bắt đầu nâng cấp",
+    "levelChange": "{from, plural, =0 {Xây lên cấp {to}} other {Cấp {from} lên {to}}}",
+    "time": "Thời gian",
+    "cost": "Chi phí",
+    "doneAt": "Xong lúc",
+    "wasBoosted": "trước là {base}, Gold Pass -{percent}%",
+    "wasCost": "{resource}, trước là {base}",
+    "resource": "{resource}",
+    "storedNote": "thời gian đã tăng tốc này được lưu",
+    "storedNoteUnboosted": "thời gian này được lưu",
+    "instant": "Công trình này không tốn thời gian. Nó hoàn tất ngay và không dùng thợ xây.",
+    "lanes": {
+      "builder": {
+        "label": "Thợ xây",
+        "choose": "Chọn một thợ xây để bắt đầu.",
+        "noneFree": "Mọi thợ xây đều bận. Hãy hủy hoặc hoàn tất một nâng cấp trước."
+      },
+      "research": {
+        "label": "Làn nghiên cứu",
+        "choose": "Chọn một làn để bắt đầu.",
+        "noneFree": "Mọi làn nghiên cứu đều bận. Hãy hủy hoặc hoàn tất một nghiên cứu trước."
+      },
+      "bbBuilder": {
+        "label": "Thợ xây",
+        "choose": "Chọn một thợ xây để bắt đầu.",
+        "noneFree": "Cả hai thợ xây đều bận. Hãy hủy hoặc hoàn tất một nâng cấp trước."
+      },
+      "bbResearch": {
+        "label": "Phòng Thí Nghiệm Sao",
+        "choose": "Chọn Phòng Thí Nghiệm Sao để bắt đầu.",
+        "noneFree": "Phòng Thí Nghiệm Sao đang bận. Hãy hủy hoặc hoàn tất nghiên cứu trước."
+      },
+      "pet": {
+        "label": "Nhà Thú Cưng",
+        "choose": "Chọn Nhà Thú Cưng để bắt đầu.",
+        "noneFree": "Nhà Thú Cưng đang bận. Hãy hủy hoặc hoàn tất nâng cấp thú cưng trước."
+      }
+    },
+    "requires": {
+      "laboratory": "Cần Phòng Thí Nghiệm {level}",
+      "pet-house": "Cần Nhà Thú Cưng {level}",
+      "star-laboratory": "Cần Phòng Thí Nghiệm Sao {level}",
+      "noPetHouse": "Hãy xây Nhà Thú Cưng trước"
+    },
+    "free": "Miễn phí",
+    "cancel": "Hủy",
+    "confirm": "Bắt đầu nâng cấp",
+    "confirmInstant": "Xây ngay"
+  },
+  "finish": {
+    "title": "Hoàn tất sớm",
+    "left": "còn lại",
+    "methodLabel": "Nó hoàn tất bằng cách nào?",
+    "methods": {
+      "timePassed": {
+        "label": "Hết thời gian",
+        "description": "Bộ đếm đã chạy hết trong game. Không tốn gì."
+      },
+      "gems": {
+        "label": "Ngọc",
+        "description": "Trả ngọc trong game để hoàn tất ngay. Chi phí giảm dần khi thời gian còn lại ít đi."
+      },
+      "book": {
+        "label": "Sách Xây Dựng",
+        "description": "Hoàn tất ngay một nâng cấp công trình đang chạy."
+      },
+      "hammer": {
+        "label": "Búa Xây Dựng",
+        "description": "Nâng ngay một công trình lên cấp kế tiếp."
+      }
+    },
+    "stores": "Những gì làng lưu lại",
+    "storesLevel": "Cấp {level}. Bộ đếm đã xóa.",
+    "storesSaved": "{time} được cộng vào thời gian tiết kiệm.",
+    "storesSavedNone": "Thời gian tiết kiệm giữ nguyên.",
+    "gemFigure": "Khoảng {gems} ngọc (theo quy tắc dữ liệu game, chi phí trong game có thể khác).",
+    "notTracked": {
+      "timePassed": "",
+      "gems": "Ngọc đã tiêu không được theo dõi.",
+      "book": "Số sách đang có không được theo dõi.",
+      "hammer": "Số búa đang có không được theo dõi."
+    },
+    "keep": "Tiếp tục nâng cấp",
+    "confirm": "Hoàn tất nâng cấp"
+  },
+  "cancel": {
+    "title": "Hủy nâng cấp này?",
+    "body": "Hủy sẽ dừng bộ đếm. {name} giữ ở cấp {level} và {builder} rảnh trở lại.",
+    "refundTitle": "Hoàn trả trong game: 50%",
+    "refundBody": "Hủy trong Clash of Clans trả lại {refund} {resource} trong {paid} bạn đã trả. Ứng dụng này không theo dõi tài nguyên của bạn, nên hãy kiểm tra kho sau khi hủy.",
+    "undoNote": "Bạn có thể hoàn tác trong 10 giây sau khi hủy. Sau đó, hãy bắt đầu lại nâng cấp.",
+    "keep": "Tiếp tục nâng cấp",
+    "confirm": "Hủy nâng cấp"
+  }
+}

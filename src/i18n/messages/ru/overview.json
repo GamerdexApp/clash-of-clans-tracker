@@ -1,0 +1,112 @@
+{
+  "title": "Обзор",
+  "description": "Ваша деревня с первого взгляда: прогресс, ежедневные таймеры и вся сохранённая статистика.",
+  "subline": "{name}, расчётные данные, только просмотр",
+  "header": {
+    "clanLevel": "{hasRole, select, true {Уровень клана {level}, {role}} other {Уровень клана {level}}}",
+    "achievements": "Достижения",
+    "ringCaption": "{stars} из {maxStars} звёзд",
+    "viewAll": "Показать все",
+    "townHall": "Рат. {level}"
+  },
+  "dailies": {
+    "title": "Ежедневное",
+    "closedTitle": "Ежедневное открывается на Ратуше 3",
+    "closedBody": "Кузница, Помощники и Сезонный пропуск открываются по мере роста Ратуши.",
+    "closedLink": "Посмотреть, что открыто",
+    "groups": {
+      "helpers": "Помощники",
+      "daily": "Ежедневно",
+      "goldPass": "Золотой пропуск"
+    },
+    "requires": "Нужно: {requirement}",
+    "openForge": "Открыть кузницу",
+    "openHelpers": "Открыть помощников",
+    "unlockProspector": "Открыть в Сезонном пропуске",
+    "helperHut": "Хижина помощников",
+    "townHall": "Ратуша {level}",
+    "starBonus": "Звёздный бонус",
+    "capitalGold": "Золото столицы",
+    "autoForge": "Автоковка",
+    "forgeSlots": "Слоты кузницы",
+    "notRunning": "Не запущено",
+    "running": "Идёт",
+    "stopAuto": "Остановить автоковку",
+    "autoLine": "{amount} {resource} в {capitalGold} золота столицы",
+    "slotsLine": "Идёт слотов: {running} из {open}",
+    "slotsDone": "{done, plural, one {Готов {amount} слот} few {Готово {amount} слота} many {Готово {amount} слотов} other {Готово {amount} слота}}",
+    "autoPerk": "перк автоковки",
+    "helperPreview": "Использовать сейчас: осталось {before}, станет {after}",
+    "goldPass": {
+      "edit": "Изменить в Сезонном пропуске",
+      "builder": "Буст строителя",
+      "research": "Буст исследований",
+      "hoggyBank": "Свиная копилка",
+      "gemDonations": "Пожертвования за 1 самоцвет",
+      "autoForge": "Автоковка",
+      "requestReduction": "Сокращение времени запроса",
+      "on": "Вкл.",
+      "off": "Выкл.",
+      "resets": "Бусты вернутся к 0% {date}.",
+      "readOnly": "Открытие обзора никогда не меняет деревню и время её последнего изменения."
+    }
+  },
+  "league": {
+    "open": "Показать награды: {name}",
+    "homeKind": "Лига домашней деревни",
+    "builderKind": "Лига базы строителя",
+    "noData": "Нет данных об этой лиге для этой Ратуши.",
+    "battle": "Результаты боёв",
+    "stars": "Звёзды",
+    "attacker": "Золото строителя атакующему",
+    "defender": "Эликсир строителя защитнику"
+  },
+  "builder": {
+    "title": "База строителя",
+    "hall": "Зал строителя {level}",
+    "trophies": "Кубков: {trophies}",
+    "daysAt": "Дней на ЗС{level}",
+    "notSetTitle": "Зал строителя не задан",
+    "notSetBody": "База строителя открыта на Ратуше 6, но в этой деревне Зал строителя 0. Прогресс, кубки и войска появятся, когда уровень станет 1 или выше.",
+    "notSetAction": "Указать уровень Зала строителя",
+    "lockedBody": "Нужна Ратуша 6",
+    "troops": "Войска",
+    "heroes": "Герои"
+  },
+  "capital": {
+    "title": "Столица клана",
+    "hall": "Столичный зал {level}",
+    "notSetTitle": "Столица клана не настроена",
+    "notSetBody": "У Capital Peak пока нет уровня зала, поэтому прогресса районов нет. Укажите уровень Столичного зала, чтобы начать отслеживание.",
+    "notSetAction": "Указать уровень Столичного зала",
+    "lockedBody": "Нужна Ратуша 3",
+    "districtHall": "Зал района {level}",
+    "notUnlocked": "Не открыто",
+    "unlocksAt": "Открывается на Столичном зале {level}",
+    "needsDistrictHall": "Укажите зал района, чтобы начать",
+    "noData": "Нет данных",
+    "more": "Показать ещё районов: {count}",
+    "showFewer": "Показать меньше",
+    "openDistricts": "Открыть районы"
+  },
+  "home": {
+    "title": "Домашняя деревня",
+    "townHall": "Ратуша {level}",
+    "daysAt": "Дней на Рат.{level}",
+    "perHour": "в час",
+    "stored": "накоплено",
+    "cards": {
+      "locked": "Нужно: {requirement}"
+    },
+    "queue": "Открыть",
+    "troops": "Войска",
+    "spells": "Заклинания",
+    "heroes": "Герои",
+    "siege": "Осадные машины",
+    "pets": "Питомцы",
+    "legend": "Зелёная рамка: максимум для этой Ратуши. Пунктирная рамка: закрыто. Часы: идёт улучшение.",
+    "tile": "{hasRequirement, select, true {{name}, нужно: {requirement}} other {{name}, уровень {level}{max, plural, =0 {} other { из {max}}}}}",
+    "heroLocked": "Нужно: {requirement}",
+    "petsLocked": "Нужна Ратуша 14"
+  }
+}

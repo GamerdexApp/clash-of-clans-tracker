@@ -1,0 +1,138 @@
+{
+  "title": "แก้ไขหลายรายการ",
+  "description": "เปลี่ยนหลายระดับพร้อมกัน จะไม่มีอะไรถูกบันทึกจนกว่าคุณจะกดบันทึกการเปลี่ยนแปลง",
+  "subline": "{name}, ทาวน์ฮอลล์ {townHall}, การเปลี่ยนแปลงที่เตรียมไว้",
+  "scopes": {
+    "home": "หมู่บ้านหลัก",
+    "builder": "บิลเดอร์เบส",
+    "capital": "แคลนแคปิตอล"
+  },
+  "scopeNav": "ขอบเขต",
+  "requires": "ต้องมี {requirement}",
+  "trackingOff": "ปิดการติดตาม",
+  "changedCount": "{count, plural, other {{amount} การเปลี่ยนแปลง}}",
+  "chip": "มีการเปลี่ยนแปลงที่ยังไม่บันทึก",
+  "bar": {
+    "unsaved": "{count, plural, other {{amount} การเปลี่ยนแปลงที่ยังไม่บันทึก}}",
+    "none": "ไม่มีการเปลี่ยนแปลงที่ยังไม่บันทึก",
+    "discard": "ละทิ้ง",
+    "save": "บันทึกการเปลี่ยนแปลง"
+  },
+  "saved": "{count, plural, other {บันทึก {amount} การเปลี่ยนแปลงแล้ว}}",
+  "undo": "เลิกทำ",
+  "discardDialog": {
+    "title": "{count, plural, other {ละทิ้ง {amount} การเปลี่ยนแปลงที่ยังไม่บันทึกหรือไม่}}",
+    "body": "ทุกแถวจะกลับไปเป็นระดับที่บันทึกไว้",
+    "keep": "แก้ไขต่อ",
+    "discard": "ละทิ้งการเปลี่ยนแปลง"
+  },
+  "leave": {
+    "title": "{count, plural, other {คุณมี {amount} การเปลี่ยนแปลงที่ยังไม่บันทึก}}",
+    "body": "บันทึกก่อนออก หรือละทิ้ง",
+    "save": "บันทึกและออก",
+    "discard": "ละทิ้งและออก",
+    "keep": "แก้ไขต่อ"
+  },
+  "toolbar": {
+    "label": "การดำเนินการแบบกลุ่ม",
+    "selectAll": "เลือกทั้ง {count}",
+    "selected": "{count, plural, other {เลือก {amount} แถว}}",
+    "clearSelection": "ล้างการเลือก",
+    "scopeAll": "ใช้กับทั้ง {count} แถวใน{category}",
+    "scopeSelected": "{count, plural, other {ใช้กับ {amount} แถวที่เลือก}}",
+    "max": "สูงสุดทั้งหมด",
+    "maxSelected": "สูงสุดที่เลือก",
+    "reset": "รีเซ็ตทั้งหมด",
+    "resetSelected": "รีเซ็ตที่เลือก",
+    "setLevel": "ตั้งระดับ",
+    "levelLabel": "ระดับสำหรับแถวที่เลือก",
+    "applyLevel": "{count, plural, other {ใช้กับ {amount} แถว}}",
+    "hallLabel": "ตั้งเป็นสูงสุดตามระดับฮอลล์",
+    "hallCurrent": "{hall} {level} (ปัจจุบัน)",
+    "hallOption": "{hall} {level}",
+    "hallPlaceholder": "เลือก {hall}"
+  },
+  "confirm": {
+    "title": "{count, plural, other {ลด {amount} แถวหรือไม่}}",
+    "body": "การทำนี้เปลี่ยนฉบับร่าง จะไม่มีอะไรถูกบันทึกจนกว่าคุณจะกดบันทึกการเปลี่ยนแปลง",
+    "superchargeNote": "อาคารที่ลดต่ำกว่าระดับสูงสุดจะเสียขั้นซูเปอร์ชาร์จด้วย",
+    "apply": "ใช้กับฉบับร่าง",
+    "cancel": "ยกเลิก",
+    "line": "{name}: {from} ไป {to}",
+    "more": "และอีก {count} รายการ"
+  },
+  "rows": {
+    "notBuilt": "ยังไม่ได้สร้าง",
+    "toMax": "อีก {count} ถึงสูงสุด",
+    "atMax": "สูงสุดแล้ว",
+    "changed": "เปลี่ยน {from} เป็น {to}",
+    "level": "ระดับ {name}",
+    "raise": "เพิ่ม {name}",
+    "lower": "ลด {name}",
+    "max": "สูงสุด",
+    "select": "เลือก {name}",
+    "selectGroup": "เลือก {name} ทุกรายการ",
+    "supercharge": "ซูเปอร์ชาร์จ",
+    "reachFirst": "ไปให้ถึงระดับ {level} ก่อน",
+    "slider": "แถบเลื่อน {name}",
+    "groupBuilt": "สร้างแล้ว {count}, ระดับสูงสุด {max}",
+    "expand": "แสดง {name}",
+    "collapse": "ซ่อน {name}"
+  },
+  "category": {
+    "atMax": "{done} จาก {total} สูงสุดแล้วสำหรับ {hall} {level}",
+    "rowsAtMax": "{done} จาก {total} สูงสุดแล้ว",
+    "empty": "ยังไม่มีอะไรให้แก้ไขในหมวดนี้",
+    "locked": "ต้องมี {requirement}",
+    "lockedSuffix": " (ล็อก)",
+    "nav": "หมวดหมู่"
+  },
+  "walls": {
+    "total": "รวม",
+    "allocated": "จัดสรรแล้ว",
+    "remaining": "คงเหลือ",
+    "maxAll": "สูงสุดทั้งหมด",
+    "resetAll": "รีเซ็ตทั้งหมด",
+    "maxAllHelp": "ย้ายกำแพงที่เหลือทั้งหมดไปที่ระดับสูงสุด",
+    "level": "กำแพงระดับ {level}"
+  },
+  "builder": {
+    "profile": "โปรไฟล์บิลเดอร์เบส",
+    "hall": "ระดับบิลเดอร์ฮอลล์",
+    "hallHelp": "บิลเดอร์ฮอลล์ {level} กำหนดระดับสูงสุดของทุกแถวด้านล่าง การลดระดับจะถามก่อน และลดเฉพาะแถวที่เกินขีดจำกัดใหม่",
+    "none": "ไม่มีอาคารที่ระดับบิลเดอร์ฮอลล์นี้",
+    "raise": "เพิ่มบิลเดอร์ฮอลล์",
+    "lower": "ลดบิลเดอร์ฮอลล์",
+    "trophies": "ถ้วยรางวัล",
+    "bestTrophies": "ถ้วยรางวัลสูงสุด",
+    "league": "ลีก",
+    "hallConfirmTitle": "ลดบิลเดอร์ฮอลล์เป็น {level} หรือไม่"
+  },
+  "hallNames": {
+    "home": "ทาวน์ฮอลล์",
+    "builder": "บิลเดอร์ฮอลล์",
+    "district": "ดิสทริกต์ฮอลล์",
+    "capital": "แคปิตอลฮอลล์"
+  },
+  "capital": {
+    "profile": "โปรไฟล์แคลนแคปิตอล",
+    "hall": "แคปิตอลฮอลล์",
+    "none": "ไม่มี",
+    "level": "แคปิตอลฮอลล์ {level}",
+    "contributions": "การสมทบแคลนแคปิตอล",
+    "unit": "ทองแคปิตอล",
+    "districtHall": "ดิสทริกต์ฮอลล์",
+    "districtNone": "ไม่มี",
+    "districtLevel": "ดิสทริกต์ฮอลล์ {level}",
+    "requiresCapitalHall": "ต้องมีแคปิตอลฮอลล์ {level}",
+    "unlockHint": "ตั้ง{label}ด้านบนเพื่อปลดล็อกอาคาร",
+    "parts": "ส่วน",
+    "off": "ปิดการติดตามแคลนแคปิตอลอยู่",
+    "offBody": "เปิดการติดตามอีกครั้งจากหน้าแคลนแคปิตอล ไม่มีอะไรถูกลบ",
+    "offAction": "เปิดแคลนแคปิตอล"
+  },
+  "empty": {
+    "title": "ไม่มีหมู่บ้านที่ใช้งานอยู่",
+    "description": "เลือกหมู่บ้านหรือสร้างใหม่เพื่อใช้แก้ไขหลายรายการ"
+  }
+}

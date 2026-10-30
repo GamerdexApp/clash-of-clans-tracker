@@ -1,0 +1,17 @@
+{
+  "stats": {
+    "attacksPerWeek": "Haftalık saldırı",
+    "promoted": "İlk % terfi eder",
+    "demoted": "Son % düşer",
+    "trophyRange": "Kupa aralığı",
+    "starsForBonus": "Yıldız bonusu için yıldız"
+  },
+  "sections": {
+    "maxLoot": "Maks. kullanılabilir ganimet",
+    "leagueBonus": "Maks. lig bonusu",
+    "weeklyStarBonus": "Haftalık yıldız bonusu",
+    "starBonusReward": "Yıldız bonusu ödülü"
+  },
+  "range": "{min} ile {max}",
+  "rangeOpen": "{min}+"
+}

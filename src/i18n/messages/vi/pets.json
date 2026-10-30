@@ -1,0 +1,30 @@
+{
+  "title": "Thú Cưng",
+  "subline": "{name}, Nhà Chính {townHall}",
+  "strip": {
+    "title": "Nhà Thú Cưng",
+    "openQueue": "Mở hàng chờ và dòng thời gian",
+    "noPetHouse": "Hãy xây Nhà Thú Cưng trước. Đặt cấp của nó ở trang Thợ Xây, tab Quân đội.",
+    "unassignedHelp": "Có hơn một nâng cấp thú cưng được lưu trên Nhà Thú Cưng. Hãy hoàn tất hoặc hủy nâng cấp dư.",
+    "levelLabel": "Cấp Nhà Thú Cưng",
+    "level": "{level} trên {max}",
+    "notBuilt": "Chưa xây",
+    "boostLabel": "Tăng tốc nghiên cứu Gold Pass"
+  },
+  "boostValue": "{percent, plural, =0 {Không} other {-{percent}% thời gian và chi phí}}",
+  "locked": {
+    "title": "Thú Cưng mở ở Nhà Chính 14",
+    "body": "Làng này đang ở Nhà Chính {townHall}. Đây là những thú cưng bạn sẽ có.",
+    "needs": "Nhà Chính {townHall}, Nhà Thú Cưng {petHouse}"
+  },
+  "card": {
+    "notUnlocked": "Chưa mở",
+    "markUnlocked": "Đánh dấu đã mở",
+    "maxAtHall": "Tối đa cấp {level}",
+    "progress": "Tiến độ {name}"
+  },
+  "empty": {
+    "title": "Chưa có gì ở đây",
+    "allMax": "Mọi thú cưng đã tối đa. Tắt Ẩn tối đa để xem chúng."
+  }
+}

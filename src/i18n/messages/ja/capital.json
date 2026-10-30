@@ -1,0 +1,139 @@
+{
+  "districts": {
+    "title": "地区",
+    "subline": "{hall, plural, =0 {{name}、キャピタルホール未設定} other {{name}、キャピタルホール {hall}}}",
+    "description": "クランキャピタルの地区とゾーンです。"
+  },
+  "troops": {
+    "title": "兵士とスペル",
+    "subline": "{name}、クランキャピタルの兵士とスペル",
+    "tiles": {
+      "troops": "兵士",
+      "spells": "スペル",
+      "caption": "{current} / {max} レベル"
+    },
+    "sections": {
+      "troops": "兵士",
+      "spells": "スペル"
+    },
+    "card": {
+      "level": "{name}のレベル",
+      "raise": "{name}を上げる",
+      "lower": "{name}を下げる",
+      "maxAt": "現在の最大レベルは{level}",
+      "from": "{zone}から",
+      "progress": "{name}の進行状況"
+    },
+    "locked": {
+      "title": "まだ利用できません",
+      "districtHall": "{zone}のディストリクトホール {level}が必要です",
+      "capitalHall": "{zone}を開放するにはキャピタルホール {level}が必要です",
+      "kept": "保存済みのレベル {level}は維持されます"
+    },
+    "empty": {
+      "title": "すべて最大です",
+      "description": "「最大を非表示」をオフにすると、すべての兵士とスペルが表示されます。"
+    }
+  },
+  "tracking": {
+    "label": "クランキャピタルを記録",
+    "onHelp": "オフにしてもデータはすべて維持されます。",
+    "turnOnTitle": "クランキャピタルの記録はオンです",
+    "turnedOn": "クランキャピタルの記録をオンにしました。",
+    "undo": "元に戻す",
+    "offDialog": {
+      "title": "クランキャピタルの記録をオフにしますか?",
+      "body": "クランキャピタルのページ、概要のカード、一括編集のタブが非表示になります。削除されるものはありません。",
+      "confirm": "オフにする",
+      "cancel": "キャンセル"
+    }
+  },
+  "off": {
+    "title": "クランキャピタルの記録はオフです",
+    "description": "地区、兵士、スペルは維持されています。記録をオンにすると再び表示されます。",
+    "turnOn": "記録をオンにする",
+    "keptTitle": "維持されるもの",
+    "kept": "クランキャピタルのデータはすべてこのビレッジに残ります。"
+  },
+  "locked": {
+    "title": "クランキャピタルはロックされています",
+    "description": "クランキャピタルはタウンホール3で開放されます。このビレッジはタウンホール {townHall}です。保存済みのデータはタウンホール3で再び表示されます。",
+    "action": "ビレッジでタウンホールを変更"
+  },
+  "notSet": {
+    "title": "クランキャピタルが未設定です",
+    "description": "キャピタルホールのレベルを設定すると、地区、兵士、スペルの記録を始められます。",
+    "action": "キャピタルホールのレベルを設定"
+  },
+  "hall": {
+    "label": "キャピタルホール",
+    "none": "なし",
+    "level": "レベル {level}",
+    "nextCost": "キャピタルホール {level}にはキャピタルゴールド {cost}が必要です{hasOpens, select, true {。開放されるもの: {opens}} other {}}。ホールを上げてもレベルはリセットされません。",
+    "atTop": "キャピタルホールは最大レベルです。",
+    "raised": "キャピタルホールを{from}から{to}に上げました。レベルはリセットされていません。",
+    "changed": "キャピタルホールを{from}から{to}に変更しました。",
+    "districtRaised": "{zone}のディストリクトホールを{from}から{to}に上げました。",
+    "districtChanged": "{zone}のディストリクトホールを{from}から{to}に変更しました。"
+  },
+  "contributions": {
+    "label": "貢献",
+    "unit": "キャピタルゴールド",
+    "help": "クランに寄付した合計です。プレイヤータグのインポートで入力されます。手入力もできます。"
+  },
+  "tiles": {
+    "progress": "キャピタルの進行状況",
+    "progressCaption": "{current} / {max} レベル",
+    "zones": "開放済みゾーン",
+    "zonesCaption": "{open} / {total}"
+  },
+  "zones": {
+    "title": "ゾーン",
+    "help": "ゾーンを選ぶと下で編集できます",
+    "hall": "{level, plural, =0 {ディストリクトホールなし} other {ディストリクトホール {level}}}",
+    "peakHall": "キャピタルホール {level}",
+    "locked": "ロック中、キャピタルホール {hall}が必要",
+    "levels": "{current} / {max}"
+  },
+  "panel": {
+    "districtHall": "ディストリクトホール",
+    "requires": "キャピタルホール {hall}が必要です",
+    "noHall": "ディストリクトホールなし",
+    "empty": "このホールレベルでは建てられるものがありません。",
+    "groupsLabel": "建物グループ",
+    "groups": {
+      "defenses": "防衛設備",
+      "traps": "罠",
+      "army": "軍隊",
+      "walls": "壁"
+    },
+    "max": "最大",
+    "clear": "クリア",
+    "maxAll": "すべて最大",
+    "resetAll": "すべてリセット",
+    "instances": "{amount} {count, plural, other {棟}}",
+    "maxLevel": "最大レベル {level}",
+    "instance": "{name} {index}",
+    "raise": "{name}を上げる",
+    "lower": "{name}を下げる",
+    "wallLevel": "レベル {level}",
+    "wallsLeft": "未配置の壁: {left} / {total}",
+    "wallsNote": "残りの壁の数を超える数にはできません。",
+    "wallsNone": "このホールレベルでは壁がありません。",
+    "wallCount": "レベル {level}の壁",
+    "wallRaise": "レベル {level}の壁を1つ増やす",
+    "wallLower": "レベル {level}の壁を1つ減らす",
+    "groupMaxed": "{zone}: {group}を最大にしました",
+    "groupCleared": "{zone}: {group}をクリアしました"
+  },
+  "confirm": {
+    "title": "このホールを下げますか?",
+    "description": "次のレベルは合わなくなるためリセットされます。それ以外は維持されます。",
+    "confirm": "ホールを下げる",
+    "cancel": "ホールを維持",
+    "more": "ほか{count}件"
+  },
+  "toast": {
+    "undo": "元に戻す"
+  }
+}

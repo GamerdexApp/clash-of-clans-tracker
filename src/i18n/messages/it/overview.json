@@ -1,0 +1,112 @@
+{
+  "title": "Panoramica",
+  "description": "Il tuo villaggio a colpo d'occhio: progressi, timer giornalieri e ogni statistica salvata.",
+  "subline": "{name}, derivato, sola lettura",
+  "header": {
+    "clanLevel": "{hasRole, select, true {Livello del clan {level}, {role}} other {Livello del clan {level}}}",
+    "achievements": "Imprese",
+    "ringCaption": "{stars} di {maxStars} stelle",
+    "viewAll": "Vedi tutto",
+    "townHall": "MU{level}"
+  },
+  "dailies": {
+    "title": "Giornalieri",
+    "closedTitle": "I giornalieri si aprono al Municipio 3",
+    "closedBody": "Fucina, Aiutanti e Pass Stagionale si aprono man mano che il Municipio sale.",
+    "closedLink": "Vedi cosa è aperto",
+    "groups": {
+      "helpers": "Aiutanti",
+      "daily": "Giornaliero",
+      "goldPass": "Pass Oro"
+    },
+    "requires": "Richiede {requirement}",
+    "openForge": "Apri Fucina",
+    "openHelpers": "Apri Aiutanti",
+    "unlockProspector": "Sblocca nel Pass Stagionale",
+    "helperHut": "Capanna degli Aiutanti",
+    "townHall": "Municipio {level}",
+    "starBonus": "Bonus Stelle",
+    "capitalGold": "Oro Capitale",
+    "autoForge": "Fucina Automatica",
+    "forgeSlots": "Slot della Fucina",
+    "notRunning": "Non in corso",
+    "running": "In corso",
+    "stopAuto": "Ferma Fucina Automatica",
+    "autoLine": "{amount} {resource} in {capitalGold} Oro Capitale",
+    "slotsLine": "{running} di {open} slot in corso",
+    "slotsDone": "{done, plural, one {1 slot completato} other {{amount} slot completati}}",
+    "autoPerk": "il vantaggio Fucina Automatica",
+    "helperPreview": "Usa ora: {before} rimasti diventano {after}",
+    "goldPass": {
+      "edit": "Modifica nel Pass Stagionale",
+      "builder": "Potenziamento Costruttore",
+      "research": "Potenziamento Ricerca",
+      "hoggyBank": "Salvadanaio Hoggy",
+      "gemDonations": "Donazioni da 1 gemma",
+      "autoForge": "Fucina Automatica",
+      "requestReduction": "Riduzione tempo richieste",
+      "on": "Attivo",
+      "off": "Spento",
+      "resets": "I potenziamenti tornano allo 0% il {date}.",
+      "readOnly": "Aprire la Panoramica non cambia mai il villaggio né la sua ultima modifica."
+    }
+  },
+  "league": {
+    "open": "Mostra le ricompense di {name}",
+    "homeKind": "Lega del Villaggio Principale",
+    "builderKind": "Lega della Base del Costruttore",
+    "noData": "Nessun dato per questa lega a questo Municipio.",
+    "battle": "Risultati delle battaglie",
+    "stars": "Stelle",
+    "attacker": "Oro del Costruttore dell'attaccante",
+    "defender": "Elisir del Costruttore del difensore"
+  },
+  "builder": {
+    "title": "Base del Costruttore",
+    "hall": "Sala del Costruttore {level}",
+    "trophies": "{trophies} trofei",
+    "daysAt": "Giorni alla SC{level}",
+    "notSetTitle": "Sala del Costruttore non impostata",
+    "notSetBody": "La Base del Costruttore è aperta al Municipio 6, ma questo villaggio ha la Sala del Costruttore 0. Progressi, trofei e truppe compaiono quando il livello è 1 o superiore.",
+    "notSetAction": "Imposta il livello della Sala del Costruttore",
+    "lockedBody": "Richiede il Municipio 6",
+    "troops": "Truppe",
+    "heroes": "Eroi"
+  },
+  "capital": {
+    "title": "Capitale del Clan",
+    "hall": "Sala della Capitale {level}",
+    "notSetTitle": "La Capitale del Clan non è configurata",
+    "notSetBody": "La Vetta della Capitale non ha ancora un livello di sala, quindi non c'è un progresso dei distretti da mostrare. Imposta il livello della Sala della Capitale per iniziare.",
+    "notSetAction": "Imposta il livello della Sala della Capitale",
+    "lockedBody": "Richiede il Municipio 3",
+    "districtHall": "Sala del Distretto {level}",
+    "notUnlocked": "Non sbloccato",
+    "unlocksAt": "Si sblocca alla Sala della Capitale {level}",
+    "needsDistrictHall": "Imposta una Sala del Distretto per iniziare",
+    "noData": "Nessun dato",
+    "more": "Mostra altri {count} distretti",
+    "showFewer": "Mostra meno",
+    "openDistricts": "Apri Distretti"
+  },
+  "home": {
+    "title": "Villaggio Principale",
+    "townHall": "Municipio {level}",
+    "daysAt": "Giorni al MU{level}",
+    "perHour": "all'ora",
+    "stored": "accumulato",
+    "cards": {
+      "locked": "Richiede {requirement}"
+    },
+    "queue": "Apri",
+    "troops": "Truppe",
+    "spells": "Magie",
+    "heroes": "Eroi",
+    "siege": "Macchine d'Assedio",
+    "pets": "Animali",
+    "legend": "Contorno verde: al massimo per questo Municipio. Contorno tratteggiato: bloccato. Orologio: un potenziamento è in corso.",
+    "tile": "{hasRequirement, select, true {{name}, richiede {requirement}} other {{name}, livello {level}{max, plural, =0 {} other { di {max}}}}}",
+    "heroLocked": "Richiede {requirement}",
+    "petsLocked": "Richiede il Municipio 14"
+  }
+}

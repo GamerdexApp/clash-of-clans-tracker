@@ -1,0 +1,178 @@
+{
+  "title": "Cài đặt",
+  "subline": "Tùy chọn, sao lưu và dữ liệu của bạn",
+  "tabsLabel": "Các mục cài đặt",
+  "tabs": {
+    "sync": "Đồng bộ đám mây",
+    "preferences": "Tùy chọn",
+    "data": "Sao lưu và dữ liệu",
+    "about": "Giới thiệu"
+  },
+  "appearance": {
+    "title": "Giao diện",
+    "description": "Chọn giao diện của ứng dụng.",
+    "themeLabel": "Chủ đề",
+    "themes": {
+      "light": "Sáng",
+      "dark": "Tối",
+      "system": "Hệ thống"
+    },
+    "themeNote": "Hệ thống theo thiết bị của bạn. Hiện đang là {mode}."
+  },
+  "builders": {
+    "title": "Cài đặt Thợ Xây",
+    "description": "Trợ thủ sự kiện thêm một ô vào hàng chờ của bạn.",
+    "goblinBuilder": "Thợ Xây Goblin",
+    "goblinBuilderHelp": "Thêm một ô thợ xây, ô thứ bảy, cho công trình.",
+    "goblinResearch": "Nghiên Cứu Goblin",
+    "goblinResearchHelp": "Thêm một ô nghiên cứu trong Phòng Thí Nghiệm."
+  },
+  "activeHours": {
+    "title": "Giờ hoạt động",
+    "description": "Đặt khung giờ bạn chơi mỗi ngày. Dòng thời gian hàng chờ thêm một khoảng trống khi một nâng cấp kết thúc ngoài khung giờ này.",
+    "start": "Giờ bắt đầu",
+    "end": "Giờ kết thúc",
+    "save": "Lưu",
+    "clear": "Xóa",
+    "status": "Hoạt động từ {start} đến {end}, theo đồng hồ của bạn.",
+    "none": "Chưa đặt giờ hoạt động. Mọi giờ đều tính là hoạt động.",
+    "sameTime": "Giờ bắt đầu và giờ kết thúc giống nhau. Chọn hai giờ khác nhau, hoặc xóa khung giờ.",
+    "overnight": "Khung giờ này kéo dài qua đêm, từ {start} đến {end} ngày hôm sau.",
+    "unsaved": "Bạn có thay đổi chưa lưu.",
+    "clockChanged": "Độ lệch đồng hồ của bạn đã đổi. Giờ hoạt động vẫn là {start} đến {end} theo đồng hồ của bạn."
+  },
+  "data": {
+    "title": "Quản lý dữ liệu",
+    "storageNote": {
+      "title": "Lưu trong trình duyệt này.",
+      "body": "Xóa dữ liệu trình duyệt sẽ mất các làng của bạn. Hãy xuất bản sao lưu thỉnh thoảng."
+    },
+    "export": {
+      "title": "Xuất",
+      "description": "Tải về mọi làng và cài đặt của bạn thành một tệp.",
+      "button": "Xuất tất cả làng",
+      "done": "Đã tải bản sao lưu"
+    },
+    "import": {
+      "title": "Nhập",
+      "fileLabel": "Tệp sao lưu",
+      "chooseFile": "Chọn tệp",
+      "noFile": "Chưa chọn tệp",
+      "description": "Chọn một tệp sao lưu. Bạn xem lại trước khi có gì thay đổi.",
+      "review": "Xem lại bản nhập",
+      "merged": "Đã gộp bản sao lưu",
+      "replaced": "Bản sao lưu đã thay dữ liệu của bạn",
+      "undo": "Hoàn tác"
+    },
+    "reset": {
+      "title": "Đặt lại toàn bộ dữ liệu",
+      "warning": "Xóa mọi làng và cài đặt trong trình duyệt này.",
+      "button": "Đặt lại toàn bộ dữ liệu",
+      "confirmTitle": "Xóa tất cả?",
+      "confirmBody": "Thao tác này xóa {names}. Bạn có thể hoàn tác trong mười giây.",
+      "cancel": "Hủy",
+      "confirm": "Xóa tất cả",
+      "done": "Đã xóa toàn bộ dữ liệu",
+      "doneMessage": "Đã xóa {amount} {count, plural, other {làng}}.",
+      "doneMessageDisconnected": "Đã xóa {amount} {count, plural, other {làng}}. Đồng bộ đã ngắt kết nối trên trình duyệt này.",
+      "syncedCopy": "Xóa luôn bản đã đồng bộ trên {provider}",
+      "syncedOn": "Đồng bộ vẫn bật. Các thiết bị khác của bạn sẽ mất những làng này ở lần đồng bộ tới. Hãy xuất bản sao lưu trước nếu bạn chưa chắc.",
+      "syncedOff": "Nếu không chọn mục này, đồng bộ sẽ ngắt kết nối trên trình duyệt này để lần đồng bộ tới không đưa các làng quay lại.",
+      "undo": "Hoàn tác"
+    },
+    "villages": {
+      "title": "Làng",
+      "description": "Tạo, sửa, chuyển đổi và xóa làng.",
+      "manage": "Quản lý làng"
+    },
+    "villageCount": "{amount} {count, plural, other {làng}}"
+  },
+  "importDialog": {
+    "title": "Xem lại bản nhập",
+    "fileInfo": "{name}, {size}",
+    "bytes": "{count} B",
+    "kilobytes": "{count} KB",
+    "cancel": "Hủy",
+    "close": "Đóng",
+    "merge": "Gộp vào thiết bị này",
+    "replace": "Thay thế thiết bị này",
+    "failedTitle": "Không thể nhập tệp này.",
+    "errors": {
+      "notJson": "Tệp này không phải JSON hợp lệ.",
+      "playthroughsMissing": "Tệp này không phải bản sao lưu của Clash of Clans Tracker. Tệp không có danh sách làng."
+    },
+    "checksTitle": "Đã qua kiểm tra.",
+    "checks": "Tệp liệt kê {read} làng và đọc được {kept} làng.",
+    "skipped": "Đã bỏ qua {amount} {count, plural, other {mục}}.",
+    "howToApply": "Cách áp dụng",
+    "modeLabel": "Chế độ nhập",
+    "modes": {
+      "merge": "Gộp",
+      "replace": "Thay thế"
+    },
+    "modeNotes": {
+      "merge": "Thêm các làng mới và giữ bản mới hơn của làng có ở cả hai nơi. Cài đặt và làng đang dùng của bạn được giữ nguyên.",
+      "replace": "Chỉ dùng những gì có trong tệp. Các làng không có trong tệp sẽ bị xóa."
+    },
+    "whatChanges": "Những gì thay đổi",
+    "columns": {
+      "village": "Làng",
+      "inFile": "Trong tệp",
+      "onDevice": "Trên thiết bị",
+      "result": "Kết quả"
+    },
+    "notThere": "Không có",
+    "results": {
+      "added": "Đã thêm",
+      "updated": "Cập nhật từ tệp",
+      "kept": "Giữ nguyên",
+      "replaced": "Đã thay",
+      "removed": "Đã xóa"
+    },
+    "summary": {
+      "added": "Thêm {count}",
+      "updated": "Cập nhật {count}",
+      "kept": "Giữ {count}",
+      "replaced": "Thay {count}",
+      "removed": "Xóa {count}"
+    },
+    "noVillages": "Tệp không có làng nào.",
+    "undoNote": "Bạn có thể hoàn tác bản nhập trong mười giây."
+  },
+  "about": {
+    "version": "Phiên bản {version}",
+    "summary": "Công cụ theo dõi tiến độ miễn phí cho Clash of Clans. Theo dõi nâng cấp, nghiên cứu, thành tựu và nhiều thứ khác trên nhiều làng.",
+    "officialGame": "Trang chính thức của Clash of Clans",
+    "disclaimer": "Dự án này không liên kết với, không được bảo trợ bởi và không có quan hệ với Supercell hay Clash of Clans."
+  },
+  "region": {
+    "title": "Ngôn ngữ và khu vực",
+    "description": "Cách ứng dụng hiển thị chữ, số và ngày trên thiết bị này. Các lựa chọn này không được lưu cùng làng, không được xuất và không được đồng bộ.",
+    "language": {
+      "label": "Ngôn ngữ",
+      "hint": "Ngôn ngữ của ứng dụng. Tên trong game giữ nguyên tiếng Anh."
+    },
+    "numberFormat": {
+      "label": "Định dạng số",
+      "hint": "Ví dụ: {example}",
+      "options": {
+        "auto": "Tự động (theo ngôn ngữ)",
+        "us": "1,234,567.89 (Mỹ)",
+        "european": "1.234.567,89 (châu Âu)",
+        "french": "1 234 567,89 (Pháp)",
+        "swiss": "1’234’567.89 (Thụy Sĩ)",
+        "indian": "12,34,567.89 (Ấn Độ)"
+      }
+    },
+    "dateFormat": {
+      "label": "Định dạng ngày",
+      "hint": "Ví dụ: {example}",
+      "options": {
+        "auto": "Tự động (theo ngôn ngữ)",
+        "mdy": "Tháng/Ngày/Năm",
+        "dmy": "Ngày/Tháng/Năm",
+        "ymd": "Năm-Tháng-Ngày"
+      }
+    }
+  }
+}

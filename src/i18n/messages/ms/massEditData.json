@@ -1,0 +1,33 @@
+{
+  "categories": {
+    "defenses": "Pertahanan",
+    "army": "Tentera",
+    "resources": "Sumber",
+    "crafted": "Pertahanan Buatan",
+    "traps": "Perangkap",
+    "troops": "Pasukan",
+    "spells": "Mantera",
+    "siege": "Kepungan",
+    "pets": "Haiwan",
+    "guardians": "Penjaga",
+    "heroes": "Wira",
+    "equipment": "Kelengkapan",
+    "walls": "Tembok",
+    "buildings": "Bangunan"
+  },
+  "sections": {
+    "armyBuildings": "Bangunan tentera",
+    "otherBuildings": "Bangunan lain"
+  },
+  "level": "Tahap {level}",
+  "superchargeRow": "Supercharge {name}",
+  "profile": {
+    "builderHall": "Tahap Dewan Pembina",
+    "trophies": "Trofi",
+    "bestTrophies": "Trofi terbaik",
+    "league": "Liga",
+    "capitalHall": "Dewan Ibu Kota",
+    "districtHall": "Dewan Daerah {zone}",
+    "contributions": "Sumbangan"
+  }
+}

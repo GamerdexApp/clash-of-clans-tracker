@@ -1,0 +1,49 @@
+{
+  "title": "ความสำเร็จ",
+  "description": "ติดตามดาว ค่า และรางวัลของทุกความสำเร็จ",
+  "subline": "{name}, {count} ความสำเร็จ, {stars} จาก {maxStars} ดาว, {percent}%",
+  "tiles": {
+    "all": "ความสำเร็จทั้งหมด",
+    "home": "หมู่บ้านหลัก",
+    "builder": "บิลเดอร์เบส",
+    "capital": "แคลนแคปิตอล",
+    "gems": "เพชรที่ได้รับ",
+    "xp": "XP ที่ได้รับ",
+    "stars": "{stars} จาก {maxStars} ดาว",
+    "left": "เหลืออีก {amount} {unit}",
+    "gemsUnit": "เพชร",
+    "xpUnit": "XP"
+  },
+  "sections": {
+    "home": "หมู่บ้านหลัก",
+    "builderBase": "บิลเดอร์เบส",
+    "clanCapital": "แคลนแคปิตอล",
+    "summary": "{count} ความสำเร็จ, {stars} / {maxStars} ดาว, {gems} เพชร, {xp} XP",
+    "more": "แสดงความสำเร็จ{name}เพิ่มอีก {count} รายการ",
+    "less": "แสดงน้อยลง"
+  },
+  "card": {
+    "manual": "กำหนดเอง",
+    "nextStar": "ดาวถัดไป",
+    "xp": "XP",
+    "gems": "เพชร",
+    "edit": "แก้ไข {name}",
+    "done": "เสร็จ",
+    "stars": "ดาว",
+    "starsHelp": "กดดาวดวงเดิมอีกครั้งเพื่อลบหนึ่งดาว",
+    "star": "{amount} {number, plural, other {ดาว}}",
+    "value": "ค่า",
+    "target": "เป้าหมาย",
+    "manualLabel": "กำหนดเอง (ข้ามค่าจาก API)",
+    "saves": "การเปลี่ยนแปลงบันทึกขณะที่คุณพิมพ์ การเพิ่มดาวจะย้ายเป้าหมายไปขั้นถัดไป",
+    "progress": "ความคืบหน้า {name}",
+    "starsEarned": "{stars} จาก 3 ดาว"
+  },
+  "toast": {
+    "stars": "เปลี่ยน {name} เป็น {amount} {stars, plural, other {ดาว}}",
+    "targetMoved": "ย้ายเป้าหมายไปที่ {target}",
+    "value": "เปลี่ยนค่า {name} เป็น {value}",
+    "target": "เปลี่ยนเป้าหมาย {name} เป็น {target}",
+    "undo": "เลิกทำ"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "levelTo": "{name} {from}→{to}",
+  "toast": {
+    "undo": "撤销",
+    "started": "{name} {from}级到{to}级已开始",
+    "finished": "{name}已完成，达到 {level} 级",
+    "timeSaved": "{time} 已计入已节省时间。",
+    "cancelled": "已取消{name} {from}级到{to}级",
+    "levelChanged": "{name} {from}级改为{to}级"
+  },
+  "queue": {
+    "buildPetHouse": "请先建造宠物屋",
+    "requires": "需要{level}级{building}",
+    "alreadyUpgrading": "{name}正在升级",
+    "finishFirst": "必须先完成 {level} 级",
+    "alreadyAt": "已经是 {level} 级"
+  },
+  "conflict": {
+    "alreadyAt": "{name}已经是 {level} 级，所以 {target} 级已完成。",
+    "removeFix": "请将它从队列中移除。",
+    "scheduledBefore": "{name} {level}级排在 {earlier} 级完成之前。",
+    "moveFix": "请将 {level} 级移到 {earlier} 级之后。"
+  }
+}

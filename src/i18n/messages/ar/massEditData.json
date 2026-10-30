@@ -1,0 +1,33 @@
+{
+  "categories": {
+    "defenses": "الدفاعات",
+    "army": "الجيش",
+    "resources": "الموارد",
+    "crafted": "الدفاعات المصنّعة",
+    "traps": "الفخاخ",
+    "troops": "القوات",
+    "spells": "التعاويذ",
+    "siege": "الحصار",
+    "pets": "الحيوانات",
+    "guardians": "الحراس",
+    "heroes": "الأبطال",
+    "equipment": "المعدات",
+    "walls": "الجدران",
+    "buildings": "المباني"
+  },
+  "sections": {
+    "armyBuildings": "مباني الجيش",
+    "otherBuildings": "مبانٍ أخرى"
+  },
+  "level": "المستوى {level}",
+  "superchargeRow": "شحن فائق لـ {name}",
+  "profile": {
+    "builderHall": "مستوى قاعة البنّاء",
+    "trophies": "الكؤوس",
+    "bestTrophies": "أفضل الكؤوس",
+    "league": "الدوري",
+    "capitalHall": "قاعة العاصمة",
+    "districtHall": "قاعة الحي في {zone}",
+    "contributions": "المساهمات"
+  }
+}

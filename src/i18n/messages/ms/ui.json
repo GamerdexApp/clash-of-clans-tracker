@@ -1,0 +1,42 @@
+{
+  "close": "Tutup",
+  "field": {
+    "optional": "Pilihan"
+  },
+  "stepper": {
+    "lower": "Turunkan {label}",
+    "raise": "Naikkan {label}",
+    "labelPrefix": "{label}, "
+  },
+  "switch": {
+    "on": "Hidup",
+    "off": "Mati"
+  },
+  "tabs": {
+    "locked": " (dikunci)"
+  },
+  "toast": {
+    "dismiss": "Tutup",
+    "variants": {
+      "success": "Berjaya",
+      "info": "Maklumat",
+      "warning": "Amaran",
+      "error": "Ralat"
+    },
+    "missingProvider": "useToast must be used within a ToastProvider"
+  },
+  "filters": {
+    "filters": "Penapis",
+    "activeCount": "{count} aktif",
+    "clearFilters": "Kosongkan penapis",
+    "reset": "Set semula",
+    "description": "Perubahan berkuat kuasa serta-merta. Penapis tidak disimpan."
+  },
+  "savedChip": {
+    "automatic": "Disimpan secara automatik",
+    "justNow": "Baru sahaja disimpan",
+    "minutesAgo": "Disimpan {count} min lalu",
+    "at": "Disimpan {time}",
+    "failed": "Tidak disimpan, storan penuh"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "title": "成就",
+  "description": "追踪每个成就的星级、数值和奖励。",
+  "subline": "{name}，{count} 个成就，{stars} / {maxStars} 星，{percent}%",
+  "tiles": {
+    "all": "全部成就",
+    "home": "主村庄",
+    "builder": "建筑大师基地",
+    "capital": "部落首都",
+    "gems": "已获得宝石",
+    "xp": "已获得经验",
+    "stars": "{stars} / {maxStars} 星",
+    "left": "还可获得 {amount} {unit}",
+    "gemsUnit": "宝石",
+    "xpUnit": "经验"
+  },
+  "sections": {
+    "home": "主村庄",
+    "builderBase": "建筑大师基地",
+    "clanCapital": "部落首都",
+    "summary": "{count} 个成就，{stars} / {maxStars} 星，{gems} 宝石，{xp} 经验",
+    "more": "再显示 {count} 个{name}成就",
+    "less": "显示更少"
+  },
+  "card": {
+    "manual": "手动",
+    "nextStar": "下一颗星",
+    "xp": "经验",
+    "gems": "宝石",
+    "edit": "编辑{name}",
+    "done": "完成",
+    "stars": "星级",
+    "starsHelp": "再次点击同一颗星可移除一颗星。",
+    "star": "{amount} {number, plural, other {颗星}}",
+    "value": "数值",
+    "target": "目标",
+    "manualLabel": "手动（跳过 API 覆盖）",
+    "saves": "更改会在你输入时保存。提高星级会把目标移到下一档。",
+    "progress": "{name}进度",
+    "starsEarned": "{stars} / 3 星"
+  },
+  "toast": {
+    "stars": "{name}已改为 {amount} {stars, plural, other {颗星}}",
+    "targetMoved": "目标已移到 {target}。",
+    "value": "{name}的数值已改为 {value}",
+    "target": "{name}的目标已改为 {target}",
+    "undo": "撤销"
+  }
+}

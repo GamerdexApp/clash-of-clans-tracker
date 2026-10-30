@@ -1,0 +1,37 @@
+{
+  "resources": {
+    "gold": "Gold",
+    "elixir": "Elixier",
+    "darkElixir": "Dunkles Elixier",
+    "darkElixirShort": "Dunkel",
+    "builderGold": "Bauarbeiter-Gold",
+    "builderGoldShort": "B.-Gold",
+    "builderElixir": "Bauarbeiter-Elixier",
+    "builderElixirShort": "B.-Elixier",
+    "capitalGold": "Hauptstadtgold",
+    "shinyOre": "Glänzendes Erz",
+    "glowyOre": "Leuchtendes Erz",
+    "starryOre": "Sternenerz"
+  },
+  "halls": {
+    "townHall": "Rathaus {level}",
+    "builderHall": "Bauarbeiterhalle {level}",
+    "capitalHall": "Hauptstadthalle {level}",
+    "heroHall": "Heldenhalle {level}",
+    "starLaboratory": "Sternenlabor {level}",
+    "blacksmith": "Schmied"
+  },
+  "places": {
+    "townHall": "Rathaus",
+    "townHallWeapon": "Rathauswaffe",
+    "builderHall": "Bauarbeiterhalle",
+    "clockTower": "Uhrturm",
+    "laboratory": "Labor",
+    "goblinResearcher": "Goblin-Forscher",
+    "goblinBuilder": "Goblin-Bauarbeiter",
+    "starLaboratory": "Sternenlabor",
+    "petHouse": "Haustierhaus",
+    "capitalPeak": "Hauptstadtgipfel",
+    "builder": "Bauarbeiter {id}"
+  }
+}

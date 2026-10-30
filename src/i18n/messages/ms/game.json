@@ -1,0 +1,37 @@
+{
+  "resources": {
+    "gold": "Emas",
+    "elixir": "Elixir",
+    "darkElixir": "Elixir Gelap",
+    "darkElixirShort": "Gelap",
+    "builderGold": "Emas Pembina",
+    "builderGoldShort": "Emas P.",
+    "builderElixir": "Elixir Pembina",
+    "builderElixirShort": "Elixir P.",
+    "capitalGold": "Emas Ibu Kota",
+    "shinyOre": "Shiny Ore",
+    "glowyOre": "Glowy Ore",
+    "starryOre": "Starry Ore"
+  },
+  "halls": {
+    "townHall": "Dewan Bandar {level}",
+    "builderHall": "Dewan Pembina {level}",
+    "capitalHall": "Dewan Ibu Kota {level}",
+    "heroHall": "Dewan Wira {level}",
+    "starLaboratory": "Makmal Bintang {level}",
+    "blacksmith": "Tukang Besi"
+  },
+  "places": {
+    "townHall": "Dewan Bandar",
+    "townHallWeapon": "Senjata Dewan Bandar",
+    "builderHall": "Dewan Pembina",
+    "clockTower": "Menara Jam",
+    "laboratory": "Makmal",
+    "goblinResearcher": "Penyelidik Goblin",
+    "goblinBuilder": "Pembina Goblin",
+    "starLaboratory": "Makmal Bintang",
+    "petHouse": "Rumah Haiwan",
+    "capitalPeak": "Capital Peak",
+    "builder": "Pembina {id}"
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "title": "หมู่บ้านของฉัน",
+  "subline": "{amount} {count, plural, other {หมู่บ้าน}}",
+  "sublineActive": "{amount} {count, plural, other {หมู่บ้าน}}, {name} ใช้งานอยู่",
+  "newVillage": "หมู่บ้านใหม่",
+  "empty": {
+    "title": "ยังไม่มีหมู่บ้าน",
+    "deletedTitle": "ไม่เหลือหมู่บ้าน",
+    "description": "สร้างหมู่บ้านเพื่อเริ่มติดตามการอัปเกรด การวิจัย และความสำเร็จ",
+    "restore": "กู้คืนจากข้อมูลสำรอง"
+  },
+  "filters": {
+    "search": "ค้นหาหมู่บ้าน",
+    "sortLabel": "เรียงตาม",
+    "sort": {
+      "lastModified": "แก้ไขล่าสุด",
+      "createdAt": "วันที่สร้าง",
+      "name": "ชื่อ"
+    },
+    "showing": "แสดง {shown} จาก {total}",
+    "clear": "ล้างการค้นหา"
+  },
+  "noMatch": {
+    "title": "ไม่มีหมู่บ้านที่ตรงกับ \"{query}\"",
+    "description": "ตรวจสอบการสะกด หรือล้างการค้นหา"
+  },
+  "card": {
+    "active": "ใช้งานอยู่",
+    "openOverview": "เปิดภาพรวม",
+    "setActive": "ตั้งเป็นที่ใช้งาน",
+    "edit": "แก้ไข",
+    "delete": "ลบ",
+    "halls": "{builderHall, plural, =0 {ทาวน์ฮอลล์ {townHall}} other {ทาวน์ฮอลล์ {townHall}, บิลเดอร์ฮอลล์ {builderHall}}}",
+    "daysAtTownHall": "วันที่ทาวน์ฮอลล์",
+    "daysAtBuilderHall": "วันที่บิลเดอร์ฮอลล์",
+    "notSet": "ยังไม่ได้ตั้ง",
+    "clanCapital": "แคลนแคปิตอล",
+    "clanCapitalStates": {
+      "on": "เปิด",
+      "off": "ปิด",
+      "locked": "ล็อก"
+    },
+    "created": "สร้างเมื่อ {date}",
+    "lastModified": "แก้ไขเมื่อ {date}",
+    "switched": "{name} ใช้งานอยู่แล้ว"
+  },
+  "fields": {
+    "name": "ชื่อหมู่บ้าน",
+    "namePlaceholder": "บัญชีหลักของฉัน",
+    "nameRequired": "ใส่ชื่อของหมู่บ้าน",
+    "description": "คำอธิบาย",
+    "descriptionPlaceholder": "เพิ่มคำอธิบายของหมู่บ้านนี้",
+    "townHallLevel": "ระดับทาวน์ฮอลล์",
+    "builderHallLevel": "ระดับบิลเดอร์ฮอลล์",
+    "builderHallHelp": "บิลเดอร์เบสปลดล็อกที่ทาวน์ฮอลล์ 6",
+    "townHallUpgraded": "อัปเกรดทาวน์ฮอลล์เมื่อ",
+    "builderHallUpgraded": "อัปเกรดบิลเดอร์ฮอลล์เมื่อ",
+    "level": "ระดับ {level}",
+    "trackCapital": "ติดตามแคลนแคปิตอล",
+    "trackCapitalHelp": "การปิดจะซ่อนหน้าแคลนแคปิตอลและเก็บข้อมูลของคุณไว้",
+    "trackCapitalLocked": "ต้องมีทาวน์ฮอลล์ 3",
+    "cancel": "ยกเลิก"
+  },
+  "create": {
+    "title": "หมู่บ้านใหม่",
+    "submit": "สร้างหมู่บ้าน",
+    "modeLabel": "วิธีเริ่มต้น",
+    "modes": {
+      "fresh": "เริ่มใหม่",
+      "import": "นำเข้า"
+    },
+    "modeNotes": {
+      "fresh": "เริ่มด้วยข้อมูลว่าง",
+      "import": "อ่านแท็กผู้เล่น พร้อมไฟล์อาคารที่ไม่บังคับ"
+    },
+    "makeActive": "ตั้งเป็นหมู่บ้านที่ใช้งาน",
+    "done": "สร้าง {name} แล้ว",
+    "importNeedsLookup": "ดึงข้อมูลแท็กผู้เล่นก่อน"
+  },
+  "lookup": {
+    "step1": "ขั้นที่ 1: ดึงข้อมูลผู้เล่น",
+    "step2": "ขั้นที่ 2: ข้อมูลอาคาร (ไม่บังคับ)",
+    "tagLabel": "แท็กผู้เล่น",
+    "tagPlaceholder": "#PPV2YV9R",
+    "fetch": "ดึงข้อมูล",
+    "refresh": "รีเฟรช",
+    "wait": "รอ {seconds} วินาที",
+    "serverNote": "การค้นหาจะส่งแท็กไปยังเซิร์ฟเวอร์ Gamerdex ซึ่งขอข้อมูลจาก Supercell API ไม่มีข้อมูลอื่นออกจากเบราว์เซอร์ของคุณ",
+    "unavailable": "การค้นหาผู้เล่นใช้ไม่ได้ในขณะนี้ ลองอีกครั้งภายหลัง",
+    "found": "{name}, ทาวน์ฮอลล์ {townHall}{builderHall, plural, =0 {} other {, บิลเดอร์ฮอลล์ {builderHall}}} อ่านได้ {achievements} ความสำเร็จและ {troops} ทหาร",
+    "buildingHelp": "API ผู้เล่นไม่มีระดับอาคาร เลือกข้อมูลสำรองหมู่บ้านจากตั้งค่า หรือไฟล์ exportData.json จากเกม",
+    "buildingLabel": "ไฟล์ข้อมูลอาคาร",
+    "buildingLoaded": "โหลดข้อมูลอาคารจาก {name} แล้ว",
+    "buildingInvalid": "ไฟล์นี้ไม่ใช่ข้อมูลอาคาร ใช้ข้อมูลสำรองหมู่บ้านจากตั้งค่า หรือ exportData.json จากเกม",
+    "buildingNotJson": "ไฟล์นี้ไม่ใช่ JSON ที่ถูกต้อง"
+  },
+  "edit": {
+    "title": "แก้ไขหมู่บ้าน",
+    "submit": "บันทึก",
+    "refreshTitle": "รีเฟรชจากแท็กผู้เล่น",
+    "updatedTitle": "อัปเดตแล้ว",
+    "untouchedTitle": "ไม่เคยแตะต้อง",
+    "dateSet": "ตั้งวันที่อัปเกรดเป็นวันนี้ คุณเปลี่ยนได้",
+    "done": "บันทึก {name} แล้ว"
+  },
+  "delete": {
+    "title": "ลบหมู่บ้าน",
+    "description": "การทำนี้จะลบหมู่บ้านออกจากเบราว์เซอร์นี้",
+    "question": "ลบ {name} หรือไม่ การอัปเกรด การวิจัย ความสำเร็จ และภารกิจประจำวันของหมู่บ้านจะถูกลบ",
+    "activeNext": "{next} จะเป็นหมู่บ้านที่ใช้งาน",
+    "activeLast": "จะไม่มีหมู่บ้านที่ใช้งาน",
+    "exportFirst": "ส่งออกข้อมูลสำรองก่อน",
+    "cancel": "ยกเลิก",
+    "confirm": "ลบหมู่บ้าน",
+    "done": "ลบ {name} แล้ว",
+    "doneMessage": "คุณเลิกทำได้ภายในสิบวินาที",
+    "undo": "เลิกทำ"
+  }
+}

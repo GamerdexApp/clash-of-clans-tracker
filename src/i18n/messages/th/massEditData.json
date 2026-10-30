@@ -1,0 +1,33 @@
+{
+  "categories": {
+    "defenses": "สิ่งป้องกัน",
+    "army": "กองทัพ",
+    "resources": "ทรัพยากร",
+    "crafted": "ป้องกันคราฟต์",
+    "traps": "กับดัก",
+    "troops": "ทหาร",
+    "spells": "คาถา",
+    "siege": "เครื่องจักรปิดล้อม",
+    "pets": "สัตว์เลี้ยง",
+    "guardians": "ผู้พิทักษ์",
+    "heroes": "ฮีโร่",
+    "equipment": "อุปกรณ์",
+    "walls": "กำแพง",
+    "buildings": "อาคาร"
+  },
+  "sections": {
+    "armyBuildings": "อาคารกองทัพ",
+    "otherBuildings": "อาคารอื่น ๆ"
+  },
+  "level": "ระดับ {level}",
+  "superchargeRow": "ซูเปอร์ชาร์จ {name}",
+  "profile": {
+    "builderHall": "ระดับบิลเดอร์ฮอลล์",
+    "trophies": "ถ้วยรางวัล",
+    "bestTrophies": "ถ้วยรางวัลสูงสุด",
+    "league": "ลีก",
+    "capitalHall": "แคปิตอลฮอลล์",
+    "districtHall": "ดิสทริกต์ฮอลล์ของ {zone}",
+    "contributions": "การสมทบ"
+  }
+}

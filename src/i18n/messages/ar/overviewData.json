@@ -1,0 +1,40 @@
+{
+  "stats": {
+    "level": "المستوى",
+    "warStars": "نجوم الحرب",
+    "trophies": "الكؤوس",
+    "bestTrophies": "أفضل الكؤوس",
+    "donations": "التبرعات",
+    "received": "التبرعات المستلمة",
+    "war": "تفضيل الحرب",
+    "attacks": "انتصارات الهجوم",
+    "defenses": "انتصارات الدفاع",
+    "builderTrophies": "كؤوس البنّاء",
+    "bestBuilderTrophies": "أفضل كؤوس البنّاء",
+    "contributions": "مساهمات العاصمة",
+    "warIn": "مشارك",
+    "warOut": "غير مشارك"
+  },
+  "cards": {
+    "structures": "المنشآت",
+    "traps": "الفخاخ",
+    "supercharge": "الشحن الفائق",
+    "crafted": "الدفاعات المصنّعة",
+    "lab": "المختبر",
+    "heroes": "الأبطال",
+    "equipment": "المعدات",
+    "pets": "الحيوانات",
+    "walls": "الجدران",
+    "districts": "الأحياء",
+    "troops": "القوات",
+    "spells": "التعاويذ"
+  },
+  "subs": {
+    "structures": "الدفاعات والجيش والموارد",
+    "lab": "القوات والتعاويذ والحصار",
+    "builderLab": "قوات البنّاء",
+    "walls": "{total} جدارًا، أقصى مستوى {max}",
+    "districts": "{active} من {total} نشطة",
+    "available": "{count} متاحة"
+  }
+}

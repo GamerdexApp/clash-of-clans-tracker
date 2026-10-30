@@ -1,0 +1,30 @@
+{
+  "title": "Haiwan",
+  "subline": "{name}, Dewan Bandar {townHall}",
+  "strip": {
+    "title": "Rumah Haiwan",
+    "openQueue": "Buka giliran dan garis masa",
+    "noPetHouse": "Bina Rumah Haiwan dahulu. Tetapkan tahapnya di halaman Pembina, tab Tentera.",
+    "unassignedHelp": "Lebih daripada satu naik taraf haiwan disimpan pada Rumah Haiwan. Siapkan atau batalkan yang lebih.",
+    "levelLabel": "Tahap Rumah Haiwan",
+    "level": "{level} daripada {max}",
+    "notBuilt": "Belum dibina",
+    "boostLabel": "Rangsangan kajian Gold Pass"
+  },
+  "boostValue": "{percent, plural, =0 {Tiada} other {-{percent}% masa dan kos}}",
+  "locked": {
+    "title": "Haiwan dibuka pada Dewan Bandar 14",
+    "body": "Kampung ini berada pada Dewan Bandar {townHall}. Ini ialah haiwan yang akan anda dapat.",
+    "needs": "Dewan Bandar {townHall}, Rumah Haiwan {petHouse}"
+  },
+  "card": {
+    "notUnlocked": "Belum dibuka",
+    "markUnlocked": "Tandai sebagai dibuka",
+    "maxAtHall": "Maks Thp {level}",
+    "progress": "Kemajuan {name}"
+  },
+  "empty": {
+    "title": "Belum ada apa-apa di sini",
+    "allMax": "Setiap haiwan sudah pada tahap maksimum. Matikan Sembunyi Maks untuk melihatnya."
+  }
+}

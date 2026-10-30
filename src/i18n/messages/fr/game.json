@@ -1,0 +1,37 @@
+{
+  "resources": {
+    "gold": "Or",
+    "elixir": "Élixir",
+    "darkElixir": "Élixir noir",
+    "darkElixirShort": "Noir",
+    "builderGold": "Or des ouvriers",
+    "builderGoldShort": "Or ouv.",
+    "builderElixir": "Élixir des ouvriers",
+    "builderElixirShort": "Élixir ouv.",
+    "capitalGold": "Or de la capitale",
+    "shinyOre": "Minerai brillant",
+    "glowyOre": "Minerai luisant",
+    "starryOre": "Minerai étoilé"
+  },
+  "halls": {
+    "townHall": "Hôtel de ville {level}",
+    "builderHall": "Hôtel des ouvriers {level}",
+    "capitalHall": "Hôtel de la capitale {level}",
+    "heroHall": "Hôtel des héros {level}",
+    "starLaboratory": "Laboratoire d'étoiles {level}",
+    "blacksmith": "Forgeron"
+  },
+  "places": {
+    "townHall": "Hôtel de ville",
+    "townHallWeapon": "Arme de l'hôtel de ville",
+    "builderHall": "Hôtel des ouvriers",
+    "clockTower": "Tour de l'horloge",
+    "laboratory": "Laboratoire",
+    "goblinResearcher": "Chercheur gobelin",
+    "goblinBuilder": "Ouvrier gobelin",
+    "starLaboratory": "Laboratoire d'étoiles",
+    "petHouse": "Maison des familiers",
+    "capitalPeak": "Pic de la capitale",
+    "builder": "Ouvrier {id}"
+  }
+}

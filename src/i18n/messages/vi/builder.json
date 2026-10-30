@@ -1,0 +1,51 @@
+{
+  "title": "Thợ Xây",
+  "subline": "{name}, Nhà Chính {townHall}",
+  "tabsLabel": "Các mục Thợ Xây",
+  "tabs": {
+    "defenses": "Phòng thủ",
+    "army": "Quân đội",
+    "resources": "Tài nguyên",
+    "crafted": "Phòng thủ chế tạo",
+    "traps": "Bẫy",
+    "heroes": "Anh hùng",
+    "guardians": "Người bảo vệ",
+    "townHall": "Nhà Chính"
+  },
+  "builders": {
+    "title": "Thợ Xây",
+    "boostLabel": "Tăng tốc thợ xây Gold Pass",
+    "boostValue": "{percent, plural, =0 {Không} other {-{percent}% thời gian và chi phí}}",
+    "openQueue": "Mở hàng chờ và dòng thời gian",
+    "unassignedHelp": "Một số nâng cấp được lưu trên thợ xây chưa xây, hoặc trên thợ xây mà nâng cấp khác đang dùng. Hãy hoàn tất hoặc hủy chúng.",
+    "noBuilders": "Làng này chưa có thợ xây. Hãy xây Chòi Thợ Xây đầu tiên từ tab Phòng thủ. Nó miễn phí và xong ngay."
+  },
+  "gate": {
+    "requires": "Cần Nhà Chính {townHall}",
+    "where": "Làng này đang ở Nhà Chính {townHall}. Đạt Nhà Chính {required} để mở tab này.",
+    "fix": "Đến tab Nhà Chính"
+  },
+  "empty": {
+    "title": "Chưa có gì ở đây",
+    "description": "Không có công trình loại này ở cấp Nhà Chính này.",
+    "allMax": "Mọi công trình ở đây đã tối đa. Tắt Ẩn tối đa để xem chúng."
+  },
+  "card": {
+    "maxAtHall": "Tối đa cấp {level} ở Nhà Chính này",
+    "maxAtBuilderHall": "Tối đa cấp {level} ở Nhà Thợ Xây này",
+    "progress": "Tiến độ {name}",
+    "notBuilt": "Chưa xây",
+    "level": "Cấp {level} trên {max}",
+    "build": "Xây",
+    "upgradeTo": "Nâng lên cấp {level}",
+    "superchargeTo": "Siêu Nạp lên bậc {tier}",
+    "maxed": "Tối đa",
+    "running": "Đang nâng lên cấp {to}",
+    "finish": "Hoàn tất",
+    "cancel": "Hủy",
+    "showAll": "Hiện tất cả {count}",
+    "showFewer": "Hiện ít hơn",
+    "instance": "#{number}",
+    "supercharge": "Siêu Nạp {tier} trên {tiers}"
+  }
+}

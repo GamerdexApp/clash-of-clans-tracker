@@ -1,0 +1,177 @@
+{
+  "goldPass": "{percent, plural, =0 {Không tăng tốc Gold Pass} other {Gold Pass -{percent}%}}",
+  "options": {
+    "open": "Tùy chọn hàng chờ",
+    "title": "Tùy chọn hàng chờ",
+    "description": "Cài đặt thay đổi cách hàng chờ được lên lịch.",
+    "done": "Xong"
+  },
+  "totals": {
+    "freeValue": "{free} trên {total}",
+    "queued": "Nâng cấp trong hàng chờ",
+    "time": "Thời gian trong hàng chờ",
+    "allDone": "Mọi làn đã xong",
+    "none": "Hàng chờ trống",
+    "cost": "Chi phí trong hàng chờ",
+    "noCost": "Không tốn phí"
+  },
+  "lane": {
+    "idle": "Rảnh",
+    "queueEmpty": "Làn này chưa có gì trong hàng chờ.",
+    "startNow": "Bắt đầu ngay",
+    "remove": "Xóa",
+    "moveUp": "Chuyển lên",
+    "moveDown": "Chuyển xuống",
+    "moveToLane": "Chuyển sang làn",
+    "levels": "Cấp {from} lên {to}",
+    "removed": "Đã xóa {name} khỏi hàng chờ",
+    "started": "Đã bắt đầu {name}",
+    "undo": "Hoàn tác"
+  },
+  "timeline": {
+    "title": "Dòng thời gian",
+    "zoomLabel": "Độ dài dòng thời gian",
+    "zooms": {
+      "3": "3 ngày",
+      "7": "1 tuần",
+      "14": "2 tuần",
+      "30": "1 tháng",
+      "90": "3 tháng"
+    },
+    "conflictsTitle": "Xung đột",
+    "noConflicts": "Không có xung đột. Mọi nâng cấp bắt đầu sau cấp mà nó cần.",
+    "laneLabel": "Dòng thời gian {label}",
+    "now": "Bây giờ",
+    "idle": "Rảnh"
+  },
+  "add": {
+    "search": "Tìm nâng cấp",
+    "hiddenFromAll": "Bị ẩn khỏi Tất cả: {names}.",
+    "chooseCategories": "Chọn danh mục",
+    "chooseCategoriesHelp": "Danh mục được chọn hiện trong Tất cả. Danh mục bỏ chọn chỉ hiện ở thẻ riêng của nó.",
+    "add": "Thêm",
+    "addUpToHere": "Thêm đến đây",
+    "showMore": "Hiện thêm cấp",
+    "showMoreUpgrades": "Hiện thêm nâng cấp",
+    "nothing": "Không có gì để thêm ở đây.",
+    "nothingDescription": "Mọi cấp trong chế độ xem này đã vào hàng chờ, đang chạy hoặc chưa khả dụng.",
+    "added": "{count, plural, other {Đã thêm {amount} cấp của {name}}}",
+    "close": "Xong",
+    "unlockTitle": "Chưa mở",
+    "unlockHelp": "Hãy mở những mục này trước để đưa các cấp của chúng vào hàng chờ.",
+    "markUnlocked": "Đánh dấu đã mở",
+    "showAllLocked": "Hiện tất cả {count}",
+    "showFewerLocked": "Hiện ít hơn",
+    "allLabel": "Tất cả"
+  },
+  "lanes": {
+    "builder": {
+      "title": "Hàng chờ Thợ Xây",
+      "subline": "{name}, lên kế hoạch việc tiếp theo của từng thợ xây",
+      "back": "Quay lại Thợ Xây",
+      "free": "Thợ xây rảnh",
+      "laneBusy": "Thợ xây này đang bận.",
+      "goblin": {
+        "label": "Thợ Xây Goblin",
+        "help": "Thêm làn thợ xây thứ bảy khi sự kiện diễn ra."
+      },
+      "gate": "Hãy xây Chòi Thợ Xây trước. Chòi đầu tiên miễn phí và xong ngay.",
+      "add": {
+        "title": "Thêm nâng cấp",
+        "description": "Chọn việc tiếp theo của một thợ xây. Các cấp bạn thêm sẽ vào hàng chờ theo thứ tự.",
+        "lane": "Làn thợ xây",
+        "search": "Tìm nâng cấp"
+      },
+      "categories": {
+        "defenses": "Phòng thủ",
+        "armyBuildings": "Quân đội",
+        "resourceBuildings": "Tài nguyên",
+        "traps": "Bẫy",
+        "heroes": "Anh hùng",
+        "townHall": "Nhà Chính",
+        "craftedDefenses": "Chế tạo",
+        "guardians": "Người bảo vệ",
+        "supercharges": "Siêu Nạp"
+      }
+    },
+    "research": {
+      "title": "Hàng chờ Nghiên cứu",
+      "subline": "{name}, lên kế hoạch nghiên cứu tiếp theo của Phòng Thí Nghiệm",
+      "back": "Quay lại Nghiên cứu",
+      "free": "Phòng thí nghiệm rảnh",
+      "laneBusy": "Làn này đang bận.",
+      "goblin": {
+        "label": "Nhà Nghiên Cứu Goblin",
+        "help": "Thêm làn nghiên cứu thứ hai khi sự kiện diễn ra."
+      },
+      "gate": "Không có làn nghiên cứu nào khả dụng.",
+      "add": {
+        "title": "Thêm nghiên cứu",
+        "description": "Chọn nghiên cứu tiếp theo của Phòng Thí Nghiệm. Các cấp bạn thêm sẽ vào hàng chờ theo thứ tự.",
+        "lane": "Làn nghiên cứu",
+        "search": "Tìm nghiên cứu"
+      },
+      "categories": {
+        "troops": "Quân",
+        "spells": "Phép",
+        "siegeMachines": "Công thành"
+      }
+    },
+    "pet": {
+      "title": "Hàng chờ Thú Cưng",
+      "subline": "{name}, lên kế hoạch nâng cấp tiếp theo của Nhà Thú Cưng",
+      "back": "Quay lại Thú Cưng",
+      "free": "Nhà Thú Cưng",
+      "laneBusy": "Nhà Thú Cưng đang bận.",
+      "gate": "Thú Cưng mở ở Nhà Chính 14.",
+      "add": {
+        "title": "Thêm nâng cấp thú cưng",
+        "description": "Chọn thú cưng mà Nhà Thú Cưng nâng cấp tiếp theo. Các cấp bạn thêm sẽ vào hàng chờ theo thứ tự.",
+        "lane": "Nhà Thú Cưng",
+        "search": "Tìm thú cưng"
+      },
+      "categories": {
+        "pets": "Thú Cưng"
+      }
+    },
+    "bbBuilder": {
+      "title": "Hàng chờ Căn Cứ Thợ Xây",
+      "subline": "{name}, Nhà Thợ Xây {hall}, lên kế hoạch việc tiếp theo của từng thợ xây",
+      "back": "Quay lại Căn Cứ Thợ Xây",
+      "free": "Thợ xây rảnh",
+      "laneBusy": "Thợ xây này đang bận.",
+      "gate": "Căn Cứ Thợ Xây có hai thợ xây.",
+      "add": {
+        "title": "Thêm nâng cấp",
+        "description": "Chọn việc tiếp theo của một thợ xây ở Căn Cứ Thợ Xây. Các cấp bạn thêm sẽ vào hàng chờ theo thứ tự.",
+        "lane": "Thợ xây",
+        "search": "Tìm nâng cấp"
+      },
+      "categories": {
+        "defenses": "Phòng thủ",
+        "armyBuildings": "Quân đội",
+        "resourceBuildings": "Tài nguyên",
+        "traps": "Bẫy",
+        "heroes": "Anh hùng",
+        "other": "Khác"
+      }
+    },
+    "bbResearch": {
+      "title": "Hàng chờ Phòng Thí Nghiệm Sao",
+      "subline": "{name}, Nhà Thợ Xây {hall}, lên kế hoạch nghiên cứu tiếp theo của Phòng Thí Nghiệm Sao",
+      "back": "Quay lại Quân",
+      "free": "Ô rảnh",
+      "laneBusy": "Phòng Thí Nghiệm Sao đang bận.",
+      "gate": "Phòng Thí Nghiệm Sao nghiên cứu một loại quân mỗi lần.",
+      "add": {
+        "title": "Thêm nghiên cứu",
+        "description": "Chọn loại quân mà Phòng Thí Nghiệm Sao nghiên cứu tiếp theo. Các cấp bạn thêm sẽ vào hàng chờ theo thứ tự.",
+        "lane": "Phòng Thí Nghiệm Sao",
+        "search": "Tìm quân"
+      },
+      "categories": {
+        "troops": "Quân"
+      }
+    }
+  }
+}

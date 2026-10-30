@@ -1,0 +1,37 @@
+{
+  "resources": {
+    "gold": "金幣",
+    "elixir": "聖水",
+    "darkElixir": "暗黑聖水",
+    "darkElixirShort": "暗聖水",
+    "builderGold": "建築工人金幣",
+    "builderGoldShort": "工人金幣",
+    "builderElixir": "建築工人聖水",
+    "builderElixirShort": "工人聖水",
+    "capitalGold": "首都金幣",
+    "shinyOre": "Shiny Ore",
+    "glowyOre": "Glowy Ore",
+    "starryOre": "Starry Ore"
+  },
+  "halls": {
+    "townHall": "大本營 {level}",
+    "builderHall": "建築工人大本營 {level}",
+    "capitalHall": "首都大廳 {level}",
+    "heroHall": "英雄大廳 {level}",
+    "starLaboratory": "星空實驗室 {level}",
+    "blacksmith": "鐵匠鋪"
+  },
+  "places": {
+    "townHall": "大本營",
+    "townHallWeapon": "大本營武器",
+    "builderHall": "建築工人大本營",
+    "clockTower": "時鐘塔",
+    "laboratory": "實驗室",
+    "goblinResearcher": "哥布林研究員",
+    "goblinBuilder": "哥布林建築工人",
+    "starLaboratory": "星空實驗室",
+    "petHouse": "寵物屋",
+    "capitalPeak": "Capital Peak",
+    "builder": "建築工人 {id}"
+  }
+}

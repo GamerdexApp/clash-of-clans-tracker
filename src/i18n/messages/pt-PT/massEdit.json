@@ -1,0 +1,138 @@
+{
+  "title": "Edição em massa",
+  "description": "Altera muitos níveis de uma vez. Nada é guardado até carregares em Guardar alterações.",
+  "subline": "{name}, Centro da Aldeia {townHall}, alterações preparadas",
+  "scopes": {
+    "home": "Aldeia Principal",
+    "builder": "Base do Construtor",
+    "capital": "Capital do Clã"
+  },
+  "scopeNav": "Âmbito",
+  "requires": "Requer {requirement}",
+  "trackingOff": "Acompanhamento desligado",
+  "changedCount": "{count, plural, one {1 alteração} other {{amount} alterações}}",
+  "chip": "Alterações por guardar",
+  "bar": {
+    "unsaved": "{count, plural, one {1 alteração por guardar} other {{amount} alterações por guardar}}",
+    "none": "Sem alterações por guardar",
+    "discard": "Descartar",
+    "save": "Guardar alterações"
+  },
+  "saved": "{count, plural, one {1 alteração guardada} other {{amount} alterações guardadas}}",
+  "undo": "Anular",
+  "discardDialog": {
+    "title": "{count, plural, one {Descartar 1 alteração por guardar?} other {Descartar {amount} alterações por guardar?}}",
+    "body": "Todas as linhas voltam ao nível guardado.",
+    "keep": "Continuar a editar",
+    "discard": "Descartar alterações"
+  },
+  "leave": {
+    "title": "{count, plural, one {Tens 1 alteração por guardar} other {Tens {amount} alterações por guardar}}",
+    "body": "Guarda-as antes de sair ou descarta-as.",
+    "save": "Guardar e sair",
+    "discard": "Descartar e sair",
+    "keep": "Continuar a editar"
+  },
+  "toolbar": {
+    "label": "Ações em massa",
+    "selectAll": "Selecionar todas ({count})",
+    "selected": "{count, plural, one {1 linha selecionada} other {{amount} linhas selecionadas}}",
+    "clearSelection": "Limpar seleção",
+    "scopeAll": "Atua em todas as {count} linhas de {category}",
+    "scopeSelected": "{count, plural, one {Atua em 1 linha selecionada} other {Atua em {amount} linhas selecionadas}}",
+    "max": "Tudo no máx.",
+    "maxSelected": "Máx. nas selecionadas",
+    "reset": "Repor tudo",
+    "resetSelected": "Repor selecionadas",
+    "setLevel": "Definir nível",
+    "levelLabel": "Nível para as linhas selecionadas",
+    "applyLevel": "{count, plural, one {Aplicar a 1 linha} other {Aplicar a {amount} linhas}}",
+    "hallLabel": "Definir no máximo para o nível do centro",
+    "hallCurrent": "{hall} {level} (atual)",
+    "hallOption": "{hall} {level}",
+    "hallPlaceholder": "Escolher {hall}"
+  },
+  "confirm": {
+    "title": "{count, plural, one {Baixar 1 linha?} other {Baixar {amount} linhas?}}",
+    "body": "Isto altera o rascunho. Nada é guardado até carregares em Guardar alterações.",
+    "superchargeNote": "Um edifício que desça abaixo do nível máximo perde também o nível de sobrecarga.",
+    "apply": "Aplicar ao rascunho",
+    "cancel": "Cancelar",
+    "line": "{name}: {from} a {to}",
+    "more": "e mais {count}"
+  },
+  "rows": {
+    "notBuilt": "Não construído",
+    "toMax": "{count} até ao máx.",
+    "atMax": "No máx.",
+    "changed": "Alterado de {from} para {to}",
+    "level": "Nível de {name}",
+    "raise": "Aumentar {name}",
+    "lower": "Diminuir {name}",
+    "max": "Máx.",
+    "select": "Selecionar {name}",
+    "selectGroup": "Selecionar todos: {name}",
+    "supercharge": "Sobrecarga",
+    "reachFirst": "Chega primeiro ao nível {level}",
+    "slider": "Controlo de {name}",
+    "groupBuilt": "{count} construídos, nível máx. {max}",
+    "expand": "Mostrar {name}",
+    "collapse": "Ocultar {name}"
+  },
+  "category": {
+    "atMax": "{done} de {total} no máx. para {hall} {level}",
+    "rowsAtMax": "{done} de {total} no máx.",
+    "empty": "Ainda não há nada para editar nesta categoria.",
+    "locked": "Requer {requirement}",
+    "lockedSuffix": " (bloqueado)",
+    "nav": "Categorias"
+  },
+  "walls": {
+    "total": "Total",
+    "allocated": "Atribuídas",
+    "remaining": "Restantes",
+    "maxAll": "Tudo no máx.",
+    "resetAll": "Repor tudo",
+    "maxAllHelp": "Move todas as muralhas restantes para o nível mais alto",
+    "level": "Muralhas de nível {level}"
+  },
+  "builder": {
+    "profile": "Perfil da Base do Construtor",
+    "hall": "Nível do Centro do Construtor",
+    "hallHelp": "O Centro do Construtor {level} define o nível mais alto de cada linha abaixo. Baixá-lo pede confirmação e baixa só as linhas acima do novo limite.",
+    "none": "Nenhum edifício disponível neste nível de Centro do Construtor",
+    "raise": "Subir Centro do Construtor",
+    "lower": "Baixar Centro do Construtor",
+    "trophies": "Troféus",
+    "bestTrophies": "Melhores troféus",
+    "league": "Liga",
+    "hallConfirmTitle": "Baixar o Centro do Construtor para {level}?"
+  },
+  "hallNames": {
+    "home": "Centro da Aldeia",
+    "builder": "Centro do Construtor",
+    "district": "Centro do Distrito",
+    "capital": "Centro da Capital"
+  },
+  "capital": {
+    "profile": "Perfil da Capital do Clã",
+    "hall": "Centro da Capital",
+    "none": "Nenhum",
+    "level": "Centro da Capital {level}",
+    "contributions": "Contribuições para a Capital do Clã",
+    "unit": "Ouro da Capital",
+    "districtHall": "Centro do Distrito",
+    "districtNone": "Nenhum",
+    "districtLevel": "Centro do Distrito {level}",
+    "requiresCapitalHall": "Requer o Centro da Capital {level}",
+    "unlockHint": "Define acima um valor para {label} para desbloquear edifícios.",
+    "parts": "Secções",
+    "off": "O acompanhamento da Capital do Clã está desligado",
+    "offBody": "Volta a ligar o acompanhamento nas páginas da Capital do Clã. Nada foi eliminado.",
+    "offAction": "Abrir Capital do Clã"
+  },
+  "empty": {
+    "title": "Nenhuma aldeia ativa",
+    "description": "Escolhe uma aldeia ou cria uma para usar a Edição em massa."
+  }
+}

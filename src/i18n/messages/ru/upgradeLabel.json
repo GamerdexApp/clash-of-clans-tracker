@@ -1,0 +1,24 @@
+{
+  "levelTo": "{name} {from}→{to}",
+  "toast": {
+    "undo": "Отменить",
+    "started": "{name}: ур. {from} → {to}, начато",
+    "finished": "{name}: завершено на ур. {level}",
+    "timeSaved": "{time} добавлено к сэкономленному времени.",
+    "cancelled": "Отменено: {name}, ур. {from} → {to}",
+    "levelChanged": "{name}: ур. {from} → {to}"
+  },
+  "queue": {
+    "buildPetHouse": "Сначала постройте Дом питомцев",
+    "requires": "Нужно: {building} {level}",
+    "alreadyUpgrading": "{name} уже улучшается",
+    "finishFirst": "Сначала должен завершиться уровень {level}",
+    "alreadyAt": "Уже на уровне {level}"
+  },
+  "conflict": {
+    "alreadyAt": "{name} уже на уровне {level}, поэтому уровень {target} готов.",
+    "removeFix": "Уберите его из очереди.",
+    "scheduledBefore": "{name}: уровень {level} запланирован раньше, чем завершится уровень {earlier}.",
+    "moveFix": "Перенесите уровень {level} после уровня {earlier}."
+  }
+}

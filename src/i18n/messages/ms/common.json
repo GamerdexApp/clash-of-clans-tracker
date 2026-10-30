@@ -1,0 +1,32 @@
+{
+  "gate": {
+    "title": "Tiada kampung aktif",
+    "description": "Pilih kampung atau cipta satu untuk melihat halaman ini.",
+    "newVillage": "Kampung baharu",
+    "chooseVillage": "Pilih kampung"
+  },
+  "townHallTab": {
+    "title": "Dewan Bandar",
+    "supercharge": "Supercharge",
+    "superchargeDone": "{current} daripada {max} peringkat supercharge yang dibuka pada Dewan Bandar ini sudah siap.",
+    "superchargeProgress": "Kemajuan supercharge"
+  },
+  "heroesUnlock": "Wira dibuka dengan Dewan Wira.",
+  "progressLabel": "Kemajuan {name}",
+  "countdownLabel": "Kira detik {name}",
+  "capitalGold": "Emas Ibu Kota",
+  "queue": {
+    "conflict": "Konflik",
+    "level": "Thp {level}",
+    "levelSupercharge": "Supercharge Thp {level}",
+    "now": "Sekarang",
+    "itemTitle": "{name} Thp {level}"
+  },
+  "finishDescription": "{name}, Thp {from} ke {to}, {method}, {time} {unit}",
+  "lookupError": {
+    "rateLimit": "Sila tunggu {seconds} s sebelum mengambil semula.",
+    "notFound": "Pemain {tag} tidak ditemui.",
+    "api": "API Supercell menjawab {status}.",
+    "network": "Carian pemain tidak dapat menghubungi pelayan."
+  }
+}

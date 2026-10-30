@@ -1,0 +1,236 @@
+{
+  "tab": {
+    "title": "云同步"
+  },
+  "unavailable": "此版本不支持同步。",
+  "provider": {
+    "github": {
+      "name": "GitHub",
+      "tile": "你自己拥有的私有仓库，名为 {repository}。",
+      "badge": "面向开发者"
+    },
+    "google": {
+      "name": "Google Drive",
+      "tile": "你的云端硬盘中一个可见的 Gamerdex 文件夹。Gamerdex 只能看到它自己创建的文件。",
+      "badge": "推荐"
+    },
+    "dropbox": {
+      "name": "Dropbox",
+      "tile": "你的 Dropbox 应用文件夹内的一个 Gamerdex 文件夹。Gamerdex 只能看到该文件夹。",
+      "badge": "仅限应用文件夹"
+    },
+    "microsoft": {
+      "name": "OneDrive",
+      "tile": "你的 OneDrive 应用文件夹内的一个 Gamerdex 文件夹。Gamerdex 只能看到该文件夹。",
+      "badge": "个人账号"
+    }
+  },
+  "connect": {
+    "title": "跨设备同步",
+    "pill": "未连接",
+    "intro": "让你的电脑和手机上的村庄保持一致。同步是可选的，而且免费。选择副本存放的位置。",
+    "pickerLabel": "副本存放位置",
+    "panelTitle": "连接 {provider}",
+    "another": "登录之前，你可以选择其他服务。",
+    "firstSync": "如果两边都已有数据，请在首次同步时选择保留哪一边。在你决定之前不会替换任何内容。",
+    "steps": {
+      "google": {
+        "step1": "在此窗口中使用 Google 登录。",
+        "step2": "允许访问 Gamerdex 创建的文件。应用无法看到你的其他文件。",
+        "button": "连接 Google Drive"
+      },
+      "github": {
+        "step1": "创建一个名为 {repository} 的空私有仓库。勾选“添加 README 文件”。",
+        "step2": "使用 GitHub 登录，然后只授予 Gamerdex Sync 访问该仓库的权限。",
+        "button": "连接 GitHub"
+      },
+      "dropbox": {
+        "step1": "在此窗口中使用 Dropbox 登录。",
+        "step2": "允许访问 Gamerdex 应用文件夹。应用无法看到你的其他文件。",
+        "button": "连接 Dropbox"
+      },
+      "microsoft": {
+        "step1": "在此窗口中使用你的个人 Microsoft 账号登录。",
+        "step2": "允许访问 Gamerdex 应用文件夹。应用无法看到你的其他文件。",
+        "button": "连接 OneDrive"
+      }
+    }
+  },
+  "how": {
+    "title": "同步如何工作",
+    "points": {
+      "item1": "你的村庄会作为一个文件保存在你自己的存储中，外加一个记录设备列表的小文件。",
+      "item2": "Gamerdex 没有存储你数据的服务器。你的浏览器直接与你的存储通信。",
+      "item3": "建筑实例、兵种、英雄、装备、宠物和成就会逐项合并，取较高的等级。如果另一台设备没有更改该等级，重置会被带过去。",
+      "item4": "如果两台设备更改了同一个名称、队列、进行中的升级、奖杯数或重置时间，由你选择保留哪一个。",
+      "item5": "每台设备保留自己的当前村庄。同步永远不会更改它。",
+      "item6": "你可以随时断开连接。你的村庄会保留在每台设备上。"
+    }
+  },
+  "repository": {
+    "title": "设置你的数据仓库",
+    "body": "你的数据保存在你 GitHub 账号中名为 {name} 的私有仓库里。Gamerdex Sync 只能访问这一个仓库。",
+    "checking": "正在查找 {name}",
+    "checkFailed": "无法加载你的仓库。请检查网络连接后重新检查。",
+    "public": "仓库 {fullName} 是公开的。请在其 GitHub 设置中改为私有，然后重新检查。公开仓库无法使用，因为任何人都能读取你的数据。",
+    "missing": "未找到仓库 {name}",
+    "steps": {
+      "create": "创建一个名为 {name} 的私有仓库。勾选“添加 README 文件”。",
+      "install": "只授予 Gamerdex Sync 访问该仓库的权限。选择“仅选定的仓库”，然后选择 {name}。",
+      "recheck": "回到这里重新检查。"
+    },
+    "createButton": "创建仓库",
+    "installButton": "在 GitHub 上选择仓库",
+    "recheckButton": "重新检查"
+  },
+  "connected": {
+    "repository": "仓库",
+    "lastSync": "上次同步",
+    "never": "尚未同步",
+    "syncNow": "立即同步",
+    "signOut": "退出登录",
+    "folder": "文件夹 {name}",
+    "signInWith": "使用 {provider} 登录"
+  },
+  "status": {
+    "idle": "已同步",
+    "syncing": "同步中",
+    "offline": "离线",
+    "reauth": "请重新登录",
+    "needsChoice": "需要你选择",
+    "error": "同步失败",
+    "signedOut": "未登录",
+    "needsRepository": "请选择仓库",
+    "conflicts": "检查更改"
+  },
+  "error": {
+    "rateLimit": "服务商正在限制请求。几分钟后同步会恢复。",
+    "notFound": "未找到仓库。请重新选择。",
+    "server": "服务商没有正确响应。请稍后再试。",
+    "data": "已同步的数据无效，所以没有做任何更改。",
+    "busy": "另一台设备在不断更改数据。请稍后再试。",
+    "other": "出错了。没有做任何更改。",
+    "reauth": "你的登录已结束。请重新登录以继续同步。",
+    "forbidden": "GitHub 拒绝了对仓库的访问。请确认 Gamerdex Sync 拥有 Contents 的读写权限，然后再次同步。",
+    "httpStatus": "GitHub 返回了 {status}。",
+    "notFoundFolder": "在 {provider} 中未找到某个文件或文件夹。请再次同步。",
+    "forbiddenFolder": "{provider} 拒绝了访问。请重新登录，并允许访问 Gamerdex 创建的文件。",
+    "httpStatusFolder": "{provider} 返回了 {status}。"
+  },
+  "choice": {
+    "title": "此设备和云端都有数据",
+    "body": "这是此设备的首次同步。请选择如何处理。在你选择之前，不会从云端删除任何内容。",
+    "merge": "合并两边",
+    "mergeHint": "保留两边的所有内容，取较高的等级。",
+    "keepLocal": "保留此设备",
+    "keepLocalHint": "用此设备上的数据替换云端数据。",
+    "keepCloud": "保留云端",
+    "keepCloudHint": "用云端数据替换此设备上的数据。"
+  },
+  "first": {
+    "thisDevice": "此设备",
+    "cloud": "云端",
+    "recommended": "推荐",
+    "later": "稍后决定",
+    "apply": "应用选择",
+    "optionsLabel": "保留什么"
+  },
+  "villageCount": "{count, plural, other {{amount} 个村庄}}",
+  "conflicts": {
+    "title": "无法合并的更改",
+    "body": "两台设备更改了同一个值。已保留云端的值。选择此设备的值即可改用它。",
+    "cloudValue": "云端",
+    "deviceValue": "此设备",
+    "keepDevice": "使用此设备的值",
+    "dismiss": "关闭",
+    "empty": "无",
+    "deletedEdited": "一台设备删除了它，另一台设备更改了它。已保留更改后的版本。"
+  },
+  "banner": {
+    "title": "{count, plural, other {{amount} 项更改需要你决定}}",
+    "body": "两台设备更改了同一个值。在你决定之前，会保留云端的值。",
+    "review": "检查",
+    "waiting": "首次同步正在等待你的选择。",
+    "choose": "选择"
+  },
+  "villages": {
+    "title": "村庄",
+    "thisDevice": "此设备",
+    "cloud": "云端，上次同步",
+    "notInCloud": "尚未在云端",
+    "review": "检查",
+    "note": "删除村庄后，下次同步时会将其从同步文件中移除。",
+    "status": {
+      "synced": "已同步",
+      "changedHere": "此处已更改",
+      "conflict": "冲突",
+      "newHere": "此处新增"
+    },
+    "describe": "{townHall}级大本营"
+  },
+  "activity": {
+    "title": "最近的同步活动",
+    "empty": "尚未同步任何内容。",
+    "connected": "已在此浏览器上连接 {provider}。",
+    "uploaded": "已上传此设备的更改。",
+    "downloaded": "已从云端下载更改。",
+    "merged": "已合并两边的更改。",
+    "conflicts": "{count, plural, other {{amount} 项更改需要你决定。}}",
+    "failed": "同步失败。"
+  },
+  "settings": {
+    "title": "同步设置",
+    "auto": "自动同步",
+    "autoHint": "在追踪器打开时同步，并在每次更改几秒后同步。",
+    "focus": "返回标签页时检查更改",
+    "focusHint": "当你切换回追踪器时，拉取较新的云端数据。",
+    "metered": "按流量计费的连接上等待我操作",
+    "meteredHint": "当浏览器报告处于流量节省连接时，跳过自动同步。“立即同步”仍然可用。"
+  },
+  "lives": {
+    "title": "你的数据存放位置",
+    "storage": "存储",
+    "folder": "文件夹",
+    "dataFile": "数据文件",
+    "metaFile": "元数据文件",
+    "size": "大小",
+    "kb": "{amount} KB",
+    "note": "数据文件以便于同步合并的形式保存你的村庄，所以它不是备份文件。元数据文件保存设备列表，不含游戏数据。你的登录信息不会出现在任何一个文件中。",
+    "notes": {
+      "google": "Gamerdex 文件夹在你的云端硬盘中可见。Gamerdex 只能打开它自己创建的文件。",
+      "github": "请保持仓库私有。任何能打开它的人都能读取你的数据。",
+      "dropbox": "Gamerdex 文件夹位于你的 Dropbox 应用文件夹内。Gamerdex 只能打开该文件夹。",
+      "microsoft": "Gamerdex 文件夹位于你的 OneDrive 应用文件夹内。Gamerdex 只能打开该文件夹。"
+    }
+  },
+  "device": {
+    "title": "此设备",
+    "name": "设备名称",
+    "nameHint": "同步文件会用此名称显示这台设备。重命名后，下次同步时会更新元数据文件。",
+    "activeVillage": "当前村庄",
+    "noVillage": "无",
+    "login": "同步登录",
+    "loginValue": "仅在此设备上",
+    "loginHint": "当前村庄由每台设备自行选择，同步永远不会更改它。你的登录信息只保留在此设备上，不会出现在已保存的数据、备份文件或同步文件中。"
+  },
+  "disconnect": {
+    "title": "断开连接",
+    "body": "停止在此浏览器上同步。你的村庄会保留在此设备和云端。其他设备继续同步。",
+    "button": "断开 {provider}",
+    "hints": {
+      "google": "如需自行删除云端副本，请先断开连接，然后删除你 Google Drive 中的 Gamerdex 文件夹。",
+      "github": "如需自行删除云端副本，请先断开连接，然后删除你仓库中的 Gamerdex 文件夹。",
+      "dropbox": "如需自行删除云端副本，请先断开连接，然后删除你 Dropbox 中“应用”下的应用文件夹。",
+      "microsoft": "如需自行删除云端副本，请先断开连接，然后删除你 OneDrive 中“应用”下的应用文件夹。"
+    }
+  },
+  "callback": {
+    "title": "正在登录",
+    "working": "正在完成登录",
+    "back": "返回设置",
+    "denied": "登录已取消。",
+    "state": "无法验证此次登录。请从设置重新开始。",
+    "missing": "此次登录没有返回代码。请从设置重新开始。",
+    "failed": "无法完成登录。请稍后再试。"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "title": "Equipo",
+  "subline": "{name}, Ayuntamiento {townHall}, Blacksmith nivel {blacksmith}",
+  "massEdit": "Los niveles del equipo también se pueden fijar en Edición masiva.",
+  "locked": {
+    "title": "Requiere el Blacksmith",
+    "description": "Construye el Blacksmith para seguir el equipo de héroes. Fija su nivel en la página Constructor, pestaña Ejército.",
+    "action": "Ir a Constructor"
+  },
+  "ore": {
+    "title": "Reserva de menas",
+    "description": "Las menas que tienes. Las faltas son solo un consejo y nunca bloquean una mejora.",
+    "names": {
+      "shiny": "Shiny Ore",
+      "glowing": "Glowing Ore",
+      "starry": "Starry Ore"
+    },
+    "short": {
+      "shiny": "Shiny",
+      "glowing": "Glowing",
+      "starry": "Starry"
+    },
+    "needed": "Necesarias para las piezas listadas: {amount}",
+    "enough": "Hay suficientes",
+    "shortBy": "Faltan {amount}",
+    "deduct": "Descontar menas al mejorar",
+    "deductHelp": "Una mejora saca sus menas de la reserva, nunca por debajo de 0. Deshacer las devuelve."
+  },
+  "hideMax": "Ocultar máx.",
+  "heroFilter": "Héroe",
+  "allHeroes": "Todos los héroes",
+  "section": "{pieces} piezas, {owned} en tu poder",
+  "empty": {
+    "title": "Aún no hay nada aquí",
+    "allMax": "Todas las piezas están al máximo. Desactiva Ocultar máx. para verlas."
+  },
+  "card": {
+    "heroLine": "{hero}",
+    "level": "Nivel {level} de {max}",
+    "notOwned": "No la tienes",
+    "max": "Máx.",
+    "setLevel": "Nivel de {name}",
+    "stepLevel": "Nivel {level}",
+    "free": "Gratis",
+    "time": "Tiempo: instantáneo",
+    "requires": "Requiere Blacksmith {level}",
+    "moreLevels": "{amount} {count, plural, one {nivel más} other {niveles más}}",
+    "add": "Añadir en el nivel 1",
+    "upgradeTo": "Mejorar al nivel {level}",
+    "lockedUntil": "Bloqueada hasta Blacksmith {level}",
+    "allows": "Blacksmith {blacksmith} permite hasta el nivel {level}",
+    "allowsNone": "Blacksmith {blacksmith} aún no permite esta pieza",
+    "footer": "{amount} {levels, plural, one {nivel restante} other {niveles restantes}}",
+    "progress": "Progreso de {name}"
+  },
+  "toast": {
+    "upgraded": "{name} Nv {from} a {to}",
+    "levelSet": "{name} Nv {from} a {to}",
+    "undo": "Deshacer"
+  }
+}

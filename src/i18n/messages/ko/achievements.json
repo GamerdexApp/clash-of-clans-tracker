@@ -1,0 +1,49 @@
+{
+  "title": "업적",
+  "description": "모든 업적의 별, 수치, 보상을 기록하세요.",
+  "subline": "{name}, 업적 {count}개, 별 {maxStars}개 중 {stars}개, {percent}%",
+  "tiles": {
+    "all": "전체 업적",
+    "home": "본거지",
+    "builder": "빌더 기지",
+    "capital": "클랜 캐피탈",
+    "gems": "획득한 보석",
+    "xp": "획득한 XP",
+    "stars": "별 {maxStars}개 중 {stars}개",
+    "left": "남은 {unit} {amount}",
+    "gemsUnit": "보석",
+    "xpUnit": "XP"
+  },
+  "sections": {
+    "home": "본거지",
+    "builderBase": "빌더 기지",
+    "clanCapital": "클랜 캐피탈",
+    "summary": "업적 {count}개, 별 {stars} / {maxStars}, 보석 {gems}개, XP {xp}",
+    "more": "{name} 업적 {count}개 더 보기",
+    "less": "간단히 보기"
+  },
+  "card": {
+    "manual": "수동",
+    "nextStar": "다음 별",
+    "xp": "XP",
+    "gems": "보석",
+    "edit": "{name} 수정",
+    "done": "완료",
+    "stars": "별",
+    "starsHelp": "같은 별을 다시 누르면 별이 하나 줄어요.",
+    "star": "{number, plural, other {별 {amount}개}}",
+    "value": "수치",
+    "target": "목표",
+    "manualLabel": "수동 (API 값 무시)",
+    "saves": "입력하는 대로 저장돼요. 별을 올리면 목표가 다음 단계로 넘어가요.",
+    "progress": "{name} 진행도",
+    "starsEarned": "별 3개 중 {stars}개"
+  },
+  "toast": {
+    "stars": "{name}: {stars, plural, other {별 {amount}개}}로 변경",
+    "targetMoved": "목표를 {target}로 옮겼어요.",
+    "value": "{name} 수치를 {value}로 변경",
+    "target": "{name} 목표를 {target}로 변경",
+    "undo": "실행 취소"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "title": "Pasukan",
+  "subline": "{name}, Balai Pembangun {hall}",
+  "sublineNotSet": "{name}, Balai Pembangun belum diatur",
+  "strip": {
+    "title": "Lab Bintang",
+    "noLanes": "Lab Bintang tidak tersedia.",
+    "openQueue": "Buka antrean dan linimasa",
+    "unassignedHelp": "Lebih dari satu riset pasukan tersimpan di Lab Bintang. Selesaikan atau batalkan yang berlebih.",
+    "levelLabel": "Level Lab Bintang",
+    "level": "{level} dari {max}",
+    "notSet": "Belum diatur"
+  },
+  "card": {
+    "notUnlocked": "Belum terbuka",
+    "markUnlocked": "Tandai terbuka",
+    "maxAtHall": "Maks Lv {level} di Balai Pembangun ini",
+    "unlockedBy": "Terbuka oleh Barak Pembangun level {barracks}",
+    "progress": "Progres {name}"
+  },
+  "unavailable": {
+    "title": "Tidak tersedia di Balai Pembangun ini",
+    "requires": "Butuh Barak Pembangun {barracks}, yang butuh Balai Pembangun {hall}"
+  },
+  "empty": {
+    "title": "Belum ada apa-apa",
+    "allMax": "Semua pasukan sudah maksimal. Matikan Sembunyikan Maks untuk melihatnya."
+  }
+}

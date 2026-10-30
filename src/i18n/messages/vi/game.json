@@ -1,0 +1,37 @@
+{
+  "resources": {
+    "gold": "Vàng",
+    "elixir": "Dung Dịch",
+    "darkElixir": "Dung Dịch Đen",
+    "darkElixirShort": "Đen",
+    "builderGold": "Vàng Thợ Xây",
+    "builderGoldShort": "Vàng TX",
+    "builderElixir": "Dung Dịch Thợ Xây",
+    "builderElixirShort": "DD TX",
+    "capitalGold": "Vàng Thủ Đô",
+    "shinyOre": "Shiny Ore",
+    "glowyOre": "Glowy Ore",
+    "starryOre": "Starry Ore"
+  },
+  "halls": {
+    "townHall": "Nhà Chính {level}",
+    "builderHall": "Nhà Thợ Xây {level}",
+    "capitalHall": "Nhà Thủ Đô {level}",
+    "heroHall": "Nhà Anh Hùng {level}",
+    "starLaboratory": "Phòng Thí Nghiệm Sao {level}",
+    "blacksmith": "Thợ Rèn"
+  },
+  "places": {
+    "townHall": "Nhà Chính",
+    "townHallWeapon": "Vũ khí Nhà Chính",
+    "builderHall": "Nhà Thợ Xây",
+    "clockTower": "Tháp Đồng Hồ",
+    "laboratory": "Phòng Thí Nghiệm",
+    "goblinResearcher": "Nhà Nghiên Cứu Goblin",
+    "goblinBuilder": "Thợ Xây Goblin",
+    "starLaboratory": "Phòng Thí Nghiệm Sao",
+    "petHouse": "Nhà Thú Cưng",
+    "capitalPeak": "Đỉnh Thủ Đô",
+    "builder": "Thợ Xây {id}"
+  }
+}

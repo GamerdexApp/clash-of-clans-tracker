@@ -1,0 +1,37 @@
+{
+  "resources": {
+    "gold": "الذهب",
+    "elixir": "الإكسير",
+    "darkElixir": "الإكسير الأسود",
+    "darkElixirShort": "الأسود",
+    "builderGold": "ذهب البنّاء",
+    "builderGoldShort": "ذهب ب.",
+    "builderElixir": "إكسير البنّاء",
+    "builderElixirShort": "إكسير ب.",
+    "capitalGold": "ذهب العاصمة",
+    "shinyOre": "Shiny Ore",
+    "glowyOre": "Glowy Ore",
+    "starryOre": "Starry Ore"
+  },
+  "halls": {
+    "townHall": "قاعة المدينة {level}",
+    "builderHall": "قاعة البنّاء {level}",
+    "capitalHall": "قاعة العاصمة {level}",
+    "heroHall": "قاعة الأبطال {level}",
+    "starLaboratory": "مختبر النجوم {level}",
+    "blacksmith": "الحداد"
+  },
+  "places": {
+    "townHall": "قاعة المدينة",
+    "townHallWeapon": "سلاح قاعة المدينة",
+    "builderHall": "قاعة البنّاء",
+    "clockTower": "برج الساعة",
+    "laboratory": "المختبر",
+    "goblinResearcher": "الغوبلن الباحث",
+    "goblinBuilder": "البنّاء الغوبلن",
+    "starLaboratory": "مختبر النجوم",
+    "petHouse": "بيت الحيوانات",
+    "capitalPeak": "قمة العاصمة",
+    "builder": "البنّاء {id}"
+  }
+}

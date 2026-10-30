@@ -1,0 +1,139 @@
+{
+  "districts": {
+    "title": "Daerah",
+    "subline": "{hall, plural, =0 {{name}, Dewan Ibu Kota belum ditetapkan} other {{name}, Dewan Ibu Kota {hall}}}",
+    "description": "Daerah dan zon Ibu Kota Klan anda."
+  },
+  "troops": {
+    "title": "Pasukan dan mantera",
+    "subline": "{name}, pasukan dan mantera Ibu Kota Klan",
+    "tiles": {
+      "troops": "Pasukan",
+      "spells": "Mantera",
+      "caption": "{current} daripada {max} tahap"
+    },
+    "sections": {
+      "troops": "Pasukan",
+      "spells": "Mantera"
+    },
+    "card": {
+      "level": "Tahap {name}",
+      "raise": "Naikkan {name}",
+      "lower": "Turunkan {name}",
+      "maxAt": "Tahap maks {level} sekarang",
+      "from": "Dari {zone}",
+      "progress": "Kemajuan {name}"
+    },
+    "locked": {
+      "title": "Belum tersedia",
+      "districtHall": "Memerlukan Dewan Daerah {level} di {zone}",
+      "capitalHall": "Memerlukan Dewan Ibu Kota {level} untuk membuka {zone}",
+      "kept": "Tahap {level} yang disimpan dikekalkan"
+    },
+    "empty": {
+      "title": "Semuanya sudah maks",
+      "description": "Matikan Sembunyi Maks untuk melihat setiap pasukan dan mantera."
+    }
+  },
+  "tracking": {
+    "label": "Jejaki Ibu Kota Klan",
+    "onHelp": "Mematikannya mengekalkan semua data.",
+    "turnOnTitle": "Penjejakan Ibu Kota Klan dihidupkan",
+    "turnedOn": "Penjejakan Ibu Kota Klan dihidupkan.",
+    "undo": "Buat asal",
+    "offDialog": {
+      "title": "Matikan penjejakan Ibu Kota Klan?",
+      "body": "Halaman Ibu Kota Klan, kad Gambaran keseluruhan dan tab Sunting pukal disembunyikan. Tiada apa-apa dipadam.",
+      "confirm": "Matikan",
+      "cancel": "Batal"
+    }
+  },
+  "off": {
+    "title": "Penjejakan Ibu Kota Klan dimatikan",
+    "description": "Daerah, pasukan dan mantera anda dikekalkan. Hidupkan penjejakan untuk melihatnya semula.",
+    "turnOn": "Hidupkan penjejakan",
+    "keptTitle": "Apa yang dikekalkan",
+    "kept": "Semua data Ibu Kota Klan kekal dalam kampung ini."
+  },
+  "locked": {
+    "title": "Ibu Kota Klan dikunci",
+    "description": "Ibu Kota Klan dibuka pada Dewan Bandar 3. Kampung ini berada pada Dewan Bandar {townHall}. Apa-apa yang sudah disimpan dipaparkan semula pada Dewan Bandar 3.",
+    "action": "Tukar Dewan Bandar dalam Kampung"
+  },
+  "notSet": {
+    "title": "Ibu Kota Klan belum disediakan",
+    "description": "Tetapkan tahap Dewan Ibu Kota untuk mula menjejaki daerah, pasukan dan mantera.",
+    "action": "Tetapkan tahap Dewan Ibu Kota"
+  },
+  "hall": {
+    "label": "Dewan Ibu Kota",
+    "none": "Tiada",
+    "level": "Tahap {level}",
+    "nextCost": "Dewan Ibu Kota {level} berharga {cost} Emas Ibu Kota{hasOpens, select, true { dan membuka {opens}} other {}}. Menaikkan dewan tidak pernah menyetkan semula tahap.",
+    "atTop": "Dewan Ibu Kota berada pada tahap tertinggi.",
+    "raised": "Dewan Ibu Kota dinaikkan dari {from} ke {to}. Tiada tahap disetkan semula.",
+    "changed": "Dewan Ibu Kota ditukar dari {from} ke {to}.",
+    "districtRaised": "Dewan Daerah {zone} dinaikkan dari {from} ke {to}.",
+    "districtChanged": "Dewan Daerah {zone} ditukar dari {from} ke {to}."
+  },
+  "contributions": {
+    "label": "Sumbangan",
+    "unit": "Emas Ibu Kota",
+    "help": "Jumlah yang anda berikan kepada klan. Import Tag Pemain mengisinya, anda juga boleh menaipnya."
+  },
+  "tiles": {
+    "progress": "Kemajuan Ibu Kota",
+    "progressCaption": "{current} daripada {max} tahap",
+    "zones": "Zon dibuka",
+    "zonesCaption": "{open} daripada {total}"
+  },
+  "zones": {
+    "title": "Zon",
+    "help": "Pilih zon untuk menyuntingnya di bawah",
+    "hall": "{level, plural, =0 {Tiada Dewan Daerah} other {Dewan Daerah {level}}}",
+    "peakHall": "Dewan Ibu Kota {level}",
+    "locked": "Dikunci, memerlukan Dewan Ibu Kota {hall}",
+    "levels": "{current} daripada {max}"
+  },
+  "panel": {
+    "districtHall": "Dewan Daerah",
+    "requires": "Memerlukan Dewan Ibu Kota {hall}",
+    "noHall": "Tiada Dewan Daerah",
+    "empty": "Tiada apa-apa untuk dibina di sini pada tahap dewan ini.",
+    "groupsLabel": "Kumpulan bangunan",
+    "groups": {
+      "defenses": "Pertahanan",
+      "traps": "Perangkap",
+      "army": "Tentera",
+      "walls": "Tembok"
+    },
+    "max": "Maks",
+    "clear": "Kosongkan",
+    "maxAll": "Maks Semua",
+    "resetAll": "Set Semula Semua",
+    "instances": "{amount} {count, plural, other {bangunan}}",
+    "maxLevel": "Tahap maks {level}",
+    "instance": "{name} {index}",
+    "raise": "Naikkan {name}",
+    "lower": "Turunkan {name}",
+    "wallLevel": "Tahap {level}",
+    "wallsLeft": "{left} daripada {total} tembok masih perlu diletakkan",
+    "wallsNote": "Bilangan tidak boleh melebihi baki tembok.",
+    "wallsNone": "Tiada tembok pada tahap dewan ini.",
+    "wallCount": "Tembok pada tahap {level}",
+    "wallRaise": "Tambah satu tembok pada tahap {level}",
+    "wallLower": "Kurangkan satu tembok pada tahap {level}",
+    "groupMaxed": "{zone}: {group} ditetapkan ke maks",
+    "groupCleared": "{zone}: {group} dikosongkan"
+  },
+  "confirm": {
+    "title": "Turunkan dewan ini?",
+    "description": "Tahap ini tidak lagi sesuai dan akan disetkan semula. Yang lain dikekalkan.",
+    "confirm": "Turunkan dewan",
+    "cancel": "Kekalkan dewan",
+    "more": "dan {count} lagi"
+  },
+  "toast": {
+    "undo": "Buat asal"
+  }
+}

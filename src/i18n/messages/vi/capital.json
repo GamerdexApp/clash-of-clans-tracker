@@ -1,0 +1,139 @@
+{
+  "districts": {
+    "title": "Quận",
+    "subline": "{hall, plural, =0 {{name}, chưa đặt Nhà Thủ Đô} other {{name}, Nhà Thủ Đô {hall}}}",
+    "description": "Các quận và khu vực của Thủ Đô Bang Hội."
+  },
+  "troops": {
+    "title": "Quân và phép",
+    "subline": "{name}, quân và phép Thủ Đô Bang Hội",
+    "tiles": {
+      "troops": "Quân",
+      "spells": "Phép",
+      "caption": "{current} trên {max} cấp"
+    },
+    "sections": {
+      "troops": "Quân",
+      "spells": "Phép"
+    },
+    "card": {
+      "level": "Cấp {name}",
+      "raise": "Tăng {name}",
+      "lower": "Giảm {name}",
+      "maxAt": "Hiện tối đa cấp {level}",
+      "from": "Từ {zone}",
+      "progress": "Tiến độ {name}"
+    },
+    "locked": {
+      "title": "Chưa khả dụng",
+      "districtHall": "Cần Nhà Quận {level} ở {zone}",
+      "capitalHall": "Cần Nhà Thủ Đô {level} để mở {zone}",
+      "kept": "Cấp {level} đã lưu được giữ lại"
+    },
+    "empty": {
+      "title": "Tất cả đã tối đa",
+      "description": "Tắt Ẩn tối đa để xem mọi quân và phép."
+    }
+  },
+  "tracking": {
+    "label": "Theo dõi Thủ Đô Bang Hội",
+    "onHelp": "Tắt đi vẫn giữ toàn bộ dữ liệu.",
+    "turnOnTitle": "Theo dõi Thủ Đô Bang Hội đang bật",
+    "turnedOn": "Theo dõi Thủ Đô Bang Hội đang bật.",
+    "undo": "Hoàn tác",
+    "offDialog": {
+      "title": "Tắt theo dõi Thủ Đô Bang Hội?",
+      "body": "Các trang Thủ Đô Bang Hội, thẻ ở Tổng quan và tab Sửa hàng loạt sẽ bị ẩn. Không có gì bị xóa.",
+      "confirm": "Tắt",
+      "cancel": "Hủy"
+    }
+  },
+  "off": {
+    "title": "Theo dõi Thủ Đô Bang Hội đang tắt",
+    "description": "Quận, quân và phép của bạn vẫn được giữ. Bật theo dõi để xem lại.",
+    "turnOn": "Bật theo dõi",
+    "keptTitle": "Những gì được giữ",
+    "kept": "Toàn bộ dữ liệu Thủ Đô Bang Hội vẫn nằm trong làng này."
+  },
+  "locked": {
+    "title": "Thủ Đô Bang Hội đã khóa",
+    "description": "Thủ Đô Bang Hội mở ở Nhà Chính 3. Làng này đang ở Nhà Chính {townHall}. Dữ liệu đã lưu sẽ hiện lại ở Nhà Chính 3.",
+    "action": "Đổi Nhà Chính trong mục Làng"
+  },
+  "notSet": {
+    "title": "Thủ Đô Bang Hội chưa được thiết lập",
+    "description": "Đặt cấp Nhà Thủ Đô để bắt đầu theo dõi quận, quân và phép.",
+    "action": "Đặt cấp Nhà Thủ Đô"
+  },
+  "hall": {
+    "label": "Nhà Thủ Đô",
+    "none": "Không có",
+    "level": "Cấp {level}",
+    "nextCost": "Nhà Thủ Đô {level} tốn {cost} Vàng Thủ Đô{hasOpens, select, true { và mở {opens}} other {}}. Nâng nhà không bao giờ đặt lại các cấp.",
+    "atTop": "Nhà Thủ Đô đang ở cấp cao nhất.",
+    "raised": "Đã nâng Nhà Thủ Đô từ {from} lên {to}. Không cấp nào bị đặt lại.",
+    "changed": "Đã đổi Nhà Thủ Đô từ {from} sang {to}.",
+    "districtRaised": "Đã nâng Nhà Quận {zone} từ {from} lên {to}.",
+    "districtChanged": "Đã đổi Nhà Quận {zone} từ {from} sang {to}."
+  },
+  "contributions": {
+    "label": "Đóng góp",
+    "unit": "Vàng Thủ Đô",
+    "help": "Tổng số bạn đã tặng bang hội. Nhập từ Player Tag sẽ tự điền, bạn cũng có thể gõ tay."
+  },
+  "tiles": {
+    "progress": "Tiến độ Thủ Đô",
+    "progressCaption": "{current} trên {max} cấp",
+    "zones": "Khu vực đã mở",
+    "zonesCaption": "{open} trên {total}"
+  },
+  "zones": {
+    "title": "Khu vực",
+    "help": "Chọn một khu vực để sửa bên dưới",
+    "hall": "{level, plural, =0 {Chưa có Nhà Quận} other {Nhà Quận {level}}}",
+    "peakHall": "Nhà Thủ Đô {level}",
+    "locked": "Đã khóa, cần Nhà Thủ Đô {hall}",
+    "levels": "{current} trên {max}"
+  },
+  "panel": {
+    "districtHall": "Nhà Quận",
+    "requires": "Cần Nhà Thủ Đô {hall}",
+    "noHall": "Chưa có Nhà Quận",
+    "empty": "Chưa có gì để xây ở cấp nhà này.",
+    "groupsLabel": "Nhóm công trình",
+    "groups": {
+      "defenses": "Phòng thủ",
+      "traps": "Bẫy",
+      "army": "Quân đội",
+      "walls": "Tường"
+    },
+    "max": "Tối đa",
+    "clear": "Xóa",
+    "maxAll": "Tối đa tất cả",
+    "resetAll": "Đặt lại tất cả",
+    "instances": "{amount} {count, plural, other {công trình}}",
+    "maxLevel": "Cấp tối đa {level}",
+    "instance": "{name} {index}",
+    "raise": "Tăng {name}",
+    "lower": "Giảm {name}",
+    "wallLevel": "Cấp {level}",
+    "wallsLeft": "Còn {left} trên {total} tường cần đặt",
+    "wallsNote": "Số lượng không thể vượt quá số tường còn lại.",
+    "wallsNone": "Không có tường ở cấp nhà này.",
+    "wallCount": "Tường cấp {level}",
+    "wallRaise": "Thêm một tường cấp {level}",
+    "wallLower": "Bớt một tường cấp {level}",
+    "groupMaxed": "{zone}: {group} đã đặt tối đa",
+    "groupCleared": "{zone}: {group} đã xóa"
+  },
+  "confirm": {
+    "title": "Hạ cấp nhà này?",
+    "description": "Những cấp này không còn phù hợp và sẽ bị đặt lại. Mọi thứ khác được giữ.",
+    "confirm": "Hạ cấp nhà",
+    "cancel": "Giữ nhà",
+    "more": "và {count} mục nữa"
+  },
+  "toast": {
+    "undo": "Hoàn tác"
+  }
+}

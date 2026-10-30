@@ -1,0 +1,255 @@
+{
+  "locked": {
+    "title": "Tägliches",
+    "subline": "{name}, Rathaus {townHall}, hier ist noch nichts offen",
+    "open": "Öffnen",
+    "lockedBadge": "Gesperrt",
+    "now": "Dieses Dorf hat Rathaus {townHall}.",
+    "nowNoHut": "Dieses Dorf hat noch keine Helferhütte.",
+    "needsHut": "Braucht die Helferhütte",
+    "toBuilder": "Bauarbeiter öffnen",
+    "cards": {
+      "forge": {
+        "title": "Schmiede",
+        "what": "Wandle überschüssige Ressourcen in Hauptstadtgold um und hole das tägliche Hauptstadtgold ab."
+      },
+      "helpers": {
+        "title": "Helfer",
+        "what": "Verfolge Bauarbeiter-Lehrling, Laborassistent, Alchemist und Prospektor."
+      },
+      "seasonPass": {
+        "title": "Saisonpass",
+        "what": "Lege die Goldpass-Boosts und Vorteile fest, die Upgradezeiten verkürzen."
+      },
+      "starBonus": {
+        "title": "Sternbonus",
+        "what": "Der tägliche Timer des Sternbonus ist in der Übersicht.",
+        "open": "Übersicht öffnen"
+      }
+    }
+  },
+  "timer": {
+    "notSet": "Stelle deinen täglichen Reset ein",
+    "setTime": "Resetzeit setzen",
+    "setAndUse": "Setzen und als benutzt markieren",
+    "notSetHelp": "Das Setzen der Zeit markiert die Belohnung nicht als benutzt.",
+    "savedIn": "Die Zeit wird in {zone} gespeichert.",
+    "available": "Verfügbar",
+    "use": "Benutzen",
+    "adjust": "Anpassen",
+    "adjustTitle": "Resetzeit anpassen",
+    "save": "Speichern",
+    "cancel": "Abbrechen",
+    "resetsAt": "Täglicher Reset um {time}, {zone}",
+    "untilReset": "bis zum Reset um {time}, {zone}",
+    "usedAt": "Benutzt um {time}.",
+    "timeLabel": "Resetzeit",
+    "deviceClock": "Geräteuhr",
+    "used": "{name} als benutzt markiert",
+    "undo": "Rückgängig"
+  },
+  "forge": {
+    "title": "Schmiede",
+    "description": "Wandle überschüssige Ressourcen in Hauptstadtgold um und hole das tägliche Hauptstadtgold ab.",
+    "subline": "{builderHall, plural, =0 {{name}, Rathaus {townHall}, Hauptstadtgold-Produktion} other {{name}, Rathaus {townHall}, Bauarbeiterhalle {builderHall}, Hauptstadtgold-Produktion}}",
+    "daily": {
+      "title": "Hauptstadtgold täglich",
+      "amount": "+{gold} Hauptstadtgold jeden Tag bei Rathaus {townHall}",
+      "none": "Das tägliche Hauptstadtgold beginnt bei Rathaus 6.",
+      "name": "Tägliches Hauptstadtgold"
+    },
+    "slots": {
+      "title": "Schmiedeplätze",
+      "craftingTime": "3 Tage Fertigungszeit",
+      "open": "{open} von {total} Plätzen offen bei Rathaus {townHall}",
+      "boost": "{percent}% Bauarbeiter-Boost angewendet: {time}",
+      "slot": "Platz {number}",
+      "requires": "Braucht Rathaus {townHall}",
+      "locked": "Gesperrt",
+      "idle": "Leer",
+      "idleHelp": "Wähle, was geschmiedet wird",
+      "running": "Läuft",
+      "done": "Fertig",
+      "result": "Ergebnis",
+      "start": "Start",
+      "stop": "Stopp",
+      "reset": "Zurücksetzen",
+      "resource": "Ressource",
+      "rate": "{amount} {resource} für {capitalGold} Hauptstadtgold, fertig in {time}",
+      "left": "noch {time}",
+      "ready": "Bereit: {capitalGold} Hauptstadtgold.",
+      "finished": "Vor {ago} fertig.",
+      "stopped": "Platz {number} gestoppt. Durchlauf gelöscht.",
+      "resetDone": "Platz {number} zurückgesetzt. Durchlauf von {resource} gelöscht.",
+      "runningTitle": "{resource}, {amount}"
+    },
+    "auto": {
+      "title": "Auto-Schmiede",
+      "subtitle": "Goldpass-Vorteil, wiederholt sich selbst",
+      "repeats": "{amount} {resource} für {capitalGold} Hauptstadtgold alle {time}",
+      "nextRun": "Der nächste Durchlauf startet von selbst, wenn dieser endet.",
+      "stop": "Auto-Schmiede stoppen",
+      "stopped": "Auto-Schmiede gestoppt. Zyklus gelöscht.",
+      "confirm": {
+        "title": "Auto-Schmiede stoppen?",
+        "body": "Der laufende Zyklus wird gelöscht: {amount} {resource} für {capitalGold} Hauptstadtgold, noch {time}. Die Auto-Schmiede wiederholt sich nicht mehr, bis du sie auf der Schmiedeseite wieder startest. Der Goldpass-Vorteil bleibt im Saisonpass aktiv.",
+        "undoHint": "Nach dem Stoppen bleibt ein Rückgängig-Button einige Sekunden auf dem Bildschirm.",
+        "keep": "Weiterlaufen lassen",
+        "stop": "Auto-Schmiede stoppen"
+      }
+    },
+    "rates": {
+      "title": "Schmiederaten",
+      "description": "{builderHall, plural, =0 {Rathaus {townHall}, ein Durchlauf in einem Platz} other {Rathaus {townHall} und Bauarbeiterhalle {builderHall}, ein Durchlauf in einem Platz}}",
+      "autoTitle": "Raten der Auto-Schmiede",
+      "autoDescription": "Goldpass-Preis, halbe manuelle Kosten",
+      "resource": "Ressource",
+      "cost": "Kosten",
+      "capitalGold": "Hauptstadtgold",
+      "requires": "Braucht {requirement}"
+    }
+  },
+  "helpers": {
+    "title": "Helfer",
+    "description": "Verfolge Bauarbeiter-Lehrling, Laborassistent, Alchemist und Prospektor.",
+    "subline": "{builderHall, plural, =0 {{name}, Rathaus {townHall}, Assistenten der Helferhütte} other {{name}, Rathaus {townHall}, Bauarbeiterhalle {builderHall}, Assistenten der Helferhütte}}",
+    "banner": "Helferhütte gebaut. Jeder Helfer wird mit dem Rathaus freigeschaltet: Laborassistent 9, Bauarbeiter-Lehrling 10, Prospektor 10, Alchemist 11.",
+    "names": {
+      "buildersApprentice": "Bauarbeiter-Lehrling",
+      "labAssistant": "Laborassistent",
+      "alchemist": "Alchemist",
+      "prospector": "Prospektor"
+    },
+    "from": "Ab Rathaus {townHall}",
+    "lockedCard": "Braucht Rathaus {townHall}",
+    "dailyUse": "Tägliche Nutzung",
+    "level": "Stufe",
+    "levelOption": "Stufe {level}",
+    "levelTownHall": "RH {townHall}",
+    "none": "Keine",
+    "noLevel": "Wähle deine Stufe, um Werte zu sehen.",
+    "noLevelCalculator": "Wähle deine Stufe, um den Rechner zu nutzen.",
+    "nextLevel": "{gems, select, 0 {Stufe {level} ist kostenlos} other {Stufe {level} kostet {gems} Edelsteine}}",
+    "saves": "Spart {time} pro Nutzung",
+    "levelRequires": "Braucht Rathaus {townHall}",
+    "assignment": {
+      "builderTitle": "Upgrade zum Beschleunigen",
+      "researchTitle": "Forschung zum Beschleunigen",
+      "none": "Keine",
+      "builderHelp": "Listet Gebäude, Helden, Rathaus, Rathauswaffe und Module gefertigter Verteidigungen auf, die gerade upgraden.",
+      "researchHelp": "Nur Forschung: listet Truppen, Zauber und Belagerungsmaschinen auf, die gerade upgraden.",
+      "builderEmpty": "Keine aktiven Bauarbeiter-Upgrades zum Zuweisen.",
+      "researchEmpty": "Keine aktive Laborforschung zum Zuweisen.",
+      "once": "Einmal nutzbar",
+      "untilDone": "Bis fertig",
+      "assignedTo": "Zugewiesen an",
+      "clearsAfterUse": "Wird nach einer Nutzung gelöscht.",
+      "staysUntilDone": "Bleibt, bis das Upgrade endet.",
+      "clear": "Zuweisung löschen",
+      "cleared": "Zuweisung gelöscht.",
+      "select": "Zugewiesenes Upgrade",
+      "mode": "Zuweisungsmodus",
+      "preview": "Jetzt nutzen: aus {before} Rest werden {after}.",
+      "previewDone": "Jetzt nutzen: {before} Rest, das Upgrade endet.",
+      "upgradeTo": "{name} auf Stufe {level}, noch {left}"
+    },
+    "used": {
+      "plain": "{name} als benutzt markiert",
+      "saved": "{name} auf {target} benutzt, {time} gespart"
+    },
+    "alchemist": {
+      "stats": {
+        "goldElixir": "Max. Gold oder Elixier",
+        "darkElixir": "Max. Dunkles Elixier",
+        "bonus": "Umwandlungsbonus"
+      },
+      "calculator": "Umwandlungsrechner",
+      "from": "Von",
+      "to": "Zu",
+      "amount": "Umzuwandelnde Menge",
+      "result": "{amount} {from} ergeben {output} {to}",
+      "help": "Enthält den Umwandlungsbonus von {bonus}% und die Rate 150 zu 1.",
+      "nothingSaved": "Hier wird nichts gespeichert."
+    },
+    "prospector": {
+      "lockedTitle": "Gesperrt, bis du ihn mit 2.200 Saison-Herausforderungspunkten freischaltest",
+      "lockedHelp": "Schalte ihn auf der Saisonpass-Seite ein, nachdem du ihn im Spiel freigeschaltet hast.",
+      "toSeasonPass": "Saisonpass öffnen",
+      "subtitle": "Ab Rathaus 10, freigeschaltet mit Saison-Herausforderungspunkten",
+      "lockedBadge": "Gesperrt",
+      "unlockedBadge": "Freigeschaltet",
+      "levelOnly": "Stufe 1 (die einzige Stufe)",
+      "limits": {
+        "shiny": "Max. Glänzendes Erz",
+        "glowy": "Max. Leuchtendes Erz",
+        "starry": "Max. Sternenerz"
+      },
+      "calculator": "Erzumwandlungsrechner",
+      "ores": {
+        "shiny": "Glänzendes Erz",
+        "glowy": "Leuchtendes Erz",
+        "starry": "Sternenerz"
+      },
+      "help": "10 Glänzendes Erz ergeben 1 Leuchtendes Erz. 100 Leuchtendes Erz ergeben 1 Sternenerz."
+    }
+  },
+  "seasonPass": {
+    "title": "Saisonpass",
+    "description": "Lege die Goldpass-Boosts und Vorteile fest, die Upgradezeiten verkürzen.",
+    "subline": "{name}, Rathaus {townHall}, Goldpass-Vorteile dieser Saison aktiv",
+    "lockedTitle": "Der Saisonpass ist gesperrt",
+    "lockedBody": "Der Goldpass braucht Rathaus 7. Dieses Dorf hat Rathaus {townHall}.",
+    "month": {
+      "title": "{month}",
+      "subtitle": "Boosts werden am {reset} zurückgesetzt, Vorteile bleiben.",
+      "key": "Monatsschlüssel",
+      "rolled": "Ein neuer Monat hat begonnen. Bauarbeiter-Boost und Forschungs-Boost wurden auf 0% gesetzt. Vorteile bleiben aktiv.",
+      "undoReset": "Reset rückgängig",
+      "dismiss": "Schließen",
+      "restored": "Boosts für diesen Monat wiederhergestellt.",
+      "undo": "Rückgängig"
+    },
+    "boosts": {
+      "title": "Boost-Vorteile",
+      "description": "Der Goldpass verkürzt in dieser Saison die Upgradezeiten.",
+      "builder": "Bauarbeiter-Boost",
+      "research": "Forschungs-Boost",
+      "applies": "Gilt für Zeiten von Bauarbeitern, Forschung und Haustieren, die Zeitleisten der Warteschlangen und die Fertigungszeit der Schmiede.",
+      "saved": "Mit diesem Monat gespeichert.",
+      "value": "{percent, plural, =0 {Aus} other {{percent}%}}",
+      "option": "{percent, plural, =0 {0%} other {{percent}%}}",
+      "builderEffect": "{percent, plural, =0 {Die Fertigungszeit der Schmiede beträgt 3T.} other {Die Fertigungszeit der Schmiede beträgt {time}.}}",
+      "researchEffect": "{percent, plural, =0 {Forschungs- und Haustierzeiten bleiben gleich.} other {Forschungs- und Haustierzeiten sind {percent}% kürzer.}}"
+    },
+    "unlocks": {
+      "title": "Freischaltungen der Saison-Herausforderung",
+      "description": "Nicht Teil des Goldpasses",
+      "prospector": "Prospektor",
+      "prospectorHelp": "Helfer ab Rathaus 10, kostet 2.200 Saison-Herausforderungspunkte",
+      "shows": "Erscheint auf der Helferseite"
+    },
+    "perks": {
+      "title": "Goldpass-Vorteile",
+      "description": "Goldpass-Vorteile dieser Saison aktiv",
+      "referenceOnly": "Nur zur Orientierung",
+      "referenceNote": "Ändert sonst nichts in der App.",
+      "hoggyBank": {
+        "label": "Hoggy-Bank",
+        "note": "Sammelt Ressourcen, während du spielst, Abholung am Saisonende"
+      },
+      "gemDonations": {
+        "label": "Spenden für 1 Edelstein",
+        "note": "Spende Truppen und Zauber für nur 1 Edelstein pro Stück"
+      },
+      "autoForge": {
+        "label": "Auto-Schmiede",
+        "note": "Wandelt Ressourcen automatisch in Hauptstadtgold um"
+      },
+      "autoForgeEffect": "Schaltet die Zeile der Auto-Schmiede auf der Schmiedeseite und den Chip in der Übersicht ein.",
+      "requestTimeReduction": {
+        "label": "Kürzere Anfragezeit",
+        "note": "Verkürzt den Abklingtimer für Truppenanfragen"
+      }
+    }
+  }
+}

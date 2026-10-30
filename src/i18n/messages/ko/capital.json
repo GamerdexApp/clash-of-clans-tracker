@@ -1,0 +1,139 @@
+{
+  "districts": {
+    "title": "지구",
+    "subline": "{hall, plural, =0 {{name}, 캐피탈 홀 미설정} other {{name}, 캐피탈 홀 {hall}}}",
+    "description": "클랜 캐피탈의 지구와 구역이에요."
+  },
+  "troops": {
+    "title": "병력과 주문",
+    "subline": "{name}, 클랜 캐피탈 병력과 주문",
+    "tiles": {
+      "troops": "병력",
+      "spells": "주문",
+      "caption": "레벨 {max} 중 {current}"
+    },
+    "sections": {
+      "troops": "병력",
+      "spells": "주문"
+    },
+    "card": {
+      "level": "{name} 레벨",
+      "raise": "{name} 올리기",
+      "lower": "{name} 내리기",
+      "maxAt": "현재 최대 레벨 {level}",
+      "from": "{zone}에서 해제",
+      "progress": "{name} 진행도"
+    },
+    "locked": {
+      "title": "아직 사용할 수 없어요",
+      "districtHall": "{zone}의 지구 홀 {level} 필요",
+      "capitalHall": "{zone}을 열려면 캐피탈 홀 {level} 필요",
+      "kept": "저장된 레벨 {level}은 유지돼요"
+    },
+    "empty": {
+      "title": "모두 최대예요",
+      "description": "최대 숨기기를 끄면 모든 병력과 주문을 볼 수 있어요."
+    }
+  },
+  "tracking": {
+    "label": "클랜 캐피탈 추적",
+    "onHelp": "끄더라도 모든 데이터는 유지돼요.",
+    "turnOnTitle": "클랜 캐피탈 추적이 켜져 있어요",
+    "turnedOn": "클랜 캐피탈 추적을 켰어요.",
+    "undo": "실행 취소",
+    "offDialog": {
+      "title": "클랜 캐피탈 추적을 끌까요?",
+      "body": "클랜 캐피탈 페이지, 개요 카드, 일괄 편집 탭이 숨겨져요. 삭제되는 것은 없어요.",
+      "confirm": "끄기",
+      "cancel": "취소"
+    }
+  },
+  "off": {
+    "title": "클랜 캐피탈 추적이 꺼져 있어요",
+    "description": "지구, 병력, 주문 데이터는 유지돼요. 추적을 켜면 다시 볼 수 있어요.",
+    "turnOn": "추적 켜기",
+    "keptTitle": "유지되는 내용",
+    "kept": "클랜 캐피탈 데이터는 모두 이 마을에 남아요."
+  },
+  "locked": {
+    "title": "클랜 캐피탈이 잠겨 있어요",
+    "description": "클랜 캐피탈은 타운홀 3에서 열려요. 이 마을은 타운홀 {townHall}이에요. 이미 저장한 내용은 타운홀 3이 되면 다시 표시돼요.",
+    "action": "마을에서 타운홀 변경"
+  },
+  "notSet": {
+    "title": "클랜 캐피탈이 설정되지 않았어요",
+    "description": "캐피탈 홀 레벨을 설정하면 지구, 병력, 주문 추적을 시작해요.",
+    "action": "캐피탈 홀 레벨 설정"
+  },
+  "hall": {
+    "label": "캐피탈 홀",
+    "none": "없음",
+    "level": "레벨 {level}",
+    "nextCost": "캐피탈 홀 {level}은 캐피탈 골드 {cost}이 들어요{hasOpens, select, true {. {opens}이(가) 열려요} other {}}. 홀을 올려도 레벨은 초기화되지 않아요.",
+    "atTop": "캐피탈 홀이 최고 레벨이에요.",
+    "raised": "캐피탈 홀을 {from}에서 {to}로 올렸어요. 초기화된 레벨은 없어요.",
+    "changed": "캐피탈 홀을 {from}에서 {to}로 바꿨어요.",
+    "districtRaised": "{zone} 지구 홀을 {from}에서 {to}로 올렸어요.",
+    "districtChanged": "{zone} 지구 홀을 {from}에서 {to}로 바꿨어요."
+  },
+  "contributions": {
+    "label": "기여도",
+    "unit": "캐피탈 골드",
+    "help": "클랜에 준 총량이에요. 플레이어 태그 가져오기로 채워지며, 직접 입력할 수도 있어요."
+  },
+  "tiles": {
+    "progress": "캐피탈 진행도",
+    "progressCaption": "레벨 {max} 중 {current}",
+    "zones": "열린 구역",
+    "zonesCaption": "{total}개 중 {open}개"
+  },
+  "zones": {
+    "title": "구역",
+    "help": "구역을 선택하면 아래에서 수정할 수 있어요",
+    "hall": "{level, plural, =0 {지구 홀 없음} other {지구 홀 {level}}}",
+    "peakHall": "캐피탈 홀 {level}",
+    "locked": "잠김, 캐피탈 홀 {hall} 필요",
+    "levels": "{max} 중 {current}"
+  },
+  "panel": {
+    "districtHall": "지구 홀",
+    "requires": "캐피탈 홀 {hall} 필요",
+    "noHall": "지구 홀 없음",
+    "empty": "이 홀 레벨에서는 지을 것이 없어요.",
+    "groupsLabel": "건물 그룹",
+    "groups": {
+      "defenses": "방어",
+      "traps": "함정",
+      "army": "군대",
+      "walls": "벽"
+    },
+    "max": "최대",
+    "clear": "지우기",
+    "maxAll": "모두 최대",
+    "resetAll": "모두 초기화",
+    "instances": "{count, plural, other {건물 {amount}개}}",
+    "maxLevel": "최대 레벨 {level}",
+    "instance": "{name} {index}",
+    "raise": "{name} 올리기",
+    "lower": "{name} 내리기",
+    "wallLevel": "레벨 {level}",
+    "wallsLeft": "배치할 벽 {total}개 중 {left}개 남음",
+    "wallsNote": "개수는 남은 벽 수를 넘을 수 없어요.",
+    "wallsNone": "이 홀 레벨에는 벽이 없어요.",
+    "wallCount": "레벨 {level} 벽",
+    "wallRaise": "레벨 {level} 벽 1개 늘리기",
+    "wallLower": "레벨 {level} 벽 1개 줄이기",
+    "groupMaxed": "{zone}: {group} 최대로 설정",
+    "groupCleared": "{zone}: {group} 지움"
+  },
+  "confirm": {
+    "title": "이 홀을 내릴까요?",
+    "description": "맞지 않는 레벨은 초기화돼요. 나머지는 유지돼요.",
+    "confirm": "홀 내리기",
+    "cancel": "홀 유지",
+    "more": "외 {count}개"
+  },
+  "toast": {
+    "undo": "실행 취소"
+  }
+}

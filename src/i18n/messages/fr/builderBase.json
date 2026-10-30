@@ -1,0 +1,63 @@
+{
+  "upgrades": {
+    "title": "Améliorations",
+    "subline": "{name}, Hôtel des ouvriers {hall}",
+    "sublineNotSet": "{name}, Hôtel des ouvriers non défini",
+    "tabsLabel": "Sections de la Base des ouvriers",
+    "tabs": {
+      "defenses": "Défenses",
+      "army": "Armée",
+      "resources": "Ressources",
+      "traps": "Pièges",
+      "heroes": "Héros",
+      "other": "Autres"
+    },
+    "strip": {
+      "title": "Ouvriers",
+      "noBuilders": "La Base des ouvriers a deux ouvriers.",
+      "openQueue": "Ouvrir la file et la chronologie",
+      "unassignedHelp": "Certaines améliorations sont enregistrées sur un ouvrier déjà pris par une autre amélioration. Terminez-les ou annulez-les."
+    }
+  },
+  "locked": {
+    "title": "Nécessite l'Hôtel de ville 6",
+    "description": "Ce village est à l'Hôtel de ville {townHall}. La Base des ouvriers se débloque à l'Hôtel de ville 6, ou quand vous définissez un niveau d'Hôtel des ouvriers."
+  },
+  "notSet": {
+    "action": "Définir le niveau de l'Hôtel des ouvriers",
+    "troopsDescription": "Les troupes de la Base des ouvriers suivent le niveau de l'Hôtel des ouvriers. Définissez-le sur la page Améliorations, onglet Autres.",
+    "title": "Choisissez le niveau de votre Hôtel des ouvriers pour commencer le suivi",
+    "description": "Définissez le niveau de l'Hôtel des ouvriers dans la tuile ci-dessous. Les listes de la Base des ouvriers le suivent."
+  },
+  "hall": {
+    "title": "Hôtel des ouvriers",
+    "notSet": "Non défini",
+    "option": "Hôtel des ouvriers {level}",
+    "since": "{amount} {days, plural, one {jour} other {jours}} à l'Hôtel des ouvriers {level}",
+    "confirm": {
+      "title": "Passer l'Hôtel des ouvriers au niveau {level} ?",
+      "raising": "Monter le niveau affiche plus de bâtiments et des plafonds plus hauts. Rien de ce que vous avez enregistré n'est supprimé.",
+      "lowering": "Baisser le niveau masque les bâtiments et plafonds au-dessus. Vos niveaux enregistrés sont conservés.",
+      "clearing": "Effacer le niveau masque toutes les listes de la Base des ouvriers. Vos niveaux enregistrés sont conservés.",
+      "setDays": "Mettre les jours à l'Hôtel des ouvriers à aujourd'hui",
+      "cancel": "Annuler",
+      "confirm": "Changer le niveau"
+    },
+    "toast": "Hôtel des ouvriers {from, plural, =0 {non défini} other {{from}}} vers {to, plural, =0 {non défini} other {{to}}}",
+    "undo": "Annuler"
+  },
+  "other": {
+    "clockTower": "Tour de l'horloge",
+    "clockTowerMax": "Niv. max {level} à cet Hôtel des ouvriers",
+    "clockTowerProgress": "Progression de la Tour de l'horloge"
+  },
+  "empty": {
+    "title": "Rien ici pour le moment",
+    "description": "Aucun bâtiment de ce type n'est disponible à ce niveau d'Hôtel des ouvriers.",
+    "allMax": "Tout ici est au maximum. Désactivez Masquer le max pour le voir."
+  },
+  "heroes": {
+    "maxAtHall": "Niv. max {level} à cet Hôtel des ouvriers",
+    "progress": "Progression de {name}"
+  }
+}

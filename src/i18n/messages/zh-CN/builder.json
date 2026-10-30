@@ -1,0 +1,51 @@
+{
+  "title": "建筑工人",
+  "subline": "{name}，{townHall}级大本营",
+  "tabsLabel": "建筑工人分区",
+  "tabs": {
+    "defenses": "防御",
+    "army": "军队",
+    "resources": "资源",
+    "crafted": "定制防御",
+    "traps": "陷阱",
+    "heroes": "英雄",
+    "guardians": "守护者",
+    "townHall": "大本营"
+  },
+  "builders": {
+    "title": "建筑工人",
+    "boostLabel": "黄金令牌建筑加速",
+    "boostValue": "{percent, plural, =0 {无} other {时间和费用 -{percent}%}}",
+    "openQueue": "打开队列和时间线",
+    "unassignedHelp": "有些升级保存在尚未建造的建筑工人上，或保存在已被其他升级占用的建筑工人上。请完成或取消它们。",
+    "noBuilders": "此村庄还没有建筑工人。请在防御标签页建造第一座建筑工人小屋。它免费且立即完成。"
+  },
+  "gate": {
+    "requires": "需要{townHall}级大本营",
+    "where": "此村庄为{townHall}级大本营。达到{required}级大本营即可解锁此标签页。",
+    "fix": "前往大本营标签页"
+  },
+  "empty": {
+    "title": "这里还没有内容",
+    "description": "此大本营等级下没有这类建筑。",
+    "allMax": "这里的所有建筑都已满级。关闭“隐藏已满级”即可查看。"
+  },
+  "card": {
+    "maxAtHall": "此大本营最高 {level} 级",
+    "maxAtBuilderHall": "此建筑大师大本营最高 {level} 级",
+    "progress": "{name}进度",
+    "notBuilt": "未建造",
+    "level": "{level} / {max} 级",
+    "build": "建造",
+    "upgradeTo": "升级到 {level} 级",
+    "superchargeTo": "超级充能到第 {tier} 阶",
+    "maxed": "满级",
+    "running": "正在升级到 {to} 级",
+    "finish": "完成",
+    "cancel": "取消",
+    "showAll": "显示全部 {count} 个",
+    "showFewer": "显示更少",
+    "instance": "#{number}",
+    "supercharge": "超级充能 {tier} / {tiers}"
+  }
+}

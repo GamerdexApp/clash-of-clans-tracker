@@ -1,0 +1,49 @@
+{
+  "title": "Conquistas",
+  "description": "Acompanha as estrelas, os valores e as recompensas de cada conquista.",
+  "subline": "{name}, {count} conquistas, {stars} de {maxStars} estrelas, {percent}%",
+  "tiles": {
+    "all": "Todas as conquistas",
+    "home": "Aldeia Principal",
+    "builder": "Base do Construtor",
+    "capital": "Capital do Clã",
+    "gems": "Gemas ganhas",
+    "xp": "XP ganho",
+    "stars": "{stars} de {maxStars} estrelas",
+    "left": "Faltam {amount} {unit}",
+    "gemsUnit": "gemas",
+    "xpUnit": "XP"
+  },
+  "sections": {
+    "home": "Aldeia Principal",
+    "builderBase": "Base do Construtor",
+    "clanCapital": "Capital do Clã",
+    "summary": "{count} conquistas, {stars} / {maxStars} estrelas, {gems} gemas, {xp} XP",
+    "more": "Mostrar mais {count} conquistas: {name}",
+    "less": "Mostrar menos"
+  },
+  "card": {
+    "manual": "Manual",
+    "nextStar": "Próxima estrela",
+    "xp": "XP",
+    "gems": "gemas",
+    "edit": "Editar {name}",
+    "done": "Concluído",
+    "stars": "Estrelas",
+    "starsHelp": "Toca na mesma estrela outra vez para remover uma estrela.",
+    "star": "{amount} {number, plural, one {estrela} other {estrelas}}",
+    "value": "Valor",
+    "target": "Objetivo",
+    "manualLabel": "Manual (ignorar valor da API)",
+    "saves": "As alterações são guardadas ao escrever. Subir as estrelas move o objetivo para o nível seguinte.",
+    "progress": "Progresso de {name}",
+    "starsEarned": "{stars} de 3 estrelas"
+  },
+  "toast": {
+    "stars": "{name} alterada para {amount} {stars, plural, one {estrela} other {estrelas}}",
+    "targetMoved": "Objetivo movido para {target}.",
+    "value": "Valor de {name} alterado para {value}",
+    "target": "Objetivo de {name} alterado para {target}",
+    "undo": "Anular"
+  }
+}

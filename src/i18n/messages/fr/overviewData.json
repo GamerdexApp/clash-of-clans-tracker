@@ -1,0 +1,40 @@
+{
+  "stats": {
+    "level": "Niveau",
+    "warStars": "Étoiles de guerre",
+    "trophies": "Trophées",
+    "bestTrophies": "Meilleurs trophées",
+    "donations": "Dons",
+    "received": "Dons reçus",
+    "war": "Préférence de guerre",
+    "attacks": "Attaques gagnées",
+    "defenses": "Défenses gagnées",
+    "builderTrophies": "Trophées des ouvriers",
+    "bestBuilderTrophies": "Meilleurs trophées des ouvriers",
+    "contributions": "Contributions à la capitale",
+    "warIn": "Partant",
+    "warOut": "Non partant"
+  },
+  "cards": {
+    "structures": "Structures",
+    "traps": "Pièges",
+    "supercharge": "Suralimentation",
+    "crafted": "Défenses fabriquées",
+    "lab": "Labo",
+    "heroes": "Héros",
+    "equipment": "Équipement",
+    "pets": "Familiers",
+    "walls": "Murailles",
+    "districts": "Districts",
+    "troops": "Troupes",
+    "spells": "Sorts"
+  },
+  "subs": {
+    "structures": "Défenses, armée, ressources",
+    "lab": "Troupes, sorts, siège",
+    "builderLab": "Troupes des ouvriers",
+    "walls": "{total} murailles, niveau max {max}",
+    "districts": "{active} actifs sur {total}",
+    "available": "{count} disponibles"
+  }
+}

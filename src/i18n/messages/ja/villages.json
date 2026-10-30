@@ -1,0 +1,119 @@
+{
+  "title": "マイビレッジ",
+  "subline": "{amount} {count, plural, other {ビレッジ}}",
+  "sublineActive": "{amount} {count, plural, other {ビレッジ}}、{name}がアクティブ",
+  "newVillage": "新しいビレッジ",
+  "empty": {
+    "title": "まだビレッジがありません",
+    "deletedTitle": "ビレッジが残っていません",
+    "description": "ビレッジを作成して、アップグレード、研究、実績の記録を始めましょう。",
+    "restore": "バックアップから復元"
+  },
+  "filters": {
+    "search": "ビレッジを検索",
+    "sortLabel": "並べ替え",
+    "sort": {
+      "lastModified": "最終更新日",
+      "createdAt": "作成日",
+      "name": "名前"
+    },
+    "showing": "{total}件中{shown}件を表示",
+    "clear": "検索をクリア"
+  },
+  "noMatch": {
+    "title": "「{query}」に一致するビレッジはありません",
+    "description": "つづりを確認するか、検索をクリアしてください。"
+  },
+  "card": {
+    "active": "アクティブ",
+    "openOverview": "概要を開く",
+    "setActive": "アクティブにする",
+    "edit": "編集",
+    "delete": "削除",
+    "halls": "{builderHall, plural, =0 {タウンホール {townHall}} other {タウンホール {townHall}、ビルダーホール {builderHall}}}",
+    "daysAtTownHall": "タウンホールでの日数",
+    "daysAtBuilderHall": "ビルダーホールでの日数",
+    "notSet": "未設定",
+    "clanCapital": "クランキャピタル",
+    "clanCapitalStates": {
+      "on": "オン",
+      "off": "オフ",
+      "locked": "ロック中"
+    },
+    "created": "作成日 {date}",
+    "lastModified": "更新日 {date}",
+    "switched": "{name}をアクティブにしました"
+  },
+  "fields": {
+    "name": "ビレッジ名",
+    "namePlaceholder": "メインアカウント",
+    "nameRequired": "ビレッジの名前を入力してください。",
+    "description": "説明",
+    "descriptionPlaceholder": "このビレッジの説明を追加",
+    "townHallLevel": "タウンホールのレベル",
+    "builderHallLevel": "ビルダーホールのレベル",
+    "builderHallHelp": "ビルダーベースはタウンホール6で開放されます。",
+    "townHallUpgraded": "タウンホールをアップグレードした日",
+    "builderHallUpgraded": "ビルダーホールをアップグレードした日",
+    "level": "レベル {level}",
+    "trackCapital": "クランキャピタルを記録",
+    "trackCapitalHelp": "オフにするとクランキャピタルのページが非表示になります。データは維持されます。",
+    "trackCapitalLocked": "タウンホール3が必要です",
+    "cancel": "キャンセル"
+  },
+  "create": {
+    "title": "新しいビレッジ",
+    "submit": "ビレッジを作成",
+    "modeLabel": "始め方",
+    "modes": {
+      "fresh": "新規で始める",
+      "import": "インポート"
+    },
+    "modeNotes": {
+      "fresh": "空のデータから始めます。",
+      "import": "プレイヤータグを読み込みます。建物ファイルは任意です。"
+    },
+    "makeActive": "このビレッジをアクティブにする",
+    "done": "{name}を作成しました",
+    "importNeedsLookup": "先にプレイヤータグを取得してください。"
+  },
+  "lookup": {
+    "step1": "ステップ1: プレイヤーデータを取得",
+    "step2": "ステップ2: 建物データ(任意)",
+    "tagLabel": "プレイヤータグ",
+    "tagPlaceholder": "#PPV2YV9R",
+    "fetch": "取得",
+    "refresh": "更新",
+    "wait": "{seconds}秒お待ちください",
+    "serverNote": "検索ではタグをGamerdexのサーバーに送り、サーバーがSupercell APIに問い合わせます。それ以外のデータはブラウザの外に出ません。",
+    "unavailable": "プレイヤー検索は現在利用できません。後でもう一度お試しください。",
+    "found": "{name}、タウンホール {townHall}{builderHall, plural, =0 {} other {、ビルダーホール {builderHall}}}。実績{achievements}件と兵士{troops}種を読み込みました。",
+    "buildingHelp": "プレイヤーAPIには建物のレベルがありません。設定のビレッジのバックアップ、またはゲームのexportData.jsonファイルを選んでください。",
+    "buildingLabel": "建物データのファイル",
+    "buildingLoaded": "{name}から建物データを読み込みました。",
+    "buildingInvalid": "このファイルは建物データではありません。設定のビレッジのバックアップ、またはゲームのexportData.jsonを使ってください。",
+    "buildingNotJson": "このファイルは有効なJSONではありません。"
+  },
+  "edit": {
+    "title": "ビレッジを編集",
+    "submit": "保存",
+    "refreshTitle": "プレイヤータグから更新",
+    "updatedTitle": "更新しました",
+    "untouchedTitle": "未変更",
+    "dateSet": "アップグレードした日を今日に設定しました。変更できます。",
+    "done": "{name}を保存しました"
+  },
+  "delete": {
+    "title": "ビレッジを削除",
+    "description": "このブラウザからビレッジを削除します。",
+    "question": "{name}を削除しますか? アップグレード、研究、実績、デイリーも削除されます。",
+    "activeNext": "{next}がアクティブなビレッジになります。",
+    "activeLast": "アクティブなビレッジがなくなります。",
+    "exportFirst": "先にバックアップをエクスポート",
+    "cancel": "キャンセル",
+    "confirm": "ビレッジを削除",
+    "done": "{name}を削除しました",
+    "doneMessage": "10秒間は元に戻せます。",
+    "undo": "元に戻す"
+  }
+}

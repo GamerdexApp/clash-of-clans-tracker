@@ -1,0 +1,63 @@
+{
+  "upgrades": {
+    "title": "Potenziamenti",
+    "subline": "{name}, Sala del Costruttore {hall}",
+    "sublineNotSet": "{name}, Sala del Costruttore non impostata",
+    "tabsLabel": "Sezioni della Base del Costruttore",
+    "tabs": {
+      "defenses": "Difese",
+      "army": "Esercito",
+      "resources": "Risorse",
+      "traps": "Trappole",
+      "heroes": "Eroi",
+      "other": "Altro"
+    },
+    "strip": {
+      "title": "Costruttori",
+      "noBuilders": "La Base del Costruttore ha due Costruttori.",
+      "openQueue": "Apri coda e sequenza temporale",
+      "unassignedHelp": "Alcuni potenziamenti sono salvati su un Costruttore già usato da un altro potenziamento. Completali o annullali."
+    }
+  },
+  "locked": {
+    "title": "Richiede il Municipio 6",
+    "description": "Questo villaggio è al Municipio {townHall}. La Base del Costruttore si sblocca al Municipio 6, o quando imposti un livello di Sala del Costruttore."
+  },
+  "notSet": {
+    "action": "Imposta il livello della Sala del Costruttore",
+    "troopsDescription": "Le truppe della Base del Costruttore seguono il livello della Sala del Costruttore. Impostalo nella pagina Potenziamenti, scheda Altro.",
+    "title": "Scegli il livello della Sala del Costruttore per iniziare",
+    "description": "Imposta il livello della Sala del Costruttore nel riquadro qui sotto. Le liste della Base del Costruttore lo seguono."
+  },
+  "hall": {
+    "title": "Sala del Costruttore",
+    "notSet": "Non impostata",
+    "option": "Sala del Costruttore {level}",
+    "since": "{amount} {days, plural, one {giorno} other {giorni}} alla Sala del Costruttore {level}",
+    "confirm": {
+      "title": "Cambiare la Sala del Costruttore a {level}?",
+      "raising": "Aumentare il livello mostra più edifici e limiti più alti. Ciò che hai salvato non viene rimosso.",
+      "lowering": "Diminuire il livello nasconde edifici e limiti superiori. I livelli salvati vengono mantenuti.",
+      "clearing": "Cancellare il livello nasconde ogni lista della Base del Costruttore. I livelli salvati vengono mantenuti.",
+      "setDays": "Imposta i Giorni alla Sala del Costruttore a oggi",
+      "cancel": "Annulla",
+      "confirm": "Cambia livello"
+    },
+    "toast": "Sala del Costruttore da {from, plural, =0 {non impostata} other {{from}}} a {to, plural, =0 {non impostata} other {{to}}}",
+    "undo": "Annulla"
+  },
+  "other": {
+    "clockTower": "Torre dell'Orologio",
+    "clockTowerMax": "Lv massimo {level} a questa Sala del Costruttore",
+    "clockTowerProgress": "Progresso Torre dell'Orologio"
+  },
+  "empty": {
+    "title": "Ancora niente qui",
+    "description": "A questo livello di Sala del Costruttore non ci sono edifici di questo tipo.",
+    "allMax": "Tutto qui è al massimo. Disattiva Nascondi massimo per vederlo."
+  },
+  "heroes": {
+    "maxAtHall": "Lv massimo {level} a questa Sala del Costruttore",
+    "progress": "Progresso di {name}"
+  }
+}

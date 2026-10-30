@@ -1,0 +1,61 @@
+{
+  "title": "Perlengkapan",
+  "subline": "{name}, Balai Kota {townHall}, level Pandai Besi {blacksmith}",
+  "massEdit": "Level perlengkapan juga bisa diatur di Edit massal.",
+  "locked": {
+    "title": "Butuh Pandai Besi",
+    "description": "Bangun Pandai Besi untuk melacak perlengkapan pahlawan. Atur levelnya di halaman Pembangun, tab Pasukan.",
+    "action": "Buka Pembangun"
+  },
+  "ore": {
+    "title": "Stok ore",
+    "description": "Ore yang kamu miliki. Kekurangan hanya saran dan tidak pernah memblokir peningkatan.",
+    "names": {
+      "shiny": "Shiny Ore",
+      "glowing": "Glowing Ore",
+      "starry": "Starry Ore"
+    },
+    "short": {
+      "shiny": "Shiny",
+      "glowing": "Glowing",
+      "starry": "Starry"
+    },
+    "needed": "Dibutuhkan untuk bagian yang tercantum: {amount}",
+    "enough": "Stok cukup",
+    "shortBy": "Kurang {amount}",
+    "deduct": "Kurangi ore saat saya meningkatkan",
+    "deductHelp": "Peningkatan mengambil ore dari stok, tidak pernah di bawah 0. Urungkan mengembalikannya."
+  },
+  "hideMax": "Sembunyikan Maks",
+  "heroFilter": "Pahlawan",
+  "allHeroes": "Semua pahlawan",
+  "section": "{pieces} bagian, {owned} dimiliki",
+  "empty": {
+    "title": "Belum ada apa-apa",
+    "allMax": "Semua bagian sudah maksimal. Matikan Sembunyikan Maks untuk melihatnya."
+  },
+  "card": {
+    "heroLine": "{hero}",
+    "level": "Level {level} dari {max}",
+    "notOwned": "Belum dimiliki",
+    "max": "Maks",
+    "setLevel": "Level {name}",
+    "stepLevel": "Level {level}",
+    "free": "Gratis",
+    "time": "Waktu: Instan",
+    "requires": "Butuh Pandai Besi {level}",
+    "moreLevels": "{amount} {count, plural, other {level}} lagi",
+    "add": "Tambah di level 1",
+    "upgradeTo": "Tingkatkan ke level {level}",
+    "lockedUntil": "Terkunci sampai Pandai Besi {level}",
+    "allows": "Pandai Besi {blacksmith} mengizinkan sampai level {level}",
+    "allowsNone": "Pandai Besi {blacksmith} belum mengizinkan bagian ini",
+    "footer": "{amount} {levels, plural, other {level}} lagi",
+    "progress": "Progres {name}"
+  },
+  "toast": {
+    "upgraded": "{name} Lv {from} ke {to}",
+    "levelSet": "{name} Lv {from} ke {to}",
+    "undo": "Urungkan"
+  }
+}

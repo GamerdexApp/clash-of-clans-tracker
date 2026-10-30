@@ -1,0 +1,30 @@
+{
+  "title": "ペット",
+  "subline": "{name}、タウンホール {townHall}",
+  "strip": {
+    "title": "ペットハウス",
+    "openQueue": "キューとタイムラインを開く",
+    "noPetHouse": "先にペットハウスを建設してください。レベルはビルダーのページ、軍隊のタブで設定します。",
+    "unassignedHelp": "ペットハウスに複数のペットのアップグレードが保存されています。余分なものを完了するかキャンセルしてください。",
+    "levelLabel": "ペットハウスのレベル",
+    "level": "{level} / {max}",
+    "notBuilt": "未建設",
+    "boostLabel": "ゴールドパスの研究ブースト"
+  },
+  "boostValue": "{percent, plural, =0 {なし} other {時間とコスト -{percent}%}}",
+  "locked": {
+    "title": "ペットはタウンホール14で開放されます",
+    "body": "このビレッジはタウンホール {townHall}です。入手できるペットは次のとおりです。",
+    "needs": "タウンホール {townHall}、ペットハウス {petHouse}"
+  },
+  "card": {
+    "notUnlocked": "未開放",
+    "markUnlocked": "開放済みにする",
+    "maxAtHall": "最大 Lv {level}",
+    "progress": "{name}の進行状況"
+  },
+  "empty": {
+    "title": "まだ何もありません",
+    "allMax": "すべてのペットが最大です。「最大を非表示」をオフにすると表示されます。"
+  }
+}

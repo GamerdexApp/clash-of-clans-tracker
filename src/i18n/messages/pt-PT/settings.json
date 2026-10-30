@@ -1,0 +1,178 @@
+{
+  "title": "Definições",
+  "subline": "Preferências, cópias de segurança e dados",
+  "tabsLabel": "Secções das definições",
+  "tabs": {
+    "sync": "Sincronização na nuvem",
+    "preferences": "Preferências",
+    "data": "Cópia de segurança e dados",
+    "about": "Acerca de"
+  },
+  "appearance": {
+    "title": "Aspeto",
+    "description": "Escolhe o aspeto da aplicação.",
+    "themeLabel": "Tema",
+    "themes": {
+      "light": "Claro",
+      "dark": "Escuro",
+      "system": "Sistema"
+    },
+    "themeNote": "O tema Sistema segue o dispositivo. Neste momento é {mode}."
+  },
+  "builders": {
+    "title": "Definições dos construtores",
+    "description": "Ajudantes de evento que acrescentam uma vaga às filas.",
+    "goblinBuilder": "Construtor Goblin",
+    "goblinBuilderHelp": "Acrescenta uma vaga de construtor extra, a sétima, para edifícios.",
+    "goblinResearch": "Investigação Goblin",
+    "goblinResearchHelp": "Acrescenta uma vaga de investigação extra no Laboratório."
+  },
+  "activeHours": {
+    "title": "Horas ativas",
+    "description": "Define as horas a que joga cada dia. As cronologias das filas acrescentam uma pausa quando uma melhoria termina fora desta janela.",
+    "start": "Hora de início",
+    "end": "Hora de fim",
+    "save": "Guardar",
+    "clear": "Limpar",
+    "status": "Ativo das {start} às {end}, no relógio local.",
+    "none": "Sem horas ativas definidas. Todas as horas contam como ativas.",
+    "sameTime": "O início e o fim são iguais. Escolhe duas horas diferentes ou limpa a janela.",
+    "overnight": "Esta janela passa a meia-noite, das {start} às {end} do dia seguinte.",
+    "unsaved": "Existem alterações por guardar.",
+    "clockChanged": "O desfasamento do relógio mudou. As horas ativas continuam a cobrir das {start} às {end} no teu relógio."
+  },
+  "data": {
+    "title": "Gestão de dados",
+    "storageNote": {
+      "title": "Guardado neste navegador.",
+      "body": "Limpar os dados do navegador elimina as aldeias. Exporta uma cópia de segurança de vez em quando."
+    },
+    "export": {
+      "title": "Exportar",
+      "description": "Transfere todas as aldeias e as definições num só ficheiro.",
+      "button": "Exportar todas as aldeias",
+      "done": "Cópia de segurança transferida"
+    },
+    "import": {
+      "title": "Importar",
+      "fileLabel": "Ficheiro de cópia de segurança",
+      "chooseFile": "Escolher ficheiro",
+      "noFile": "Nenhum ficheiro escolhido",
+      "description": "Escolhe um ficheiro de cópia de segurança. Podes revê-lo antes de alterar seja o que for.",
+      "review": "Rever importação",
+      "merged": "Cópia de segurança combinada",
+      "replaced": "A cópia de segurança substituiu os dados",
+      "undo": "Anular"
+    },
+    "reset": {
+      "title": "Repor todos os dados",
+      "warning": "Elimina todas as aldeias e definições neste navegador.",
+      "button": "Repor todos os dados",
+      "confirmTitle": "Eliminar tudo?",
+      "confirmBody": "Isto elimina {names}. Podes anular durante dez segundos.",
+      "cancel": "Cancelar",
+      "confirm": "Eliminar tudo",
+      "done": "Todos os dados eliminados",
+      "doneMessage": "{count, plural, one {{amount} aldeia removida.} other {{amount} aldeias removidas.}}",
+      "doneMessageDisconnected": "{count, plural, one {{amount} aldeia removida.} other {{amount} aldeias removidas.}} A sincronização está desligada neste navegador.",
+      "syncedCopy": "Eliminar também a cópia sincronizada em {provider}",
+      "syncedOn": "A sincronização continua ativa. Os outros dispositivos perdem estas aldeias na próxima sincronização. Exporta antes uma cópia de segurança se tiver dúvidas.",
+      "syncedOff": "Sem esta opção, a sincronização fica desligada neste navegador para que a próxima sincronização não possa trazer as aldeias de volta.",
+      "undo": "Anular"
+    },
+    "villages": {
+      "title": "Aldeias",
+      "description": "Criar, editar, mudar e eliminar aldeias.",
+      "manage": "Gerir aldeias"
+    },
+    "villageCount": "{amount} {count, plural, one {aldeia} other {aldeias}}"
+  },
+  "importDialog": {
+    "title": "Rever importação",
+    "fileInfo": "{name}, {size}",
+    "bytes": "{count} B",
+    "kilobytes": "{count} KB",
+    "cancel": "Cancelar",
+    "close": "Fechar",
+    "merge": "Combinar neste dispositivo",
+    "replace": "Substituir neste dispositivo",
+    "failedTitle": "Não é possível importar este ficheiro.",
+    "errors": {
+      "notJson": "Este ficheiro não é um JSON válido.",
+      "playthroughsMissing": "Este ficheiro não é uma cópia de segurança do Clash of Clans Tracker. Não tem lista de aldeias."
+    },
+    "checksTitle": "Verificações concluídas.",
+    "checks": "O ficheiro lista {read} aldeias e {kept} podem ser lidas.",
+    "skipped": "{count, plural, one {{amount} entrada ignorada.} other {{amount} entradas ignoradas.}}",
+    "howToApply": "Como aplicar",
+    "modeLabel": "Modo de importação",
+    "modes": {
+      "merge": "Combinar",
+      "replace": "Substituir"
+    },
+    "modeNotes": {
+      "merge": "Acrescenta as aldeias novas e mantém a cópia mais recente de uma aldeia que exista nos dois lados. As definições e a aldeia ativa mantêm-se.",
+      "replace": "Usa apenas o que está no ficheiro. As aldeias que não estão no ficheiro são removidas."
+    },
+    "whatChanges": "O que muda",
+    "columns": {
+      "village": "Aldeia",
+      "inFile": "No ficheiro",
+      "onDevice": "No dispositivo",
+      "result": "Resultado"
+    },
+    "notThere": "Não existe",
+    "results": {
+      "added": "Acrescentada",
+      "updated": "Atualizada a partir do ficheiro",
+      "kept": "Mantida",
+      "replaced": "Substituída",
+      "removed": "Removida"
+    },
+    "summary": {
+      "added": "{count} acrescentadas",
+      "updated": "{count} atualizadas",
+      "kept": "{count} mantidas",
+      "replaced": "{count} substituídas",
+      "removed": "{count} removidas"
+    },
+    "noVillages": "O ficheiro não tem aldeias.",
+    "undoNote": "Podes anular a importação durante dez segundos."
+  },
+  "about": {
+    "version": "Versão {version}",
+    "summary": "Um acompanhamento de progresso gratuito para o Clash of Clans. Acompanhe melhorias, investigação, conquistas e muito mais em várias aldeias.",
+    "officialGame": "Site oficial do Clash of Clans",
+    "disclaimer": "Este projeto não é afiliado, apoiado nem associado à Supercell ou ao Clash of Clans."
+  },
+  "region": {
+    "title": "Idioma e região",
+    "description": "Como a aplicação mostra texto, números e datas neste dispositivo. Estas escolhas não são guardadas com as aldeias, nem exportadas, nem sincronizadas.",
+    "language": {
+      "label": "Idioma",
+      "hint": "O idioma da aplicação. Os nomes do jogo ficam em inglês."
+    },
+    "numberFormat": {
+      "label": "Formato dos números",
+      "hint": "Exemplo: {example}",
+      "options": {
+        "auto": "Automático (segue o idioma)",
+        "us": "1,234,567.89 (EUA)",
+        "european": "1.234.567,89 (europeu)",
+        "french": "1 234 567,89 (francês)",
+        "swiss": "1’234’567.89 (suíço)",
+        "indian": "12,34,567.89 (indiano)"
+      }
+    },
+    "dateFormat": {
+      "label": "Formato da data",
+      "hint": "Exemplo: {example}",
+      "options": {
+        "auto": "Automático (segue o idioma)",
+        "mdy": "Mês/Dia/Ano",
+        "dmy": "Dia/Mês/Ano",
+        "ymd": "Ano-Mês-Dia"
+      }
+    }
+  }
+}

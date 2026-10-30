@@ -1,0 +1,24 @@
+{
+  "levelTo": "{name} {from}←{to}",
+  "toast": {
+    "undo": "تراجع",
+    "started": "بدأ {name} م {from} إلى {to}",
+    "finished": "انتهى {name} عند م {level}",
+    "timeSaved": "أُضيف {time} إلى الوقت الموفَّر.",
+    "cancelled": "أُلغي {name} م {from} إلى {to}",
+    "levelChanged": "{name} م {from} إلى {to}"
+  },
+  "queue": {
+    "buildPetHouse": "ابنِ بيت الحيوانات أولًا",
+    "requires": "يتطلب {building} {level}",
+    "alreadyUpgrading": "{name} قيد الترقية بالفعل",
+    "finishFirst": "يجب أن ينتهي المستوى {level} أولًا",
+    "alreadyAt": "في المستوى {level} بالفعل"
+  },
+  "conflict": {
+    "alreadyAt": "{name} في المستوى {level} بالفعل، فالمستوى {target} منتهٍ.",
+    "removeFix": "أزله من القائمة.",
+    "scheduledBefore": "المستوى {level} من {name} مجدول قبل انتهاء المستوى {earlier}.",
+    "moveFix": "انقل المستوى {level} بعد المستوى {earlier}."
+  }
+}

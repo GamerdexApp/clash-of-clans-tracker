@@ -1,0 +1,119 @@
+{
+  "title": "قراي",
+  "subline": "{amount} {count, plural, zero {قرى} one {قرية} two {قريتان} few {قرى} many {قرية} other {قرية}}",
+  "sublineActive": "{amount} {count, plural, zero {قرى} one {قرية} two {قريتان} few {قرى} many {قرية} other {قرية}}، {name} نشطة",
+  "newVillage": "قرية جديدة",
+  "empty": {
+    "title": "لا توجد قرى بعد",
+    "deletedTitle": "لم تبقَ قرى",
+    "description": "أنشئ قرية لبدء تتبع الترقيات والأبحاث والإنجازات.",
+    "restore": "استعادة من نسخة احتياطية"
+  },
+  "filters": {
+    "search": "بحث في القرى",
+    "sortLabel": "ترتيب حسب",
+    "sort": {
+      "lastModified": "آخر تعديل",
+      "createdAt": "تاريخ الإنشاء",
+      "name": "الاسم"
+    },
+    "showing": "عرض {shown} من {total}",
+    "clear": "مسح البحث"
+  },
+  "noMatch": {
+    "title": "لا توجد قرى تطابق \"{query}\"",
+    "description": "تحقق من الإملاء أو امسح البحث."
+  },
+  "card": {
+    "active": "نشطة",
+    "openOverview": "فتح نظرة عامة",
+    "setActive": "تعيين كنشطة",
+    "edit": "تعديل",
+    "delete": "حذف",
+    "halls": "{builderHall, plural, =0 {قاعة المدينة {townHall}} other {قاعة المدينة {townHall}، قاعة البنّاء {builderHall}}}",
+    "daysAtTownHall": "الأيام عند قاعة المدينة",
+    "daysAtBuilderHall": "الأيام عند قاعة البنّاء",
+    "notSet": "غير محدد",
+    "clanCapital": "عاصمة العشيرة",
+    "clanCapitalStates": {
+      "on": "مفعّلة",
+      "off": "متوقفة",
+      "locked": "مقفلة"
+    },
+    "created": "أُنشئت {date}",
+    "lastModified": "عُدّلت {date}",
+    "switched": "{name} نشطة الآن"
+  },
+  "fields": {
+    "name": "اسم القرية",
+    "namePlaceholder": "حسابي الرئيسي",
+    "nameRequired": "أدخل اسمًا للقرية.",
+    "description": "الوصف",
+    "descriptionPlaceholder": "أضف وصفًا لهذه القرية",
+    "townHallLevel": "مستوى قاعة المدينة",
+    "builderHallLevel": "مستوى قاعة البنّاء",
+    "builderHallHelp": "تُفتح قاعدة البنّاء عند قاعة المدينة 6.",
+    "townHallUpgraded": "تاريخ ترقية قاعة المدينة",
+    "builderHallUpgraded": "تاريخ ترقية قاعة البنّاء",
+    "level": "المستوى {level}",
+    "trackCapital": "تتبع عاصمة العشيرة",
+    "trackCapitalHelp": "إيقافه يخفي صفحات عاصمة العشيرة ويُبقي بياناتك.",
+    "trackCapitalLocked": "يتطلب قاعة المدينة 3",
+    "cancel": "إلغاء"
+  },
+  "create": {
+    "title": "قرية جديدة",
+    "submit": "إنشاء قرية",
+    "modeLabel": "طريقة البدء",
+    "modes": {
+      "fresh": "بداية جديدة",
+      "import": "استيراد"
+    },
+    "modeNotes": {
+      "fresh": "ابدأ ببيانات فارغة.",
+      "import": "اقرأ وسم لاعب، مع ملف مباني اختياري."
+    },
+    "makeActive": "اجعلها القرية النشطة",
+    "done": "تم إنشاء {name}",
+    "importNeedsLookup": "اجلب وسم لاعب أولًا."
+  },
+  "lookup": {
+    "step1": "الخطوة 1: جلب بيانات اللاعب",
+    "step2": "الخطوة 2: بيانات المباني (اختياري)",
+    "tagLabel": "وسم اللاعب",
+    "tagPlaceholder": "#PPV2YV9R",
+    "fetch": "جلب",
+    "refresh": "تحديث",
+    "wait": "انتظر {seconds} ث",
+    "serverNote": "يرسل البحث الوسم إلى خادم Gamerdex، الذي يسأل واجهة Supercell. لا يغادر متصفحك شيء آخر.",
+    "unavailable": "بحث اللاعب غير متاح الآن. حاول لاحقًا.",
+    "found": "{name}، قاعة المدينة {townHall}{builderHall, plural, =0 {} other {، قاعة البنّاء {builderHall}}}. تمت قراءة {achievements} إنجازًا و{troops} قوة.",
+    "buildingHelp": "واجهة اللاعب لا تحتوي على مستويات المباني. اختر نسخة قرية احتياطية من الإعدادات أو ملف exportData.json من اللعبة.",
+    "buildingLabel": "ملف بيانات المباني",
+    "buildingLoaded": "تم تحميل بيانات المباني من {name}.",
+    "buildingInvalid": "هذا الملف ليس بيانات مباني. استخدم نسخة قرية احتياطية من الإعدادات أو exportData.json من اللعبة.",
+    "buildingNotJson": "هذا الملف ليس JSON صالحًا."
+  },
+  "edit": {
+    "title": "تعديل القرية",
+    "submit": "حفظ",
+    "refreshTitle": "تحديث من وسم اللاعب",
+    "updatedTitle": "تم التحديث",
+    "untouchedTitle": "لم تُمس",
+    "dateSet": "تم ضبط تاريخ الترقية على اليوم. يمكنك تغييره.",
+    "done": "تم حفظ {name}"
+  },
+  "delete": {
+    "title": "حذف القرية",
+    "description": "هذا يزيل القرية من هذا المتصفح.",
+    "question": "حذف {name}؟ ستُزال ترقياتها وأبحاثها وإنجازاتها ومهامها اليومية.",
+    "activeNext": "تصبح {next} القرية النشطة.",
+    "activeLast": "لن تكون هناك قرية نشطة.",
+    "exportFirst": "صدّر نسخة احتياطية أولًا",
+    "cancel": "إلغاء",
+    "confirm": "حذف القرية",
+    "done": "تم حذف {name}",
+    "doneMessage": "يمكنك التراجع خلال عشر ثوانٍ.",
+    "undo": "تراجع"
+  }
+}

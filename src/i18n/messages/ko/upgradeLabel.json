@@ -1,0 +1,24 @@
+{
+  "levelTo": "{name} {from}→{to}",
+  "toast": {
+    "undo": "실행 취소",
+    "started": "{name} Lv {from}에서 {to} 시작",
+    "finished": "{name} Lv {level}로 완료",
+    "timeSaved": "{time}을 단축 시간에 더했어요.",
+    "cancelled": "{name} Lv {from}에서 {to} 취소",
+    "levelChanged": "{name} Lv {from}에서 {to}"
+  },
+  "queue": {
+    "buildPetHouse": "먼저 펫 하우스를 지으세요",
+    "requires": "{building} {level} 필요",
+    "alreadyUpgrading": "{name}은 이미 업그레이드 중이에요",
+    "finishFirst": "레벨 {level}을 먼저 끝내야 해요",
+    "alreadyAt": "이미 레벨 {level}이에요"
+  },
+  "conflict": {
+    "alreadyAt": "{name}은 이미 레벨 {level}이므로 레벨 {target}은 완료됐어요.",
+    "removeFix": "대기열에서 제거하세요.",
+    "scheduledBefore": "{name} 레벨 {level}이 레벨 {earlier}이 끝나기 전에 예약돼 있어요.",
+    "moveFix": "레벨 {level}을 레벨 {earlier} 뒤로 옮기세요."
+  }
+}

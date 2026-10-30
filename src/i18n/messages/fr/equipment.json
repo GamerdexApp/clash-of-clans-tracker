@@ -1,0 +1,61 @@
+{
+  "title": "Équipement",
+  "subline": "{name}, Hôtel de ville {townHall}, Forgeron niveau {blacksmith}",
+  "massEdit": "Les niveaux d'équipement peuvent aussi être définis dans Édition en masse.",
+  "locked": {
+    "title": "Nécessite le Forgeron",
+    "description": "Construisez le Forgeron pour suivre l'équipement des héros. Définissez son niveau sur la page Ouvrier, onglet Armée.",
+    "action": "Aller à Ouvrier"
+  },
+  "ore": {
+    "title": "Stock de minerai",
+    "description": "Le minerai que vous possédez. Les manques sont de simples conseils et ne bloquent jamais une amélioration.",
+    "names": {
+      "shiny": "Minerai brillant",
+      "glowing": "Minerai luisant",
+      "starry": "Minerai étoilé"
+    },
+    "short": {
+      "shiny": "Brillant",
+      "glowing": "Luisant",
+      "starry": "Étoilé"
+    },
+    "needed": "Nécessaire pour les pièces listées : {amount}",
+    "enough": "Stock suffisant",
+    "shortBy": "Il manque {amount}",
+    "deduct": "Déduire le minerai quand j'améliore",
+    "deductHelp": "Une amélioration retire son minerai du stock, jamais sous 0. Annuler le remet."
+  },
+  "hideMax": "Masquer le max",
+  "heroFilter": "Héros",
+  "allHeroes": "Tous les héros",
+  "section": "{pieces} pièces, {owned} possédées",
+  "empty": {
+    "title": "Rien ici pour le moment",
+    "allMax": "Toutes les pièces sont au maximum. Désactivez Masquer le max pour les voir."
+  },
+  "card": {
+    "heroLine": "{hero}",
+    "level": "Niveau {level} sur {max}",
+    "notOwned": "Non possédé",
+    "max": "Max",
+    "setLevel": "Niveau de {name}",
+    "stepLevel": "Niveau {level}",
+    "free": "Gratuit",
+    "time": "Durée : instantanée",
+    "requires": "Nécessite le Forgeron {level}",
+    "moreLevels": "{amount} {count, plural, one {niveau} other {niveaux}} de plus",
+    "add": "Ajouter au niveau 1",
+    "upgradeTo": "Améliorer au niveau {level}",
+    "lockedUntil": "Verrouillé jusqu'au Forgeron {level}",
+    "allows": "Le Forgeron {blacksmith} permet jusqu'au niveau {level}",
+    "allowsNone": "Le Forgeron {blacksmith} ne permet pas encore cette pièce",
+    "footer": "{amount} {levels, plural, one {niveau restant} other {niveaux restants}}",
+    "progress": "Progression de {name}"
+  },
+  "toast": {
+    "upgraded": "{name} niv. {from} à {to}",
+    "levelSet": "{name} niv. {from} à {to}",
+    "undo": "Annuler"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "title": "研究",
+  "subline": "{name}、タウンホール {townHall}",
+  "tabsLabel": "研究のセクション",
+  "tabs": {
+    "troops": "兵士",
+    "spells": "スペル",
+    "siegeMachines": "攻城兵器"
+  },
+  "strip": {
+    "title": "ラボラトリー",
+    "noLanes": "利用できる研究レーンがありません。",
+    "openQueue": "キューとタイムラインを開く",
+    "unassignedHelp": "一部の研究が、オフのレーン、または別の研究がすでに使っているレーンに保存されています。完了するかキャンセルしてください。",
+    "levelLabel": "ラボラトリーのレベル",
+    "level": "{level} / {max}",
+    "notTracked": "未設定",
+    "boostLabel": "ゴールドパスの研究ブースト"
+  },
+  "card": {
+    "notUnlocked": "未開放",
+    "markUnlocked": "開放済みにする",
+    "maxAtHall": "このタウンホールでの最大 Lv {level}",
+    "progress": "{name}の進行状況"
+  },
+  "empty": {
+    "title": "まだ何もありません",
+    "none": "このタウンホールレベルでは、このセクションに利用できるものがありません。",
+    "allMax": "ここにあるものはすべて最大です。「最大を非表示」をオフにすると表示されます。"
+  },
+  "boostValue": "{percent, plural, =0 {なし} other {時間とコスト -{percent}%}}"
+}

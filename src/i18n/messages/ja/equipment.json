@@ -1,0 +1,61 @@
+{
+  "title": "装備",
+  "subline": "{name}、タウンホール {townHall}、Blacksmith レベル {blacksmith}",
+  "massEdit": "装備のレベルは一括編集でも設定できます。",
+  "locked": {
+    "title": "Blacksmithが必要です",
+    "description": "ヒーロー装備を記録するには、Blacksmithを建設してください。レベルはビルダーのページ、軍隊のタブで設定します。",
+    "action": "ビルダーへ"
+  },
+  "ore": {
+    "title": "鉱石の在庫",
+    "description": "所持している鉱石です。不足はあくまで目安で、アップグレードを妨げることはありません。",
+    "names": {
+      "shiny": "Shiny Ore",
+      "glowing": "Glowing Ore",
+      "starry": "Starry Ore"
+    },
+    "short": {
+      "shiny": "Shiny",
+      "glowing": "Glowing",
+      "starry": "Starry"
+    },
+    "needed": "一覧の装備に必要な量: {amount}",
+    "enough": "在庫は十分です",
+    "shortBy": "{amount}不足",
+    "deduct": "アップグレード時に鉱石を差し引く",
+    "deductHelp": "アップグレードに必要な鉱石を在庫から差し引きます。0未満にはなりません。元に戻すと返却されます。"
+  },
+  "hideMax": "最大を非表示",
+  "heroFilter": "ヒーロー",
+  "allHeroes": "すべてのヒーロー",
+  "section": "装備{pieces}個、所持{owned}個",
+  "empty": {
+    "title": "まだ何もありません",
+    "allMax": "すべての装備が最大です。「最大を非表示」をオフにすると表示されます。"
+  },
+  "card": {
+    "heroLine": "{hero}",
+    "level": "レベル {level} / {max}",
+    "notOwned": "未所持",
+    "max": "最大",
+    "setLevel": "{name}のレベル",
+    "stepLevel": "レベル {level}",
+    "free": "無料",
+    "time": "時間: 即時",
+    "requires": "Blacksmith {level}が必要",
+    "moreLevels": "あと{amount} {count, plural, other {レベル}}",
+    "add": "レベル1で追加",
+    "upgradeTo": "レベル {level}にアップグレード",
+    "lockedUntil": "Blacksmith {level}までロック中",
+    "allows": "Blacksmith {blacksmith}ではレベル {level}まで可能です",
+    "allowsNone": "Blacksmith {blacksmith}では、この装備はまだ使えません",
+    "footer": "残り{amount} {levels, plural, other {レベル}}",
+    "progress": "{name}の進行状況"
+  },
+  "toast": {
+    "upgraded": "{name} Lv {from}からLv {to}",
+    "levelSet": "{name} Lv {from}からLv {to}",
+    "undo": "元に戻す"
+  }
+}

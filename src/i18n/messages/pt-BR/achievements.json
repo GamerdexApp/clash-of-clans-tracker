@@ -1,0 +1,49 @@
+{
+  "title": "Conquistas",
+  "description": "Acompanhe as estrelas, os valores e as recompensas de cada conquista.",
+  "subline": "{name}, {count} conquistas, {stars} de {maxStars} estrelas, {percent}%",
+  "tiles": {
+    "all": "Todas as conquistas",
+    "home": "Vila Principal",
+    "builder": "Base do Construtor",
+    "capital": "Capital do Clã",
+    "gems": "Gemas ganhas",
+    "xp": "XP ganho",
+    "stars": "{stars} de {maxStars} estrelas",
+    "left": "{amount} {unit} ainda para ganhar",
+    "gemsUnit": "gemas",
+    "xpUnit": "XP"
+  },
+  "sections": {
+    "home": "Vila Principal",
+    "builderBase": "Base do Construtor",
+    "clanCapital": "Capital do Clã",
+    "summary": "{count} conquistas, {stars} / {maxStars} estrelas, {gems} gemas, {xp} XP",
+    "more": "Mostrar mais {count} conquistas de {name}",
+    "less": "Mostrar menos"
+  },
+  "card": {
+    "manual": "Manual",
+    "nextStar": "Próxima estrela",
+    "xp": "XP",
+    "gems": "gemas",
+    "edit": "Editar {name}",
+    "done": "Concluído",
+    "stars": "Estrelas",
+    "starsHelp": "Toque na mesma estrela de novo para remover uma estrela.",
+    "star": "{amount} {number, plural, one {estrela} other {estrelas}}",
+    "value": "Valor",
+    "target": "Meta",
+    "manualLabel": "Manual (ignorar valor da API)",
+    "saves": "As alterações são salvas enquanto você digita. Aumentar as estrelas move a Meta para a próxima etapa.",
+    "progress": "Progresso de {name}",
+    "starsEarned": "{stars} de 3 estrelas"
+  },
+  "toast": {
+    "stars": "{name} alterada para {amount} {stars, plural, one {estrela} other {estrelas}}",
+    "targetMoved": "Meta movida para {target}.",
+    "value": "Valor de {name} alterado para {value}",
+    "target": "Meta de {name} alterada para {target}",
+    "undo": "Desfazer"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "gate": {
+    "title": "Ninguna aldea activa",
+    "description": "Elige una aldea o crea una para ver esta página.",
+    "newVillage": "Nueva aldea",
+    "chooseVillage": "Elegir una aldea"
+  },
+  "townHallTab": {
+    "title": "Ayuntamiento",
+    "supercharge": "Sobrecarga",
+    "superchargeDone": "{current} de {max} niveles de sobrecarga desbloqueados en este Ayuntamiento están hechos.",
+    "superchargeProgress": "Progreso de sobrecarga"
+  },
+  "heroesUnlock": "Los héroes se desbloquean con la Sala de Héroes.",
+  "progressLabel": "Progreso de {name}",
+  "countdownLabel": "Cuenta atrás de {name}",
+  "capitalGold": "Oro de Capital",
+  "queue": {
+    "conflict": "Conflicto",
+    "level": "Nv {level}",
+    "levelSupercharge": "Sobrecarga Nv {level}",
+    "now": "Ahora",
+    "itemTitle": "{name} Nv {level}"
+  },
+  "finishDescription": "{name}, Nv {from} a {to}, {method}, {time} {unit}",
+  "lookupError": {
+    "rateLimit": "Espera {seconds} s antes de volver a consultar.",
+    "notFound": "No se encontró al jugador {tag}.",
+    "api": "La API de Supercell respondió {status}.",
+    "network": "La búsqueda de jugador no pudo conectar con el servidor."
+  }
+}

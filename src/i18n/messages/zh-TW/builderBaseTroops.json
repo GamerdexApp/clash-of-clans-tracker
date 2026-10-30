@@ -1,0 +1,29 @@
+{
+  "title": "部隊",
+  "subline": "{name}，建築工人大本營 {hall}",
+  "sublineNotSet": "{name}，尚未設定建築工人大本營",
+  "strip": {
+    "title": "星空實驗室",
+    "noLanes": "星空實驗室尚未開放。",
+    "openQueue": "開啟佇列與時間軸",
+    "unassignedHelp": "星空實驗室上儲存了不只一項部隊研究。請完成或取消多出的那一項。",
+    "levelLabel": "星空實驗室等級",
+    "level": "{level} / {max}",
+    "notSet": "未設定"
+  },
+  "card": {
+    "notUnlocked": "未解鎖",
+    "markUnlocked": "標記為已解鎖",
+    "maxAtHall": "此建築工人大本營最高 Lv {level}",
+    "unlockedBy": "由建築工人兵營等級 {barracks} 解鎖",
+    "progress": "{name}進度"
+  },
+  "unavailable": {
+    "title": "此建築工人大本營尚未開放",
+    "requires": "需要建築工人兵營 {barracks}，而它需要建築工人大本營 {hall}"
+  },
+  "empty": {
+    "title": "這裡還沒有內容",
+    "allMax": "所有部隊都已達最高等級。關閉「隱藏已滿級」即可查看。"
+  }
+}

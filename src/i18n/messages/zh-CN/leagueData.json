@@ -1,0 +1,17 @@
+{
+  "stats": {
+    "attacksPerWeek": "每周进攻次数",
+    "promoted": "前百分比晋级",
+    "demoted": "后百分比降级",
+    "trophyRange": "奖杯范围",
+    "starsForBonus": "获得星星奖励所需星数"
+  },
+  "sections": {
+    "maxLoot": "最大可得战利品",
+    "leagueBonus": "最大联赛奖励",
+    "weeklyStarBonus": "每周星星奖励",
+    "starBonusReward": "星星奖励内容"
+  },
+  "range": "{min} 至 {max}",
+  "rangeOpen": "{min}+"
+}

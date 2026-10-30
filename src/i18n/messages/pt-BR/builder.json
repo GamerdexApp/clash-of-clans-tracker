@@ -1,0 +1,51 @@
+{
+  "title": "Construtor",
+  "subline": "{name}, Centro de Vila {townHall}",
+  "tabsLabel": "Seções do Construtor",
+  "tabs": {
+    "defenses": "Defesas",
+    "army": "Exército",
+    "resources": "Recursos",
+    "crafted": "Defesas Criadas",
+    "traps": "Armadilhas",
+    "heroes": "Heróis",
+    "guardians": "Guardiões",
+    "townHall": "Centro de Vila"
+  },
+  "builders": {
+    "title": "Construtores",
+    "boostLabel": "Bônus de construtor do Passe Dourado",
+    "boostValue": "{percent, plural, =0 {Nenhum} other {-{percent}% de tempo e custo}}",
+    "openQueue": "Abrir fila e linha do tempo",
+    "unassignedHelp": "Algumas melhorias estão salvas em um construtor que não foi construído, ou em um construtor que outra melhoria já usa. Conclua ou cancele essas melhorias.",
+    "noBuilders": "Esta vila ainda não tem construtores. Construa a primeira Cabana do Construtor na aba Defesas. Ela é grátis e instantânea."
+  },
+  "gate": {
+    "requires": "Requer Centro de Vila {townHall}",
+    "where": "Esta vila está no Centro de Vila {townHall}. Chegue ao Centro de Vila {required} para liberar esta aba.",
+    "fix": "Ir para a aba Centro de Vila"
+  },
+  "empty": {
+    "title": "Nada aqui ainda",
+    "description": "Nenhuma construção deste tipo está disponível neste nível de Centro de Vila.",
+    "allMax": "Todas as construções aqui estão no máximo. Desative Ocultar máx. para vê-las."
+  },
+  "card": {
+    "maxAtHall": "Nv máx. {level} neste Centro de Vila",
+    "maxAtBuilderHall": "Nv máx. {level} neste Salão do Construtor",
+    "progress": "Progresso de {name}",
+    "notBuilt": "Não construído",
+    "level": "Nv {level} de {max}",
+    "build": "Construir",
+    "upgradeTo": "Melhorar para Nv {level}",
+    "superchargeTo": "Supercarga para a etapa {tier}",
+    "maxed": "Máx.",
+    "running": "Melhorando para Nv {to}",
+    "finish": "Concluir",
+    "cancel": "Cancelar",
+    "showAll": "Mostrar todos os {count}",
+    "showFewer": "Mostrar menos",
+    "instance": "#{number}",
+    "supercharge": "Supercarga {tier} de {tiers}"
+  }
+}

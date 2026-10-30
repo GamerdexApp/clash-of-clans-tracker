@@ -1,0 +1,33 @@
+{
+  "categories": {
+    "defenses": "Savunmalar",
+    "army": "Ordu",
+    "resources": "Kaynaklar",
+    "crafted": "Üretilmiş Savunmalar",
+    "traps": "Tuzaklar",
+    "troops": "Birlikler",
+    "spells": "Büyüler",
+    "siege": "Kuşatma",
+    "pets": "Evcil Hayvanlar",
+    "guardians": "Koruyucular",
+    "heroes": "Kahramanlar",
+    "equipment": "Ekipman",
+    "walls": "Surlar",
+    "buildings": "Binalar"
+  },
+  "sections": {
+    "armyBuildings": "Ordu binaları",
+    "otherBuildings": "Diğer binalar"
+  },
+  "level": "Seviye {level}",
+  "superchargeRow": "{name} Süper Şarj",
+  "profile": {
+    "builderHall": "İnşaatçı Salonu seviyesi",
+    "trophies": "Kupalar",
+    "bestTrophies": "En iyi kupalar",
+    "league": "Lig",
+    "capitalHall": "Başkent Salonu",
+    "districtHall": "{zone} Bölge Salonu",
+    "contributions": "Katkılar"
+  }
+}

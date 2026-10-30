@@ -1,0 +1,86 @@
+{
+  "header": {
+    "label": "Bagian halaman",
+    "features": "Fitur",
+    "faq": "FAQ",
+    "villages": "Desa",
+    "settings": "Pengaturan"
+  },
+  "hero": {
+    "title": "Lacak Progres Clash of Clans-mu",
+    "description": "Simpan semua desa di satu tempat: bangunan, pasukan, pahlawan, peningkatan, dan harian untuk Desa Utama, Markas Pembangun, dan Ibu Kota Klan.",
+    "note": "Gratis. Tanpa akun. Semua data tetap di browsermu.",
+    "continue": "Lanjutkan dengan",
+    "continueLine": "{builderHall, plural, =0 {Balai Kota {townHall}, diperbarui {updated}} other {Balai Kota {townHall}, Balai Pembangun {builderHall}, diperbarui {updated}}}"
+  },
+  "cta": {
+    "create": "Buat desa pertamamu",
+    "learnMore": "Pelajari lebih lanjut",
+    "overview": "Buka Ikhtisar",
+    "newVillage": "Desa baru"
+  },
+  "features": {
+    "label": "Semua yang kamu butuhkan",
+    "title": "Semua progresmu di satu tempat",
+    "description": "Dari Balai Kota sampai Ibu Kota Klan, setiap level yang kamu lacak tersimpan begitu kamu mengubahnya.",
+    "items": {
+      "item1": {
+        "title": "Banyak desa",
+        "text": "Buat dan kelola desa tanpa batas. Lacak akun dan markas yang berbeda secara terpisah."
+      },
+      "item2": {
+        "title": "Pelacakan progres",
+        "text": "Lacak dengan tepat apa yang sudah kamu selesaikan, kumpulkan, atau buka di setiap desa."
+      },
+      "item3": {
+        "title": "Ikhtisar",
+        "text": "Lihat progresmu sekilas dengan statistik ringkasan, timer harian, dan penanda penyelesaian."
+      },
+      "item4": {
+        "title": "Cadangan dan sinkron",
+        "text": "Ekspor progresmu sebagai file JSON, atau sinkronkan antar perangkat dengan penyimpanan cloud milikmu."
+      },
+      "item5": {
+        "title": "Privat",
+        "text": "Datamu tetap di browser. Satu-satunya panggilan ke server adalah pencarian player tag yang opsional, yang meminta statistik publikmu dari Supercell."
+      },
+      "item6": {
+        "title": "Mode gelap",
+        "text": "Nyaman dipakai siang atau malam. Pilih terang, gelap, atau ikuti perangkatmu di Pengaturan."
+      }
+    }
+  },
+  "faq": {
+    "label": "Ada pertanyaan?",
+    "title": "Pertanyaan yang sering diajukan",
+    "items": {
+      "item1": {
+        "question": "Apa itu Clash of Clans Tracker?",
+        "answer": "Ini adalah pelacak progres untuk Clash of Clans. Alat ini membantumu mengelola banyak akun dan melacak peningkatan, pencapaian, harian, dan progres keseluruhan di satu tempat."
+      },
+      "item2": {
+        "question": "Bagaimana data saya disimpan?",
+        "answer": "Semuanya disimpan di browsermu, jadi progresmu privat dan tidak butuh akun. Kamu bisa mengekspor dan mengimpornya sebagai file JSON untuk cadangan. Pencarian player tag yang opsional mengirim tag ke server action kecil yang meminta statistik publikmu dari API Supercell."
+      },
+      "item3": {
+        "question": "Bisakah saya melacak banyak desa?",
+        "answer": "Bisa. Buat desa sebanyak yang kamu mau, masing-masing dengan progresnya sendiri, dan pindah antar desa di sidebar."
+      },
+      "item4": {
+        "question": "Apakah bisa sinkron antar perangkat?",
+        "answer": "Bisa, kalau kamu mau. Buka Pengaturan dan hubungkan GitHub, Google Drive, Dropbox, atau OneDrive. Datamu disimpan di akunmu sendiri, dan sinkron tetap mati sampai kamu menyalakannya."
+      },
+      "item5": {
+        "question": "Apakah aplikasi ini gratis?",
+        "answer": "Ya. Gratis, tanpa langganan, tanpa iklan, dan tanpa pendaftaran."
+      }
+    }
+  },
+  "final": {
+    "title": "Mulai lacak desamu hari ini",
+    "description": "Tanpa akun dan tanpa pendaftaran. Desa pertamamu hanya butuh satu nama."
+  },
+  "updated": {
+    "justNow": "baru saja"
+  }
+}

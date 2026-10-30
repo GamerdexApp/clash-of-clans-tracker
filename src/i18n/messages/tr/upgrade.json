@@ -1,0 +1,108 @@
+{
+  "massEdit": {
+    "hint": "Seviyeler Toplu düzenlemede de ayarlanabilir.",
+    "link": "Toplu düzenlemeyi aç"
+  },
+  "hideMax": "Maks. gizle",
+  "strip": {
+    "free": "{total} hattan {free} boş",
+    "idle": "Boş",
+    "unassigned": "Atanmadı",
+    "taskLevels": "Sv {from} - {to}"
+  },
+  "start": {
+    "title": "Yükseltmeyi başlat",
+    "levelChange": "{from, plural, =0 {Sv {to} seviyesine kadar inşa et} other {Sv {from} - {to}}}",
+    "time": "Süre",
+    "cost": "Maliyet",
+    "doneAt": "Bitiş",
+    "wasBoosted": "önceki {base}, Altın Geçiş -%{percent}",
+    "wasCost": "{resource}, önceki {base}",
+    "resource": "{resource}",
+    "storedNote": "bu güçlendirilmiş süre kaydedilir",
+    "storedNoteUnboosted": "bu süre kaydedilir",
+    "instant": "Bu inşaat süre almaz. Hemen biter ve inşaatçı kullanmaz.",
+    "lanes": {
+      "builder": {
+        "label": "İnşaatçı",
+        "choose": "Başlatmak için bir inşaatçı seç.",
+        "noneFree": "Her inşaatçı meşgul. Önce bir yükseltmeyi iptal et veya bitir."
+      },
+      "research": {
+        "label": "Araştırma hattı",
+        "choose": "Başlatmak için bir hat seç.",
+        "noneFree": "Her araştırma hattı meşgul. Önce bir araştırmayı iptal et veya bitir."
+      },
+      "bbBuilder": {
+        "label": "İnşaatçı",
+        "choose": "Başlatmak için bir inşaatçı seç.",
+        "noneFree": "İki inşaatçı da meşgul. Önce bir yükseltmeyi iptal et veya bitir."
+      },
+      "bbResearch": {
+        "label": "Yıldız Laboratuvarı",
+        "choose": "Başlatmak için Yıldız Laboratuvarını seç.",
+        "noneFree": "Yıldız Laboratuvarı meşgul. Önce araştırmayı iptal et veya bitir."
+      },
+      "pet": {
+        "label": "Evcil Hayvan Evi",
+        "choose": "Başlatmak için Evcil Hayvan Evini seç.",
+        "noneFree": "Evcil Hayvan Evi meşgul. Önce evcil hayvan yükseltmesini iptal et veya bitir."
+      }
+    },
+    "requires": {
+      "laboratory": "Laboratuvar {level} gerekir",
+      "pet-house": "Evcil Hayvan Evi {level} gerekir",
+      "star-laboratory": "Yıldız Laboratuvarı {level} gerekir",
+      "noPetHouse": "Önce bir Evcil Hayvan Evi inşa et"
+    },
+    "free": "Ücretsiz",
+    "cancel": "İptal",
+    "confirm": "Yükseltmeyi başlat",
+    "confirmInstant": "Şimdi inşa et"
+  },
+  "finish": {
+    "title": "Erken bitir",
+    "left": "kaldı",
+    "methodLabel": "Nasıl bitti?",
+    "methods": {
+      "timePassed": {
+        "label": "Süre Doldu",
+        "description": "Sayaç oyunda zaten bitti. Hiçbir şey harcanmaz."
+      },
+      "gems": {
+        "label": "Elmas",
+        "description": "Şimdi tamamlamak için oyunda elmas öde. Süre azaldıkça maliyet düşer."
+      },
+      "book": {
+        "label": "İnşaat Kitabı",
+        "description": "Süren bir bina yükseltmesini anında tamamlar."
+      },
+      "hammer": {
+        "label": "İnşaat Çekici",
+        "description": "Bir binayı anında sonraki seviyeye yükseltir."
+      }
+    },
+    "stores": "Köyün neyi saklar",
+    "storesLevel": "Seviye {level}. Sayaç temizlenir.",
+    "storesSaved": "{time}, kazanılan zamana eklenir.",
+    "storesSavedNone": "Kazanılan zaman olduğu gibi kalır.",
+    "gemFigure": "Yaklaşık {gems} elmas (oyun verisi kuralı, oyundaki maliyet farklı olabilir).",
+    "notTracked": {
+      "timePassed": "",
+      "gems": "Harcanan elmaslar takip edilmez.",
+      "book": "Sahip olunan kitaplar takip edilmez.",
+      "hammer": "Sahip olunan çekiçler takip edilmez."
+    },
+    "keep": "Yükseltmeye devam et",
+    "confirm": "Yükseltmeyi bitir"
+  },
+  "cancel": {
+    "title": "Bu yükseltme iptal edilsin mi?",
+    "body": "İptal etmek sayacı durdurur. {name} Sv {level} seviyesinde kalır ve {builder} yeniden boşa çıkar.",
+    "refundTitle": "Oyunda iade: %50",
+    "refundBody": "Clash of Clans'ta iptal etmek, ödediğin {paid} {resource} miktarının {refund} kadarını geri verir. Bu uygulama kaynaklarını takip etmez, bu yüzden iptalden sonra depolarını kontrol et.",
+    "undoNote": "İptal ettikten sonra 10 saniye boyunca geri alabilirsin. Sonrasında yükseltmeyi yeniden başlat.",
+    "keep": "Yükseltmeye devam et",
+    "confirm": "Yükseltmeyi iptal et"
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "upgrades": {
+    "title": "アップグレード",
+    "subline": "{name}、ビルダーホール {hall}",
+    "sublineNotSet": "{name}、ビルダーホール未設定",
+    "tabsLabel": "ビルダーベースのセクション",
+    "tabs": {
+      "defenses": "防衛設備",
+      "army": "軍隊",
+      "resources": "資源",
+      "traps": "罠",
+      "heroes": "ヒーロー",
+      "other": "その他"
+    },
+    "strip": {
+      "title": "ビルダー",
+      "noBuilders": "ビルダーベースにはビルダーが2人います。",
+      "openQueue": "キューとタイムラインを開く",
+      "unassignedHelp": "一部のアップグレードが、別のアップグレードがすでに使っているビルダーに保存されています。完了するかキャンセルしてください。"
+    }
+  },
+  "locked": {
+    "title": "タウンホール6が必要です",
+    "description": "このビレッジはタウンホール {townHall}です。ビルダーベースはタウンホール6、またはビルダーホールのレベルを設定すると開放されます。"
+  },
+  "notSet": {
+    "action": "ビルダーホールのレベルを設定",
+    "troopsDescription": "ビルダーベースの兵士はビルダーホールのレベルに従います。アップグレードのページ、その他のタブで設定してください。",
+    "title": "ビルダーホールのレベルを選んで記録を始めましょう",
+    "description": "下のタイルでビルダーホールのレベルを設定してください。ビルダーベースの一覧がそれに従います。"
+  },
+  "hall": {
+    "title": "ビルダーホール",
+    "notSet": "未設定",
+    "option": "ビルダーホール {level}",
+    "since": "ビルダーホール {level}で{amount} {days, plural, other {日}}",
+    "confirm": {
+      "title": "ビルダーホールを{level}に変更しますか?",
+      "raising": "レベルを上げると、より多くの建物と高い上限が表示されます。保存済みのものは削除されません。",
+      "lowering": "レベルを下げると、それを超える建物と上限が非表示になります。保存済みのレベルは維持されます。",
+      "clearing": "レベルをクリアすると、ビルダーベースの一覧がすべて非表示になります。保存済みのレベルは維持されます。",
+      "setDays": "ビルダーホールの日数を今日に設定",
+      "cancel": "キャンセル",
+      "confirm": "レベルを変更"
+    },
+    "toast": "ビルダーホール {from, plural, =0 {未設定} other {{from}}}から{to, plural, =0 {未設定} other {{to}}}へ",
+    "undo": "元に戻す"
+  },
+  "other": {
+    "clockTower": "Clock Tower",
+    "clockTowerMax": "このビルダーホールでの最大 Lv {level}",
+    "clockTowerProgress": "Clock Towerの進行状況"
+  },
+  "empty": {
+    "title": "まだ何もありません",
+    "description": "このビルダーホールレベルでは、この種類の建物は利用できません。",
+    "allMax": "ここにあるものはすべて最大です。「最大を非表示」をオフにすると表示されます。"
+  },
+  "heroes": {
+    "maxAtHall": "このビルダーホールでの最大 Lv {level}",
+    "progress": "{name}の進行状況"
+  }
+}

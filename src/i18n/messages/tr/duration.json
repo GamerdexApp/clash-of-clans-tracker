@@ -1,0 +1,8 @@
+{
+  "days": "{count}g",
+  "hours": "{count}sa",
+  "minutes": "{count}dk",
+  "seconds": "{count}sn",
+  "paddedSeconds": "{count}sn",
+  "join": "{first} {second}"
+}
