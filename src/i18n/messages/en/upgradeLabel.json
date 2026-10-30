@@ -1,0 +1,26 @@
+{
+  "townHallTo": "Town Hall {from}→{to}",
+  "weaponTo": "TH Weapon {from}→{to}",
+  "heroTo": "{name} {from}→{to}",
+  "toast": {
+    "undo": "Undo",
+    "started": "{name} Lv {from} to {to} started",
+    "finished": "{name} finished at Lv {level}",
+    "timeSaved": "{time} added to time saved.",
+    "cancelled": "Cancelled {name} Lv {from} to {to}",
+    "levelChanged": "{name} Lv {from} to {to}"
+  },
+  "queue": {
+    "buildPetHouse": "Build a Pet House first",
+    "requires": "Requires {building} {level}",
+    "alreadyUpgrading": "{name} is already upgrading",
+    "finishFirst": "Level {level} must finish first",
+    "alreadyAt": "Already at level {level}"
+  },
+  "conflict": {
+    "alreadyAt": "{name} is already at level {level}, so level {target} is done.",
+    "removeFix": "Remove it from the queue.",
+    "scheduledBefore": "{name} level {level} is scheduled before level {earlier} is done.",
+    "moveFix": "Move level {level} after level {earlier}."
+  }
+}

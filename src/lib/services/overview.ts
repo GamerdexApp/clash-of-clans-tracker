@@ -1,6 +1,8 @@
 import { builder, home } from "clash-of-clans-data";
 
 import { formatNumber } from "@/lib/format";
+import { gameText } from "@/lib/messages/game";
+import { overviewDataText } from "@/lib/messages/overviewData";
 import { toPublicImageUrl } from "@/lib/utils/imageHelpers";
 import { blacksmithLevel } from "./equipment";
 import { heroIdForName } from "./upgradeEngine";
@@ -42,30 +44,73 @@ export interface StatTile {
 export const overviewStats = (village: Playthrough): StatTile[] => {
   const { data } = village;
   const tiles: StatTile[] = [
-    { id: "level", label: "Level", value: formatNumber(data.expLevel) },
-    { id: "warStars", label: "War stars", value: formatNumber(data.warStars) },
+    {
+      id: "level",
+      label: overviewDataText.stats.level,
+      value: formatNumber(data.expLevel),
+    },
+    {
+      id: "warStars",
+      label: overviewDataText.stats.warStars,
+      value: formatNumber(data.warStars),
+    },
     {
       id: "trophies",
-      label: "Trophies",
+      label: overviewDataText.stats.trophies,
       value: formatNumber(data.homeVillage.trophies),
       sub: data.homeVillage.leagueName || undefined,
     },
-    { id: "bestTrophies", label: "Best trophies", value: formatNumber(data.homeVillage.bestTrophies) },
-    { id: "donations", label: "Donations", value: formatNumber(data.donations) },
-    { id: "received", label: "Donations received", value: formatNumber(data.donationsReceived) },
-    { id: "war", label: "War preference", value: data.warPreference === "in" ? "In" : "Out" },
-    { id: "attacks", label: "Attack wins", value: formatNumber(data.homeVillage.attackWins) },
-    { id: "defenses", label: "Defense wins", value: formatNumber(data.homeVillage.defenseWins) },
+    {
+      id: "bestTrophies",
+      label: overviewDataText.stats.bestTrophies,
+      value: formatNumber(data.homeVillage.bestTrophies),
+    },
+    {
+      id: "donations",
+      label: overviewDataText.stats.donations,
+      value: formatNumber(data.donations),
+    },
+    {
+      id: "received",
+      label: overviewDataText.stats.received,
+      value: formatNumber(data.donationsReceived),
+    },
+    {
+      id: "war",
+      label: overviewDataText.stats.war,
+      value:
+        data.warPreference === "in"
+          ? overviewDataText.stats.warIn
+          : overviewDataText.stats.warOut,
+    },
+    {
+      id: "attacks",
+      label: overviewDataText.stats.attacks,
+      value: formatNumber(data.homeVillage.attackWins),
+    },
+    {
+      id: "defenses",
+      label: overviewDataText.stats.defenses,
+      value: formatNumber(data.homeVillage.defenseWins),
+    },
     {
       id: "builderTrophies",
-      label: "Builder trophies",
+      label: overviewDataText.stats.builderTrophies,
       value: formatNumber(data.builderBase.builderBaseTrophies),
       sub: data.builderBase.builderBaseLeagueName || undefined,
     },
-    { id: "bestBuilderTrophies", label: "Best builder trophies", value: formatNumber(data.builderBase.bestBuilderBaseTrophies) },
+    {
+      id: "bestBuilderTrophies",
+      label: overviewDataText.stats.bestBuilderTrophies,
+      value: formatNumber(data.builderBase.bestBuilderBaseTrophies),
+    },
   ];
   if (clanCapitalState(village) !== "off") {
-    tiles.push({ id: "contributions", label: "Capital contributions", value: formatNumber(data.clanCapital.clanCapitalContributions) });
+    tiles.push({
+      id: "contributions",
+      label: overviewDataText.stats.contributions,
+      value: formatNumber(data.clanCapital.clanCapitalContributions),
+    });
   }
   return tiles;
 };
@@ -80,13 +125,13 @@ export interface ProgressCardData {
   lock?: string;
 }
 
-const LOCK_AT: Record<string, string> = {
-  supercharge: "Town Hall 17",
-  crafted: "Town Hall 18",
-  pets: "Town Hall 14",
-  heroes: "Town Hall 7",
-  equipment: "Blacksmith",
-};
+const lockAt = (): Record<string, string> => ({
+  supercharge: gameText.halls.townHall(17),
+  crafted: gameText.halls.townHall(18),
+  pets: gameText.halls.townHall(14),
+  heroes: gameText.halls.townHall(7),
+  equipment: gameText.halls.blacksmith,
+});
 
 /** Nine progress cards, never hidden. A card with nothing to measure yet is locked and says what it needs. */
 export const homeProgressCards = (village: Playthrough): ProgressCardData[] => {
@@ -94,23 +139,71 @@ export const homeProgressCards = (village: Playthrough): ProgressCardData[] => {
   const townHall = hv.townHallLevel;
   const walls = getHomeWallData(townHall);
   const cards: Omit<ProgressCardData, "lock">[] = [
-    { id: "structures", label: "Structures", result: calcHomeStructuresProgress(hv, townHall), sub: "Defenses, army, resources", href: "/builder" },
-    { id: "traps", label: "Traps", result: calcHomeTrapsProgress(hv, townHall), href: "/builder?tab=traps" },
-    { id: "supercharge", label: "Supercharge", result: calcSuperchargeProgress(hv, townHall), href: "/builder" },
-    { id: "crafted", label: "Crafted Defenses", result: calcCraftedDefensesProgress(hv, townHall), href: "/builder?tab=crafted" },
-    { id: "lab", label: "Lab", result: calcHomeLabProgress(hv, townHall), sub: "Troops, spells, siege", href: "/research" },
-    { id: "heroes", label: "Heroes", result: calcHomeHeroesProgress(hv.heroes, townHall), href: "/builder?tab=heroes" },
-    { id: "equipment", label: "Equipment", result: calcEquipmentProgress(hv.heroes), href: "/equipment" },
-    { id: "pets", label: "Pets", result: calcPetsProgress(hv.pets, townHall), href: "/pets" },
+    {
+      id: "structures",
+      label: overviewDataText.cards.structures,
+      result: calcHomeStructuresProgress(hv, townHall),
+      sub: overviewDataText.subs.structures,
+      href: "/builder",
+    },
+    {
+      id: "traps",
+      label: overviewDataText.cards.traps,
+      result: calcHomeTrapsProgress(hv, townHall),
+      href: "/builder?tab=traps",
+    },
+    {
+      id: "supercharge",
+      label: overviewDataText.cards.supercharge,
+      result: calcSuperchargeProgress(hv, townHall),
+      href: "/builder",
+    },
+    {
+      id: "crafted",
+      label: overviewDataText.cards.crafted,
+      result: calcCraftedDefensesProgress(hv, townHall),
+      href: "/builder?tab=crafted",
+    },
+    {
+      id: "lab",
+      label: overviewDataText.cards.lab,
+      result: calcHomeLabProgress(hv, townHall),
+      sub: overviewDataText.subs.lab,
+      href: "/research",
+    },
+    {
+      id: "heroes",
+      label: overviewDataText.cards.heroes,
+      result: calcHomeHeroesProgress(hv.heroes, townHall),
+      href: "/builder?tab=heroes",
+    },
+    {
+      id: "equipment",
+      label: overviewDataText.cards.equipment,
+      result: calcEquipmentProgress(hv.heroes),
+      href: "/equipment",
+    },
+    {
+      id: "pets",
+      label: overviewDataText.cards.pets,
+      result: calcPetsProgress(hv.pets, townHall),
+      href: "/pets",
+    },
     {
       id: "walls",
-      label: "Walls",
+      label: overviewDataText.cards.walls,
       result: calcWallsProgress(hv.walls, townHall),
-      sub: walls.totalAtTH > 0 ? `${walls.totalAtTH} walls, max level ${walls.maxLevel}` : undefined,
+      sub:
+        walls.totalAtTH > 0
+          ? overviewDataText.subs.walls(walls.totalAtTH, walls.maxLevel)
+          : undefined,
       href: "/walls",
     },
   ];
-  return cards.map((card) => ({ ...card, lock: card.result.max === 0 ? LOCK_AT[card.id] : undefined }));
+  return cards.map((card) => ({
+    ...card,
+    lock: card.result.max === 0 ? lockAt()[card.id] : undefined,
+  }));
 };
 
 export interface ItemTileData {
@@ -172,7 +265,13 @@ const savedByName = (items: Array<TrackedItem | TrackedHero>) => new Map(items.m
 const townHallTile = (entry: RawEntry, saved: Saved, townHall: number, now: Date) => {
   const maxLevel = entry.levels.filter((level) => (level.townHallRequired ?? 0) <= townHall).length;
   const first = entry.levels[0]?.townHallRequired;
-  return tileFor(entry, saved, maxLevel, first ? `Town Hall ${first}` : undefined, now);
+  return tileFor(
+    entry,
+    saved,
+    maxLevel,
+    first ? gameText.halls.townHall(first) : undefined,
+    now,
+  );
 };
 
 export interface HeroTileData extends ItemTileData {
@@ -210,17 +309,41 @@ export const homeItemGroups = (village: Playthrough, now: Date): HomeItemGroups 
     siege: allSiege.map((entry) => townHallTile(entry, siege.get(entry.name.toLowerCase()), townHall, now)),
     pets: allPets.map((entry) => {
       const first = entry.levels[0]?.townHallRequired ?? 0;
-      return tileFor(entry, pets.get(entry.name.toLowerCase()), first <= townHall ? entry.levels.length : 0, `Town Hall ${first}`, now);
+      return tileFor(
+        entry,
+        pets.get(entry.name.toLowerCase()),
+        first <= townHall ? entry.levels.length : 0,
+        gameText.halls.townHall(first),
+        now,
+      );
     }),
     heroes: allHeroes.map((entry) => {
       const maxLevel = entry.levels.filter((level) => (level.heroHallLevelRequired ?? 0) <= heroHall).length;
       const saved = heroes.get(entry.name.toLowerCase()) as TrackedHero | undefined;
       const owned = new Map((saved?.equipment ?? []).map((piece) => [piece.name.toLowerCase(), piece]));
       return {
-        ...tileFor(entry, saved, maxLevel, `Hero Hall ${entry.levels[0]?.heroHallLevelRequired ?? 1}`, now),
+        ...tileFor(
+          entry,
+          saved,
+          maxLevel,
+          gameText.halls.heroHall(entry.levels[0]?.heroHallLevelRequired ?? 1),
+          now,
+        ),
         equipment: allEquipment
           .filter((piece) => piece.hero === heroIdForName(entry.name))
-          .map((piece) => tileFor(piece, owned.get(piece.name.toLowerCase()), maxLevel > 0 && hasBlacksmith ? piece.levels.length : 0, maxLevel === 0 ? `Hero Hall ${entry.levels[0]?.heroHallLevelRequired ?? 1}` : "Blacksmith", now)),
+          .map((piece) =>
+            tileFor(
+              piece,
+              owned.get(piece.name.toLowerCase()),
+              maxLevel > 0 && hasBlacksmith ? piece.levels.length : 0,
+              maxLevel === 0
+                ? gameText.halls.heroHall(
+                    entry.levels[0]?.heroHallLevelRequired ?? 1,
+                  )
+                : "Blacksmith",
+              now,
+            ),
+          ),
       };
     }),
   };
@@ -261,9 +384,27 @@ export const homeResources = (village: Playthrough): ResourceRow[] => {
   };
   const base = townHallStorage.find((level) => level.level === townHall)?.storageCapacity;
   const rows: ResourceRow[] = [
-    { id: "gold", label: "Gold", image: "/images/other/gold.png", perHour: sum("gold-mine", "productionRate"), storage: sum("gold-storage", "capacity") + (base?.gold ?? 0) },
-    { id: "elixir", label: "Elixir", image: "/images/other/elixir.png", perHour: sum("elixir-collector", "productionRate"), storage: sum("elixir-storage", "capacity") + (base?.elixir ?? 0) },
-    { id: "darkElixir", label: "Dark Elixir", image: "/images/other/dark-elixir.png", perHour: sum("dark-elixir-drill", "productionRate"), storage: sum("dark-elixir-storage", "capacity") + (base?.darkElixir ?? 0) },
+    {
+      id: "gold",
+      label: gameText.resources.gold,
+      image: "/images/other/gold.png",
+      perHour: sum("gold-mine", "productionRate"),
+      storage: sum("gold-storage", "capacity") + (base?.gold ?? 0),
+    },
+    {
+      id: "elixir",
+      label: gameText.resources.elixir,
+      image: "/images/other/elixir.png",
+      perHour: sum("elixir-collector", "productionRate"),
+      storage: sum("elixir-storage", "capacity") + (base?.elixir ?? 0),
+    },
+    {
+      id: "darkElixir",
+      label: gameText.resources.darkElixir,
+      image: "/images/other/dark-elixir.png",
+      perHour: sum("dark-elixir-drill", "productionRate"),
+      storage: sum("dark-elixir-storage", "capacity") + (base?.darkElixir ?? 0),
+    },
   ];
   return rows.filter((row) => row.perHour > 0 || row.storage > 0);
 };
@@ -286,15 +427,40 @@ export const builderProgressCards = (village: Playthrough): ProgressCardData[] =
   const hall = bb.builderHallLevel;
   const walls = getBuilderWallData(hall);
   return [
-    { id: "structures", label: "Structures", result: calcBuilderStructuresProgress(bb, hall), sub: "Defenses, army, resources", href: "/builder-base/upgrades" },
-    { id: "traps", label: "Traps", result: calcBuilderTrapsProgress(bb, hall), href: "/builder-base/upgrades?tab=traps" },
-    { id: "lab", label: "Lab", result: calcBuilderLabProgress(bb, hall), sub: "Builder troops", href: "/builder-base/troops" },
-    { id: "heroes", label: "Heroes", result: calcBuilderHeroesProgress(bb.heroes, hall), href: "/builder-base/upgrades?tab=heroes" },
+    {
+      id: "structures",
+      label: overviewDataText.cards.structures,
+      result: calcBuilderStructuresProgress(bb, hall),
+      sub: overviewDataText.subs.structures,
+      href: "/builder-base/upgrades",
+    },
+    {
+      id: "traps",
+      label: overviewDataText.cards.traps,
+      result: calcBuilderTrapsProgress(bb, hall),
+      href: "/builder-base/upgrades?tab=traps",
+    },
+    {
+      id: "lab",
+      label: overviewDataText.cards.lab,
+      result: calcBuilderLabProgress(bb, hall),
+      sub: overviewDataText.subs.builderLab,
+      href: "/builder-base/troops",
+    },
+    {
+      id: "heroes",
+      label: overviewDataText.cards.heroes,
+      result: calcBuilderHeroesProgress(bb.heroes, hall),
+      href: "/builder-base/upgrades?tab=heroes",
+    },
     {
       id: "walls",
-      label: "Walls",
+      label: overviewDataText.cards.walls,
       result: calcBuilderWallsProgress(bb.walls ?? {}, hall),
-      sub: walls.totalAtBH > 0 ? `${walls.totalAtBH} walls, max level ${walls.maxLevel}` : undefined,
+      sub:
+        walls.totalAtBH > 0
+          ? overviewDataText.subs.walls(walls.totalAtBH, walls.maxLevel)
+          : undefined,
       href: "/builder-base/walls",
     },
   ];
@@ -323,13 +489,29 @@ export const builderItemGroups = (village: Playthrough, now: Date): BuilderItemG
   return {
     troops: allBuilderTroops.map((entry) => {
       const levels = entry.levels as RawBuilderLevel[];
-      const maxLevel = levels.filter((level) => (level.starLabRequired ?? 0) <= hall).length;
-      return tileFor(entry, troops.get(entry.name.toLowerCase()), maxLevel, `Star Laboratory ${levels[0]?.starLabRequired ?? 1}`, now);
+      const maxLevel = levels.filter(
+        (level) => (level.starLabRequired ?? 0) <= hall,
+      ).length;
+      return tileFor(
+        entry,
+        troops.get(entry.name.toLowerCase()),
+        maxLevel,
+        gameText.halls.starLaboratory(levels[0]?.starLabRequired ?? 1),
+        now,
+      );
     }),
     heroes: allBuilderHeroes.map((entry) => {
       const levels = entry.levels as RawBuilderLevel[];
-      const maxLevel = levels.filter((level) => (level.builderHallLevelRequired ?? 0) <= hall).length;
-      return tileFor(entry, heroes.get(entry.name.toLowerCase()), maxLevel, `Builder Hall ${levels[0]?.builderHallLevelRequired ?? 1}`, now);
+      const maxLevel = levels.filter(
+        (level) => (level.builderHallLevelRequired ?? 0) <= hall,
+      ).length;
+      return tileFor(
+        entry,
+        heroes.get(entry.name.toLowerCase()),
+        maxLevel,
+        gameText.halls.builderHall(levels[0]?.builderHallLevelRequired ?? 1),
+        now,
+      );
     }),
   };
 };
@@ -350,8 +532,20 @@ export const builderResources = (village: Playthrough): ResourceRow[] => {
     }, 0);
   };
   const rows: ResourceRow[] = [
-    { id: "gold", label: "Builder Gold", image: "/images/other/gold-b.png", perHour: sum("gold-mine", "productionRate"), storage: sum("gold-storage", "capacity") },
-    { id: "elixir", label: "Builder Elixir", image: "/images/other/elixir-b.png", perHour: sum("elixir-collector", "productionRate"), storage: sum("elixir-storage", "capacity") },
+    {
+      id: "gold",
+      label: gameText.resources.builderGold,
+      image: "/images/other/gold-b.png",
+      perHour: sum("gold-mine", "productionRate"),
+      storage: sum("gold-storage", "capacity"),
+    },
+    {
+      id: "elixir",
+      label: gameText.resources.builderElixir,
+      image: "/images/other/elixir-b.png",
+      perHour: sum("elixir-collector", "productionRate"),
+      storage: sum("elixir-storage", "capacity"),
+    },
   ];
   return rows.filter((row) => row.perHour > 0 || row.storage > 0);
 };
@@ -393,7 +587,7 @@ export const capitalOverview = (village: Playthrough): CapitalOverview => {
     const progress = zoneProgress(village, zone.id);
     return {
       id: zone.id,
-      label: zone.id === "capitalPeak" ? "Capital Peak" : zoneLabel(zone.id),
+      label: zoneLabel(zone.id),
       hallLevel,
       open: zoneIsOpen(village, zone.id) && hallLevel > 0,
       unlocksAt: zoneUnlockLevel(zone.id),
@@ -413,9 +607,27 @@ export const capitalOverview = (village: Playthrough): CapitalOverview => {
   const spells = sum("spells");
   return {
     cards: [
-      { id: "districts", label: "Districts", result: floorResult(activeDistricts, districts.length), sub: `${activeDistricts} of ${districts.length} active`, href: "/clan-capital/districts" },
-      { id: "troops", label: "Troops", result: troops.result, sub: `${troops.count} available`, href: "/clan-capital/troops" },
-      { id: "spells", label: "Spells", result: spells.result, sub: `${spells.count} available`, href: "/clan-capital/troops" },
+      {
+        id: "districts",
+        label: overviewDataText.cards.districts,
+        result: floorResult(activeDistricts, districts.length),
+        sub: overviewDataText.subs.districts(activeDistricts, districts.length),
+        href: "/clan-capital/districts",
+      },
+      {
+        id: "troops",
+        label: overviewDataText.cards.troops,
+        result: troops.result,
+        sub: overviewDataText.subs.available(troops.count),
+        href: "/clan-capital/troops",
+      },
+      {
+        id: "spells",
+        label: overviewDataText.cards.spells,
+        result: spells.result,
+        sub: overviewDataText.subs.available(spells.count),
+        href: "/clan-capital/troops",
+      },
     ],
     districts: zones,
   };

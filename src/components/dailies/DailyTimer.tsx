@@ -4,6 +4,7 @@ import { useState } from "react";
 import type { ReactNode } from "react";
 
 import { formatClock } from "@/lib/format";
+import { commonText } from "@/lib/messages/common";
 import { dailiesText } from "@/lib/messages/dailies";
 import { nextReset, timerState } from "@/service/dailies";
 import { Badge } from "@/comps/ui/Badge";
@@ -128,7 +129,11 @@ export const DailyTimer = ({ timer, now, name, onSetTime, onSetTimeAndUse, onUse
 			) : (
 				<>
 					<div className="flex flex-wrap items-center gap-3">
-						<span className="font-mono text-xl" role="timer" aria-label={`${name} countdown`}>
+						<span
+							className="font-mono text-xl"
+							role="timer"
+							aria-label={commonText.countdownLabel(name)}
+						>
 							{formatClock(nextReset(resetTime, now).getTime() - now.getTime())}
 						</span>
 						<Button aria-label={`${text.adjust} ${name}`} onClick={() => setAdjusting(true)}>

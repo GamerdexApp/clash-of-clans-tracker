@@ -1,22 +1,11 @@
 import { clanCapital } from "clash-of-clans-data";
-
-import { DISTRICTS, type DistrictKey } from "@/lib/constants/capitalDistricts";
-import {
-  getCapitalArmyCatalog,
-  getCapitalPeakBuildings,
-  getCapitalPeakTraps,
-  getCapitalPeakWalls,
-  getDistrictArmyBuildings,
-  getDistrictBuildings,
-  getDistrictTraps,
-  getDistrictUnlockLevels,
-  getDistrictWalls,
-  type CapitalWallInfo,
-} from "@/lib/utils/massEditCapitalHelpers";
-import type { BuildingEditData } from "@/lib/utils/massEditHelpers";
 import type { Playthrough } from "@/types/app";
-import type { CapitalBuildingRecord, ClanCapitalDistrictData, TrackedItem } from "@/types/app/game";
 import type { CapitalArmyEntry, CapitalGroup, CapitalZone, ZoneId } from "@/types/app/capital";
+import type { CapitalBuildingRecord, ClanCapitalDistrictData, TrackedItem } from "@/types/app/game";
+import { type DistrictKey, DISTRICTS } from "@/lib/constants/capitalDistricts";
+import { gameText } from "@/lib/messages/game";
+import { getCapitalArmyCatalog, getCapitalPeakBuildings, getCapitalPeakTraps, getCapitalPeakWalls, getDistrictArmyBuildings, getDistrictBuildings, getDistrictTraps, getDistrictUnlockLevels, getDistrictWalls, type CapitalWallInfo } from "@/lib/utils/massEditCapitalHelpers";
+import type { BuildingEditData } from "@/lib/utils/massEditHelpers";
 
 interface RawHall {
   levels: Array<{ level: number; buildCost: number; capitalHallRequired?: Record<string, number> }>;
@@ -31,7 +20,12 @@ const districtHallLevels = capital.districtHall().get()[0].levels;
 const unlockLevels = getDistrictUnlockLevels();
 
 export const capitalZones: CapitalZone[] = [
-  { id: "capitalPeak", label: "Capital Peak" },
+  {
+    id: "capitalPeak",
+    get label() {
+      return gameText.places.capitalPeak;
+    },
+  },
   ...DISTRICTS.map((district) => ({ id: district.id, label: district.label })),
 ];
 

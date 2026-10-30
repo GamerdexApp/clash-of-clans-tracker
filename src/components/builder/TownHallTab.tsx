@@ -1,17 +1,13 @@
 "use client";
 
 import Image from "next/image";
-
+import type { TabProps } from "@/types/components/builder";
+import { commonText } from "@/lib/messages/common";
 import { calcSuperchargeProgress } from "@/lib/utils/progressHelpers";
-import {
-	getTownHallImageUrl,
-	getTownHallMaxLevel,
-	getTownHallWeaponInfo,
-} from "@/lib/utils/upgradeHelpers";
+import { getTownHallImageUrl, getTownHallMaxLevel, getTownHallWeaponInfo } from "@/lib/utils/upgradeHelpers";
 import { Card } from "@/comps/ui/Card";
 import { Masonry } from "@/comps/ui/Masonry";
 import { ProgressBar } from "@/comps/ui/ProgressBar";
-import type { TabProps } from "@/types/components/builder";
 import { TargetRow } from "./TargetRow";
 
 export const TownHallTab = ({ village, hideMax: _hideMax, ...handlers }: TabProps) => {
@@ -31,7 +27,7 @@ export const TownHallTab = ({ village, hideMax: _hideMax, ...handlers }: TabProp
 						style={{ width: 64, height: 64 }}
 						className="shrink-0 object-contain"
 					/>
-					<h3 className="text-base font-semibold">Town Hall</h3>
+					<h3 className="text-base font-semibold">{commonText.townHallTab.title}</h3>
 				</div>
 				<ul>
 					<TargetRow
@@ -61,11 +57,20 @@ export const TownHallTab = ({ village, hideMax: _hideMax, ...handlers }: TabProp
 			</Card>
 			{supercharge.max > 0 && (
 				<Card className="flex flex-col gap-2 p-4">
-					<h3 className="text-base font-semibold">Supercharge</h3>
+					<h3 className="text-base font-semibold">
+						{commonText.townHallTab.supercharge}
+					</h3>
 					<p className="text-muted">
-						{supercharge.current} of {supercharge.max} supercharge tiers unlocked at this Town Hall are done.
+						{commonText.townHallTab.superchargeDone(
+							supercharge.current,
+							supercharge.max
+						)}
 					</p>
-					<ProgressBar value={supercharge.pct / 100} label="Supercharge progress" tone="kept" />
+					<ProgressBar
+						value={supercharge.pct / 100}
+						label={commonText.townHallTab.superchargeProgress}
+						tone="kept"
+					/>
 					<span className="font-mono text-xs">{supercharge.pct}%</span>
 				</Card>
 			)}

@@ -3,6 +3,7 @@
 import { useDailiesActions } from "@/lib/hooks/useDailiesActions";
 import { formatNumber } from "@/lib/format";
 import { dailiesText } from "@/lib/messages/dailies";
+import { gameText } from "@/lib/messages/game";
 import { dailiesOf } from "@/service/dailies";
 import {
   alchemistInputMax,
@@ -21,10 +22,10 @@ import { LevelPicker } from "./LevelPicker";
 
 const text = dailiesText.helpers;
 
-const resources: { id: AlchemistResource; label: string }[] = [
-	{ id: "gold", label: "Gold" },
-	{ id: "elixir", label: "Elixir" },
-	{ id: "darkElixir", label: "Dark Elixir" },
+const resources = (): { id: AlchemistResource; label: string }[] => [
+	{ id: "gold", label: gameText.resources.gold },
+	{ id: "elixir", label: gameText.resources.elixir },
+	{ id: "darkElixir", label: gameText.resources.darkElixir },
 ];
 
 const GOLD_ELIXIR_STEP = 1_000;
@@ -72,7 +73,7 @@ export const AlchemistCard = ({ village, now }: { village: Playthrough; now: Dat
 				<ConversionCalculator
 					key={level}
 					title={text.alchemist.calculator}
-					options={resources}
+					options={resources()}
 					limit={(from) => alchemistInputMax(from, level)}
 					step={(from) => (from === "darkElixir" ? 1 : GOLD_ELIXIR_STEP)}
 					output={(amount, from, to) => alchemistOutput(amount, from, to, level)}

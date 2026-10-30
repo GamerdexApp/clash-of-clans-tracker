@@ -3,6 +3,7 @@
 import { useState } from "react";
 
 import { formatDuration, formatFinishTime, formatNumber } from "@/lib/format";
+import { commonText } from "@/lib/messages/common";
 import { upgradeText } from "@/lib/messages/upgrades";
 import { boostedStep, isInstantStep, requirementBlock } from "@/service/upgradeEngine";
 import { Button } from "@/comps/ui/Button";
@@ -78,7 +79,9 @@ const StartContent = ({
 				</div>
 				<div className="flex flex-col">
 					<dt className="text-muted text-xs">{text.doneAt}</dt>
-					<dd className="font-mono font-medium">{instant ? "Now" : formatFinishTime(doneAt)}</dd>
+					<dd className="font-mono font-medium">
+						{instant ? commonText.queue.now : formatFinishTime(doneAt)}
+					</dd>
 					{!instant && (
 						<dd className="text-muted text-xs">{lane === "bbBuilder" || lane === "bbResearch" ? text.storedNoteUnboosted : text.storedNote}</dd>
 					)}

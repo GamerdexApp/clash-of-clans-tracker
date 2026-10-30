@@ -3,6 +3,7 @@
 import { useEffect } from "react";
 
 import { usePlaythrough } from "@/lib/contexts/PlaythroughContext";
+import { upgradeLabelText } from "@/lib/messages/upgradeLabel";
 import { storageService } from "@/service/storage";
 import { completeExpiredUpgrades, runningUpgrades } from "@/service/upgradeEngine";
 import { completedLabel } from "@/service/upgradeLabels";
@@ -46,7 +47,10 @@ export const ExpiredUpgradeSync = () => {
 				variant: "success",
 				title: completedLabels.length === 1 ? "Upgrade finished" : `${completedLabels.length} upgrades finished`,
 				message: completedLabels.join(", "),
-				action: { label: "Undo", onAction: () => updateData(() => previous) },
+				action: {
+					label: upgradeLabelText.toast.undo,
+					onAction: () => updateData(() => previous),
+				},
 			});
 		};
 

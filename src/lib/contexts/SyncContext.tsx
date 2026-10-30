@@ -366,7 +366,7 @@ export const useOptionalSync = () => useContext(SyncContext) ?? null;
 export function useSync() {
 	const context = useContext(SyncContext);
 	if (context === undefined) {
-		throw new Error("useSync must be used within a SyncProvider");
+		throw new Error("useSync must be used within a SyncProvider"); // i18n-ignore
 	}
 	return context;
 }

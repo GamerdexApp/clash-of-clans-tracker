@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { formatNumber } from "@/lib/format";
+import { commonText } from "@/lib/messages/common";
 import { overviewText } from "@/lib/messages/overview";
 import type { ProgressCardData } from "@/service/overview";
 import { Card } from "@/comps/ui/Card";
@@ -32,7 +33,7 @@ export const ProgressCards = ({
 							<span className="font-mono text-xl">{card.result.pct}%</span>
 							<ProgressBar
 								value={card.result.pct / 100}
-								label={`${card.label} progress`}
+								label={commonText.progressLabel(card.label)}
 								tone={card.result.pct >= 100 ? "kept" : "primary"}
 							/>
 							<span className="text-muted text-xs">

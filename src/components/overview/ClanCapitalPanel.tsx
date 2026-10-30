@@ -5,6 +5,7 @@ import { useState } from "react";
 import { LuLock } from "react-icons/lu";
 import type { Playthrough } from "@/types/app";
 import { formatNumber } from "@/lib/format";
+import { commonText } from "@/lib/messages/common";
 import { overviewText } from "@/lib/messages/overview";
 import { toPublicImageUrl } from "@/lib/utils/imageHelpers";
 import { capitalHallOf } from "@/service/capital";
@@ -63,7 +64,7 @@ const ZoneCard = ({ zone }: { zone: DistrictCardData }) => {
 						</span>
 						<ProgressBar
 							value={zone.progress.pct / 100}
-							label={`${zone.label} progress`}
+							label={commonText.progressLabel(zone.label)}
 							tone={zone.progress.pct >= 100 ? "kept" : "primary"}
 						/>
 					</>

@@ -3,31 +3,10 @@ import { home } from "clash-of-clans-data";
 import { applyBoost, applyBuilderBoostCost, applyResearchBoostCost, getBuildingUpgradeSteps } from "@/lib/utils/upgradeHelpers";
 import { dropAssignmentsFor } from "./helperAssignments";
 import type { Playthrough } from "@/types/app";
-import type {
-  BoostPercent,
-  BuilderSlotState,
-  BuilderSlots,
-  CompletedUpgrade,
-  FinishMethod,
-  FinishResult,
-  LaneKind,
-  RunningUpgrade,
-  StartBlocker,
-  UpgradeTarget,
-} from "@/types/app/engine";
-import type {
-  BuildingInstance,
-  BuildingRecord,
-  BuilderBaseData,
-  BuildingRecordKey,
-  CraftedDefenseData,
-  HomeVillageData,
-  ResearchKey,
-  TrackedHero,
-  TrackedItem,
-  UpgradeState,
-} from "@/types/app/game";
+import type { BoostPercent, BuilderSlotState, BuilderSlots, CompletedUpgrade, FinishMethod, FinishResult, LaneKind, RunningUpgrade, StartBlocker, UpgradeTarget } from "@/types/app/engine";
+import type { BuildingInstance, BuildingRecord, BuilderBaseData, BuildingRecordKey, CraftedDefenseData, HomeVillageData, ResearchKey, TrackedHero, TrackedItem, UpgradeState } from "@/types/app/game";
 import type { UpgradeStep } from "@/types/app/upgrade";
+import { gameText } from "@/lib/messages/game";
 
 const BUILDING_RECORDS: BuildingRecordKey[] = ["defenses", "armyBuildings", "resourceBuildings", "traps"];
 const BUILDER_HUT = "builders-hut";
@@ -308,8 +287,8 @@ export const laneKindOf = (target: UpgradeTarget): LaneKind => {
 
 export const builderLabelFor = (id: number): string => {
   if (id === BOB_SLOT_ID) return "B.O.B";
-  if (id === GOBLIN_SLOT_ID) return "Goblin Builder";
-  return `Builder ${id}`;
+  if (id === GOBLIN_SLOT_ID) return gameText.places.goblinBuilder;
+  return gameText.places.builder(id);
 };
 
 /**
@@ -331,10 +310,13 @@ const fillSlots = (
 };
 
 export const laneLabelFor = (target: UpgradeTarget, id: number): string => {
-  if (target.kind === "bbTroop") return "Star Laboratory";
-  if (laneKindOf(target) === "bbBuilder") return `Builder ${id}`;
-  if (target.kind === "research") return id === GOBLIN_SLOT_ID ? "Goblin Researcher" : "Laboratory";
-  if (target.kind === "pet") return "Pet House";
+  if (target.kind === "bbTroop") return gameText.places.starLaboratory;
+  if (laneKindOf(target) === "bbBuilder") return gameText.places.builder(id);
+  if (target.kind === "research")
+    return id === GOBLIN_SLOT_ID
+      ? gameText.places.goblinResearcher
+      : gameText.places.laboratory;
+  if (target.kind === "pet") return gameText.places.petHouse;
   return builderLabelFor(id);
 };
 
@@ -344,7 +326,10 @@ export const researchSlots = (village: Playthrough, goblinResearchEnabled: boole
   return fillSlots(
     slotIds.map((id) => ({
       id,
-      label: id === GOBLIN_SLOT_ID ? "Goblin Researcher" : "Laboratory",
+      label:
+        id === GOBLIN_SLOT_ID
+          ? gameText.places.goblinResearcher
+          : gameText.places.laboratory,
       kind: id === GOBLIN_SLOT_ID ? "goblin" : "laboratory",
     })),
     runningResearch(village),
@@ -356,7 +341,11 @@ const BB_SLOT_IDS = [1, 2];
 /** The Builder Base always has two builders. */
 export const bbBuilderSlots = (village: Playthrough): BuilderSlots =>
   fillSlots(
-    BB_SLOT_IDS.map((id) => ({ id, label: `Builder ${id}`, kind: "builderBase" as const })),
+    BB_SLOT_IDS.map((id) => ({
+      id,
+      label: gameText.places.builder(id),
+      kind: "builderBase" as const,
+    })),
     runningBuilderBase(village),
   );
 
@@ -365,12 +354,27 @@ const STAR_LABORATORY_SLOT_ID = 1;
 /** The Star Laboratory researches one troop at a time. */
 export const bbResearchSlots = (village: Playthrough): BuilderSlots =>
   fillSlots(
-    [{ id: STAR_LABORATORY_SLOT_ID, label: "Star Laboratory", kind: "starLaboratory" as const }],
+    [
+      {
+        id: STAR_LABORATORY_SLOT_ID,
+        label: gameText.places.starLaboratory,
+        kind: "starLaboratory" as const,
+      },
+    ],
     runningBBTroops(village),
   );
 
 export const petSlots = (village: Playthrough): BuilderSlots =>
-  fillSlots([{ id: PET_HOUSE_SLOT_ID, label: "Pet House", kind: "petHouse" }], runningPets(village));
+  fillSlots(
+    [
+      {
+        id: PET_HOUSE_SLOT_ID,
+        label: gameText.places.petHouse,
+        kind: "petHouse",
+      },
+    ],
+    runningPets(village),
+  );
 
 /**
  * Builders 1 to 5 are the Builder's Huts, 6 is B.O.B and 7 is the Goblin Builder. A slot exists

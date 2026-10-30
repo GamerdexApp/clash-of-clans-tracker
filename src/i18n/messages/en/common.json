@@ -1,0 +1,32 @@
+{
+  "gate": {
+    "title": "No active village",
+    "description": "Choose a village or create one to see this page.",
+    "newVillage": "New village",
+    "chooseVillage": "Choose a village"
+  },
+  "townHallTab": {
+    "title": "Town Hall",
+    "supercharge": "Supercharge",
+    "superchargeDone": "{current} of {max} supercharge tiers unlocked at this Town Hall are done.",
+    "superchargeProgress": "Supercharge progress"
+  },
+  "heroesUnlock": "Heroes unlock with the Hero Hall.",
+  "progressLabel": "{name} progress",
+  "countdownLabel": "{name} countdown",
+  "capitalGold": "Capital Gold",
+  "queue": {
+    "conflict": "Conflict",
+    "level": "Lv {level}",
+    "levelSupercharge": "Lv {level} supercharge",
+    "now": "Now",
+    "itemTitle": "{name} Lv {level}"
+  },
+  "finishDescription": "{name}, Lv {from} to {to}, {method}, {time} {unit}",
+  "lookupError": {
+    "rateLimit": "Please wait {seconds} s before fetching again.",
+    "notFound": "Player {tag} was not found.",
+    "api": "The Supercell API answered {status}.",
+    "network": "The player lookup could not reach the server."
+  }
+}

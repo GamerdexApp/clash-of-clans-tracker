@@ -1,8 +1,11 @@
 import { builder, rankedBattles } from "clash-of-clans-data";
 import rankedBattlesJson from "clash-of-clans-data/data/ranked-battles/ranked-battles.json";
 
-import { RESOURCE_ICONS } from "@/lib/constants/leagueIcons";
 import type { Playthrough } from "@/types/app";
+import { RESOURCE_ICONS } from "@/lib/constants/leagueIcons";
+import { formatNumber } from "@/lib/format";
+import { gameText } from "@/lib/messages/game";
+import { leagueDataText } from "@/lib/messages/leagueData";
 
 type ResourceIcon = keyof typeof RESOURCE_ICONS;
 
@@ -51,11 +54,27 @@ const lootByTownHall = (rankedBattlesJson as unknown as { lootByTownHall: Record
 const lootLines = (loot: Loot): LeagueLine[] => [
   ...(loot.goldAndElixir != null
     ? [
-        { label: "Gold", value: loot.goldAndElixir, icon: "gold" as const },
-        { label: "Elixir", value: loot.goldAndElixir, icon: "elixir" as const },
+        {
+          label: gameText.resources.gold,
+          value: loot.goldAndElixir,
+          icon: "gold" as const,
+        },
+        {
+          label: gameText.resources.elixir,
+          value: loot.goldAndElixir,
+          icon: "elixir" as const,
+        },
       ]
     : []),
-  ...(loot.darkElixir ? [{ label: "Dark Elixir", value: loot.darkElixir, icon: "darkElixir" as const }] : []),
+  ...(loot.darkElixir
+    ? [
+        {
+          label: gameText.resources.darkElixir,
+          value: loot.darkElixir,
+          icon: "darkElixir" as const,
+        },
+      ]
+    : []),
 ];
 
 const positive = (value: number | null | undefined): value is number => typeof value === "number" && value > 0;
@@ -73,9 +92,30 @@ export const homeLeagueInfo = (village: Playthrough): LeagueInfo | null => {
 
   const loot = lootByTownHall[String(hv.townHallLevel)]?.find((row) => row.leagueId === league.id);
   const stats: LeagueStat[] = [
-    ...(league.attacksPerWeek != null ? [{ label: "Attacks per week", value: String(league.attacksPerWeek) }] : []),
-    ...(league.percentPromoted != null ? [{ label: "Top % promoted", value: `${league.percentPromoted}%` }] : []),
-    ...(league.percentDemoted != null ? [{ label: "Bottom % demoted", value: `${league.percentDemoted}%` }] : []),
+    ...(league.attacksPerWeek != null
+      ? [
+          {
+            label: leagueDataText.stats.attacksPerWeek,
+            value: String(league.attacksPerWeek),
+          },
+        ]
+      : []),
+    ...(league.percentPromoted != null
+      ? [
+          {
+            label: leagueDataText.stats.promoted,
+            value: `${league.percentPromoted}%`,
+          },
+        ]
+      : []),
+    ...(league.percentDemoted != null
+      ? [
+          {
+            label: leagueDataText.stats.demoted,
+            value: `${league.percentDemoted}%`,
+          },
+        ]
+      : []),
   ];
 
   if (!loot) return { kind: "home", name: league.name, image: league.image, stats, sections: [], battle: [], noData: true };
@@ -89,15 +129,45 @@ export const homeLeagueInfo = (village: Playthrough): LeagueInfo | null => {
     noData: false,
     battle: [],
     sections: [
-      { title: "Max available loot", lines: lootLines(loot.maxAvailableLoot) },
-      { title: "Max league bonus", lines: lootLines(loot.maxLeagueBonus) },
       {
-        title: "Weekly star bonus",
+        title: leagueDataText.sections.maxLoot,
+        lines: lootLines(loot.maxAvailableLoot),
+      },
+      {
+        title: leagueDataText.sections.leagueBonus,
+        lines: lootLines(loot.maxLeagueBonus),
+      },
+      {
+        title: leagueDataText.sections.weeklyStarBonus,
         lines: [
           ...lootLines(star),
-          ...(positive(star.shinyOre) ? [{ label: "Shiny Ore", value: star.shinyOre, icon: "shinyOre" as const }] : []),
-          ...(positive(star.glowyOre) ? [{ label: "Glowy Ore", value: star.glowyOre, icon: "glowyOre" as const }] : []),
-          ...(positive(star.starryOre) ? [{ label: "Starry Ore", value: star.starryOre, icon: "starryOre" as const }] : []),
+          ...(positive(star.shinyOre)
+            ? [
+                {
+                  label: gameText.resources.shinyOre,
+                  value: star.shinyOre,
+                  icon: "shinyOre" as const,
+                },
+              ]
+            : []),
+          ...(positive(star.glowyOre)
+            ? [
+                {
+                  label: gameText.resources.glowyOre,
+                  value: star.glowyOre,
+                  icon: "glowyOre" as const,
+                },
+              ]
+            : []),
+          ...(positive(star.starryOre)
+            ? [
+                {
+                  label: gameText.resources.starryOre,
+                  value: star.starryOre,
+                  icon: "starryOre" as const,
+                },
+              ]
+            : []),
         ],
       },
     ].filter((section) => section.lines.length > 0),
@@ -123,23 +193,43 @@ export const builderLeagueInfo = (village: Playthrough): LeagueInfo | null => {
     league.trophyMin === undefined
       ? null
       : league.trophyMax == null
-        ? `${league.trophyMin.toLocaleString()}+`
-        : `${league.trophyMin.toLocaleString()} to ${league.trophyMax.toLocaleString()}`;
+        ? leagueDataText.rangeOpen(formatNumber(league.trophyMin))
+        : leagueDataText.range(
+            formatNumber(league.trophyMin),
+            formatNumber(league.trophyMax),
+          );
   return {
     kind: "builder",
     name: league.name,
     image: league.image,
     stats: [
-      ...(range ? [{ label: "Trophy range", value: range }] : []),
-      ...(league.starBonus ? [{ label: "Stars for the star bonus", value: String(league.starBonus.starsRequired) }] : []),
+      ...(range
+        ? [{ label: leagueDataText.stats.trophyRange, value: range }]
+        : []),
+      ...(league.starBonus
+        ? [
+            {
+              label: leagueDataText.stats.starsForBonus,
+              value: String(league.starBonus.starsRequired),
+            },
+          ]
+        : []),
     ],
     sections: league.starBonus
       ? [
           {
-            title: "Star bonus reward",
+            title: leagueDataText.sections.starBonusReward,
             lines: [
-              { label: "Builder Gold", value: league.starBonus.reward, icon: "goldB" },
-              { label: "Builder Elixir", value: league.starBonus.reward, icon: "elixirB" },
+              {
+                label: gameText.resources.builderGold,
+                value: league.starBonus.reward,
+                icon: "goldB",
+              },
+              {
+                label: gameText.resources.builderElixir,
+                value: league.starBonus.reward,
+                icon: "elixirB",
+              },
             ],
           },
         ]

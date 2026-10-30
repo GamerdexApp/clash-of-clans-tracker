@@ -3,6 +3,7 @@
 import Image from "next/image";
 
 import { builderText } from "@/lib/messages/builder";
+import { commonText } from "@/lib/messages/common";
 import { getHeroesAtTH } from "@/lib/utils/massEditHelpers";
 import { readLevel } from "@/service/upgradeEngine";
 import { upgradeSteps } from "@/service/upgradeSteps";
@@ -20,7 +21,7 @@ export const HeroesTab = ({ village, hideMax, ...handlers }: TabProps) => {
 		readLevel(village, targetFor(name)) >= maxLevel && upgradeSteps(village, targetFor(name)).length === 0;
 
 	if (heroes.length === 0) {
-		return <EmptyState title={builderText.empty.title} description="Heroes unlock with the Hero Hall." />;
+		return <EmptyState title={builderText.empty.title} description={commonText.heroesUnlock} />;
 	}
 	const shown = hideMax ? heroes.filter((hero) => !isMaxed(hero.name, hero.maxLevel)) : heroes;
 	if (shown.length === 0) return <EmptyState title={builderText.empty.title} description={builderText.empty.allMax} />;

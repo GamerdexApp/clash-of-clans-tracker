@@ -72,10 +72,22 @@ const Header = ({ returning, ready }: { returning: boolean; ready: boolean }) =>
 				<Link href="/settings" className={linkClasses}>
 					{text.header.settings}
 				</Link>
-				<a href={GITHUB_URL} target="_blank" rel="noopener noreferrer" className={linkClasses}>
+				<a
+					href={GITHUB_URL}
+					target="_blank"
+					rel="noopener noreferrer"
+					className={linkClasses}
+				>
+					{/* i18n-ignore */}
 					GitHub
 				</a>
-				<a href={DISCORD_URL} target="_blank" rel="noopener noreferrer" className={linkClasses}>
+				<a
+					href={DISCORD_URL}
+					target="_blank"
+					rel="noopener noreferrer"
+					className={linkClasses}
+				>
+					{/* i18n-ignore */}
 					Discord
 				</a>
 			</nav>

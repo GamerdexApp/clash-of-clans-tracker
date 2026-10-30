@@ -3,6 +3,7 @@
 import { LuArrowDown, LuArrowUp, LuPlus, LuTrash2 } from "react-icons/lu";
 
 import { formatCountdown, formatDuration, formatNumber } from "@/lib/format";
+import { commonText } from "@/lib/messages/common";
 import { queueText } from "@/lib/messages/queue";
 import { queueStartBlocker, stepForItem, targetForItem } from "@/service/upgradeQueue";
 import { boostedStep } from "@/service/upgradeEngine";
@@ -43,8 +44,13 @@ export const LaneCard = ({ lane: kind, village, schedule: lane, lanes, conflicts
 			{lane.active ? (
 				<div className="bg-bg flex flex-col gap-1.5 rounded-md p-3">
 					<span className="font-medium">{lane.active.label}</span>
-					<span className="font-mono text-sm">{formatCountdown(lane.active.endsAt.getTime() - now)}</span>
-					<ProgressBar value={progress} label={`${lane.slot.label} progress`} />
+					<span className="font-mono text-sm">
+						{formatCountdown(lane.active.endsAt.getTime() - now)}
+					</span>
+					<ProgressBar
+						value={progress}
+						label={commonText.progressLabel(lane.slot.label)}
+					/>
 				</div>
 			) : (
 				<p className="text-muted">{text.idle}</p>
@@ -72,7 +78,9 @@ export const LaneCard = ({ lane: kind, village, schedule: lane, lanes, conflicts
 											{formatNumber(cost)} {item.costResource}
 										</span>
 									</div>
-									{conflict && <Badge tone="warn">Conflict</Badge>}
+									{conflict && (
+										<Badge tone="warn">{commonText.queue.conflict}</Badge>
+									)}
 								</div>
 								{conflict && (
 									<p className="text-danger text-xs font-medium">

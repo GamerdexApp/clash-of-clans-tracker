@@ -1,6 +1,7 @@
 "use client";
 
 import { formatCountdown } from "@/lib/format";
+import { commonText } from "@/lib/messages/common";
 import { upgradeText } from "@/lib/messages/upgrades";
 import { freeBuilderCount, readLevel } from "@/service/upgradeEngine";
 import { targetName } from "@/service/upgradeLabels";
@@ -42,8 +43,13 @@ const Tile = ({
 		{running ? (
 			<>
 				<span className="truncate font-medium">{taskLine(village, running)}</span>
-				<span className="font-mono text-xs">{formatCountdown(Date.parse(running.upgrade.finishesAt) - now)}</span>
-				<ProgressBar value={progressOf(running, now)} label={`${label} progress`} />
+				<span className="font-mono text-xs">
+					{formatCountdown(Date.parse(running.upgrade.finishesAt) - now)}
+				</span>
+				<ProgressBar
+					value={progressOf(running, now)}
+					label={commonText.progressLabel(label)}
+				/>
 			</>
 		) : (
 			<span className="text-muted">{text.idle}</span>

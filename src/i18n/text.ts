@@ -14,6 +14,7 @@ import type { Messages } from "./locales";
  * - `number`: the number is formatted with the number format of the player.
  * - `plural`: the count chooses the plural form, and `amount` holds the formatted number.
  * - `list`: a list of names, joined with commas, plus `has<Name>` to say whether it has any.
+ * - `present`: text that may be empty, plus `has<Name>` to say whether it has any.
  * - `plusOne`: a position that starts at 0 and is shown from 1.
  * `meta.arrays` lists the paths that are lists. A list is stored as `item1`, `item2` and so on.
  */
@@ -78,6 +79,9 @@ const valuesFor = (parameters: string[], args: unknown[]) => {
       const list = Array.isArray(arg) ? arg : [];
       values[name] = list.join(", ");
       values[`has${capitalized(name)}`] = list.length > 0 ? "true" : "false";
+    } else if (kind === "present") {
+      values[name] = String(arg ?? "");
+      values[`has${capitalized(name)}`] = arg ? "true" : "false";
     } else if (kind === "plusOne") values[name] = Number(arg) + 1;
     else values[name] = arg as string | number;
   });

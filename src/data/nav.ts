@@ -15,6 +15,7 @@ import {
   LuTicket,
   LuWrench,
 } from "react-icons/lu";
+import { navText } from "@/lib/messages/nav";
 
 export const APP_NAME = "Clash of Clans Tracker";
 export const HOME_HREF = "/";
@@ -61,57 +62,184 @@ export const navGroups: NavGroup[] = [
   {
     id: null,
     items: [
-      { id: "overview", label: "Overview", href: "/overview", icon: LuLayoutDashboard },
-      { id: "achievements", label: "Achievements", href: "/achievements", icon: LuAward },
+      {
+        id: "overview",
+        get label() {
+          return navText.items.overview;
+        },
+        href: "/overview",
+        icon: LuLayoutDashboard,
+      },
+      {
+        id: "achievements",
+        get label() {
+          return navText.items.achievements;
+        },
+        href: "/achievements",
+        icon: LuAward,
+      },
     ],
   },
   {
     id: "homeVillage",
-    label: "Home Village",
+    get label() {
+      return navText.groups.homeVillage;
+    },
     items: [
-      { id: "builder", label: "Builder", href: "/builder", icon: LuHammer },
-      { id: "research", label: "Research", href: "/research", icon: LuFlaskConical },
-      { id: "pets", label: "Pets", href: "/pets", icon: LuDog },
-      { id: "equipment", label: "Equipment", href: "/equipment", icon: LuShield },
-      { id: "walls", label: "Walls", href: "/walls", icon: LuLayers },
+      {
+        id: "builder",
+        get label() {
+          return navText.items.builder;
+        },
+        href: "/builder",
+        icon: LuHammer,
+      },
+      {
+        id: "research",
+        get label() {
+          return navText.items.research;
+        },
+        href: "/research",
+        icon: LuFlaskConical,
+      },
+      {
+        id: "pets",
+        get label() {
+          return navText.items.pets;
+        },
+        href: "/pets",
+        icon: LuDog,
+      },
+      {
+        id: "equipment",
+        get label() {
+          return navText.items.equipment;
+        },
+        href: "/equipment",
+        icon: LuShield,
+      },
+      {
+        id: "walls",
+        get label() {
+          return navText.items.walls;
+        },
+        href: "/walls",
+        icon: LuLayers,
+      },
     ],
   },
   {
     id: "builderBase",
-    label: "Builder Base",
+    get label() {
+      return navText.groups.builderBase;
+    },
     items: [
-      { id: "builderBaseUpgrades", label: "Upgrades", href: "/builder-base/upgrades", icon: LuHammer, alsoActiveFor: ["/builder-base/queue"] },
-      { id: "builderBaseTroops", label: "Troops", href: "/builder-base/troops", icon: LuSwords },
-      { id: "builderBaseWalls", label: "Walls", href: "/builder-base/walls", icon: LuLayers },
+      {
+        id: "builderBaseUpgrades",
+        get label() {
+          return navText.items.builderBaseUpgrades;
+        },
+        href: "/builder-base/upgrades",
+        icon: LuHammer,
+        alsoActiveFor: ["/builder-base/queue"],
+      },
+      {
+        id: "builderBaseTroops",
+        get label() {
+          return navText.items.builderBaseTroops;
+        },
+        href: "/builder-base/troops",
+        icon: LuSwords,
+      },
+      {
+        id: "builderBaseWalls",
+        get label() {
+          return navText.items.builderBaseWalls;
+        },
+        href: "/builder-base/walls",
+        icon: LuLayers,
+      },
     ],
   },
   {
     id: "clanCapital",
-    label: "Clan Capital",
+    get label() {
+      return navText.groups.clanCapital;
+    },
     items: [
-      { id: "districts", label: "Districts", href: "/clan-capital/districts", icon: LuCastle },
-      { id: "capitalTroops", label: "Troops and spells", href: "/clan-capital/troops", icon: LuSwords },
+      {
+        id: "districts",
+        get label() {
+          return navText.items.districts;
+        },
+        href: "/clan-capital/districts",
+        icon: LuCastle,
+      },
+      {
+        id: "capitalTroops",
+        get label() {
+          return navText.items.capitalTroops;
+        },
+        href: "/clan-capital/troops",
+        icon: LuSwords,
+      },
     ],
   },
   {
     id: "dailies",
-    label: "Dailies",
+    get label() {
+      return navText.groups.dailies;
+    },
     items: [
-      { id: "forge", label: "Forge", href: "/forge", icon: LuFlame },
-      { id: "helpers", label: "Helpers", href: "/helpers", icon: LuHandHelping },
-      { id: "seasonPass", label: "Season Pass", href: "/season-pass", icon: LuTicket },
+      {
+        id: "forge",
+        get label() {
+          return navText.items.forge;
+        },
+        href: "/forge",
+        icon: LuFlame,
+      },
+      {
+        id: "helpers",
+        get label() {
+          return navText.items.helpers;
+        },
+        href: "/helpers",
+        icon: LuHandHelping,
+      },
+      {
+        id: "seasonPass",
+        get label() {
+          return navText.items.seasonPass;
+        },
+        href: "/season-pass",
+        icon: LuTicket,
+      },
     ],
   },
   {
     id: "tools",
-    label: "Tools",
-    items: [{ id: "massEdit", label: "Mass edit", href: "/mass-edit", icon: LuWrench }],
+    get label() {
+      return navText.groups.tools;
+    },
+    items: [
+      {
+        id: "massEdit",
+        get label() {
+          return navText.items.massEdit;
+        },
+        href: "/mass-edit",
+        icon: LuWrench,
+      },
+    ],
   },
 ];
 
 export const settingsNavItem: NavItem = {
   id: "settings",
-  label: "Settings",
+  get label() {
+    return navText.items.settings;
+  },
   href: "/settings",
   icon: LuSettings,
 };
@@ -122,10 +250,8 @@ const allItems = allNavItems;
 export const isNavItemActive = (item: NavItem, pathname: string) =>
   [item.href, ...(item.alsoActiveFor ?? [])].some((href) => pathname === href || pathname.startsWith(`${href}/`));
 
-const PAGES_OUTSIDE_SIDEBAR: Record<string, string> = { [VILLAGES_HREF]: "My Villages" };
-
 export const getPageTitle = (pathname: string) =>
   allItems.find((item) => isNavItemActive(item, pathname))?.label ??
-  PAGES_OUTSIDE_SIDEBAR[pathname] ??
+  (pathname === VILLAGES_HREF ? navText.villages : undefined) ??
   APP_NAME;
 

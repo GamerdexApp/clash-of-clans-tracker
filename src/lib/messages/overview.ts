@@ -119,7 +119,7 @@ export const overviewText = messages<{
 }>("overview", {
   fns: {
     subline: ["name"],
-    "header.clanLevel": ["level", "role"],
+    "header.clanLevel": ["level", "role:present"],
     "header.ringCaption": ["stars", "maxStars"],
     "header.townHall": ["level"],
     "dailies.requires": ["requirement"],
@@ -140,7 +140,7 @@ export const overviewText = messages<{
     "home.townHall": ["level"],
     "home.daysAt": ["level"],
     "home.cards.locked": ["requirement"],
-    "home.tile": ["name", "level", "max", "requirement"],
+    "home.tile": ["name", "level", "max", "requirement:present"],
     "home.heroLocked": ["requirement"],
   },
   arrays: [],

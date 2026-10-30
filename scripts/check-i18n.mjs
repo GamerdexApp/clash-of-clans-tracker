@@ -1,5 +1,6 @@
 // Lists user visible text that is written in the code instead of the language catalog.
 // Usage: node scripts/check-i18n.mjs [path ...]. Exit code 1 when it finds any.
+// Static `metadata` exports stay English by decision.
 // A line that must stay as it is (a code word, a game name) ends with `// i18n-ignore`.
 import { readdirSync, readFileSync, statSync } from "node:fs";
 import { join, relative } from "node:path";
@@ -91,7 +92,14 @@ for (const file of files) {
     true,
     file.endsWith("x") ? ts.ScriptKind.TSX : ts.ScriptKind.TS,
   );
+  const insideMetadata = (node) => {
+    for (let up = node.parent; up; up = up.parent) {
+      if (ts.isVariableDeclaration(up) && up.name.getText() === "metadata") return true;
+    }
+    return false;
+  };
   const report = (node, text, kind) => {
+    if (insideMetadata(node)) return;
     const line = sf.getLineAndCharacterOfPosition(node.getStart()).line;
     if (
       /i18n-ignore/.test(lines[line]) ||

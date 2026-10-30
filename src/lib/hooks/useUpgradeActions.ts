@@ -1,16 +1,10 @@
 import { usePlaythrough } from "@/lib/contexts/PlaythroughContext";
+import { formatDuration } from "@/lib/format";
+import { upgradeLabelText } from "@/lib/messages/upgradeLabel";
 import { goldPassBoosts } from "@/service/goldPass";
-import {
-  cancelUpgrade,
-  finishUpgrade,
-  laneKindOf,
-  readLevel,
-  setLevel,
-  startUpgrade,
-} from "@/service/upgradeEngine";
+import { cancelUpgrade, finishUpgrade, laneKindOf, readLevel, setLevel, startUpgrade } from "@/service/upgradeEngine";
 import { targetName } from "@/service/upgradeLabels";
 import { useToast } from "@/comps/ui/Toast";
-import { formatDuration } from "@/lib/format";
 import type { Playthrough } from "@/types/app";
 import type { BoostPercent, FinishMethod, UpgradeTarget } from "@/types/app/engine";
 import type { UpgradeStep } from "@/types/app/upgrade";
@@ -46,7 +40,7 @@ export const useUpgradeActions = (village: Playthrough): UpgradeActions => {
     }));
   };
   const undoAction = (previous: NonNullable<ReturnType<typeof apply>>) => ({
-    label: "Undo",
+    label: upgradeLabelText.toast.undo,
     onAction: () => updateData(() => previous),
   });
 
@@ -60,7 +54,11 @@ export const useUpgradeActions = (village: Playthrough): UpgradeActions => {
       if (!previous) return;
       showToast({
         variant: "success",
-        title: `${targetName(target)} Lv ${fromLevel} to ${step.level} started`,
+        title: upgradeLabelText.toast.started(
+          targetName(target),
+          fromLevel,
+          step.level,
+        ),
       });
     },
 
@@ -75,8 +73,14 @@ export const useUpgradeActions = (village: Playthrough): UpgradeActions => {
       if (!previous) return;
       showToast({
         variant: "success",
-        title: `${targetName(target)} finished at Lv ${fromLevel + 1}`,
-        message: savedMs > 0 ? `${formatDuration(savedMs)} added to time saved.` : undefined,
+        title: upgradeLabelText.toast.finished(
+          targetName(target),
+          fromLevel + 1,
+        ),
+        message:
+          savedMs > 0
+            ? upgradeLabelText.toast.timeSaved(formatDuration(savedMs))
+            : undefined,
         action: undoAction(previous),
       });
     },
@@ -86,7 +90,11 @@ export const useUpgradeActions = (village: Playthrough): UpgradeActions => {
       if (!previous) return;
       showToast({
         variant: "success",
-        title: `Cancelled ${targetName(target)} Lv ${fromLevel} to ${fromLevel + 1}`,
+        title: upgradeLabelText.toast.cancelled(
+          targetName(target),
+          fromLevel,
+          fromLevel + 1,
+        ),
         action: undoAction(previous),
       });
     },
@@ -97,7 +105,11 @@ export const useUpgradeActions = (village: Playthrough): UpgradeActions => {
       if (!previous) return;
       showToast({
         variant: "info",
-        title: `${targetName(target)} Lv ${fromLevel} to ${level}`,
+        title: upgradeLabelText.toast.levelChanged(
+          targetName(target),
+          fromLevel,
+          level,
+        ),
         action: undoAction(previous),
       });
     },

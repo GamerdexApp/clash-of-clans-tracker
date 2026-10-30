@@ -35,16 +35,26 @@ const getClientIp = async (): Promise<string> => {
   }
 };
 
+export type PlayerLookupError =
+  | { kind: "rateLimit"; seconds: number }
+  | { kind: "unavailable" }
+  | { kind: "notFound"; tag: string }
+  | { kind: "api"; status: number }
+  | { kind: "network" };
+
 export const fetchPlayerByTag = async (
-  tag: string
-): Promise<{ success: true; player: PlayerApiResponse } | { success: false; error: string }> => {
+  tag: string,
+): Promise<
+  | { success: true; player: PlayerApiResponse }
+  | { success: false; error: PlayerLookupError }
+> => {
   const ip = await getClientIp();
   const { allowed, secondsRemaining } = getRateLimitResult(ip);
 
   if (!allowed) {
     return {
       success: false,
-      error: `Please wait ${secondsRemaining}s before fetching again.`,
+      error: { kind: "rateLimit", seconds: secondsRemaining },
     };
   }
 
@@ -53,10 +63,7 @@ export const fetchPlayerByTag = async (
   if (!token) {
     // Don't consume the rate limit slot for a config error
     _lastCall.delete(ip);
-    return {
-      success: false,
-      error: "COC_API_TOKEN is not configured. Add it to your .env.local file.",
-    };
+    return { success: false, error: { kind: "unavailable" } };
   }
 
   // Normalise the tag: ensure it starts with #
@@ -71,18 +78,17 @@ export const fetchPlayerByTag = async (
     if (!res.ok) {
       // Don't consume the rate limit slot on API errors so the user can correct and retry
       _lastCall.delete(ip);
-      if (res.status === 404) return { success: false, error: `Player "${normalized}" not found.` };
-      if (res.status === 403) return { success: false, error: "API token is invalid or unauthorised." };
-      return { success: false, error: `API error ${res.status}.` };
+      if (res.status === 404)
+        return { success: false, error: { kind: "notFound", tag: normalized } };
+      if (res.status === 403)
+        return { success: false, error: { kind: "unavailable" } };
+      return { success: false, error: { kind: "api", status: res.status } };
     }
 
     const player = (await res.json()) as PlayerApiResponse;
     return { success: true, player };
   } catch (err: unknown) {
     _lastCall.delete(ip);
-    return {
-      success: false,
-      error: err instanceof Error ? err.message : "Network error fetching player.",
-    };
+    return { success: false, error: { kind: "network" } };
   }
 }

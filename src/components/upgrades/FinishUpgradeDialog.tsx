@@ -3,6 +3,7 @@
 import { useState } from "react";
 
 import { formatCountdown, formatDuration } from "@/lib/format";
+import { commonText } from "@/lib/messages/common";
 import { upgradeText } from "@/lib/messages/upgrades";
 import { getGemCost } from "@/lib/utils/upgradeHelpers";
 import { laneKindOf } from "@/service/upgradeEngine";
@@ -41,7 +42,14 @@ const FinishContent = ({
 			open
 			onClose={onClose}
 			title={text.title}
-			description={`${subject.name}, Lv ${subject.fromLevel} to ${subject.fromLevel + 1}, ${subject.builderLabel}, ${formatCountdown(remaining)} ${text.left}`}
+			description={commonText.finishDescription(
+				subject.name,
+				subject.fromLevel,
+				subject.fromLevel + 1,
+				subject.builderLabel,
+				formatCountdown(remaining),
+				text.left
+			)}
 			footer={
 				<>
 					<Button onClick={onClose}>{text.keep}</Button>

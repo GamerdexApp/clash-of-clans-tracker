@@ -1,9 +1,10 @@
 "use client";
 
+import type { QueueTimelineProps } from "@/types/components/upgradeQueue";
+import { commonText } from "@/lib/messages/common";
 import { queueText } from "@/lib/messages/queue";
 import { SegmentedControl } from "@/comps/ui/SegmentedControl";
 import { Card } from "@/comps/ui/Card";
-import type { QueueTimelineProps } from "@/types/components/upgradeQueue";
 
 const text = queueText.timeline;
 const ZOOMS = ["3", "7", "14", "30", "90"] as const;
@@ -64,7 +65,10 @@ export const QueueTimeline = ({ schedule, now, zoomDays, onZoomChange }: QueueTi
 								return (
 									<span
 										key={item.id}
-										title={`${item.name} Lv ${item.targetLevel}`}
+										title={commonText.queue.itemTitle(
+											item.name,
+											item.targetLevel
+										)}
 										className={`absolute inset-y-1 flex items-center overflow-hidden rounded px-2 text-xs ${
 											conflicting ? "bg-surface border-danger text-danger border-[1.5px]" : "bg-tint border-primary text-ink border-[1.5px]"
 										}`}

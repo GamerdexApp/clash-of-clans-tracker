@@ -5,6 +5,7 @@ import { useMemo, useState } from "react";
 import { LuSearch } from "react-icons/lu";
 
 import { formatDuration, formatNumber } from "@/lib/format";
+import { commonText } from "@/lib/messages/common";
 import { queueText } from "@/lib/messages/queue";
 import { availableFor, queueItemForGroup } from "@/service/queueAvailability";
 import { boostedStep } from "@/service/upgradeEngine";
@@ -50,8 +51,9 @@ const GroupCard = ({ lane, group, boostPercent, onAdd }: GroupCardProps) => {
 						<li key={step.level} className="border-line flex flex-wrap items-center justify-between gap-2 border-t-[1.5px] pt-1.5 first:border-t-0 first:pt-0">
 							<span className="flex flex-col">
 								<span className="font-mono text-sm font-medium">
-									Lv {step.level}
-									{step.isSupercharge ? " supercharge" : ""}
+									{step.isSupercharge
+										? commonText.queue.levelSupercharge(step.level)
+										: commonText.queue.level(step.level)}
 								</span>
 								<span className="text-muted text-xs">
 									{formatDuration(boosted.durationMs)}, {formatNumber(boosted.cost)} {step.costResource}

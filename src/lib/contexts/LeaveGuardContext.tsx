@@ -142,7 +142,7 @@ export const LeaveGuardProvider = ({ children }: { children: ReactNode }) => {
 };
 
 export const useLeaveGuard = (): LeaveGuardValue => {
-  const context = useContext(LeaveGuardContext);
-  if (!context) throw new Error("useLeaveGuard must be used within a LeaveGuardProvider");
-  return context;
+	const context = useContext(LeaveGuardContext);
+	if (!context) throw new Error("useLeaveGuard must be used within a LeaveGuardProvider"); // i18n-ignore
+	return context;
 };

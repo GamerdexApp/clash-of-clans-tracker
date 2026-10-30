@@ -1,55 +1,15 @@
-import {
-  capitalArmy,
-  capitalHallOf,
-  capitalZones,
-  changeCapitalHall,
-  changeZoneHall,
-  groupBuildings,
-  maxDistrictHall,
-  placedWalls as zonePlacedWalls,
-  setArmyLevel,
-  setContributions,
-  setWallCount as setZoneWallCount,
-  wallCountAt as zoneWallCount,
-  zoneData,
-  zoneHall,
-  zoneLabel,
-  zoneUnlockLevel,
-  zoneWalls,
-} from "./capital";
-import { builderLeagues, setBestTrophies, setLeague, setTrophies } from "./builderBaseProfile";
-import { builderWalls, homeWalls } from "./walls";
-import { setEquipmentLevel, equipmentLevel } from "./equipment";
-import { readLevel, readUpgrade, setLevel } from "./upgradeEngine";
-import {
-  getAllEquipment,
-  getArmyBuildingsAtTH,
-  getCraftedDefenses,
-  getDefensesAtTH,
-  getGuardiansAtTH,
-  getHeroesAtTH,
-  getOtherBuildingsAtTH,
-  getPetsAtTH,
-  getResourceBuildingsAtTH,
-  getSiegeMachinesAtTH,
-  getSpellsAtTH,
-  getTrapsAtTH,
-  getTroopsAtTH,
-  type BuildingEditData,
-  type ItemEditData,
-} from "@/lib/utils/massEditHelpers";
 import type { Playthrough } from "@/types/app";
-import {
-  getBuilderArmyBuildingsAtBH,
-  getBuilderDefensesAtBH,
-  getBuilderHeroesAtBH,
-  getBuilderResourceBuildingsAtBH,
-  getBuilderTrapsAtBH,
-  getBuilderTroopsAtBH,
-} from "@/lib/utils/massEditBuilderHelpers";
 import type { ZoneId } from "@/types/app/capital";
 import type { UpgradeTarget } from "@/types/app/engine";
 import type { BuildingRecordKey, ResearchKey } from "@/types/app/game";
+import { massEditDataText } from "@/lib/messages/massEditData";
+import { getBuilderArmyBuildingsAtBH, getBuilderDefensesAtBH, getBuilderHeroesAtBH, getBuilderResourceBuildingsAtBH, getBuilderTrapsAtBH, getBuilderTroopsAtBH } from "@/lib/utils/massEditBuilderHelpers";
+import { type BuildingEditData, getAllEquipment, getArmyBuildingsAtTH, getCraftedDefenses, getDefensesAtTH, getGuardiansAtTH, getHeroesAtTH, getOtherBuildingsAtTH, getPetsAtTH, getResourceBuildingsAtTH, getSiegeMachinesAtTH, getSpellsAtTH, getTrapsAtTH, getTroopsAtTH, type ItemEditData } from "@/lib/utils/massEditHelpers";
+import { builderLeagues, setBestTrophies, setLeague, setTrophies } from "./builderBaseProfile";
+import { capitalArmy, capitalHallOf, capitalZones, changeCapitalHall, changeZoneHall, groupBuildings, maxDistrictHall, placedWalls as zonePlacedWalls, setArmyLevel, setContributions, setWallCount as setZoneWallCount, wallCountAt as zoneWallCount, zoneData, zoneHall, zoneLabel, zoneUnlockLevel, zoneWalls } from "./capital";
+import { builderWalls, homeWalls } from "./walls";
+import { setEquipmentLevel, equipmentLevel } from "./equipment";
+import { readLevel, readUpgrade, setLevel } from "./upgradeEngine";
 
 export type MassScope = "home" | "builder" | "capital";
 
@@ -139,7 +99,13 @@ const buildingRows = (
       if (building.superchargeTiers === 0) return row;
       const supercharge = makeRow(
         { kind: "supercharge", target },
-        { label: `${label} supercharge`, imageUrl: building.imageUrl, max: building.superchargeTiers, group: building.name, section },
+        {
+          label: massEditDataText.superchargeRow(label),
+          imageUrl: building.imageUrl,
+          max: building.superchargeTiers,
+          group: building.name,
+          section,
+        },
       );
       return { ...row, supercharge: { row: supercharge, requiredLevel: building.maxLevel } };
     }),
@@ -152,9 +118,18 @@ const researchRows = (items: ItemEditData[], record: ResearchKey) =>
   itemRows(items, (name) => ({ kind: "research", record, name }));
 
 const wallRows = (side: "home" | "builder", hall: number): MassRow[] =>
-  wallRules(side).wallLevelsAt(hall).map((level) =>
-    makeRow({ kind: "wall", side, level: level.level }, { label: `Level ${level.level}`, imageUrl: level.imageUrl, max: 0 }),
-  );
+  wallRules(side)
+    .wallLevelsAt(hall)
+    .map((level) =>
+      makeRow(
+        { kind: "wall", side, level: level.level },
+        {
+          label: massEditDataText.level(level.level),
+          imageUrl: level.imageUrl,
+          max: 0,
+        },
+      ),
+    );
 
 /** The thirteen Home Village categories for a Town Hall. `townHall` can differ from the village for the Set to max for hall action. */
 export const homeCategories = (village: Playthrough, townHall = village.data.homeVillage.townHallLevel): MassCategory[] => {
@@ -163,20 +138,34 @@ export const homeCategories = (village: Playthrough, townHall = village.data.hom
   const crafted = townHall >= CRAFTED_TOWN_HALL ? getCraftedDefenses() : [];
 
   return [
-    { id: "defenses", label: "Defenses", rows: buildingRows(getDefensesAtTH(townHall), "defenses") },
+    {
+      id: "defenses",
+      label: massEditDataText.categories.defenses,
+      rows: buildingRows(getDefensesAtTH(townHall), "defenses"),
+    },
     {
       id: "army",
-      label: "Army",
+      label: massEditDataText.categories.army,
       rows: [
         ...buildingRows(getArmyBuildingsAtTH(townHall), "armyBuildings", "Army buildings"),
         ...buildingRows(getOtherBuildingsAtTH(townHall), "armyBuildings", "Other buildings"),
       ],
     },
-    { id: "resources", label: "Resources", rows: buildingRows(getResourceBuildingsAtTH(townHall), "resourceBuildings") },
+    {
+      id: "resources",
+      label: massEditDataText.categories.resources,
+      rows: buildingRows(
+        getResourceBuildingsAtTH(townHall),
+        "resourceBuildings",
+      ),
+    },
     {
       id: "crafted",
-      label: "Crafted Defenses",
-      requirement: townHall >= CRAFTED_TOWN_HALL ? undefined : `Town Hall ${CRAFTED_TOWN_HALL}`,
+      label: massEditDataText.categories.crafted,
+      requirement:
+        townHall >= CRAFTED_TOWN_HALL
+          ? undefined
+          : `Town Hall ${CRAFTED_TOWN_HALL}`,
       rows: crafted.flatMap((defense) =>
         defense.modules.map((module, moduleIndex) => {
           const target: UpgradeTarget = { kind: "crafted", defenseId: defense.id, moduleIndex };
@@ -194,32 +183,52 @@ export const homeCategories = (village: Playthrough, townHall = village.data.hom
         }),
       ),
     },
-    { id: "traps", label: "Traps", rows: buildingRows(getTrapsAtTH(townHall), "traps") },
-    { id: "troops", label: "Troops", rows: researchRows(getTroopsAtTH(townHall), "troops") },
-    { id: "spells", label: "Spells", rows: researchRows(getSpellsAtTH(townHall), "spells") },
-    { id: "siege", label: "Siege", rows: researchRows(getSiegeMachinesAtTH(townHall), "siegeMachines") },
+    {
+      id: "traps",
+      label: massEditDataText.categories.traps,
+      rows: buildingRows(getTrapsAtTH(townHall), "traps"),
+    },
+    {
+      id: "troops",
+      label: massEditDataText.categories.troops,
+      rows: researchRows(getTroopsAtTH(townHall), "troops"),
+    },
+    {
+      id: "spells",
+      label: massEditDataText.categories.spells,
+      rows: researchRows(getSpellsAtTH(townHall), "spells"),
+    },
+    {
+      id: "siege",
+      label: massEditDataText.categories.siege,
+      rows: researchRows(getSiegeMachinesAtTH(townHall), "siegeMachines"),
+    },
     {
       id: "pets",
-      label: "Pets",
-      requirement: townHall >= PETS_TOWN_HALL ? undefined : `Town Hall ${PETS_TOWN_HALL}`,
+      label: massEditDataText.categories.pets,
+      requirement:
+        townHall >= PETS_TOWN_HALL ? undefined : `Town Hall ${PETS_TOWN_HALL}`,
       rows: itemRows(getPetsAtTH(townHall), (name) => ({ kind: "pet", name })),
     },
     {
       id: "guardians",
-      label: "Guardians",
-      requirement: townHall >= CRAFTED_TOWN_HALL ? undefined : `Town Hall ${CRAFTED_TOWN_HALL}`,
+      label: massEditDataText.categories.guardians,
+      requirement:
+        townHall >= CRAFTED_TOWN_HALL
+          ? undefined
+          : `Town Hall ${CRAFTED_TOWN_HALL}`,
       rows: buildingRows(getGuardiansAtTH(townHall), "defenses"),
     },
     {
       id: "heroes",
-      label: "Heroes",
+      label: massEditDataText.categories.heroes,
       rows: heroes.map((hero) =>
         makeRow({ kind: "upgrade", target: { kind: "hero", name: hero.name } }, { label: hero.name, imageUrl: hero.imageUrl, max: hero.maxLevel }),
       ),
     },
     {
       id: "equipment",
-      label: "Equipment",
+      label: massEditDataText.categories.equipment,
       rows: getAllEquipment().flatMap((piece) => {
         const hero = heroName(piece.heroId);
         return hero
@@ -227,7 +236,13 @@ export const homeCategories = (village: Playthrough, townHall = village.data.hom
           : [];
       }),
     },
-    { id: "walls", label: "Walls", isWalls: true, side: "home", rows: wallRows("home", townHall) },
+    {
+      id: "walls",
+      label: massEditDataText.categories.walls,
+      isWalls: true,
+      side: "home",
+      rows: wallRows("home", townHall),
+    },
   ];
 };
 
@@ -248,36 +263,79 @@ const bbBuildingRows = (buildings: BuildingEditData[], record: BuildingRecordKey
   );
 
 /** The seven Builder Base categories for a Builder Hall. `builderHall` can differ from the village for the Set to max for hall action. */
-export const builderCategories = (village: Playthrough, builderHall = village.data.builderBase.builderHallLevel): MassCategory[] => [
-  { id: "defenses", label: "Defenses", rows: bbBuildingRows(getBuilderDefensesAtBH(builderHall), "defenses") },
-  { id: "army", label: "Army", rows: bbBuildingRows(getBuilderArmyBuildingsAtBH(builderHall), "armyBuildings") },
-  { id: "resources", label: "Resources", rows: bbBuildingRows(getBuilderResourceBuildingsAtBH(builderHall), "resourceBuildings") },
-  { id: "traps", label: "Traps", rows: bbBuildingRows(getBuilderTrapsAtBH(builderHall), "traps") },
+export const builderCategories = (
+  village: Playthrough,
+  builderHall = village.data.builderBase.builderHallLevel,
+): MassCategory[] => [
+  {
+    id: "defenses",
+    label: massEditDataText.categories.defenses,
+    rows: bbBuildingRows(getBuilderDefensesAtBH(builderHall), "defenses"),
+  },
+  {
+    id: "army",
+    label: massEditDataText.categories.army,
+    rows: bbBuildingRows(
+      getBuilderArmyBuildingsAtBH(builderHall),
+      "armyBuildings",
+    ),
+  },
+  {
+    id: "resources",
+    label: massEditDataText.categories.resources,
+    rows: bbBuildingRows(
+      getBuilderResourceBuildingsAtBH(builderHall),
+      "resourceBuildings",
+    ),
+  },
+  {
+    id: "traps",
+    label: massEditDataText.categories.traps,
+    rows: bbBuildingRows(getBuilderTrapsAtBH(builderHall), "traps"),
+  },
   {
     id: "troops",
-    label: "Troops",
+    label: massEditDataText.categories.troops,
     rows: getBuilderTroopsAtBH(builderHall).map((troop) =>
       makeRow({ kind: "upgrade", target: { kind: "bbTroop", name: troop.name } }, { label: troop.name, imageUrl: troop.imageUrl, max: troop.maxLevel }),
     ),
   },
   {
     id: "heroes",
-    label: "Heroes",
+    label: massEditDataText.categories.heroes,
     rows: getBuilderHeroesAtBH(builderHall).map((hero) =>
       makeRow({ kind: "upgrade", target: { kind: "bbHero", name: hero.name } }, { label: hero.name, imageUrl: hero.imageUrl, max: hero.maxLevel }),
     ),
   },
-  { id: "walls", label: "Walls", isWalls: true, side: "builder", rows: wallRows("builder", builderHall) },
+  {
+    id: "walls",
+    label: massEditDataText.categories.walls,
+    isWalls: true,
+    side: "builder",
+    rows: wallRows("builder", builderHall),
+  },
 ];
 
 const profileRow = (ref: RowRef, label: string): MassRow => makeRow(ref, { label, imageUrl: "", max: 0 });
 
 /** The Builder Hall and profile fields of the Builder Base scope. They are not listed as rows, but they count as changes. */
 export const builderProfileRows = (): MassRow[] => [
-  profileRow({ kind: "upgrade", target: { kind: "builderHall" } }, "Builder Hall level"),
-  profileRow({ kind: "profile", field: "trophies" }, "Trophies"),
-  profileRow({ kind: "profile", field: "bestTrophies" }, "Best trophies"),
-  profileRow({ kind: "profile", field: "league" }, "League"),
+  profileRow(
+    { kind: "upgrade", target: { kind: "builderHall" } },
+    massEditDataText.profile.builderHall,
+  ),
+  profileRow(
+    { kind: "profile", field: "trophies" },
+    massEditDataText.profile.trophies,
+  ),
+  profileRow(
+    { kind: "profile", field: "bestTrophies" },
+    massEditDataText.profile.bestTrophies,
+  ),
+  profileRow(
+    { kind: "profile", field: "league" },
+    massEditDataText.profile.league,
+  ),
 ];
 
 export const readRow = (village: Playthrough, ref: RowRef): number => {
@@ -474,17 +532,36 @@ const zoneCategory = (zone: ZoneId, hall: number, capitalHall: number): MassCate
   const wallInfo = zoneWalls(zone, hall);
   const walls: MassCategory = {
     id: "walls",
-    label: "Walls",
+    label: massEditDataText.categories.walls,
     isWalls: true,
     zone,
     rows: wallInfo.levels.map((level) =>
-      makeRow({ kind: "capitalWall", zone, level: level.level }, { label: `Level ${level.level}`, imageUrl: level.imageUrl, max: 0 }),
+      makeRow(
+        { kind: "capitalWall", zone, level: level.level },
+        {
+          label: massEditDataText.level(level.level),
+          imageUrl: level.imageUrl,
+          max: 0,
+        },
+      ),
     ),
   };
   const parts: MassCategory[] = [
-    { id: "defenses", label: "Defenses", rows: capitalBuildingRows(zone, groupBuildings(zone, hall, "defenses")) },
-    { id: "traps", label: "Traps", rows: capitalBuildingRows(zone, groupBuildings(zone, hall, "traps")) },
-    { id: "buildings", label: "Buildings", rows: capitalBuildingRows(zone, groupBuildings(zone, hall, "army")) },
+    {
+      id: "defenses",
+      label: massEditDataText.categories.defenses,
+      rows: capitalBuildingRows(zone, groupBuildings(zone, hall, "defenses")),
+    },
+    {
+      id: "traps",
+      label: massEditDataText.categories.traps,
+      rows: capitalBuildingRows(zone, groupBuildings(zone, hall, "traps")),
+    },
+    {
+      id: "buildings",
+      label: massEditDataText.categories.buildings,
+      rows: capitalBuildingRows(zone, groupBuildings(zone, hall, "army")),
+    },
     walls,
   ].filter((part) => part.rows.length > 0);
   return {
@@ -525,8 +602,18 @@ export const capitalCategories = (village: Playthrough, override?: { zone: ZoneI
 
 /** Every zone hall and the contributions. They are not listed as rows, but they count as changes. */
 export const capitalProfileRows = (): MassRow[] => [
-  ...capitalZones.map((zone) => profileRow({ kind: "capitalHall", zone: zone.id }, zone.id === "capitalPeak" ? "Capital Hall" : `${zone.label} District Hall`)),
-  profileRow({ kind: "profile", field: "contributions" }, "Contributions"),
+  ...capitalZones.map((zone) =>
+    profileRow(
+      { kind: "capitalHall", zone: zone.id },
+      zone.id === "capitalPeak"
+        ? massEditDataText.profile.capitalHall
+        : massEditDataText.profile.districtHall(zone.label),
+    ),
+  ),
+  profileRow(
+    { kind: "profile", field: "contributions" },
+    massEditDataText.profile.contributions,
+  ),
 ];
 
 /** Wall totals for any wall category. */

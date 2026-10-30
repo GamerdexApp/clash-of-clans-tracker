@@ -87,7 +87,7 @@
     "wait": "Wait {seconds} s",
     "serverNote": "The lookup sends the tag to the Gamerdex server, which asks the Supercell API. Nothing else leaves your browser.",
     "unavailable": "The player lookup is not available right now. Try again later.",
-    "found": "{name}, Town Hall {townHall}{builderHall, select, true {, Builder Hall {builderHall}} other {}}. {achievements} achievements and {troops} troops read.",
+    "found": "{name}, Town Hall {townHall}{builderHall, plural, =0 {} other {, Builder Hall {builderHall}}}. {achievements} achievements and {troops} troops read.",
     "buildingHelp": "The player API has no building levels. Choose a village backup from Settings or the exportData.json file from the game.",
     "buildingLabel": "Building data file",
     "buildingLoaded": "Building data loaded from {name}.",

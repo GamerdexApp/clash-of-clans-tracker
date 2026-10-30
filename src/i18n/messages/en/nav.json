@@ -1,0 +1,29 @@
+{
+  "groups": {
+    "homeVillage": "Home Village",
+    "builderBase": "Builder Base",
+    "clanCapital": "Clan Capital",
+    "dailies": "Dailies",
+    "tools": "Tools"
+  },
+  "items": {
+    "overview": "Overview",
+    "achievements": "Achievements",
+    "builder": "Builder",
+    "research": "Research",
+    "pets": "Pets",
+    "equipment": "Equipment",
+    "walls": "Walls",
+    "builderBaseUpgrades": "Upgrades",
+    "builderBaseTroops": "Troops",
+    "builderBaseWalls": "Walls",
+    "districts": "Districts",
+    "capitalTroops": "Troops and spells",
+    "forge": "Forge",
+    "helpers": "Helpers",
+    "seasonPass": "Season Pass",
+    "massEdit": "Mass edit",
+    "settings": "Settings"
+  },
+  "villages": "My Villages"
+}

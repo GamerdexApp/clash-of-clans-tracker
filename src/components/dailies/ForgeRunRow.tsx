@@ -5,6 +5,7 @@ import { useState } from "react";
 
 import { formatDuration, formatNumber, formatTimeLeft } from "@/lib/format";
 import { dailiesText } from "@/lib/messages/dailies";
+import { gameText } from "@/lib/messages/game";
 import { toPublicImageUrl } from "@/lib/utils/imageHelpers";
 import {
   forgeDurationMs,
@@ -99,7 +100,8 @@ export const ForgeRunRow = ({ label, slot, now, rates, boost, onStart, onStop, o
 				<div className="flex flex-col gap-2">
 					<div className="flex flex-wrap items-center justify-between gap-3">
 						<span className="text-muted">
-							{text.result}: {formatNumber(slot.capitalGoldOutput)} Capital Gold
+							{text.result}: {formatNumber(slot.capitalGoldOutput)}{" "}
+							{gameText.resources.capitalGold}
 						</span>
 						<span className="font-mono">{text.left(formatTimeLeft(left))}</span>
 					</div>

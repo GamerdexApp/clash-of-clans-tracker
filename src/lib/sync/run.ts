@@ -26,7 +26,7 @@ const syncOnce = (
   const device = deviceStore.load();
   const id = providerOf(device);
   const provider = id && createProvider(id, device, tokenSource(id).getToken);
-  if (!provider) throw new Error("No storage is chosen.");
+  if (!provider) throw new Error("No storage is chosen."); // i18n-ignore
   return sync({
     appId: SYNC_APP_ID,
     deviceId: device.deviceId,

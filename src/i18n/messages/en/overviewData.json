@@ -1,0 +1,40 @@
+{
+  "stats": {
+    "level": "Level",
+    "warStars": "War stars",
+    "trophies": "Trophies",
+    "bestTrophies": "Best trophies",
+    "donations": "Donations",
+    "received": "Donations received",
+    "war": "War preference",
+    "attacks": "Attack wins",
+    "defenses": "Defense wins",
+    "builderTrophies": "Builder trophies",
+    "bestBuilderTrophies": "Best builder trophies",
+    "contributions": "Capital contributions",
+    "warIn": "In",
+    "warOut": "Out"
+  },
+  "cards": {
+    "structures": "Structures",
+    "traps": "Traps",
+    "supercharge": "Supercharge",
+    "crafted": "Crafted Defenses",
+    "lab": "Lab",
+    "heroes": "Heroes",
+    "equipment": "Equipment",
+    "pets": "Pets",
+    "walls": "Walls",
+    "districts": "Districts",
+    "troops": "Troops",
+    "spells": "Spells"
+  },
+  "subs": {
+    "structures": "Defenses, army, resources",
+    "lab": "Troops, spells, siege",
+    "builderLab": "Builder troops",
+    "walls": "{total} walls, max level {max}",
+    "districts": "{active} of {total} active",
+    "available": "{count} available"
+  }
+}

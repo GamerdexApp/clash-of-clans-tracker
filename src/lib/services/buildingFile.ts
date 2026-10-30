@@ -3,7 +3,7 @@ import type { VillageData } from "@/types/app/game";
 
 export type BuildingFileResult =
   | { ok: true; data: VillageData }
-  | { ok: false; error: "notJson" | "notBuildingData" };
+  | { ok: false; error: "notJson" | "notBuildingData" }; // i18n-ignore
 
 const isVillageData = (value: Partial<VillageData>): value is VillageData =>
   Boolean(value.homeVillage && value.builderBase && value.clanCapital);
@@ -14,11 +14,11 @@ export const parseBuildingFile = (text: string): BuildingFileResult => {
   try {
     json = JSON.parse(text);
   } catch {
-    return { ok: false, error: "notJson" };
+    return { ok: false, error: "notJson" }; // i18n-ignore
   }
   if (isExportDataFormat(json)) return { ok: true, data: mapExportDataToVillageData(json) };
   if (typeof json === "object" && json !== null && isVillageData(json)) {
     return { ok: true, data: json };
   }
-  return { ok: false, error: "notBuildingData" };
+  return { ok: false, error: "notBuildingData" }; // i18n-ignore
 };

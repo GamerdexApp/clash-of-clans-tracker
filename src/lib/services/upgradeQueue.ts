@@ -2,35 +2,11 @@ import { advanceToActiveWindow } from "@/lib/utils/activeHoursHelpers";
 import { applyBoost } from "@/lib/utils/upgradeHelpers";
 import type { Playthrough } from "@/types/app";
 import type { BuilderSlotState, LaneKind, UpgradeTarget } from "@/types/app/engine";
-import type {
-  AnyQueueItem,
-  BuilderBaseQueueItem,
-  BuilderQueueItem,
-  PetQueueItem,
-  ResearchQueueItem,
-} from "@/types/app/queue";
-import type {
-  ActiveBlock,
-  LaneSchedule,
-  QueueConflict,
-  QueueSchedule,
-  ScheduleOptions,
-  ScheduledBlock,
-} from "@/types/app/queueEngine";
+import type { AnyQueueItem, BuilderBaseQueueItem, BuilderQueueItem, PetQueueItem, ResearchQueueItem } from "@/types/app/queue";
+import type { ActiveBlock, LaneSchedule, QueueConflict, QueueSchedule, ScheduleOptions, ScheduledBlock } from "@/types/app/queueEngine";
 import type { UpgradeStep } from "@/types/app/upgrade";
-
-import {
-  boostedStep,
-  builderSlots,
-  petSlots,
-  readLevel,
-  readUpgrade,
-  requirementBlock,
-  bbBuilderSlots,
-  bbResearchSlots,
-  researchSlots,
-  startUpgrade,
-} from "./upgradeEngine";
+import { upgradeLabelText } from "@/lib/messages/upgradeLabel";
+import { boostedStep, builderSlots, petSlots, readLevel, readUpgrade, requirementBlock, bbBuilderSlots, bbResearchSlots, researchSlots, startUpgrade } from "./upgradeEngine";
 import { targetName } from "./upgradeLabels";
 import { upgradeSteps } from "./upgradeSteps";
 
@@ -161,18 +137,25 @@ const requirementText = (village: Playthrough, target: UpgradeTarget, item: AnyQ
   const step = upgradeSteps(village, target).find((candidate) => candidate.level === item.targetLevel);
   const missing = step ? requirementBlock(village, step) : null;
   if (!missing) return null;
-  if (missing.building === "pet-house" && missing.builtLevel === 0) return "Build a Pet House first";
-  return `Requires ${requiredBuildingNames[missing.building]} ${missing.level}`;
+  if (missing.building === "pet-house" && missing.builtLevel === 0)
+    return upgradeLabelText.queue.buildPetHouse;
+  return upgradeLabelText.queue.requires(
+    requiredBuildingNames[missing.building],
+    missing.level,
+  );
 };
 
 /** Why a queued item cannot start yet, or null. The earlier level must be finished first. */
 export const queueStartBlocker = (village: Playthrough, item: AnyQueueItem): string | null => {
   const target = targetForItem(item);
-  if (readUpgrade(village, target)) return `${targetName(target)} is already upgrading`;
+  if (readUpgrade(village, target))
+    return upgradeLabelText.queue.alreadyUpgrading(targetName(target));
   const level = readLevel(village, target);
   if (!isSuperchargeItem(item)) {
-    if (level < item.targetLevel - 1) return `Level ${level + 1} must finish first`;
-    if (level >= item.targetLevel) return `Already at level ${level}`;
+    if (level < item.targetLevel - 1)
+      return upgradeLabelText.queue.finishFirst(level + 1);
+    if (level >= item.targetLevel)
+      return upgradeLabelText.queue.alreadyAt(level);
   }
   return requirementText(village, target, item);
 };
@@ -237,8 +220,12 @@ const findConflicts = (village: Playthrough, lanes: LaneSchedule[]): QueueConfli
       conflicts.push({
         itemId: block.item.id,
         builderId,
-        message: `${targetName(target)} is already at level ${levelAfterRunning(village, target)}, so level ${block.item.targetLevel} is done.`,
-        fix: "Remove it from the queue.",
+        message: upgradeLabelText.conflict.alreadyAt(
+          targetName(target),
+          levelAfterRunning(village, target),
+          block.item.targetLevel,
+        ),
+        fix: upgradeLabelText.conflict.removeFix,
       });
     }
   }
@@ -258,8 +245,15 @@ const findConflicts = (village: Playthrough, lanes: LaneSchedule[]): QueueConfli
         conflicts.push({
           itemId: later.block.item.id,
           builderId: later.builderId,
-          message: `${name} level ${later.block.item.targetLevel} is scheduled before level ${earlier.block.item.targetLevel} is done.`,
-          fix: `Move level ${later.block.item.targetLevel} after level ${earlier.block.item.targetLevel}.`,
+          message: upgradeLabelText.conflict.scheduledBefore(
+            name,
+            later.block.item.targetLevel,
+            earlier.block.item.targetLevel,
+          ),
+          fix: upgradeLabelText.conflict.moveFix(
+            later.block.item.targetLevel,
+            earlier.block.item.targetLevel,
+          ),
         });
       }
     }

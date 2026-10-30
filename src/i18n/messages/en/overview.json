@@ -3,7 +3,7 @@
   "description": "Your village at a glance: progress, daily timers and every stored stat.",
   "subline": "{name}, derived, view only",
   "header": {
-    "clanLevel": "{role, select, true {Clan level {level}, {role}} other {Clan level {level}}}",
+    "clanLevel": "{hasRole, select, true {Clan level {level}, {role}} other {Clan level {level}}}",
     "achievements": "Achievements",
     "ringCaption": "{stars} of {maxStars} stars",
     "viewAll": "View all",
@@ -105,7 +105,7 @@
     "siege": "Siege Machines",
     "pets": "Pets",
     "legend": "Green outline: at the maximum for this Town Hall. Dashed outline: locked. Clock: an upgrade is running.",
-    "tile": "{requirement, select, true {{name}, requires {requirement}} other {{name}, level {level}{max, plural, =0 {} other { of {max}}}}}",
+    "tile": "{hasRequirement, select, true {{name}, requires {requirement}} other {{name}, level {level}{max, plural, =0 {} other { of {max}}}}}",
     "heroLocked": "Requires {requirement}",
     "petsLocked": "Requires Town Hall 14"
   }

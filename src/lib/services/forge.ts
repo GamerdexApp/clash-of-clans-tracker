@@ -5,6 +5,7 @@ import { dailiesOf, withDailies } from "./dailies";
 import type { Playthrough } from "@/types/app";
 import type { BoostPercent } from "@/types/app/engine";
 import type { AutoForgeData, ForgeResourceType, ForgeSlotData } from "@/types/app/playthrough";
+import { gameText } from "@/lib/messages/game";
 
 const forge = clanCapital().forge();
 
@@ -21,11 +22,56 @@ export interface ForgeResource {
 }
 
 export const forgeResources: ForgeResource[] = [
-  { type: "gold", label: "Gold", shortLabel: "Gold", image: "images/other/gold.png" },
-  { type: "elixir", label: "Elixir", shortLabel: "Elixir", image: "images/other/elixir.png" },
-  { type: "darkElixir", label: "Dark Elixir", shortLabel: "Dark", image: "images/other/dark-elixir.png" },
-  { type: "builderGold", label: "Builder Gold", shortLabel: "B. Gold", image: "images/other/gold-b.png" },
-  { type: "builderElixir", label: "Builder Elixir", shortLabel: "B. Elixir", image: "images/other/elixir-b.png" },
+  {
+    type: "gold",
+    get label() {
+      return gameText.resources.gold;
+    },
+    get shortLabel() {
+      return gameText.resources.gold;
+    },
+    image: "images/other/gold.png",
+  },
+  {
+    type: "elixir",
+    get label() {
+      return gameText.resources.elixir;
+    },
+    get shortLabel() {
+      return gameText.resources.elixir;
+    },
+    image: "images/other/elixir.png",
+  },
+  {
+    type: "darkElixir",
+    get label() {
+      return gameText.resources.darkElixir;
+    },
+    get shortLabel() {
+      return gameText.resources.darkElixirShort;
+    },
+    image: "images/other/dark-elixir.png",
+  },
+  {
+    type: "builderGold",
+    get label() {
+      return gameText.resources.builderGold;
+    },
+    get shortLabel() {
+      return gameText.resources.builderGoldShort;
+    },
+    image: "images/other/gold-b.png",
+  },
+  {
+    type: "builderElixir",
+    get label() {
+      return gameText.resources.builderElixir;
+    },
+    get shortLabel() {
+      return gameText.resources.builderElixirShort;
+    },
+    image: "images/other/elixir-b.png",
+  },
 ];
 
 export const forgeResource = (type: ForgeResourceType): ForgeResource =>
@@ -50,10 +96,30 @@ const builderResourceHall = forge.forgeRates().builder[0].builderHallLevel;
 /** One run of a resource. The data has no row below the first Town Hall or Builder Hall with a forge rate. */
 export const forgeRate = (type: ForgeResourceType, mode: ForgeMode, townHall: number, builderHall: number): ForgeRate => {
   if (isBuilderResource(type)) {
-    const row = mode === "auto" ? forge.autoForgeAtBuilderHall(builderHall) : forge.forgeAtBuilderHall(builderHall);
-    if (!row) return { type, cost: 0, capitalGold: 0, available: false, requirement: `Builder Hall ${builderResourceHall}` };
-    const cost = mode === "auto" ? (row as { builderGoldElixirCostGoldPass: number }).builderGoldElixirCostGoldPass : row.builderGoldElixirCost;
-    return { type, cost, capitalGold: row.capitalGoldObtained, available: true, requirement: null };
+    const row =
+      mode === "auto"
+        ? forge.autoForgeAtBuilderHall(builderHall)
+        : forge.forgeAtBuilderHall(builderHall);
+    if (!row)
+      return {
+        type,
+        cost: 0,
+        capitalGold: 0,
+        available: false,
+        requirement: gameText.halls.builderHall(builderResourceHall),
+      };
+    const cost =
+      mode === "auto"
+        ? (row as { builderGoldElixirCostGoldPass: number })
+            .builderGoldElixirCostGoldPass
+        : row.builderGoldElixirCost;
+    return {
+      type,
+      cost,
+      capitalGold: row.capitalGoldObtained,
+      available: true,
+      requirement: null,
+    };
   }
 
   const row = mode === "auto" ? forge.autoForgeAtTownHall(townHall) : forge.forgeAtTownHall(townHall);
@@ -68,8 +134,16 @@ export const forgeRate = (type: ForgeResourceType, mode: ForgeMode, townHall: nu
         ? row.darkElixirCost
         : row.goldElixirCost;
   if (!row || cost === undefined) {
-    const requiredTownHall = darkElixir ? darkElixirTownHall : firstRateTownHall;
-    return { type, cost: 0, capitalGold: 0, available: false, requirement: `Town Hall ${requiredTownHall}` };
+    const requiredTownHall = darkElixir
+      ? darkElixirTownHall
+      : firstRateTownHall;
+    return {
+      type,
+      cost: 0,
+      capitalGold: 0,
+      available: false,
+      requirement: gameText.halls.townHall(requiredTownHall),
+    };
   }
   return { type, cost, capitalGold: row.capitalGoldObtained, available: true, requirement: null };
 };

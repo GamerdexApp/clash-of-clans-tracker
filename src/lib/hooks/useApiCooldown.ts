@@ -14,7 +14,6 @@ interface ApiCooldown {
   secondsLeft: number;
   isOnCooldown: boolean;
   startCooldown: (seconds?: number) => void;
-  handleError: (error: string) => string;
 }
 
 export const useApiCooldown = (): ApiCooldown  => {
@@ -57,11 +56,5 @@ export const useApiCooldown = (): ApiCooldown  => {
     startTimer(seconds);
   };
 
-  const handleError = (error: string): string => {
-    const match = error.match(/Please wait (\d+)s before fetching again/);
-    if (match) startCooldown(parseInt(match[1], 10));
-    return error;
-  };
-
-  return { secondsLeft, isOnCooldown: secondsLeft > 0, startCooldown, handleError };
-}
+  return { secondsLeft, isOnCooldown: secondsLeft > 0, startCooldown };
+};

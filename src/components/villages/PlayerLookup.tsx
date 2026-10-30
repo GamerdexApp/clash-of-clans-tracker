@@ -1,9 +1,9 @@
 "use client";
 
+import { fetchPlayerByTag, type PlayerLookupError } from "@/app/actions/fetchPlayer";
 import { useState } from "react";
-
-import { fetchPlayerByTag } from "@/app/actions/fetchPlayer";
 import { useApiCooldown } from "@/lib/hooks/useApiCooldown";
+import { commonText } from "@/lib/messages/common";
 import { villagesText } from "@/lib/messages/villages";
 import { normalizePlayerTag } from "@/service/playerTag";
 import { mapPlayerApiToVillageData } from "@/lib/utils/playerApiMapper";
@@ -14,10 +14,30 @@ import { Note } from "@/comps/ui/Note";
 import type { PlayerLookupProps } from "@/types/components/villages";
 
 const text = villagesText.lookup;
-const SETUP_ERRORS = ["COC_API_TOKEN", "API token"];
 
-export const PlayerLookup = ({ tag, onTagChange, onFetched, fetchLabel, result }: PlayerLookupProps) => {
-	const { secondsLeft, isOnCooldown, startCooldown, handleError } = useApiCooldown();
+const lookupErrorText = (error: PlayerLookupError) => {
+	switch (error.kind) {
+		case "rateLimit":
+			return commonText.lookupError.rateLimit(error.seconds);
+		case "unavailable":
+			return text.unavailable;
+		case "notFound":
+			return commonText.lookupError.notFound(error.tag);
+		case "api":
+			return commonText.lookupError.api(error.status);
+		case "network":
+			return commonText.lookupError.network;
+	}
+};
+
+export const PlayerLookup = ({
+	tag,
+	onTagChange,
+	onFetched,
+	fetchLabel,
+	result,
+}: PlayerLookupProps) => {
+	const { secondsLeft, isOnCooldown, startCooldown } = useApiCooldown();
 	const [fetching, setFetching] = useState(false);
 	const [error, setError] = useState("");
 
@@ -32,8 +52,8 @@ export const PlayerLookup = ({ tag, onTagChange, onFetched, fetchLabel, result }
 		setFetching(false);
 
 		if (!response.success) {
-			const setupProblem = SETUP_ERRORS.some((marker) => response.error.includes(marker));
-			setError(setupProblem ? text.unavailable : handleError(response.error));
+			if (response.error.kind === "rateLimit") startCooldown(response.error.seconds);
+			setError(lookupErrorText(response.error));
 			return;
 		}
 		startCooldown();

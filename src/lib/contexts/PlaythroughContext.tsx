@@ -71,7 +71,7 @@ export const PlaythroughProvider = ({ children }: { children: React.ReactNode })
 export const usePlaythrough = () => {
 	const context = useContext(PlaythroughContext);
 	if (context === undefined) {
-		throw new Error("usePlaythrough must be used within a PlaythroughProvider");
+		throw new Error("usePlaythrough must be used within a PlaythroughProvider"); // i18n-ignore
 	}
 	return context;
 };

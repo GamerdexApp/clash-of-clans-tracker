@@ -3,6 +3,7 @@
 import type { ReactNode } from "react";
 
 import { usePlaythrough } from "@/lib/contexts/PlaythroughContext";
+import { commonText } from "@/lib/messages/common";
 import { VILLAGES_HREF } from "@/data/nav";
 import { ButtonLink } from "@/comps/ui/Button";
 import { EmptyState } from "@/comps/ui/EmptyState";
@@ -23,14 +24,16 @@ export const VillageGate = ({ title, children }: VillageGateProps) => {
 			<>
 				<PageHeader title={title} />
 				<EmptyState
-					title="No active village"
-					description="Choose a village or create one to see this page."
+					title={commonText.gate.title}
+					description={commonText.gate.description}
 					actions={
 						<>
 							<ButtonLink href={`${VILLAGES_HREF}?new=1`} variant="primary">
-								New village
+								{commonText.gate.newVillage}
 							</ButtonLink>
-							<ButtonLink href={VILLAGES_HREF}>Choose a village</ButtonLink>
+							<ButtonLink href={VILLAGES_HREF}>
+								{commonText.gate.chooseVillage}
+							</ButtonLink>
 						</>
 					}
 				/>
