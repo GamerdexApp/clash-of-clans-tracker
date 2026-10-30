@@ -2,17 +2,22 @@
 
 import Image from "next/image";
 import { useState } from "react";
-
+import type { AutoForgeData, ForgeResourceType } from "@/types/app/playthrough";
 import { formatDuration, formatNumber, formatTimeLeft } from "@/lib/format";
 import { dailiesText } from "@/lib/messages/dailies";
 import { toPublicImageUrl } from "@/lib/utils/imageHelpers";
-import { autoCycleEnd, forgeDurationMs, forgeResource, formatResourceAmount, type ForgeRate } from "@/service/forge";
+import {
+	autoCycleEnd,
+	forgeDurationMs,
+	type ForgeRate,
+	forgeResource,
+	formatResourceAmount,
+} from "@/service/forge";
 import { Badge } from "@/comps/ui/Badge";
 import { Button } from "@/comps/ui/Button";
-import { Dialog } from "@/comps/ui/Dialog";
 import { ProgressBar } from "@/comps/ui/ProgressBar";
-import type { AutoForgeData, ForgeResourceType } from "@/types/app/playthrough";
 import { ResourcePicker } from "./ResourcePicker";
+import { StopAutoForgeDialog } from "./StopAutoForgeDialog";
 
 const text = dailiesText.forge.auto;
 
@@ -31,7 +36,9 @@ export const AutoForgeRow = ({ auto, now, rates, boost, onStart, onStop }: AutoF
 	const [confirming, setConfirming] = useState(false);
 	const cycleEnd = autoCycleEnd(auto, now);
 	const running = cycleEnd !== null;
-	const rate = rates.find((candidate) => candidate.type === selected && candidate.available) ?? rates.find((candidate) => candidate.available);
+	const rate =
+		rates.find((candidate) => candidate.type === selected && candidate.available) ??
+		rates.find((candidate) => candidate.available);
 	const resource = forgeResource(auto.resourceType);
 	const amount = formatResourceAmount(auto.resourceAmount);
 	const capitalGold = formatNumber(auto.capitalGoldOutput);
@@ -54,15 +61,24 @@ export const AutoForgeRow = ({ auto, now, rates, boost, onStart, onStop }: AutoF
 						<span className="text-muted text-xs">{text.subtitle}</span>
 					</div>
 				</div>
-				<Badge tone={running ? "added" : "locked"}>{running ? dailiesText.forge.slots.running : dailiesText.forge.slots.idle}</Badge>
+				<Badge tone={running ? "added" : "locked"}>
+					{running ? dailiesText.forge.slots.running : dailiesText.forge.slots.idle}
+				</Badge>
 			</div>
 			{running ? (
 				<div className="flex flex-col gap-2">
 					<div className="flex flex-wrap items-center justify-between gap-3">
 						<span>
-							{text.repeats(amount, resource.label, capitalGold, formatDuration(auto.durationMs))}
+							{text.repeats(
+								amount,
+								resource.label,
+								capitalGold,
+								formatDuration(auto.durationMs)
+							)}
 						</span>
-						<span className="font-mono">{dailiesText.forge.slots.left(formatTimeLeft(left))}</span>
+						<span className="font-mono">
+							{dailiesText.forge.slots.left(formatTimeLeft(left))}
+						</span>
 					</div>
 					<ProgressBar
 						value={auto.durationMs > 0 ? 1 - left / auto.durationMs : 0}
@@ -77,7 +93,11 @@ export const AutoForgeRow = ({ auto, now, rates, boost, onStart, onStop }: AutoF
 				</div>
 			) : (
 				<div className="flex flex-col gap-3">
-					<ResourcePicker rates={rates} value={rate?.type ?? selected} onChange={setSelected} />
+					<ResourcePicker
+						rates={rates}
+						value={rate?.type ?? selected}
+						onChange={setSelected}
+					/>
 					<div className="flex flex-wrap items-center justify-between gap-3">
 						{rate && (
 							<p className="text-muted">
@@ -85,38 +105,27 @@ export const AutoForgeRow = ({ auto, now, rates, boost, onStart, onStop }: AutoF
 									formatResourceAmount(rate.cost),
 									forgeResource(rate.type).label,
 									formatNumber(rate.capitalGold),
-									formatDuration(forgeDurationMs(boost)),
+									formatDuration(forgeDurationMs(boost))
 								)}
 							</p>
 						)}
-						<Button variant="primary" disabled={!rate} onClick={() => rate && onStart(rate)}>
+						<Button
+							variant="primary"
+							disabled={!rate}
+							onClick={() => rate && onStart(rate)}
+						>
 							{dailiesText.forge.slots.start}
 						</Button>
 					</div>
 				</div>
 			)}
-			<Dialog
+			<StopAutoForgeDialog
 				open={confirming}
+				auto={auto}
+				now={now}
 				onClose={() => setConfirming(false)}
-				title={text.confirm.title}
-				description={text.confirm.body(amount, resource.label, capitalGold, formatTimeLeft(left))}
-				footer={
-					<>
-						<Button onClick={() => setConfirming(false)}>{text.confirm.keep}</Button>
-						<Button
-							variant="danger"
-							onClick={() => {
-								setConfirming(false);
-								onStop();
-							}}
-						>
-							{text.confirm.stop}
-						</Button>
-					</>
-				}
-			>
-				<p className="text-muted">{text.confirm.undoHint}</p>
-			</Dialog>
+				onStop={onStop}
+			/>
 		</li>
 	);
 };
