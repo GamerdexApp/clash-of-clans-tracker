@@ -2,27 +2,15 @@
 
 import { headers } from "next/headers";
 
+import { createLookupLimiter } from "@/lib/services/lookupLimiter";
+import { isPlayerTag, normalizePlayerTag } from "@/lib/services/playerTag";
 import type { PlayerApiResponse } from "@/types/app";
 
 // The official API only accepts the IP addresses listed on the key. A host without a fixed outbound IP sets
 // COC_API_BASE_URL to a proxy, such as https://cocproxy.royaleapi.dev/v1, and lists the proxy IP on the key.
 const COC_API_URL = process.env.COC_API_BASE_URL ?? "https://api.clashofclans.com/v1";
 
-// Module-level singleton: survives across requests in the same server process.
-// Keyed by client IP → timestamp of last successful call.
-const _lastCall = new Map<string, number>();
-const RATE_LIMIT_MS = 60_000; // 60 seconds
-
-const getRateLimitResult = (ip: string): { allowed: boolean; secondsRemaining: number } => {
-  const now = Date.now();
-  const last = _lastCall.get(ip) ?? 0;
-  const elapsed = now - last;
-  if (elapsed < RATE_LIMIT_MS) {
-    return { allowed: false, secondsRemaining: Math.ceil((RATE_LIMIT_MS - elapsed) / 1000) };
-  }
-  _lastCall.set(ip, now);
-  return { allowed: true, secondsRemaining: 0 };
-};
+const limiter = createLookupLimiter();
 
 const getClientIp = async (): Promise<string> => {
   try {
@@ -50,26 +38,15 @@ export const fetchPlayerByTag = async (
   | { success: true; player: PlayerApiResponse }
   | { success: false; error: PlayerLookupError }
 > => {
-  const ip = await getClientIp();
-  const { allowed, secondsRemaining } = getRateLimitResult(ip);
-
-  if (!allowed) {
-    return {
-      success: false,
-      error: { kind: "rateLimit", seconds: secondsRemaining },
-    };
-  }
+  const normalized = normalizePlayerTag(tag);
+  if (!isPlayerTag(normalized)) return { success: false, error: { kind: "notFound", tag: normalized } };
 
   const token = process.env.COC_API_TOKEN;
+  if (!token) return { success: false, error: { kind: "unavailable" } };
 
-  if (!token) {
-    // Don't consume the rate limit slot for a config error
-    _lastCall.delete(ip);
-    return { success: false, error: { kind: "unavailable" } };
-  }
-
-  // Normalise the tag: ensure it starts with #
-  const normalized = tag.trim().startsWith("#") ? tag.trim() : `#${tag.trim()}`;
+  const ip = await getClientIp();
+  const limit = limiter.check(ip);
+  if (!limit.allowed) return { success: false, error: { kind: "rateLimit", seconds: limit.seconds } };
 
   try {
     const res = await fetch(`${COC_API_URL}/players/${encodeURIComponent(normalized)}`, {
@@ -77,20 +54,17 @@ export const fetchPlayerByTag = async (
       cache: "no-store",
     });
 
+    if (res.status === 403) return { success: false, error: { kind: "unavailable" } };
     if (!res.ok) {
-      // Don't consume the rate limit slot on API errors so the user can correct and retry
-      _lastCall.delete(ip);
-      if (res.status === 404)
-        return { success: false, error: { kind: "notFound", tag: normalized } };
-      if (res.status === 403)
-        return { success: false, error: { kind: "unavailable" } };
+      limiter.recordFailure(ip);
+      if (res.status === 404) return { success: false, error: { kind: "notFound", tag: normalized } };
       return { success: false, error: { kind: "api", status: res.status } };
     }
 
-    const player = (await res.json()) as PlayerApiResponse;
-    return { success: true, player };
-  } catch (err: unknown) {
-    _lastCall.delete(ip);
+    limiter.recordSuccess(ip);
+    return { success: true, player: (await res.json()) as PlayerApiResponse };
+  } catch {
+    limiter.recordFailure(ip);
     return { success: false, error: { kind: "network" } };
   }
-}
+};
