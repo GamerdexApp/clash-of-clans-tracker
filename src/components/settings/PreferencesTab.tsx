@@ -7,6 +7,7 @@ import { RadioGroup } from "@/comps/ui/RadioGroup";
 import { SwitchRow } from "@/comps/ui/Switch";
 import type { ThemeChoice } from "@/types/app";
 import { ActiveHoursCard } from "./ActiveHoursCard";
+import { RegionCard } from "./RegionCard";
 import { SettingsCard } from "./SettingsCard";
 
 const text = settingsText;
@@ -57,6 +58,9 @@ export const PreferencesTab = () => (
 			<BuilderSettings />
 			<ActiveHoursCard />
 		</div>
-		<Appearance />
+		<div className="flex flex-col gap-4">
+			<Appearance />
+			<RegionCard />
+		</div>
 	</div>
 );

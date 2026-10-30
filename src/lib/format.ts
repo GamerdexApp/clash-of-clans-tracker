@@ -1,23 +1,4 @@
-export const formatShortDate = (iso: string) =>
-  new Intl.DateTimeFormat(undefined, { month: "short", day: "numeric" }).format(
-    new Date(iso),
-  );
-
-export const formatDate = (iso: string) =>
-  new Intl.DateTimeFormat(undefined, {
-    year: "numeric",
-    month: "short",
-    day: "numeric",
-  }).format(new Date(iso));
-
-export const formatDateTime = (iso: string) =>
-  new Intl.DateTimeFormat(undefined, {
-    year: "numeric",
-    month: "short",
-    day: "numeric",
-    hour: "numeric",
-    minute: "2-digit",
-  }).format(new Date(iso));
+export { formatDate, formatDateTime, formatFinishTime, formatNumber, formatShortDate } from "@/i18n/formatter";
 
 const SECOND_MS = 1_000;
 const MINUTE_MS = 60 * SECOND_MS;
@@ -45,11 +26,6 @@ export const formatCountdown = (ms: number): string => {
   if (hours > 0) return `${hours}h ${minutes}m`;
   return `${minutes}m ${String(seconds).padStart(2, "0")}s`;
 };
-
-export const formatNumber = (value: number) => new Intl.NumberFormat().format(value);
-
-export const formatFinishTime = (date: Date) =>
-  new Intl.DateTimeFormat(undefined, { weekday: "short", hour: "numeric", minute: "2-digit" }).format(date);
 
 /** A daily timer countdown: "03:12:48". */
 export const formatClock = (ms: number): string => {

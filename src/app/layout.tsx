@@ -1,13 +1,14 @@
+import { I18nProvider } from "@/i18n/I18nProvider";
 import type { Metadata } from "next";
 import { IBM_Plex_Mono, IBM_Plex_Sans, Lilita_One } from "next/font/google";
 import { PlaythroughProvider } from "@/lib/contexts/PlaythroughContext";
 import { SyncProvider } from "@/lib/contexts/SyncContext";
 import { UIProvider } from "@/lib/contexts/UIContext";
+import { STORAGE_KEY } from "@/service/storage";
 import { ActiveHoursSync } from "@/comps/layout/ActiveHoursSync";
 import { ExpiredUpgradeSync } from "@/comps/layout/ExpiredUpgradeSync";
 import { ThemeSync } from "@/comps/layout/ThemeSync";
 import { ToastProvider } from "@/comps/ui/Toast";
-import { STORAGE_KEY } from "@/service/storage";
 import "./globals.css";
 
 const plexSans = IBM_Plex_Sans({
@@ -107,18 +108,20 @@ const RootLayout = ({
 				<script dangerouslySetInnerHTML={{ __html: applyThemeBeforePaint }} />
 			</head>
 			<body className="bg-bg min-h-dvh antialiased">
-				<UIProvider>
-					<ToastProvider>
-						<PlaythroughProvider>
-							<SyncProvider>
-								<ThemeSync />
-								<ActiveHoursSync />
-								<ExpiredUpgradeSync />
-								{children}
-							</SyncProvider>
-						</PlaythroughProvider>
-					</ToastProvider>
-				</UIProvider>
+				<I18nProvider>
+					<UIProvider>
+						<ToastProvider>
+							<PlaythroughProvider>
+								<SyncProvider>
+									<ThemeSync />
+									<ActiveHoursSync />
+									<ExpiredUpgradeSync />
+									{children}
+								</SyncProvider>
+							</PlaythroughProvider>
+						</ToastProvider>
+					</UIProvider>
+				</I18nProvider>
 			</body>
 		</html>
 	);

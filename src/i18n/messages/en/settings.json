@@ -1,0 +1,32 @@
+{
+  "region": {
+    "title": "Language and region",
+    "description": "How the app shows text, numbers and dates on this device. These choices are not saved with your villages, not exported and not synced.",
+    "language": {
+      "label": "Language",
+      "hint": "The language of the app. Names from the game stay in English."
+    },
+    "numberFormat": {
+      "label": "Number format",
+      "hint": "Example: {example}",
+      "options": {
+        "auto": "Automatic (follows the language)",
+        "us": "1,234,567.89 (US)",
+        "european": "1.234.567,89 (European)",
+        "french": "1 234 567,89 (French)",
+        "swiss": "1’234’567.89 (Swiss)",
+        "indian": "12,34,567.89 (Indian)"
+      }
+    },
+    "dateFormat": {
+      "label": "Date format",
+      "hint": "Example: {example}",
+      "options": {
+        "auto": "Automatic (follows the language)",
+        "mdy": "Month/Day/Year",
+        "dmy": "Day/Month/Year",
+        "ymd": "Year-Month-Day"
+      }
+    }
+  }
+}
