@@ -19,6 +19,7 @@ import {
 export const APP_NAME = "Clash of Clans Tracker";
 export const HOME_HREF = "/";
 export const VILLAGES_HREF = "/villages";
+export const SYNC_HREF = "/settings?tab=sync";
 
 export type NavItemId =
   | "overview"

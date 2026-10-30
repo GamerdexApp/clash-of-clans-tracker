@@ -2,7 +2,7 @@ export const settingsText = {
   title: "Settings",
   subline: "Preferences, backups and your data",
   tabsLabel: "Settings sections",
-  tabs: { preferences: "Preferences", data: "Backup and data", about: "About" },
+  tabs: { sync: "Cloud sync", preferences: "Preferences", data: "Backup and data", about: "About" },
   appearance: {
     title: "Appearance",
     description: "Choose how the app looks.",

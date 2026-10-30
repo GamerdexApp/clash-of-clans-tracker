@@ -9,14 +9,16 @@ import { shellText } from "@/lib/messages/shell";
 import { getPageTitle } from "@/data/nav";
 import { IconButton } from "@/comps/ui/IconButton";
 import { useSavedLabel } from "@/comps/ui/SavedChip";
+import { useSyncLabel } from "./SyncChip";
 
 export const AppBar = () => {
 	const pathname = usePathname();
 	const { openDrawer } = useUI();
 	const { activePlaythrough } = usePlaythrough();
 	const savedLabel = useSavedLabel();
+	const syncLabel = useSyncLabel();
 
-	const subline = [activePlaythrough?.name, savedLabel].filter(Boolean).join(" · ");
+	const subline = [activePlaythrough?.name, savedLabel, syncLabel].filter(Boolean).join(" · ");
 
 	return (
 		<header className="border-line bg-surface sticky top-0 z-30 flex h-14 items-center gap-1 border-b-[1.5px] px-2 lg:hidden">

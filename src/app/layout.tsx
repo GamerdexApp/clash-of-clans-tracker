@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { IBM_Plex_Mono, IBM_Plex_Sans, Lilita_One } from "next/font/google";
 import { PlaythroughProvider } from "@/lib/contexts/PlaythroughContext";
+import { SyncProvider } from "@/lib/contexts/SyncContext";
 import { UIProvider } from "@/lib/contexts/UIContext";
 import { ActiveHoursSync } from "@/comps/layout/ActiveHoursSync";
 import { ExpiredUpgradeSync } from "@/comps/layout/ExpiredUpgradeSync";
@@ -109,10 +110,12 @@ const RootLayout = ({
 				<UIProvider>
 					<ToastProvider>
 						<PlaythroughProvider>
-							<ThemeSync />
-							<ActiveHoursSync />
-							<ExpiredUpgradeSync />
-							{children}
+							<SyncProvider>
+								<ThemeSync />
+								<ActiveHoursSync />
+								<ExpiredUpgradeSync />
+								{children}
+							</SyncProvider>
 						</PlaythroughProvider>
 					</ToastProvider>
 				</UIProvider>
