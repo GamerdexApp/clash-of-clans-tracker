@@ -38,7 +38,7 @@ export function Section({ title, badge, description, children }: SectionProps) {
 						<LuChevronDown
 							aria-hidden="true"
 							size={18}
-							className={`text-muted shrink-0 transition-transform ${collapsed ? "-rotate-90" : ""}`}
+							className={`text-muted shrink-0 transition-transform ${collapsed ? "-rotate-90 rtl:rotate-90" : ""}`}
 						/>
 						{title}
 					</button>

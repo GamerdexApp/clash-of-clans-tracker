@@ -181,7 +181,7 @@ const activeBlockFor = (village: Playthrough, slot: BuilderSlotState): ActiveBlo
   if (!running) return null;
   const level = readLevel(village, running.target);
   return {
-    label: `${targetName(running.target)} ${level}→${level + 1}`,
+    label: upgradeLabelText.levelTo(targetName(running.target), level, level + 1),
     target: running.target,
     startsAt: new Date(running.upgrade.upgradeStartedAt),
     endsAt: new Date(running.upgrade.finishesAt),

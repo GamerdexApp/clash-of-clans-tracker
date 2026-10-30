@@ -25,7 +25,7 @@ function ExternalLink({
 			className={linkClasses}
 		>
 			{children}
-			<LuArrowUpRight size={14} aria-hidden="true" className="shrink-0" />
+			<LuArrowUpRight size={14} aria-hidden="true" className="shrink-0 rtl:-scale-x-100" />
 		</a>
 	);
 }

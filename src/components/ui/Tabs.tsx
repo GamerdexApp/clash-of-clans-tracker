@@ -25,7 +25,7 @@ export function Tabs<TabId extends string>({
 
 	const handleKeyDown = (event: KeyboardEvent<HTMLDivElement>) => {
 		const from = tabs.findIndex((tab) => tab.id === activeId);
-		const to = tabIndexAfterKey(event.key, from, tabs.length);
+		const to = tabIndexAfterKey(event.key, from, tabs.length, getComputedStyle(event.currentTarget).direction === "rtl");
 		if (to === null) return;
 
 		event.preventDefault();

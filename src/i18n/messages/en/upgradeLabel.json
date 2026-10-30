@@ -1,7 +1,5 @@
 {
-  "townHallTo": "Town Hall {from}→{to}",
-  "weaponTo": "TH Weapon {from}→{to}",
-  "heroTo": "{name} {from}→{to}",
+  "levelTo": "{name} {from}→{to}",
   "toast": {
     "undo": "Undo",
     "started": "{name} Lv {from} to {to} started",

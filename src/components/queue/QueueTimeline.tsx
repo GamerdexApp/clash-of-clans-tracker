@@ -33,8 +33,8 @@ export const QueueTimeline = ({ schedule, now, zoomDays, onZoomChange }: QueueTi
 				{ticks.map((tick) => (
 					<span
 						key={tick}
-						className={`text-muted absolute font-mono text-[11px] ${tick === zoomDays ? "-translate-x-full" : tick === 0 ? "" : "-translate-x-1/2"}`}
-						style={{ left: `${(tick / zoomDays) * 100}%` }}
+						className={`text-muted absolute font-mono text-[11px] ${tick === zoomDays ? "-translate-x-full rtl:translate-x-full" : tick === 0 ? "" : "-translate-x-1/2 rtl:translate-x-1/2"}`}
+						style={{ insetInlineStart: `${(tick / zoomDays) * 100}%` }}
 					>
 						{tick === 0 ? text.now : `+${unit.days(Math.round(tick * 10) / 10)}`}
 					</span>
@@ -73,7 +73,7 @@ export const QueueTimeline = ({ schedule, now, zoomDays, onZoomChange }: QueueTi
 										className={`absolute inset-y-1 flex items-center overflow-hidden rounded px-2 text-xs ${
 											conflicting ? "bg-surface border-danger text-danger border-[1.5px]" : "bg-tint border-primary text-ink border-[1.5px]"
 										}`}
-										style={{ left: `${left}%`, width: `${right - left}%` }}
+										style={{ insetInlineStart: `${left}%`, width: `${right - left}%` }}
 									>
 										<span className="truncate">
 											{item.name} {item.targetLevel}

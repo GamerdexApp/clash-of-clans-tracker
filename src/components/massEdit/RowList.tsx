@@ -101,7 +101,7 @@ const Group = ({ name, rows, draft, saved, selected, onSelect, onChange }: Group
 					<span className="text-muted truncate text-xs">
 						{collapsed ? levels.join(", ") : text.groupBuilt(levels.filter((level) => level > 0).length, rows[0].max)}
 					</span>
-					<LuChevronDown aria-hidden="true" size={16} className={`ms-auto shrink-0 transition-transform ${collapsed ? "-rotate-90" : ""}`} />
+					<LuChevronDown aria-hidden="true" size={16} className={`ms-auto shrink-0 transition-transform ${collapsed ? "-rotate-90 rtl:rotate-90" : ""}`} />
 				</button>
 			</div>
 			{!collapsed && <div className="flex flex-col px-1">{rows.map(renderRow)}</div>}

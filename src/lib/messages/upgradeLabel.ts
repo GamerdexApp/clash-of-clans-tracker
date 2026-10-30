@@ -1,9 +1,7 @@
 import { messages } from "@/i18n/text";
 
 export const upgradeLabelText = messages<{
-  townHallTo: (from: number, to: number) => string;
-  weaponTo: (from: number, to: number) => string;
-  heroTo: (name: string, from: number, to: number) => string;
+  levelTo: (name: string, from: number, to: number) => string;
   toast: {
     undo: string;
     started: (name: string, from: number, to: number) => string;
@@ -27,9 +25,7 @@ export const upgradeLabelText = messages<{
   };
 }>("upgradeLabel", {
   fns: {
-    townHallTo: ["from", "to"],
-    weaponTo: ["from", "to"],
-    heroTo: ["name", "from", "to"],
+    levelTo: ["name", "from", "to"],
     "toast.started": ["name", "from", "to"],
     "toast.finished": ["name", "level"],
     "toast.timeSaved": ["time"],
