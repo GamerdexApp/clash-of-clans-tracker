@@ -19,6 +19,11 @@ describe("language catalogs", () => {
     for (const code of languageFolders()) expect(SUPPORTED_LOCALES).toContain(code);
   });
 
+  it("has a catalog folder for every supported language", () => {
+    const expected = SUPPORTED_LOCALES.filter((code) => code !== "en").sort();
+    expect(languageFolders()).toEqual(expected);
+  });
+
   it("gives every language folder every English message with the same variables, tags and plurals", () => {
     // The script exits with 1 and prints the problems when any catalog differs from English.
     const output = execFileSync("node", ["scripts/check-catalogs.mjs"], { encoding: "utf8" });

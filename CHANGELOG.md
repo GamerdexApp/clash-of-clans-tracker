@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- 19 languages with ICU message catalogs, including right-to-left layout for Arabic
+- Region settings for the language, date format and number format
+- Dates, times, lists and durations follow the chosen language
+
 ### Changed
 
 - Update dependencies to latest (Next.js 16.3, React 19.3, Tailwind 4.3, nanoid 6, clash-of-clans-data 0.18)

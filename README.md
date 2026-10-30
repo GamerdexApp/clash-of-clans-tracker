@@ -8,6 +8,7 @@ A progress tracker for Clash of Clans. Manage multiple villages and track upgrad
 - **localStorage persistence** — all data stored locally, no backend required
 - **Import / Export / Reset** — full data management in the settings page
 - **Sidebar navigation** — collapsible sidebar with village switcher
+- **19 languages**: English plus Arabic, Chinese (Simplified and Traditional), French, German, Indonesian, Italian, Japanese, Korean, Malay, Portuguese (Brazil and Portugal), Russian, Spanish (Spain and Latin America), Thai, Turkish and Vietnamese, with right-to-left layout for Arabic. Game data names stay English.
 - **Toast notifications** — success, error, info, warning helpers
 - **CI/CD** — GitHub Actions workflows for lint + build and Vercel deployment
 
@@ -35,7 +36,13 @@ pnpm dev          # Start dev server at http://localhost:3000
 pnpm build        # Production build
 pnpm lint         # ESLint
 pnpm format       # Prettier
+node scripts/check-i18n.mjs      # Find text that is not in a message catalog
+node scripts/check-catalogs.mjs  # Compare every language with English
 ```
+
+## Translating
+
+Messages live in `src/i18n/messages/<code>/`, one JSON file per area, in ICU format. English is the source. Change a message in a language folder, then run `node scripts/check-catalogs.mjs <code>` until it reports 0 problems. Run `node scripts/gen-locale-indexes.mjs` after adding a language folder.
 
 ## Disclaimer
 
