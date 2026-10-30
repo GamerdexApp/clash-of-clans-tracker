@@ -1,0 +1,193 @@
+{
+  "home": {
+    "defenses": [
+      "air-defense",
+      "air-sweeper",
+      "archer-tower",
+      "bomb-tower",
+      "builders-hut",
+      "cannon",
+      "crafting-station",
+      "eagle-artillery",
+      "firespitter",
+      "hidden-tesla",
+      "inferno-tower",
+      "monolith",
+      "mortar",
+      "multi-archer-tower",
+      "multi-gear-tower",
+      "revenge-tower",
+      "ricochet-cannon",
+      "scattershot",
+      "spell-tower",
+      "super-wizard-tower",
+      "wizard-tower",
+      "x-bow"
+    ],
+    "traps": [
+      "air-bomb",
+      "bomb",
+      "giant-bomb",
+      "giga-bomb",
+      "seeking-air-mine",
+      "skeleton-trap",
+      "spring-trap",
+      "tornado-trap"
+    ],
+    "resourceBuildings": [
+      "dark-elixir-drill",
+      "dark-elixir-storage",
+      "elixir-collector",
+      "elixir-storage",
+      "gold-mine",
+      "gold-storage"
+    ],
+    "guardians": [
+      "logger",
+      "longshot",
+      "smasher"
+    ],
+    "craftedDefenses": [
+      "cake-a-pult",
+      "hero-hunter",
+      "hot-candle"
+    ],
+    "troops": [
+      "Apprentice Warden",
+      "Archer",
+      "Baby Dragon",
+      "Balloon",
+      "Barbarian",
+      "Bowler",
+      "Dragon",
+      "Dragon Rider",
+      "Druid",
+      "Electro Dragon",
+      "Electro Titan",
+      "Furnace",
+      "Giant",
+      "Goblin",
+      "Golem",
+      "Headhunter",
+      "Healer",
+      "Hog Rider",
+      "Ice Golem",
+      "Lava Hound",
+      "Meteor Golem",
+      "Miner",
+      "Minion",
+      "P.E.K.K.A",
+      "Root Rider",
+      "Ruin Witch",
+      "Thrower",
+      "Valkyrie",
+      "Wall Breaker",
+      "Witch",
+      "Wizard",
+      "Yeti"
+    ],
+    "spells": [
+      "Angry Spell",
+      "Bat Spell",
+      "Clone Spell",
+      "Earthquake Spell",
+      "Freeze Spell",
+      "Haste Spell",
+      "Healing Spell",
+      "Ice Block Spell",
+      "Invisibility Spell",
+      "Jump Spell",
+      "Lightning Spell",
+      "Overgrowth Spell",
+      "Poison Spell",
+      "Rage Spell",
+      "Recall Spell",
+      "Revive Spell",
+      "Skeleton Spell",
+      "Totem Spell"
+    ],
+    "siegeMachines": [
+      "Battle Blimp",
+      "Battle Drill",
+      "Flame Flinger",
+      "Log Launcher",
+      "Siege Barracks",
+      "Sky Wagon",
+      "Stone Slammer",
+      "Troop Launcher",
+      "Wall Wrecker"
+    ],
+    "pets": [
+      "Angry Jelly",
+      "Diggy",
+      "Electro Owl",
+      "Frosty",
+      "Greedy Raven",
+      "L.A.S.S.I",
+      "Mighty Yak",
+      "Phoenix",
+      "Poison Lizard",
+      "Sneezy",
+      "Spirit Fox",
+      "Unicorn"
+    ],
+    "heroes": [
+      "Archer Queen",
+      "Barbarian King",
+      "Dragon Duke",
+      "Grand Warden",
+      "Minion Prince",
+      "Royal Champion"
+    ]
+  },
+  "builder": {
+    "troops": [
+      "Baby Dragon",
+      "Beta Minion",
+      "Bomber",
+      "Boxer Giant",
+      "Cannon Cart",
+      "Drop Ship",
+      "Electrofire Wizard",
+      "Hog Glider",
+      "Night Witch",
+      "Power P.E.K.K.A",
+      "Raged Barbarian",
+      "Sneaky Archer"
+    ],
+    "heroes": [
+      "Battle Copter",
+      "Battle Machine"
+    ]
+  },
+  "clanCapital": {
+    "troops": [
+      "Battle Ram",
+      "Flying Fortress",
+      "Hog Raiders",
+      "Inferno Dragon",
+      "Mega Sparky",
+      "Minion Horde",
+      "Mountain Golem",
+      "Power P.E.K.K.A",
+      "Raid Cart",
+      "Rocket Balloon",
+      "Skeleton Barrels",
+      "Sneaky Archer",
+      "Super Barbarian",
+      "Super Dragon",
+      "Super Giant",
+      "Super Miner",
+      "Super Wizard"
+    ],
+    "spells": [
+      "Endless Haste Spell",
+      "Frost Spell",
+      "Graveyard Spell",
+      "Healing Spell",
+      "Jump Spell",
+      "Lightning Spell",
+      "Rage Spell"
+    ]
+  }
+}
