@@ -1,5 +1,6 @@
 "use client";
 
+import { formatRelative } from "@/lib/format";
 import Link from "next/link";
 import { useId, useState } from "react";
 import type { IconType } from "react-icons";
@@ -24,11 +25,10 @@ const linkClasses = "flex min-h-11 items-center px-2 hover:underline lg:min-h-9"
 
 const relativeTime = (iso: string) => {
 	const minutes = Math.round((Date.parse(iso) - Date.now()) / 60_000);
-	const formatter = new Intl.RelativeTimeFormat(undefined, { numeric: "auto" });
 	if (Math.abs(minutes) < 1) return text.updated.justNow;
-	if (Math.abs(minutes) < 60) return formatter.format(minutes, "minute");
-	if (Math.abs(minutes) < 60 * 24) return formatter.format(Math.round(minutes / 60), "hour");
-	return formatter.format(Math.round(minutes / (60 * 24)), "day");
+	if (Math.abs(minutes) < 60) return formatRelative(minutes, "minute");
+	if (Math.abs(minutes) < 60 * 24) return formatRelative(Math.round(minutes / 60), "hour");
+	return formatRelative(Math.round(minutes / (60 * 24)), "day");
 };
 
 /** A new visitor creates a village. A returning visitor goes to the Overview or starts another village. */

@@ -1,3 +1,4 @@
+import { formatTime } from "@/lib/format";
 import { localTimeToUtcMinutes } from "@/lib/utils/activeHoursHelpers";
 import type { ActiveHours, ActiveHoursLocal } from "@/types/app/playthrough";
 
@@ -19,7 +20,5 @@ export const isSameWindow = (a: ActiveHours | undefined, b: ActiveHours) =>
 /** "07:00" as the clock shows it in the player's locale. */
 export const formatClockTime = (time: string): string => {
   const [hours, minutes] = time.split(":").map(Number);
-  return new Intl.DateTimeFormat(undefined, { timeStyle: "short" }).format(
-    new Date(2000, 0, 1, hours, minutes),
-  );
+  return formatTime(new Date(2000, 0, 1, hours, minutes));
 };

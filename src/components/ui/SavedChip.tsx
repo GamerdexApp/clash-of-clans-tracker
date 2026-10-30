@@ -1,5 +1,6 @@
 "use client";
 
+import { formatTime } from "@/lib/format";
 import { useEffect, useState } from "react";
 import { useLeaveGuard } from "@/lib/contexts/LeaveGuardContext";
 import { usePlaythrough } from "@/lib/contexts/PlaythroughContext";
@@ -8,9 +9,6 @@ import { uiText } from "@/lib/messages/ui";
 
 const REFRESH_MS = 30_000;
 const MINUTE_MS = 60_000;
-
-const formatTime = (date: Date) =>
-	new Intl.DateTimeFormat(undefined, { timeStyle: "short" }).format(date);
 
 const formatSaved = (savedAt: Date | null, now: number) => {
 	if (!savedAt) return uiText.savedChip.automatic;

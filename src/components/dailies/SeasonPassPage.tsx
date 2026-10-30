@@ -1,5 +1,6 @@
 "use client";
 
+import { formatMonthDay, formatMonthYear } from "@/lib/format";
 import Image from "next/image";
 import type { ReactNode } from "react";
 
@@ -58,8 +59,8 @@ const SeasonPassView = ({ village }: { village: Playthrough }) => {
 	const dailies = dailiesOf(village);
 	const boosts = goldPassBoosts(village, now);
 	const rolled = rolledBoosts(village, now);
-	const monthName = new Intl.DateTimeFormat(undefined, { month: "long", year: "numeric" }).format(now);
-	const resetName = new Intl.DateTimeFormat(undefined, { month: "long", day: "numeric" }).format(monthResetDate(now));
+	const monthName = formatMonthYear(now);
+	const resetName = formatMonthDay(monthResetDate(now), "long");
 	const monthKey = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, "0")}`;
 
 	const boostRows = [

@@ -1,5 +1,6 @@
 "use client";
 
+import { formatMonthDay } from "@/lib/format";
 import Link from "next/link";
 import { useState } from "react";
 import type { ReactNode } from "react";
@@ -188,9 +189,7 @@ const SlotsCell = ({ village, now }: { village: Playthrough; now: Date }) => {
 const GoldPassCell = ({ village, now }: { village: Playthrough; now: Date }) => {
 	const goldPass = dailiesOf(village).goldPass;
 	const boosts = goldPassBoosts(village, now);
-	const reset = new Intl.DateTimeFormat(undefined, { month: "short", day: "numeric" }).format(
-		monthResetDate(now)
-	);
+	const reset = formatMonthDay(monthResetDate(now), "short");
 	const copy = text.goldPass;
 	const rows: Array<[string, ReactNode]> = [
 		[copy.builder, boosts.builder === 0 ? copy.off : `${boosts.builder}%`],

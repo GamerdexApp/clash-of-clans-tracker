@@ -102,6 +102,24 @@ export const formatDate = (iso: string) => {
 export const formatFinishTime = (date: Date) =>
   date.toLocaleString(languageTag(), { weekday: "short", hour: "numeric", minute: "2-digit" });
 
+export const formatCompact = (value: number) => numberFormatter({ notation: "compact", maximumFractionDigits: 1 }).format(value);
+
+export const formatList = (items: string[]) => new Intl.ListFormat(languageTag(), { type: "conjunction" }).format(items);
+
+export const formatRelative = (value: number, unit: Intl.RelativeTimeFormatUnit) =>
+  new Intl.RelativeTimeFormat(languageTag(), { numeric: "auto" }).format(value, unit);
+
+export const formatTimeZoneName = () =>
+  new Intl.DateTimeFormat(languageTag(), { timeZoneName: "long" }).formatToParts(new Date()).find((part) => part.type === "timeZoneName")?.value ?? "";
+
+export const formatMonthYear = (date: Date) => date.toLocaleDateString(languageTag(), { month: "long", year: "numeric" });
+
+export const formatMonthDay = (date: Date, month: "long" | "short") => date.toLocaleDateString(languageTag(), { month, day: "numeric" });
+
+/** The calendar day and the time, such as when every queued upgrade is done. */
+export const formatDayTime = (date: Date) =>
+  date.toLocaleString(languageTag(), { month: "short", day: "numeric", hour: "numeric", minute: "2-digit" });
+
 /** A component uses the `useTranslations` hook instead. */
 export const translator = <Namespace extends keyof Messages>(namespace: Namespace) =>
   createTranslator({ locale: state.locale, messages: state.messages, namespace });

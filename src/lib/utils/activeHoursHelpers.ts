@@ -1,3 +1,4 @@
+import { formatTime } from "@/lib/format";
 import type { ActiveHours } from "@/types/app/playthrough";
 
 /** Convert a local "HH:MM" time string to minutes from midnight UTC. */
@@ -19,7 +20,7 @@ export const utcMinutesToLocalTimeStr = (utcMinutes: number): string => {
 export const formatActiveHoursDisplay = (utcMinutes: number): string => {
   const d = new Date();
   d.setUTCHours(Math.floor(utcMinutes / 60), utcMinutes % 60, 0, 0);
-  return d.toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit", hour12: true });
+  return formatTime(d);
 };
 
 /**

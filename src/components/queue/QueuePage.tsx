@@ -1,5 +1,6 @@
 "use client";
 
+import { formatDayTime } from "@/lib/format";
 import { Suspense, useState } from "react";
 
 import { usePlaythrough } from "@/lib/contexts/PlaythroughContext";
@@ -65,7 +66,6 @@ const QueueContent = ({ village, lane }: { village: Playthrough; lane: LaneKind 
 	const costText = Object.entries(totals.costByResource)
 		.map(([resource, amount]) => `${formatNumber(amount)} ${resource}`)
 		.join(", ");
-	const finishFormatter = new Intl.DateTimeFormat(undefined, { month: "short", day: "numeric", hour: "numeric", minute: "2-digit" });
 
 	return (
 		<>
@@ -91,7 +91,7 @@ const QueueContent = ({ village, lane }: { village: Playthrough; lane: LaneKind 
 					<Total label={text.totals.time} value={totals.queuedCount === 0 ? text.totals.none : formatDuration(totals.queuedMs)} />
 					<Total
 						label={text.totals.allDone}
-						value={totals.allDoneAt ? finishFormatter.format(totals.allDoneAt) : text.totals.none}
+						value={totals.allDoneAt ? formatDayTime(totals.allDoneAt) : text.totals.none}
 					/>
 					<Total label={text.totals.cost} value={costText || text.totals.noCost} />
 				</div>

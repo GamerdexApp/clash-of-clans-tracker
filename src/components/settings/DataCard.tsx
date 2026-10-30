@@ -1,5 +1,6 @@
 "use client";
 
+import { formatList } from "@/lib/format";
 import { useRef, useState } from "react";
 import type { ChangeEvent } from "react";
 import { LuDownload, LuUpload } from "react-icons/lu";
@@ -86,9 +87,7 @@ export const DataCard = () => {
 		});
 	};
 
-	const names = new Intl.ListFormat(undefined, { type: "conjunction" }).format(
-		playthroughs.map((village) => village.name)
-	);
+	const names = formatList(playthroughs.map((village) => village.name));
 
 	return (
 		<SettingsCard title={text.title} aside={<Badge tone="added">{text.villageCount(playthroughs.length)}</Badge>}>

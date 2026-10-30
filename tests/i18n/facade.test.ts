@@ -88,3 +88,15 @@ describe("the message objects", () => {
     expect(text.sync.how.points).toHaveLength(6);
   });
 });
+
+describe("durations", () => {
+  it("keeps the English shapes the pages used before", async () => {
+    const { formatCountdown, formatDuration, formatTimeLeft } =
+      await import("@/lib/format");
+    expect(formatDuration(0)).toBe("0m");
+    expect(formatDuration(((24 + 14) * 60 + 20) * 60_000)).toBe("1d 14h 20m");
+    expect(formatCountdown(((2 * 24 + 5) * 3600 + 120) * 1000)).toBe("2d 5h");
+    expect(formatCountdown(125_000)).toBe("2m 05s");
+    expect(formatTimeLeft((15 * 60 + 42) * 60_000 + 8_000)).toBe("15h 42m 08s");
+  });
+});

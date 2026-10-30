@@ -1,3 +1,4 @@
+import { formatCompact, formatNumber } from "@/lib/format";
 import { calculators, clanCapital } from "clash-of-clans-data";
 
 import { goldPassBoosts } from "./goldPass";
@@ -177,8 +178,7 @@ export const forgeBoost = (village: Playthrough, now: Date): BoostPercent => gol
 
 /** Amounts under a million print in full, so 60,000 Dark Elixir does not read as 0.1M. */
 export const formatResourceAmount = (amount: number): string => {
-  if (amount < 1_000_000) return amount.toLocaleString("en-US");
-  return `${(amount / 1_000_000).toFixed(1).replace(/\.0$/, "")}M`;
+  return amount < 1_000_000 ? formatNumber(amount) : formatCompact(amount);
 };
 
 export const forgeSlots = (village: Playthrough): ForgeSlotData[] => {

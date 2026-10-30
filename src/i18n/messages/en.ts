@@ -7,6 +7,7 @@ import builderWalls from "./en/builderWalls.json";
 import capital from "./en/capital.json";
 import common from "./en/common.json";
 import dailies from "./en/dailies.json";
+import duration from "./en/duration.json";
 import equipment from "./en/equipment.json";
 import game from "./en/game.json";
 import landing from "./en/landing.json";
@@ -38,6 +39,7 @@ const en = {
   capital,
   common,
   dailies,
+  duration,
   equipment,
   game,
   landing,

@@ -3,7 +3,7 @@
 import { useState } from "react";
 import type { ReactNode } from "react";
 
-import { formatClock } from "@/lib/format";
+import { formatClock, formatTime, formatTimeZoneName } from "@/lib/format";
 import { commonText } from "@/lib/messages/common";
 import { dailiesText } from "@/lib/messages/dailies";
 import { nextReset, timerState } from "@/service/dailies";
@@ -15,13 +15,10 @@ import type { DailyTimerData } from "@/types/app/playthrough";
 
 const text = dailiesText.timer;
 
-const timeZoneName = () =>
-	new Intl.DateTimeFormat(undefined, { timeZoneName: "long" }).formatToParts(new Date()).find((part) => part.type === "timeZoneName")?.value ?? "";
-
-const zoneLabel = () => `${timeZoneName()} (${text.deviceClock})`;
+const zoneLabel = () => `${formatTimeZoneName()} (${text.deviceClock})`;
 
 const clockTime = (hours: number, minutes: number) =>
-	new Intl.DateTimeFormat(undefined, { hour: "numeric", minute: "2-digit" }).format(new Date(2000, 0, 1, hours, minutes));
+	formatTime(new Date(2000, 0, 1, hours, minutes));
 
 const resetClockTime = (resetTime: string) => {
 	const [hours, minutes] = resetTime.split(":").map(Number);

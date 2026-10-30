@@ -1,5 +1,6 @@
 "use client";
 
+import { durationText as unit } from "@/lib/messages/duration";
 import type { QueueTimelineProps } from "@/types/components/upgradeQueue";
 import { commonText } from "@/lib/messages/common";
 import { queueText } from "@/lib/messages/queue";
@@ -35,7 +36,7 @@ export const QueueTimeline = ({ schedule, now, zoomDays, onZoomChange }: QueueTi
 						className={`text-muted absolute font-mono text-[11px] ${tick === zoomDays ? "-translate-x-full" : tick === 0 ? "" : "-translate-x-1/2"}`}
 						style={{ left: `${(tick / zoomDays) * 100}%` }}
 					>
-						{tick === 0 ? text.now : `+${Math.round(tick * 10) / 10}d`}
+						{tick === 0 ? text.now : `+${unit.days(Math.round(tick * 10) / 10)}`}
 					</span>
 				))}
 			</div>
