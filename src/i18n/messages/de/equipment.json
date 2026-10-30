@@ -11,9 +11,9 @@
     "title": "Erzvorrat",
     "description": "Das Erz, das du besitzt. Engpässe sind nur ein Hinweis und blockieren nie ein Upgrade.",
     "names": {
-      "shiny": "Glänzendes Erz",
-      "glowing": "Leuchtendes Erz",
-      "starry": "Sternenerz"
+      "shiny": "Shiny Ore",
+      "glowing": "Glowy Ore",
+      "starry": "Starry Ore"
     },
     "short": {
       "shiny": "Glänzend",

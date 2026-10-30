@@ -9,9 +9,9 @@
     "builderElixir": "Elixir del Constructor",
     "builderElixirShort": "Elixir Const.",
     "capitalGold": "Oro de la Capital",
-    "shinyOre": "Mineral brillante",
-    "glowyOre": "Mineral luminoso",
-    "starryOre": "Mineral estelar"
+    "shinyOre": "Shiny Ore",
+    "glowyOre": "Glowy Ore",
+    "starryOre": "Starry Ore"
   },
   "halls": {
     "townHall": "Ayuntamiento {level}",

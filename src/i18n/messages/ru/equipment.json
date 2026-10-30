@@ -12,7 +12,7 @@
     "description": "Руда, которая у вас есть. Нехватка руды только подсказка и не блокирует улучшение.",
     "names": {
       "shiny": "Shiny Ore",
-      "glowing": "Glowing Ore",
+      "glowing": "Glowy Ore",
       "starry": "Starry Ore"
     },
     "short": {

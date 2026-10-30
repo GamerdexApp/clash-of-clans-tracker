@@ -11,9 +11,9 @@
     "title": "Reserva de minerales",
     "description": "Los minerales que tienes. Las faltas son solo un aviso y nunca bloquean una mejora.",
     "names": {
-      "shiny": "Mineral brillante",
-      "glowing": "Mineral luminoso",
-      "starry": "Mineral estelar"
+      "shiny": "Shiny Ore",
+      "glowing": "Glowy Ore",
+      "starry": "Starry Ore"
     },
     "short": {
       "shiny": "Brillante",

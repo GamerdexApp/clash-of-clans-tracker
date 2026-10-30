@@ -9,9 +9,9 @@
     "builderElixir": "Élixir des ouvriers",
     "builderElixirShort": "Élixir ouv.",
     "capitalGold": "Or de la capitale",
-    "shinyOre": "Minerai brillant",
-    "glowyOre": "Minerai luisant",
-    "starryOre": "Minerai étoilé"
+    "shinyOre": "Shiny Ore",
+    "glowyOre": "Glowy Ore",
+    "starryOre": "Starry Ore"
   },
   "halls": {
     "townHall": "Hôtel de ville {level}",

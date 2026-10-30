@@ -180,17 +180,17 @@
       "unlockedBadge": "Freigeschaltet",
       "levelOnly": "Stufe 1 (die einzige Stufe)",
       "limits": {
-        "shiny": "Max. Glänzendes Erz",
-        "glowy": "Max. Leuchtendes Erz",
-        "starry": "Max. Sternenerz"
+        "shiny": "Max. Shiny Ore",
+        "glowy": "Max. Glowy Ore",
+        "starry": "Max. Starry Ore"
       },
       "calculator": "Erzumwandlungsrechner",
       "ores": {
-        "shiny": "Glänzendes Erz",
-        "glowy": "Leuchtendes Erz",
-        "starry": "Sternenerz"
+        "shiny": "Shiny Ore",
+        "glowy": "Glowy Ore",
+        "starry": "Starry Ore"
       },
-      "help": "10 Glänzendes Erz ergeben 1 Leuchtendes Erz. 100 Leuchtendes Erz ergeben 1 Sternenerz."
+      "help": "10 Shiny Ore ergeben 1 Glowy Ore. 100 Glowy Ore ergeben 1 Starry Ore."
     }
   },
   "seasonPass": {

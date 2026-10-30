@@ -12,7 +12,7 @@
     "description": "보유 중인 Ore예요. 부족하다는 표시는 참고용이며 업그레이드를 막지 않아요.",
     "names": {
       "shiny": "Shiny Ore",
-      "glowing": "Glowing Ore",
+      "glowing": "Glowy Ore",
       "starry": "Starry Ore"
     },
     "short": {

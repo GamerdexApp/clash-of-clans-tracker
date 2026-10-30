@@ -11,9 +11,9 @@
     "title": "Scorta di minerali",
     "description": "I minerali che possiedi. Le carenze sono solo un consiglio e non bloccano mai un potenziamento.",
     "names": {
-      "shiny": "Minerale Scintillante",
-      "glowing": "Minerale Luminoso",
-      "starry": "Minerale Stellare"
+      "shiny": "Shiny Ore",
+      "glowing": "Glowy Ore",
+      "starry": "Starry Ore"
     },
     "short": {
       "shiny": "Scintillante",

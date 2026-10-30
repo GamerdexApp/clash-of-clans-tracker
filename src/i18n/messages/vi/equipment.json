@@ -12,7 +12,7 @@
     "description": "Số ore bạn đang có. Thiếu ore chỉ là lời khuyên và không bao giờ chặn nâng cấp.",
     "names": {
       "shiny": "Shiny Ore",
-      "glowing": "Glowing Ore",
+      "glowing": "Glowy Ore",
       "starry": "Starry Ore"
     },
     "short": {

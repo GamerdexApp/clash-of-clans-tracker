@@ -9,9 +9,9 @@
     "builderElixir": "Bauarbeiter-Elixier",
     "builderElixirShort": "B.-Elixier",
     "capitalGold": "Hauptstadtgold",
-    "shinyOre": "Glänzendes Erz",
-    "glowyOre": "Leuchtendes Erz",
-    "starryOre": "Sternenerz"
+    "shinyOre": "Shiny Ore",
+    "glowyOre": "Glowy Ore",
+    "starryOre": "Starry Ore"
   },
   "halls": {
     "townHall": "Rathaus {level}",

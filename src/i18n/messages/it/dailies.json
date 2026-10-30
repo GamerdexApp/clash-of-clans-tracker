@@ -180,17 +180,17 @@
       "unlockedBadge": "Sbloccato",
       "levelOnly": "Livello 1 (l'unico livello)",
       "limits": {
-        "shiny": "Massimo di Minerale Scintillante",
-        "glowy": "Massimo di Minerale Luminoso",
-        "starry": "Massimo di Minerale Stellare"
+        "shiny": "Massimo di Shiny Ore",
+        "glowy": "Massimo di Glowy Ore",
+        "starry": "Massimo di Starry Ore"
       },
       "calculator": "Calcolatore di conversione dei minerali",
       "ores": {
-        "shiny": "Minerale Scintillante",
-        "glowy": "Minerale Luminoso",
-        "starry": "Minerale Stellare"
+        "shiny": "Shiny Ore",
+        "glowy": "Glowy Ore",
+        "starry": "Starry Ore"
       },
-      "help": "10 Minerali Scintillanti fanno 1 Minerale Luminoso. 100 Minerali Luminosi fanno 1 Minerale Stellare."
+      "help": "10 Shiny Ore fanno 1 Glowy Ore. 100 Glowy Ore fanno 1 Starry Ore."
     }
   },
   "seasonPass": {

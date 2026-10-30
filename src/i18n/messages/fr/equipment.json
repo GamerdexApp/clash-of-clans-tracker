@@ -11,9 +11,9 @@
     "title": "Stock de minerai",
     "description": "Le minerai que vous possédez. Les manques sont de simples conseils et ne bloquent jamais une amélioration.",
     "names": {
-      "shiny": "Minerai brillant",
-      "glowing": "Minerai luisant",
-      "starry": "Minerai étoilé"
+      "shiny": "Shiny Ore",
+      "glowing": "Glowy Ore",
+      "starry": "Starry Ore"
     },
     "short": {
       "shiny": "Brillant",

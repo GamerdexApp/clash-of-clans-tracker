@@ -12,7 +12,7 @@
     "description": "你持有的矿石。不足只是建议，不会阻止升级。",
     "names": {
       "shiny": "Shiny Ore",
-      "glowing": "Glowing Ore",
+      "glowing": "Glowy Ore",
       "starry": "Starry Ore"
     },
     "short": {

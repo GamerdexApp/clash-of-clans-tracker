@@ -9,9 +9,9 @@
     "builderElixir": "Elisir del Costruttore",
     "builderElixirShort": "Elisir Cost.",
     "capitalGold": "Oro Capitale",
-    "shinyOre": "Minerale Scintillante",
-    "glowyOre": "Minerale Luminoso",
-    "starryOre": "Minerale Stellare"
+    "shinyOre": "Shiny Ore",
+    "glowyOre": "Glowy Ore",
+    "starryOre": "Starry Ore"
   },
   "halls": {
     "townHall": "Municipio {level}",

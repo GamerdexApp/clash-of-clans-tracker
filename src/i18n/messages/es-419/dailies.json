@@ -180,17 +180,17 @@
       "unlockedBadge": "Desbloqueado",
       "levelOnly": "Nivel 1 (el único nivel)",
       "limits": {
-        "shiny": "Máx. de mineral brillante",
-        "glowy": "Máx. de mineral luminoso",
-        "starry": "Máx. de mineral estelar"
+        "shiny": "Máx. de Shiny Ore",
+        "glowy": "Máx. de Glowy Ore",
+        "starry": "Máx. de Starry Ore"
       },
       "calculator": "Calculadora de conversión de minerales",
       "ores": {
-        "shiny": "Mineral brillante",
-        "glowy": "Mineral luminoso",
-        "starry": "Mineral estelar"
+        "shiny": "Shiny Ore",
+        "glowy": "Glowy Ore",
+        "starry": "Starry Ore"
       },
-      "help": "10 de mineral brillante hacen 1 de mineral luminoso. 100 de mineral luminoso hacen 1 de mineral estelar."
+      "help": "10 de Shiny Ore hacen 1 de Glowy Ore. 100 de Glowy Ore hacen 1 de Starry Ore."
     }
   },
   "seasonPass": {
