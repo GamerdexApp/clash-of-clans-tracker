@@ -1,7 +1,18 @@
 import { describe, expect, it } from "vitest";
 
 import { setTracking } from "@/service/capital";
-import { homeItemGroups, homeProgressCards, homeResources, overviewStats } from "@/service/overview";
+import { builderLeagueInfo, homeLeagueInfo } from "@/service/leagues";
+import {
+  builderBaseState,
+  builderItemGroups,
+  builderProgressCards,
+  capitalOverview,
+  capitalOverviewState,
+  homeItemGroups,
+  homeProgressCards,
+  homeResources,
+  overviewStats,
+} from "@/service/overview";
 import type { Playthrough } from "@/types/app";
 
 import { freshVillage } from "./fixtures";
@@ -82,5 +93,66 @@ describe("Overview item groups", () => {
     const king = groups.heroes.find((hero) => hero.name === "Barbarian King")!;
     expect(king.equipment.length).toBeGreaterThan(0);
     expect(king.equipment.every((piece) => piece.locked && piece.requirement === "Blacksmith")).toBe(true);
+  });
+});
+
+describe("Overview Builder Base and Clan Capital", () => {
+  const withHalls = (townHall: number, builderHall: number, capitalHall: number): Playthrough => {
+    const village = villageAt(townHall);
+    village.data.builderBase.builderHallLevel = builderHall;
+    village.data.clanCapital.capitalPeak.hallLevel = capitalHall;
+    return village;
+  };
+
+  it("has three Builder Base states", () => {
+    expect(builderBaseState(withHalls(5, 0, 0))).toBe("locked");
+    expect(builderBaseState(withHalls(8, 0, 0))).toBe("notSet");
+    expect(builderBaseState(withHalls(8, 3, 0))).toBe("open");
+    expect(builderBaseState(withHalls(3, 2, 0))).toBe("open");
+  });
+
+  it("lists every Builder Base troop and hero and locks what the halls cannot use yet", () => {
+    const groups = builderItemGroups(withHalls(12, 3, 0), NOW);
+    expect(groups.troops.length).toBeGreaterThan(0);
+    expect(groups.heroes.some((hero) => hero.maxLevel === 0 && hero.requirement?.startsWith("Builder Hall"))).toBe(true);
+    expect(builderProgressCards(withHalls(12, 3, 0))).toHaveLength(5);
+  });
+
+  it("separates the Clan Capital states", () => {
+    expect(capitalOverviewState(withHalls(2, 0, 0))).toBe("locked");
+    expect(capitalOverviewState(setTracking(withHalls(8, 0, 3), false))).toBe("off");
+    expect(capitalOverviewState(withHalls(8, 0, 0))).toBe("notSet");
+    expect(capitalOverviewState(withHalls(8, 0, 3))).toBe("open");
+  });
+
+  it("lists every zone and counts the open districts", () => {
+    const village = withHalls(12, 0, 3);
+    village.data.clanCapital.barbarianCamp.hallLevel = 1;
+    const overview = capitalOverview(village);
+    expect(overview.districts).toHaveLength(9);
+    expect(overview.cards.find((card) => card.id === "districts")?.result.current).toBe(1);
+    expect(overview.districts.find((zone) => zone.id === "skeletonPark")).toMatchObject({ open: false, unlocksAt: 8, needsDistrictHall: false });
+    expect(overview.districts.find((zone) => zone.id === "wizardValley")).toMatchObject({ open: false, needsDistrictHall: true });
+  });
+});
+
+describe("League rewards", () => {
+  it("reads the Builder Base league from the saved name", () => {
+    const village = villageAt(12);
+    village.data.builderBase.builderBaseLeagueName = "Wood League V";
+    const info = builderLeagueInfo(village)!;
+    expect(info.kind).toBe("builder");
+    expect(info.battle.length).toBeGreaterThan(0);
+    expect(info.sections[0].lines.map((line) => line.label)).toEqual(["Builder Gold", "Builder Elixir"]);
+  });
+
+  it("reads the Home Village league at the Town Hall and says No data when it has no numbers", () => {
+    const village = villageAt(12);
+    village.data.homeVillage.leagueName = "Legend League";
+    const info = homeLeagueInfo(village);
+    expect(info).not.toBeNull();
+    expect(info!.noData || info!.sections.length > 0).toBe(true);
+    village.data.homeVillage.leagueName = "Not A League";
+    expect(homeLeagueInfo(village)).toBeNull();
   });
 });

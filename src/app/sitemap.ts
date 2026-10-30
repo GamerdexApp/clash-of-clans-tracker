@@ -5,7 +5,7 @@ const siteUrl = "https://coc.gamerdex.app";
 const sitemap = (): MetadataRoute.Sitemap => {
 	const routes = [
 		{ path: "/", priority: 1, changeFrequency: "weekly" as const },
-		{ path: "/dashboard", priority: 0.9, changeFrequency: "weekly" as const },
+		{ path: "/overview", priority: 0.9, changeFrequency: "weekly" as const },
 		{ path: "/achievements", priority: 0.8, changeFrequency: "weekly" as const },
 		{ path: "/forge", priority: 0.8, changeFrequency: "weekly" as const },
 		{ path: "/season-pass", priority: 0.7, changeFrequency: "weekly" as const },

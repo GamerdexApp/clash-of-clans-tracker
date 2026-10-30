@@ -1,10 +1,16 @@
-import { home } from "clash-of-clans-data";
+import { builder, home } from "clash-of-clans-data";
 
 import { formatNumber } from "@/lib/format";
 import { toPublicImageUrl } from "@/lib/utils/imageHelpers";
 import { blacksmithLevel } from "./equipment";
 import { heroIdForName } from "./upgradeEngine";
 import {
+  calcBuilderHeroesProgress,
+  calcBuilderLabProgress,
+  calcBuilderStructuresProgress,
+  calcBuilderTrapsProgress,
+  calcBuilderWallsProgress,
+  getBuilderWallData,
   calcCraftedDefensesProgress,
   calcDaysAt,
   calcEquipmentProgress,
@@ -20,6 +26,7 @@ import {
   calcHomeHeroesProgress,
   type ProgressResult,
 } from "@/lib/utils/progressHelpers";
+import { capitalArmy, capitalHallOf, zoneHall, zoneIsOpen, zoneLabel, zoneProgress, zoneUnlockLevel, capitalZones } from "./capital";
 import { clanCapitalState } from "./navAccess";
 import type { Playthrough } from "@/types/app";
 import type { TrackedHero, TrackedItem } from "@/types/app/game";
@@ -262,3 +269,154 @@ export const homeResources = (village: Playthrough): ResourceRow[] => {
 };
 
 export const daysAtTownHall = (village: Playthrough) => calcDaysAt(village.thChangedAt);
+
+const BUILDER_BASE_TOWN_HALL = 6;
+
+export type BuilderBaseState = "locked" | "notSet" | "open";
+
+/** Builder Base needs Town Hall 6 or a Builder Hall. A Builder Hall of 0 asks for the level instead of showing empty progress. */
+export const builderBaseState = (village: Playthrough): BuilderBaseState => {
+  const builderHall = village.data.builderBase.builderHallLevel;
+  if (builderHall > 0) return "open";
+  return village.data.homeVillage.townHallLevel >= BUILDER_BASE_TOWN_HALL ? "notSet" : "locked";
+};
+
+export const builderProgressCards = (village: Playthrough): ProgressCardData[] => {
+  const bb = village.data.builderBase;
+  const hall = bb.builderHallLevel;
+  const walls = getBuilderWallData(hall);
+  return [
+    { id: "structures", label: "Structures", result: calcBuilderStructuresProgress(bb, hall), sub: "Defenses, army, resources", href: "/builder-base/upgrades" },
+    { id: "traps", label: "Traps", result: calcBuilderTrapsProgress(bb, hall), href: "/builder-base/upgrades?tab=traps" },
+    { id: "lab", label: "Lab", result: calcBuilderLabProgress(bb, hall), sub: "Builder troops", href: "/builder-base/troops" },
+    { id: "heroes", label: "Heroes", result: calcBuilderHeroesProgress(bb.heroes, hall), href: "/builder-base/upgrades?tab=heroes" },
+    {
+      id: "walls",
+      label: "Walls",
+      result: calcBuilderWallsProgress(bb.walls ?? {}, hall),
+      sub: walls.totalAtBH > 0 ? `${walls.totalAtBH} walls, max level ${walls.maxLevel}` : undefined,
+      href: "/builder-base/walls",
+    },
+  ];
+};
+
+const builderRaw = builder() as unknown as Record<"troops" | "heroes", () => { get: () => RawEntry[] }>;
+const allBuilderTroops = builderRaw.troops().get();
+const allBuilderHeroes = builderRaw.heroes().get();
+
+interface RawBuilderLevel extends RawLevel {
+  starLabRequired?: number;
+  builderHallLevelRequired?: number;
+}
+
+export interface BuilderItemGroups {
+  troops: ItemTileData[];
+  heroes: ItemTileData[];
+}
+
+/** Every Builder Base troop and hero, locked with what it needs when the Builder Hall or Star Laboratory is too low. */
+export const builderItemGroups = (village: Playthrough, now: Date): BuilderItemGroups => {
+  const bb = village.data.builderBase;
+  const hall = bb.builderHallLevel;
+  const troops = savedByName(bb.troops);
+  const heroes = savedByName(bb.heroes);
+  return {
+    troops: allBuilderTroops.map((entry) => {
+      const levels = entry.levels as RawBuilderLevel[];
+      const maxLevel = levels.filter((level) => (level.starLabRequired ?? 0) <= hall).length;
+      return tileFor(entry, troops.get(entry.name.toLowerCase()), maxLevel, `Star Laboratory ${levels[0]?.starLabRequired ?? 1}`, now);
+    }),
+    heroes: allBuilderHeroes.map((entry) => {
+      const levels = entry.levels as RawBuilderLevel[];
+      const maxLevel = levels.filter((level) => (level.builderHallLevelRequired ?? 0) <= hall).length;
+      return tileFor(entry, heroes.get(entry.name.toLowerCase()), maxLevel, `Builder Hall ${levels[0]?.builderHallLevelRequired ?? 1}`, now);
+    }),
+  };
+};
+
+const builderResourceBuildings = new Map(
+  (builder().resourceBuildings().get() as unknown as Array<{ id: string; levels: Array<{ level: number; capacity?: number; productionRate?: number; builderHallRequired?: number }> }>).map((building) => [building.id, building]),
+);
+
+export const builderResources = (village: Playthrough): ResourceRow[] => {
+  const bb = village.data.builderBase;
+  const sum = (id: string, field: "capacity" | "productionRate") => {
+    const building = builderResourceBuildings.get(id);
+    if (!building) return 0;
+    return (bb.resourceBuildings[id] ?? []).reduce((total, instance) => {
+      if (instance.level === 0) return total;
+      const level = building.levels.find((candidate) => candidate.level === instance.level && (candidate.builderHallRequired ?? 0) <= bb.builderHallLevel);
+      return total + (level?.[field] ?? 0);
+    }, 0);
+  };
+  const rows: ResourceRow[] = [
+    { id: "gold", label: "Builder Gold", image: "/images/other/gold-b.png", perHour: sum("gold-mine", "productionRate"), storage: sum("gold-storage", "capacity") },
+    { id: "elixir", label: "Builder Elixir", image: "/images/other/elixir-b.png", perHour: sum("elixir-collector", "productionRate"), storage: sum("elixir-storage", "capacity") },
+  ];
+  return rows.filter((row) => row.perHour > 0 || row.storage > 0);
+};
+
+export const daysAtBuilderHall = (village: Playthrough) => calcDaysAt(village.bhChangedAt);
+
+export type ClanCapitalOverviewState = "locked" | "off" | "notSet" | "open";
+
+export const capitalOverviewState = (village: Playthrough): ClanCapitalOverviewState => {
+  const state = clanCapitalState(village);
+  if (state !== "on") return state;
+  return capitalHallOf(village) > 0 ? "open" : "notSet";
+};
+
+export interface DistrictCardData {
+  id: string;
+  label: string;
+  hallLevel: number;
+  open: boolean;
+  unlocksAt: number;
+  /** The Capital Hall opens the zone, but its District Hall is still 0. */
+  needsDistrictHall: boolean;
+  progress: ProgressResult;
+  isCapital: boolean;
+}
+
+const floorResult = (current: number, max: number): ProgressResult =>
+  max <= 0 ? { current, max: 0, pct: 0 } : { current, max, pct: current >= max ? 100 : Math.floor((current / max) * 100) };
+
+export interface CapitalOverview {
+  cards: ProgressCardData[];
+  districts: DistrictCardData[];
+}
+
+/** Three progress cards and one card per zone. Progress rounds down like every other section. */
+export const capitalOverview = (village: Playthrough): CapitalOverview => {
+  const zones = capitalZones.map((zone): DistrictCardData => {
+    const hallLevel = zoneHall(village, zone.id);
+    const progress = zoneProgress(village, zone.id);
+    return {
+      id: zone.id,
+      label: zone.id === "capitalPeak" ? "Capital Peak" : zoneLabel(zone.id),
+      hallLevel,
+      open: zoneIsOpen(village, zone.id) && hallLevel > 0,
+      unlocksAt: zoneUnlockLevel(zone.id),
+      needsDistrictHall: zoneIsOpen(village, zone.id) && hallLevel === 0,
+      progress: floorResult(progress.current, progress.max),
+      isCapital: zone.id === "capitalPeak",
+    };
+  });
+  const districts = zones.filter((zone) => !zone.isCapital);
+  const activeDistricts = districts.filter((zone) => zone.open).length;
+  const army = capitalArmy(village).filter((entry) => entry.maxLevel > 0);
+  const sum = (kind: "troops" | "spells") => {
+    const entries = army.filter((entry) => entry.kind === kind);
+    return { count: entries.length, result: floorResult(entries.reduce((total, entry) => total + Math.min(entry.level, entry.maxLevel), 0), entries.reduce((total, entry) => total + entry.maxLevel, 0)) };
+  };
+  const troops = sum("troops");
+  const spells = sum("spells");
+  return {
+    cards: [
+      { id: "districts", label: "Districts", result: floorResult(activeDistricts, districts.length), sub: `${activeDistricts} of ${districts.length} active`, href: "/clan-capital/districts" },
+      { id: "troops", label: "Troops", result: troops.result, sub: `${troops.count} available`, href: "/clan-capital/troops" },
+      { id: "spells", label: "Spells", result: spells.result, sub: `${spells.count} available`, href: "/clan-capital/troops" },
+    ],
+    districts: zones,
+  };
+};
