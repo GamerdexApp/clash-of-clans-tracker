@@ -115,7 +115,8 @@ export const settingsNavItem: NavItem = {
   icon: LuSettings,
 };
 
-const allItems = [...navGroups.flatMap((group) => group.items), settingsNavItem];
+export const allNavItems: NavItem[] = [...navGroups.flatMap((group) => group.items), settingsNavItem];
+const allItems = allNavItems;
 
 export const isNavItemActive = (item: NavItem, pathname: string) =>
   [item.href, ...(item.alsoActiveFor ?? [])].some((href) => pathname === href || pathname.startsWith(`${href}/`));

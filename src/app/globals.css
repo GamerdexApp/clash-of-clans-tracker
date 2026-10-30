@@ -105,17 +105,6 @@
   --color-action: #c0392b;
 }
 
-/* The old pages keep their palette until each one is rebuilt. Remove with the legacy route group. */
-html.legacy-palette,
-html.legacy-palette.dark {
-  --primary: #1a3869;
-  --accent: #f0b429;
-}
-
-.Toastify__toast {
-  padding: 0 !important;
-}
-
 @keyframes slide-in-right {
   from { transform: translateX(100%); }
   to   { transform: translateX(0); }
