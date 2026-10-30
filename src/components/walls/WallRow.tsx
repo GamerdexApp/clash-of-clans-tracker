@@ -41,7 +41,7 @@ export const WallRow = ({ rules, level, count, maxCount, highest, hall, nextCost
 						<Image src={level.imageUrl} alt="" width={40} height={40} style={{ width: 40, height: 40 }} className="shrink-0 object-contain" />
 					)}
 					<div className="flex flex-col">
-						<h3 className="text-base font-semibold">{text.level(level.level)}</h3>
+						<h2 className="text-base font-semibold">{text.level(level.level)}</h2>
 						{nextCost && (
 							<span className="text-muted text-xs">
 								{text.nextCost(formatNumber(nextCost.amount), nextCost.resource)}

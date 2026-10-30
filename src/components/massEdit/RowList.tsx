@@ -94,7 +94,6 @@ const Group = ({ name, rows, draft, saved, selected, onSelect, onChange }: Group
 				<button
 					type="button"
 					aria-expanded={!collapsed}
-					aria-label={collapsed ? text.expand(name) : text.collapse(name)}
 					onClick={() => setCollapsed(!collapsed)}
 					className="flex min-h-9 min-w-0 flex-1 items-center gap-2 text-start"
 				>

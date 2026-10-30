@@ -37,11 +37,12 @@ export const LevelPicker = ({ label, levels, townHall, value, onChange }: LevelP
 							aria-pressed={value === option.level}
 							disabled={!available}
 							onClick={() => onChange(option.level)}
-							aria-label={`${text.levelOption(option.level)}, ${available ? text.levelTownHall(option.townHallRequired) : text.levelRequires(option.townHallRequired)}`}
 							className={pillClasses(value === option.level, available)}
 						>
+							<span className="sr-only">{text.level} </span>
 							<span className="font-mono font-medium">{option.level}</span>
 							<span className="text-muted text-[11px]">{text.levelTownHall(option.townHallRequired)}</span>
+							{!available && <span className="sr-only">, {text.levelRequires(option.townHallRequired)}</span>}
 						</button>
 					);
 				})}

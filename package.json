@@ -30,12 +30,10 @@
         "@dnd-kit/utilities": "^3.2.2",
         "@gamerdexapp/gamerdex-sync": "0.5.0",
         "clash-of-clans-data": "0.19.1",
-        "flowbite-react": "^0.12.17",
         "nanoid": "^6.0.2",
         "next": "^16.4.3",
         "react": "^19.3.1",
-        "react-dom": "^19.3.1",
-        "react-toastify": "^11.1.0"
+        "react-dom": "^19.3.1"
     },
     "devDependencies": {
         "@eslint/eslintrc": "^3.3.7",

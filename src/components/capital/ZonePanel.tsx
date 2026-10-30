@@ -58,7 +58,7 @@ const BuildingCard = ({
 					<Image src={building.imageUrl} alt="" width={40} height={40} style={{ width: 40, height: 40 }} className="shrink-0 object-contain" />
 				)}
 				<div className="flex min-w-0 flex-1 basis-32 flex-col">
-					<h4 className="truncate text-base font-semibold">{building.name}</h4>
+					<h3 className="truncate text-base font-semibold">{building.name}</h3>
 					<span className="text-muted text-xs">
 						{text.instances(building.instanceCount)}, {text.maxLevel(building.maxLevel)}
 					</span>

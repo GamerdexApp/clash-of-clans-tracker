@@ -16,11 +16,7 @@ const clanBanner = (level: number) =>
 	toPublicImageUrl((clanLevels.atLevel(level) as { image?: string } | undefined)?.image ?? "");
 
 const AchievementRing = ({ progress }: { progress: StarProgress }) => (
-	<Link
-		href="/achievements"
-		className="flex flex-col items-center gap-1"
-		aria-label={`${text.achievements}, ${progress.percent}%, ${text.viewAll}`}
-	>
+	<Link href="/achievements" className="flex flex-col items-center gap-1">
 		<span className="relative size-[72px]">
 			<svg width="72" height="72" viewBox="0 0 72 72" aria-hidden="true">
 				<circle

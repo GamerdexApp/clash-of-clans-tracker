@@ -1,4 +1,3 @@
-import withFlowbiteReact from "flowbite-react/plugin/nextjs";
 import { readFileSync } from "node:fs";
 import type { NextConfig } from "next";
 
@@ -34,4 +33,4 @@ const nextConfig: NextConfig = {
   },
 };
 
-export default withFlowbiteReact(nextConfig);
+export default nextConfig;
