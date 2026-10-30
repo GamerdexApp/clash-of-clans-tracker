@@ -1,0 +1,178 @@
+{
+  "title": "設定",
+  "subline": "環境設定、バックアップ、データ",
+  "tabsLabel": "設定セクション",
+  "tabs": {
+    "sync": "クラウド同期",
+    "preferences": "環境設定",
+    "data": "バックアップとデータ",
+    "about": "このアプリについて"
+  },
+  "appearance": {
+    "title": "外観",
+    "description": "アプリの見た目を選びます。",
+    "themeLabel": "テーマ",
+    "themes": {
+      "light": "ライト",
+      "dark": "ダーク",
+      "system": "システム"
+    },
+    "themeNote": "システムは端末の設定に従います。現在は{mode}です。"
+  },
+  "builders": {
+    "title": "ビルダー設定",
+    "description": "キューにスロットを追加するイベントのヘルパーです。",
+    "goblinBuilder": "ゴブリンビルダー",
+    "goblinBuilderHelp": "建物用のビルダースロットを1つ追加します(7人目)。",
+    "goblinResearch": "ゴブリン研究",
+    "goblinResearchHelp": "ラボラトリーの研究スロットを1つ追加します。"
+  },
+  "activeHours": {
+    "title": "アクティブ時間",
+    "description": "毎日プレイする時間帯を設定します。この時間帯の外でアップグレードが完了する場合、キューのタイムラインに空白が入ります。",
+    "start": "開始時刻",
+    "end": "終了時刻",
+    "save": "保存",
+    "clear": "クリア",
+    "status": "端末の時計で{start}から{end}までアクティブです。",
+    "none": "アクティブ時間は未設定です。すべての時間がアクティブとして扱われます。",
+    "sameTime": "開始と終了が同じ時刻です。異なる時刻を選ぶか、時間帯をクリアしてください。",
+    "overnight": "この時間帯は夜をまたぎ、{start}から翌日の{end}までです。",
+    "unsaved": "保存されていない変更があります。",
+    "clockChanged": "時計のオフセットが変わりました。アクティブ時間は引き続き時計で{start}から{end}までです。"
+  },
+  "data": {
+    "title": "データ管理",
+    "storageNote": {
+      "title": "このブラウザに保存されています。",
+      "body": "ブラウザのデータを消去するとビレッジも削除されます。ときどきバックアップをエクスポートしてください。"
+    },
+    "export": {
+      "title": "エクスポート",
+      "description": "すべてのビレッジと設定を1つのファイルとしてダウンロードします。",
+      "button": "すべてのビレッジをエクスポート",
+      "done": "バックアップをダウンロードしました"
+    },
+    "import": {
+      "title": "インポート",
+      "fileLabel": "バックアップファイル",
+      "chooseFile": "ファイルを選択",
+      "noFile": "ファイルが選択されていません",
+      "description": "バックアップファイルを選びます。変更前に内容を確認できます。",
+      "review": "インポートを確認",
+      "merged": "バックアップを統合しました",
+      "replaced": "バックアップでデータを置き換えました",
+      "undo": "元に戻す"
+    },
+    "reset": {
+      "title": "すべてのデータをリセット",
+      "warning": "このブラウザのすべてのビレッジと設定を削除します。",
+      "button": "すべてのデータをリセット",
+      "confirmTitle": "すべて削除しますか?",
+      "confirmBody": "{names}を削除します。10秒間は元に戻せます。",
+      "cancel": "キャンセル",
+      "confirm": "すべて削除",
+      "done": "すべてのデータを削除しました",
+      "doneMessage": "{amount} {count, plural, other {ビレッジ}}を削除しました。",
+      "doneMessageDisconnected": "{amount} {count, plural, other {ビレッジ}}を削除しました。このブラウザの同期は切断されています。",
+      "syncedCopy": "{provider}の同期済みコピーも削除する",
+      "syncedOn": "同期は継続します。ほかの端末では次の同期でこれらのビレッジが失われます。不安な場合は先にバックアップをエクスポートしてください。",
+      "syncedOff": "これを選ばない場合、次の同期でビレッジが戻らないように、このブラウザの同期は切断されます。",
+      "undo": "元に戻す"
+    },
+    "villages": {
+      "title": "ビレッジ",
+      "description": "ビレッジの作成、編集、切り替え、削除ができます。",
+      "manage": "ビレッジを管理"
+    },
+    "villageCount": "{amount} {count, plural, other {ビレッジ}}"
+  },
+  "importDialog": {
+    "title": "インポートを確認",
+    "fileInfo": "{name}、{size}",
+    "bytes": "{count} B",
+    "kilobytes": "{count} KB",
+    "cancel": "キャンセル",
+    "close": "閉じる",
+    "merge": "この端末に統合",
+    "replace": "この端末を置き換え",
+    "failedTitle": "このファイルはインポートできません。",
+    "errors": {
+      "notJson": "このファイルは有効なJSONではありません。",
+      "playthroughsMissing": "このファイルは Clash of Clans Tracker のバックアップではありません。ビレッジの一覧がありません。"
+    },
+    "checksTitle": "チェックに合格しました。",
+    "checks": "ファイルには{read}件のビレッジが記載されており、{kept}件を読み取れます。",
+    "skipped": "{amount} {count, plural, other {件のエントリ}}をスキップしました。",
+    "howToApply": "適用方法",
+    "modeLabel": "インポートモード",
+    "modes": {
+      "merge": "統合",
+      "replace": "置き換え"
+    },
+    "modeNotes": {
+      "merge": "新しいビレッジを追加し、両方にあるビレッジは新しいほうのコピーを残します。設定とアクティブなビレッジはそのままです。",
+      "replace": "ファイルの内容だけを使います。ファイルにないビレッジは削除されます。"
+    },
+    "whatChanges": "変更内容",
+    "columns": {
+      "village": "ビレッジ",
+      "inFile": "ファイル内",
+      "onDevice": "端末内",
+      "result": "結果"
+    },
+    "notThere": "なし",
+    "results": {
+      "added": "追加",
+      "updated": "ファイルから更新",
+      "kept": "維持",
+      "replaced": "置き換え",
+      "removed": "削除"
+    },
+    "summary": {
+      "added": "{count}件追加",
+      "updated": "{count}件更新",
+      "kept": "{count}件維持",
+      "replaced": "{count}件置き換え",
+      "removed": "{count}件削除"
+    },
+    "noVillages": "ファイルにビレッジがありません。",
+    "undoNote": "インポートは10秒間元に戻せます。"
+  },
+  "about": {
+    "version": "バージョン {version}",
+    "summary": "Clash of Clans の無料の進行状況トラッカーです。複数のビレッジにわたって、アップグレード、研究、実績などを記録できます。",
+    "officialGame": "Clash of Clans 公式サイト",
+    "disclaimer": "このプロジェクトは Supercell および Clash of Clans とは提携しておらず、承認や関連もありません。"
+  },
+  "region": {
+    "title": "言語と地域",
+    "description": "この端末でのテキスト、数値、日付の表示方法です。この設定はビレッジと一緒に保存、エクスポート、同期されません。",
+    "language": {
+      "label": "言語",
+      "hint": "アプリの言語です。ゲーム内の名称は英語のままです。"
+    },
+    "numberFormat": {
+      "label": "数値の形式",
+      "hint": "例: {example}",
+      "options": {
+        "auto": "自動(言語に合わせる)",
+        "us": "1,234,567.89(米国)",
+        "european": "1.234.567,89(ヨーロッパ)",
+        "french": "1 234 567,89(フランス)",
+        "swiss": "1’234’567.89(スイス)",
+        "indian": "12,34,567.89(インド)"
+      }
+    },
+    "dateFormat": {
+      "label": "日付の形式",
+      "hint": "例: {example}",
+      "options": {
+        "auto": "自動(言語に合わせる)",
+        "mdy": "月/日/年",
+        "dmy": "日/月/年",
+        "ymd": "年-月-日"
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "title": "Evcil Hayvanlar",
+  "subline": "{name}, Belediye Binası {townHall}",
+  "strip": {
+    "title": "Evcil Hayvan Evi",
+    "openQueue": "Kuyruğu ve zaman çizelgesini aç",
+    "noPetHouse": "Önce bir Evcil Hayvan Evi inşa et. Seviyesini İnşaatçı sayfasında, Ordu sekmesinde ayarla.",
+    "unassignedHelp": "Evcil Hayvan Evinde birden fazla evcil hayvan yükseltmesi kayıtlı. Fazla olanı bitir veya iptal et.",
+    "levelLabel": "Evcil Hayvan Evi seviyesi",
+    "level": "{max} seviyeden {level}",
+    "notBuilt": "İnşa edilmedi",
+    "boostLabel": "Altın Geçiş araştırma güçlendirmesi"
+  },
+  "boostValue": "{percent, plural, =0 {Yok} other {-%{percent} süre ve maliyet}}",
+  "locked": {
+    "title": "Evcil hayvanlar Belediye Binası 14 ile açılır",
+    "body": "Bu köy Belediye Binası {townHall} seviyesinde. Edineceğin evcil hayvanlar bunlar.",
+    "needs": "Belediye Binası {townHall}, Evcil Hayvan Evi {petHouse}"
+  },
+  "card": {
+    "notUnlocked": "Açılmadı",
+    "markUnlocked": "Açıldı olarak işaretle",
+    "maxAtHall": "Maks. Sv {level}",
+    "progress": "{name} ilerlemesi"
+  },
+  "empty": {
+    "title": "Burada henüz bir şey yok",
+    "allMax": "Her evcil hayvan maksimumda. Görmek için Maks. gizle seçeneğini kapat."
+  }
+}

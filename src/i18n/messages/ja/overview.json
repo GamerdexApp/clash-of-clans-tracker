@@ -1,0 +1,112 @@
+{
+  "title": "概要",
+  "description": "ビレッジの全体像: 進行状況、デイリーのタイマー、保存されているすべての統計。",
+  "subline": "{name}、算出値、表示のみ",
+  "header": {
+    "clanLevel": "{hasRole, select, true {クランレベル {level}、{role}} other {クランレベル {level}}}",
+    "achievements": "実績",
+    "ringCaption": "星 {stars} / {maxStars}",
+    "viewAll": "すべて表示",
+    "townHall": "TH{level}"
+  },
+  "dailies": {
+    "title": "デイリー",
+    "closedTitle": "デイリーはタウンホール3で開放されます",
+    "closedBody": "鍛造、ヘルパー、シーズンパスは、タウンホールが上がるにつれて開放されます。",
+    "closedLink": "開放されているものを見る",
+    "groups": {
+      "helpers": "ヘルパー",
+      "daily": "デイリー",
+      "goldPass": "ゴールドパス"
+    },
+    "requires": "{requirement}が必要です",
+    "openForge": "鍛造を開く",
+    "openHelpers": "ヘルパーを開く",
+    "unlockProspector": "シーズンパスで開放",
+    "helperHut": "Helper Hut",
+    "townHall": "タウンホール {level}",
+    "starBonus": "スターボーナス",
+    "capitalGold": "キャピタルゴールド",
+    "autoForge": "オート鍛造",
+    "forgeSlots": "鍛造スロット",
+    "notRunning": "停止中",
+    "running": "実行中",
+    "stopAuto": "オート鍛造を停止",
+    "autoLine": "{resource} {amount}をキャピタルゴールド {capitalGold}に",
+    "slotsLine": "{open}スロット中{running}スロットが実行中",
+    "slotsDone": "{done, plural, other {{amount}スロットが完了しています}}",
+    "autoPerk": "オート鍛造の特典",
+    "helperPreview": "今使うと: 残り{before}が{after}になります",
+    "goldPass": {
+      "edit": "シーズンパスで編集",
+      "builder": "ビルダーブースト",
+      "research": "研究ブースト",
+      "hoggyBank": "ホッグバンク",
+      "gemDonations": "1ジェム寄付",
+      "autoForge": "オート鍛造",
+      "requestReduction": "リクエスト時間短縮",
+      "on": "オン",
+      "off": "オフ",
+      "resets": "ブーストは{date}に0%に戻ります。",
+      "readOnly": "概要を開いても、ビレッジや最終更新時刻は変わりません。"
+    }
+  },
+  "league": {
+    "open": "{name}の報酬を表示",
+    "homeKind": "ホームビレッジのリーグ",
+    "builderKind": "ビルダーベースのリーグ",
+    "noData": "このタウンホールでは、このリーグのデータがありません。",
+    "battle": "バトル結果",
+    "stars": "星",
+    "attacker": "攻撃側のビルダーゴールド",
+    "defender": "防衛側のビルダーエリクサー"
+  },
+  "builder": {
+    "title": "ビルダーベース",
+    "hall": "ビルダーホール {level}",
+    "trophies": "トロフィー {trophies}",
+    "daysAt": "BH{level}での日数",
+    "notSetTitle": "ビルダーホール未設定",
+    "notSetBody": "ビルダーベースはタウンホール6で開放されますが、このビレッジのビルダーホールは0です。レベルが1以上になると、進行状況、トロフィー、兵士が表示されます。",
+    "notSetAction": "ビルダーホールのレベルを設定",
+    "lockedBody": "タウンホール6が必要です",
+    "troops": "兵士",
+    "heroes": "ヒーロー"
+  },
+  "capital": {
+    "title": "クランキャピタル",
+    "hall": "キャピタルホール {level}",
+    "notSetTitle": "クランキャピタルが未設定です",
+    "notSetBody": "Capital Peakにはまだホールレベルがないため、表示できる地区の進行状況がありません。キャピタルホールのレベルを設定して記録を始めてください。",
+    "notSetAction": "キャピタルホールのレベルを設定",
+    "lockedBody": "タウンホール3が必要です",
+    "districtHall": "ディストリクトホール {level}",
+    "notUnlocked": "未開放",
+    "unlocksAt": "キャピタルホール {level}で開放",
+    "needsDistrictHall": "ディストリクトホールを設定して始めましょう",
+    "noData": "データなし",
+    "more": "地区をあと{count}件表示",
+    "showFewer": "表示を減らす",
+    "openDistricts": "地区を開く"
+  },
+  "home": {
+    "title": "ホームビレッジ",
+    "townHall": "タウンホール {level}",
+    "daysAt": "TH{level}での日数",
+    "perHour": "毎時",
+    "stored": "貯蔵量",
+    "cards": {
+      "locked": "{requirement}が必要です"
+    },
+    "queue": "開く",
+    "troops": "兵士",
+    "spells": "スペル",
+    "heroes": "ヒーロー",
+    "siege": "攻城兵器",
+    "pets": "ペット",
+    "legend": "緑の枠: このタウンホールでの最大。破線の枠: ロック中。時計: アップグレード実行中。",
+    "tile": "{hasRequirement, select, true {{name}、{requirement}が必要} other {{name}、レベル {level}{max, plural, =0 {} other { / {max}}}}}",
+    "heroLocked": "{requirement}が必要です",
+    "petsLocked": "タウンホール14が必要です"
+  }
+}

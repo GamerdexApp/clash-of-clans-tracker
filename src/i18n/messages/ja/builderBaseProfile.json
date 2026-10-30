@@ -1,0 +1,11 @@
+{
+  "title": "ビルダーベースのプロフィール",
+  "trophies": "トロフィー",
+  "bestTrophies": "最高トロフィー",
+  "bestHint": "現在のトロフィーを下回ることはありません。",
+  "league": "リーグ",
+  "leagueNone": "未設定",
+  "matchTrophies": "マッチのトロフィー",
+  "since": "このビルダーホールになった日",
+  "sinceToday": "今日に設定"
+}

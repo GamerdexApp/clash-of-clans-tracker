@@ -1,0 +1,178 @@
+{
+  "title": "Ayarlar",
+  "subline": "Tercihler, yedekler ve verilerin",
+  "tabsLabel": "Ayar bölümleri",
+  "tabs": {
+    "sync": "Bulut senkronu",
+    "preferences": "Tercihler",
+    "data": "Yedek ve veri",
+    "about": "Hakkında"
+  },
+  "appearance": {
+    "title": "Görünüm",
+    "description": "Uygulamanın nasıl görüneceğini seç.",
+    "themeLabel": "Tema",
+    "themes": {
+      "light": "Açık",
+      "dark": "Koyu",
+      "system": "Sistem"
+    },
+    "themeNote": "Sistem, cihazını izler. Şu an: {mode}."
+  },
+  "builders": {
+    "title": "İnşaatçı ayarları",
+    "description": "Kuyruklarına bir yuva ekleyen etkinlik yardımcıları.",
+    "goblinBuilder": "Goblin İnşaatçı",
+    "goblinBuilderHelp": "Binalar için bir ek inşaatçı yuvası, yani yedinci yuvayı ekler.",
+    "goblinResearch": "Goblin Araştırma",
+    "goblinResearchHelp": "Laboratuvarda bir ek araştırma yuvası ekler."
+  },
+  "activeHours": {
+    "title": "Etkin saatler",
+    "description": "Her gün oynadığın saatleri belirle. Bir yükseltme bu aralığın dışında biterse kuyruk zaman çizelgeleri boşluk bırakır.",
+    "start": "Başlangıç saati",
+    "end": "Bitiş saati",
+    "save": "Kaydet",
+    "clear": "Temizle",
+    "status": "Yerel saatine göre {start} ile {end} arası etkin.",
+    "none": "Etkin saat ayarlanmadı. Her saat etkin sayılır.",
+    "sameTime": "Başlangıç ve bitiş aynı. İki farklı saat seç veya aralığı temizle.",
+    "overnight": "Bu aralık geceye taşar: {start} ile ertesi gün {end} arası.",
+    "unsaved": "Kaydedilmemiş değişiklikler var.",
+    "clockChanged": "Saat farkın değişti. Etkin saatler saatine göre hâlâ {start} ile {end} arasını kapsıyor."
+  },
+  "data": {
+    "title": "Veri yönetimi",
+    "storageNote": {
+      "title": "Bu tarayıcıda saklanır.",
+      "body": "Tarayıcı verilerini temizlersen köylerin silinir. Ara sıra bir yedek dışa aktar."
+    },
+    "export": {
+      "title": "Dışa aktar",
+      "description": "Tüm köylerini ve ayarlarını tek dosya olarak indir.",
+      "button": "Tüm köyleri dışa aktar",
+      "done": "Yedek indirildi"
+    },
+    "import": {
+      "title": "İçe aktar",
+      "fileLabel": "Yedek dosyası",
+      "chooseFile": "Dosya seç",
+      "noFile": "Dosya seçilmedi",
+      "description": "Bir yedek dosyası seç. Bir şey değişmeden önce gözden geçirirsin.",
+      "review": "İçe aktarmayı incele",
+      "merged": "Yedek birleştirildi",
+      "replaced": "Yedek verilerinin yerine geçti",
+      "undo": "Geri al"
+    },
+    "reset": {
+      "title": "Tüm verileri sıfırla",
+      "warning": "Bu tarayıcıdaki tüm köyleri ve ayarları siler.",
+      "button": "Tüm verileri sıfırla",
+      "confirmTitle": "Her şey silinsin mi?",
+      "confirmBody": "Bu işlem {names} öğesini kaldırır. On saniye boyunca geri alabilirsin.",
+      "cancel": "İptal",
+      "confirm": "Her şeyi sil",
+      "done": "Tüm veriler silindi",
+      "doneMessage": "{amount} {count, plural, one {köy} other {köy}} kaldırıldı.",
+      "doneMessageDisconnected": "{amount} {count, plural, one {köy} other {köy}} kaldırıldı. Bu tarayıcıda senkron bağlantısı kesildi.",
+      "syncedCopy": "{provider} içindeki senkronlanmış kopyayı da sil",
+      "syncedOn": "Senkron açık kalır. Diğer cihazların bu köyleri bir sonraki senkronda kaybeder. Emin değilsen önce yedek dışa aktar.",
+      "syncedOff": "Bunu seçmezsen bu tarayıcıda senkron bağlantısı kesilir, böylece sonraki senkron köyleri geri getiremez.",
+      "undo": "Geri al"
+    },
+    "villages": {
+      "title": "Köyler",
+      "description": "Köy oluştur, düzenle, değiştir ve sil.",
+      "manage": "Köyleri yönet"
+    },
+    "villageCount": "{amount} {count, plural, one {köy} other {köy}}"
+  },
+  "importDialog": {
+    "title": "İçe aktarmayı incele",
+    "fileInfo": "{name}, {size}",
+    "bytes": "{count} B",
+    "kilobytes": "{count} KB",
+    "cancel": "İptal",
+    "close": "Kapat",
+    "merge": "Bu cihaza birleştir",
+    "replace": "Bu cihazın yerine koy",
+    "failedTitle": "Bu dosya içe aktarılamıyor.",
+    "errors": {
+      "notJson": "Bu dosya geçerli bir JSON değil.",
+      "playthroughsMissing": "Bu dosya bir Clash of Clans Tracker yedeği değil. Köy listesi yok."
+    },
+    "checksTitle": "Kontroller geçti.",
+    "checks": "Dosyada {read} köy listeleniyor ve {kept} tanesi okunabiliyor.",
+    "skipped": "{amount} {count, plural, one {kayıt} other {kayıt}} atlandı.",
+    "howToApply": "Nasıl uygulanacak",
+    "modeLabel": "İçe aktarma modu",
+    "modes": {
+      "merge": "Birleştir",
+      "replace": "Değiştir"
+    },
+    "modeNotes": {
+      "merge": "Yeni köyleri ekler, her iki yerde de olan köyün daha yeni kopyasını tutar. Ayarların ve etkin köyün aynı kalır.",
+      "replace": "Yalnızca dosyadakileri kullanır. Dosyada olmayan köyler kaldırılır."
+    },
+    "whatChanges": "Neler değişiyor",
+    "columns": {
+      "village": "Köy",
+      "inFile": "Dosyada",
+      "onDevice": "Cihazda",
+      "result": "Sonuç"
+    },
+    "notThere": "Yok",
+    "results": {
+      "added": "Eklendi",
+      "updated": "Dosyadan güncellendi",
+      "kept": "Korundu",
+      "replaced": "Değiştirildi",
+      "removed": "Kaldırıldı"
+    },
+    "summary": {
+      "added": "{count} eklendi",
+      "updated": "{count} güncellendi",
+      "kept": "{count} korundu",
+      "replaced": "{count} değiştirildi",
+      "removed": "{count} kaldırıldı"
+    },
+    "noVillages": "Dosyada köy yok.",
+    "undoNote": "İçe aktarmayı on saniye boyunca geri alabilirsin."
+  },
+  "about": {
+    "version": "Sürüm {version}",
+    "summary": "Clash of Clans için ücretsiz bir ilerleme takipçisi. Birden çok köyde yükseltmeleri, araştırmaları, başarımları ve daha fazlasını takip et.",
+    "officialGame": "Resmî Clash of Clans sitesi",
+    "disclaimer": "Bu proje Supercell veya Clash of Clans ile bağlantılı değildir, onlar tarafından onaylanmamıştır."
+  },
+  "region": {
+    "title": "Dil ve bölge",
+    "description": "Uygulamanın bu cihazda metinleri, sayıları ve tarihleri nasıl gösterdiği. Bu seçimler köylerinle birlikte kaydedilmez, dışa aktarılmaz ve senkronlanmaz.",
+    "language": {
+      "label": "Dil",
+      "hint": "Uygulamanın dili. Oyundaki adlar İngilizce kalır."
+    },
+    "numberFormat": {
+      "label": "Sayı biçimi",
+      "hint": "Örnek: {example}",
+      "options": {
+        "auto": "Otomatik (dili izler)",
+        "us": "1,234,567.89 (ABD)",
+        "european": "1.234.567,89 (Avrupa)",
+        "french": "1 234 567,89 (Fransız)",
+        "swiss": "1’234’567.89 (İsviçre)",
+        "indian": "12,34,567.89 (Hint)"
+      }
+    },
+    "dateFormat": {
+      "label": "Tarih biçimi",
+      "hint": "Örnek: {example}",
+      "options": {
+        "auto": "Otomatik (dili izler)",
+        "mdy": "Ay/Gün/Yıl",
+        "dmy": "Gün/Ay/Yıl",
+        "ymd": "Yıl-Ay-Gün"
+      }
+    }
+  }
+}

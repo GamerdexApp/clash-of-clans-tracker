@@ -1,0 +1,139 @@
+{
+  "districts": {
+    "title": "Districts",
+    "subline": "{hall, plural, =0 {{name}, Capital Hall not set} other {{name}, Capital Hall {hall}}}",
+    "description": "Districts and zones of your Clan Capital."
+  },
+  "troops": {
+    "title": "Troops and spells",
+    "subline": "{name}, Clan Capital troops and spells",
+    "tiles": {
+      "troops": "Troops",
+      "spells": "Spells",
+      "caption": "{current} of {max} levels"
+    },
+    "sections": {
+      "troops": "Troops",
+      "spells": "Spells"
+    },
+    "card": {
+      "level": "{name} level",
+      "raise": "Raise {name}",
+      "lower": "Lower {name}",
+      "maxAt": "Max level {level} now",
+      "from": "From {zone}",
+      "progress": "{name} progress"
+    },
+    "locked": {
+      "title": "Not available yet",
+      "districtHall": "Requires District Hall {level} in {zone}",
+      "capitalHall": "Requires Capital Hall {level} to open {zone}",
+      "kept": "Saved level {level} is kept"
+    },
+    "empty": {
+      "title": "Everything is maxed",
+      "description": "Turn off Hide Max to see every troop and spell."
+    }
+  },
+  "tracking": {
+    "label": "Track Clan Capital",
+    "onHelp": "Turning it off keeps all data.",
+    "turnOnTitle": "Clan Capital tracking is on",
+    "turnedOn": "Clan Capital tracking is on.",
+    "undo": "Undo",
+    "offDialog": {
+      "title": "Turn off Clan Capital tracking?",
+      "body": "The Clan Capital pages, the Overview card and the Mass edit tab are hidden. Nothing is deleted.",
+      "confirm": "Turn off",
+      "cancel": "Cancel"
+    }
+  },
+  "off": {
+    "title": "Clan Capital tracking is off",
+    "description": "Your districts, troops and spells are kept. Turn tracking on to see them again.",
+    "turnOn": "Turn on tracking",
+    "keptTitle": "What is kept",
+    "kept": "All Clan Capital data stays in this village."
+  },
+  "locked": {
+    "title": "Clan Capital is locked",
+    "description": "Clan Capital opens at Town Hall 3. This village is at Town Hall {townHall}. Anything already saved shows again at Town Hall 3.",
+    "action": "Change Town Hall in Villages"
+  },
+  "notSet": {
+    "title": "Clan Capital is not set up",
+    "description": "Set your Capital Hall level to start tracking districts, troops and spells.",
+    "action": "Set Capital Hall level"
+  },
+  "hall": {
+    "label": "Capital Hall",
+    "none": "None",
+    "level": "Level {level}",
+    "nextCost": "Capital Hall {level} costs {cost} Capital Gold{hasOpens, select, true { and opens {opens}} other {}}. Raising a hall never resets levels.",
+    "atTop": "The Capital Hall is at its top level.",
+    "raised": "Capital Hall raised from {from} to {to}. No levels were reset.",
+    "changed": "Capital Hall changed from {from} to {to}.",
+    "districtRaised": "{zone} District Hall raised from {from} to {to}.",
+    "districtChanged": "{zone} District Hall changed from {from} to {to}."
+  },
+  "contributions": {
+    "label": "Contributions",
+    "unit": "Capital Gold",
+    "help": "Total you gave your clan. The Player Tag import fills it in, you can also type it."
+  },
+  "tiles": {
+    "progress": "Capital progress",
+    "progressCaption": "{current} of {max} levels",
+    "zones": "Open zones",
+    "zonesCaption": "{open} of {total}"
+  },
+  "zones": {
+    "title": "Zones",
+    "help": "Select a zone to edit it below",
+    "hall": "{level, plural, =0 {No District Hall} other {District Hall {level}}}",
+    "peakHall": "Capital Hall {level}",
+    "locked": "Locked, needs Capital Hall {hall}",
+    "levels": "{current} of {max}"
+  },
+  "panel": {
+    "districtHall": "District Hall",
+    "requires": "Requires Capital Hall {hall}",
+    "noHall": "No District Hall",
+    "empty": "Nothing to build here at this hall level.",
+    "groupsLabel": "Building groups",
+    "groups": {
+      "defenses": "Defenses",
+      "traps": "Traps",
+      "army": "Army",
+      "walls": "Walls"
+    },
+    "max": "Max",
+    "clear": "Clear",
+    "maxAll": "Max All",
+    "resetAll": "Reset All",
+    "instances": "{amount} {count, plural, one {building} other {buildings}}",
+    "maxLevel": "Max level {level}",
+    "instance": "{name} {index}",
+    "raise": "Raise {name}",
+    "lower": "Lower {name}",
+    "wallLevel": "Level {level}",
+    "wallsLeft": "{left} of {total} walls still to place",
+    "wallsNote": "Counts cannot go above the remaining walls.",
+    "wallsNone": "No walls at this hall level.",
+    "wallCount": "Walls on level {level}",
+    "wallRaise": "One more wall on level {level}",
+    "wallLower": "One fewer wall on level {level}",
+    "groupMaxed": "{zone}: {group} set to max",
+    "groupCleared": "{zone}: {group} cleared"
+  },
+  "confirm": {
+    "title": "Lower this hall?",
+    "description": "These levels no longer fit and will be reset. Everything else is kept.",
+    "confirm": "Lower hall",
+    "cancel": "Keep hall",
+    "more": "and {count} more"
+  },
+  "toast": {
+    "undo": "Undo"
+  }
+}

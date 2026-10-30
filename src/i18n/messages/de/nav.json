@@ -1,0 +1,29 @@
+{
+  "groups": {
+    "homeVillage": "Heimatdorf",
+    "builderBase": "Bauarbeiterbasis",
+    "clanCapital": "Clanhauptstadt",
+    "dailies": "Tägliches",
+    "tools": "Werkzeuge"
+  },
+  "items": {
+    "overview": "Übersicht",
+    "achievements": "Erfolge",
+    "builder": "Bauarbeiter",
+    "research": "Forschung",
+    "pets": "Haustiere",
+    "equipment": "Ausrüstung",
+    "walls": "Mauern",
+    "builderBaseUpgrades": "Upgrades",
+    "builderBaseTroops": "Truppen",
+    "builderBaseWalls": "Mauern",
+    "districts": "Bezirke",
+    "capitalTroops": "Truppen und Zauber",
+    "forge": "Schmiede",
+    "helpers": "Helfer",
+    "seasonPass": "Saisonpass",
+    "massEdit": "Massenbearbeitung",
+    "settings": "Einstellungen"
+  },
+  "villages": "Meine Dörfer"
+}

@@ -1,0 +1,48 @@
+{
+  "title": "Mura della Base del Costruttore",
+  "subline": "{name}, Sala del Costruttore {builderHall}, livello massimo delle mura {highest}",
+  "massEdit": "Il numero di mura si può regolare anche in Modifica di massa.",
+  "tiles": {
+    "total": "Totale a questa Sala del Costruttore",
+    "totalCaption": "Livello massimo delle mura {highest}",
+    "placed": "Posizionate",
+    "placedCaption": "Mura su un livello",
+    "notPlaced": "Non posizionate",
+    "allPlaced": "Tutte posizionate",
+    "stillToPlace": "{amount} {count, plural, one {muro} other {mura}} da posizionare",
+    "over": "In eccesso di {count}"
+  },
+  "hideEmpty": "{hidden, plural, =0 {Nascondi i livelli vuoti sotto il tuo più basso} other {Nascondi i livelli vuoti sotto il tuo più basso ({hidden} nascosti)}}",
+  "row": {
+    "level": "Livello {level}",
+    "own": "Ne possiedi",
+    "ownLabel": "Mura che possiedi al livello {level}",
+    "lower": "Un muro in meno al livello {level}",
+    "raise": "Un muro in più al livello {level}",
+    "nextCost": "Livello successivo: {price} {resource} per muro",
+    "toMove": "Mura da spostare",
+    "toLevel": "Al livello",
+    "plusOne": "+1",
+    "move": "Sposta",
+    "moveAll": "Sposta tutte",
+    "preview": "Sposta {amount} {walls, plural, one {muro} other {mura}} dal livello {from} al {to}: {price} {resource}",
+    "nothingToMove": "Niente da spostare",
+    "noWalls": "Nessun muro da spostare su questo livello."
+  },
+  "cost": {
+    "title": "Costo per portare tutte le mura al livello {level}",
+    "row": "Livello {level}, {amount} {walls, plural, one {muro} other {mura}}",
+    "total": "Totale",
+    "none": "Ogni muro posizionato è al livello massimo, oppure non ne hai ancora posizionati.",
+    "note": "Le mura dal livello 2 al 6 costano Oro del Costruttore. Dal livello 7 in su costano Oro del Costruttore o Elisir del Costruttore."
+  },
+  "empty": {
+    "title": "Ancora nessun muro",
+    "description": "Imposta il livello della Sala del Costruttore nella pagina Potenziamenti della Base del Costruttore per vederne le mura."
+  },
+  "toast": {
+    "moved": "{amount} {walls, plural, one {muro spostato} other {mura spostate}} dal livello {from} al {to}",
+    "counted": "Mura di livello {level}: da {from} a {to}",
+    "undo": "Annulla"
+  }
+}

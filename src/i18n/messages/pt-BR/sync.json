@@ -1,0 +1,236 @@
+{
+  "tab": {
+    "title": "Sincronização na nuvem"
+  },
+  "unavailable": "A sincronização não está disponível nesta versão.",
+  "provider": {
+    "github": {
+      "name": "GitHub",
+      "tile": "Um repositório privado seu, chamado {repository}.",
+      "badge": "Para desenvolvedores"
+    },
+    "google": {
+      "name": "Google Drive",
+      "tile": "Uma pasta Gamerdex visível no seu Drive. O Gamerdex vê somente os arquivos que ele cria.",
+      "badge": "Recomendado"
+    },
+    "dropbox": {
+      "name": "Dropbox",
+      "tile": "Uma pasta Gamerdex dentro da pasta Apps do seu Dropbox. O Gamerdex vê somente essa pasta.",
+      "badge": "Somente pasta do app"
+    },
+    "microsoft": {
+      "name": "OneDrive",
+      "tile": "Uma pasta Gamerdex dentro da pasta Apps do seu OneDrive. O Gamerdex vê somente essa pasta.",
+      "badge": "Contas pessoais"
+    }
+  },
+  "connect": {
+    "title": "Sincronizar entre dispositivos",
+    "pill": "Não conectado",
+    "intro": "Mantenha suas vilas iguais no computador e no celular. A sincronização é opcional e grátis. Escolha onde a cópia fica.",
+    "pickerLabel": "Onde guardar a cópia",
+    "panelTitle": "Conectar {provider}",
+    "another": "Você pode escolher outro serviço antes de entrar.",
+    "firstSync": "Escolha o que manter na primeira sincronização se os dois lados já tiverem dados. Nada é substituído antes de você decidir.",
+    "steps": {
+      "google": {
+        "step1": "Entre com o Google nesta janela.",
+        "step2": "Permita o acesso aos arquivos que o Gamerdex cria. O app não vê seus outros arquivos.",
+        "button": "Conectar Google Drive"
+      },
+      "github": {
+        "step1": "Crie um repositório privado vazio chamado {repository}. Marque Add a README file.",
+        "step2": "Entre com o GitHub e dê ao Gamerdex Sync acesso somente a esse repositório.",
+        "button": "Conectar GitHub"
+      },
+      "dropbox": {
+        "step1": "Entre com o Dropbox nesta janela.",
+        "step2": "Permita o acesso à pasta do app Gamerdex. O app não vê seus outros arquivos.",
+        "button": "Conectar Dropbox"
+      },
+      "microsoft": {
+        "step1": "Entre com a sua conta pessoal da Microsoft nesta janela.",
+        "step2": "Permita o acesso à pasta do app Gamerdex. O app não vê seus outros arquivos.",
+        "button": "Conectar OneDrive"
+      }
+    }
+  },
+  "how": {
+    "title": "Como a sincronização funciona",
+    "points": {
+      "item1": "Suas vilas são salvas como um único arquivo no seu próprio armazenamento, mais um arquivo pequeno com a lista de dispositivos.",
+      "item2": "O Gamerdex não tem servidor que guarde seus dados. Seu navegador fala direto com o seu armazenamento.",
+      "item3": "Instâncias de construções, tropas, heróis, equipamentos, mascotes e conquistas são mescladas uma a uma, e o nível mais alto vence. Uma redefinição é mantida quando o outro dispositivo não alterou aquele nível.",
+      "item4": "Se os dois dispositivos mudarem o mesmo nome, fila, melhoria em andamento, contagem de troféus ou horário de redefinição, você escolhe qual manter.",
+      "item5": "Cada dispositivo guarda a sua própria vila ativa. A sincronização nunca a altera.",
+      "item6": "Desconecte quando quiser. Suas vilas continuam em todos os dispositivos."
+    }
+  },
+  "repository": {
+    "title": "Configure o repositório dos seus dados",
+    "body": "Seus dados ficam em um repositório privado chamado {name} na sua conta do GitHub. O Gamerdex Sync só alcança esse repositório.",
+    "checking": "Procurando {name}",
+    "checkFailed": "Não foi possível carregar seus repositórios. Verifique sua conexão e confira de novo.",
+    "public": "O repositório {fullName} é público. Torne-o privado nas configurações dele no GitHub e confira de novo. Um repositório público não pode ser usado, porque qualquer pessoa poderia ler seus dados.",
+    "missing": "O repositório {name} não foi encontrado",
+    "steps": {
+      "create": "Crie um repositório privado chamado {name}. Marque Add a README file.",
+      "install": "Dê ao Gamerdex Sync acesso somente a esse repositório. Escolha Only select repositories e depois {name}.",
+      "recheck": "Volte aqui e confira de novo."
+    },
+    "createButton": "Criar repositório",
+    "installButton": "Escolher repositórios no GitHub",
+    "recheckButton": "Conferir de novo"
+  },
+  "connected": {
+    "repository": "Repositório",
+    "lastSync": "Última sincronização",
+    "never": "Ainda não sincronizado",
+    "syncNow": "Sincronizar agora",
+    "signOut": "Sair",
+    "folder": "Pasta {name}",
+    "signInWith": "Entrar com {provider}"
+  },
+  "status": {
+    "idle": "Sincronizado",
+    "syncing": "Sincronizando",
+    "offline": "Offline",
+    "reauth": "Entre de novo",
+    "needsChoice": "Precisa da sua escolha",
+    "error": "A sincronização falhou",
+    "signedOut": "Sem login",
+    "needsRepository": "Escolha um repositório",
+    "conflicts": "Revise as alterações"
+  },
+  "error": {
+    "rateLimit": "O serviço está limitando as solicitações. A sincronização volta a funcionar em alguns minutos.",
+    "notFound": "O repositório não foi encontrado. Escolha-o de novo.",
+    "server": "O serviço não respondeu corretamente. Tente de novo mais tarde.",
+    "data": "Os dados sincronizados não são válidos, então nada foi alterado.",
+    "busy": "Outro dispositivo está alterando os dados o tempo todo. Tente de novo em instantes.",
+    "other": "Algo deu errado. Nada foi alterado.",
+    "reauth": "Seu login expirou. Entre de novo para continuar sincronizando.",
+    "forbidden": "O GitHub recusou o acesso ao repositório. Confira se o Gamerdex Sync tem acesso de Read and write a Contents e sincronize de novo.",
+    "httpStatus": "O GitHub respondeu {status}.",
+    "notFoundFolder": "Um arquivo ou pasta em {provider} não foi encontrado. Sincronize de novo.",
+    "forbiddenFolder": "{provider} recusou o acesso. Entre de novo e permita o acesso aos arquivos que o Gamerdex cria.",
+    "httpStatusFolder": "{provider} respondeu {status}."
+  },
+  "choice": {
+    "title": "Este dispositivo e a nuvem têm dados",
+    "body": "Esta é a primeira sincronização deste dispositivo. Escolha o que fazer. Nada é excluído da nuvem até você escolher.",
+    "merge": "Mesclar os dois",
+    "mergeHint": "Mantém tudo dos dois lados. O nível mais alto vence.",
+    "keepLocal": "Manter este dispositivo",
+    "keepLocalHint": "Substitui os dados da nuvem pelos dados deste dispositivo.",
+    "keepCloud": "Manter a nuvem",
+    "keepCloudHint": "Substitui os dados deste dispositivo pelos dados da nuvem."
+  },
+  "first": {
+    "thisDevice": "Este dispositivo",
+    "cloud": "Nuvem",
+    "recommended": "Recomendado",
+    "later": "Decidir depois",
+    "apply": "Aplicar escolha",
+    "optionsLabel": "O que manter"
+  },
+  "villageCount": "{count, plural, one {{amount} vila} other {{amount} vilas}}",
+  "conflicts": {
+    "title": "Alterações que não puderam ser mescladas",
+    "body": "Dois dispositivos alteraram o mesmo valor. O valor da nuvem foi mantido. Escolha o valor deste dispositivo para usá-lo no lugar.",
+    "cloudValue": "Nuvem",
+    "deviceValue": "Este dispositivo",
+    "keepDevice": "Usar o valor deste dispositivo",
+    "dismiss": "Dispensar",
+    "empty": "Nada",
+    "deletedEdited": "Um dispositivo removeu isto e outro alterou. A versão alterada foi mantida."
+  },
+  "banner": {
+    "title": "{count, plural, one {{amount} alteração precisa de uma decisão} other {{amount} alterações precisam de uma decisão}}",
+    "body": "Dois dispositivos alteraram o mesmo valor. O valor da nuvem é mantido até você decidir.",
+    "review": "Revisar",
+    "waiting": "A primeira sincronização espera pela sua escolha.",
+    "choose": "Escolher"
+  },
+  "villages": {
+    "title": "Vilas",
+    "thisDevice": "Este dispositivo",
+    "cloud": "Nuvem, última sincronização",
+    "notInCloud": "Ainda não está na nuvem",
+    "review": "Revisar",
+    "note": "Excluir uma vila a remove do arquivo de sincronização na próxima sincronização.",
+    "status": {
+      "synced": "Sincronizada",
+      "changedHere": "Alterada aqui",
+      "conflict": "Conflito",
+      "newHere": "Nova aqui"
+    },
+    "describe": "Centro de Vila {townHall}"
+  },
+  "activity": {
+    "title": "Atividade recente de sincronização",
+    "empty": "Nada foi sincronizado ainda.",
+    "connected": "{provider} conectado neste navegador.",
+    "uploaded": "Alterações deste dispositivo enviadas.",
+    "downloaded": "Alterações da nuvem baixadas.",
+    "merged": "Alterações dos dois lados mescladas.",
+    "conflicts": "{count, plural, one {{amount} alteração precisa de uma decisão.} other {{amount} alterações precisam de uma decisão.}}",
+    "failed": "A sincronização falhou."
+  },
+  "settings": {
+    "title": "Configurações de sincronização",
+    "auto": "Sincronizar automaticamente",
+    "autoHint": "Sincroniza quando o tracker abre e alguns segundos depois de cada alteração.",
+    "focus": "Verificar alterações quando eu voltar à aba",
+    "focusHint": "Puxa dados mais novos da nuvem quando você volta ao tracker.",
+    "metered": "Esperar por mim em conexão limitada",
+    "meteredHint": "Pula as sincronizações automáticas enquanto o navegador indicar uma conexão com economia de dados. Sincronizar agora continua funcionando."
+  },
+  "lives": {
+    "title": "Onde seus dados ficam",
+    "storage": "Armazenamento",
+    "folder": "Pasta",
+    "dataFile": "Arquivo de dados",
+    "metaFile": "Arquivo meta",
+    "size": "Tamanho",
+    "kb": "{amount} KB",
+    "note": "O arquivo de dados guarda suas vilas em um formato que a sincronização consegue mesclar, então não é um arquivo de backup. O arquivo meta guarda a lista de dispositivos e nenhum dado do jogo. Seu login nunca fica em nenhum dos dois.",
+    "notes": {
+      "google": "A pasta Gamerdex é visível no seu Drive. O Gamerdex só abre os arquivos que ele criou.",
+      "github": "Mantenha o repositório privado. Quem puder abri-lo pode ler seus dados.",
+      "dropbox": "A pasta Gamerdex fica dentro da pasta Apps do seu Dropbox. O Gamerdex só abre essa pasta.",
+      "microsoft": "A pasta Gamerdex fica dentro da pasta Apps do seu OneDrive. O Gamerdex só abre essa pasta."
+    }
+  },
+  "device": {
+    "title": "Este dispositivo",
+    "name": "Nome do dispositivo",
+    "nameHint": "Os arquivos de sincronização mostram este nome para este dispositivo. Renomeá-lo atualiza o arquivo meta na próxima sincronização.",
+    "activeVillage": "Vila ativa",
+    "noVillage": "Nenhuma",
+    "login": "Login da sincronização",
+    "loginValue": "Somente neste dispositivo",
+    "loginHint": "A vila ativa é uma escolha de cada dispositivo, e a sincronização nunca a altera. Seu login fica neste dispositivo. Ele nunca está nos dados salvos, no arquivo de backup nem nos arquivos de sincronização."
+  },
+  "disconnect": {
+    "title": "Desconectar",
+    "body": "Para a sincronização neste navegador. Suas vilas continuam neste dispositivo e na nuvem. Os outros dispositivos continuam sincronizando.",
+    "button": "Desconectar {provider}",
+    "hints": {
+      "google": "Para excluir a cópia na nuvem você mesmo, desconecte e depois exclua a pasta Gamerdex no seu Google Drive.",
+      "github": "Para excluir a cópia na nuvem você mesmo, desconecte e depois exclua a pasta Gamerdex no seu repositório.",
+      "dropbox": "Para excluir a cópia na nuvem você mesmo, desconecte e depois exclua a pasta do app em Apps no seu Dropbox.",
+      "microsoft": "Para excluir a cópia na nuvem você mesmo, desconecte e depois exclua a pasta do app em Apps no seu OneDrive."
+    }
+  },
+  "callback": {
+    "title": "Entrando",
+    "working": "Concluindo o login",
+    "back": "Voltar às Configurações",
+    "denied": "O login foi cancelado.",
+    "state": "Não foi possível verificar o login. Comece de novo nas Configurações.",
+    "missing": "O login não enviou código. Comece de novo nas Configurações.",
+    "failed": "Não foi possível concluir o login. Tente de novo mais tarde."
+  }
+}

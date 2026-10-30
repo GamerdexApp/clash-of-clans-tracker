@@ -1,0 +1,29 @@
+{
+  "title": "Pasukan",
+  "subline": "{name}, Dewan Pembina {hall}",
+  "sublineNotSet": "{name}, Dewan Pembina belum ditetapkan",
+  "strip": {
+    "title": "Makmal Bintang",
+    "noLanes": "Makmal Bintang tidak tersedia.",
+    "openQueue": "Buka giliran dan garis masa",
+    "unassignedHelp": "Lebih daripada satu kajian pasukan disimpan pada Makmal Bintang. Siapkan atau batalkan yang lebih.",
+    "levelLabel": "Tahap Makmal Bintang",
+    "level": "{level} daripada {max}",
+    "notSet": "Belum ditetapkan"
+  },
+  "card": {
+    "notUnlocked": "Belum dibuka",
+    "markUnlocked": "Tandai sebagai dibuka",
+    "maxAtHall": "Maks Thp {level} pada Dewan Pembina ini",
+    "unlockedBy": "Dibuka oleh Barak Pembina tahap {barracks}",
+    "progress": "Kemajuan {name}"
+  },
+  "unavailable": {
+    "title": "Tidak tersedia pada Dewan Pembina ini",
+    "requires": "Memerlukan Barak Pembina {barracks}, yang memerlukan Dewan Pembina {hall}"
+  },
+  "empty": {
+    "title": "Belum ada apa-apa di sini",
+    "allMax": "Setiap pasukan sudah pada tahap maksimum. Matikan Sembunyi Maks untuk melihatnya."
+  }
+}

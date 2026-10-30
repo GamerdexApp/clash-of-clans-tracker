@@ -1,0 +1,33 @@
+{
+  "categories": {
+    "defenses": "Défenses",
+    "army": "Armée",
+    "resources": "Ressources",
+    "crafted": "Défenses fabriquées",
+    "traps": "Pièges",
+    "troops": "Troupes",
+    "spells": "Sorts",
+    "siege": "Siège",
+    "pets": "Familiers",
+    "guardians": "Gardiens",
+    "heroes": "Héros",
+    "equipment": "Équipement",
+    "walls": "Murailles",
+    "buildings": "Bâtiments"
+  },
+  "sections": {
+    "armyBuildings": "Bâtiments d'armée",
+    "otherBuildings": "Autres bâtiments"
+  },
+  "level": "Niveau {level}",
+  "superchargeRow": "Suralimentation de {name}",
+  "profile": {
+    "builderHall": "Niveau de l'Hôtel des ouvriers",
+    "trophies": "Trophées",
+    "bestTrophies": "Meilleurs trophées",
+    "league": "Ligue",
+    "capitalHall": "Hôtel de la capitale",
+    "districtHall": "Hôtel de district de {zone}",
+    "contributions": "Contributions"
+  }
+}

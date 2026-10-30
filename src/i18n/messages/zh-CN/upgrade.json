@@ -1,0 +1,108 @@
+{
+  "massEdit": {
+    "hint": "等级也可以在批量编辑中设置。",
+    "link": "打开批量编辑"
+  },
+  "hideMax": "隐藏已满级",
+  "strip": {
+    "free": "{free} / {total} 空闲",
+    "idle": "空闲",
+    "unassigned": "未分配",
+    "taskLevels": "{from}级到{to}级"
+  },
+  "start": {
+    "title": "开始升级",
+    "levelChange": "{from, plural, =0 {建造到 {to} 级} other {{from}级到{to}级}}",
+    "time": "时间",
+    "cost": "费用",
+    "doneAt": "完成于",
+    "wasBoosted": "原为 {base}，黄金令牌 -{percent}%",
+    "wasCost": "{resource}，原为 {base}",
+    "resource": "{resource}",
+    "storedNote": "保存的是这个加速后的时间",
+    "storedNoteUnboosted": "保存的是这个时间",
+    "instant": "这次建造不需要时间。它会立即完成，也不占用建筑工人。",
+    "lanes": {
+      "builder": {
+        "label": "建筑工人",
+        "choose": "选择一名建筑工人来开始。",
+        "noneFree": "所有建筑工人都在忙。请先取消或完成一项升级。"
+      },
+      "research": {
+        "label": "研究通道",
+        "choose": "选择一条通道来开始。",
+        "noneFree": "所有研究通道都在忙。请先取消或完成一项研究。"
+      },
+      "bbBuilder": {
+        "label": "建筑工人",
+        "choose": "选择一名建筑工人来开始。",
+        "noneFree": "两名建筑工人都在忙。请先取消或完成一项升级。"
+      },
+      "bbResearch": {
+        "label": "星空实验室",
+        "choose": "选择星空实验室来开始。",
+        "noneFree": "星空实验室正忙。请先取消或完成这项研究。"
+      },
+      "pet": {
+        "label": "宠物屋",
+        "choose": "选择宠物屋来开始。",
+        "noneFree": "宠物屋正忙。请先取消或完成这项宠物升级。"
+      }
+    },
+    "requires": {
+      "laboratory": "需要{level}级实验室",
+      "pet-house": "需要{level}级宠物屋",
+      "star-laboratory": "需要{level}级星空实验室",
+      "noPetHouse": "请先建造宠物屋"
+    },
+    "free": "免费",
+    "cancel": "取消",
+    "confirm": "开始升级",
+    "confirmInstant": "立即建造"
+  },
+  "finish": {
+    "title": "提前完成",
+    "left": "剩余",
+    "methodLabel": "是如何完成的？",
+    "methods": {
+      "timePassed": {
+        "label": "时间已到",
+        "description": "游戏中的计时已经结束。不消耗任何东西。"
+      },
+      "gems": {
+        "label": "宝石",
+        "description": "在游戏中支付宝石立即完成。费用会随剩余时间减少而降低。"
+      },
+      "book": {
+        "label": "建筑之书",
+        "description": "立即完成一项正在进行的建筑升级。"
+      },
+      "hammer": {
+        "label": "建筑之锤",
+        "description": "立即将建筑升到下一级。"
+      }
+    },
+    "stores": "村庄会保存什么",
+    "storesLevel": "{level}级。计时器已清除。",
+    "storesSaved": "{time} 会计入已节省时间。",
+    "storesSavedNone": "已节省时间保持不变。",
+    "gemFigure": "约 {gems} 宝石（游戏数据规则，游戏内实际费用可能不同）。",
+    "notTracked": {
+      "timePassed": "",
+      "gems": "不追踪花费的宝石。",
+      "book": "不追踪拥有的书。",
+      "hammer": "不追踪拥有的锤子。"
+    },
+    "keep": "继续升级",
+    "confirm": "完成升级"
+  },
+  "cancel": {
+    "title": "取消这次升级？",
+    "body": "取消会停止计时器。{name}保持 {level} 级，{builder}重新空闲。",
+    "refundTitle": "游戏内退还：50%",
+    "refundBody": "在 Clash of Clans 中取消，会退还你支付的 {paid} 中的 {refund} {resource}。本应用不追踪你的资源，所以取消后请检查你的仓库。",
+    "undoNote": "取消后 10 秒内可以撤销。超过之后，请重新开始升级。",
+    "keep": "继续升级",
+    "confirm": "取消升级"
+  }
+}

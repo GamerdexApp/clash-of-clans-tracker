@@ -1,0 +1,32 @@
+{
+  "gate": {
+    "title": "Kein aktives Dorf",
+    "description": "Wähle ein Dorf oder erstelle eins, um diese Seite zu sehen.",
+    "newVillage": "Neues Dorf",
+    "chooseVillage": "Dorf wählen"
+  },
+  "townHallTab": {
+    "title": "Rathaus",
+    "supercharge": "Superladung",
+    "superchargeDone": "{current} von {max} Superladungsstufen, die bei diesem Rathaus freigeschaltet sind, sind fertig.",
+    "superchargeProgress": "Superladungsfortschritt"
+  },
+  "heroesUnlock": "Helden werden mit der Heldenhalle freigeschaltet.",
+  "progressLabel": "Fortschritt von {name}",
+  "countdownLabel": "Countdown von {name}",
+  "capitalGold": "Hauptstadtgold",
+  "queue": {
+    "conflict": "Konflikt",
+    "level": "St. {level}",
+    "levelSupercharge": "St. {level} Superladung",
+    "now": "Jetzt",
+    "itemTitle": "{name} St. {level}"
+  },
+  "finishDescription": "{name}, St. {from} auf {to}, {method}, {time} {unit}",
+  "lookupError": {
+    "rateLimit": "Bitte warte {seconds} s, bevor du erneut abrufst.",
+    "notFound": "Spieler {tag} wurde nicht gefunden.",
+    "api": "Die Supercell-API antwortete mit {status}.",
+    "network": "Die Spielersuche konnte den Server nicht erreichen."
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "title": "Birlikler",
+  "subline": "{name}, İnşaatçı Salonu {hall}",
+  "sublineNotSet": "{name}, İnşaatçı Salonu ayarlanmadı",
+  "strip": {
+    "title": "Yıldız Laboratuvarı",
+    "noLanes": "Yıldız Laboratuvarı kullanılamıyor.",
+    "openQueue": "Kuyruğu ve zaman çizelgesini aç",
+    "unassignedHelp": "Yıldız Laboratuvarında birden fazla birlik araştırması kayıtlı. Fazla olanı bitir veya iptal et.",
+    "levelLabel": "Yıldız Laboratuvarı seviyesi",
+    "level": "{max} seviyeden {level}",
+    "notSet": "Ayarlanmadı"
+  },
+  "card": {
+    "notUnlocked": "Açılmadı",
+    "markUnlocked": "Açıldı olarak işaretle",
+    "maxAtHall": "Bu İnşaatçı Salonunda maks. Sv {level}",
+    "unlockedBy": "İnşaatçı Kışlası seviye {barracks} ile açılır",
+    "progress": "{name} ilerlemesi"
+  },
+  "unavailable": {
+    "title": "Bu İnşaatçı Salonunda kullanılamıyor",
+    "requires": "İnşaatçı Kışlası {barracks} gerekir, bunun için İnşaatçı Salonu {hall} gerekir"
+  },
+  "empty": {
+    "title": "Burada henüz bir şey yok",
+    "allMax": "Her birlik maksimumda. Görmek için Maks. gizle seçeneğini kapat."
+  }
+}

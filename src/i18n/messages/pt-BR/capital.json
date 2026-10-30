@@ -1,0 +1,139 @@
+{
+  "districts": {
+    "title": "Distritos",
+    "subline": "{hall, plural, =0 {{name}, Salão da Capital não definido} other {{name}, Salão da Capital {hall}}}",
+    "description": "Distritos e zonas da sua Capital do Clã."
+  },
+  "troops": {
+    "title": "Tropas e feitiços",
+    "subline": "{name}, tropas e feitiços da Capital do Clã",
+    "tiles": {
+      "troops": "Tropas",
+      "spells": "Feitiços",
+      "caption": "{current} de {max} níveis"
+    },
+    "sections": {
+      "troops": "Tropas",
+      "spells": "Feitiços"
+    },
+    "card": {
+      "level": "Nível de {name}",
+      "raise": "Aumentar {name}",
+      "lower": "Diminuir {name}",
+      "maxAt": "Nível máx. {level} agora",
+      "from": "De {zone}",
+      "progress": "Progresso de {name}"
+    },
+    "locked": {
+      "title": "Ainda não disponível",
+      "districtHall": "Requer Salão do Distrito {level} em {zone}",
+      "capitalHall": "Requer Salão da Capital {level} para abrir {zone}",
+      "kept": "O nível salvo {level} é mantido"
+    },
+    "empty": {
+      "title": "Tudo está no máximo",
+      "description": "Desative Ocultar máx. para ver todas as tropas e feitiços."
+    }
+  },
+  "tracking": {
+    "label": "Acompanhar a Capital do Clã",
+    "onHelp": "Desativar mantém todos os dados.",
+    "turnOnTitle": "O acompanhamento da Capital do Clã está ativado",
+    "turnedOn": "O acompanhamento da Capital do Clã está ativado.",
+    "undo": "Desfazer",
+    "offDialog": {
+      "title": "Desativar o acompanhamento da Capital do Clã?",
+      "body": "As páginas da Capital do Clã, o cartão da Visão geral e a aba de Edição em massa ficam ocultos. Nada é excluído.",
+      "confirm": "Desativar",
+      "cancel": "Cancelar"
+    }
+  },
+  "off": {
+    "title": "O acompanhamento da Capital do Clã está desativado",
+    "description": "Seus distritos, tropas e feitiços são mantidos. Ative o acompanhamento para vê-los de novo.",
+    "turnOn": "Ativar acompanhamento",
+    "keptTitle": "O que é mantido",
+    "kept": "Todos os dados da Capital do Clã continuam nesta vila."
+  },
+  "locked": {
+    "title": "A Capital do Clã está bloqueada",
+    "description": "A Capital do Clã abre no Centro de Vila 3. Esta vila está no Centro de Vila {townHall}. Tudo o que já foi salvo aparece de novo no Centro de Vila 3.",
+    "action": "Alterar o Centro de Vila em Vilas"
+  },
+  "notSet": {
+    "title": "A Capital do Clã não está configurada",
+    "description": "Defina o nível do Salão da Capital para começar a acompanhar distritos, tropas e feitiços.",
+    "action": "Definir nível do Salão da Capital"
+  },
+  "hall": {
+    "label": "Salão da Capital",
+    "none": "Nenhum",
+    "level": "Nível {level}",
+    "nextCost": "O Salão da Capital {level} custa {cost} Ouro da Capital{hasOpens, select, true { e abre {opens}} other {}}. Subir um salão nunca redefine níveis.",
+    "atTop": "O Salão da Capital está no nível máximo.",
+    "raised": "Salão da Capital aumentado de {from} para {to}. Nenhum nível foi redefinido.",
+    "changed": "Salão da Capital alterado de {from} para {to}.",
+    "districtRaised": "Salão do Distrito de {zone} aumentado de {from} para {to}.",
+    "districtChanged": "Salão do Distrito de {zone} alterado de {from} para {to}."
+  },
+  "contributions": {
+    "label": "Contribuições",
+    "unit": "Ouro da Capital",
+    "help": "Total que você deu ao seu clã. A importação pela Tag do Jogador preenche o valor, e você também pode digitá-lo."
+  },
+  "tiles": {
+    "progress": "Progresso da Capital",
+    "progressCaption": "{current} de {max} níveis",
+    "zones": "Zonas abertas",
+    "zonesCaption": "{open} de {total}"
+  },
+  "zones": {
+    "title": "Zonas",
+    "help": "Selecione uma zona para editá-la abaixo",
+    "hall": "{level, plural, =0 {Sem Salão do Distrito} other {Salão do Distrito {level}}}",
+    "peakHall": "Salão da Capital {level}",
+    "locked": "Bloqueada, precisa do Salão da Capital {hall}",
+    "levels": "{current} de {max}"
+  },
+  "panel": {
+    "districtHall": "Salão do Distrito",
+    "requires": "Requer Salão da Capital {hall}",
+    "noHall": "Sem Salão do Distrito",
+    "empty": "Nada para construir aqui neste nível de salão.",
+    "groupsLabel": "Grupos de construções",
+    "groups": {
+      "defenses": "Defesas",
+      "traps": "Armadilhas",
+      "army": "Exército",
+      "walls": "Muros"
+    },
+    "max": "Máx.",
+    "clear": "Limpar",
+    "maxAll": "Maximizar tudo",
+    "resetAll": "Redefinir tudo",
+    "instances": "{amount} {count, plural, one {construção} other {construções}}",
+    "maxLevel": "Nível máx. {level}",
+    "instance": "{name} {index}",
+    "raise": "Aumentar {name}",
+    "lower": "Diminuir {name}",
+    "wallLevel": "Nível {level}",
+    "wallsLeft": "{left} de {total} muros ainda para posicionar",
+    "wallsNote": "As quantidades não podem passar dos muros restantes.",
+    "wallsNone": "Sem muros neste nível de salão.",
+    "wallCount": "Muros no nível {level}",
+    "wallRaise": "Mais um muro no nível {level}",
+    "wallLower": "Um muro a menos no nível {level}",
+    "groupMaxed": "{zone}: {group} no máximo",
+    "groupCleared": "{zone}: {group} limpo"
+  },
+  "confirm": {
+    "title": "Diminuir este salão?",
+    "description": "Estes níveis não cabem mais e serão redefinidos. Todo o resto é mantido.",
+    "confirm": "Diminuir salão",
+    "cancel": "Manter salão",
+    "more": "e mais {count}"
+  },
+  "toast": {
+    "undo": "Desfazer"
+  }
+}

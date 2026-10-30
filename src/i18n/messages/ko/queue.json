@@ -1,0 +1,177 @@
+{
+  "goldPass": "{percent, plural, =0 {골드 패스 부스트 없음} other {골드 패스 -{percent}%}}",
+  "options": {
+    "open": "대기열 옵션",
+    "title": "대기열 옵션",
+    "description": "대기열을 배치하는 방식을 바꾸는 설정이에요.",
+    "done": "완료"
+  },
+  "totals": {
+    "freeValue": "{total} 중 {free}",
+    "queued": "대기 중인 업그레이드",
+    "time": "대기 시간",
+    "allDone": "모든 레인 완료",
+    "none": "대기 중인 항목 없음",
+    "cost": "대기 비용",
+    "noCost": "비용 없음"
+  },
+  "lane": {
+    "idle": "비어 있음",
+    "queueEmpty": "이 레인에 대기 중인 항목이 없어요.",
+    "startNow": "지금 시작",
+    "remove": "제거",
+    "moveUp": "위로 이동",
+    "moveDown": "아래로 이동",
+    "moveToLane": "레인으로 이동",
+    "levels": "Lv {from}에서 {to}",
+    "removed": "{name}을 대기열에서 제거했어요",
+    "started": "{name} 시작",
+    "undo": "실행 취소"
+  },
+  "timeline": {
+    "title": "타임라인",
+    "zoomLabel": "타임라인 길이",
+    "zooms": {
+      "3": "3일",
+      "7": "1주",
+      "14": "2주",
+      "30": "1개월",
+      "90": "3개월"
+    },
+    "conflictsTitle": "충돌",
+    "noConflicts": "충돌이 없어요. 모든 업그레이드가 필요한 레벨 이후에 시작해요.",
+    "laneLabel": "{label} 타임라인",
+    "now": "지금",
+    "idle": "비어 있음"
+  },
+  "add": {
+    "search": "업그레이드 검색",
+    "hiddenFromAll": "전체에서 숨김: {names}.",
+    "chooseCategories": "카테고리 선택",
+    "chooseCategoriesHelp": "체크한 카테고리는 전체에 표시돼요. 체크하지 않은 카테고리는 자기 칩에서만 보여요.",
+    "add": "추가",
+    "addUpToHere": "여기까지 추가",
+    "showMore": "레벨 더 보기",
+    "showMoreUpgrades": "업그레이드 더 보기",
+    "nothing": "추가할 항목이 없어요.",
+    "nothingDescription": "이 보기의 모든 레벨이 대기 중이거나 진행 중이거나 아직 사용할 수 없어요.",
+    "added": "{count, plural, other {{name} {amount}레벨을 추가했어요}}",
+    "close": "완료",
+    "unlockTitle": "해제 안 됨",
+    "unlockHelp": "레벨을 대기열에 넣으려면 먼저 해제하세요.",
+    "markUnlocked": "해제됨으로 표시",
+    "showAllLocked": "{count}개 모두 보기",
+    "showFewerLocked": "간단히 보기",
+    "allLabel": "전체"
+  },
+  "lanes": {
+    "builder": {
+      "title": "빌더 대기열",
+      "subline": "{name}, 각 빌더의 다음 작업을 계획하세요",
+      "back": "빌더로 돌아가기",
+      "free": "빈 빌더",
+      "laneBusy": "이 빌더는 작업 중이에요.",
+      "goblin": {
+        "label": "고블린 빌더",
+        "help": "이벤트 동안 일곱 번째 빌더 레인을 추가해요."
+      },
+      "gate": "먼저 빌더 오두막을 지으세요. 첫 번째는 무료이고 즉시 완료돼요.",
+      "add": {
+        "title": "업그레이드 추가",
+        "description": "빌더의 다음 작업을 고르세요. 추가한 레벨은 순서대로 대기해요.",
+        "lane": "빌더 레인",
+        "search": "업그레이드 검색"
+      },
+      "categories": {
+        "defenses": "방어",
+        "armyBuildings": "군대",
+        "resourceBuildings": "자원",
+        "traps": "함정",
+        "heroes": "영웅",
+        "townHall": "타운홀",
+        "craftedDefenses": "제작",
+        "guardians": "수호자",
+        "supercharges": "슈퍼차지"
+      }
+    },
+    "research": {
+      "title": "연구 대기열",
+      "subline": "{name}, 연구소의 다음 연구를 계획하세요",
+      "back": "연구로 돌아가기",
+      "free": "빈 연구소",
+      "laneBusy": "이 레인은 작업 중이에요.",
+      "goblin": {
+        "label": "고블린 연구원",
+        "help": "이벤트 동안 두 번째 연구 레인을 추가해요."
+      },
+      "gate": "사용할 수 있는 연구 레인이 없어요.",
+      "add": {
+        "title": "연구 추가",
+        "description": "연구소의 다음 연구를 고르세요. 추가한 레벨은 순서대로 대기해요.",
+        "lane": "연구 레인",
+        "search": "연구 검색"
+      },
+      "categories": {
+        "troops": "병력",
+        "spells": "주문",
+        "siegeMachines": "시즈"
+      }
+    },
+    "pet": {
+      "title": "펫 대기열",
+      "subline": "{name}, 펫 하우스의 다음 업그레이드를 계획하세요",
+      "back": "펫으로 돌아가기",
+      "free": "펫 하우스",
+      "laneBusy": "펫 하우스는 작업 중이에요.",
+      "gate": "펫은 타운홀 14에서 해제돼요.",
+      "add": {
+        "title": "펫 업그레이드 추가",
+        "description": "펫 하우스가 다음에 업그레이드할 펫을 고르세요. 추가한 레벨은 순서대로 대기해요.",
+        "lane": "펫 하우스",
+        "search": "펫 검색"
+      },
+      "categories": {
+        "pets": "펫"
+      }
+    },
+    "bbBuilder": {
+      "title": "빌더 기지 대기열",
+      "subline": "{name}, 빌더 홀 {hall}, 각 빌더의 다음 작업을 계획하세요",
+      "back": "빌더 기지로 돌아가기",
+      "free": "빈 빌더",
+      "laneBusy": "이 빌더는 작업 중이에요.",
+      "gate": "빌더 기지에는 빌더가 두 명 있어요.",
+      "add": {
+        "title": "업그레이드 추가",
+        "description": "빌더 기지 빌더의 다음 작업을 고르세요. 추가한 레벨은 순서대로 대기해요.",
+        "lane": "빌더",
+        "search": "업그레이드 검색"
+      },
+      "categories": {
+        "defenses": "방어",
+        "armyBuildings": "군대",
+        "resourceBuildings": "자원",
+        "traps": "함정",
+        "heroes": "영웅",
+        "other": "기타"
+      }
+    },
+    "bbResearch": {
+      "title": "스타 연구소 대기열",
+      "subline": "{name}, 빌더 홀 {hall}, 스타 연구소의 다음 연구를 계획하세요",
+      "back": "병력으로 돌아가기",
+      "free": "빈 슬롯",
+      "laneBusy": "스타 연구소는 작업 중이에요.",
+      "gate": "스타 연구소는 한 번에 병력 하나만 연구해요.",
+      "add": {
+        "title": "연구 추가",
+        "description": "스타 연구소가 다음에 연구할 병력을 고르세요. 추가한 레벨은 순서대로 대기해요.",
+        "lane": "스타 연구소",
+        "search": "병력 검색"
+      },
+      "categories": {
+        "troops": "병력"
+      }
+    }
+  }
+}

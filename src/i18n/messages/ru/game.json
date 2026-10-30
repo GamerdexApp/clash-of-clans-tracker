@@ -1,0 +1,37 @@
+{
+  "resources": {
+    "gold": "Золото",
+    "elixir": "Эликсир",
+    "darkElixir": "Тёмный эликсир",
+    "darkElixirShort": "Тёмный",
+    "builderGold": "Золото строителя",
+    "builderGoldShort": "Зол. стр.",
+    "builderElixir": "Эликсир строителя",
+    "builderElixirShort": "Эл. стр.",
+    "capitalGold": "Золото столицы",
+    "shinyOre": "Shiny Ore",
+    "glowyOre": "Glowy Ore",
+    "starryOre": "Starry Ore"
+  },
+  "halls": {
+    "townHall": "Ратуша {level}",
+    "builderHall": "Зал строителя {level}",
+    "capitalHall": "Столичный зал {level}",
+    "heroHall": "Зал героев {level}",
+    "starLaboratory": "Звёздная лаборатория {level}",
+    "blacksmith": "Кузнец"
+  },
+  "places": {
+    "townHall": "Ратуша",
+    "townHallWeapon": "Оружие ратуши",
+    "builderHall": "Зал строителя",
+    "clockTower": "Часовая башня",
+    "laboratory": "Лаборатория",
+    "goblinResearcher": "Гоблин-исследователь",
+    "goblinBuilder": "Строитель-гоблин",
+    "starLaboratory": "Звёздная лаборатория",
+    "petHouse": "Дом питомцев",
+    "capitalPeak": "Capital Peak",
+    "builder": "Строитель {id}"
+  }
+}

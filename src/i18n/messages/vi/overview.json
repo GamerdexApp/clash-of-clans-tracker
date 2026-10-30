@@ -1,0 +1,112 @@
+{
+  "title": "Tổng quan",
+  "description": "Làng của bạn trong nháy mắt: tiến độ, bộ đếm hằng ngày và mọi chỉ số đã lưu.",
+  "subline": "{name}, tự tính, chỉ xem",
+  "header": {
+    "clanLevel": "{hasRole, select, true {Bang hội cấp {level}, {role}} other {Bang hội cấp {level}}}",
+    "achievements": "Thành tựu",
+    "ringCaption": "{stars} trên {maxStars} sao",
+    "viewAll": "Xem tất cả",
+    "townHall": "NC{level}"
+  },
+  "dailies": {
+    "title": "Hằng ngày",
+    "closedTitle": "Mục hằng ngày mở ở Nhà Chính 3",
+    "closedBody": "Lò Rèn, Trợ Thủ và Season Pass mở dần khi Nhà Chính tăng cấp.",
+    "closedLink": "Xem những gì đã mở",
+    "groups": {
+      "helpers": "Trợ Thủ",
+      "daily": "Hằng ngày",
+      "goldPass": "Gold Pass"
+    },
+    "requires": "Cần {requirement}",
+    "openForge": "Mở Lò Rèn",
+    "openHelpers": "Mở Trợ Thủ",
+    "unlockProspector": "Mở trong Season Pass",
+    "helperHut": "Nhà Trợ Thủ",
+    "townHall": "Nhà Chính {level}",
+    "starBonus": "Thưởng Sao",
+    "capitalGold": "Vàng Thủ Đô",
+    "autoForge": "Lò Rèn Tự Động",
+    "forgeSlots": "Ô Lò Rèn",
+    "notRunning": "Không chạy",
+    "running": "Đang chạy",
+    "stopAuto": "Dừng Lò Rèn Tự Động",
+    "autoLine": "{amount} {resource} đổi {capitalGold} Vàng Thủ Đô",
+    "slotsLine": "{running} trên {open} ô đang chạy",
+    "slotsDone": "{done, plural, other {{amount} ô đã xong}}",
+    "autoPerk": "đặc quyền Lò Rèn Tự Động",
+    "helperPreview": "Dùng ngay: còn {before} sẽ thành {after}",
+    "goldPass": {
+      "edit": "Sửa ở Season Pass",
+      "builder": "Tăng tốc thợ xây",
+      "research": "Tăng tốc nghiên cứu",
+      "hoggyBank": "Hoggy Bank",
+      "gemDonations": "Hỗ trợ quân giá 1 ngọc",
+      "autoForge": "Lò Rèn Tự Động",
+      "requestReduction": "Giảm thời gian xin quân",
+      "on": "Bật",
+      "off": "Tắt",
+      "resets": "Mức tăng quay về 0% vào {date}.",
+      "readOnly": "Mở Tổng quan không bao giờ đổi làng hay thời gian chỉnh sửa cuối của nó."
+    }
+  },
+  "league": {
+    "open": "Hiện phần thưởng của {name}",
+    "homeKind": "Giải đấu Làng Chính",
+    "builderKind": "Giải đấu Căn Cứ Thợ Xây",
+    "noData": "Không có dữ liệu cho giải đấu này ở Nhà Chính này.",
+    "battle": "Kết quả trận đấu",
+    "stars": "Sao",
+    "attacker": "Vàng Thợ Xây của bên tấn công",
+    "defender": "Dung Dịch Thợ Xây của bên phòng thủ"
+  },
+  "builder": {
+    "title": "Căn Cứ Thợ Xây",
+    "hall": "Nhà Thợ Xây {level}",
+    "trophies": "{trophies} cúp",
+    "daysAt": "Số ngày ở NTX{level}",
+    "notSetTitle": "Chưa đặt Nhà Thợ Xây",
+    "notSetBody": "Căn Cứ Thợ Xây mở ở Nhà Chính 6, nhưng làng này có Nhà Thợ Xây 0. Tiến độ, cúp và quân sẽ hiện khi cấp là 1 trở lên.",
+    "notSetAction": "Đặt cấp Nhà Thợ Xây",
+    "lockedBody": "Cần Nhà Chính 6",
+    "troops": "Quân",
+    "heroes": "Anh hùng"
+  },
+  "capital": {
+    "title": "Thủ Đô Bang Hội",
+    "hall": "Nhà Thủ Đô {level}",
+    "notSetTitle": "Thủ Đô Bang Hội chưa được thiết lập",
+    "notSetBody": "Đỉnh Thủ Đô chưa có cấp nhà, nên chưa có tiến độ quận để hiển thị. Hãy đặt cấp Nhà Thủ Đô để bắt đầu theo dõi.",
+    "notSetAction": "Đặt cấp Nhà Thủ Đô",
+    "lockedBody": "Cần Nhà Chính 3",
+    "districtHall": "Nhà Quận {level}",
+    "notUnlocked": "Chưa mở",
+    "unlocksAt": "Mở ở Nhà Thủ Đô {level}",
+    "needsDistrictHall": "Đặt Nhà Quận để bắt đầu",
+    "noData": "Không có dữ liệu",
+    "more": "Hiện thêm {count} quận",
+    "showFewer": "Hiện ít hơn",
+    "openDistricts": "Mở Quận"
+  },
+  "home": {
+    "title": "Làng Chính",
+    "townHall": "Nhà Chính {level}",
+    "daysAt": "Số ngày ở NC{level}",
+    "perHour": "mỗi giờ",
+    "stored": "đã tích trữ",
+    "cards": {
+      "locked": "Cần {requirement}"
+    },
+    "queue": "Mở",
+    "troops": "Quân",
+    "spells": "Phép",
+    "heroes": "Anh hùng",
+    "siege": "Máy Công Thành",
+    "pets": "Thú Cưng",
+    "legend": "Viền xanh: tối đa cho Nhà Chính này. Viền đứt: đã khóa. Đồng hồ: một nâng cấp đang chạy.",
+    "tile": "{hasRequirement, select, true {{name}, cần {requirement}} other {{name}, cấp {level}{max, plural, =0 {} other { trên {max}}}}}",
+    "heroLocked": "Cần {requirement}",
+    "petsLocked": "Cần Nhà Chính 14"
+  }
+}

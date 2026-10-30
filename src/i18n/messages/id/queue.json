@@ -1,0 +1,177 @@
+{
+  "goldPass": "{percent, plural, =0 {Tanpa boost Gold Pass} other {Gold Pass -{percent}%}}",
+  "options": {
+    "open": "Opsi antrean",
+    "title": "Opsi antrean",
+    "description": "Pengaturan yang mengubah cara antrean dijadwalkan.",
+    "done": "Selesai"
+  },
+  "totals": {
+    "freeValue": "{free} dari {total}",
+    "queued": "Peningkatan dalam antrean",
+    "time": "Waktu antrean",
+    "allDone": "Semua jalur selesai",
+    "none": "Tidak ada antrean",
+    "cost": "Biaya antrean",
+    "noCost": "Tanpa biaya"
+  },
+  "lane": {
+    "idle": "Kosong",
+    "queueEmpty": "Tidak ada antrean di jalur ini.",
+    "startNow": "Mulai sekarang",
+    "remove": "Hapus",
+    "moveUp": "Naikkan",
+    "moveDown": "Turunkan",
+    "moveToLane": "Pindah ke jalur",
+    "levels": "Lv {from} ke {to}",
+    "removed": "{name} dihapus dari antrean",
+    "started": "{name} dimulai",
+    "undo": "Urungkan"
+  },
+  "timeline": {
+    "title": "Linimasa",
+    "zoomLabel": "Panjang linimasa",
+    "zooms": {
+      "3": "3 hari",
+      "7": "1 minggu",
+      "14": "2 minggu",
+      "30": "1 bulan",
+      "90": "3 bulan"
+    },
+    "conflictsTitle": "Konflik",
+    "noConflicts": "Tidak ada konflik. Setiap peningkatan dimulai setelah level yang dibutuhkan.",
+    "laneLabel": "Linimasa {label}",
+    "now": "Sekarang",
+    "idle": "Kosong"
+  },
+  "add": {
+    "search": "Cari peningkatan",
+    "hiddenFromAll": "Disembunyikan dari Semua: {names}.",
+    "chooseCategories": "Pilih kategori",
+    "chooseCategoriesHelp": "Kategori yang dicentang tampil di Semua. Yang tidak dicentang hanya tampil di chip-nya sendiri.",
+    "add": "Tambah",
+    "addUpToHere": "Tambah sampai sini",
+    "showMore": "Tampilkan lebih banyak level",
+    "showMoreUpgrades": "Tampilkan lebih banyak peningkatan",
+    "nothing": "Tidak ada yang bisa ditambah di sini.",
+    "nothingDescription": "Setiap level di tampilan ini sudah diantre, berjalan, atau belum tersedia.",
+    "added": "{count, plural, other {{amount} level {name} ditambahkan}}",
+    "close": "Selesai",
+    "unlockTitle": "Belum terbuka",
+    "unlockHelp": "Buka ini dulu untuk mengantre levelnya.",
+    "markUnlocked": "Tandai terbuka",
+    "showAllLocked": "Tampilkan semua {count}",
+    "showFewerLocked": "Tampilkan lebih sedikit",
+    "allLabel": "Semua"
+  },
+  "lanes": {
+    "builder": {
+      "title": "Antrean pembangun",
+      "subline": "{name}, rencanakan tugas berikutnya setiap pembangun",
+      "back": "Kembali ke Pembangun",
+      "free": "Pembangun kosong",
+      "laneBusy": "Pembangun ini sibuk.",
+      "goblin": {
+        "label": "Pembangun Goblin",
+        "help": "Menambah jalur pembangun ketujuh selama event berlangsung."
+      },
+      "gate": "Bangun Pondok Pembangun dulu. Yang pertama gratis dan instan.",
+      "add": {
+        "title": "Tambah peningkatan",
+        "description": "Pilih tugas berikutnya untuk pembangun. Level yang kamu tambah diantre berurutan.",
+        "lane": "Jalur pembangun",
+        "search": "Cari peningkatan"
+      },
+      "categories": {
+        "defenses": "Pertahanan",
+        "armyBuildings": "Pasukan",
+        "resourceBuildings": "Sumber Daya",
+        "traps": "Jebakan",
+        "heroes": "Pahlawan",
+        "townHall": "Balai Kota",
+        "craftedDefenses": "Rakitan",
+        "guardians": "Penjaga",
+        "supercharges": "Supercharge"
+      }
+    },
+    "research": {
+      "title": "Antrean riset",
+      "subline": "{name}, rencanakan riset berikutnya di Laboratorium",
+      "back": "Kembali ke Riset",
+      "free": "Lab kosong",
+      "laneBusy": "Jalur ini sibuk.",
+      "goblin": {
+        "label": "Peneliti Goblin",
+        "help": "Menambah jalur riset kedua selama event berlangsung."
+      },
+      "gate": "Tidak ada jalur riset yang tersedia.",
+      "add": {
+        "title": "Tambah riset",
+        "description": "Pilih riset berikutnya di Laboratorium. Level yang kamu tambah diantre berurutan.",
+        "lane": "Jalur riset",
+        "search": "Cari riset"
+      },
+      "categories": {
+        "troops": "Pasukan",
+        "spells": "Mantra",
+        "siegeMachines": "Pengepungan"
+      }
+    },
+    "pet": {
+      "title": "Antrean hewan",
+      "subline": "{name}, rencanakan peningkatan berikutnya di Rumah Hewan",
+      "back": "Kembali ke Hewan",
+      "free": "Rumah Hewan",
+      "laneBusy": "Rumah Hewan sibuk.",
+      "gate": "Hewan terbuka di Balai Kota 14.",
+      "add": {
+        "title": "Tambah peningkatan hewan",
+        "description": "Pilih hewan yang ditingkatkan berikutnya di Rumah Hewan. Level yang kamu tambah diantre berurutan.",
+        "lane": "Rumah Hewan",
+        "search": "Cari hewan"
+      },
+      "categories": {
+        "pets": "Hewan"
+      }
+    },
+    "bbBuilder": {
+      "title": "Antrean Markas Pembangun",
+      "subline": "{name}, Balai Pembangun {hall}, rencanakan tugas berikutnya setiap pembangun",
+      "back": "Kembali ke Markas Pembangun",
+      "free": "Pembangun kosong",
+      "laneBusy": "Pembangun ini sibuk.",
+      "gate": "Markas Pembangun punya dua pembangun.",
+      "add": {
+        "title": "Tambah peningkatan",
+        "description": "Pilih tugas berikutnya untuk pembangun Markas Pembangun. Level yang kamu tambah diantre berurutan.",
+        "lane": "Pembangun",
+        "search": "Cari peningkatan"
+      },
+      "categories": {
+        "defenses": "Pertahanan",
+        "armyBuildings": "Pasukan",
+        "resourceBuildings": "Sumber Daya",
+        "traps": "Jebakan",
+        "heroes": "Pahlawan",
+        "other": "Lainnya"
+      }
+    },
+    "bbResearch": {
+      "title": "Antrean Lab Bintang",
+      "subline": "{name}, Balai Pembangun {hall}, rencanakan riset berikutnya di Lab Bintang",
+      "back": "Kembali ke Pasukan",
+      "free": "Slot kosong",
+      "laneBusy": "Lab Bintang sibuk.",
+      "gate": "Lab Bintang meneliti satu pasukan dalam satu waktu.",
+      "add": {
+        "title": "Tambah riset",
+        "description": "Pilih pasukan yang diteliti berikutnya di Lab Bintang. Level yang kamu tambah diantre berurutan.",
+        "lane": "Lab Bintang",
+        "search": "Cari pasukan"
+      },
+      "categories": {
+        "troops": "Pasukan"
+      }
+    }
+  }
+}

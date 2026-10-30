@@ -1,0 +1,8 @@
+{
+  "days": "{count}д",
+  "hours": "{count}ч",
+  "minutes": "{count}м",
+  "seconds": "{count}с",
+  "paddedSeconds": "{count}с",
+  "join": "{first} {second}"
+}

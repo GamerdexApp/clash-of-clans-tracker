@@ -1,0 +1,119 @@
+{
+  "title": "My Villages",
+  "subline": "{amount} {count, plural, one {village} other {villages}}",
+  "sublineActive": "{amount} {count, plural, one {village} other {villages}}, {name} is active",
+  "newVillage": "New village",
+  "empty": {
+    "title": "No villages yet",
+    "deletedTitle": "No villages left",
+    "description": "Create a village to start tracking upgrades, research and achievements.",
+    "restore": "Restore from a backup"
+  },
+  "filters": {
+    "search": "Search villages",
+    "sortLabel": "Sort by",
+    "sort": {
+      "lastModified": "Last modified",
+      "createdAt": "Date created",
+      "name": "Name"
+    },
+    "showing": "Showing {shown} of {total}",
+    "clear": "Clear search"
+  },
+  "noMatch": {
+    "title": "No villages match \"{query}\"",
+    "description": "Check the spelling or clear the search."
+  },
+  "card": {
+    "active": "Active",
+    "openOverview": "Open overview",
+    "setActive": "Set active",
+    "edit": "Edit",
+    "delete": "Delete",
+    "halls": "{builderHall, plural, =0 {Town Hall {townHall}} other {Town Hall {townHall}, Builder Hall {builderHall}}}",
+    "daysAtTownHall": "Days at Town Hall",
+    "daysAtBuilderHall": "Days at Builder Hall",
+    "notSet": "Not set",
+    "clanCapital": "Clan Capital",
+    "clanCapitalStates": {
+      "on": "On",
+      "off": "Off",
+      "locked": "Locked"
+    },
+    "created": "Created {date}",
+    "lastModified": "Modified {date}",
+    "switched": "{name} is now active"
+  },
+  "fields": {
+    "name": "Village name",
+    "namePlaceholder": "My main account",
+    "nameRequired": "Enter a name for the village.",
+    "description": "Description",
+    "descriptionPlaceholder": "Add a description for this village",
+    "townHallLevel": "Town Hall level",
+    "builderHallLevel": "Builder Hall level",
+    "builderHallHelp": "The Builder Base unlocks at Town Hall 6.",
+    "townHallUpgraded": "Town Hall upgraded",
+    "builderHallUpgraded": "Builder Hall upgraded",
+    "level": "Level {level}",
+    "trackCapital": "Track Clan Capital",
+    "trackCapitalHelp": "Turning it off hides the Clan Capital pages and keeps your data.",
+    "trackCapitalLocked": "Requires Town Hall 3",
+    "cancel": "Cancel"
+  },
+  "create": {
+    "title": "New village",
+    "submit": "Create village",
+    "modeLabel": "How to start",
+    "modes": {
+      "fresh": "Fresh start",
+      "import": "Import"
+    },
+    "modeNotes": {
+      "fresh": "Start with empty data.",
+      "import": "Read a player tag, with an optional building file."
+    },
+    "makeActive": "Make this the active village",
+    "done": "{name} created",
+    "importNeedsLookup": "Fetch a player tag first."
+  },
+  "lookup": {
+    "step1": "Step 1: Fetch player data",
+    "step2": "Step 2: Building data (optional)",
+    "tagLabel": "Player tag",
+    "tagPlaceholder": "#PPV2YV9R",
+    "fetch": "Fetch",
+    "refresh": "Refresh",
+    "wait": "Wait {seconds} s",
+    "serverNote": "The lookup sends the tag to the Gamerdex server, which asks the Supercell API. Nothing else leaves your browser.",
+    "unavailable": "The player lookup is not available right now. Try again later.",
+    "found": "{name}, Town Hall {townHall}{builderHall, plural, =0 {} other {, Builder Hall {builderHall}}}. {achievements} achievements and {troops} troops read.",
+    "buildingHelp": "The player API has no building levels. Choose a village backup from Settings or the exportData.json file from the game.",
+    "buildingLabel": "Building data file",
+    "buildingLoaded": "Building data loaded from {name}.",
+    "buildingInvalid": "This file is not building data. Use a village backup from Settings or exportData.json from the game.",
+    "buildingNotJson": "This file is not valid JSON."
+  },
+  "edit": {
+    "title": "Edit village",
+    "submit": "Save",
+    "refreshTitle": "Refresh from player tag",
+    "updatedTitle": "Updated",
+    "untouchedTitle": "Never touched",
+    "dateSet": "The upgraded date is set to today. You can change it.",
+    "done": "{name} saved"
+  },
+  "delete": {
+    "title": "Delete village",
+    "description": "This removes the village from this browser.",
+    "question": "Delete {name}? Its upgrades, research, achievements and dailies are removed.",
+    "activeNext": "{next} becomes the active village.",
+    "activeLast": "No village will be active.",
+    "exportFirst": "Export a backup first",
+    "cancel": "Cancel",
+    "confirm": "Delete village",
+    "done": "{name} deleted",
+    "doneMessage": "You can undo this for ten seconds.",
+    "undo": "Undo"
+  }
+}

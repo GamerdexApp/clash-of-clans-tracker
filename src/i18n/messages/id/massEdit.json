@@ -1,0 +1,138 @@
+{
+  "title": "Edit massal",
+  "description": "Ubah banyak level sekaligus. Tidak ada yang tersimpan sampai kamu menekan Simpan perubahan.",
+  "subline": "{name}, Balai Kota {townHall}, perubahan bertahap",
+  "scopes": {
+    "home": "Desa Utama",
+    "builder": "Markas Pembangun",
+    "capital": "Ibu Kota Klan"
+  },
+  "scopeNav": "Cakupan",
+  "requires": "Butuh {requirement}",
+  "trackingOff": "Pelacakan mati",
+  "changedCount": "{count, plural, other {{amount} perubahan}}",
+  "chip": "Perubahan belum disimpan",
+  "bar": {
+    "unsaved": "{count, plural, other {{amount} perubahan belum disimpan}}",
+    "none": "Tidak ada perubahan yang belum disimpan",
+    "discard": "Buang",
+    "save": "Simpan perubahan"
+  },
+  "saved": "{count, plural, other {{amount} perubahan tersimpan}}",
+  "undo": "Urungkan",
+  "discardDialog": {
+    "title": "{count, plural, other {Buang {amount} perubahan yang belum disimpan?}}",
+    "body": "Setiap baris kembali ke level tersimpannya.",
+    "keep": "Lanjut mengedit",
+    "discard": "Buang perubahan"
+  },
+  "leave": {
+    "title": "{count, plural, other {Kamu punya {amount} perubahan yang belum disimpan}}",
+    "body": "Simpan sebelum pergi, atau buang.",
+    "save": "Simpan dan pergi",
+    "discard": "Buang dan pergi",
+    "keep": "Lanjut mengedit"
+  },
+  "toolbar": {
+    "label": "Aksi massal",
+    "selectAll": "Pilih semua {count}",
+    "selected": "{count, plural, other {{amount} baris dipilih}}",
+    "clearSelection": "Hapus pilihan",
+    "scopeAll": "Berlaku untuk semua {count} baris di {category}",
+    "scopeSelected": "{count, plural, other {Berlaku untuk {amount} baris terpilih}}",
+    "max": "Maks Semua",
+    "maxSelected": "Maks yang dipilih",
+    "reset": "Reset Semua",
+    "resetSelected": "Reset yang dipilih",
+    "setLevel": "Atur level",
+    "levelLabel": "Level untuk baris terpilih",
+    "applyLevel": "{count, plural, other {Terapkan ke {amount} baris}}",
+    "hallLabel": "Atur ke maks untuk level balai",
+    "hallCurrent": "{hall} {level} (saat ini)",
+    "hallOption": "{hall} {level}",
+    "hallPlaceholder": "Pilih {hall}"
+  },
+  "confirm": {
+    "title": "{count, plural, other {Turunkan {amount} baris?}}",
+    "body": "Ini mengubah draf. Tidak ada yang tersimpan sampai kamu menekan Simpan perubahan.",
+    "superchargeNote": "Bangunan yang turun di bawah level tertingginya juga kehilangan tingkat supercharge.",
+    "apply": "Terapkan ke draf",
+    "cancel": "Batal",
+    "line": "{name}: {from} ke {to}",
+    "more": "dan {count} lagi"
+  },
+  "rows": {
+    "notBuilt": "Belum dibangun",
+    "toMax": "{count} lagi ke maks",
+    "atMax": "Sudah maks",
+    "changed": "Diubah {from} ke {to}",
+    "level": "Level {name}",
+    "raise": "Naikkan {name}",
+    "lower": "Turunkan {name}",
+    "max": "Maks",
+    "select": "Pilih {name}",
+    "selectGroup": "Pilih semua {name}",
+    "supercharge": "Supercharge",
+    "reachFirst": "Capai level {level} dulu",
+    "slider": "Penggeser {name}",
+    "groupBuilt": "{count} dibangun, level maks {max}",
+    "expand": "Tampilkan {name}",
+    "collapse": "Sembunyikan {name}"
+  },
+  "category": {
+    "atMax": "{done} dari {total} sudah maks untuk {hall} {level}",
+    "rowsAtMax": "{done} dari {total} sudah maks",
+    "empty": "Belum ada yang bisa diedit di kategori ini.",
+    "locked": "Butuh {requirement}",
+    "lockedSuffix": " (terkunci)",
+    "nav": "Kategori"
+  },
+  "walls": {
+    "total": "Total",
+    "allocated": "Dialokasikan",
+    "remaining": "Tersisa",
+    "maxAll": "Maks Semua",
+    "resetAll": "Reset Semua",
+    "maxAllHelp": "Memindahkan semua tembok yang tersisa ke level tertinggi",
+    "level": "Tembok level {level}"
+  },
+  "builder": {
+    "profile": "Profil Markas Pembangun",
+    "hall": "Level Balai Pembangun",
+    "hallHelp": "Balai Pembangun {level} menentukan level tertinggi setiap baris di bawah. Menurunkannya akan bertanya dulu dan hanya menurunkan baris di atas batas baru.",
+    "none": "Tidak ada bangunan di level Balai Pembangun ini",
+    "raise": "Naikkan Balai Pembangun",
+    "lower": "Turunkan Balai Pembangun",
+    "trophies": "Trofi",
+    "bestTrophies": "Trofi terbaik",
+    "league": "Liga",
+    "hallConfirmTitle": "Turunkan Balai Pembangun ke {level}?"
+  },
+  "hallNames": {
+    "home": "Balai Kota",
+    "builder": "Balai Pembangun",
+    "district": "Balai Distrik",
+    "capital": "Balai Ibu Kota"
+  },
+  "capital": {
+    "profile": "Profil Ibu Kota Klan",
+    "hall": "Balai Ibu Kota",
+    "none": "Tidak ada",
+    "level": "Balai Ibu Kota {level}",
+    "contributions": "Kontribusi Ibu Kota Klan",
+    "unit": "Emas Ibu Kota",
+    "districtHall": "Balai Distrik",
+    "districtNone": "Tidak ada",
+    "districtLevel": "Balai Distrik {level}",
+    "requiresCapitalHall": "Butuh Balai Ibu Kota {level}",
+    "unlockHint": "Atur {label} di atas untuk membuka bangunan.",
+    "parts": "Bagian",
+    "off": "Pelacakan Ibu Kota Klan mati",
+    "offBody": "Nyalakan lagi pelacakan dari halaman Ibu Kota Klan. Tidak ada yang dihapus.",
+    "offAction": "Buka Ibu Kota Klan"
+  },
+  "empty": {
+    "title": "Tidak ada desa aktif",
+    "description": "Pilih desa atau buat desa baru untuk memakai Edit massal."
+  }
+}

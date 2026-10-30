@@ -1,0 +1,255 @@
+{
+  "locked": {
+    "title": "Giornalieri",
+    "subline": "{name}, Municipio {townHall}, qui non è ancora aperto nulla",
+    "open": "Apri",
+    "lockedBadge": "Bloccato",
+    "now": "Questo villaggio è al Municipio {townHall}.",
+    "nowNoHut": "Questo villaggio non ha ancora la Capanna degli Aiutanti.",
+    "needsHut": "Richiede la Capanna degli Aiutanti",
+    "toBuilder": "Apri Costruttore",
+    "cards": {
+      "forge": {
+        "title": "Fucina",
+        "what": "Trasforma le risorse in più in Oro Capitale e raccogli l'Oro Capitale giornaliero."
+      },
+      "helpers": {
+        "title": "Aiutanti",
+        "what": "Segui l'Apprendista del Costruttore, l'Assistente di Laboratorio, l'Alchimista e il Cercatore."
+      },
+      "seasonPass": {
+        "title": "Pass Stagionale",
+        "what": "Imposta i potenziamenti e i vantaggi del Pass Oro che accorciano i tempi dei potenziamenti."
+      },
+      "starBonus": {
+        "title": "Bonus Stelle",
+        "what": "Il timer giornaliero del Bonus Stelle si trova nella Panoramica.",
+        "open": "Apri Panoramica"
+      }
+    }
+  },
+  "timer": {
+    "notSet": "Imposta il tuo azzeramento giornaliero",
+    "setTime": "Imposta orario di azzeramento",
+    "setAndUse": "Imposta e segna come usato",
+    "notSetHelp": "Impostare l'orario non segna la ricompensa come usata.",
+    "savedIn": "L'orario è salvato in {zone}.",
+    "available": "Disponibile",
+    "use": "Usa",
+    "adjust": "Modifica",
+    "adjustTitle": "Modifica orario di azzeramento",
+    "save": "Salva",
+    "cancel": "Annulla",
+    "resetsAt": "Si azzera ogni giorno alle {time}, {zone}",
+    "untilReset": "fino all'azzeramento alle {time}, {zone}",
+    "usedAt": "Usato alle {time}.",
+    "timeLabel": "Orario di azzeramento",
+    "deviceClock": "orologio del dispositivo",
+    "used": "{name} segnato come usato",
+    "undo": "Annulla"
+  },
+  "forge": {
+    "title": "Fucina",
+    "description": "Trasforma le risorse in più in Oro Capitale e raccogli l'Oro Capitale giornaliero.",
+    "subline": "{builderHall, plural, =0 {{name}, Municipio {townHall}, produzione di Oro Capitale} other {{name}, Municipio {townHall}, Sala del Costruttore {builderHall}, produzione di Oro Capitale}}",
+    "daily": {
+      "title": "Oro Capitale giornaliero",
+      "amount": "+{gold} Oro Capitale ogni giorno al Municipio {townHall}",
+      "none": "L'Oro Capitale giornaliero inizia al Municipio 6.",
+      "name": "Oro Capitale giornaliero"
+    },
+    "slots": {
+      "title": "Slot della Fucina",
+      "craftingTime": "Tempo di creazione di 3 giorni",
+      "open": "{open} di {total} slot aperti al Municipio {townHall}",
+      "boost": "Potenziamento Costruttore del {percent}% applicato: {time}",
+      "slot": "Slot {number}",
+      "requires": "Richiede il Municipio {townHall}",
+      "locked": "Bloccato",
+      "idle": "Libero",
+      "idleHelp": "Scegli cosa creare",
+      "running": "In corso",
+      "done": "Completato",
+      "result": "Risultato",
+      "start": "Avvia",
+      "stop": "Ferma",
+      "reset": "Reimposta",
+      "resource": "Risorsa",
+      "rate": "{amount} {resource} per {capitalGold} Oro Capitale, pronto in {time}",
+      "left": "{time} rimasti",
+      "ready": "Pronto: {capitalGold} Oro Capitale.",
+      "finished": "Finito {ago} fa.",
+      "stopped": "Slot {number} fermato. Ciclo cancellato.",
+      "resetDone": "Slot {number} reimpostato. Ciclo di {resource} cancellato.",
+      "runningTitle": "{resource}, {amount}"
+    },
+    "auto": {
+      "title": "Fucina Automatica",
+      "subtitle": "Vantaggio del Pass Oro, si ripete da sola",
+      "repeats": "{amount} {resource} per {capitalGold} Oro Capitale ogni {time}",
+      "nextRun": "Il ciclo successivo parte da solo quando questo finisce.",
+      "stop": "Ferma Fucina Automatica",
+      "stopped": "Fucina Automatica fermata. Ciclo cancellato.",
+      "confirm": {
+        "title": "Fermare la Fucina Automatica?",
+        "body": "Il ciclo in corso verrà cancellato: {amount} {resource} per {capitalGold} Oro Capitale, con {time} rimasti. La Fucina Automatica smette di ripetersi finché non la riavvii dalla pagina Fucina. Il vantaggio del Pass Oro resta attivo nel Pass Stagionale.",
+        "undoHint": "Un pulsante Annulla resta sullo schermo per qualche secondo dopo che l'hai fermata.",
+        "keep": "Lascia in corso",
+        "stop": "Ferma Fucina Automatica"
+      }
+    },
+    "rates": {
+      "title": "Tariffe della Fucina",
+      "description": "{builderHall, plural, =0 {Municipio {townHall}, un ciclo in uno slot} other {Municipio {townHall} e Sala del Costruttore {builderHall}, un ciclo in uno slot}}",
+      "autoTitle": "Tariffe della Fucina Automatica",
+      "autoDescription": "Prezzo del Pass Oro, metà del costo manuale",
+      "resource": "Risorsa",
+      "cost": "Costo",
+      "capitalGold": "Oro Capitale",
+      "requires": "Richiede {requirement}"
+    }
+  },
+  "helpers": {
+    "title": "Aiutanti",
+    "description": "Segui l'Apprendista del Costruttore, l'Assistente di Laboratorio, l'Alchimista e il Cercatore.",
+    "subline": "{builderHall, plural, =0 {{name}, Municipio {townHall}, assistenti della Capanna degli Aiutanti} other {{name}, Municipio {townHall}, Sala del Costruttore {builderHall}, assistenti della Capanna degli Aiutanti}}",
+    "banner": "Capanna degli Aiutanti costruita. Ogni aiutante si sblocca col Municipio: Assistente di Laboratorio 9, Apprendista del Costruttore 10, Cercatore 10, Alchimista 11.",
+    "names": {
+      "buildersApprentice": "Apprendista del Costruttore",
+      "labAssistant": "Assistente di Laboratorio",
+      "alchemist": "Alchimista",
+      "prospector": "Cercatore"
+    },
+    "from": "Dal Municipio {townHall} in su",
+    "lockedCard": "Richiede il Municipio {townHall}",
+    "dailyUse": "Uso giornaliero",
+    "level": "Livello",
+    "levelOption": "Livello {level}",
+    "levelTownHall": "MU {townHall}",
+    "none": "Nessuno",
+    "noLevel": "Seleziona il tuo livello per vedere le statistiche.",
+    "noLevelCalculator": "Seleziona il tuo livello per usare il calcolatore.",
+    "nextLevel": "{gems, select, 0 {Il livello {level} è gratis} other {Il livello {level} costa {gems} gemme}}",
+    "saves": "Risparmia {time} per uso",
+    "levelRequires": "Richiede il Municipio {townHall}",
+    "assignment": {
+      "builderTitle": "Potenziamento da accelerare",
+      "researchTitle": "Ricerca da accelerare",
+      "none": "Nessuno",
+      "builderHelp": "Elenca edifici, eroi, Municipio, arma del Municipio e moduli delle difese create che sono in potenziamento ora.",
+      "researchHelp": "Solo ricerca: elenca truppe, magie e macchine d'assedio che sono in potenziamento ora.",
+      "builderEmpty": "Nessun potenziamento attivo dei Costruttori da assegnare.",
+      "researchEmpty": "Nessuna ricerca attiva del laboratorio da assegnare.",
+      "once": "Un solo uso",
+      "untilDone": "Fino al termine",
+      "assignedTo": "Assegnato a",
+      "clearsAfterUse": "Si cancella dopo un uso.",
+      "staysUntilDone": "Resta finché il potenziamento non finisce.",
+      "clear": "Cancella assegnazione",
+      "cleared": "Assegnazione cancellata.",
+      "select": "Potenziamento assegnato",
+      "mode": "Modalità di assegnazione",
+      "preview": "Usa ora: {before} rimasti diventano {after}.",
+      "previewDone": "Usa ora: {before} rimasti, il potenziamento finisce.",
+      "upgradeTo": "{name} al livello {level}, {left} rimasti"
+    },
+    "used": {
+      "plain": "{name} segnato come usato",
+      "saved": "{name} usato su {target}, {time} risparmiati"
+    },
+    "alchemist": {
+      "stats": {
+        "goldElixir": "Massimo di Oro o Elisir",
+        "darkElixir": "Massimo di Elisir Oscuro",
+        "bonus": "Bonus di conversione"
+      },
+      "calculator": "Calcolatore di conversione",
+      "from": "Da",
+      "to": "A",
+      "amount": "Quantità da convertire",
+      "result": "{amount} {from} danno {output} {to}",
+      "help": "Include il bonus di conversione del {bonus}% e il rapporto di 150 a 1.",
+      "nothingSaved": "Qui non viene salvato nulla."
+    },
+    "prospector": {
+      "lockedTitle": "Bloccato finché non lo sblocchi con 2.200 Punti Sfida Stagionale",
+      "lockedHelp": "Attivalo nella pagina Pass Stagionale dopo averlo sbloccato nel gioco.",
+      "toSeasonPass": "Apri Pass Stagionale",
+      "subtitle": "Dal Municipio 10 in su, sbloccato con i Punti Sfida Stagionale",
+      "lockedBadge": "Bloccato",
+      "unlockedBadge": "Sbloccato",
+      "levelOnly": "Livello 1 (l'unico livello)",
+      "limits": {
+        "shiny": "Massimo di Shiny Ore",
+        "glowy": "Massimo di Glowy Ore",
+        "starry": "Massimo di Starry Ore"
+      },
+      "calculator": "Calcolatore di conversione dei minerali",
+      "ores": {
+        "shiny": "Shiny Ore",
+        "glowy": "Glowy Ore",
+        "starry": "Starry Ore"
+      },
+      "help": "10 Shiny Ore fanno 1 Glowy Ore. 100 Glowy Ore fanno 1 Starry Ore."
+    }
+  },
+  "seasonPass": {
+    "title": "Pass Stagionale",
+    "description": "Imposta i potenziamenti e i vantaggi del Pass Oro che accorciano i tempi dei potenziamenti.",
+    "subline": "{name}, Municipio {townHall}, vantaggi del Pass Oro attivi in questa stagione",
+    "lockedTitle": "Il Pass Stagionale è bloccato",
+    "lockedBody": "Il Pass Oro richiede il Municipio 7. Questo villaggio è al Municipio {townHall}.",
+    "month": {
+      "title": "{month}",
+      "subtitle": "I potenziamenti si azzerano il {reset}, i vantaggi restano.",
+      "key": "Chiave del mese",
+      "rolled": "È iniziato un nuovo mese. Il potenziamento Costruttore e il potenziamento Ricerca sono stati azzerati allo 0%. I vantaggi restano.",
+      "undoReset": "Annulla azzeramento",
+      "dismiss": "Chiudi",
+      "restored": "Potenziamenti ripristinati per questo mese.",
+      "undo": "Annulla"
+    },
+    "boosts": {
+      "title": "Vantaggi di potenziamento",
+      "description": "Il Pass Oro accorcia i tempi dei potenziamenti in questa stagione.",
+      "builder": "Potenziamento Costruttore",
+      "research": "Potenziamento Ricerca",
+      "applies": "Si applica ai tempi di Costruttore, Ricerca e Animali, alle sequenze temporali delle code e al tempo di creazione della Fucina.",
+      "saved": "Salvato con questo mese.",
+      "value": "{percent, plural, =0 {Spento} other {{percent}%}}",
+      "option": "{percent, plural, =0 {0%} other {{percent}%}}",
+      "builderEffect": "{percent, plural, =0 {Il tempo di creazione della Fucina è 3g.} other {Il tempo di creazione della Fucina è {time}.}}",
+      "researchEffect": "{percent, plural, =0 {I tempi di ricerca e degli animali non cambiano.} other {I tempi di ricerca e degli animali sono più brevi del {percent}%.}}"
+    },
+    "unlocks": {
+      "title": "Sblocchi della Sfida Stagionale",
+      "description": "Non fa parte del Pass Oro",
+      "prospector": "Cercatore",
+      "prospectorHelp": "Aiutante dal Municipio 10 in su, costa 2.200 Punti Sfida Stagionale",
+      "shows": "Compare nella pagina Aiutanti"
+    },
+    "perks": {
+      "title": "Vantaggi del Pass Oro",
+      "description": "Vantaggi del Pass Oro attivi in questa stagione",
+      "referenceOnly": "Solo riferimento",
+      "referenceNote": "Non cambia nient'altro nell'app.",
+      "hoggyBank": {
+        "label": "Salvadanaio Hoggy",
+        "note": "Accumula risorse mentre giochi, raccogli a fine stagione"
+      },
+      "gemDonations": {
+        "label": "Donazioni da 1 gemma",
+        "note": "Dona truppe e magie per solo 1 gemma ciascuna"
+      },
+      "autoForge": {
+        "label": "Fucina Automatica",
+        "note": "Converte automaticamente le risorse in Oro Capitale"
+      },
+      "autoForgeEffect": "Attiva la riga Fucina Automatica nella pagina Fucina e il badge nella Panoramica.",
+      "requestTimeReduction": {
+        "label": "Riduzione tempo richieste",
+        "note": "Riduce il timer di attesa delle richieste di truppe"
+      }
+    }
+  }
+}

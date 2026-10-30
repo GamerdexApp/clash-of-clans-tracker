@@ -1,0 +1,255 @@
+{
+  "locked": {
+    "title": "Diarias",
+    "subline": "{name}, Ayuntamiento {townHall}, aquí aún no hay nada disponible",
+    "open": "Abrir",
+    "lockedBadge": "Bloqueado",
+    "now": "Esta aldea está en el Ayuntamiento {townHall}.",
+    "nowNoHut": "Esta aldea aún no tiene la Helper Hut.",
+    "needsHut": "Necesita la Helper Hut",
+    "toBuilder": "Abrir Constructor",
+    "cards": {
+      "forge": {
+        "title": "Forja",
+        "what": "Convierte recursos sobrantes en Oro de Capital y recoge el Oro de Capital diario."
+      },
+      "helpers": {
+        "title": "Ayudantes",
+        "what": "Sigue al Aprendiz de Constructor, al Ayudante de Laboratorio, al Alquimista y al Prospector."
+      },
+      "seasonPass": {
+        "title": "Pase de temporada",
+        "what": "Fija las mejoras y ventajas del Pase de Oro que acortan los tiempos de mejora."
+      },
+      "starBonus": {
+        "title": "Bono de estrellas",
+        "what": "El temporizador diario del Bono de estrellas está en el Resumen.",
+        "open": "Abrir Resumen"
+      }
+    }
+  },
+  "timer": {
+    "notSet": "Fija tu reinicio diario",
+    "setTime": "Fijar hora de reinicio",
+    "setAndUse": "Fijar y marcar como usado",
+    "notSetHelp": "Fijar la hora no marca la recompensa como usada.",
+    "savedIn": "La hora se guarda en {zone}.",
+    "available": "Disponible",
+    "use": "Usar",
+    "adjust": "Ajustar",
+    "adjustTitle": "Ajustar hora de reinicio",
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "resetsAt": "Se reinicia cada día a las {time}, {zone}",
+    "untilReset": "hasta el reinicio a las {time}, {zone}",
+    "usedAt": "Usado a las {time}.",
+    "timeLabel": "Hora de reinicio",
+    "deviceClock": "reloj del dispositivo",
+    "used": "{name} marcado como usado",
+    "undo": "Deshacer"
+  },
+  "forge": {
+    "title": "Forja",
+    "description": "Convierte recursos sobrantes en Oro de Capital y recoge el Oro de Capital diario.",
+    "subline": "{builderHall, plural, =0 {{name}, Ayuntamiento {townHall}, producción de Oro de Capital} other {{name}, Ayuntamiento {townHall}, Sala del Constructor {builderHall}, producción de Oro de Capital}}",
+    "daily": {
+      "title": "Oro de Capital diario",
+      "amount": "+{gold} Oro de Capital cada día en el Ayuntamiento {townHall}",
+      "none": "El Oro de Capital diario empieza en el Ayuntamiento 6.",
+      "name": "Oro de Capital diario"
+    },
+    "slots": {
+      "title": "Ranuras de la Forja",
+      "craftingTime": "3 días de fabricación",
+      "open": "{open} de {total} ranuras abiertas en el Ayuntamiento {townHall}",
+      "boost": "Mejora de constructor del {percent}% aplicada: {time}",
+      "slot": "Ranura {number}",
+      "requires": "Requiere Ayuntamiento {townHall}",
+      "locked": "Bloqueada",
+      "idle": "Libre",
+      "idleHelp": "Elige qué forjar",
+      "running": "En curso",
+      "done": "Hecho",
+      "result": "Resultado",
+      "start": "Iniciar",
+      "stop": "Detener",
+      "reset": "Restablecer",
+      "resource": "Recurso",
+      "rate": "{amount} {resource} por {capitalGold} Oro de Capital, listo en {time}",
+      "left": "Quedan {time}",
+      "ready": "Listo: {capitalGold} Oro de Capital.",
+      "finished": "Terminó hace {ago}.",
+      "stopped": "Ranura {number} detenida. Ciclo borrado.",
+      "resetDone": "Ranura {number} restablecida. Ciclo de {resource} borrado.",
+      "runningTitle": "{resource}, {amount}"
+    },
+    "auto": {
+      "title": "Forja automática",
+      "subtitle": "Ventaja del Pase de Oro, se repite sola",
+      "repeats": "{amount} {resource} por {capitalGold} Oro de Capital cada {time}",
+      "nextRun": "El siguiente ciclo empieza solo cuando termine este.",
+      "stop": "Detener Forja automática",
+      "stopped": "Forja automática detenida. Ciclo borrado.",
+      "confirm": {
+        "title": "¿Detener la Forja automática?",
+        "body": "Se borrará el ciclo en curso: {amount} {resource} por {capitalGold} Oro de Capital, con {time} restantes. La Forja automática deja de repetirse hasta que la inicies de nuevo desde la página de la Forja. La ventaja del Pase de Oro sigue activa en Pase de temporada.",
+        "undoHint": "Un botón Deshacer se queda en pantalla unos segundos después de detenerla.",
+        "keep": "Seguir en marcha",
+        "stop": "Detener Forja automática"
+      }
+    },
+    "rates": {
+      "title": "Tarifas de la Forja",
+      "description": "{builderHall, plural, =0 {Ayuntamiento {townHall}, un ciclo en una ranura} other {Ayuntamiento {townHall} y Sala del Constructor {builderHall}, un ciclo en una ranura}}",
+      "autoTitle": "Tarifas de la Forja automática",
+      "autoDescription": "Precio del Pase de Oro, la mitad del coste manual",
+      "resource": "Recurso",
+      "cost": "Coste",
+      "capitalGold": "Oro de Capital",
+      "requires": "Requiere {requirement}"
+    }
+  },
+  "helpers": {
+    "title": "Ayudantes",
+    "description": "Sigue al Aprendiz de Constructor, al Ayudante de Laboratorio, al Alquimista y al Prospector.",
+    "subline": "{builderHall, plural, =0 {{name}, Ayuntamiento {townHall}, asistentes de la Helper Hut} other {{name}, Ayuntamiento {townHall}, Sala del Constructor {builderHall}, asistentes de la Helper Hut}}",
+    "banner": "Helper Hut construida. Cada ayudante se desbloquea según el Ayuntamiento: Ayudante de Laboratorio 9, Aprendiz de Constructor 10, Prospector 10, Alquimista 11.",
+    "names": {
+      "buildersApprentice": "Aprendiz de Constructor",
+      "labAssistant": "Ayudante de Laboratorio",
+      "alchemist": "Alquimista",
+      "prospector": "Prospector"
+    },
+    "from": "Ayuntamiento {townHall} o superior",
+    "lockedCard": "Requiere Ayuntamiento {townHall}",
+    "dailyUse": "Uso diario",
+    "level": "Nivel",
+    "levelOption": "Nivel {level}",
+    "levelTownHall": "AY {townHall}",
+    "none": "Ninguno",
+    "noLevel": "Elige tu nivel para ver las estadísticas.",
+    "noLevelCalculator": "Elige tu nivel para usar la calculadora.",
+    "nextLevel": "{gems, select, 0 {El nivel {level} es gratis} other {El nivel {level} cuesta {gems} gemas}}",
+    "saves": "Ahorra {time} por uso",
+    "levelRequires": "Requiere Ayuntamiento {townHall}",
+    "assignment": {
+      "builderTitle": "Mejora para acelerar",
+      "researchTitle": "Investigación para acelerar",
+      "none": "Ninguna",
+      "builderHelp": "Lista los edificios, héroes, Ayuntamiento, arma del Ayuntamiento y módulos de defensas fabricadas que se están mejorando ahora.",
+      "researchHelp": "Solo investigación: lista las tropas, hechizos y máquinas de asedio que se están mejorando ahora.",
+      "builderEmpty": "No hay mejoras de constructor activas que asignar.",
+      "researchEmpty": "No hay investigaciones de laboratorio activas que asignar.",
+      "once": "Un solo uso",
+      "untilDone": "Hasta terminar",
+      "assignedTo": "Asignado a",
+      "clearsAfterUse": "Se borra tras un uso.",
+      "staysUntilDone": "Se mantiene hasta que termina la mejora.",
+      "clear": "Borrar asignación",
+      "cleared": "Asignación borrada.",
+      "select": "Mejora asignada",
+      "mode": "Modo de asignación",
+      "preview": "Usar ahora: {before} restantes pasan a {after}.",
+      "previewDone": "Usar ahora: quedan {before}, la mejora termina.",
+      "upgradeTo": "{name} a nivel {level}, quedan {left}"
+    },
+    "used": {
+      "plain": "{name} marcado como usado",
+      "saved": "{name} usado en {target}, {time} ahorrados"
+    },
+    "alchemist": {
+      "stats": {
+        "goldElixir": "Máx. de Oro o Elixir",
+        "darkElixir": "Máx. de Elixir Oscuro",
+        "bonus": "Bono de conversión"
+      },
+      "calculator": "Calculadora de conversión",
+      "from": "De",
+      "to": "A",
+      "amount": "Cantidad a convertir",
+      "result": "{amount} de {from} dan {output} de {to}",
+      "help": "Incluye el bono de conversión del {bonus}% y la tasa de 150 a 1.",
+      "nothingSaved": "Aquí no se guarda nada."
+    },
+    "prospector": {
+      "lockedTitle": "Bloqueado hasta que lo desbloquees con 2,200 puntos de Desafío de temporada",
+      "lockedHelp": "Actívalo en la página Pase de temporada cuando lo hayas desbloqueado en el juego.",
+      "toSeasonPass": "Abrir Pase de temporada",
+      "subtitle": "Ayuntamiento 10 o superior, se desbloquea con puntos de Desafío de temporada",
+      "lockedBadge": "Bloqueado",
+      "unlockedBadge": "Desbloqueado",
+      "levelOnly": "Nivel 1 (el único nivel)",
+      "limits": {
+        "shiny": "Máx. de Shiny Ore",
+        "glowy": "Máx. de Glowy Ore",
+        "starry": "Máx. de Starry Ore"
+      },
+      "calculator": "Calculadora de conversión de menas",
+      "ores": {
+        "shiny": "Shiny Ore",
+        "glowy": "Glowy Ore",
+        "starry": "Starry Ore"
+      },
+      "help": "10 de Shiny Ore hacen 1 de Glowy Ore. 100 de Glowy Ore hacen 1 de Starry Ore."
+    }
+  },
+  "seasonPass": {
+    "title": "Pase de temporada",
+    "description": "Fija las mejoras y ventajas del Pase de Oro que acortan los tiempos de mejora.",
+    "subline": "{name}, Ayuntamiento {townHall}, ventajas del Pase de Oro activas esta temporada",
+    "lockedTitle": "El Pase de temporada está bloqueado",
+    "lockedBody": "El Pase de Oro necesita el Ayuntamiento 7. Esta aldea está en el Ayuntamiento {townHall}.",
+    "month": {
+      "title": "{month}",
+      "subtitle": "Las mejoras se reinician el {reset}, las ventajas se mantienen.",
+      "key": "Clave del mes",
+      "rolled": "Ha empezado un mes nuevo. La mejora de constructor y la de investigación han vuelto al 0%. Las ventajas se mantienen.",
+      "undoReset": "Deshacer reinicio",
+      "dismiss": "Descartar",
+      "restored": "Mejoras recuperadas para este mes.",
+      "undo": "Deshacer"
+    },
+    "boosts": {
+      "title": "Ventajas de mejora",
+      "description": "El Pase de Oro acorta los tiempos de mejora esta temporada.",
+      "builder": "Mejora de constructor",
+      "research": "Mejora de investigación",
+      "applies": "Se aplica a los tiempos de Constructor, Investigación y Mascotas, a las líneas de tiempo de las colas y al tiempo de fabricación de la Forja.",
+      "saved": "Guardado con este mes.",
+      "value": "{percent, plural, =0 {Desactivada} other {{percent}%}}",
+      "option": "{percent, plural, =0 {0%} other {{percent}%}}",
+      "builderEffect": "{percent, plural, =0 {El tiempo de fabricación de la Forja es de 3d.} other {El tiempo de fabricación de la Forja es de {time}.}}",
+      "researchEffect": "{percent, plural, =0 {Los tiempos de investigación y mascotas no cambian.} other {Los tiempos de investigación y mascotas son un {percent}% más cortos.}}"
+    },
+    "unlocks": {
+      "title": "Desbloqueos de Desafío de temporada",
+      "description": "No forma parte del Pase de Oro",
+      "prospector": "Prospector",
+      "prospectorHelp": "Ayudante para el Ayuntamiento 10 o superior, cuesta 2,200 puntos de Desafío de temporada",
+      "shows": "Aparece en la página Ayudantes"
+    },
+    "perks": {
+      "title": "Ventajas del Pase de Oro",
+      "description": "Ventajas del Pase de Oro activas esta temporada",
+      "referenceOnly": "Solo referencia",
+      "referenceNote": "No cambia nada más en la app.",
+      "hoggyBank": {
+        "label": "Hoggy Bank",
+        "note": "Guarda recursos mientras juegas, se recoge al final de la temporada"
+      },
+      "gemDonations": {
+        "label": "Donaciones de 1 gema",
+        "note": "Dona tropas y hechizos por solo 1 gema cada uno"
+      },
+      "autoForge": {
+        "label": "Forja automática",
+        "note": "Convierte recursos en Oro de Capital automáticamente"
+      },
+      "autoForgeEffect": "Activa la fila de Forja automática en la página de la Forja y la etiqueta del Resumen.",
+      "requestTimeReduction": {
+        "label": "Reducción del tiempo de solicitud",
+        "note": "Reduce el temporizador de espera de las solicitudes de tropas"
+      }
+    }
+  }
+}

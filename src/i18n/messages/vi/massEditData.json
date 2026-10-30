@@ -1,0 +1,33 @@
+{
+  "categories": {
+    "defenses": "Phòng thủ",
+    "army": "Quân đội",
+    "resources": "Tài nguyên",
+    "crafted": "Phòng thủ chế tạo",
+    "traps": "Bẫy",
+    "troops": "Quân",
+    "spells": "Phép",
+    "siege": "Công thành",
+    "pets": "Thú Cưng",
+    "guardians": "Người bảo vệ",
+    "heroes": "Anh hùng",
+    "equipment": "Trang bị",
+    "walls": "Tường",
+    "buildings": "Công trình"
+  },
+  "sections": {
+    "armyBuildings": "Công trình quân đội",
+    "otherBuildings": "Công trình khác"
+  },
+  "level": "Cấp {level}",
+  "superchargeRow": "Siêu Nạp {name}",
+  "profile": {
+    "builderHall": "Cấp Nhà Thợ Xây",
+    "trophies": "Cúp",
+    "bestTrophies": "Cúp cao nhất",
+    "league": "Giải đấu",
+    "capitalHall": "Nhà Thủ Đô",
+    "districtHall": "Nhà Quận {zone}",
+    "contributions": "Đóng góp"
+  }
+}

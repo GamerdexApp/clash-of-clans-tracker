@@ -1,0 +1,29 @@
+{
+  "groups": {
+    "homeVillage": "Village principal",
+    "builderBase": "Base des ouvriers",
+    "clanCapital": "Capitale du clan",
+    "dailies": "Quotidiens",
+    "tools": "Outils"
+  },
+  "items": {
+    "overview": "Aperçu",
+    "achievements": "Succès",
+    "builder": "Ouvrier",
+    "research": "Recherche",
+    "pets": "Familiers",
+    "equipment": "Équipement",
+    "walls": "Murailles",
+    "builderBaseUpgrades": "Améliorations",
+    "builderBaseTroops": "Troupes",
+    "builderBaseWalls": "Murailles",
+    "districts": "Districts",
+    "capitalTroops": "Troupes et sorts",
+    "forge": "Forge",
+    "helpers": "Assistants",
+    "seasonPass": "Pass de saison",
+    "massEdit": "Édition en masse",
+    "settings": "Paramètres"
+  },
+  "villages": "Mes villages"
+}

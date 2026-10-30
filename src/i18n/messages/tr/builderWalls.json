@@ -1,0 +1,48 @@
+{
+  "title": "İnşaatçı Üssü surları",
+  "subline": "{name}, İnşaatçı Salonu {builderHall}, en yüksek sur seviyesi {highest}",
+  "massEdit": "Sur sayıları Toplu düzenlemede de ayarlanabilir.",
+  "tiles": {
+    "total": "Bu İnşaatçı Salonunda toplam",
+    "totalCaption": "En yüksek sur seviyesi {highest}",
+    "placed": "Yerleştirilen",
+    "placedCaption": "Bir seviyedeki surlar",
+    "notPlaced": "Yerleştirilmeyen",
+    "allPlaced": "Hepsi yerleştirildi",
+    "stillToPlace": "Yerleştirilecek {amount} {count, plural, one {sur} other {sur}} kaldı",
+    "over": "{count} fazla"
+  },
+  "hideEmpty": "{hidden, plural, =0 {En düşük seviyenin altındaki boş seviyeleri gizle} other {En düşük seviyenin altındaki boş seviyeleri gizle ({hidden} gizli)}}",
+  "row": {
+    "level": "Seviye {level}",
+    "own": "Sahip olduğun",
+    "ownLabel": "Seviye {level} sahip olduğun surlar",
+    "lower": "Seviye {level} için bir sur eksik",
+    "raise": "Seviye {level} için bir sur daha",
+    "nextCost": "Sonraki seviye: sur başına {price} {resource}",
+    "toMove": "Taşınacak surlar",
+    "toLevel": "Hedef seviye",
+    "plusOne": "+1",
+    "move": "Taşı",
+    "moveAll": "Tümünü taşı",
+    "preview": "{amount} {walls, plural, one {sur} other {sur}} seviye {from} seviyesinden {to} seviyesine taşı: {price} {resource}",
+    "nothingToMove": "Taşınacak bir şey yok",
+    "noWalls": "Bu seviyede taşınacak sur yok."
+  },
+  "cost": {
+    "title": "Tüm surları seviye {level} seviyesine getirme maliyeti",
+    "row": "Seviye {level}, {amount} {walls, plural, one {sur} other {sur}}",
+    "total": "Toplam",
+    "none": "Yerleştirilen her sur en üst seviyede veya henüz sur yerleştirilmedi.",
+    "note": "Seviye 2 ile 6 arası surlar İnşaatçı Altını tutar. Seviye 7 ve üstü İnşaatçı Altını veya İnşaatçı İksiri tutar."
+  },
+  "empty": {
+    "title": "Henüz sur yok",
+    "description": "Surlarını görmek için İnşaatçı Üssü Yükseltmeler sayfasında İnşaatçı Salonu seviyeni ayarla."
+  },
+  "toast": {
+    "moved": "{amount} {walls, plural, one {sur} other {sur}} seviye {from} seviyesinden {to} seviyesine taşındı",
+    "counted": "Seviye {level} surları {from} değerinden {to} değerine",
+    "undo": "Geri al"
+  }
+}

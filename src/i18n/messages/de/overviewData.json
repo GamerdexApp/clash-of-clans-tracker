@@ -1,0 +1,40 @@
+{
+  "stats": {
+    "level": "Stufe",
+    "warStars": "Kriegssterne",
+    "trophies": "Trophäen",
+    "bestTrophies": "Beste Trophäen",
+    "donations": "Spenden",
+    "received": "Erhaltene Spenden",
+    "war": "Kriegspräferenz",
+    "attacks": "Angriffssiege",
+    "defenses": "Verteidigungssiege",
+    "builderTrophies": "Bauarbeiter-Trophäen",
+    "bestBuilderTrophies": "Beste Bauarbeiter-Trophäen",
+    "contributions": "Hauptstadtbeiträge",
+    "warIn": "Dabei",
+    "warOut": "Nicht dabei"
+  },
+  "cards": {
+    "structures": "Bauwerke",
+    "traps": "Fallen",
+    "supercharge": "Superladung",
+    "crafted": "Gefertigte Verteidigungen",
+    "lab": "Labor",
+    "heroes": "Helden",
+    "equipment": "Ausrüstung",
+    "pets": "Haustiere",
+    "walls": "Mauern",
+    "districts": "Bezirke",
+    "troops": "Truppen",
+    "spells": "Zauber"
+  },
+  "subs": {
+    "structures": "Verteidigung, Armee, Ressourcen",
+    "lab": "Truppen, Zauber, Belagerung",
+    "builderLab": "Bauarbeiter-Truppen",
+    "walls": "{total} Mauern, max. Stufe {max}",
+    "districts": "{active} von {total} aktiv",
+    "available": "{count} verfügbar"
+  }
+}

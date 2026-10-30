@@ -1,0 +1,51 @@
+{
+  "title": "Constructor",
+  "subline": "{name}, Ayuntamiento {townHall}",
+  "tabsLabel": "Secciones del Constructor",
+  "tabs": {
+    "defenses": "Defensas",
+    "army": "Ejército",
+    "resources": "Recursos",
+    "crafted": "Defensas Fabricadas",
+    "traps": "Trampas",
+    "heroes": "Héroes",
+    "guardians": "Guardianes",
+    "townHall": "Ayuntamiento"
+  },
+  "builders": {
+    "title": "Constructores",
+    "boostLabel": "Mejora de constructor del Pase Dorado",
+    "boostValue": "{percent, plural, =0 {Ninguna} other {-{percent}% de tiempo y costo}}",
+    "openQueue": "Abrir cola y línea de tiempo",
+    "unassignedHelp": "Algunas mejoras están guardadas en un constructor que no está construido, o en un constructor que otra mejora ya usa. Termínalas o cancélalas.",
+    "noBuilders": "Esta aldea aún no tiene constructores. Construye la primera Cabaña del Constructor desde la pestaña Defensas. Es gratis e instantánea."
+  },
+  "gate": {
+    "requires": "Requiere Ayuntamiento {townHall}",
+    "where": "Esta aldea está en el Ayuntamiento {townHall}. Llega al Ayuntamiento {required} para desbloquear esta pestaña.",
+    "fix": "Ir a la pestaña Ayuntamiento"
+  },
+  "empty": {
+    "title": "Aún no hay nada aquí",
+    "description": "No hay edificios de este tipo disponibles con este nivel de Ayuntamiento.",
+    "allMax": "Todos los edificios de aquí están al máximo. Desactiva Ocultar al máximo para verlos."
+  },
+  "card": {
+    "maxAtHall": "Nv máx. {level} en este Ayuntamiento",
+    "maxAtBuilderHall": "Nv máx. {level} en este Taller del Constructor",
+    "progress": "Progreso de {name}",
+    "notBuilt": "No construido",
+    "level": "Nv {level} de {max}",
+    "build": "Construir",
+    "upgradeTo": "Mejorar a Nv {level}",
+    "superchargeTo": "Sobrecargar al nivel {tier}",
+    "maxed": "Máx.",
+    "running": "Mejorando a Nv {to}",
+    "finish": "Terminar",
+    "cancel": "Cancelar",
+    "showAll": "Mostrar los {count}",
+    "showFewer": "Mostrar menos",
+    "instance": "#{number}",
+    "supercharge": "Sobrecarga {tier} de {tiers}"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "stats": {
+    "level": "レベル",
+    "warStars": "戦争の星",
+    "trophies": "トロフィー",
+    "bestTrophies": "最高トロフィー",
+    "donations": "寄付",
+    "received": "受け取った寄付",
+    "war": "戦争の参加設定",
+    "attacks": "攻撃の勝利数",
+    "defenses": "防衛の勝利数",
+    "builderTrophies": "ビルダートロフィー",
+    "bestBuilderTrophies": "最高ビルダートロフィー",
+    "contributions": "キャピタルの貢献",
+    "warIn": "参加",
+    "warOut": "不参加"
+  },
+  "cards": {
+    "structures": "建造物",
+    "traps": "罠",
+    "supercharge": "スーパーチャージ",
+    "crafted": "クラフト防衛設備",
+    "lab": "ラボ",
+    "heroes": "ヒーロー",
+    "equipment": "装備",
+    "pets": "ペット",
+    "walls": "壁",
+    "districts": "地区",
+    "troops": "兵士",
+    "spells": "スペル"
+  },
+  "subs": {
+    "structures": "防衛設備、軍隊、資源",
+    "lab": "兵士、スペル、攻城兵器",
+    "builderLab": "ビルダーの兵士",
+    "walls": "壁{total}個、最大レベル {max}",
+    "districts": "{total}中{active}がアクティブ",
+    "available": "{count}件利用可能"
+  }
+}

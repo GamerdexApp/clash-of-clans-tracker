@@ -1,0 +1,119 @@
+{
+  "title": "Köylerim",
+  "subline": "{amount} {count, plural, one {köy} other {köy}}",
+  "sublineActive": "{amount} {count, plural, one {köy} other {köy}}, {name} etkin",
+  "newVillage": "Yeni köy",
+  "empty": {
+    "title": "Henüz köy yok",
+    "deletedTitle": "Köy kalmadı",
+    "description": "Yükseltmeleri, araştırmaları ve başarımları takip etmeye başlamak için bir köy oluştur.",
+    "restore": "Yedekten geri yükle"
+  },
+  "filters": {
+    "search": "Köylerde ara",
+    "sortLabel": "Sırala",
+    "sort": {
+      "lastModified": "Son değiştirilme",
+      "createdAt": "Oluşturulma tarihi",
+      "name": "Ad"
+    },
+    "showing": "{total} köyden {shown} tanesi gösteriliyor",
+    "clear": "Aramayı temizle"
+  },
+  "noMatch": {
+    "title": "\"{query}\" ile eşleşen köy yok",
+    "description": "Yazımı kontrol et veya aramayı temizle."
+  },
+  "card": {
+    "active": "Etkin",
+    "openOverview": "Genel Bakışı aç",
+    "setActive": "Etkin yap",
+    "edit": "Düzenle",
+    "delete": "Sil",
+    "halls": "{builderHall, plural, =0 {Belediye Binası {townHall}} other {Belediye Binası {townHall}, İnşaatçı Salonu {builderHall}}}",
+    "daysAtTownHall": "Belediye Binasında geçen gün",
+    "daysAtBuilderHall": "İnşaatçı Salonunda geçen gün",
+    "notSet": "Ayarlanmadı",
+    "clanCapital": "Klan Başkenti",
+    "clanCapitalStates": {
+      "on": "Açık",
+      "off": "Kapalı",
+      "locked": "Kilitli"
+    },
+    "created": "Oluşturuldu: {date}",
+    "lastModified": "Değiştirildi: {date}",
+    "switched": "{name} artık etkin"
+  },
+  "fields": {
+    "name": "Köy adı",
+    "namePlaceholder": "Ana hesabım",
+    "nameRequired": "Köy için bir ad gir.",
+    "description": "Açıklama",
+    "descriptionPlaceholder": "Bu köy için bir açıklama ekle",
+    "townHallLevel": "Belediye Binası seviyesi",
+    "builderHallLevel": "İnşaatçı Salonu seviyesi",
+    "builderHallHelp": "İnşaatçı Üssü Belediye Binası 6 ile açılır.",
+    "townHallUpgraded": "Belediye Binası yükseltildi",
+    "builderHallUpgraded": "İnşaatçı Salonu yükseltildi",
+    "level": "Seviye {level}",
+    "trackCapital": "Klan Başkentini takip et",
+    "trackCapitalHelp": "Kapatmak Klan Başkenti sayfalarını gizler ve verilerini korur.",
+    "trackCapitalLocked": "Belediye Binası 3 gerekir",
+    "cancel": "İptal"
+  },
+  "create": {
+    "title": "Yeni köy",
+    "submit": "Köy oluştur",
+    "modeLabel": "Nasıl başlanacak",
+    "modes": {
+      "fresh": "Sıfırdan başla",
+      "import": "İçe aktar"
+    },
+    "modeNotes": {
+      "fresh": "Boş verilerle başla.",
+      "import": "Bir oyuncu etiketini oku, isteğe bağlı bina dosyasıyla."
+    },
+    "makeActive": "Bu köyü etkin yap",
+    "done": "{name} oluşturuldu",
+    "importNeedsLookup": "Önce bir oyuncu etiketi sorgula."
+  },
+  "lookup": {
+    "step1": "1. adım: Oyuncu verilerini getir",
+    "step2": "2. adım: Bina verileri (isteğe bağlı)",
+    "tagLabel": "Oyuncu etiketi",
+    "tagPlaceholder": "#PPV2YV9R",
+    "fetch": "Getir",
+    "refresh": "Yenile",
+    "wait": "{seconds} sn bekle",
+    "serverNote": "Sorgu etiketi Gamerdex sunucusuna gönderir, o da Supercell API'den ister. Tarayıcından başka hiçbir şey çıkmaz.",
+    "unavailable": "Oyuncu sorgusu şu an kullanılamıyor. Daha sonra tekrar dene.",
+    "found": "{name}, Belediye Binası {townHall}{builderHall, plural, =0 {} other {, İnşaatçı Salonu {builderHall}}}. {achievements} başarım ve {troops} birlik okundu.",
+    "buildingHelp": "Oyuncu API'sinde bina seviyeleri yok. Ayarlardan bir köy yedeği veya oyundan exportData.json dosyasını seç.",
+    "buildingLabel": "Bina verisi dosyası",
+    "buildingLoaded": "Bina verisi {name} dosyasından yüklendi.",
+    "buildingInvalid": "Bu dosya bina verisi değil. Ayarlardan bir köy yedeği veya oyundan exportData.json kullan.",
+    "buildingNotJson": "Bu dosya geçerli bir JSON değil."
+  },
+  "edit": {
+    "title": "Köyü düzenle",
+    "submit": "Kaydet",
+    "refreshTitle": "Oyuncu etiketinden yenile",
+    "updatedTitle": "Güncellendi",
+    "untouchedTitle": "Hiç dokunulmadı",
+    "dateSet": "Yükseltme tarihi bugüne ayarlandı. Değiştirebilirsin.",
+    "done": "{name} kaydedildi"
+  },
+  "delete": {
+    "title": "Köyü sil",
+    "description": "Bu işlem köyü bu tarayıcıdan kaldırır.",
+    "question": "{name} silinsin mi? Yükseltmeleri, araştırmaları, başarımları ve günlükleri kaldırılır.",
+    "activeNext": "{next} etkin köy olur.",
+    "activeLast": "Hiçbir köy etkin olmayacak.",
+    "exportFirst": "Önce yedek dışa aktar",
+    "cancel": "İptal",
+    "confirm": "Köyü sil",
+    "done": "{name} silindi",
+    "doneMessage": "On saniye boyunca geri alabilirsin.",
+    "undo": "Geri al"
+  }
+}

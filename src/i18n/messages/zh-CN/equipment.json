@@ -1,0 +1,61 @@
+{
+  "title": "装备",
+  "subline": "{name}，{townHall}级大本营，{blacksmith}级铁匠铺",
+  "massEdit": "装备等级也可以在批量编辑中设置。",
+  "locked": {
+    "title": "需要铁匠铺",
+    "description": "建造铁匠铺才能追踪英雄装备。请在建筑工人页面的军队标签页设置它的等级。",
+    "action": "前往建筑工人"
+  },
+  "ore": {
+    "title": "矿石库存",
+    "description": "你持有的矿石。不足只是建议，不会阻止升级。",
+    "names": {
+      "shiny": "Shiny Ore",
+      "glowing": "Glowy Ore",
+      "starry": "Starry Ore"
+    },
+    "short": {
+      "shiny": "Shiny",
+      "glowing": "Glowing",
+      "starry": "Starry"
+    },
+    "needed": "所列装备需要：{amount}",
+    "enough": "库存充足",
+    "shortBy": "缺少 {amount}",
+    "deduct": "升级时扣除矿石",
+    "deductHelp": "升级会从库存中扣除所需矿石，最低到 0。撤销会把它们放回。"
+  },
+  "hideMax": "隐藏已满级",
+  "heroFilter": "英雄",
+  "allHeroes": "全部英雄",
+  "section": "{pieces} 件装备，已拥有 {owned} 件",
+  "empty": {
+    "title": "这里还没有内容",
+    "allMax": "所有装备都已满级。关闭“隐藏已满级”即可查看。"
+  },
+  "card": {
+    "heroLine": "{hero}",
+    "level": "{level} / {max} 级",
+    "notOwned": "未拥有",
+    "max": "满级",
+    "setLevel": "{name}等级",
+    "stepLevel": "{level}级",
+    "free": "免费",
+    "time": "时间：即时",
+    "requires": "需要{level}级铁匠铺",
+    "moreLevels": "还有 {amount} {count, plural, other {级}}",
+    "add": "以1级添加",
+    "upgradeTo": "升级到 {level} 级",
+    "lockedUntil": "需要{level}级铁匠铺才能解锁",
+    "allows": "{blacksmith}级铁匠铺最高允许 {level} 级",
+    "allowsNone": "{blacksmith}级铁匠铺暂不允许这件装备",
+    "footer": "还剩 {amount} {levels, plural, other {级}}",
+    "progress": "{name}进度"
+  },
+  "toast": {
+    "upgraded": "{name} {from}级升到{to}级",
+    "levelSet": "{name} {from}级改为{to}级",
+    "undo": "撤销"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "title": "ビルダー",
+  "subline": "{name}、タウンホール {townHall}",
+  "tabsLabel": "ビルダーのセクション",
+  "tabs": {
+    "defenses": "防衛設備",
+    "army": "軍隊",
+    "resources": "資源",
+    "crafted": "クラフト防衛設備",
+    "traps": "罠",
+    "heroes": "ヒーロー",
+    "guardians": "ガーディアン",
+    "townHall": "タウンホール"
+  },
+  "builders": {
+    "title": "ビルダー",
+    "boostLabel": "ゴールドパスのビルダーブースト",
+    "boostValue": "{percent, plural, =0 {なし} other {時間とコスト -{percent}%}}",
+    "openQueue": "キューとタイムラインを開く",
+    "unassignedHelp": "一部のアップグレードが、未建設のビルダー、または別のアップグレードがすでに使っているビルダーに保存されています。完了するかキャンセルしてください。",
+    "noBuilders": "このビレッジにはまだビルダーがいません。防衛設備のタブで最初のBuilder's Hutを建ててください。無料で即完了します。"
+  },
+  "gate": {
+    "requires": "タウンホール {townHall}が必要です",
+    "where": "このビレッジはタウンホール {townHall}です。このタブを開放するには、タウンホール {required}に到達してください。",
+    "fix": "タウンホールのタブへ"
+  },
+  "empty": {
+    "title": "まだ何もありません",
+    "description": "このタウンホールレベルでは、この種類の建物は利用できません。",
+    "allMax": "ここにある建物はすべて最大です。「最大を非表示」をオフにすると表示されます。"
+  },
+  "card": {
+    "maxAtHall": "このタウンホールでの最大 Lv {level}",
+    "maxAtBuilderHall": "このビルダーホールでの最大 Lv {level}",
+    "progress": "{name}の進行状況",
+    "notBuilt": "未建設",
+    "level": "Lv {level} / {max}",
+    "build": "建設",
+    "upgradeTo": "Lv {level}にアップグレード",
+    "superchargeTo": "段階{tier}にスーパーチャージ",
+    "maxed": "最大",
+    "running": "Lv {to}にアップグレード中",
+    "finish": "完了",
+    "cancel": "キャンセル",
+    "showAll": "{count}件すべて表示",
+    "showFewer": "表示を減らす",
+    "instance": "#{number}",
+    "supercharge": "スーパーチャージ {tier} / {tiers}"
+  }
+}

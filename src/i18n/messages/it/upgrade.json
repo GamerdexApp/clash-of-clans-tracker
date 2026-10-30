@@ -1,0 +1,108 @@
+{
+  "massEdit": {
+    "hint": "I livelli si possono impostare anche in Modifica di massa.",
+    "link": "Apri Modifica di massa"
+  },
+  "hideMax": "Nascondi massimo",
+  "strip": {
+    "free": "{free} di {total} liberi",
+    "idle": "Libero",
+    "unassigned": "Non assegnato",
+    "taskLevels": "Lv {from} a {to}"
+  },
+  "start": {
+    "title": "Inizia potenziamento",
+    "levelChange": "{from, plural, =0 {Costruisci fino a Lv {to}} other {Lv {from} a {to}}}",
+    "time": "Tempo",
+    "cost": "Costo",
+    "doneAt": "Finisce alle",
+    "wasBoosted": "era {base}, Pass Oro -{percent}%",
+    "wasCost": "{resource}, era {base}",
+    "resource": "{resource}",
+    "storedNote": "questo tempo potenziato viene salvato",
+    "storedNoteUnboosted": "questo tempo viene salvato",
+    "instant": "Questa costruzione non richiede tempo. Finisce subito e non usa un Costruttore.",
+    "lanes": {
+      "builder": {
+        "label": "Costruttore",
+        "choose": "Scegli un Costruttore per iniziare.",
+        "noneFree": "Ogni Costruttore è occupato. Annulla o completa prima un potenziamento."
+      },
+      "research": {
+        "label": "Corsia di ricerca",
+        "choose": "Scegli una corsia per iniziare.",
+        "noneFree": "Ogni corsia di ricerca è occupata. Annulla o completa prima una ricerca."
+      },
+      "bbBuilder": {
+        "label": "Costruttore",
+        "choose": "Scegli un Costruttore per iniziare.",
+        "noneFree": "Entrambi i Costruttori sono occupati. Annulla o completa prima un potenziamento."
+      },
+      "bbResearch": {
+        "label": "Laboratorio Stellare",
+        "choose": "Scegli il Laboratorio Stellare per iniziare.",
+        "noneFree": "Il Laboratorio Stellare è occupato. Annulla o completa prima la ricerca."
+      },
+      "pet": {
+        "label": "Casa degli Animali",
+        "choose": "Scegli la Casa degli Animali per iniziare.",
+        "noneFree": "La Casa degli Animali è occupata. Annulla o completa prima il potenziamento dell'animale."
+      }
+    },
+    "requires": {
+      "laboratory": "Richiede il Laboratorio {level}",
+      "pet-house": "Richiede la Casa degli Animali {level}",
+      "star-laboratory": "Richiede il Laboratorio Stellare {level}",
+      "noPetHouse": "Costruisci prima una Casa degli Animali"
+    },
+    "free": "Gratis",
+    "cancel": "Annulla",
+    "confirm": "Inizia potenziamento",
+    "confirmInstant": "Costruisci ora"
+  },
+  "finish": {
+    "title": "Completa in anticipo",
+    "left": "rimasti",
+    "methodLabel": "Come è finito?",
+    "methods": {
+      "timePassed": {
+        "label": "Tempo trascorso",
+        "description": "Il timer è già scaduto nel gioco. Non si spende nulla."
+      },
+      "gems": {
+        "label": "Gemme",
+        "description": "Paga gemme nel gioco per completarlo subito. Il costo scende col passare del tempo."
+      },
+      "book": {
+        "label": "Libro delle Costruzioni",
+        "description": "Completa subito un potenziamento di edificio in corso."
+      },
+      "hammer": {
+        "label": "Martello delle Costruzioni",
+        "description": "Potenzia subito un edificio al livello successivo."
+      }
+    },
+    "stores": "Cosa salva il villaggio",
+    "storesLevel": "Livello {level}. Il timer viene azzerato.",
+    "storesSaved": "{time} viene aggiunto al tempo risparmiato.",
+    "storesSavedNone": "Il tempo risparmiato resta com'era.",
+    "gemFigure": "Circa {gems} gemme (regola dei dati di gioco, il costo nel gioco può differire).",
+    "notTracked": {
+      "timePassed": "",
+      "gems": "Le gemme spese non vengono tracciate.",
+      "book": "I libri posseduti non vengono tracciati.",
+      "hammer": "I martelli posseduti non vengono tracciati."
+    },
+    "keep": "Continua il potenziamento",
+    "confirm": "Completa potenziamento"
+  },
+  "cancel": {
+    "title": "Annullare questo potenziamento?",
+    "body": "Annullare ferma il timer. {name} resta a Lv {level} e {builder} torna libero.",
+    "refundTitle": "Rimborso nel gioco: 50%",
+    "refundBody": "Annullare in Clash of Clans restituisce {refund} {resource} dei {paid} pagati. Questa app non traccia le tue risorse, quindi controlla i tuoi depositi dopo l'annullamento.",
+    "undoNote": "Puoi annullare l'operazione per 10 secondi dopo la cancellazione. Dopo, riavvia il potenziamento.",
+    "keep": "Continua il potenziamento",
+    "confirm": "Annulla potenziamento"
+  }
+}

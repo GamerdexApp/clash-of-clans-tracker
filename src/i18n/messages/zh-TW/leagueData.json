@@ -1,0 +1,17 @@
+{
+  "stats": {
+    "attacksPerWeek": "每週攻擊次數",
+    "promoted": "前 % 晉級",
+    "demoted": "後 % 降級",
+    "trophyRange": "獎盃範圍",
+    "starsForBonus": "領取星星獎勵所需星星"
+  },
+  "sections": {
+    "maxLoot": "可掠奪上限",
+    "leagueBonus": "聯賽獎勵上限",
+    "weeklyStarBonus": "每週星星獎勵",
+    "starBonusReward": "星星獎勵內容"
+  },
+  "range": "{min} 至 {max}",
+  "rangeOpen": "{min}+"
+}

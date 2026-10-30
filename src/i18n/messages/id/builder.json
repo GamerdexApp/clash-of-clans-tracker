@@ -1,0 +1,51 @@
+{
+  "title": "Pembangun",
+  "subline": "{name}, Balai Kota {townHall}",
+  "tabsLabel": "Bagian pembangun",
+  "tabs": {
+    "defenses": "Pertahanan",
+    "army": "Pasukan",
+    "resources": "Sumber Daya",
+    "crafted": "Pertahanan Rakitan",
+    "traps": "Jebakan",
+    "heroes": "Pahlawan",
+    "guardians": "Penjaga",
+    "townHall": "Balai Kota"
+  },
+  "builders": {
+    "title": "Pembangun",
+    "boostLabel": "Boost pembangun Gold Pass",
+    "boostValue": "{percent, plural, =0 {Tidak ada} other {Waktu dan biaya -{percent}%}}",
+    "openQueue": "Buka antrean dan linimasa",
+    "unassignedHelp": "Sebagian peningkatan tersimpan pada pembangun yang belum dibangun, atau pada pembangun yang sudah dipakai peningkatan lain. Selesaikan atau batalkan.",
+    "noBuilders": "Desa ini belum punya pembangun. Bangun Pondok Pembangun pertama dari tab Pertahanan. Gratis dan instan."
+  },
+  "gate": {
+    "requires": "Butuh Balai Kota {townHall}",
+    "where": "Desa ini ada di Balai Kota {townHall}. Capai Balai Kota {required} untuk membuka tab ini.",
+    "fix": "Buka tab Balai Kota"
+  },
+  "empty": {
+    "title": "Belum ada apa-apa",
+    "description": "Tidak ada bangunan jenis ini di level Balai Kota ini.",
+    "allMax": "Semua bangunan di sini sudah maksimal. Matikan Sembunyikan Maks untuk melihatnya."
+  },
+  "card": {
+    "maxAtHall": "Maks Lv {level} di Balai Kota ini",
+    "maxAtBuilderHall": "Maks Lv {level} di Balai Pembangun ini",
+    "progress": "Progres {name}",
+    "notBuilt": "Belum dibangun",
+    "level": "Lv {level} dari {max}",
+    "build": "Bangun",
+    "upgradeTo": "Tingkatkan ke Lv {level}",
+    "superchargeTo": "Supercharge ke tingkat {tier}",
+    "maxed": "Maks",
+    "running": "Meningkat ke Lv {to}",
+    "finish": "Selesaikan",
+    "cancel": "Batal",
+    "showAll": "Tampilkan semua {count}",
+    "showFewer": "Tampilkan lebih sedikit",
+    "instance": "#{number}",
+    "supercharge": "Supercharge {tier} dari {tiers}"
+  }
+}

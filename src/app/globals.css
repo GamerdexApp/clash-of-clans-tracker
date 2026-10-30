@@ -1,26 +1,168 @@
 @import "tailwindcss";
-@import "flowbite-react/plugin/tailwindcss";
-@source "../../.flowbite-react/class-list.json";
 
 @custom-variant dark (&:where(.dark, .dark *));
 
+/* Gold Rush, the light theme. */
+:root {
+  --bg: #faf4e4;
+  --surface: #ffffff;
+  --line: #e6d8b5;
+  --track: #f1e6c6;
+  --ink: #2a1e10;
+  --muted: #6b5a3e;
+  --primary: #8a5a0b;
+  --on-primary: #ffffff;
+  --tint: #fbefc9;
+  --link: #7a4a12;
+  --danger: #b3261e;
+  --warn: #8a5a00;
+  --accent: #f0b429;
+  --locked: #6b5e48;
+  --scrim: rgba(42, 30, 16, 0.55);
+  --sb-bg: #5a3a1e;
+  --sb-text: #faf4e4;
+  --sb-muted: #dcc7a2;
+  --sb-line: #7a5530;
+  --sb-active-bg: #f0b429;
+  --sb-active-text: #2a1e10;
+  --sb-ring: #f0b429;
+  --kept: #1f6b2e;
+  --changed: #8a5300;
+  --added: #1b5fa8;
+  --fixed: #4b4fa3;
+  --ring: var(--primary);
+}
+
+/* Gold Rush, the dark theme. */
+.dark {
+  --bg: #16110a;
+  --surface: #211910;
+  --line: #43331f;
+  --track: #33281a;
+  --ink: #f8efd8;
+  --muted: #c2b08a;
+  --primary: #f0b429;
+  --on-primary: #1e1404;
+  --tint: #3a2e16;
+  --link: #e9c379;
+  --danger: #ff9b93;
+  --warn: #f0b429;
+  --accent: #f0b429;
+  --locked: #a8987a;
+  --scrim: rgba(0, 0, 0, 0.62);
+  --sb-bg: #0e0a05;
+  --sb-text: #f8efd8;
+  --sb-muted: #b6a47f;
+  --sb-line: #33271a;
+  --sb-active-bg: #f0b429;
+  --sb-active-text: #1e1404;
+  --sb-ring: #f0b429;
+  --kept: #7fd08a;
+  --changed: #f0b429;
+  --added: #8db8ff;
+  --fixed: #b0b3f5;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-line: var(--line);
+  --color-track: var(--track);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-primary: var(--primary);
+  --color-on-primary: var(--on-primary);
+  --color-tint: var(--tint);
+  --color-link: var(--link);
+  --color-danger: var(--danger);
+  --color-warn: var(--warn);
+  --color-accent: var(--accent);
+  --color-locked: var(--locked);
+  --color-scrim: var(--scrim);
+  --color-sb-bg: var(--sb-bg);
+  --color-sb-text: var(--sb-text);
+  --color-sb-muted: var(--sb-muted);
+  --color-sb-line: var(--sb-line);
+  --color-sb-active-bg: var(--sb-active-bg);
+  --color-sb-active-text: var(--sb-active-text);
+  --color-sb-ring: var(--sb-ring);
+  --color-kept: var(--kept);
+  --color-changed: var(--changed);
+  --color-added: var(--added);
+  --color-fixed: var(--fixed);
+
+  --font-sans: var(--font-plex-sans), system-ui, sans-serif;
+  --font-mono: var(--font-plex-mono), ui-monospace, monospace;
+  --font-brand: var(--font-lilita), var(--font-plex-sans), sans-serif;
+}
+
+/* Colors the old pages still use until each page is rebuilt. */
 @theme {
-  --color-primary: #1a3869;
   --color-secondary: #7b4e2d;
-  --color-accent: #f0b429;
   --color-highlight: #f5e6c8;
   --color-action: #c0392b;
 }
 
-.Toastify__toast {
-  padding: 0 !important;
+@layer base {
+  html {
+    color-scheme: light;
+  }
+
+  html.dark {
+    color-scheme: dark;
+  }
+
+  body {
+    background-color: var(--bg);
+    color: var(--ink);
+    font-family: var(--font-sans);
+    font-size: 14px;
+    line-height: 1.4;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--ring);
+    outline-offset: 2px;
+  }
+
+  /* A scrolling box clips an outline that sits outside its control, so these boxes draw the ring inside. */
+  [data-focus-inset] :focus-visible {
+    outline-offset: -2px;
+  }
+
+  /* Tailwind 4 resets buttons to the default cursor. Every control a user can click needs a pointer. */
+  a[href],
+  button:not(:disabled),
+  summary,
+  select:not(:disabled),
+  label[for],
+  [role="button"]:not([aria-disabled="true"]),
+  [role="tab"],
+  [role="switch"],
+  [role="menuitem"],
+  input:is([type="checkbox"], [type="radio"], [type="file"]):not(:disabled) {
+    cursor: pointer;
+  }
+
+  button:disabled {
+    cursor: not-allowed;
+  }
+
+  .text-start th {
+    text-align: start;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    ::before,
+    ::after {
+      animation-duration: 0.01ms !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
 }
 
-@keyframes slide-in-right {
-  from { transform: translateX(100%); }
-  to   { transform: translateX(0); }
-}
-
-.animate-slide-in-right {
-  animation: slide-in-right 0.3s cubic-bezier(0.4, 0, 0.2, 1) both;
+html:has(dialog[open]) {
+  overflow: hidden;
 }

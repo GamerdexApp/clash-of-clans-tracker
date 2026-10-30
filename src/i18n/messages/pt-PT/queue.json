@@ -1,0 +1,177 @@
+{
+  "goldPass": "{percent, plural, =0 {Sem bónus do Passe de Ouro} other {Passe de Ouro -{percent}%}}",
+  "options": {
+    "open": "Opções da fila",
+    "title": "Opções da fila",
+    "description": "Definições que mudam a forma como a fila é agendada.",
+    "done": "Concluído"
+  },
+  "totals": {
+    "freeValue": "{free} de {total}",
+    "queued": "Melhorias em fila",
+    "time": "Tempo em fila",
+    "allDone": "Todas as faixas concluídas",
+    "none": "Nada em fila",
+    "cost": "Custo em fila",
+    "noCost": "Sem custo"
+  },
+  "lane": {
+    "idle": "Livre",
+    "queueEmpty": "Nada em fila nesta faixa.",
+    "startNow": "Iniciar agora",
+    "remove": "Remover",
+    "moveUp": "Subir",
+    "moveDown": "Descer",
+    "moveToLane": "Mover para a faixa",
+    "levels": "Nív. {from} a {to}",
+    "removed": "Removido da fila: {name}",
+    "started": "Iniciado: {name}",
+    "undo": "Anular"
+  },
+  "timeline": {
+    "title": "Cronologia",
+    "zoomLabel": "Duração da cronologia",
+    "zooms": {
+      "3": "3 dias",
+      "7": "1 semana",
+      "14": "2 semanas",
+      "30": "1 mês",
+      "90": "3 meses"
+    },
+    "conflictsTitle": "Conflitos",
+    "noConflicts": "Sem conflitos. Todas as melhorias começam depois do nível de que precisam.",
+    "laneLabel": "Cronologia de {label}",
+    "now": "Agora",
+    "idle": "Livre"
+  },
+  "add": {
+    "search": "Pesquisar melhorias",
+    "hiddenFromAll": "Ocultas em Tudo: {names}.",
+    "chooseCategories": "Escolher categorias",
+    "chooseCategoriesHelp": "As categorias marcadas aparecem em Tudo. As desmarcadas só aparecem no teu próprio filtro.",
+    "add": "Adicionar",
+    "addUpToHere": "Adicionar até aqui",
+    "showMore": "Mostrar mais níveis",
+    "showMoreUpgrades": "Mostrar mais melhorias",
+    "nothing": "Nada para adicionar aqui.",
+    "nothingDescription": "Todos os níveis desta vista estão em fila, em curso ou ainda não disponíveis.",
+    "added": "{count, plural, one {Adicionado: {name}} other {Adicionados {amount} níveis de {name}}}",
+    "close": "Concluído",
+    "unlockTitle": "Não desbloqueado",
+    "unlockHelp": "Desbloqueia-os primeiro para pores os níveis em fila.",
+    "markUnlocked": "Marcar como desbloqueado",
+    "showAllLocked": "Mostrar todos ({count})",
+    "showFewerLocked": "Mostrar menos",
+    "allLabel": "Tudo"
+  },
+  "lanes": {
+    "builder": {
+      "title": "Fila do Construtor",
+      "subline": "{name}, planeia o que cada construtor faz a seguir",
+      "back": "Voltar ao Construtor",
+      "free": "Construtores livres",
+      "laneBusy": "Este construtor está ocupado.",
+      "goblin": {
+        "label": "Construtor Goblin",
+        "help": "Acrescenta uma sétima faixa de construtor enquanto o evento decorre."
+      },
+      "gate": "Constrói primeiro uma Cabana do Construtor. A primeira é gratuita e instantânea.",
+      "add": {
+        "title": "Adicionar melhoria",
+        "description": "Escolhe o que um construtor faz a seguir. Os níveis que adicionares ficam em fila por ordem.",
+        "lane": "Faixa do construtor",
+        "search": "Pesquisar melhorias"
+      },
+      "categories": {
+        "defenses": "Defesas",
+        "armyBuildings": "Exército",
+        "resourceBuildings": "Recursos",
+        "traps": "Armadilhas",
+        "heroes": "Heróis",
+        "townHall": "Centro da Aldeia",
+        "craftedDefenses": "Fabricadas",
+        "guardians": "Guardiões",
+        "supercharges": "Sobrecargas"
+      }
+    },
+    "research": {
+      "title": "Fila de Investigação",
+      "subline": "{name}, planeia o que o Laboratório investiga a seguir",
+      "back": "Voltar à Investigação",
+      "free": "Labs livres",
+      "laneBusy": "Esta faixa está ocupada.",
+      "goblin": {
+        "label": "Investigador Goblin",
+        "help": "Acrescenta uma segunda faixa de investigação enquanto o evento decorre."
+      },
+      "gate": "Nenhuma faixa de investigação disponível.",
+      "add": {
+        "title": "Adicionar investigação",
+        "description": "Escolhe o que o Laboratório investiga a seguir. Os níveis que adicionares ficam em fila por ordem.",
+        "lane": "Faixa de investigação",
+        "search": "Pesquisar investigação"
+      },
+      "categories": {
+        "troops": "Tropas",
+        "spells": "Feitiços",
+        "siegeMachines": "Cerco"
+      }
+    },
+    "pet": {
+      "title": "Fila de Mascotes",
+      "subline": "{name}, planeia o que a Casa das Mascotes melhora a seguir",
+      "back": "Voltar às Mascotes",
+      "free": "Casa das Mascotes",
+      "laneBusy": "A Casa das Mascotes está ocupada.",
+      "gate": "As mascotes desbloqueiam no Centro da Aldeia 14.",
+      "add": {
+        "title": "Adicionar melhoria de mascote",
+        "description": "Escolhe que mascote a Casa das Mascotes melhora a seguir. Os níveis que adicionares ficam em fila por ordem.",
+        "lane": "Casa das Mascotes",
+        "search": "Pesquisar mascotes"
+      },
+      "categories": {
+        "pets": "Mascotes"
+      }
+    },
+    "bbBuilder": {
+      "title": "Fila da Base do Construtor",
+      "subline": "{name}, Centro do Construtor {hall}, planeia o que cada construtor faz a seguir",
+      "back": "Voltar à Base do Construtor",
+      "free": "Construtores livres",
+      "laneBusy": "Este construtor está ocupado.",
+      "gate": "A Base do Construtor tem dois construtores.",
+      "add": {
+        "title": "Adicionar melhoria",
+        "description": "Escolhe o que um construtor da Base do Construtor faz a seguir. Os níveis que adicionares ficam em fila por ordem.",
+        "lane": "Construtor",
+        "search": "Pesquisar melhorias"
+      },
+      "categories": {
+        "defenses": "Defesas",
+        "armyBuildings": "Exército",
+        "resourceBuildings": "Recursos",
+        "traps": "Armadilhas",
+        "heroes": "Heróis",
+        "other": "Outros"
+      }
+    },
+    "bbResearch": {
+      "title": "Fila do Laboratório Estelar",
+      "subline": "{name}, Centro do Construtor {hall}, planeia o que o Laboratório Estelar investiga a seguir",
+      "back": "Voltar às Tropas",
+      "free": "Vagas livres",
+      "laneBusy": "O Laboratório Estelar está ocupado.",
+      "gate": "O Laboratório Estelar investiga uma tropa de cada vez.",
+      "add": {
+        "title": "Adicionar investigação",
+        "description": "Escolhe que tropa o Laboratório Estelar investiga a seguir. Os níveis que adicionares ficam em fila por ordem.",
+        "lane": "Laboratório Estelar",
+        "search": "Pesquisar tropas"
+      },
+      "categories": {
+        "troops": "Tropas"
+      }
+    }
+  }
+}

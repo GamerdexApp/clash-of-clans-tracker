@@ -1,0 +1,178 @@
+{
+  "title": "Paramètres",
+  "subline": "Préférences, sauvegardes et vos données",
+  "tabsLabel": "Sections des paramètres",
+  "tabs": {
+    "sync": "Synchro cloud",
+    "preferences": "Préférences",
+    "data": "Sauvegarde et données",
+    "about": "À propos"
+  },
+  "appearance": {
+    "title": "Apparence",
+    "description": "Choisissez l'apparence de l'appli.",
+    "themeLabel": "Thème",
+    "themes": {
+      "light": "Clair",
+      "dark": "Sombre",
+      "system": "Système"
+    },
+    "themeNote": "Le thème Système suit votre appareil. Actuellement : {mode}."
+  },
+  "builders": {
+    "title": "Réglages des ouvriers",
+    "description": "Assistants d'événement qui ajoutent un emplacement à vos files d'attente.",
+    "goblinBuilder": "Ouvrier gobelin",
+    "goblinBuilderHelp": "Ajoute un emplacement d'ouvrier, le septième, pour les bâtiments.",
+    "goblinResearch": "Recherche gobeline",
+    "goblinResearchHelp": "Ajoute un emplacement de recherche dans le Laboratoire."
+  },
+  "activeHours": {
+    "title": "Heures de jeu",
+    "description": "Indiquez les heures où vous jouez chaque jour. Les chronologies de file d'attente ajoutent une pause quand une amélioration se termine hors de cette plage.",
+    "start": "Heure de début",
+    "end": "Heure de fin",
+    "save": "Enregistrer",
+    "clear": "Effacer",
+    "status": "Actif de {start} à {end}, selon votre horloge locale.",
+    "none": "Aucune heure de jeu définie. Chaque heure compte comme active.",
+    "sameTime": "Le début et la fin sont identiques. Choisissez deux heures différentes ou effacez la plage.",
+    "overnight": "Cette plage passe la nuit, de {start} à {end} le lendemain.",
+    "unsaved": "Vous avez des modifications non enregistrées.",
+    "clockChanged": "Le décalage de votre horloge a changé. Les heures de jeu couvrent toujours {start} à {end} sur votre horloge."
+  },
+  "data": {
+    "title": "Gestion des données",
+    "storageNote": {
+      "title": "Stocké dans ce navigateur.",
+      "body": "Effacer les données du navigateur supprime vos villages. Exportez une sauvegarde de temps en temps."
+    },
+    "export": {
+      "title": "Exporter",
+      "description": "Téléchargez tous les villages et vos paramètres dans un seul fichier.",
+      "button": "Exporter tous les villages",
+      "done": "Sauvegarde téléchargée"
+    },
+    "import": {
+      "title": "Importer",
+      "fileLabel": "Fichier de sauvegarde",
+      "chooseFile": "Choisir un fichier",
+      "noFile": "Aucun fichier choisi",
+      "description": "Choisissez un fichier de sauvegarde. Vous le vérifiez avant tout changement.",
+      "review": "Vérifier l'import",
+      "merged": "Sauvegarde fusionnée",
+      "replaced": "La sauvegarde a remplacé vos données",
+      "undo": "Annuler"
+    },
+    "reset": {
+      "title": "Réinitialiser toutes les données",
+      "warning": "Supprime tous les villages et réglages de ce navigateur.",
+      "button": "Réinitialiser toutes les données",
+      "confirmTitle": "Tout supprimer ?",
+      "confirmBody": "Cela supprime {names}. Vous pouvez annuler pendant dix secondes.",
+      "cancel": "Annuler",
+      "confirm": "Tout supprimer",
+      "done": "Toutes les données sont supprimées",
+      "doneMessage": "{amount} {count, plural, one {village supprimé} other {villages supprimés}}.",
+      "doneMessageDisconnected": "{amount} {count, plural, one {village supprimé} other {villages supprimés}}. La synchro est déconnectée sur ce navigateur.",
+      "syncedCopy": "Supprimer aussi la copie synchronisée sur {provider}",
+      "syncedOn": "La synchro reste active. Vos autres appareils perdront ces villages à leur prochaine synchro. Exportez d'abord une sauvegarde si vous avez un doute.",
+      "syncedOff": "Sans cette option, la synchro est déconnectée sur ce navigateur, pour que la prochaine synchro ne ramène pas les villages.",
+      "undo": "Annuler"
+    },
+    "villages": {
+      "title": "Villages",
+      "description": "Créez, modifiez, changez et supprimez des villages.",
+      "manage": "Gérer les villages"
+    },
+    "villageCount": "{amount} {count, plural, one {village} other {villages}}"
+  },
+  "importDialog": {
+    "title": "Vérifier l'import",
+    "fileInfo": "{name}, {size}",
+    "bytes": "{count} o",
+    "kilobytes": "{count} Ko",
+    "cancel": "Annuler",
+    "close": "Fermer",
+    "merge": "Fusionner dans cet appareil",
+    "replace": "Remplacer cet appareil",
+    "failedTitle": "Ce fichier ne peut pas être importé.",
+    "errors": {
+      "notJson": "Ce fichier n'est pas un JSON valide.",
+      "playthroughsMissing": "Ce fichier n'est pas une sauvegarde de Clash of Clans Tracker. Il ne contient aucune liste de villages."
+    },
+    "checksTitle": "Vérifications réussies.",
+    "checks": "Le fichier liste {read} villages et {kept} sont lisibles.",
+    "skipped": "{amount} {count, plural, one {entrée ignorée} other {entrées ignorées}}.",
+    "howToApply": "Comment appliquer",
+    "modeLabel": "Mode d'import",
+    "modes": {
+      "merge": "Fusionner",
+      "replace": "Remplacer"
+    },
+    "modeNotes": {
+      "merge": "Ajoute les nouveaux villages et garde la copie la plus récente d'un village présent des deux côtés. Vos paramètres et votre village actif restent.",
+      "replace": "Utilise uniquement le contenu du fichier. Les villages absents du fichier sont supprimés."
+    },
+    "whatChanges": "Ce qui change",
+    "columns": {
+      "village": "Village",
+      "inFile": "Dans le fichier",
+      "onDevice": "Sur l'appareil",
+      "result": "Résultat"
+    },
+    "notThere": "Absent",
+    "results": {
+      "added": "Ajouté",
+      "updated": "Mis à jour depuis le fichier",
+      "kept": "Conservé",
+      "replaced": "Remplacé",
+      "removed": "Supprimé"
+    },
+    "summary": {
+      "added": "{count} ajouté(s)",
+      "updated": "{count} mis à jour",
+      "kept": "{count} conservé(s)",
+      "replaced": "{count} remplacé(s)",
+      "removed": "{count} supprimé(s)"
+    },
+    "noVillages": "Le fichier ne contient aucun village.",
+    "undoNote": "Vous pouvez annuler l'import pendant dix secondes."
+  },
+  "about": {
+    "version": "Version {version}",
+    "summary": "Un outil gratuit de suivi de progression pour Clash of Clans. Suivez améliorations, recherches, succès et plus, sur plusieurs villages.",
+    "officialGame": "Site officiel de Clash of Clans",
+    "disclaimer": "Ce projet n'est ni affilié, ni approuvé, ni lié à Supercell ou à Clash of Clans."
+  },
+  "region": {
+    "title": "Langue et région",
+    "description": "La façon dont l'appli affiche les textes, nombres et dates sur cet appareil. Ces choix ne sont ni enregistrés avec vos villages, ni exportés, ni synchronisés.",
+    "language": {
+      "label": "Langue",
+      "hint": "La langue de l'appli. Les noms issus du jeu restent en anglais."
+    },
+    "numberFormat": {
+      "label": "Format des nombres",
+      "hint": "Exemple : {example}",
+      "options": {
+        "auto": "Automatique (suit la langue)",
+        "us": "1,234,567.89 (États-Unis)",
+        "european": "1.234.567,89 (européen)",
+        "french": "1 234 567,89 (français)",
+        "swiss": "1’234’567.89 (suisse)",
+        "indian": "12,34,567.89 (indien)"
+      }
+    },
+    "dateFormat": {
+      "label": "Format des dates",
+      "hint": "Exemple : {example}",
+      "options": {
+        "auto": "Automatique (suit la langue)",
+        "mdy": "Mois/Jour/Année",
+        "dmy": "Jour/Mois/Année",
+        "ymd": "Année-Mois-Jour"
+      }
+    }
+  }
+}

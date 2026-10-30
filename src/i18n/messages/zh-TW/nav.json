@@ -1,0 +1,29 @@
+{
+  "groups": {
+    "homeVillage": "主村莊",
+    "builderBase": "建築工人基地",
+    "clanCapital": "部落首都",
+    "dailies": "每日",
+    "tools": "工具"
+  },
+  "items": {
+    "overview": "總覽",
+    "achievements": "成就",
+    "builder": "建築工人",
+    "research": "研究",
+    "pets": "寵物",
+    "equipment": "裝備",
+    "walls": "城牆",
+    "builderBaseUpgrades": "升級",
+    "builderBaseTroops": "部隊",
+    "builderBaseWalls": "城牆",
+    "districts": "區域",
+    "capitalTroops": "部隊與法術",
+    "forge": "鍛造廠",
+    "helpers": "助手",
+    "seasonPass": "賽季通行證",
+    "massEdit": "批次編輯",
+    "settings": "設定"
+  },
+  "villages": "我的村莊"
+}

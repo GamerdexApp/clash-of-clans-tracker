@@ -1,0 +1,29 @@
+{
+  "title": "Truppe",
+  "subline": "{name}, Sala del Costruttore {hall}",
+  "sublineNotSet": "{name}, Sala del Costruttore non impostata",
+  "strip": {
+    "title": "Laboratorio Stellare",
+    "noLanes": "Il Laboratorio Stellare non è disponibile.",
+    "openQueue": "Apri coda e sequenza temporale",
+    "unassignedHelp": "Più di una ricerca di truppe è salvata sul Laboratorio Stellare. Completa o annulla quella in più.",
+    "levelLabel": "Livello del Laboratorio Stellare",
+    "level": "{level} di {max}",
+    "notSet": "Non impostato"
+  },
+  "card": {
+    "notUnlocked": "Non sbloccata",
+    "markUnlocked": "Segna come sbloccata",
+    "maxAtHall": "Lv massimo {level} a questa Sala del Costruttore",
+    "unlockedBy": "Sbloccata dalla Caserma del Costruttore di livello {barracks}",
+    "progress": "Progresso di {name}"
+  },
+  "unavailable": {
+    "title": "Non disponibile a questa Sala del Costruttore",
+    "requires": "Richiede la Caserma del Costruttore {barracks}, che richiede la Sala del Costruttore {hall}"
+  },
+  "empty": {
+    "title": "Ancora niente qui",
+    "allMax": "Ogni truppa è al massimo. Disattiva Nascondi massimo per vederle."
+  }
+}

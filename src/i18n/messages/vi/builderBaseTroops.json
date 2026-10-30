@@ -1,0 +1,29 @@
+{
+  "title": "Quân",
+  "subline": "{name}, Nhà Thợ Xây {hall}",
+  "sublineNotSet": "{name}, chưa đặt Nhà Thợ Xây",
+  "strip": {
+    "title": "Phòng Thí Nghiệm Sao",
+    "noLanes": "Phòng Thí Nghiệm Sao không khả dụng.",
+    "openQueue": "Mở hàng chờ và dòng thời gian",
+    "unassignedHelp": "Có hơn một nghiên cứu quân được lưu trên Phòng Thí Nghiệm Sao. Hãy hoàn tất hoặc hủy nghiên cứu dư.",
+    "levelLabel": "Cấp Phòng Thí Nghiệm Sao",
+    "level": "{level} trên {max}",
+    "notSet": "Chưa đặt"
+  },
+  "card": {
+    "notUnlocked": "Chưa mở",
+    "markUnlocked": "Đánh dấu đã mở",
+    "maxAtHall": "Tối đa cấp {level} ở Nhà Thợ Xây này",
+    "unlockedBy": "Mở bởi Trại Lính Thợ Xây cấp {barracks}",
+    "progress": "Tiến độ {name}"
+  },
+  "unavailable": {
+    "title": "Không khả dụng ở Nhà Thợ Xây này",
+    "requires": "Cần Trại Lính Thợ Xây {barracks}, mà nó cần Nhà Thợ Xây {hall}"
+  },
+  "empty": {
+    "title": "Chưa có gì ở đây",
+    "allMax": "Mọi quân đã tối đa. Tắt Ẩn tối đa để xem chúng."
+  }
+}

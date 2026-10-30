@@ -1,0 +1,49 @@
+{
+  "title": "Thành tựu",
+  "description": "Theo dõi sao, giá trị và phần thưởng của mọi thành tựu.",
+  "subline": "{name}, {count} thành tựu, {stars} trên {maxStars} sao, {percent}%",
+  "tiles": {
+    "all": "Tất cả thành tựu",
+    "home": "Làng Chính",
+    "builder": "Căn Cứ Thợ Xây",
+    "capital": "Thủ Đô Bang Hội",
+    "gems": "Ngọc đã nhận",
+    "xp": "XP đã nhận",
+    "stars": "{stars} trên {maxStars} sao",
+    "left": "Còn {amount} {unit} để nhận",
+    "gemsUnit": "ngọc",
+    "xpUnit": "XP"
+  },
+  "sections": {
+    "home": "Làng Chính",
+    "builderBase": "Căn Cứ Thợ Xây",
+    "clanCapital": "Thủ Đô Bang Hội",
+    "summary": "{count} thành tựu, {stars} / {maxStars} sao, {gems} ngọc, {xp} XP",
+    "more": "Hiện thêm {count} thành tựu {name}",
+    "less": "Hiện ít hơn"
+  },
+  "card": {
+    "manual": "Thủ công",
+    "nextStar": "Sao tiếp theo",
+    "xp": "XP",
+    "gems": "ngọc",
+    "edit": "Sửa {name}",
+    "done": "Xong",
+    "stars": "Sao",
+    "starsHelp": "Nhấn lại đúng ngôi sao đó để bỏ một sao.",
+    "star": "{amount} {number, plural, other {sao}}",
+    "value": "Giá trị",
+    "target": "Mục tiêu",
+    "manualLabel": "Thủ công (bỏ qua ghi đè từ API)",
+    "saves": "Thay đổi được lưu khi bạn gõ. Tăng số sao sẽ chuyển Mục tiêu sang bậc kế tiếp.",
+    "progress": "Tiến độ {name}",
+    "starsEarned": "{stars} trên 3 sao"
+  },
+  "toast": {
+    "stars": "{name} đổi thành {amount} {stars, plural, other {sao}}",
+    "targetMoved": "Mục tiêu đã chuyển sang {target}.",
+    "value": "Giá trị {name} đổi thành {value}",
+    "target": "Mục tiêu {name} đổi thành {target}",
+    "undo": "Hoàn tác"
+  }
+}

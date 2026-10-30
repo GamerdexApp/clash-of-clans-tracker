@@ -1,0 +1,255 @@
+{
+  "locked": {
+    "title": "每日任务",
+    "subline": "{name}，{townHall}级大本营，这里的内容都尚未开放",
+    "open": "已开放",
+    "lockedBadge": "已锁定",
+    "now": "此村庄为{townHall}级大本营。",
+    "nowNoHut": "此村庄还没有助手小屋。",
+    "needsHut": "需要助手小屋",
+    "toBuilder": "打开建筑工人",
+    "cards": {
+      "forge": {
+        "title": "熔炉",
+        "what": "将多余的资源转换为首都金币，并领取每日首都金币。"
+      },
+      "helpers": {
+        "title": "助手",
+        "what": "追踪建筑工学徒、实验室助手、炼金术士和勘探者。"
+      },
+      "seasonPass": {
+        "title": "赛季通行证",
+        "what": "设置缩短升级时间的黄金令牌加速和特权。"
+      },
+      "starBonus": {
+        "title": "星星奖励",
+        "what": "星星奖励的每日计时器在总览中。",
+        "open": "打开总览"
+      }
+    }
+  },
+  "timer": {
+    "notSet": "设置每日重置时间",
+    "setTime": "设置重置时间",
+    "setAndUse": "设置并标记已使用",
+    "notSetHelp": "设置时间不会把奖励标记为已使用。",
+    "savedIn": "时间按{zone}保存。",
+    "available": "可用",
+    "use": "使用",
+    "adjust": "调整",
+    "adjustTitle": "调整重置时间",
+    "save": "保存",
+    "cancel": "取消",
+    "resetsAt": "每天 {time} 重置，{zone}",
+    "untilReset": "距离 {time} 重置，{zone}",
+    "usedAt": "已于 {time} 使用。",
+    "timeLabel": "重置时间",
+    "deviceClock": "设备时钟",
+    "used": "{name}已标记为已使用",
+    "undo": "撤销"
+  },
+  "forge": {
+    "title": "熔炉",
+    "description": "将多余的资源转换为首都金币，并领取每日首都金币。",
+    "subline": "{builderHall, plural, =0 {{name}，{townHall}级大本营，首都金币产出} other {{name}，{townHall}级大本营，{builderHall}级建筑大师大本营，首都金币产出}}",
+    "daily": {
+      "title": "每日首都金币",
+      "amount": "{townHall}级大本营每天 +{gold} 首都金币",
+      "none": "每日首都金币从6级大本营开始。",
+      "name": "每日首都金币"
+    },
+    "slots": {
+      "title": "熔炉栏位",
+      "craftingTime": "3天锻造时间",
+      "open": "{townHall}级大本营已开放 {open} / {total} 个栏位",
+      "boost": "已应用 {percent}% 建筑加速：{time}",
+      "slot": "栏位 {number}",
+      "requires": "需要{townHall}级大本营",
+      "locked": "已锁定",
+      "idle": "空闲",
+      "idleHelp": "选择要锻造的资源",
+      "running": "进行中",
+      "done": "已完成",
+      "result": "产出",
+      "start": "开始",
+      "stop": "停止",
+      "reset": "重置",
+      "resource": "资源",
+      "rate": "{amount} {resource}换 {capitalGold} 首都金币，{time}后完成",
+      "left": "剩余 {time}",
+      "ready": "已完成：{capitalGold} 首都金币。",
+      "finished": "{ago}前完成。",
+      "stopped": "栏位 {number} 已停止。进度已清除。",
+      "resetDone": "栏位 {number} 已重置。{resource}的进度已清除。",
+      "runningTitle": "{resource}，{amount}"
+    },
+    "auto": {
+      "title": "自动熔炉",
+      "subtitle": "黄金令牌特权，自动重复",
+      "repeats": "每 {time} 用 {amount} {resource}换 {capitalGold} 首都金币",
+      "nextRun": "本轮结束时，下一轮会自动开始。",
+      "stop": "停止自动熔炉",
+      "stopped": "自动熔炉已停止。周期已清除。",
+      "confirm": {
+        "title": "停止自动熔炉？",
+        "body": "正在进行的周期会被清除：{amount} {resource}换 {capitalGold} 首都金币，剩余 {time}。自动熔炉会停止重复，直到你在熔炉页面再次启动。黄金令牌特权在赛季通行证中保持开启。",
+        "undoHint": "停止后，撤销按钮会在屏幕上停留几秒。",
+        "keep": "继续运行",
+        "stop": "停止自动熔炉"
+      }
+    },
+    "rates": {
+      "title": "熔炉比率",
+      "description": "{builderHall, plural, =0 {{townHall}级大本营，一个栏位运行一次} other {{townHall}级大本营和{builderHall}级建筑大师大本营，一个栏位运行一次}}",
+      "autoTitle": "自动熔炉比率",
+      "autoDescription": "黄金令牌价格，为手动费用的一半",
+      "resource": "资源",
+      "cost": "费用",
+      "capitalGold": "首都金币",
+      "requires": "需要{requirement}"
+    }
+  },
+  "helpers": {
+    "title": "助手",
+    "description": "追踪建筑工学徒、实验室助手、炼金术士和勘探者。",
+    "subline": "{builderHall, plural, =0 {{name}，{townHall}级大本营，助手小屋的助手} other {{name}，{townHall}级大本营，{builderHall}级建筑大师大本营，助手小屋的助手}}",
+    "banner": "助手小屋已建成。每位助手按大本营等级解锁：实验室助手9级，建筑工学徒10级，勘探者10级，炼金术士11级。",
+    "names": {
+      "buildersApprentice": "建筑工学徒",
+      "labAssistant": "实验室助手",
+      "alchemist": "炼金术士",
+      "prospector": "勘探者"
+    },
+    "from": "{townHall}级大本营及以上",
+    "lockedCard": "需要{townHall}级大本营",
+    "dailyUse": "每日使用",
+    "level": "等级",
+    "levelOption": "{level}级",
+    "levelTownHall": "TH {townHall}",
+    "none": "无",
+    "noLevel": "选择你的等级以查看数据。",
+    "noLevelCalculator": "选择你的等级以使用计算器。",
+    "nextLevel": "{gems, select, 0 {{level}级免费} other {{level}级需要 {gems} 宝石}}",
+    "saves": "每次使用节省 {time}",
+    "levelRequires": "需要{townHall}级大本营",
+    "assignment": {
+      "builderTitle": "要加速的升级",
+      "researchTitle": "要加速的研究",
+      "none": "无",
+      "builderHelp": "列出正在升级的建筑、英雄、大本营、大本营武器和定制防御模块。",
+      "researchHelp": "仅限研究：列出正在升级的兵种、法术和攻城机器。",
+      "builderEmpty": "没有可分配的进行中建筑升级。",
+      "researchEmpty": "没有可分配的进行中实验室研究。",
+      "once": "一次性",
+      "untilDone": "直到完成",
+      "assignedTo": "分配给",
+      "clearsAfterUse": "使用一次后清除。",
+      "staysUntilDone": "保持到升级完成。",
+      "clear": "清除分配",
+      "cleared": "分配已清除。",
+      "select": "已分配的升级",
+      "mode": "分配模式",
+      "preview": "现在使用：剩余 {before} 变为 {after}。",
+      "previewDone": "现在使用：剩余 {before}，升级完成。",
+      "upgradeTo": "{name}升到{level}级，剩余 {left}"
+    },
+    "used": {
+      "plain": "{name}已标记为已使用",
+      "saved": "{name}已用于{target}，节省 {time}"
+    },
+    "alchemist": {
+      "stats": {
+        "goldElixir": "金币或圣水上限",
+        "darkElixir": "暗黑重油上限",
+        "bonus": "转换加成"
+      },
+      "calculator": "转换计算器",
+      "from": "从",
+      "to": "到",
+      "amount": "转换数量",
+      "result": "{amount} {from}可得 {output} {to}",
+      "help": "已包含 {bonus}% 的转换加成和 150 比 1 的比率。",
+      "nothingSaved": "这里的内容不会保存。"
+    },
+    "prospector": {
+      "lockedTitle": "需要 2,200 赛季挑战积分解锁",
+      "lockedHelp": "在游戏中解锁后，请到赛季通行证页面把它打开。",
+      "toSeasonPass": "打开赛季通行证",
+      "subtitle": "10级大本营及以上，用赛季挑战积分解锁",
+      "lockedBadge": "已锁定",
+      "unlockedBadge": "已解锁",
+      "levelOnly": "1级（唯一等级）",
+      "limits": {
+        "shiny": "Shiny ore 上限",
+        "glowy": "Glowy ore 上限",
+        "starry": "Starry ore 上限"
+      },
+      "calculator": "矿石转换计算器",
+      "ores": {
+        "shiny": "Shiny ore",
+        "glowy": "Glowy ore",
+        "starry": "Starry ore"
+      },
+      "help": "10 个 Shiny ore 合成 1 个 Glowy ore。100 个 Glowy ore 合成 1 个 Starry ore。"
+    }
+  },
+  "seasonPass": {
+    "title": "赛季通行证",
+    "description": "设置缩短升级时间的黄金令牌加速和特权。",
+    "subline": "{name}，{townHall}级大本营，本赛季已启用的黄金令牌特权",
+    "lockedTitle": "赛季通行证已锁定",
+    "lockedBody": "黄金令牌需要7级大本营。此村庄为{townHall}级大本营。",
+    "month": {
+      "title": "{month}",
+      "subtitle": "加速会在{reset}重置，特权保持开启。",
+      "key": "月份键",
+      "rolled": "新的一个月开始了。建筑加速和研究加速已重置为 0%。特权保持开启。",
+      "undoReset": "撤销重置",
+      "dismiss": "关闭",
+      "restored": "已恢复本月的加速。",
+      "undo": "撤销"
+    },
+    "boosts": {
+      "title": "加速特权",
+      "description": "黄金令牌在本赛季缩短升级时间。",
+      "builder": "建筑加速",
+      "research": "研究加速",
+      "applies": "适用于建筑、研究和宠物的时间、队列时间线以及熔炉锻造时间。",
+      "saved": "随本月一起保存。",
+      "value": "{percent, plural, =0 {关闭} other {{percent}%}}",
+      "option": "{percent, plural, =0 {0%} other {{percent}%}}",
+      "builderEffect": "{percent, plural, =0 {熔炉锻造时间为 3天。} other {熔炉锻造时间为 {time}。}}",
+      "researchEffect": "{percent, plural, =0 {研究和宠物时间不变。} other {研究和宠物时间缩短 {percent}%。}}"
+    },
+    "unlocks": {
+      "title": "赛季挑战解锁",
+      "description": "不属于黄金令牌",
+      "prospector": "勘探者",
+      "prospectorHelp": "10级大本营及以上的助手，需要 2,200 赛季挑战积分",
+      "shows": "显示在助手页面"
+    },
+    "perks": {
+      "title": "黄金令牌特权",
+      "description": "本赛季已启用的黄金令牌特权",
+      "referenceOnly": "仅供参考",
+      "referenceNote": "不会改变应用中的其他内容。",
+      "hoggyBank": {
+        "label": "Hoggy 存钱罐",
+        "note": "游戏时存储资源，赛季结束时领取"
+      },
+      "gemDonations": {
+        "label": "1宝石捐兵",
+        "note": "每个兵种和法术只需 1 宝石即可捐赠"
+      },
+      "autoForge": {
+        "label": "自动熔炉",
+        "note": "自动将资源转换为首都金币"
+      },
+      "autoForgeEffect": "开启熔炉页面的自动熔炉行和总览标签。",
+      "requestTimeReduction": {
+        "label": "缩短请求时间",
+        "note": "缩短请求兵种的冷却计时"
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "levelTo": "{name} {from}→{to}",
+  "toast": {
+    "undo": "元に戻す",
+    "started": "{name} Lv {from}からLv {to}を開始しました",
+    "finished": "{name}がLv {level}で完了しました",
+    "timeSaved": "{time}を短縮時間に加算しました。",
+    "cancelled": "{name} Lv {from}からLv {to}をキャンセルしました",
+    "levelChanged": "{name} Lv {from}からLv {to}"
+  },
+  "queue": {
+    "buildPetHouse": "先にペットハウスを建設してください",
+    "requires": "{building} {level}が必要",
+    "alreadyUpgrading": "{name}はすでにアップグレード中です",
+    "finishFirst": "先にレベル {level}を完了する必要があります",
+    "alreadyAt": "すでにレベル {level}です"
+  },
+  "conflict": {
+    "alreadyAt": "{name}はすでにレベル {level}のため、レベル {target}は完了しています。",
+    "removeFix": "キューから削除してください。",
+    "scheduledBefore": "{name}のレベル {level}が、レベル {earlier}の完了前に予定されています。",
+    "moveFix": "レベル {level}をレベル {earlier}の後に移してください。"
+  }
+}

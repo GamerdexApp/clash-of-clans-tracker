@@ -1,0 +1,48 @@
+{
+  "title": "Mauern",
+  "subline": "{name}, Rathaus {townHall}, höchste Mauerstufe {highest}",
+  "massEdit": "Mauerzahlen lassen sich auch in der Massenbearbeitung anpassen.",
+  "tiles": {
+    "total": "Gesamt bei diesem Rathaus",
+    "totalCaption": "Höchste Mauerstufe {highest}",
+    "placed": "Platziert",
+    "placedCaption": "Mauern auf einer Stufe",
+    "notPlaced": "Nicht platziert",
+    "allPlaced": "Alle platziert",
+    "stillToPlace": "Noch {amount} {count, plural, one {Mauer} other {Mauern}} zu platzieren",
+    "over": "{count} zu viel"
+  },
+  "hideEmpty": "{hidden, plural, =0 {Leere Stufen unter deiner niedrigsten ausblenden} other {Leere Stufen unter deiner niedrigsten ausblenden ({hidden} ausgeblendet)}}",
+  "row": {
+    "level": "Stufe {level}",
+    "own": "Du besitzt",
+    "ownLabel": "Mauern, die du auf Stufe {level} besitzt",
+    "lower": "Eine Mauer weniger auf Stufe {level}",
+    "raise": "Eine Mauer mehr auf Stufe {level}",
+    "nextCost": "Nächste Stufe: {price} {resource} pro Mauer",
+    "toMove": "Mauern zum Verschieben",
+    "toLevel": "Auf Stufe",
+    "plusOne": "+1",
+    "move": "Verschieben",
+    "moveAll": "Alle verschieben",
+    "preview": "{amount} {walls, plural, one {Mauer} other {Mauern}} von Stufe {from} auf {to} verschieben: {price} {resource}",
+    "nothingToMove": "Nichts zu verschieben",
+    "noWalls": "Keine Mauern auf dieser Stufe zum Verschieben."
+  },
+  "cost": {
+    "title": "Kosten, um alle Mauern auf Stufe {level} zu bringen",
+    "row": "Stufe {level}, {amount} {walls, plural, one {Mauer} other {Mauern}}",
+    "total": "Gesamt",
+    "none": "Jede platzierte Mauer hat die höchste Stufe oder es ist noch keine platziert.",
+    "note": "Mauern der Stufen 2 bis 4 kosten Gold. Ab Stufe 5 kosten sie Gold oder Elixier."
+  },
+  "empty": {
+    "title": "Noch keine Mauern",
+    "description": "Mauern werden bei Rathaus 2 freigeschaltet."
+  },
+  "toast": {
+    "moved": "{amount} {walls, plural, one {Mauer} other {Mauern}} von Stufe {from} auf {to} verschoben",
+    "counted": "Mauern der Stufe {level}: {from} auf {to}",
+    "undo": "Rückgängig"
+  }
+}

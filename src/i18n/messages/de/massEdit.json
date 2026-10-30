@@ -1,0 +1,138 @@
+{
+  "title": "Massenbearbeitung",
+  "description": "Ändere viele Stufen auf einmal. Nichts wird gespeichert, bis du auf Änderungen speichern tippst.",
+  "subline": "{name}, Rathaus {townHall}, vorgemerkte Änderungen",
+  "scopes": {
+    "home": "Heimatdorf",
+    "builder": "Bauarbeiterbasis",
+    "capital": "Clanhauptstadt"
+  },
+  "scopeNav": "Bereich",
+  "requires": "Braucht {requirement}",
+  "trackingOff": "Verfolgung aus",
+  "changedCount": "{count, plural, one {1 Änderung} other {{amount} Änderungen}}",
+  "chip": "Ungespeicherte Änderungen",
+  "bar": {
+    "unsaved": "{count, plural, one {1 ungespeicherte Änderung} other {{amount} ungespeicherte Änderungen}}",
+    "none": "Keine ungespeicherten Änderungen",
+    "discard": "Verwerfen",
+    "save": "Änderungen speichern"
+  },
+  "saved": "{count, plural, one {1 Änderung gespeichert} other {{amount} Änderungen gespeichert}}",
+  "undo": "Rückgängig",
+  "discardDialog": {
+    "title": "{count, plural, one {1 ungespeicherte Änderung verwerfen?} other {{amount} ungespeicherte Änderungen verwerfen?}}",
+    "body": "Jede Zeile geht auf ihre gespeicherte Stufe zurück.",
+    "keep": "Weiter bearbeiten",
+    "discard": "Änderungen verwerfen"
+  },
+  "leave": {
+    "title": "{count, plural, one {Du hast 1 ungespeicherte Änderung} other {Du hast {amount} ungespeicherte Änderungen}}",
+    "body": "Speichere sie vor dem Verlassen oder verwirf sie.",
+    "save": "Speichern und verlassen",
+    "discard": "Verwerfen und verlassen",
+    "keep": "Weiter bearbeiten"
+  },
+  "toolbar": {
+    "label": "Sammelaktionen",
+    "selectAll": "Alle {count} wählen",
+    "selected": "{count, plural, one {1 Zeile gewählt} other {{amount} Zeilen gewählt}}",
+    "clearSelection": "Auswahl aufheben",
+    "scopeAll": "Gilt für alle {count} Zeilen in {category}",
+    "scopeSelected": "{count, plural, one {Gilt für 1 gewählte Zeile} other {Gilt für {amount} gewählte Zeilen}}",
+    "max": "Alle auf Max",
+    "maxSelected": "Gewählte auf Max",
+    "reset": "Alle zurücksetzen",
+    "resetSelected": "Gewählte zurücksetzen",
+    "setLevel": "Stufe setzen",
+    "levelLabel": "Stufe für gewählte Zeilen",
+    "applyLevel": "{count, plural, one {Auf 1 Zeile anwenden} other {Auf {amount} Zeilen anwenden}}",
+    "hallLabel": "Auf Max für Hallenstufe setzen",
+    "hallCurrent": "{hall} {level} (aktuell)",
+    "hallOption": "{hall} {level}",
+    "hallPlaceholder": "{hall} wählen"
+  },
+  "confirm": {
+    "title": "{count, plural, one {1 Zeile senken?} other {{amount} Zeilen senken?}}",
+    "body": "Das ändert den Entwurf. Nichts wird gespeichert, bis du auf Änderungen speichern tippst.",
+    "superchargeNote": "Ein Gebäude, das unter seine höchste Stufe fällt, verliert auch seine Superladungsstufe.",
+    "apply": "Auf Entwurf anwenden",
+    "cancel": "Abbrechen",
+    "line": "{name}: {from} auf {to}",
+    "more": "und {count} weitere"
+  },
+  "rows": {
+    "notBuilt": "Nicht gebaut",
+    "toMax": "{count} bis Max",
+    "atMax": "Auf Max",
+    "changed": "Von {from} auf {to} geändert",
+    "level": "Stufe von {name}",
+    "raise": "{name} erhöhen",
+    "lower": "{name} senken",
+    "max": "Max",
+    "select": "{name} wählen",
+    "selectGroup": "Alle {name} wählen",
+    "supercharge": "Superladung",
+    "reachFirst": "Erreiche zuerst Stufe {level}",
+    "slider": "Regler für {name}",
+    "groupBuilt": "{count} gebaut, max. Stufe {max}",
+    "expand": "{name} zeigen",
+    "collapse": "{name} ausblenden"
+  },
+  "category": {
+    "atMax": "{done} von {total} auf Max für {hall} {level}",
+    "rowsAtMax": "{done} von {total} auf Max",
+    "empty": "In dieser Kategorie gibt es noch nichts zu bearbeiten.",
+    "locked": "Braucht {requirement}",
+    "lockedSuffix": " (gesperrt)",
+    "nav": "Kategorien"
+  },
+  "walls": {
+    "total": "Gesamt",
+    "allocated": "Verteilt",
+    "remaining": "Übrig",
+    "maxAll": "Alle auf Max",
+    "resetAll": "Alle zurücksetzen",
+    "maxAllHelp": "Verschiebt alle übrigen Mauern auf die höchste Stufe",
+    "level": "Mauern der Stufe {level}"
+  },
+  "builder": {
+    "profile": "Profil der Bauarbeiterbasis",
+    "hall": "Stufe der Bauarbeiterhalle",
+    "hallHelp": "Bauarbeiterhalle {level} bestimmt die höchste Stufe jeder Zeile unten. Beim Senken wird zuerst gefragt und nur die Zeilen über dem neuen Limit werden gesenkt.",
+    "none": "Auf dieser Stufe der Bauarbeiterhalle sind keine Gebäude verfügbar",
+    "raise": "Bauarbeiterhalle erhöhen",
+    "lower": "Bauarbeiterhalle senken",
+    "trophies": "Trophäen",
+    "bestTrophies": "Beste Trophäen",
+    "league": "Liga",
+    "hallConfirmTitle": "Bauarbeiterhalle auf {level} senken?"
+  },
+  "hallNames": {
+    "home": "Rathaus",
+    "builder": "Bauarbeiterhalle",
+    "district": "Bezirkshalle",
+    "capital": "Hauptstadthalle"
+  },
+  "capital": {
+    "profile": "Profil der Clanhauptstadt",
+    "hall": "Hauptstadthalle",
+    "none": "Keine",
+    "level": "Hauptstadthalle {level}",
+    "contributions": "Beiträge zur Clanhauptstadt",
+    "unit": "Hauptstadtgold",
+    "districtHall": "Bezirkshalle",
+    "districtNone": "Keine",
+    "districtLevel": "Bezirkshalle {level}",
+    "requiresCapitalHall": "Braucht Hauptstadthalle {level}",
+    "unlockHint": "Setze oben eine {label}, um Gebäude freizuschalten.",
+    "parts": "Abschnitte",
+    "off": "Die Verfolgung der Clanhauptstadt ist aus",
+    "offBody": "Schalte die Verfolgung auf den Seiten der Clanhauptstadt wieder ein. Nichts wurde gelöscht.",
+    "offAction": "Clanhauptstadt öffnen"
+  },
+  "empty": {
+    "title": "Kein aktives Dorf",
+    "description": "Wähle ein Dorf oder erstelle eins, um die Massenbearbeitung zu nutzen."
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "levelTo": "{name} {from}→{to}",
+  "toast": {
+    "undo": "Hoàn tác",
+    "started": "Đã bắt đầu {name} cấp {from} lên {to}",
+    "finished": "{name} đã xong ở cấp {level}",
+    "timeSaved": "Đã cộng {time} vào thời gian tiết kiệm.",
+    "cancelled": "Đã hủy {name} cấp {from} lên {to}",
+    "levelChanged": "{name} cấp {from} lên {to}"
+  },
+  "queue": {
+    "buildPetHouse": "Hãy xây Nhà Thú Cưng trước",
+    "requires": "Cần {building} {level}",
+    "alreadyUpgrading": "{name} đang được nâng cấp",
+    "finishFirst": "Cấp {level} phải xong trước",
+    "alreadyAt": "Đã ở cấp {level}"
+  },
+  "conflict": {
+    "alreadyAt": "{name} đã ở cấp {level}, nên cấp {target} đã xong.",
+    "removeFix": "Xóa nó khỏi hàng chờ.",
+    "scheduledBefore": "{name} cấp {level} được lên lịch trước khi cấp {earlier} xong.",
+    "moveFix": "Chuyển cấp {level} ra sau cấp {earlier}."
+  }
+}

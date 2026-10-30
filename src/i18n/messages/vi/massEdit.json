@@ -1,0 +1,138 @@
+{
+  "title": "Sửa hàng loạt",
+  "description": "Đổi nhiều cấp cùng lúc. Không có gì được lưu cho đến khi bạn nhấn Lưu thay đổi.",
+  "subline": "{name}, Nhà Chính {townHall}, thay đổi đang chờ",
+  "scopes": {
+    "home": "Làng Chính",
+    "builder": "Căn Cứ Thợ Xây",
+    "capital": "Thủ Đô Bang Hội"
+  },
+  "scopeNav": "Phạm vi",
+  "requires": "Cần {requirement}",
+  "trackingOff": "Đang tắt theo dõi",
+  "changedCount": "{count, plural, other {{amount} thay đổi}}",
+  "chip": "Thay đổi chưa lưu",
+  "bar": {
+    "unsaved": "{count, plural, other {{amount} thay đổi chưa lưu}}",
+    "none": "Không có thay đổi chưa lưu",
+    "discard": "Bỏ",
+    "save": "Lưu thay đổi"
+  },
+  "saved": "{count, plural, other {Đã lưu {amount} thay đổi}}",
+  "undo": "Hoàn tác",
+  "discardDialog": {
+    "title": "{count, plural, other {Bỏ {amount} thay đổi chưa lưu?}}",
+    "body": "Mọi hàng sẽ quay về cấp đã lưu.",
+    "keep": "Tiếp tục sửa",
+    "discard": "Bỏ thay đổi"
+  },
+  "leave": {
+    "title": "{count, plural, other {Bạn có {amount} thay đổi chưa lưu}}",
+    "body": "Hãy lưu trước khi rời đi, hoặc bỏ chúng.",
+    "save": "Lưu và rời đi",
+    "discard": "Bỏ và rời đi",
+    "keep": "Tiếp tục sửa"
+  },
+  "toolbar": {
+    "label": "Thao tác hàng loạt",
+    "selectAll": "Chọn tất cả {count}",
+    "selected": "{count, plural, other {Đã chọn {amount} hàng}}",
+    "clearSelection": "Bỏ chọn",
+    "scopeAll": "Áp dụng cho tất cả {count} hàng trong {category}",
+    "scopeSelected": "{count, plural, other {Áp dụng cho {amount} hàng đã chọn}}",
+    "max": "Tối đa tất cả",
+    "maxSelected": "Tối đa mục đã chọn",
+    "reset": "Đặt lại tất cả",
+    "resetSelected": "Đặt lại mục đã chọn",
+    "setLevel": "Đặt cấp",
+    "levelLabel": "Cấp cho các hàng đã chọn",
+    "applyLevel": "{count, plural, other {Áp dụng cho {amount} hàng}}",
+    "hallLabel": "Đặt tối đa theo cấp nhà",
+    "hallCurrent": "{hall} {level} (hiện tại)",
+    "hallOption": "{hall} {level}",
+    "hallPlaceholder": "Chọn {hall}"
+  },
+  "confirm": {
+    "title": "{count, plural, other {Hạ cấp {amount} hàng?}}",
+    "body": "Thao tác này đổi bản nháp. Không có gì được lưu cho đến khi bạn nhấn Lưu thay đổi.",
+    "superchargeNote": "Công trình bị hạ xuống dưới cấp cao nhất cũng mất bậc Siêu Nạp.",
+    "apply": "Áp dụng vào bản nháp",
+    "cancel": "Hủy",
+    "line": "{name}: {from} lên {to}",
+    "more": "và {count} mục nữa"
+  },
+  "rows": {
+    "notBuilt": "Chưa xây",
+    "toMax": "{count} để tối đa",
+    "atMax": "Đã tối đa",
+    "changed": "Đã đổi {from} thành {to}",
+    "level": "Cấp {name}",
+    "raise": "Tăng {name}",
+    "lower": "Giảm {name}",
+    "max": "Tối đa",
+    "select": "Chọn {name}",
+    "selectGroup": "Chọn mọi {name}",
+    "supercharge": "Siêu Nạp",
+    "reachFirst": "Hãy đạt cấp {level} trước",
+    "slider": "Thanh trượt {name}",
+    "groupBuilt": "Đã xây {count}, cấp tối đa {max}",
+    "expand": "Hiện {name}",
+    "collapse": "Ẩn {name}"
+  },
+  "category": {
+    "atMax": "{done} trên {total} đã tối đa cho {hall} {level}",
+    "rowsAtMax": "{done} trên {total} đã tối đa",
+    "empty": "Chưa có gì để sửa trong mục này.",
+    "locked": "Cần {requirement}",
+    "lockedSuffix": " (đã khóa)",
+    "nav": "Danh mục"
+  },
+  "walls": {
+    "total": "Tổng",
+    "allocated": "Đã phân bổ",
+    "remaining": "Còn lại",
+    "maxAll": "Tối đa tất cả",
+    "resetAll": "Đặt lại tất cả",
+    "maxAllHelp": "Chuyển mọi tường còn lại lên cấp cao nhất",
+    "level": "Tường cấp {level}"
+  },
+  "builder": {
+    "profile": "Hồ sơ Căn Cứ Thợ Xây",
+    "hall": "Cấp Nhà Thợ Xây",
+    "hallHelp": "Nhà Thợ Xây {level} quyết định cấp cao nhất của mọi hàng bên dưới. Hạ cấp sẽ hỏi trước và chỉ hạ các hàng vượt giới hạn mới.",
+    "none": "Không có công trình ở cấp Nhà Thợ Xây này",
+    "raise": "Tăng Nhà Thợ Xây",
+    "lower": "Giảm Nhà Thợ Xây",
+    "trophies": "Cúp",
+    "bestTrophies": "Cúp cao nhất",
+    "league": "Giải đấu",
+    "hallConfirmTitle": "Hạ Nhà Thợ Xây xuống {level}?"
+  },
+  "hallNames": {
+    "home": "Nhà Chính",
+    "builder": "Nhà Thợ Xây",
+    "district": "Nhà Quận",
+    "capital": "Nhà Thủ Đô"
+  },
+  "capital": {
+    "profile": "Hồ sơ Thủ Đô Bang Hội",
+    "hall": "Nhà Thủ Đô",
+    "none": "Không có",
+    "level": "Nhà Thủ Đô {level}",
+    "contributions": "Đóng góp Thủ Đô Bang Hội",
+    "unit": "Vàng Thủ Đô",
+    "districtHall": "Nhà Quận",
+    "districtNone": "Không có",
+    "districtLevel": "Nhà Quận {level}",
+    "requiresCapitalHall": "Cần Nhà Thủ Đô {level}",
+    "unlockHint": "Hãy đặt {label} ở trên để mở công trình.",
+    "parts": "Khu vực",
+    "off": "Theo dõi Thủ Đô Bang Hội đang tắt",
+    "offBody": "Bật lại theo dõi từ các trang Thủ Đô Bang Hội. Không có gì bị xóa.",
+    "offAction": "Mở Thủ Đô Bang Hội"
+  },
+  "empty": {
+    "title": "Chưa có làng đang dùng",
+    "description": "Chọn một làng hoặc tạo làng mới để dùng Sửa hàng loạt."
+  }
+}

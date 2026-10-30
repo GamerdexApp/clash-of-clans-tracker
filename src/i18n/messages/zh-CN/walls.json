@@ -1,0 +1,48 @@
+{
+  "title": "城墙",
+  "subline": "{name}，{townHall}级大本营，最高城墙等级 {highest}",
+  "massEdit": "城墙数量也可以在批量编辑中调整。",
+  "tiles": {
+    "total": "此大本营的总数",
+    "totalCaption": "最高城墙等级 {highest}",
+    "placed": "已放置",
+    "placedCaption": "各等级的城墙",
+    "notPlaced": "未放置",
+    "allPlaced": "全部已放置",
+    "stillToPlace": "还有 {amount} {count, plural, other {段城墙}}待放置",
+    "over": "超出 {count}"
+  },
+  "hideEmpty": "{hidden, plural, =0 {隐藏低于你最低等级的空等级} other {隐藏低于你最低等级的空等级（已隐藏 {hidden}）}}",
+  "row": {
+    "level": "{level}级",
+    "own": "你拥有",
+    "ownLabel": "你拥有的{level}级城墙",
+    "lower": "{level}级城墙减一段",
+    "raise": "{level}级城墙加一段",
+    "nextCost": "下一级：每段 {price} {resource}",
+    "toMove": "要移动的城墙",
+    "toLevel": "目标等级",
+    "plusOne": "+1",
+    "move": "移动",
+    "moveAll": "全部移动",
+    "preview": "将 {amount} {walls, plural, other {段城墙}}从 {from} 级移到 {to} 级：{price} {resource}",
+    "nothingToMove": "没有可移动的",
+    "noWalls": "此等级没有可移动的城墙。"
+  },
+  "cost": {
+    "title": "将所有城墙升到 {level} 级的费用",
+    "row": "{level}级，{amount} {walls, plural, other {段城墙}}",
+    "total": "合计",
+    "none": "所有已放置的城墙都已是最高等级，或尚未放置城墙。",
+    "note": "2到4级城墙消耗金币。5级及以上消耗金币或圣水。"
+  },
+  "empty": {
+    "title": "还没有城墙",
+    "description": "城墙在2级大本营解锁。"
+  },
+  "toast": {
+    "moved": "已将 {amount} {walls, plural, other {段城墙}}从 {from} 级移到 {to} 级",
+    "counted": "{level}级城墙 {from} 改为 {to}",
+    "undo": "撤销"
+  }
+}

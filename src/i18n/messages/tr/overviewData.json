@@ -1,0 +1,40 @@
+{
+  "stats": {
+    "level": "Seviye",
+    "warStars": "Savaş yıldızları",
+    "trophies": "Kupalar",
+    "bestTrophies": "En iyi kupalar",
+    "donations": "Bağışlar",
+    "received": "Alınan bağışlar",
+    "war": "Savaş tercihi",
+    "attacks": "Saldırı zaferleri",
+    "defenses": "Savunma zaferleri",
+    "builderTrophies": "İnşaatçı kupaları",
+    "bestBuilderTrophies": "En iyi inşaatçı kupaları",
+    "contributions": "Başkent katkıları",
+    "warIn": "Dahil",
+    "warOut": "Hariç"
+  },
+  "cards": {
+    "structures": "Yapılar",
+    "traps": "Tuzaklar",
+    "supercharge": "Süper Şarj",
+    "crafted": "Üretilmiş Savunmalar",
+    "lab": "Laboratuvar",
+    "heroes": "Kahramanlar",
+    "equipment": "Ekipman",
+    "pets": "Evcil Hayvanlar",
+    "walls": "Surlar",
+    "districts": "Bölgeler",
+    "troops": "Birlikler",
+    "spells": "Büyüler"
+  },
+  "subs": {
+    "structures": "Savunmalar, ordu, kaynaklar",
+    "lab": "Birlikler, büyüler, kuşatma",
+    "builderLab": "İnşaatçı birlikleri",
+    "walls": "{total} sur, maks. seviye {max}",
+    "districts": "{total} bölgeden {active} tanesi etkin",
+    "available": "{count} kullanılabilir"
+  }
+}

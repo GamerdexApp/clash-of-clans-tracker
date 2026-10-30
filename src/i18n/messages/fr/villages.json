@@ -1,0 +1,119 @@
+{
+  "title": "Mes villages",
+  "subline": "{amount} {count, plural, one {village} other {villages}}",
+  "sublineActive": "{amount} {count, plural, one {village} other {villages}}, {name} est actif",
+  "newVillage": "Nouveau village",
+  "empty": {
+    "title": "Aucun village pour le moment",
+    "deletedTitle": "Plus aucun village",
+    "description": "Créez un village pour suivre améliorations, recherches et succès.",
+    "restore": "Restaurer depuis une sauvegarde"
+  },
+  "filters": {
+    "search": "Rechercher des villages",
+    "sortLabel": "Trier par",
+    "sort": {
+      "lastModified": "Dernière modification",
+      "createdAt": "Date de création",
+      "name": "Nom"
+    },
+    "showing": "{shown} affichés sur {total}",
+    "clear": "Effacer la recherche"
+  },
+  "noMatch": {
+    "title": "Aucun village ne correspond à « {query} »",
+    "description": "Vérifiez l'orthographe ou effacez la recherche."
+  },
+  "card": {
+    "active": "Actif",
+    "openOverview": "Ouvrir l'aperçu",
+    "setActive": "Rendre actif",
+    "edit": "Modifier",
+    "delete": "Supprimer",
+    "halls": "{builderHall, plural, =0 {Hôtel de ville {townHall}} other {Hôtel de ville {townHall}, Hôtel des ouvriers {builderHall}}}",
+    "daysAtTownHall": "Jours à l'Hôtel de ville",
+    "daysAtBuilderHall": "Jours à l'Hôtel des ouvriers",
+    "notSet": "Non défini",
+    "clanCapital": "Capitale du clan",
+    "clanCapitalStates": {
+      "on": "Activée",
+      "off": "Désactivée",
+      "locked": "Verrouillée"
+    },
+    "created": "Créé le {date}",
+    "lastModified": "Modifié le {date}",
+    "switched": "{name} est maintenant actif"
+  },
+  "fields": {
+    "name": "Nom du village",
+    "namePlaceholder": "Mon compte principal",
+    "nameRequired": "Saisissez un nom pour le village.",
+    "description": "Description",
+    "descriptionPlaceholder": "Ajoutez une description pour ce village",
+    "townHallLevel": "Niveau de l'Hôtel de ville",
+    "builderHallLevel": "Niveau de l'Hôtel des ouvriers",
+    "builderHallHelp": "La Base des ouvriers se débloque à l'Hôtel de ville 6.",
+    "townHallUpgraded": "Hôtel de ville amélioré",
+    "builderHallUpgraded": "Hôtel des ouvriers amélioré",
+    "level": "Niveau {level}",
+    "trackCapital": "Suivre la Capitale du clan",
+    "trackCapitalHelp": "La désactiver masque les pages de la Capitale du clan et conserve vos données.",
+    "trackCapitalLocked": "Nécessite l'Hôtel de ville 3",
+    "cancel": "Annuler"
+  },
+  "create": {
+    "title": "Nouveau village",
+    "submit": "Créer le village",
+    "modeLabel": "Comment commencer",
+    "modes": {
+      "fresh": "Nouveau départ",
+      "import": "Importer"
+    },
+    "modeNotes": {
+      "fresh": "Commencez avec des données vides.",
+      "import": "Lisez un tag de joueur, avec un fichier de bâtiments facultatif."
+    },
+    "makeActive": "Rendre ce village actif",
+    "done": "{name} créé",
+    "importNeedsLookup": "Récupérez d'abord un tag de joueur."
+  },
+  "lookup": {
+    "step1": "Étape 1 : récupérer les données du joueur",
+    "step2": "Étape 2 : données des bâtiments (facultatif)",
+    "tagLabel": "Tag de joueur",
+    "tagPlaceholder": "#PPV2YV9R",
+    "fetch": "Récupérer",
+    "refresh": "Actualiser",
+    "wait": "Attendez {seconds} s",
+    "serverNote": "La recherche envoie le tag au serveur Gamerdex, qui interroge l'API de Supercell. Rien d'autre ne quitte votre navigateur.",
+    "unavailable": "La recherche de joueur n'est pas disponible pour le moment. Réessayez plus tard.",
+    "found": "{name}, Hôtel de ville {townHall}{builderHall, plural, =0 {} other {, Hôtel des ouvriers {builderHall}}}. {achievements} succès et {troops} troupes lus.",
+    "buildingHelp": "L'API des joueurs ne fournit pas les niveaux de bâtiments. Choisissez une sauvegarde de village depuis les Paramètres ou le fichier exportData.json du jeu.",
+    "buildingLabel": "Fichier de données des bâtiments",
+    "buildingLoaded": "Données des bâtiments chargées depuis {name}.",
+    "buildingInvalid": "Ce fichier ne contient pas de données de bâtiments. Utilisez une sauvegarde de village des Paramètres ou exportData.json du jeu.",
+    "buildingNotJson": "Ce fichier n'est pas un JSON valide."
+  },
+  "edit": {
+    "title": "Modifier le village",
+    "submit": "Enregistrer",
+    "refreshTitle": "Actualiser depuis le tag de joueur",
+    "updatedTitle": "Mis à jour",
+    "untouchedTitle": "Jamais modifié",
+    "dateSet": "La date d'amélioration est fixée à aujourd'hui. Vous pouvez la changer.",
+    "done": "{name} enregistré"
+  },
+  "delete": {
+    "title": "Supprimer le village",
+    "description": "Cela supprime le village de ce navigateur.",
+    "question": "Supprimer {name} ? Ses améliorations, recherches, succès et quotidiens sont supprimés.",
+    "activeNext": "{next} devient le village actif.",
+    "activeLast": "Aucun village ne sera actif.",
+    "exportFirst": "Exportez d'abord une sauvegarde",
+    "cancel": "Annuler",
+    "confirm": "Supprimer le village",
+    "done": "{name} supprimé",
+    "doneMessage": "Vous pouvez annuler pendant dix secondes.",
+    "undo": "Annuler"
+  }
+}

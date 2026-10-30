@@ -1,0 +1,61 @@
+{
+  "title": "장비",
+  "subline": "{name}, 타운홀 {townHall}, 대장장이 레벨 {blacksmith}",
+  "massEdit": "장비 레벨은 일괄 편집에서도 설정할 수 있어요.",
+  "locked": {
+    "title": "대장장이 필요",
+    "description": "영웅 장비를 추적하려면 대장장이를 지으세요. 빌더 페이지의 군대 탭에서 레벨을 설정하세요.",
+    "action": "빌더로 이동"
+  },
+  "ore": {
+    "title": "Ore 보유량",
+    "description": "보유 중인 Ore예요. 부족하다는 표시는 참고용이며 업그레이드를 막지 않아요.",
+    "names": {
+      "shiny": "Shiny Ore",
+      "glowing": "Glowy Ore",
+      "starry": "Starry Ore"
+    },
+    "short": {
+      "shiny": "Shiny",
+      "glowing": "Glowing",
+      "starry": "Starry"
+    },
+    "needed": "표시된 장비에 필요: {amount}",
+    "enough": "보유량 충분",
+    "shortBy": "{amount} 부족",
+    "deduct": "업그레이드할 때 Ore 차감",
+    "deductHelp": "업그레이드하면 보유량에서 Ore를 빼요. 0 아래로는 내려가지 않아요. 실행 취소하면 돌려놓아요."
+  },
+  "hideMax": "최대 숨기기",
+  "heroFilter": "영웅",
+  "allHeroes": "모든 영웅",
+  "section": "장비 {pieces}개, 보유 {owned}개",
+  "empty": {
+    "title": "아직 아무것도 없어요",
+    "allMax": "모든 장비가 최대예요. 최대 숨기기를 끄면 볼 수 있어요."
+  },
+  "card": {
+    "heroLine": "{hero}",
+    "level": "레벨 {max} 중 {level}",
+    "notOwned": "미보유",
+    "max": "최대",
+    "setLevel": "{name} 레벨",
+    "stepLevel": "레벨 {level}",
+    "free": "무료",
+    "time": "시간: 즉시",
+    "requires": "대장장이 {level} 필요",
+    "moreLevels": "{count, plural, other {{amount}레벨 더}}",
+    "add": "레벨 1로 추가",
+    "upgradeTo": "레벨 {level}로 업그레이드",
+    "lockedUntil": "대장장이 {level}까지 잠김",
+    "allows": "대장장이 {blacksmith}은 레벨 {level}까지 허용해요",
+    "allowsNone": "대장장이 {blacksmith}은 아직 이 장비를 허용하지 않아요",
+    "footer": "{levels, plural, other {{amount}레벨 남음}}",
+    "progress": "{name} 진행도"
+  },
+  "toast": {
+    "upgraded": "{name} Lv {from}에서 {to}",
+    "levelSet": "{name} Lv {from}에서 {to}",
+    "undo": "실행 취소"
+  }
+}

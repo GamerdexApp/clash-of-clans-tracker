@@ -1,0 +1,66 @@
+{
+  "skipToContent": "İçeriğe geç",
+  "closeMenu": "Menüyü kapat",
+  "openMenu": "Menüyü aç",
+  "menuLabel": "Site menüsü",
+  "mainNav": "Ana",
+  "brandTitle": "Clash of Clans",
+  "brandSubtitle": "Tracker",
+  "switcher": {
+    "sectionLabel": "Köy",
+    "loading": "Yükleniyor",
+    "none": "Köy yok",
+    "noneDetail": "Başlamak için bir tane oluştur",
+    "switch": "Köy değiştir",
+    "villages": "Köyler",
+    "active": "Etkin",
+    "all": "Tüm köyler",
+    "create": "Yeni köy",
+    "halls": "{builderHall, plural, =0 {BB {townHall}} other {BB {townHall} · İS {builderHall}}}"
+  },
+  "locked": {
+    "townHall": "Belediye Binası {level}",
+    "blacksmith": "Demirci",
+    "helperHut": "Yardımcı Kulübesi",
+    "off": "Kapalı",
+    "srLabel": "{requirement} gerekir"
+  },
+  "footer": {
+    "tagline": "Clash of Clans için ücretsiz bir ilerleme takipçisi. Verilerin tarayıcında kalır, senkronu açarsan kendi bulut depolamanda tutulur.",
+    "support": "Destek",
+    "about": "Hakkında",
+    "settings": "Ayarlar",
+    "discord": "Discord",
+    "github": "GitHub",
+    "game": "Resmî oyun sitesi",
+    "privacy": "Gizlilik politikası",
+    "terms": "Hizmet şartları",
+    "disclaimerTitle": "Sorumluluk reddi",
+    "disclaimer": "Bu proje Supercell veya Clash of Clans ile bağlantılı değildir, onlar tarafından onaylanmamıştır.",
+    "framework": "Ücretsiz oyun ilerleme takipçileri için ortak bir temel olan Gamerdex çatısıyla geliştirildi.",
+    "visitGamerdex": "Gamerdex'i ziyaret et"
+  },
+  "notFound": {
+    "title": "Bu sayfa yok",
+    "body": "Bağlantı eski veya yanlış yazılmış olabilir. Köylerin güvende ve hiçbir şey değişmedi.",
+    "toOverview": "Genel Bakışa git",
+    "toVillages": "Köylere git",
+    "toHome": "Ana sayfaya dön",
+    "didYouMean": "Şunu mu demek istedin",
+    "noVillage": "Hiçbir köy seçilmedi, bu yüzden Genel Bakışta gösterilecek bir şey yok. Köyler sayfasında birini seç.",
+    "jumpTo": "Veya şuraya git"
+  },
+  "error": {
+    "title": "Bir şeyler ters gitti",
+    "body": "Uygulama bir hatayla karşılaştı. Kayıtlı verilerin değişmedi.",
+    "digest": "özet {digest}",
+    "tryAgain": "Tekrar dene",
+    "download": "Ham veriyi indir",
+    "clear": "Verileri temizle ve yeniden başlat",
+    "confirmTitle": "Tüm kayıtlı veriler temizlensin mi?",
+    "confirmBody": "Bu işlem uygulamanın bu tarayıcıda sakladığı her şeyi kaldırır. Daha sonra onarılabilmesi için önce ham verinin bir kopyası indirilir. Bulut hesabıyla senkronlanan köyler orada kalır.",
+    "cancel": "İptal",
+    "confirm": "İndir ve temizle",
+    "noData": "Bu tarayıcıda kayıtlı veri yok."
+  }
+}

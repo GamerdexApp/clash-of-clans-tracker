@@ -1,0 +1,49 @@
+{
+  "title": "Logros",
+  "description": "Sigue las estrellas, los valores y las recompensas de cada logro.",
+  "subline": "{name}, {count} logros, {stars} de {maxStars} estrellas, {percent}%",
+  "tiles": {
+    "all": "Todos los logros",
+    "home": "Aldea Principal",
+    "builder": "Base del Constructor",
+    "capital": "Capital del Clan",
+    "gems": "Gemas ganadas",
+    "xp": "XP ganada",
+    "stars": "{stars} de {maxStars} estrellas",
+    "left": "Faltan por ganar {amount} {unit}",
+    "gemsUnit": "gemas",
+    "xpUnit": "XP"
+  },
+  "sections": {
+    "home": "Aldea Principal",
+    "builderBase": "Base del Constructor",
+    "clanCapital": "Capital del Clan",
+    "summary": "{count} logros, {stars} / {maxStars} estrellas, {gems} gemas, {xp} XP",
+    "more": "Mostrar {count} logros más de {name}",
+    "less": "Mostrar menos"
+  },
+  "card": {
+    "manual": "Manual",
+    "nextStar": "Siguiente estrella",
+    "xp": "XP",
+    "gems": "gemas",
+    "edit": "Editar {name}",
+    "done": "Listo",
+    "stars": "Estrellas",
+    "starsHelp": "Toca la misma estrella otra vez para quitar una estrella.",
+    "star": "{amount} {number, plural, one {estrella} other {estrellas}}",
+    "value": "Valor",
+    "target": "Meta",
+    "manualLabel": "Manual (omitir valor de la API)",
+    "saves": "Los cambios se guardan al escribir. Al subir las estrellas, la meta pasa al siguiente nivel.",
+    "progress": "Progreso de {name}",
+    "starsEarned": "{stars} de 3 estrellas"
+  },
+  "toast": {
+    "stars": "{name} cambió a {amount} {stars, plural, one {estrella} other {estrellas}}",
+    "targetMoved": "La meta pasó a {target}.",
+    "value": "El valor de {name} cambió a {value}",
+    "target": "La meta de {name} cambió a {target}",
+    "undo": "Deshacer"
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "header": {
+    "label": "Sezioni della pagina",
+    "features": "Funzioni",
+    "faq": "Domande frequenti",
+    "villages": "Villaggi",
+    "settings": "Impostazioni"
+  },
+  "hero": {
+    "title": "Segui i tuoi progressi in Clash of Clans",
+    "description": "Tieni ogni villaggio in un unico posto: edifici, truppe, eroi, potenziamenti e giornalieri per il tuo Villaggio Principale, la Base del Costruttore e la Capitale del Clan.",
+    "note": "Gratis. Nessun account. Tutti i dati restano nel tuo browser.",
+    "screenshotAlt": "La pagina Panoramica di Clash of Clans Tracker con i progressi del villaggio, i trofei e gli obiettivi",
+    "continue": "Continua con",
+    "continueLine": "{builderHall, plural, =0 {Municipio {townHall}, aggiornato {updated}} other {Municipio {townHall}, Sala del Costruttore {builderHall}, aggiornato {updated}}}"
+  },
+  "cta": {
+    "create": "Crea il tuo primo villaggio",
+    "learnMore": "Scopri di più",
+    "overview": "Vai alla Panoramica",
+    "newVillage": "Nuovo villaggio"
+  },
+  "features": {
+    "label": "Tutto ciò che ti serve",
+    "title": "Tutti i tuoi progressi in un unico posto",
+    "description": "Dal Municipio alla Capitale del Clan, ogni livello che segui viene salvato nel momento in cui lo cambi.",
+    "items": {
+      "item1": {
+        "title": "Più villaggi",
+        "text": "Crea e gestisci quanti villaggi vuoi. Segui account e basi diversi in modo separato."
+      },
+      "item2": {
+        "title": "Tracciamento dei progressi",
+        "text": "Segui con precisione cosa hai completato, raccolto o sbloccato in ogni villaggio."
+      },
+      "item3": {
+        "title": "Panoramica",
+        "text": "Guarda i tuoi progressi a colpo d'occhio con statistiche riassuntive, timer giornalieri e indicatori di completamento."
+      },
+      "item4": {
+        "title": "Backup e sincronizzazione",
+        "text": "Esporta i tuoi progressi in un file JSON, oppure sincronizzali tra dispositivi con il tuo cloud."
+      },
+      "item5": {
+        "title": "Privato",
+        "text": "I tuoi dati restano nel browser. L'unica chiamata al server è la ricerca facoltativa del tag giocatore, che chiede a Supercell le tue statistiche pubbliche."
+      },
+      "item6": {
+        "title": "Modalità scura",
+        "text": "Comoda da usare di giorno e di notte. Scegli chiaro, scuro o segui il tuo dispositivo nelle Impostazioni."
+      }
+    }
+  },
+  "faq": {
+    "label": "Hai domande?",
+    "title": "Domande frequenti",
+    "items": {
+      "item1": {
+        "question": "Che cos'è Clash of Clans Tracker?",
+        "answer": "È un tracker dei progressi per Clash of Clans. Ti aiuta a gestire più account e a seguire potenziamenti, imprese, giornalieri e progressi complessivi in un unico posto."
+      },
+      "item2": {
+        "question": "Come vengono salvati i miei dati?",
+        "answer": "Tutto viene salvato nel tuo browser, quindi i tuoi progressi sono privati e non serve alcun account. Puoi esportarli e importarli come file JSON per il backup. La ricerca facoltativa del tag giocatore invia il tag a una piccola azione del server che chiede all'API di Supercell le tue statistiche pubbliche."
+      },
+      "item3": {
+        "question": "Posso seguire più villaggi?",
+        "answer": "Sì. Crea tutti i villaggi che vuoi, ciascuno con i propri progressi, e passa dall'uno all'altro nella barra laterale."
+      },
+      "item4": {
+        "question": "Si sincronizza tra dispositivi?",
+        "answer": "Sì, se lo vuoi. Apri le Impostazioni e collega GitHub, Google Drive, Dropbox o OneDrive. I tuoi dati sono salvati nel tuo account e la sincronizzazione resta spenta finché non la attivi."
+      },
+      "item5": {
+        "question": "Questa app è gratuita?",
+        "answer": "Sì. È gratuita, senza abbonamento, senza pubblicità e senza registrazione."
+      }
+    }
+  },
+  "final": {
+    "title": "Inizia oggi a seguire i tuoi villaggi",
+    "description": "Nessun account e nessuna registrazione. Per il tuo primo villaggio basta un nome."
+  },
+  "updated": {
+    "justNow": "proprio ora"
+  }
+}

@@ -1,0 +1,138 @@
+{
+  "title": "Édition en masse",
+  "description": "Changez plusieurs niveaux à la fois. Rien n'est enregistré avant d'appuyer sur Enregistrer.",
+  "subline": "{name}, Hôtel de ville {townHall}, modifications en attente",
+  "scopes": {
+    "home": "Village principal",
+    "builder": "Base des ouvriers",
+    "capital": "Capitale du clan"
+  },
+  "scopeNav": "Périmètre",
+  "requires": "Nécessite {requirement}",
+  "trackingOff": "Suivi désactivé",
+  "changedCount": "{count, plural, one {1 modification} other {{amount} modifications}}",
+  "chip": "Modifications non enregistrées",
+  "bar": {
+    "unsaved": "{count, plural, one {1 modification non enregistrée} other {{amount} modifications non enregistrées}}",
+    "none": "Aucune modification non enregistrée",
+    "discard": "Abandonner",
+    "save": "Enregistrer"
+  },
+  "saved": "{count, plural, one {1 modification enregistrée} other {{amount} modifications enregistrées}}",
+  "undo": "Annuler",
+  "discardDialog": {
+    "title": "{count, plural, one {Abandonner 1 modification non enregistrée ?} other {Abandonner {amount} modifications non enregistrées ?}}",
+    "body": "Chaque ligne revient à son niveau enregistré.",
+    "keep": "Continuer l'édition",
+    "discard": "Abandonner les modifications"
+  },
+  "leave": {
+    "title": "{count, plural, one {Vous avez 1 modification non enregistrée} other {Vous avez {amount} modifications non enregistrées}}",
+    "body": "Enregistrez-les avant de partir, ou abandonnez-les.",
+    "save": "Enregistrer et partir",
+    "discard": "Abandonner et partir",
+    "keep": "Continuer l'édition"
+  },
+  "toolbar": {
+    "label": "Actions groupées",
+    "selectAll": "Tout sélectionner ({count})",
+    "selected": "{count, plural, one {1 ligne sélectionnée} other {{amount} lignes sélectionnées}}",
+    "clearSelection": "Effacer la sélection",
+    "scopeAll": "Agit sur les {count} lignes de {category}",
+    "scopeSelected": "{count, plural, one {Agit sur 1 ligne sélectionnée} other {Agit sur {amount} lignes sélectionnées}}",
+    "max": "Tout au max",
+    "maxSelected": "Mettre la sélection au max",
+    "reset": "Tout réinitialiser",
+    "resetSelected": "Réinitialiser la sélection",
+    "setLevel": "Définir le niveau",
+    "levelLabel": "Niveau des lignes sélectionnées",
+    "applyLevel": "{count, plural, one {Appliquer à 1 ligne} other {Appliquer à {amount} lignes}}",
+    "hallLabel": "Mettre au max pour le niveau d'hôtel",
+    "hallCurrent": "{hall} {level} (actuel)",
+    "hallOption": "{hall} {level}",
+    "hallPlaceholder": "Choisir : {hall}"
+  },
+  "confirm": {
+    "title": "{count, plural, one {Baisser 1 ligne ?} other {Baisser {amount} lignes ?}}",
+    "body": "Cela modifie le brouillon. Rien n'est enregistré avant d'appuyer sur Enregistrer.",
+    "superchargeNote": "Un bâtiment qui passe sous son niveau maximal perd aussi son palier de suralimentation.",
+    "apply": "Appliquer au brouillon",
+    "cancel": "Annuler",
+    "line": "{name} : {from} à {to}",
+    "more": "et {count} de plus"
+  },
+  "rows": {
+    "notBuilt": "Non construit",
+    "toMax": "{count} jusqu'au max",
+    "atMax": "Au max",
+    "changed": "Changé de {from} à {to}",
+    "level": "Niveau de {name}",
+    "raise": "Augmenter {name}",
+    "lower": "Baisser {name}",
+    "max": "Max",
+    "select": "Sélectionner {name}",
+    "selectGroup": "Sélectionner tous les {name}",
+    "supercharge": "Suralimentation",
+    "reachFirst": "Atteignez d'abord le niveau {level}",
+    "slider": "Curseur de {name}",
+    "groupBuilt": "{count} construits, niveau max {max}",
+    "expand": "Afficher {name}",
+    "collapse": "Masquer {name}"
+  },
+  "category": {
+    "atMax": "{done} sur {total} au max pour {hall} {level}",
+    "rowsAtMax": "{done} sur {total} au max",
+    "empty": "Rien à modifier dans cette catégorie pour le moment.",
+    "locked": "Nécessite {requirement}",
+    "lockedSuffix": " (verrouillé)",
+    "nav": "Catégories"
+  },
+  "walls": {
+    "total": "Total",
+    "allocated": "Attribuées",
+    "remaining": "Restantes",
+    "maxAll": "Tout au max",
+    "resetAll": "Tout réinitialiser",
+    "maxAllHelp": "Déplace toutes les murailles restantes au niveau le plus haut",
+    "level": "Murailles de niveau {level}"
+  },
+  "builder": {
+    "profile": "Profil de la Base des ouvriers",
+    "hall": "Niveau de l'Hôtel des ouvriers",
+    "hallHelp": "L'Hôtel des ouvriers {level} fixe le niveau le plus haut de chaque ligne ci-dessous. Le baisser demande confirmation et ne baisse que les lignes au-dessus de la nouvelle limite.",
+    "none": "Aucun bâtiment disponible à ce niveau d'Hôtel des ouvriers",
+    "raise": "Monter l'Hôtel des ouvriers",
+    "lower": "Baisser l'Hôtel des ouvriers",
+    "trophies": "Trophées",
+    "bestTrophies": "Meilleurs trophées",
+    "league": "Ligue",
+    "hallConfirmTitle": "Baisser l'Hôtel des ouvriers au niveau {level} ?"
+  },
+  "hallNames": {
+    "home": "Hôtel de ville",
+    "builder": "Hôtel des ouvriers",
+    "district": "Hôtel de district",
+    "capital": "Hôtel de la capitale"
+  },
+  "capital": {
+    "profile": "Profil de la Capitale du clan",
+    "hall": "Hôtel de la capitale",
+    "none": "Aucun",
+    "level": "Hôtel de la capitale {level}",
+    "contributions": "Contributions à la Capitale du clan",
+    "unit": "Or de la capitale",
+    "districtHall": "Hôtel de district",
+    "districtNone": "Aucun",
+    "districtLevel": "Hôtel de district {level}",
+    "requiresCapitalHall": "Nécessite l'Hôtel de la capitale {level}",
+    "unlockHint": "Définissez {label} ci-dessus pour débloquer les bâtiments.",
+    "parts": "Sections",
+    "off": "Le suivi de la Capitale du clan est désactivé",
+    "offBody": "Réactivez le suivi depuis les pages de la Capitale du clan. Rien n'a été supprimé.",
+    "offAction": "Ouvrir la Capitale du clan"
+  },
+  "empty": {
+    "title": "Aucun village actif",
+    "description": "Choisissez un village ou créez-en un pour utiliser l'Édition en masse."
+  }
+}

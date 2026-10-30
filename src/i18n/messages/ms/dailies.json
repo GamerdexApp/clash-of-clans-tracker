@@ -1,0 +1,255 @@
+{
+  "locked": {
+    "title": "Harian",
+    "subline": "{name}, Dewan Bandar {townHall}, belum ada apa-apa yang dibuka",
+    "open": "Buka",
+    "lockedBadge": "Dikunci",
+    "now": "Kampung ini berada pada Dewan Bandar {townHall}.",
+    "nowNoHut": "Kampung ini belum mempunyai Pondok Pembantu.",
+    "needsHut": "Memerlukan Pondok Pembantu",
+    "toBuilder": "Buka Pembina",
+    "cards": {
+      "forge": {
+        "title": "Tempaan",
+        "what": "Tukar sumber lebihan kepada Emas Ibu Kota dan kutip Emas Ibu Kota harian."
+      },
+      "helpers": {
+        "title": "Pembantu",
+        "what": "Jejaki Perantis Pembina, Pembantu Makmal, Ahli Alkimia dan Prospector."
+      },
+      "seasonPass": {
+        "title": "Pas Musim",
+        "what": "Tetapkan rangsangan dan ganjaran Gold Pass yang memendekkan masa naik taraf."
+      },
+      "starBonus": {
+        "title": "Bonus Bintang",
+        "what": "Pemasa harian Bonus Bintang terdapat dalam Gambaran keseluruhan.",
+        "open": "Buka Gambaran keseluruhan"
+      }
+    }
+  },
+  "timer": {
+    "notSet": "Tetapkan masa set semula harian",
+    "setTime": "Tetapkan masa set semula",
+    "setAndUse": "Tetapkan dan tanda digunakan",
+    "notSetHelp": "Menetapkan masa tidak menandakan ganjaran sebagai digunakan.",
+    "savedIn": "Masa disimpan dalam {zone}.",
+    "available": "Tersedia",
+    "use": "Guna",
+    "adjust": "Laras",
+    "adjustTitle": "Laras masa set semula",
+    "save": "Simpan",
+    "cancel": "Batal",
+    "resetsAt": "Set semula setiap hari pada {time}, {zone}",
+    "untilReset": "sehingga set semula pada {time}, {zone}",
+    "usedAt": "Digunakan pada {time}.",
+    "timeLabel": "Masa set semula",
+    "deviceClock": "jam peranti",
+    "used": "{name} ditandai digunakan",
+    "undo": "Buat asal"
+  },
+  "forge": {
+    "title": "Tempaan",
+    "description": "Tukar sumber lebihan kepada Emas Ibu Kota dan kutip Emas Ibu Kota harian.",
+    "subline": "{builderHall, plural, =0 {{name}, Dewan Bandar {townHall}, penghasilan Emas Ibu Kota} other {{name}, Dewan Bandar {townHall}, Dewan Pembina {builderHall}, penghasilan Emas Ibu Kota}}",
+    "daily": {
+      "title": "Emas Ibu Kota harian",
+      "amount": "+{gold} Emas Ibu Kota setiap hari pada Dewan Bandar {townHall}",
+      "none": "Emas Ibu Kota harian bermula pada Dewan Bandar 6.",
+      "name": "Emas Ibu Kota harian"
+    },
+    "slots": {
+      "title": "Slot tempaan",
+      "craftingTime": "Masa penghasilan 3 hari",
+      "open": "{open} daripada {total} slot dibuka pada Dewan Bandar {townHall}",
+      "boost": "Rangsangan pembina {percent}% dikenakan: {time}",
+      "slot": "Slot {number}",
+      "requires": "Memerlukan Dewan Bandar {townHall}",
+      "locked": "Dikunci",
+      "idle": "Terbiar",
+      "idleHelp": "Pilih apa yang hendak ditempa",
+      "running": "Berjalan",
+      "done": "Siap",
+      "result": "Hasil",
+      "start": "Mula",
+      "stop": "Henti",
+      "reset": "Set semula",
+      "resource": "Sumber",
+      "rate": "{amount} {resource} untuk {capitalGold} Emas Ibu Kota, siap dalam {time}",
+      "left": "{time} lagi",
+      "ready": "Siap: {capitalGold} Emas Ibu Kota.",
+      "finished": "Siap {ago} lalu.",
+      "stopped": "Slot {number} dihentikan. Larian dikosongkan.",
+      "resetDone": "Slot {number} disetkan semula. Larian {resource} dikosongkan.",
+      "runningTitle": "{resource}, {amount}"
+    },
+    "auto": {
+      "title": "Tempa Auto",
+      "subtitle": "Ganjaran Gold Pass, berulang sendiri",
+      "repeats": "{amount} {resource} untuk {capitalGold} Emas Ibu Kota setiap {time}",
+      "nextRun": "Larian seterusnya bermula sendiri apabila yang ini tamat.",
+      "stop": "Henti Tempa Auto",
+      "stopped": "Tempa Auto dihentikan. Kitaran dikosongkan.",
+      "confirm": {
+        "title": "Henti Tempa Auto?",
+        "body": "Kitaran yang sedang berjalan akan dikosongkan: {amount} {resource} untuk {capitalGold} Emas Ibu Kota, dengan baki {time}. Tempa Auto berhenti berulang sehingga anda memulakannya semula dari halaman Tempaan. Ganjaran Gold Pass kekal hidup dalam Pas Musim.",
+        "undoHint": "Butang Buat asal kekal pada skrin beberapa saat selepas anda menghentikannya.",
+        "keep": "Teruskan berjalan",
+        "stop": "Henti Tempa Auto"
+      }
+    },
+    "rates": {
+      "title": "Kadar tempaan",
+      "description": "{builderHall, plural, =0 {Dewan Bandar {townHall}, satu larian dalam satu slot} other {Dewan Bandar {townHall} dan Dewan Pembina {builderHall}, satu larian dalam satu slot}}",
+      "autoTitle": "Kadar Tempa Auto",
+      "autoDescription": "Harga Gold Pass, separuh kos manual",
+      "resource": "Sumber",
+      "cost": "Kos",
+      "capitalGold": "Emas Ibu Kota",
+      "requires": "Memerlukan {requirement}"
+    }
+  },
+  "helpers": {
+    "title": "Pembantu",
+    "description": "Jejaki Perantis Pembina, Pembantu Makmal, Ahli Alkimia dan Prospector.",
+    "subline": "{builderHall, plural, =0 {{name}, Dewan Bandar {townHall}, pembantu Pondok Pembantu} other {{name}, Dewan Bandar {townHall}, Dewan Pembina {builderHall}, pembantu Pondok Pembantu}}",
+    "banner": "Pondok Pembantu dibina. Setiap pembantu dibuka mengikut Dewan Bandar: Pembantu Makmal 9, Perantis Pembina 10, Prospector 10, Ahli Alkimia 11.",
+    "names": {
+      "buildersApprentice": "Perantis Pembina",
+      "labAssistant": "Pembantu Makmal",
+      "alchemist": "Ahli Alkimia",
+      "prospector": "Prospector"
+    },
+    "from": "Dewan Bandar {townHall} ke atas",
+    "lockedCard": "Memerlukan Dewan Bandar {townHall}",
+    "dailyUse": "Guna harian",
+    "level": "Tahap",
+    "levelOption": "Tahap {level}",
+    "levelTownHall": "DB {townHall}",
+    "none": "Tiada",
+    "noLevel": "Pilih tahap anda untuk melihat statistik.",
+    "noLevelCalculator": "Pilih tahap anda untuk menggunakan kalkulator.",
+    "nextLevel": "{gems, select, 0 {Tahap {level} percuma} other {Tahap {level} berharga {gems} permata}}",
+    "saves": "Menjimatkan {time} setiap guna",
+    "levelRequires": "Memerlukan Dewan Bandar {townHall}",
+    "assignment": {
+      "builderTitle": "Naik taraf untuk dipercepat",
+      "researchTitle": "Kajian untuk dipercepat",
+      "none": "Tiada",
+      "builderHelp": "Menyenaraikan bangunan, wira, Dewan Bandar, senjata Dewan Bandar dan modul pertahanan buatan yang sedang dinaik taraf.",
+      "researchHelp": "Kajian sahaja: menyenaraikan pasukan, mantera dan mesin kepung yang sedang dikaji.",
+      "builderEmpty": "Tiada naik taraf pembina aktif untuk ditugaskan.",
+      "researchEmpty": "Tiada kajian makmal aktif untuk ditugaskan.",
+      "once": "Guna sekali",
+      "untilDone": "Sehingga siap",
+      "assignedTo": "Ditugaskan kepada",
+      "clearsAfterUse": "Dikosongkan selepas satu kali guna.",
+      "staysUntilDone": "Kekal sehingga naik taraf siap.",
+      "clear": "Kosongkan tugasan",
+      "cleared": "Tugasan dikosongkan.",
+      "select": "Naik taraf yang ditugaskan",
+      "mode": "Mod tugasan",
+      "preview": "Guna sekarang: baki {before} menjadi {after}.",
+      "previewDone": "Guna sekarang: baki {before}, naik taraf siap.",
+      "upgradeTo": "{name} ke tahap {level}, baki {left}"
+    },
+    "used": {
+      "plain": "{name} ditandai digunakan",
+      "saved": "{name} digunakan pada {target}, jimat {time}"
+    },
+    "alchemist": {
+      "stats": {
+        "goldElixir": "Maks Emas atau Elixir",
+        "darkElixir": "Maks Elixir Gelap",
+        "bonus": "Bonus penukaran"
+      },
+      "calculator": "Kalkulator penukaran",
+      "from": "Dari",
+      "to": "Ke",
+      "amount": "Jumlah untuk ditukar",
+      "result": "{amount} {from} menghasilkan {output} {to}",
+      "help": "Termasuk bonus penukaran {bonus}% dan kadar 150 kepada 1.",
+      "nothingSaved": "Tiada apa-apa di sini disimpan."
+    },
+    "prospector": {
+      "lockedTitle": "Dikunci sehingga anda membukanya dengan 2,200 Mata Cabaran Musim",
+      "lockedHelp": "Hidupkannya di halaman Pas Musim selepas anda membukanya dalam permainan.",
+      "toSeasonPass": "Buka Pas Musim",
+      "subtitle": "Dewan Bandar 10 ke atas, dibuka dengan Mata Cabaran Musim",
+      "lockedBadge": "Dikunci",
+      "unlockedBadge": "Dibuka",
+      "levelOnly": "Tahap 1 (satu-satunya tahap)",
+      "limits": {
+        "shiny": "Maks Shiny ore",
+        "glowy": "Maks Glowy ore",
+        "starry": "Maks Starry ore"
+      },
+      "calculator": "Kalkulator penukaran ore",
+      "ores": {
+        "shiny": "Shiny ore",
+        "glowy": "Glowy ore",
+        "starry": "Starry ore"
+      },
+      "help": "10 Shiny ore menghasilkan 1 Glowy ore. 100 Glowy ore menghasilkan 1 Starry ore."
+    }
+  },
+  "seasonPass": {
+    "title": "Pas Musim",
+    "description": "Tetapkan rangsangan dan ganjaran Gold Pass yang memendekkan masa naik taraf.",
+    "subline": "{name}, Dewan Bandar {townHall}, ganjaran Gold Pass aktif musim ini",
+    "lockedTitle": "Pas Musim dikunci",
+    "lockedBody": "Gold Pass memerlukan Dewan Bandar 7. Kampung ini berada pada Dewan Bandar {townHall}.",
+    "month": {
+      "title": "{month}",
+      "subtitle": "Rangsangan disetkan semula pada {reset}, ganjaran kekal.",
+      "key": "Kunci bulan",
+      "rolled": "Bulan baharu bermula. Rangsangan pembina dan rangsangan kajian disetkan semula kepada 0%. Ganjaran kekal.",
+      "undoReset": "Buat asal set semula",
+      "dismiss": "Tutup",
+      "restored": "Rangsangan dipulihkan untuk bulan ini.",
+      "undo": "Buat asal"
+    },
+    "boosts": {
+      "title": "Ganjaran rangsangan",
+      "description": "Gold Pass memendekkan masa naik taraf musim ini.",
+      "builder": "Rangsangan pembina",
+      "research": "Rangsangan kajian",
+      "applies": "Terpakai pada masa Pembina, Kajian dan Haiwan, garis masa giliran dan masa penghasilan Tempaan.",
+      "saved": "Disimpan bersama bulan ini.",
+      "value": "{percent, plural, =0 {Mati} other {{percent}%}}",
+      "option": "{percent, plural, =0 {0%} other {{percent}%}}",
+      "builderEffect": "{percent, plural, =0 {Masa penghasilan Tempaan ialah 3h.} other {Masa penghasilan Tempaan ialah {time}.}}",
+      "researchEffect": "{percent, plural, =0 {Masa kajian dan haiwan tidak berubah.} other {Masa kajian dan haiwan lebih pendek {percent}%.}}"
+    },
+    "unlocks": {
+      "title": "Pembukaan Cabaran Musim",
+      "description": "Bukan sebahagian daripada Gold Pass",
+      "prospector": "Prospector",
+      "prospectorHelp": "Pembantu untuk Dewan Bandar 10 ke atas, berharga 2,200 Mata Cabaran Musim",
+      "shows": "Dipaparkan di halaman Pembantu"
+    },
+    "perks": {
+      "title": "Ganjaran Gold Pass",
+      "description": "Ganjaran Gold Pass aktif musim ini",
+      "referenceOnly": "Rujukan sahaja",
+      "referenceNote": "Tidak mengubah apa-apa lagi dalam aplikasi.",
+      "hoggyBank": {
+        "label": "Hoggy Bank",
+        "note": "Menyimpan sumber semasa anda bermain, kutip pada akhir musim"
+      },
+      "gemDonations": {
+        "label": "Derma 1 Permata",
+        "note": "Derma pasukan dan mantera dengan hanya 1 permata setiap satu"
+      },
+      "autoForge": {
+        "label": "Tempa Auto",
+        "note": "Menukar sumber kepada Emas Ibu Kota secara automatik"
+      },
+      "autoForgeEffect": "Menghidupkan baris Tempa Auto di halaman Tempaan dan cip Gambaran keseluruhan.",
+      "requestTimeReduction": {
+        "label": "Pengurangan Masa Permintaan",
+        "note": "Mengurangkan pemasa tunggu permintaan pasukan"
+      }
+    }
+  }
+}

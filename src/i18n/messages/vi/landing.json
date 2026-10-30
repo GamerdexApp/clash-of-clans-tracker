@@ -1,0 +1,87 @@
+{
+  "header": {
+    "label": "Các mục của trang",
+    "features": "Tính năng",
+    "faq": "Câu hỏi thường gặp",
+    "villages": "Làng",
+    "settings": "Cài đặt"
+  },
+  "hero": {
+    "title": "Theo dõi tiến độ Clash of Clans của bạn",
+    "description": "Giữ mọi làng ở một nơi: công trình, quân, anh hùng, nâng cấp và nhiệm vụ hằng ngày cho Làng Chính, Căn Cứ Thợ Xây và Thủ Đô Bang Hội.",
+    "note": "Miễn phí. Không cần tài khoản. Mọi dữ liệu nằm trong trình duyệt của bạn.",
+    "screenshotAlt": "Trang Tổng quan của Clash of Clans Tracker hiển thị tiến độ làng, danh hiệu cúp và thành tựu",
+    "continue": "Tiếp tục với",
+    "continueLine": "{builderHall, plural, =0 {Nhà Chính {townHall}, cập nhật {updated}} other {Nhà Chính {townHall}, Nhà Thợ Xây {builderHall}, cập nhật {updated}}}"
+  },
+  "cta": {
+    "create": "Tạo làng đầu tiên của bạn",
+    "learnMore": "Tìm hiểu thêm",
+    "overview": "Đến Tổng quan",
+    "newVillage": "Làng mới"
+  },
+  "features": {
+    "label": "Mọi thứ bạn cần",
+    "title": "Toàn bộ tiến độ của bạn ở một nơi",
+    "description": "Từ Nhà Chính đến Thủ Đô Bang Hội, mỗi cấp bạn theo dõi được lưu ngay khi bạn thay đổi.",
+    "items": {
+      "item1": {
+        "title": "Nhiều làng",
+        "text": "Tạo và quản lý không giới hạn số làng. Theo dõi riêng các tài khoản và căn cứ khác nhau."
+      },
+      "item2": {
+        "title": "Theo dõi tiến độ",
+        "text": "Theo dõi chính xác những gì bạn đã hoàn thành, thu thập hoặc mở khóa trên mọi làng."
+      },
+      "item3": {
+        "title": "Tổng quan",
+        "text": "Xem tiến độ trong nháy mắt với số liệu tóm tắt, bộ đếm hằng ngày và chỉ báo hoàn thành."
+      },
+      "item4": {
+        "title": "Sao lưu và đồng bộ",
+        "text": "Xuất tiến độ thành tệp JSON, hoặc đồng bộ giữa các thiết bị bằng kho lưu trữ đám mây của riêng bạn."
+      },
+      "item5": {
+        "title": "Riêng tư",
+        "text": "Dữ liệu của bạn nằm trong trình duyệt. Lệnh gọi máy chủ duy nhất là tra cứu player tag tùy chọn, hỏi Supercell về chỉ số công khai của bạn."
+      },
+      "item6": {
+        "title": "Chế độ tối",
+        "text": "Dễ dùng cả ngày lẫn đêm. Chọn sáng, tối hoặc theo thiết bị trong Cài đặt."
+      }
+    }
+  },
+  "faq": {
+    "label": "Có thắc mắc?",
+    "title": "Câu hỏi thường gặp",
+    "items": {
+      "item1": {
+        "question": "Clash of Clans Tracker là gì?",
+        "answer": "Đây là công cụ theo dõi tiến độ cho Clash of Clans. Nó giúp bạn quản lý nhiều tài khoản và theo dõi nâng cấp, thành tựu, nhiệm vụ hằng ngày và tiến độ chung ở một nơi."
+      },
+      "item2": {
+        "question": "Dữ liệu của tôi được lưu thế nào?",
+        "answer": "Mọi thứ được lưu trong trình duyệt của bạn, nên tiến độ của bạn là riêng tư và không cần tài khoản. Bạn có thể xuất và nhập dưới dạng tệp JSON để sao lưu. Tra cứu player tag tùy chọn gửi tag đến một server action nhỏ, nơi hỏi Supercell API về chỉ số công khai của bạn."
+      },
+      "item3": {
+        "question": "Tôi có thể theo dõi nhiều làng không?",
+        "answer": "Có. Tạo bao nhiêu làng tùy thích, mỗi làng có tiến độ riêng, và chuyển đổi giữa chúng trong thanh bên."
+      },
+      "item4": {
+        "question": "Có đồng bộ giữa các thiết bị không?",
+        "answer": "Có, nếu bạn muốn. Mở Cài đặt và kết nối GitHub, Google Drive, Dropbox hoặc OneDrive. Dữ liệu của bạn được lưu trong tài khoản của chính bạn, và đồng bộ luôn tắt cho đến khi bạn bật."
+      },
+      "item5": {
+        "question": "Ứng dụng này có miễn phí không?",
+        "answer": "Có. Hoàn toàn miễn phí, không đăng ký trả phí, không quảng cáo và không cần đăng ký tài khoản."
+      }
+    }
+  },
+  "final": {
+    "title": "Bắt đầu theo dõi các làng của bạn ngay hôm nay",
+    "description": "Không cần tài khoản và không cần đăng ký. Làng đầu tiên của bạn chỉ cần một cái tên."
+  },
+  "updated": {
+    "justNow": "vừa xong"
+  }
+}

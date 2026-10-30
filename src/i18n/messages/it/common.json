@@ -1,0 +1,32 @@
+{
+  "gate": {
+    "title": "Nessun villaggio attivo",
+    "description": "Scegli un villaggio o creane uno per vedere questa pagina.",
+    "newVillage": "Nuovo villaggio",
+    "chooseVillage": "Scegli un villaggio"
+  },
+  "townHallTab": {
+    "title": "Municipio",
+    "supercharge": "Supercarica",
+    "superchargeDone": "{current} di {max} livelli di supercarica sbloccati a questo Municipio sono completati.",
+    "superchargeProgress": "Progresso supercarica"
+  },
+  "heroesUnlock": "Gli eroi si sbloccano con la Sala degli Eroi.",
+  "progressLabel": "Progresso di {name}",
+  "countdownLabel": "Conto alla rovescia di {name}",
+  "capitalGold": "Oro Capitale",
+  "queue": {
+    "conflict": "Conflitto",
+    "level": "Lv {level}",
+    "levelSupercharge": "Supercarica Lv {level}",
+    "now": "Ora",
+    "itemTitle": "{name} Lv {level}"
+  },
+  "finishDescription": "{name}, Lv {from} a {to}, {method}, {time} {unit}",
+  "lookupError": {
+    "rateLimit": "Attendi {seconds} s prima di riprovare.",
+    "notFound": "Il giocatore {tag} non è stato trovato.",
+    "api": "L'API di Supercell ha risposto {status}.",
+    "network": "La ricerca del giocatore non ha raggiunto il server."
+  }
+}

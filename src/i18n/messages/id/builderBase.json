@@ -1,0 +1,63 @@
+{
+  "upgrades": {
+    "title": "Peningkatan",
+    "subline": "{name}, Balai Pembangun {hall}",
+    "sublineNotSet": "{name}, Balai Pembangun belum diatur",
+    "tabsLabel": "Bagian Markas Pembangun",
+    "tabs": {
+      "defenses": "Pertahanan",
+      "army": "Pasukan",
+      "resources": "Sumber Daya",
+      "traps": "Jebakan",
+      "heroes": "Pahlawan",
+      "other": "Lainnya"
+    },
+    "strip": {
+      "title": "Pembangun",
+      "noBuilders": "Markas Pembangun punya dua pembangun.",
+      "openQueue": "Buka antrean dan linimasa",
+      "unassignedHelp": "Sebagian peningkatan tersimpan pada pembangun yang sudah dipakai peningkatan lain. Selesaikan atau batalkan."
+    }
+  },
+  "locked": {
+    "title": "Butuh Balai Kota 6",
+    "description": "Desa ini ada di Balai Kota {townHall}. Markas Pembangun terbuka di Balai Kota 6, atau saat kamu mengatur level Balai Pembangun."
+  },
+  "notSet": {
+    "action": "Atur level Balai Pembangun",
+    "troopsDescription": "Pasukan Markas Pembangun mengikuti level Balai Pembangun. Atur di halaman Peningkatan, tab Lainnya.",
+    "title": "Pilih level Balai Pembangun untuk mulai melacak",
+    "description": "Atur level Balai Pembangun di kotak di bawah. Daftar Markas Pembangun mengikutinya."
+  },
+  "hall": {
+    "title": "Balai Pembangun",
+    "notSet": "Belum diatur",
+    "option": "Balai Pembangun {level}",
+    "since": "{amount} {days, plural, other {hari}} di Balai Pembangun {level}",
+    "confirm": {
+      "title": "Ubah Balai Pembangun ke {level}?",
+      "raising": "Menaikkan level menampilkan lebih banyak bangunan dan batas lebih tinggi. Data yang kamu simpan tidak dihapus.",
+      "lowering": "Menurunkan level menyembunyikan bangunan dan batas di atasnya. Level yang kamu simpan tetap ada.",
+      "clearing": "Mengosongkan level menyembunyikan semua daftar Markas Pembangun. Level yang kamu simpan tetap ada.",
+      "setDays": "Atur Hari di Balai Pembangun ke hari ini",
+      "cancel": "Batal",
+      "confirm": "Ubah level"
+    },
+    "toast": "Balai Pembangun {from, plural, =0 {belum diatur} other {{from}}} ke {to, plural, =0 {belum diatur} other {{to}}}",
+    "undo": "Urungkan"
+  },
+  "other": {
+    "clockTower": "Menara Jam",
+    "clockTowerMax": "Maks Lv {level} di Balai Pembangun ini",
+    "clockTowerProgress": "Progres Menara Jam"
+  },
+  "empty": {
+    "title": "Belum ada apa-apa",
+    "description": "Tidak ada bangunan jenis ini di level Balai Pembangun ini.",
+    "allMax": "Semuanya di sini sudah maksimal. Matikan Sembunyikan Maks untuk melihatnya."
+  },
+  "heroes": {
+    "maxAtHall": "Maks Lv {level} di Balai Pembangun ini",
+    "progress": "Progres {name}"
+  }
+}

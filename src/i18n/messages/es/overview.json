@@ -1,0 +1,112 @@
+{
+  "title": "Resumen",
+  "description": "Tu aldea de un vistazo: progreso, temporizadores diarios y todas las estadísticas guardadas.",
+  "subline": "{name}, calculado, solo lectura",
+  "header": {
+    "clanLevel": "{hasRole, select, true {Nivel de clan {level}, {role}} other {Nivel de clan {level}}}",
+    "achievements": "Logros",
+    "ringCaption": "{stars} de {maxStars} estrellas",
+    "viewAll": "Ver todo",
+    "townHall": "AY{level}"
+  },
+  "dailies": {
+    "title": "Diarias",
+    "closedTitle": "Las diarias se abren en el Ayuntamiento 3",
+    "closedBody": "La Forja, los Ayudantes y el Pase de temporada se abren según sube el Ayuntamiento.",
+    "closedLink": "Ver qué está abierto",
+    "groups": {
+      "helpers": "Ayudantes",
+      "daily": "Diaria",
+      "goldPass": "Pase de Oro"
+    },
+    "requires": "Requiere {requirement}",
+    "openForge": "Abrir Forja",
+    "openHelpers": "Abrir Ayudantes",
+    "unlockProspector": "Desbloquear en Pase de temporada",
+    "helperHut": "Helper Hut",
+    "townHall": "Ayuntamiento {level}",
+    "starBonus": "Bono de estrellas",
+    "capitalGold": "Oro de Capital",
+    "autoForge": "Forja automática",
+    "forgeSlots": "Ranuras de la Forja",
+    "notRunning": "Parada",
+    "running": "En curso",
+    "stopAuto": "Detener Forja automática",
+    "autoLine": "{amount} {resource} a {capitalGold} Oro de Capital",
+    "slotsLine": "{running} de {open} ranuras en curso",
+    "slotsDone": "{done, plural, one {1 ranura terminada} other {{amount} ranuras terminadas}}",
+    "autoPerk": "la ventaja de Forja automática",
+    "helperPreview": "Usar ahora: {before} restantes pasan a {after}",
+    "goldPass": {
+      "edit": "Editar en Pase de temporada",
+      "builder": "Mejora de constructor",
+      "research": "Mejora de investigación",
+      "hoggyBank": "Hoggy Bank",
+      "gemDonations": "Donaciones de 1 gema",
+      "autoForge": "Forja automática",
+      "requestReduction": "Reducción del tiempo de solicitud",
+      "on": "Sí",
+      "off": "No",
+      "resets": "Las mejoras vuelven al 0% el {date}.",
+      "readOnly": "Abrir el Resumen nunca cambia la aldea ni su hora de última modificación."
+    }
+  },
+  "league": {
+    "open": "Mostrar recompensas de {name}",
+    "homeKind": "Liga de la Aldea Principal",
+    "builderKind": "Liga de la Base del Constructor",
+    "noData": "No hay datos de esta liga con este Ayuntamiento.",
+    "battle": "Resultados de batalla",
+    "stars": "Estrellas",
+    "attacker": "Oro del Constructor del atacante",
+    "defender": "Elixir del Constructor del defensor"
+  },
+  "builder": {
+    "title": "Base del Constructor",
+    "hall": "Sala del Constructor {level}",
+    "trophies": "{trophies} trofeos",
+    "daysAt": "Días en SC{level}",
+    "notSetTitle": "Sala del Constructor sin fijar",
+    "notSetBody": "La Base del Constructor está abierta en el Ayuntamiento 6, pero esta aldea tiene Sala del Constructor 0. El progreso, los trofeos y las tropas aparecen cuando el nivel es 1 o superior.",
+    "notSetAction": "Fijar nivel de la Sala del Constructor",
+    "lockedBody": "Requiere Ayuntamiento 6",
+    "troops": "Tropas",
+    "heroes": "Héroes"
+  },
+  "capital": {
+    "title": "Capital del Clan",
+    "hall": "Sala de la Capital {level}",
+    "notSetTitle": "La Capital del Clan no está configurada",
+    "notSetBody": "Capital Peak aún no tiene nivel de sala, así que no hay progreso de distritos que mostrar. Fija el nivel de la Sala de la Capital para empezar el seguimiento.",
+    "notSetAction": "Fijar nivel de la Sala de la Capital",
+    "lockedBody": "Requiere Ayuntamiento 3",
+    "districtHall": "Sala de Distrito {level}",
+    "notUnlocked": "Sin desbloquear",
+    "unlocksAt": "Se desbloquea con la Sala de la Capital {level}",
+    "needsDistrictHall": "Fija una Sala de Distrito para empezar",
+    "noData": "Sin datos",
+    "more": "Mostrar {count} distritos más",
+    "showFewer": "Mostrar menos",
+    "openDistricts": "Abrir Distritos"
+  },
+  "home": {
+    "title": "Aldea Principal",
+    "townHall": "Ayuntamiento {level}",
+    "daysAt": "Días en AY{level}",
+    "perHour": "por hora",
+    "stored": "almacenado",
+    "cards": {
+      "locked": "Requiere {requirement}"
+    },
+    "queue": "Abrir",
+    "troops": "Tropas",
+    "spells": "Hechizos",
+    "heroes": "Héroes",
+    "siege": "Máquinas de asedio",
+    "pets": "Mascotas",
+    "legend": "Contorno verde: al máximo para este Ayuntamiento. Contorno discontinuo: bloqueado. Reloj: hay una mejora en curso.",
+    "tile": "{hasRequirement, select, true {{name}, requiere {requirement}} other {{name}, nivel {level}{max, plural, =0 {} other { de {max}}}}}",
+    "heroLocked": "Requiere {requirement}",
+    "petsLocked": "Requiere Ayuntamiento 14"
+  }
+}

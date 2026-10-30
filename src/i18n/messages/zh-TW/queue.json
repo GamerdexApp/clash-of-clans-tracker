@@ -1,0 +1,177 @@
+{
+  "goldPass": "{percent, plural, =0 {無黃金通行證加速} other {黃金通行證 -{percent}%}}",
+  "options": {
+    "open": "佇列選項",
+    "title": "佇列選項",
+    "description": "變更佇列排程方式的設定。",
+    "done": "完成"
+  },
+  "totals": {
+    "freeValue": "{free} / {total}",
+    "queued": "佇列中的升級",
+    "time": "佇列時間",
+    "allDone": "所有通道已完成",
+    "none": "佇列為空",
+    "cost": "佇列費用",
+    "noCost": "無費用"
+  },
+  "lane": {
+    "idle": "空閒",
+    "queueEmpty": "此通道沒有排入任何項目。",
+    "startNow": "立即開始",
+    "remove": "移除",
+    "moveUp": "上移",
+    "moveDown": "下移",
+    "moveToLane": "移至通道",
+    "levels": "Lv {from} 至 {to}",
+    "removed": "{name}已從佇列移除",
+    "started": "{name}已開始",
+    "undo": "復原"
+  },
+  "timeline": {
+    "title": "時間軸",
+    "zoomLabel": "時間軸長度",
+    "zooms": {
+      "3": "3 天",
+      "7": "1 週",
+      "14": "2 週",
+      "30": "1 個月",
+      "90": "3 個月"
+    },
+    "conflictsTitle": "衝突",
+    "noConflicts": "沒有衝突。每個升級都在其所需等級之後開始。",
+    "laneLabel": "{label}時間軸",
+    "now": "現在",
+    "idle": "空閒"
+  },
+  "add": {
+    "search": "搜尋升級",
+    "hiddenFromAll": "「全部」中已隱藏：{names}。",
+    "chooseCategories": "選擇分類",
+    "chooseCategoriesHelp": "勾選的分類會顯示在「全部」中，未勾選的只會顯示在各自的標籤中。",
+    "add": "加入",
+    "addUpToHere": "加入到這裡為止",
+    "showMore": "顯示更多等級",
+    "showMoreUpgrades": "顯示更多升級",
+    "nothing": "這裡沒有可加入的項目。",
+    "nothingDescription": "此檢視中的每個等級都已排入佇列、正在進行，或尚未開放。",
+    "added": "{count, plural, other {已加入{name}的 {amount} 個等級}}",
+    "close": "完成",
+    "unlockTitle": "未解鎖",
+    "unlockHelp": "請先解鎖這些項目，才能將它們的等級排入佇列。",
+    "markUnlocked": "標記為已解鎖",
+    "showAllLocked": "顯示全部 {count} 個",
+    "showFewerLocked": "顯示較少",
+    "allLabel": "全部"
+  },
+  "lanes": {
+    "builder": {
+      "title": "建築工人佇列",
+      "subline": "{name}，規劃每位建築工人接下來要做什麼",
+      "back": "返回建築工人",
+      "free": "空閒的建築工人",
+      "laneBusy": "這位建築工人正在忙碌。",
+      "goblin": {
+        "label": "哥布林建築工人",
+        "help": "活動期間增加第七條建築工人通道。"
+      },
+      "gate": "請先建造建築工人小屋。第一座免費且立即完成。",
+      "add": {
+        "title": "加入升級",
+        "description": "選擇建築工人接下來要做什麼。你加入的等級會依序排入佇列。",
+        "lane": "建築工人通道",
+        "search": "搜尋升級"
+      },
+      "categories": {
+        "defenses": "防禦",
+        "armyBuildings": "軍隊",
+        "resourceBuildings": "資源",
+        "traps": "陷阱",
+        "heroes": "英雄",
+        "townHall": "大本營",
+        "craftedDefenses": "打造防禦",
+        "guardians": "守護者",
+        "supercharges": "超級強化"
+      }
+    },
+    "research": {
+      "title": "研究佇列",
+      "subline": "{name}，規劃實驗室接下來要研究什麼",
+      "back": "返回研究",
+      "free": "空閒的實驗室",
+      "laneBusy": "這條通道正在忙碌。",
+      "goblin": {
+        "label": "哥布林研究員",
+        "help": "活動期間增加第二條研究通道。"
+      },
+      "gate": "沒有可用的研究通道。",
+      "add": {
+        "title": "加入研究",
+        "description": "選擇實驗室接下來要研究什麼。你加入的等級會依序排入佇列。",
+        "lane": "研究通道",
+        "search": "搜尋研究"
+      },
+      "categories": {
+        "troops": "部隊",
+        "spells": "法術",
+        "siegeMachines": "攻城"
+      }
+    },
+    "pet": {
+      "title": "寵物佇列",
+      "subline": "{name}，規劃寵物屋接下來要升級什麼",
+      "back": "返回寵物",
+      "free": "寵物屋",
+      "laneBusy": "寵物屋正在忙碌。",
+      "gate": "寵物在大本營 14 解鎖。",
+      "add": {
+        "title": "加入寵物升級",
+        "description": "選擇寵物屋接下來要升級哪隻寵物。你加入的等級會依序排入佇列。",
+        "lane": "寵物屋",
+        "search": "搜尋寵物"
+      },
+      "categories": {
+        "pets": "寵物"
+      }
+    },
+    "bbBuilder": {
+      "title": "建築工人基地佇列",
+      "subline": "{name}，建築工人大本營 {hall}，規劃每位建築工人接下來要做什麼",
+      "back": "返回建築工人基地",
+      "free": "空閒的建築工人",
+      "laneBusy": "這位建築工人正在忙碌。",
+      "gate": "建築工人基地有兩位建築工人。",
+      "add": {
+        "title": "加入升級",
+        "description": "選擇建築工人基地的建築工人接下來要做什麼。你加入的等級會依序排入佇列。",
+        "lane": "建築工人",
+        "search": "搜尋升級"
+      },
+      "categories": {
+        "defenses": "防禦",
+        "armyBuildings": "軍隊",
+        "resourceBuildings": "資源",
+        "traps": "陷阱",
+        "heroes": "英雄",
+        "other": "其他"
+      }
+    },
+    "bbResearch": {
+      "title": "星空實驗室佇列",
+      "subline": "{name}，建築工人大本營 {hall}，規劃星空實驗室接下來要研究什麼",
+      "back": "返回部隊",
+      "free": "空閒的欄位",
+      "laneBusy": "星空實驗室正在忙碌。",
+      "gate": "星空實驗室一次只能研究一種部隊。",
+      "add": {
+        "title": "加入研究",
+        "description": "選擇星空實驗室接下來要研究哪種部隊。你加入的等級會依序排入佇列。",
+        "lane": "星空實驗室",
+        "search": "搜尋部隊"
+      },
+      "categories": {
+        "troops": "部隊"
+      }
+    }
+  }
+}

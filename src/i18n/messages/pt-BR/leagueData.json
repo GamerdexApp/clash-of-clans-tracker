@@ -1,0 +1,17 @@
+{
+  "stats": {
+    "attacksPerWeek": "Ataques por semana",
+    "promoted": "% superior promovido",
+    "demoted": "% inferior rebaixado",
+    "trophyRange": "Faixa de troféus",
+    "starsForBonus": "Estrelas para o bônus de estrelas"
+  },
+  "sections": {
+    "maxLoot": "Saque máx. disponível",
+    "leagueBonus": "Bônus de liga máx.",
+    "weeklyStarBonus": "Bônus de estrelas semanal",
+    "starBonusReward": "Recompensa do bônus de estrelas"
+  },
+  "range": "{min} a {max}",
+  "rangeOpen": "{min}+"
+}

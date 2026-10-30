@@ -1,0 +1,138 @@
+{
+  "title": "Toplu düzenleme",
+  "description": "Birçok seviyeyi bir anda değiştir. Değişiklikleri kaydet düğmesine basana kadar hiçbir şey kaydedilmez.",
+  "subline": "{name}, Belediye Binası {townHall}, hazırlanan değişiklikler",
+  "scopes": {
+    "home": "Ana Köy",
+    "builder": "İnşaatçı Üssü",
+    "capital": "Klan Başkenti"
+  },
+  "scopeNav": "Kapsam",
+  "requires": "{requirement} gerekir",
+  "trackingOff": "Takip kapalı",
+  "changedCount": "{count, plural, one {1 değişiklik} other {{amount} değişiklik}}",
+  "chip": "Kaydedilmemiş değişiklikler",
+  "bar": {
+    "unsaved": "{count, plural, one {1 kaydedilmemiş değişiklik} other {{amount} kaydedilmemiş değişiklik}}",
+    "none": "Kaydedilmemiş değişiklik yok",
+    "discard": "Vazgeç",
+    "save": "Değişiklikleri kaydet"
+  },
+  "saved": "{count, plural, one {1 değişiklik kaydedildi} other {{amount} değişiklik kaydedildi}}",
+  "undo": "Geri al",
+  "discardDialog": {
+    "title": "{count, plural, one {1 kaydedilmemiş değişiklikten vazgeçilsin mi?} other {{amount} kaydedilmemiş değişiklikten vazgeçilsin mi?}}",
+    "body": "Her satır kayıtlı seviyesine döner.",
+    "keep": "Düzenlemeye devam et",
+    "discard": "Değişikliklerden vazgeç"
+  },
+  "leave": {
+    "title": "{count, plural, one {1 kaydedilmemiş değişikliğin var} other {{amount} kaydedilmemiş değişikliğin var}}",
+    "body": "Ayrılmadan önce kaydet veya vazgeç.",
+    "save": "Kaydet ve ayrıl",
+    "discard": "Vazgeç ve ayrıl",
+    "keep": "Düzenlemeye devam et"
+  },
+  "toolbar": {
+    "label": "Toplu işlemler",
+    "selectAll": "Tümünü seç ({count})",
+    "selected": "{count, plural, one {1 satır seçildi} other {{amount} satır seçildi}}",
+    "clearSelection": "Seçimi temizle",
+    "scopeAll": "{category} içindeki {count} satırın tümüne uygulanır",
+    "scopeSelected": "{count, plural, one {Seçilen 1 satıra uygulanır} other {Seçilen {amount} satıra uygulanır}}",
+    "max": "Tümünü maksla",
+    "maxSelected": "Seçilenleri maksla",
+    "reset": "Tümünü sıfırla",
+    "resetSelected": "Seçilenleri sıfırla",
+    "setLevel": "Seviye ayarla",
+    "levelLabel": "Seçilen satırlar için seviye",
+    "applyLevel": "{count, plural, one {1 satıra uygula} other {{amount} satıra uygula}}",
+    "hallLabel": "Salon seviyesinin maksimumuna ayarla",
+    "hallCurrent": "{hall} {level} (mevcut)",
+    "hallOption": "{hall} {level}",
+    "hallPlaceholder": "{hall} seç"
+  },
+  "confirm": {
+    "title": "{count, plural, one {1 satır düşürülsün mü?} other {{amount} satır düşürülsün mü?}}",
+    "body": "Bu işlem taslağı değiştirir. Değişiklikleri kaydet düğmesine basana kadar hiçbir şey kaydedilmez.",
+    "superchargeNote": "En üst seviyesinin altına düşen bir bina Süper Şarj kademesini de kaybeder.",
+    "apply": "Taslağa uygula",
+    "cancel": "İptal",
+    "line": "{name}: {from} - {to}",
+    "more": "ve {count} tane daha"
+  },
+  "rows": {
+    "notBuilt": "İnşa edilmedi",
+    "toMax": "Maksimuma {count}",
+    "atMax": "Maksimumda",
+    "changed": "{from} değerinden {to} değerine değişti",
+    "level": "{name} seviyesi",
+    "raise": "{name} artır",
+    "lower": "{name} azalt",
+    "max": "Maks",
+    "select": "{name} seç",
+    "selectGroup": "Her {name} öğesini seç",
+    "supercharge": "Süper Şarj",
+    "reachFirst": "Önce seviye {level} seviyesine ulaş",
+    "slider": "{name} kaydırıcısı",
+    "groupBuilt": "{count} inşa edildi, maks. seviye {max}",
+    "expand": "{name} göster",
+    "collapse": "{name} gizle"
+  },
+  "category": {
+    "atMax": "{hall} {level} için {total} öğeden {done} tanesi maksimumda",
+    "rowsAtMax": "{total} öğeden {done} tanesi maksimumda",
+    "empty": "Bu kategoride henüz düzenlenecek bir şey yok.",
+    "locked": "{requirement} gerekir",
+    "lockedSuffix": " (kilitli)",
+    "nav": "Kategoriler"
+  },
+  "walls": {
+    "total": "Toplam",
+    "allocated": "Yerleştirilen",
+    "remaining": "Kalan",
+    "maxAll": "Tümünü maksla",
+    "resetAll": "Tümünü sıfırla",
+    "maxAllHelp": "Kalan her suru en yüksek seviyeye taşır",
+    "level": "Seviye {level} surlar"
+  },
+  "builder": {
+    "profile": "İnşaatçı Üssü profili",
+    "hall": "İnşaatçı Salonu seviyesi",
+    "hallHelp": "İnşaatçı Salonu {level}, aşağıdaki her satırın en yüksek seviyesini belirler. Düşürmeden önce sorar ve yalnızca yeni sınırın üstündeki satırları düşürür.",
+    "none": "Bu İnşaatçı Salonu seviyesinde kullanılabilir bina yok",
+    "raise": "İnşaatçı Salonunu artır",
+    "lower": "İnşaatçı Salonunu azalt",
+    "trophies": "Kupalar",
+    "bestTrophies": "En iyi kupalar",
+    "league": "Lig",
+    "hallConfirmTitle": "İnşaatçı Salonu {level} seviyesine düşürülsün mü?"
+  },
+  "hallNames": {
+    "home": "Belediye Binası",
+    "builder": "İnşaatçı Salonu",
+    "district": "Bölge Salonu",
+    "capital": "Başkent Salonu"
+  },
+  "capital": {
+    "profile": "Klan Başkenti profili",
+    "hall": "Başkent Salonu",
+    "none": "Yok",
+    "level": "Başkent Salonu {level}",
+    "contributions": "Klan Başkenti katkıları",
+    "unit": "Başkent Altını",
+    "districtHall": "Bölge Salonu",
+    "districtNone": "Yok",
+    "districtLevel": "Bölge Salonu {level}",
+    "requiresCapitalHall": "Başkent Salonu {level} gerekir",
+    "unlockHint": "Binaları açmak için yukarıda bir {label} ayarla.",
+    "parts": "Bölümler",
+    "off": "Klan Başkenti takibi kapalı",
+    "offBody": "Takibi Klan Başkenti sayfalarından yeniden aç. Hiçbir şey silinmedi.",
+    "offAction": "Klan Başkentini aç"
+  },
+  "empty": {
+    "title": "Etkin köy yok",
+    "description": "Toplu düzenlemeyi kullanmak için bir köy seç veya yeni bir köy oluştur."
+  }
+}

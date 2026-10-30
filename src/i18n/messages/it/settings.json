@@ -1,0 +1,178 @@
+{
+  "title": "Impostazioni",
+  "subline": "Preferenze, backup e dati",
+  "tabsLabel": "Sezioni delle impostazioni",
+  "tabs": {
+    "sync": "Sincronizzazione cloud",
+    "preferences": "Preferenze",
+    "data": "Backup e dati",
+    "about": "Info"
+  },
+  "appearance": {
+    "title": "Aspetto",
+    "description": "Scegli l'aspetto dell'app.",
+    "themeLabel": "Tema",
+    "themes": {
+      "light": "Chiaro",
+      "dark": "Scuro",
+      "system": "Sistema"
+    },
+    "themeNote": "Sistema segue il tuo dispositivo. Ora è {mode}."
+  },
+  "builders": {
+    "title": "Impostazioni Costruttori",
+    "description": "Aiuti degli eventi che aggiungono uno slot alle tue code.",
+    "goblinBuilder": "Costruttore Goblin",
+    "goblinBuilderHelp": "Aggiunge uno slot Costruttore extra, il settimo, per gli edifici.",
+    "goblinResearch": "Ricerca Goblin",
+    "goblinResearchHelp": "Aggiunge uno slot di ricerca extra nel Laboratorio."
+  },
+  "activeHours": {
+    "title": "Ore attive",
+    "description": "Imposta le ore in cui giochi ogni giorno. Le sequenze temporali delle code aggiungono una pausa quando un potenziamento finisce fuori da questa fascia.",
+    "start": "Ora di inizio",
+    "end": "Ora di fine",
+    "save": "Salva",
+    "clear": "Cancella",
+    "status": "Attivo dalle {start} alle {end}, secondo il tuo orologio locale.",
+    "none": "Nessuna ora attiva impostata. Ogni ora conta come attiva.",
+    "sameTime": "Inizio e fine coincidono. Scegli due orari diversi, oppure cancella la fascia.",
+    "overnight": "Questa fascia passa la notte, dalle {start} alle {end} del giorno dopo.",
+    "unsaved": "Hai modifiche non salvate.",
+    "clockChanged": "Lo scarto del tuo orologio è cambiato. Le ore attive coprono ancora dalle {start} alle {end} sul tuo orologio."
+  },
+  "data": {
+    "title": "Gestione dati",
+    "storageNote": {
+      "title": "Salvato in questo browser.",
+      "body": "Cancellare i dati del browser elimina i tuoi villaggi. Esporta un backup ogni tanto."
+    },
+    "export": {
+      "title": "Esporta",
+      "description": "Scarica tutti i villaggi e le tue impostazioni in un unico file.",
+      "button": "Esporta tutti i villaggi",
+      "done": "Backup scaricato"
+    },
+    "import": {
+      "title": "Importa",
+      "fileLabel": "File di backup",
+      "chooseFile": "Scegli file",
+      "noFile": "Nessun file scelto",
+      "description": "Scegli un file di backup. Lo controlli prima che cambi qualcosa.",
+      "review": "Controlla importazione",
+      "merged": "Backup unito",
+      "replaced": "Il backup ha sostituito i tuoi dati",
+      "undo": "Annulla"
+    },
+    "reset": {
+      "title": "Reimposta tutti i dati",
+      "warning": "Elimina ogni villaggio e impostazione in questo browser.",
+      "button": "Reimposta tutti i dati",
+      "confirmTitle": "Eliminare tutto?",
+      "confirmBody": "Questo rimuove {names}. Puoi annullare per dieci secondi.",
+      "cancel": "Annulla",
+      "confirm": "Elimina tutto",
+      "done": "Tutti i dati eliminati",
+      "doneMessage": "{amount} {count, plural, one {villaggio rimosso} other {villaggi rimossi}}.",
+      "doneMessageDisconnected": "{amount} {count, plural, one {villaggio rimosso} other {villaggi rimossi}}. La sincronizzazione è disconnessa su questo browser.",
+      "syncedCopy": "Elimina anche la copia sincronizzata su {provider}",
+      "syncedOn": "La sincronizzazione resta attiva. Gli altri tuoi dispositivi perdono questi villaggi alla prossima sincronizzazione. Se non sei sicuro, esporta prima un backup.",
+      "syncedOff": "Senza questa opzione, la sincronizzazione viene disconnessa su questo browser, così la prossima sincronizzazione non può riportare indietro i villaggi.",
+      "undo": "Annulla"
+    },
+    "villages": {
+      "title": "Villaggi",
+      "description": "Crea, modifica, cambia ed elimina villaggi.",
+      "manage": "Gestisci villaggi"
+    },
+    "villageCount": "{amount} {count, plural, one {villaggio} other {villaggi}}"
+  },
+  "importDialog": {
+    "title": "Controlla importazione",
+    "fileInfo": "{name}, {size}",
+    "bytes": "{count} B",
+    "kilobytes": "{count} KB",
+    "cancel": "Annulla",
+    "close": "Chiudi",
+    "merge": "Unisci a questo dispositivo",
+    "replace": "Sostituisci questo dispositivo",
+    "failedTitle": "Questo file non può essere importato.",
+    "errors": {
+      "notJson": "Questo file non è un JSON valido.",
+      "playthroughsMissing": "Questo file non è un backup di Clash of Clans Tracker. Non contiene un elenco di villaggi."
+    },
+    "checksTitle": "Controlli superati.",
+    "checks": "Il file elenca {read} villaggi e {kept} possono essere letti.",
+    "skipped": "{amount} {count, plural, one {voce saltata} other {voci saltate}}.",
+    "howToApply": "Come applicare",
+    "modeLabel": "Modalità di importazione",
+    "modes": {
+      "merge": "Unisci",
+      "replace": "Sostituisci"
+    },
+    "modeNotes": {
+      "merge": "Aggiunge i villaggi nuovi e tiene la copia più recente di un villaggio presente in entrambi. Le tue impostazioni e il villaggio attivo restano.",
+      "replace": "Usa solo ciò che è nel file. I villaggi che non sono nel file vengono rimossi."
+    },
+    "whatChanges": "Cosa cambia",
+    "columns": {
+      "village": "Villaggio",
+      "inFile": "Nel file",
+      "onDevice": "Sul dispositivo",
+      "result": "Risultato"
+    },
+    "notThere": "Assente",
+    "results": {
+      "added": "Aggiunto",
+      "updated": "Aggiornato dal file",
+      "kept": "Mantenuto",
+      "replaced": "Sostituito",
+      "removed": "Rimosso"
+    },
+    "summary": {
+      "added": "{count} aggiunti",
+      "updated": "{count} aggiornati",
+      "kept": "{count} mantenuti",
+      "replaced": "{count} sostituiti",
+      "removed": "{count} rimossi"
+    },
+    "noVillages": "Il file non contiene villaggi.",
+    "undoNote": "Puoi annullare l'importazione per dieci secondi."
+  },
+  "about": {
+    "version": "Versione {version}",
+    "summary": "Un tracker gratuito dei progressi per Clash of Clans. Segui potenziamenti, ricerca, imprese e altro su più villaggi.",
+    "officialGame": "Sito ufficiale di Clash of Clans",
+    "disclaimer": "Questo progetto non è affiliato, approvato o collegato a Supercell o a Clash of Clans."
+  },
+  "region": {
+    "title": "Lingua e regione",
+    "description": "Come l'app mostra testi, numeri e date su questo dispositivo. Queste scelte non vengono salvate con i tuoi villaggi, né esportate né sincronizzate.",
+    "language": {
+      "label": "Lingua",
+      "hint": "La lingua dell'app. I nomi del gioco restano in inglese."
+    },
+    "numberFormat": {
+      "label": "Formato numeri",
+      "hint": "Esempio: {example}",
+      "options": {
+        "auto": "Automatico (segue la lingua)",
+        "us": "1,234,567.89 (USA)",
+        "european": "1.234.567,89 (europeo)",
+        "french": "1 234 567,89 (francese)",
+        "swiss": "1’234’567.89 (svizzero)",
+        "indian": "12,34,567.89 (indiano)"
+      }
+    },
+    "dateFormat": {
+      "label": "Formato data",
+      "hint": "Esempio: {example}",
+      "options": {
+        "auto": "Automatico (segue la lingua)",
+        "mdy": "Mese/Giorno/Anno",
+        "dmy": "Giorno/Mese/Anno",
+        "ymd": "Anno-Mese-Giorno"
+      }
+    }
+  }
+}

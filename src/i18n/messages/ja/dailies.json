@@ -1,0 +1,255 @@
+{
+  "locked": {
+    "title": "デイリー",
+    "subline": "{name}、タウンホール {townHall}、まだ開放されているものはありません",
+    "open": "開く",
+    "lockedBadge": "ロック中",
+    "now": "このビレッジはタウンホール {townHall}です。",
+    "nowNoHut": "このビレッジにはまだHelper Hutがありません。",
+    "needsHut": "Helper Hutが必要です",
+    "toBuilder": "ビルダーを開く",
+    "cards": {
+      "forge": {
+        "title": "鍛造",
+        "what": "余った資源をキャピタルゴールドに変換し、毎日のキャピタルゴールドを受け取ります。"
+      },
+      "helpers": {
+        "title": "ヘルパー",
+        "what": "ビルダーの見習い、ラボ助手、錬金術師、プロスペクターを記録します。"
+      },
+      "seasonPass": {
+        "title": "シーズンパス",
+        "what": "アップグレード時間を短縮するゴールドパスのブーストと特典を設定します。"
+      },
+      "starBonus": {
+        "title": "スターボーナス",
+        "what": "スターボーナスの毎日のタイマーは概要にあります。",
+        "open": "概要を開く"
+      }
+    }
+  },
+  "timer": {
+    "notSet": "毎日のリセット時刻を設定",
+    "setTime": "リセット時刻を設定",
+    "setAndUse": "設定して使用済みにする",
+    "notSetHelp": "時刻を設定しても、報酬は使用済みになりません。",
+    "savedIn": "時刻は{zone}で保存されます。",
+    "available": "利用可能",
+    "use": "使う",
+    "adjust": "調整",
+    "adjustTitle": "リセット時刻を調整",
+    "save": "保存",
+    "cancel": "キャンセル",
+    "resetsAt": "毎日{time}にリセット、{zone}",
+    "untilReset": "{time}のリセットまで、{zone}",
+    "usedAt": "{time}に使用しました。",
+    "timeLabel": "リセット時刻",
+    "deviceClock": "端末の時計",
+    "used": "{name}を使用済みにしました",
+    "undo": "元に戻す"
+  },
+  "forge": {
+    "title": "鍛造",
+    "description": "余った資源をキャピタルゴールドに変換し、毎日のキャピタルゴールドを受け取ります。",
+    "subline": "{builderHall, plural, =0 {{name}、タウンホール {townHall}、キャピタルゴールドの生産} other {{name}、タウンホール {townHall}、ビルダーホール {builderHall}、キャピタルゴールドの生産}}",
+    "daily": {
+      "title": "毎日のキャピタルゴールド",
+      "amount": "タウンホール {townHall}では毎日キャピタルゴールド +{gold}",
+      "none": "毎日のキャピタルゴールドはタウンホール6から始まります。",
+      "name": "毎日のキャピタルゴールド"
+    },
+    "slots": {
+      "title": "鍛造スロット",
+      "craftingTime": "製作時間3日",
+      "open": "タウンホール {townHall}で{total}スロット中{open}スロットが開放",
+      "boost": "ビルダーブースト{percent}%を適用: {time}",
+      "slot": "スロット {number}",
+      "requires": "タウンホール {townHall}が必要",
+      "locked": "ロック中",
+      "idle": "待機中",
+      "idleHelp": "鍛造するものを選んでください",
+      "running": "実行中",
+      "done": "完了",
+      "result": "結果",
+      "start": "開始",
+      "stop": "停止",
+      "reset": "リセット",
+      "resource": "資源",
+      "rate": "{resource} {amount}をキャピタルゴールド {capitalGold}に変換、{time}で完了",
+      "left": "残り{time}",
+      "ready": "完了: キャピタルゴールド {capitalGold}。",
+      "finished": "{ago}前に完了しました。",
+      "stopped": "スロット {number}を停止しました。実行をクリアしました。",
+      "resetDone": "スロット {number}をリセットしました。{resource}の実行をクリアしました。",
+      "runningTitle": "{resource}、{amount}"
+    },
+    "auto": {
+      "title": "オート鍛造",
+      "subtitle": "ゴールドパスの特典、自動で繰り返します",
+      "repeats": "{time}ごとに{resource} {amount}をキャピタルゴールド {capitalGold}に変換",
+      "nextRun": "この実行が終わると、次の実行が自動で始まります。",
+      "stop": "オート鍛造を停止",
+      "stopped": "オート鍛造を停止しました。サイクルをクリアしました。",
+      "confirm": {
+        "title": "オート鍛造を停止しますか?",
+        "body": "実行中のサイクルはクリアされます: {resource} {amount}をキャピタルゴールド {capitalGold}に変換、残り{time}。鍛造ページでもう一度開始するまで、オート鍛造の繰り返しは止まります。ゴールドパスの特典はシーズンパスでオンのままです。",
+        "undoHint": "停止後、数秒間は「元に戻す」ボタンが画面に表示されます。",
+        "keep": "実行を続ける",
+        "stop": "オート鍛造を停止"
+      }
+    },
+    "rates": {
+      "title": "鍛造レート",
+      "description": "{builderHall, plural, =0 {タウンホール {townHall}、1スロットで1回の実行} other {タウンホール {townHall}とビルダーホール {builderHall}、1スロットで1回の実行}}",
+      "autoTitle": "オート鍛造レート",
+      "autoDescription": "ゴールドパスの価格、手動コストの半分",
+      "resource": "資源",
+      "cost": "コスト",
+      "capitalGold": "キャピタルゴールド",
+      "requires": "{requirement}が必要"
+    }
+  },
+  "helpers": {
+    "title": "ヘルパー",
+    "description": "ビルダーの見習い、ラボ助手、錬金術師、プロスペクターを記録します。",
+    "subline": "{builderHall, plural, =0 {{name}、タウンホール {townHall}、Helper Hutの助手} other {{name}、タウンホール {townHall}、ビルダーホール {builderHall}、Helper Hutの助手}}",
+    "banner": "Helper Hutを建てました。各ヘルパーはタウンホールで開放されます: ラボ助手は9、ビルダーの見習いは10、プロスペクターは10、錬金術師は11。",
+    "names": {
+      "buildersApprentice": "ビルダーの見習い",
+      "labAssistant": "ラボ助手",
+      "alchemist": "錬金術師",
+      "prospector": "プロスペクター"
+    },
+    "from": "タウンホール {townHall}以上",
+    "lockedCard": "タウンホール {townHall}が必要",
+    "dailyUse": "毎日の使用",
+    "level": "レベル",
+    "levelOption": "レベル {level}",
+    "levelTownHall": "TH {townHall}",
+    "none": "なし",
+    "noLevel": "レベルを選ぶと能力が表示されます。",
+    "noLevelCalculator": "レベルを選ぶと計算機を使えます。",
+    "nextLevel": "{gems, select, 0 {レベル {level}は無料です} other {レベル {level}にはジェム {gems}個が必要です}}",
+    "saves": "1回の使用で{time}短縮",
+    "levelRequires": "タウンホール {townHall}が必要",
+    "assignment": {
+      "builderTitle": "短縮するアップグレード",
+      "researchTitle": "短縮する研究",
+      "none": "なし",
+      "builderHelp": "現在アップグレード中の建物、ヒーロー、タウンホール、タウンホールの兵器、クラフト防衛設備のモジュールを一覧表示します。",
+      "researchHelp": "研究のみ: 現在アップグレード中の兵士、スペル、攻城兵器を一覧表示します。",
+      "builderEmpty": "割り当てできるビルダーのアップグレードはありません。",
+      "researchEmpty": "割り当てできるラボの研究はありません。",
+      "once": "1回のみ",
+      "untilDone": "完了まで",
+      "assignedTo": "割り当て先",
+      "clearsAfterUse": "1回使うとクリアされます。",
+      "staysUntilDone": "アップグレードが完了するまで維持されます。",
+      "clear": "割り当てをクリア",
+      "cleared": "割り当てをクリアしました。",
+      "select": "割り当てるアップグレード",
+      "mode": "割り当てモード",
+      "preview": "今使うと: 残り{before}が{after}になります。",
+      "previewDone": "今使うと: 残り{before}で、アップグレードが完了します。",
+      "upgradeTo": "{name}をレベル {level}に、残り{left}"
+    },
+    "used": {
+      "plain": "{name}を使用済みにしました",
+      "saved": "{name}を{target}に使用、{time}短縮"
+    },
+    "alchemist": {
+      "stats": {
+        "goldElixir": "ゴールドまたはエリクサーの最大",
+        "darkElixir": "ダークエリクサーの最大",
+        "bonus": "変換ボーナス"
+      },
+      "calculator": "変換計算機",
+      "from": "変換元",
+      "to": "変換先",
+      "amount": "変換する量",
+      "result": "{from} {amount}で{to} {output}",
+      "help": "変換ボーナス{bonus}%と、150対1のレートを含みます。",
+      "nothingSaved": "ここでは何も保存されません。"
+    },
+    "prospector": {
+      "lockedTitle": "シーズンチャレンジポイント2,200で開放するまでロック中",
+      "lockedHelp": "ゲームで開放したら、シーズンパスのページでオンにしてください。",
+      "toSeasonPass": "シーズンパスを開く",
+      "subtitle": "タウンホール10以上、シーズンチャレンジポイントで開放",
+      "lockedBadge": "ロック中",
+      "unlockedBadge": "開放済み",
+      "levelOnly": "レベル1(唯一のレベル)",
+      "limits": {
+        "shiny": "Shiny Oreの最大",
+        "glowy": "Glowy Oreの最大",
+        "starry": "Starry Oreの最大"
+      },
+      "calculator": "鉱石変換計算機",
+      "ores": {
+        "shiny": "Shiny Ore",
+        "glowy": "Glowy Ore",
+        "starry": "Starry Ore"
+      },
+      "help": "Shiny Ore 10個でGlowy Ore 1個。Glowy Ore 100個でStarry Ore 1個。"
+    }
+  },
+  "seasonPass": {
+    "title": "シーズンパス",
+    "description": "アップグレード時間を短縮するゴールドパスのブーストと特典を設定します。",
+    "subline": "{name}、タウンホール {townHall}、今シーズン有効なゴールドパスの特典",
+    "lockedTitle": "シーズンパスはロックされています",
+    "lockedBody": "ゴールドパスにはタウンホール7が必要です。このビレッジはタウンホール {townHall}です。",
+    "month": {
+      "title": "{month}",
+      "subtitle": "ブーストは{reset}にリセットされます。特典は維持されます。",
+      "key": "月キー",
+      "rolled": "新しい月が始まりました。ビルダーブーストと研究ブーストは0%にリセットされました。特典は維持されます。",
+      "undoReset": "リセットを元に戻す",
+      "dismiss": "閉じる",
+      "restored": "今月のブーストを元に戻しました。",
+      "undo": "元に戻す"
+    },
+    "boosts": {
+      "title": "ブースト特典",
+      "description": "ゴールドパスで今シーズンのアップグレード時間が短縮されます。",
+      "builder": "ビルダーブースト",
+      "research": "研究ブースト",
+      "applies": "ビルダー、研究、ペットの時間、キューのタイムライン、鍛造の製作時間に適用されます。",
+      "saved": "今月の分として保存されます。",
+      "value": "{percent, plural, =0 {オフ} other {{percent}%}}",
+      "option": "{percent, plural, =0 {0%} other {{percent}%}}",
+      "builderEffect": "{percent, plural, =0 {鍛造の製作時間は3dです。} other {鍛造の製作時間は{time}です。}}",
+      "researchEffect": "{percent, plural, =0 {研究とペットの時間は変わりません。} other {研究とペットの時間が{percent}%短縮されます。}}"
+    },
+    "unlocks": {
+      "title": "シーズンチャレンジの開放",
+      "description": "ゴールドパスには含まれません",
+      "prospector": "プロスペクター",
+      "prospectorHelp": "タウンホール10以上のヘルパー、シーズンチャレンジポイント2,200が必要",
+      "shows": "ヘルパーのページに表示されます"
+    },
+    "perks": {
+      "title": "ゴールドパスの特典",
+      "description": "今シーズン有効なゴールドパスの特典",
+      "referenceOnly": "参考のみ",
+      "referenceNote": "アプリ内のほかの機能は変わりません。",
+      "hoggyBank": {
+        "label": "ホッグバンク",
+        "note": "プレイ中に資源をためて、シーズン終了時に受け取ります"
+      },
+      "gemDonations": {
+        "label": "1ジェム寄付",
+        "note": "兵士とスペルを1個につきわずか1ジェムで寄付できます"
+      },
+      "autoForge": {
+        "label": "オート鍛造",
+        "note": "資源を自動でキャピタルゴールドに変換します"
+      },
+      "autoForgeEffect": "鍛造ページのオート鍛造の行と、概要のチップをオンにします。",
+      "requestTimeReduction": {
+        "label": "リクエスト時間短縮",
+        "note": "兵士リクエストのクールダウンタイマーを短縮します"
+      }
+    }
+  }
+}

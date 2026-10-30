@@ -1,0 +1,112 @@
+{
+  "title": "Genel Bakış",
+  "description": "Köyüne tek bakışta: ilerleme, günlük sayaçlar ve kaydedilen her istatistik.",
+  "subline": "{name}, türetilmiş, yalnızca görüntüleme",
+  "header": {
+    "clanLevel": "{hasRole, select, true {Klan seviyesi {level}, {role}} other {Klan seviyesi {level}}}",
+    "achievements": "Başarımlar",
+    "ringCaption": "{maxStars} yıldızdan {stars}",
+    "viewAll": "Tümünü gör",
+    "townHall": "BB{level}"
+  },
+  "dailies": {
+    "title": "Günlükler",
+    "closedTitle": "Günlükler Belediye Binası 3 ile açılır",
+    "closedBody": "Dökümhane, Yardımcılar ve Sezon Geçişi Belediye Binası yükseldikçe açılır.",
+    "closedLink": "Nelerin açık olduğunu gör",
+    "groups": {
+      "helpers": "Yardımcılar",
+      "daily": "Günlük",
+      "goldPass": "Altın Geçiş"
+    },
+    "requires": "{requirement} gerekir",
+    "openForge": "Dökümhaneyi aç",
+    "openHelpers": "Yardımcıları aç",
+    "unlockProspector": "Sezon Geçişinde aç",
+    "helperHut": "Yardımcı Kulübesi",
+    "townHall": "Belediye Binası {level}",
+    "starBonus": "Yıldız Bonusu",
+    "capitalGold": "Başkent Altını",
+    "autoForge": "Otomatik Dökümhane",
+    "forgeSlots": "Dökümhane yuvaları",
+    "notRunning": "Çalışmıyor",
+    "running": "Çalışıyor",
+    "stopAuto": "Otomatik Dökümhaneyi durdur",
+    "autoLine": "{amount} {resource}, {capitalGold} Başkent Altınına",
+    "slotsLine": "{open} yuvadan {running} tanesi çalışıyor",
+    "slotsDone": "{done, plural, one {1 yuva bitti} other {{amount} yuva bitti}}",
+    "autoPerk": "Otomatik Dökümhane ayrıcalığı",
+    "helperPreview": "Şimdi kullan: kalan {before}, {after} olur",
+    "goldPass": {
+      "edit": "Sezon Geçişinde düzenle",
+      "builder": "İnşaatçı güçlendirmesi",
+      "research": "Araştırma güçlendirmesi",
+      "hoggyBank": "Hoggy Bank",
+      "gemDonations": "1 Elmaslık Bağışlar",
+      "autoForge": "Otomatik Dökümhane",
+      "requestReduction": "İstek Süresi Azaltma",
+      "on": "Açık",
+      "off": "Kapalı",
+      "resets": "Güçlendirmeler {date} tarihinde %0'a döner.",
+      "readOnly": "Genel Bakışı açmak köyü veya son değiştirilme zamanını asla değiştirmez."
+    }
+  },
+  "league": {
+    "open": "{name} ödüllerini göster",
+    "homeKind": "Ana Köy ligi",
+    "builderKind": "İnşaatçı Üssü ligi",
+    "noData": "Bu Belediye Binasında bu lig için veri yok.",
+    "battle": "Savaş sonuçları",
+    "stars": "Yıldız",
+    "attacker": "Saldıran İnşaatçı Altını",
+    "defender": "Savunan İnşaatçı İksiri"
+  },
+  "builder": {
+    "title": "İnşaatçı Üssü",
+    "hall": "İnşaatçı Salonu {level}",
+    "trophies": "{trophies} kupa",
+    "daysAt": "İS{level} seviyesinde gün",
+    "notSetTitle": "İnşaatçı Salonu ayarlanmadı",
+    "notSetBody": "İnşaatçı Üssü Belediye Binası 6 ile açılır, ancak bu köyde İnşaatçı Salonu 0. İlerleme, kupalar ve birlikler seviye 1 veya üstü olunca görünür.",
+    "notSetAction": "İnşaatçı Salonu seviyesini ayarla",
+    "lockedBody": "Belediye Binası 6 gerekir",
+    "troops": "Birlikler",
+    "heroes": "Kahramanlar"
+  },
+  "capital": {
+    "title": "Klan Başkenti",
+    "hall": "Başkent Salonu {level}",
+    "notSetTitle": "Klan Başkenti kurulmadı",
+    "notSetBody": "Başkent Zirvesinin henüz salon seviyesi yok, bu yüzden gösterilecek bölge ilerlemesi yok. Takibe başlamak için Başkent Salonu seviyesini ayarla.",
+    "notSetAction": "Başkent Salonu seviyesini ayarla",
+    "lockedBody": "Belediye Binası 3 gerekir",
+    "districtHall": "Bölge Salonu {level}",
+    "notUnlocked": "Açılmadı",
+    "unlocksAt": "Başkent Salonu {level} ile açılır",
+    "needsDistrictHall": "Başlamak için bir Bölge Salonu ayarla",
+    "noData": "Veri yok",
+    "more": "{count} bölge daha göster",
+    "showFewer": "Daha az göster",
+    "openDistricts": "Bölgeleri aç"
+  },
+  "home": {
+    "title": "Ana Köy",
+    "townHall": "Belediye Binası {level}",
+    "daysAt": "BB{level} seviyesinde gün",
+    "perHour": "saatte",
+    "stored": "depolanan",
+    "cards": {
+      "locked": "{requirement} gerekir"
+    },
+    "queue": "Aç",
+    "troops": "Birlikler",
+    "spells": "Büyüler",
+    "heroes": "Kahramanlar",
+    "siege": "Kuşatma Makineleri",
+    "pets": "Evcil Hayvanlar",
+    "legend": "Yeşil çerçeve: bu Belediye Binası için maksimumda. Kesikli çerçeve: kilitli. Saat: yükseltme sürüyor.",
+    "tile": "{hasRequirement, select, true {{name}, {requirement} gerekir} other {{name}, seviye {level}{max, plural, =0 {} other { / {max}}}}}",
+    "heroLocked": "{requirement} gerekir",
+    "petsLocked": "Belediye Binası 14 gerekir"
+  }
+}

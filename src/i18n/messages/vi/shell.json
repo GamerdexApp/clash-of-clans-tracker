@@ -1,0 +1,66 @@
+{
+  "skipToContent": "Chuyển đến nội dung",
+  "closeMenu": "Đóng menu",
+  "openMenu": "Mở menu",
+  "menuLabel": "Menu trang",
+  "mainNav": "Chính",
+  "brandTitle": "Clash of Clans",
+  "brandSubtitle": "Tracker",
+  "switcher": {
+    "sectionLabel": "Làng",
+    "loading": "Đang tải",
+    "none": "Chưa có làng",
+    "noneDetail": "Tạo một làng để bắt đầu",
+    "switch": "Chuyển làng",
+    "villages": "Làng",
+    "active": "Đang dùng",
+    "all": "Tất cả làng",
+    "create": "Làng mới",
+    "halls": "{builderHall, plural, =0 {NC {townHall}} other {NC {townHall} · NTX {builderHall}}}"
+  },
+  "locked": {
+    "townHall": "Nhà Chính {level}",
+    "blacksmith": "Thợ Rèn",
+    "helperHut": "Nhà Trợ Thủ",
+    "off": "Tắt",
+    "srLabel": "Cần {requirement}"
+  },
+  "footer": {
+    "tagline": "Công cụ theo dõi tiến độ miễn phí cho Clash of Clans. Dữ liệu của bạn nằm trong trình duyệt, hoặc trong kho lưu trữ đám mây của riêng bạn nếu bạn bật đồng bộ.",
+    "support": "Hỗ trợ",
+    "about": "Giới thiệu",
+    "settings": "Cài đặt",
+    "discord": "Discord",
+    "github": "GitHub",
+    "game": "Trang chính thức của game",
+    "privacy": "Chính sách quyền riêng tư",
+    "terms": "Điều khoản dịch vụ",
+    "disclaimerTitle": "Tuyên bố miễn trừ",
+    "disclaimer": "Dự án này không liên kết với, không được bảo trợ bởi và không có quan hệ với Supercell hay Clash of Clans.",
+    "framework": "Xây dựng bằng framework Gamerdex, nền tảng chung cho các công cụ theo dõi tiến độ game miễn phí.",
+    "visitGamerdex": "Truy cập Gamerdex"
+  },
+  "notFound": {
+    "title": "Trang này không tồn tại",
+    "body": "Liên kết có thể đã cũ hoặc gõ sai. Các làng của bạn vẫn an toàn và không có gì bị thay đổi.",
+    "toOverview": "Đến Tổng quan",
+    "toVillages": "Đến Làng",
+    "toHome": "Về trang chủ",
+    "didYouMean": "Có phải bạn muốn",
+    "noVillage": "Chưa chọn làng nào, nên Tổng quan không có gì để hiển thị. Hãy chọn một làng ở trang Làng.",
+    "jumpTo": "Hoặc chuyển đến"
+  },
+  "error": {
+    "title": "Đã xảy ra lỗi",
+    "body": "Ứng dụng gặp lỗi. Dữ liệu đã lưu của bạn không bị thay đổi.",
+    "digest": "digest {digest}",
+    "tryAgain": "Thử lại",
+    "download": "Tải dữ liệu thô",
+    "clear": "Xóa dữ liệu và khởi động lại",
+    "confirmTitle": "Xóa toàn bộ dữ liệu đã lưu?",
+    "confirmBody": "Thao tác này xóa mọi thứ ứng dụng đã lưu trong trình duyệt này. Một bản sao dữ liệu thô được tải về trước để có thể sửa sau. Các làng đã đồng bộ lên tài khoản đám mây vẫn còn ở đó.",
+    "cancel": "Hủy",
+    "confirm": "Tải về và xóa",
+    "noData": "Không có dữ liệu đã lưu trong trình duyệt này."
+  }
+}

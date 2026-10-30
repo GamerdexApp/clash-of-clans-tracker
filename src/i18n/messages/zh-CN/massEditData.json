@@ -1,0 +1,33 @@
+{
+  "categories": {
+    "defenses": "防御",
+    "army": "军队",
+    "resources": "资源",
+    "crafted": "定制防御",
+    "traps": "陷阱",
+    "troops": "兵种",
+    "spells": "法术",
+    "siege": "攻城机器",
+    "pets": "宠物",
+    "guardians": "守护者",
+    "heroes": "英雄",
+    "equipment": "装备",
+    "walls": "城墙",
+    "buildings": "建筑"
+  },
+  "sections": {
+    "armyBuildings": "军队建筑",
+    "otherBuildings": "其他建筑"
+  },
+  "level": "{level}级",
+  "superchargeRow": "{name}超级充能",
+  "profile": {
+    "builderHall": "建筑大师大本营等级",
+    "trophies": "奖杯",
+    "bestTrophies": "最高奖杯",
+    "league": "联赛",
+    "capitalHall": "首都大厅",
+    "districtHall": "{zone}区域大厅",
+    "contributions": "贡献"
+  }
+}

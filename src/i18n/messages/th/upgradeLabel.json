@@ -1,0 +1,24 @@
+{
+  "levelTo": "{name} {from}→{to}",
+  "toast": {
+    "undo": "เลิกทำ",
+    "started": "เริ่ม {name} Lv {from} ไป {to} แล้ว",
+    "finished": "{name} เสร็จที่ Lv {level}",
+    "timeSaved": "เพิ่ม {time} ในเวลาที่ประหยัดแล้ว",
+    "cancelled": "ยกเลิก {name} Lv {from} ไป {to} แล้ว",
+    "levelChanged": "{name} Lv {from} ไป {to}"
+  },
+  "queue": {
+    "buildPetHouse": "สร้างบ้านสัตว์เลี้ยงก่อน",
+    "requires": "ต้องมี {building} {level}",
+    "alreadyUpgrading": "{name} กำลังอัปเกรดอยู่แล้ว",
+    "finishFirst": "ระดับ {level} ต้องเสร็จก่อน",
+    "alreadyAt": "อยู่ที่ระดับ {level} แล้ว"
+  },
+  "conflict": {
+    "alreadyAt": "{name} อยู่ที่ระดับ {level} แล้ว ระดับ {target} จึงเสร็จแล้ว",
+    "removeFix": "นำออกจากคิว",
+    "scheduledBefore": "{name} ระดับ {level} ถูกจัดไว้ก่อนที่ระดับ {earlier} จะเสร็จ",
+    "moveFix": "ย้ายระดับ {level} ไปไว้หลังระดับ {earlier}"
+  }
+}

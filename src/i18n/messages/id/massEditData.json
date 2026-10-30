@@ -1,0 +1,33 @@
+{
+  "categories": {
+    "defenses": "Pertahanan",
+    "army": "Pasukan",
+    "resources": "Sumber Daya",
+    "crafted": "Pertahanan Rakitan",
+    "traps": "Jebakan",
+    "troops": "Pasukan",
+    "spells": "Mantra",
+    "siege": "Pengepungan",
+    "pets": "Hewan",
+    "guardians": "Penjaga",
+    "heroes": "Pahlawan",
+    "equipment": "Perlengkapan",
+    "walls": "Tembok",
+    "buildings": "Bangunan"
+  },
+  "sections": {
+    "armyBuildings": "Bangunan pasukan",
+    "otherBuildings": "Bangunan lain"
+  },
+  "level": "Level {level}",
+  "superchargeRow": "Supercharge {name}",
+  "profile": {
+    "builderHall": "Level Balai Pembangun",
+    "trophies": "Trofi",
+    "bestTrophies": "Trofi terbaik",
+    "league": "Liga",
+    "capitalHall": "Balai Ibu Kota",
+    "districtHall": "Balai Distrik {zone}",
+    "contributions": "Kontribusi"
+  }
+}

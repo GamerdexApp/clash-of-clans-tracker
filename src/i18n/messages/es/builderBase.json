@@ -1,0 +1,63 @@
+{
+  "upgrades": {
+    "title": "Mejoras",
+    "subline": "{name}, Sala del Constructor {hall}",
+    "sublineNotSet": "{name}, Sala del Constructor sin fijar",
+    "tabsLabel": "Secciones de la Base del Constructor",
+    "tabs": {
+      "defenses": "Defensas",
+      "army": "Ejército",
+      "resources": "Recursos",
+      "traps": "Trampas",
+      "heroes": "Héroes",
+      "other": "Otros"
+    },
+    "strip": {
+      "title": "Constructores",
+      "noBuilders": "La Base del Constructor tiene dos constructores.",
+      "openQueue": "Abrir cola y línea de tiempo",
+      "unassignedHelp": "Algunas mejoras están guardadas en un constructor que otra mejora ya usa. Termínalas o cancélalas."
+    }
+  },
+  "locked": {
+    "title": "Requiere Ayuntamiento 6",
+    "description": "Esta aldea está en el Ayuntamiento {townHall}. La Base del Constructor se desbloquea en el Ayuntamiento 6, o cuando fijas un nivel de Sala del Constructor."
+  },
+  "notSet": {
+    "action": "Fijar nivel de la Sala del Constructor",
+    "troopsDescription": "Las tropas de la Base del Constructor siguen el nivel de la Sala del Constructor. Fíjalo en la página Mejoras, pestaña Otros.",
+    "title": "Elige el nivel de tu Sala del Constructor para empezar el seguimiento",
+    "description": "Fija el nivel de la Sala del Constructor en el recuadro de abajo. Las listas de la Base del Constructor lo siguen."
+  },
+  "hall": {
+    "title": "Sala del Constructor",
+    "notSet": "Sin fijar",
+    "option": "Sala del Constructor {level}",
+    "since": "{amount} {days, plural, one {día} other {días}} en la Sala del Constructor {level}",
+    "confirm": {
+      "title": "¿Cambiar la Sala del Constructor a {level}?",
+      "raising": "Subir el nivel muestra más edificios y límites más altos. No se elimina nada de lo que guardaste.",
+      "lowering": "Bajar el nivel oculta los edificios y límites superiores. Se conservan tus niveles guardados.",
+      "clearing": "Borrar el nivel oculta todas las listas de la Base del Constructor. Se conservan tus niveles guardados.",
+      "setDays": "Fijar Días en la Sala del Constructor a hoy",
+      "cancel": "Cancelar",
+      "confirm": "Cambiar nivel"
+    },
+    "toast": "Sala del Constructor de {from, plural, =0 {sin fijar} other {{from}}} a {to, plural, =0 {sin fijar} other {{to}}}",
+    "undo": "Deshacer"
+  },
+  "other": {
+    "clockTower": "Clock Tower",
+    "clockTowerMax": "Nv máx. {level} en esta Sala del Constructor",
+    "clockTowerProgress": "Progreso de la Clock Tower"
+  },
+  "empty": {
+    "title": "Aún no hay nada aquí",
+    "description": "No hay edificios de este tipo con este nivel de Sala del Constructor.",
+    "allMax": "Todo lo de aquí está al máximo. Desactiva Ocultar máx. para verlo."
+  },
+  "heroes": {
+    "maxAtHall": "Nv máx. {level} en esta Sala del Constructor",
+    "progress": "Progreso de {name}"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "title": "Construtor",
+  "subline": "{name}, Centro da Aldeia {townHall}",
+  "tabsLabel": "Secções do Construtor",
+  "tabs": {
+    "defenses": "Defesas",
+    "army": "Exército",
+    "resources": "Recursos",
+    "crafted": "Defesas Fabricadas",
+    "traps": "Armadilhas",
+    "heroes": "Heróis",
+    "guardians": "Guardiões",
+    "townHall": "Centro da Aldeia"
+  },
+  "builders": {
+    "title": "Construtores",
+    "boostLabel": "Bónus de construtor do Passe de Ouro",
+    "boostValue": "{percent, plural, =0 {Nenhum} other {-{percent}% de tempo e custo}}",
+    "openQueue": "Abrir fila e cronologia",
+    "unassignedHelp": "Algumas melhorias estão guardadas num construtor que não existe, ou num construtor que outra melhoria já usa. Conclui-as ou cancela-as.",
+    "noBuilders": "Esta aldeia ainda não tem construtores. Constrói a primeira Cabana do Construtor no separador Defesas. É gratuita e instantânea."
+  },
+  "gate": {
+    "requires": "Requer o Centro da Aldeia {townHall}",
+    "where": "Esta aldeia está no Centro da Aldeia {townHall}. Chega ao Centro da Aldeia {required} para desbloquear este separador.",
+    "fix": "Ir para o separador Centro da Aldeia"
+  },
+  "empty": {
+    "title": "Ainda não há nada aqui",
+    "description": "Não há edifícios deste tipo disponíveis neste nível de Centro da Aldeia.",
+    "allMax": "Todos os edifícios aqui estão no máximo. Desativa Ocultar máx. para os ver."
+  },
+  "card": {
+    "maxAtHall": "Nív. máx. {level} neste Centro da Aldeia",
+    "maxAtBuilderHall": "Nív. máx. {level} neste Centro do Construtor",
+    "progress": "Progresso de {name}",
+    "notBuilt": "Não construído",
+    "level": "Nív. {level} de {max}",
+    "build": "Construir",
+    "upgradeTo": "Melhorar para nív. {level}",
+    "superchargeTo": "Sobrecarregar para o nível {tier}",
+    "maxed": "Máx.",
+    "running": "A melhorar para nív. {to}",
+    "finish": "Concluir",
+    "cancel": "Cancelar",
+    "showAll": "Mostrar todos ({count})",
+    "showFewer": "Mostrar menos",
+    "instance": "#{number}",
+    "supercharge": "Sobrecarga {tier} de {tiers}"
+  }
+}

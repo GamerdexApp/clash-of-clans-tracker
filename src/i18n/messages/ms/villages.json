@@ -1,0 +1,119 @@
+{
+  "title": "Kampung Saya",
+  "subline": "{amount} {count, plural, other {kampung}}",
+  "sublineActive": "{amount} {count, plural, other {kampung}}, {name} aktif",
+  "newVillage": "Kampung baharu",
+  "empty": {
+    "title": "Belum ada kampung",
+    "deletedTitle": "Tiada kampung tinggal",
+    "description": "Cipta kampung untuk mula menjejaki naik taraf, kajian dan pencapaian.",
+    "restore": "Pulihkan daripada sandaran"
+  },
+  "filters": {
+    "search": "Cari kampung",
+    "sortLabel": "Isih mengikut",
+    "sort": {
+      "lastModified": "Terakhir diubah suai",
+      "createdAt": "Tarikh dicipta",
+      "name": "Nama"
+    },
+    "showing": "Menunjukkan {shown} daripada {total}",
+    "clear": "Kosongkan carian"
+  },
+  "noMatch": {
+    "title": "Tiada kampung sepadan dengan \"{query}\"",
+    "description": "Semak ejaan atau kosongkan carian."
+  },
+  "card": {
+    "active": "Aktif",
+    "openOverview": "Buka gambaran keseluruhan",
+    "setActive": "Jadikan aktif",
+    "edit": "Sunting",
+    "delete": "Padam",
+    "halls": "{builderHall, plural, =0 {Dewan Bandar {townHall}} other {Dewan Bandar {townHall}, Dewan Pembina {builderHall}}}",
+    "daysAtTownHall": "Hari pada Dewan Bandar",
+    "daysAtBuilderHall": "Hari pada Dewan Pembina",
+    "notSet": "Belum ditetapkan",
+    "clanCapital": "Ibu Kota Klan",
+    "clanCapitalStates": {
+      "on": "Hidup",
+      "off": "Mati",
+      "locked": "Dikunci"
+    },
+    "created": "Dicipta {date}",
+    "lastModified": "Diubah suai {date}",
+    "switched": "{name} kini aktif"
+  },
+  "fields": {
+    "name": "Nama kampung",
+    "namePlaceholder": "Akaun utama saya",
+    "nameRequired": "Masukkan nama untuk kampung.",
+    "description": "Keterangan",
+    "descriptionPlaceholder": "Tambah keterangan untuk kampung ini",
+    "townHallLevel": "Tahap Dewan Bandar",
+    "builderHallLevel": "Tahap Dewan Pembina",
+    "builderHallHelp": "Pangkalan Pembina dibuka pada Dewan Bandar 6.",
+    "townHallUpgraded": "Dewan Bandar dinaik taraf",
+    "builderHallUpgraded": "Dewan Pembina dinaik taraf",
+    "level": "Tahap {level}",
+    "trackCapital": "Jejaki Ibu Kota Klan",
+    "trackCapitalHelp": "Mematikannya menyembunyikan halaman Ibu Kota Klan dan mengekalkan data anda.",
+    "trackCapitalLocked": "Memerlukan Dewan Bandar 3",
+    "cancel": "Batal"
+  },
+  "create": {
+    "title": "Kampung baharu",
+    "submit": "Cipta kampung",
+    "modeLabel": "Cara bermula",
+    "modes": {
+      "fresh": "Mula baharu",
+      "import": "Import"
+    },
+    "modeNotes": {
+      "fresh": "Mula dengan data kosong.",
+      "import": "Baca tag pemain, dengan fail bangunan pilihan."
+    },
+    "makeActive": "Jadikan ini kampung aktif",
+    "done": "{name} dicipta",
+    "importNeedsLookup": "Ambil tag pemain dahulu."
+  },
+  "lookup": {
+    "step1": "Langkah 1: Ambil data pemain",
+    "step2": "Langkah 2: Data bangunan (pilihan)",
+    "tagLabel": "Tag pemain",
+    "tagPlaceholder": "#PPV2YV9R",
+    "fetch": "Ambil",
+    "refresh": "Muat semula",
+    "wait": "Tunggu {seconds} s",
+    "serverNote": "Carian menghantar tag kepada pelayan Gamerdex, yang meminta API Supercell. Tiada yang lain keluar daripada pelayar anda.",
+    "unavailable": "Carian pemain tidak tersedia sekarang. Cuba lagi kemudian.",
+    "found": "{name}, Dewan Bandar {townHall}{builderHall, plural, =0 {} other {, Dewan Pembina {builderHall}}}. {achievements} pencapaian dan {troops} pasukan dibaca.",
+    "buildingHelp": "API pemain tiada tahap bangunan. Pilih sandaran kampung daripada Tetapan atau fail exportData.json daripada permainan.",
+    "buildingLabel": "Fail data bangunan",
+    "buildingLoaded": "Data bangunan dimuatkan daripada {name}.",
+    "buildingInvalid": "Fail ini bukan data bangunan. Gunakan sandaran kampung daripada Tetapan atau exportData.json daripada permainan.",
+    "buildingNotJson": "Fail ini bukan JSON yang sah."
+  },
+  "edit": {
+    "title": "Sunting kampung",
+    "submit": "Simpan",
+    "refreshTitle": "Muat semula daripada tag pemain",
+    "updatedTitle": "Dikemas kini",
+    "untouchedTitle": "Tidak pernah disentuh",
+    "dateSet": "Tarikh naik taraf ditetapkan kepada hari ini. Anda boleh mengubahnya.",
+    "done": "{name} disimpan"
+  },
+  "delete": {
+    "title": "Padam kampung",
+    "description": "Ini membuang kampung daripada pelayar ini.",
+    "question": "Padam {name}? Naik taraf, kajian, pencapaian dan hariannya dibuang.",
+    "activeNext": "{next} menjadi kampung aktif.",
+    "activeLast": "Tiada kampung akan aktif.",
+    "exportFirst": "Eksport sandaran dahulu",
+    "cancel": "Batal",
+    "confirm": "Padam kampung",
+    "done": "{name} dipadam",
+    "doneMessage": "Anda boleh membuat asal dalam masa sepuluh saat.",
+    "undo": "Buat asal"
+  }
+}

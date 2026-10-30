@@ -1,0 +1,61 @@
+{
+  "title": "Equipo",
+  "subline": "{name}, Ayuntamiento {townHall}, Herrería nivel {blacksmith}",
+  "massEdit": "Los niveles del equipo también se pueden definir en Edición masiva.",
+  "locked": {
+    "title": "Requiere la Herrería",
+    "description": "Construye la Herrería para seguir el equipo de héroes. Define su nivel en la página Constructor, pestaña Ejército.",
+    "action": "Ir a Constructor"
+  },
+  "ore": {
+    "title": "Reserva de minerales",
+    "description": "Los minerales que tienes. Las faltas son solo un aviso y nunca bloquean una mejora.",
+    "names": {
+      "shiny": "Shiny Ore",
+      "glowing": "Glowy Ore",
+      "starry": "Starry Ore"
+    },
+    "short": {
+      "shiny": "Brillante",
+      "glowing": "Luminoso",
+      "starry": "Estelar"
+    },
+    "needed": "Necesario para las piezas listadas: {amount}",
+    "enough": "Hay suficiente",
+    "shortBy": "Faltan {amount}",
+    "deduct": "Descontar minerales al mejorar",
+    "deductHelp": "Una mejora saca sus minerales de la reserva, nunca por debajo de 0. Deshacer los devuelve."
+  },
+  "hideMax": "Ocultar al máximo",
+  "heroFilter": "Héroe",
+  "allHeroes": "Todos los héroes",
+  "section": "{pieces} piezas, {owned} obtenidas",
+  "empty": {
+    "title": "Aún no hay nada aquí",
+    "allMax": "Todas las piezas están al máximo. Desactiva Ocultar al máximo para verlas."
+  },
+  "card": {
+    "heroLine": "{hero}",
+    "level": "Nivel {level} de {max}",
+    "notOwned": "No obtenida",
+    "max": "Máx.",
+    "setLevel": "Nivel de {name}",
+    "stepLevel": "Nivel {level}",
+    "free": "Gratis",
+    "time": "Tiempo: instantáneo",
+    "requires": "Requiere Herrería {level}",
+    "moreLevels": "{amount} {count, plural, one {nivel más} other {niveles más}}",
+    "add": "Añadir en el nivel 1",
+    "upgradeTo": "Mejorar al nivel {level}",
+    "lockedUntil": "Bloqueada hasta la Herrería {level}",
+    "allows": "La Herrería {blacksmith} permite hasta el nivel {level}",
+    "allowsNone": "La Herrería {blacksmith} aún no permite esta pieza",
+    "footer": "{levels, plural, one {Falta {amount} nivel} other {Faltan {amount} niveles}}",
+    "progress": "Progreso de {name}"
+  },
+  "toast": {
+    "upgraded": "{name} Nv {from} a {to}",
+    "levelSet": "{name} Nv {from} a {to}",
+    "undo": "Deshacer"
+  }
+}

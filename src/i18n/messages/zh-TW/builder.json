@@ -1,0 +1,51 @@
+{
+  "title": "建築工人",
+  "subline": "{name}，大本營 {townHall}",
+  "tabsLabel": "建築工人分類",
+  "tabs": {
+    "defenses": "防禦",
+    "army": "軍隊",
+    "resources": "資源",
+    "crafted": "打造防禦",
+    "traps": "陷阱",
+    "heroes": "英雄",
+    "guardians": "守護者",
+    "townHall": "大本營"
+  },
+  "builders": {
+    "title": "建築工人",
+    "boostLabel": "黃金通行證建築工人加速",
+    "boostValue": "{percent, plural, =0 {無} other {時間與費用 -{percent}%}}",
+    "openQueue": "開啟佇列與時間軸",
+    "unassignedHelp": "部分升級儲存在尚未建造的建築工人上，或已被其他升級使用的建築工人上。請完成或取消它們。",
+    "noBuilders": "此村莊還沒有建築工人。請從防禦分頁建造第一座建築工人小屋，它免費且立即完成。"
+  },
+  "gate": {
+    "requires": "需要大本營 {townHall}",
+    "where": "此村莊目前為大本營 {townHall}。達到大本營 {required} 即可解鎖此分頁。",
+    "fix": "前往大本營分頁"
+  },
+  "empty": {
+    "title": "這裡還沒有內容",
+    "description": "此大本營等級沒有這類建築。",
+    "allMax": "這裡的建築都已達最高等級。關閉「隱藏已滿級」即可查看。"
+  },
+  "card": {
+    "maxAtHall": "此大本營最高 Lv {level}",
+    "maxAtBuilderHall": "此建築工人大本營最高 Lv {level}",
+    "progress": "{name}進度",
+    "notBuilt": "未建造",
+    "level": "Lv {level} / {max}",
+    "build": "建造",
+    "upgradeTo": "升級至 Lv {level}",
+    "superchargeTo": "超級強化至第 {tier} 階",
+    "maxed": "滿級",
+    "running": "升級至 Lv {to}",
+    "finish": "完成",
+    "cancel": "取消",
+    "showAll": "顯示全部 {count} 個",
+    "showFewer": "顯示較少",
+    "instance": "#{number}",
+    "supercharge": "超級強化 {tier} / {tiers}"
+  }
+}

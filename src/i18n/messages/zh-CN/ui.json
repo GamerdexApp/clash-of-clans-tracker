@@ -1,0 +1,42 @@
+{
+  "close": "关闭",
+  "field": {
+    "optional": "可选"
+  },
+  "stepper": {
+    "lower": "降低{label}",
+    "raise": "提高{label}",
+    "labelPrefix": "{label}，"
+  },
+  "switch": {
+    "on": "开",
+    "off": "关"
+  },
+  "tabs": {
+    "locked": "（已锁定）"
+  },
+  "toast": {
+    "dismiss": "关闭提示",
+    "variants": {
+      "success": "成功",
+      "info": "信息",
+      "warning": "警告",
+      "error": "错误"
+    },
+    "missingProvider": "useToast must be used within a ToastProvider"
+  },
+  "filters": {
+    "filters": "筛选",
+    "activeCount": "{count} 项已启用",
+    "clearFilters": "清除筛选",
+    "reset": "重置",
+    "description": "更改会即时生效。筛选不会保存。"
+  },
+  "savedChip": {
+    "automatic": "自动保存",
+    "justNow": "刚刚已保存",
+    "minutesAgo": "{count} 分钟前已保存",
+    "at": "已保存 {time}",
+    "failed": "未保存，存储空间已满"
+  }
+}

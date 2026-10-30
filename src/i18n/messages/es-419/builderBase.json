@@ -1,0 +1,63 @@
+{
+  "upgrades": {
+    "title": "Mejoras",
+    "subline": "{name}, Taller del Constructor {hall}",
+    "sublineNotSet": "{name}, Taller del Constructor sin definir",
+    "tabsLabel": "Secciones de la Base del Constructor",
+    "tabs": {
+      "defenses": "Defensas",
+      "army": "Ejército",
+      "resources": "Recursos",
+      "traps": "Trampas",
+      "heroes": "Héroes",
+      "other": "Otros"
+    },
+    "strip": {
+      "title": "Constructores",
+      "noBuilders": "La Base del Constructor tiene dos constructores.",
+      "openQueue": "Abrir cola y línea de tiempo",
+      "unassignedHelp": "Algunas mejoras están guardadas en un constructor que otra mejora ya usa. Termínalas o cancélalas."
+    }
+  },
+  "locked": {
+    "title": "Requiere Ayuntamiento 6",
+    "description": "Esta aldea está en el Ayuntamiento {townHall}. La Base del Constructor se desbloquea en el Ayuntamiento 6, o cuando defines un nivel de Taller del Constructor."
+  },
+  "notSet": {
+    "action": "Definir nivel del Taller del Constructor",
+    "troopsDescription": "Las tropas de la Base del Constructor siguen el nivel del Taller del Constructor. Defínelo en la página Mejoras, pestaña Otros.",
+    "title": "Elige el nivel de tu Taller del Constructor para empezar a seguir",
+    "description": "Define el nivel del Taller del Constructor en el recuadro de abajo. Las listas de la Base del Constructor lo siguen."
+  },
+  "hall": {
+    "title": "Taller del Constructor",
+    "notSet": "Sin definir",
+    "option": "Taller del Constructor {level}",
+    "since": "{amount} {days, plural, one {día} other {días}} en el Taller del Constructor {level}",
+    "confirm": {
+      "title": "¿Cambiar el Taller del Constructor a {level}?",
+      "raising": "Subir el nivel muestra más edificios y límites más altos. No se elimina nada de lo que guardaste.",
+      "lowering": "Bajar el nivel oculta los edificios y límites por encima. Se conservan tus niveles guardados.",
+      "clearing": "Borrar el nivel oculta todas las listas de la Base del Constructor. Se conservan tus niveles guardados.",
+      "setDays": "Poner Días en el Taller del Constructor en hoy",
+      "cancel": "Cancelar",
+      "confirm": "Cambiar nivel"
+    },
+    "toast": "Taller del Constructor de {from, plural, =0 {sin definir} other {{from}}} a {to, plural, =0 {sin definir} other {{to}}}",
+    "undo": "Deshacer"
+  },
+  "other": {
+    "clockTower": "Torre del Reloj",
+    "clockTowerMax": "Nv máx. {level} en este Taller del Constructor",
+    "clockTowerProgress": "Progreso de la Torre del Reloj"
+  },
+  "empty": {
+    "title": "Aún no hay nada aquí",
+    "description": "No hay edificios de este tipo disponibles con este nivel de Taller del Constructor.",
+    "allMax": "Todo lo de aquí está al máximo. Desactiva Ocultar al máximo para verlo."
+  },
+  "heroes": {
+    "maxAtHall": "Nv máx. {level} en este Taller del Constructor",
+    "progress": "Progreso de {name}"
+  }
+}

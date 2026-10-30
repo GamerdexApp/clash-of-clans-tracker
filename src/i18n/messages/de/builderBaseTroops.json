@@ -1,0 +1,29 @@
+{
+  "title": "Truppen",
+  "subline": "{name}, Bauarbeiterhalle {hall}",
+  "sublineNotSet": "{name}, Bauarbeiterhalle nicht gesetzt",
+  "strip": {
+    "title": "Sternenlabor",
+    "noLanes": "Das Sternenlabor ist nicht verfügbar.",
+    "openQueue": "Warteschlange und Zeitleiste öffnen",
+    "unassignedHelp": "Im Sternenlabor ist mehr als eine Truppenforschung gespeichert. Beende oder brich die zusätzliche ab.",
+    "levelLabel": "Stufe des Sternenlabors",
+    "level": "{level} von {max}",
+    "notSet": "Nicht gesetzt"
+  },
+  "card": {
+    "notUnlocked": "Nicht freigeschaltet",
+    "markUnlocked": "Als freigeschaltet markieren",
+    "maxAtHall": "Max. St. {level} bei dieser Bauarbeiterhalle",
+    "unlockedBy": "Freigeschaltet durch Bauarbeiterkaserne Stufe {barracks}",
+    "progress": "Fortschritt von {name}"
+  },
+  "unavailable": {
+    "title": "Bei dieser Bauarbeiterhalle nicht verfügbar",
+    "requires": "Braucht Bauarbeiterkaserne {barracks}, die Bauarbeiterhalle {hall} braucht"
+  },
+  "empty": {
+    "title": "Hier ist noch nichts",
+    "allMax": "Jede Truppe ist auf Max. Schalte „Max ausblenden“ aus, um sie zu sehen."
+  }
+}

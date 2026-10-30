@@ -1,0 +1,30 @@
+{
+  "title": "宠物",
+  "subline": "{name}，{townHall}级大本营",
+  "strip": {
+    "title": "宠物屋",
+    "openQueue": "打开队列和时间线",
+    "noPetHouse": "请先建造宠物屋。在建筑工人页面的军队标签页设置它的等级。",
+    "unassignedHelp": "宠物屋中保存了不止一项宠物升级。请完成或取消多余的一项。",
+    "levelLabel": "宠物屋等级",
+    "level": "{level} / {max}",
+    "notBuilt": "未建造",
+    "boostLabel": "黄金令牌研究加速"
+  },
+  "boostValue": "{percent, plural, =0 {无} other {时间和费用 -{percent}%}}",
+  "locked": {
+    "title": "宠物在14级大本营解锁",
+    "body": "此村庄为{townHall}级大本营。以下是你将获得的宠物。",
+    "needs": "{townHall}级大本营，{petHouse}级宠物屋"
+  },
+  "card": {
+    "notUnlocked": "未解锁",
+    "markUnlocked": "标记为已解锁",
+    "maxAtHall": "最高 {level} 级",
+    "progress": "{name}进度"
+  },
+  "empty": {
+    "title": "这里还没有内容",
+    "allMax": "所有宠物都已满级。关闭“隐藏已满级”即可查看。"
+  }
+}

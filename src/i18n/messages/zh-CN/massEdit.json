@@ -1,0 +1,138 @@
+{
+  "title": "批量编辑",
+  "description": "一次更改多个等级。在你点击“保存更改”之前，不会保存任何内容。",
+  "subline": "{name}，{townHall}级大本营，待保存的更改",
+  "scopes": {
+    "home": "主村庄",
+    "builder": "建筑大师基地",
+    "capital": "部落首都"
+  },
+  "scopeNav": "范围",
+  "requires": "需要{requirement}",
+  "trackingOff": "追踪已关闭",
+  "changedCount": "{count, plural, other {{amount} 项更改}}",
+  "chip": "有未保存的更改",
+  "bar": {
+    "unsaved": "{count, plural, other {{amount} 项未保存的更改}}",
+    "none": "没有未保存的更改",
+    "discard": "放弃",
+    "save": "保存更改"
+  },
+  "saved": "{count, plural, other {已保存 {amount} 项更改}}",
+  "undo": "撤销",
+  "discardDialog": {
+    "title": "{count, plural, other {放弃 {amount} 项未保存的更改？}}",
+    "body": "每一行都会回到已保存的等级。",
+    "keep": "继续编辑",
+    "discard": "放弃更改"
+  },
+  "leave": {
+    "title": "{count, plural, other {你有 {amount} 项未保存的更改}}",
+    "body": "离开前请保存，或放弃它们。",
+    "save": "保存并离开",
+    "discard": "放弃并离开",
+    "keep": "继续编辑"
+  },
+  "toolbar": {
+    "label": "批量操作",
+    "selectAll": "全选 {count} 项",
+    "selected": "{count, plural, other {已选择 {amount} 行}}",
+    "clearSelection": "清除选择",
+    "scopeAll": "作用于{category}中的全部 {count} 行",
+    "scopeSelected": "{count, plural, other {作用于已选择的 {amount} 行}}",
+    "max": "全部满级",
+    "maxSelected": "所选设为满级",
+    "reset": "全部重置",
+    "resetSelected": "重置所选",
+    "setLevel": "设置等级",
+    "levelLabel": "所选行的等级",
+    "applyLevel": "{count, plural, other {应用到 {amount} 行}}",
+    "hallLabel": "设为某大厅等级的满级",
+    "hallCurrent": "{level}级{hall}（当前）",
+    "hallOption": "{level}级{hall}",
+    "hallPlaceholder": "选择{hall}"
+  },
+  "confirm": {
+    "title": "{count, plural, other {降低 {amount} 行？}}",
+    "body": "这会更改草稿。在你点击“保存更改”之前，不会保存任何内容。",
+    "superchargeNote": "低于最高等级的建筑也会失去它的超级充能阶段。",
+    "apply": "应用到草稿",
+    "cancel": "取消",
+    "line": "{name}：{from} 改为 {to}",
+    "more": "以及另外 {count} 项"
+  },
+  "rows": {
+    "notBuilt": "未建造",
+    "toMax": "距满级 {count}",
+    "atMax": "已满级",
+    "changed": "已从 {from} 改为 {to}",
+    "level": "{name}等级",
+    "raise": "提高{name}",
+    "lower": "降低{name}",
+    "max": "满级",
+    "select": "选择{name}",
+    "selectGroup": "选择所有{name}",
+    "supercharge": "超级充能",
+    "reachFirst": "请先达到 {level} 级",
+    "slider": "{name}滑块",
+    "groupBuilt": "已建造 {count} 个，最高 {max} 级",
+    "expand": "展开{name}",
+    "collapse": "收起{name}"
+  },
+  "category": {
+    "atMax": "{level}级{hall}下 {done} / {total} 已满级",
+    "rowsAtMax": "{done} / {total} 已满级",
+    "empty": "此类别中暂无可编辑的内容。",
+    "locked": "需要{requirement}",
+    "lockedSuffix": "（已锁定）",
+    "nav": "类别"
+  },
+  "walls": {
+    "total": "总数",
+    "allocated": "已分配",
+    "remaining": "剩余",
+    "maxAll": "全部满级",
+    "resetAll": "全部重置",
+    "maxAllHelp": "将所有剩余城墙移到最高等级",
+    "level": "{level}级城墙"
+  },
+  "builder": {
+    "profile": "建筑大师基地档案",
+    "hall": "建筑大师大本营等级",
+    "hallHelp": "{level}级建筑大师大本营决定下方每一行的最高等级。降低它之前会先询问，并且只降低高于新上限的行。",
+    "none": "此建筑大师大本营等级下没有可用的建筑",
+    "raise": "提高建筑大师大本营",
+    "lower": "降低建筑大师大本营",
+    "trophies": "奖杯",
+    "bestTrophies": "最高奖杯",
+    "league": "联赛",
+    "hallConfirmTitle": "将建筑大师大本营降到 {level} 级？"
+  },
+  "hallNames": {
+    "home": "大本营",
+    "builder": "建筑大师大本营",
+    "district": "区域大厅",
+    "capital": "首都大厅"
+  },
+  "capital": {
+    "profile": "部落首都档案",
+    "hall": "首都大厅",
+    "none": "无",
+    "level": "{level}级首都大厅",
+    "contributions": "部落首都贡献",
+    "unit": "首都金币",
+    "districtHall": "区域大厅",
+    "districtNone": "无",
+    "districtLevel": "{level}级区域大厅",
+    "requiresCapitalHall": "需要{level}级首都大厅",
+    "unlockHint": "请在上方设置{label}以解锁建筑。",
+    "parts": "分区",
+    "off": "部落首都追踪已关闭",
+    "offBody": "请在部落首都页面重新开启追踪。没有删除任何内容。",
+    "offAction": "打开部落首都"
+  },
+  "empty": {
+    "title": "没有当前村庄",
+    "description": "选择一个村庄或创建一个，才能使用批量编辑。"
+  }
+}

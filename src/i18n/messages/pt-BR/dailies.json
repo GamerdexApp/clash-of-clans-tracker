@@ -1,0 +1,255 @@
+{
+  "locked": {
+    "title": "Diárias",
+    "subline": "{name}, Centro de Vila {townHall}, nada está liberado ainda",
+    "open": "Abrir",
+    "lockedBadge": "Bloqueado",
+    "now": "Esta vila está no Centro de Vila {townHall}.",
+    "nowNoHut": "Esta vila ainda não tem a Cabana dos Ajudantes.",
+    "needsHut": "Precisa da Cabana dos Ajudantes",
+    "toBuilder": "Abrir Construtor",
+    "cards": {
+      "forge": {
+        "title": "Forja",
+        "what": "Transforme recursos sobrando em Ouro da Capital e colete o Ouro da Capital diário."
+      },
+      "helpers": {
+        "title": "Ajudantes",
+        "what": "Acompanhe o Aprendiz de Construtor, o Assistente de Laboratório, o Alquimista e o Prospector."
+      },
+      "seasonPass": {
+        "title": "Passe de Temporada",
+        "what": "Defina os bônus e benefícios do Passe Dourado que reduzem o tempo das melhorias."
+      },
+      "starBonus": {
+        "title": "Bônus de Estrelas",
+        "what": "O cronômetro diário do Bônus de Estrelas fica na Visão geral.",
+        "open": "Abrir Visão geral"
+      }
+    }
+  },
+  "timer": {
+    "notSet": "Marque o horário da sua redefinição diária",
+    "setTime": "Definir horário de redefinição",
+    "setAndUse": "Definir e marcar como usado",
+    "notSetHelp": "Definir o horário não marca a recompensa como usada.",
+    "savedIn": "O horário é salvo em {zone}.",
+    "available": "Disponível",
+    "use": "Usar",
+    "adjust": "Ajustar",
+    "adjustTitle": "Ajustar horário de redefinição",
+    "save": "Salvar",
+    "cancel": "Cancelar",
+    "resetsAt": "Redefine todo dia às {time}, {zone}",
+    "untilReset": "até a redefinição às {time}, {zone}",
+    "usedAt": "Usado às {time}.",
+    "timeLabel": "Horário de redefinição",
+    "deviceClock": "relógio do dispositivo",
+    "used": "{name} marcado como usado",
+    "undo": "Desfazer"
+  },
+  "forge": {
+    "title": "Forja",
+    "description": "Transforme recursos sobrando em Ouro da Capital e colete o Ouro da Capital diário.",
+    "subline": "{builderHall, plural, =0 {{name}, Centro de Vila {townHall}, produção de Ouro da Capital} other {{name}, Centro de Vila {townHall}, Salão do Construtor {builderHall}, produção de Ouro da Capital}}",
+    "daily": {
+      "title": "Ouro da Capital diário",
+      "amount": "+{gold} Ouro da Capital por dia no Centro de Vila {townHall}",
+      "none": "O Ouro da Capital diário começa no Centro de Vila 6.",
+      "name": "Ouro da Capital diário"
+    },
+    "slots": {
+      "title": "Espaços da Forja",
+      "craftingTime": "Tempo de criação de 3 dias",
+      "open": "{open} de {total} espaços abertos no Centro de Vila {townHall}",
+      "boost": "Bônus de construtor de {percent}% aplicado: {time}",
+      "slot": "Espaço {number}",
+      "requires": "Requer Centro de Vila {townHall}",
+      "locked": "Bloqueado",
+      "idle": "Livre",
+      "idleHelp": "Escolha o que forjar",
+      "running": "Em andamento",
+      "done": "Concluído",
+      "result": "Resultado",
+      "start": "Iniciar",
+      "stop": "Parar",
+      "reset": "Redefinir",
+      "resource": "Recurso",
+      "rate": "{amount} {resource} por {capitalGold} Ouro da Capital, pronto em {time}",
+      "left": "faltam {time}",
+      "ready": "Pronto: {capitalGold} Ouro da Capital.",
+      "finished": "Concluído há {ago}.",
+      "stopped": "Espaço {number} parado. Execução apagada.",
+      "resetDone": "Espaço {number} redefinido. Execução de {resource} apagada.",
+      "runningTitle": "{resource}, {amount}"
+    },
+    "auto": {
+      "title": "Forja Automática",
+      "subtitle": "Benefício do Passe Dourado, repete sozinha",
+      "repeats": "{amount} {resource} por {capitalGold} Ouro da Capital a cada {time}",
+      "nextRun": "A próxima execução começa sozinha quando esta terminar.",
+      "stop": "Parar Forja Automática",
+      "stopped": "Forja Automática parada. Ciclo apagado.",
+      "confirm": {
+        "title": "Parar a Forja Automática?",
+        "body": "O ciclo em andamento será apagado: {amount} {resource} por {capitalGold} Ouro da Capital, com {time} restantes. A Forja Automática deixa de repetir até você iniciá-la de novo na página da Forja. O benefício do Passe Dourado continua ativo no Passe de Temporada.",
+        "undoHint": "Um botão Desfazer fica na tela por alguns segundos depois que você parar.",
+        "keep": "Manter em execução",
+        "stop": "Parar Forja Automática"
+      }
+    },
+    "rates": {
+      "title": "Taxas da Forja",
+      "description": "{builderHall, plural, =0 {Centro de Vila {townHall}, uma execução em um espaço} other {Centro de Vila {townHall} e Salão do Construtor {builderHall}, uma execução em um espaço}}",
+      "autoTitle": "Taxas da Forja Automática",
+      "autoDescription": "Preço do Passe Dourado, metade do custo manual",
+      "resource": "Recurso",
+      "cost": "Custo",
+      "capitalGold": "Ouro da Capital",
+      "requires": "Requer {requirement}"
+    }
+  },
+  "helpers": {
+    "title": "Ajudantes",
+    "description": "Acompanhe o Aprendiz de Construtor, o Assistente de Laboratório, o Alquimista e o Prospector.",
+    "subline": "{builderHall, plural, =0 {{name}, Centro de Vila {townHall}, assistentes da Cabana dos Ajudantes} other {{name}, Centro de Vila {townHall}, Salão do Construtor {builderHall}, assistentes da Cabana dos Ajudantes}}",
+    "banner": "Cabana dos Ajudantes construída. Cada ajudante é liberado por Centro de Vila: Assistente de Laboratório 9, Aprendiz de Construtor 10, Prospector 10, Alquimista 11.",
+    "names": {
+      "buildersApprentice": "Aprendiz de Construtor",
+      "labAssistant": "Assistente de Laboratório",
+      "alchemist": "Alquimista",
+      "prospector": "Prospector"
+    },
+    "from": "Centro de Vila {townHall} ou superior",
+    "lockedCard": "Requer Centro de Vila {townHall}",
+    "dailyUse": "Uso diário",
+    "level": "Nível",
+    "levelOption": "Nível {level}",
+    "levelTownHall": "CV {townHall}",
+    "none": "Nenhum",
+    "noLevel": "Selecione seu nível para ver as estatísticas.",
+    "noLevelCalculator": "Selecione seu nível para usar a calculadora.",
+    "nextLevel": "{gems, select, 0 {O nível {level} é grátis} other {O nível {level} custa {gems} gemas}}",
+    "saves": "Economiza {time} por uso",
+    "levelRequires": "Requer Centro de Vila {townHall}",
+    "assignment": {
+      "builderTitle": "Melhoria para acelerar",
+      "researchTitle": "Pesquisa para acelerar",
+      "none": "Nenhuma",
+      "builderHelp": "Lista construções, heróis, o Centro de Vila, a arma do Centro de Vila e os módulos de defesas criadas que estão em melhoria agora.",
+      "researchHelp": "Somente pesquisa: lista tropas, feitiços e máquinas de cerco que estão em melhoria agora.",
+      "builderEmpty": "Nenhuma melhoria de construtor ativa para atribuir.",
+      "researchEmpty": "Nenhuma pesquisa de laboratório ativa para atribuir.",
+      "once": "Uso único",
+      "untilDone": "Até concluir",
+      "assignedTo": "Atribuído a",
+      "clearsAfterUse": "Limpa após um uso.",
+      "staysUntilDone": "Fica até a melhoria terminar.",
+      "clear": "Limpar atribuição",
+      "cleared": "Atribuição limpa.",
+      "select": "Melhoria atribuída",
+      "mode": "Modo de atribuição",
+      "preview": "Usar agora: {before} restantes viram {after}.",
+      "previewDone": "Usar agora: {before} restantes, a melhoria termina.",
+      "upgradeTo": "{name} para o nível {level}, faltam {left}"
+    },
+    "used": {
+      "plain": "{name} marcado como usado",
+      "saved": "{name} usado em {target}, {time} economizados"
+    },
+    "alchemist": {
+      "stats": {
+        "goldElixir": "Máx. de Ouro ou Elixir",
+        "darkElixir": "Máx. de Elixir Negro",
+        "bonus": "Bônus de conversão"
+      },
+      "calculator": "Calculadora de conversão",
+      "from": "De",
+      "to": "Para",
+      "amount": "Quantidade a converter",
+      "result": "{amount} {from} resultam em {output} {to}",
+      "help": "Inclui o bônus de conversão de {bonus}% e a taxa de 150 para 1.",
+      "nothingSaved": "Nada aqui é salvo."
+    },
+    "prospector": {
+      "lockedTitle": "Bloqueado até você liberá-lo com 2.200 Pontos de Desafio de Temporada",
+      "lockedHelp": "Ative-o na página do Passe de Temporada depois de liberá-lo no jogo.",
+      "toSeasonPass": "Abrir Passe de Temporada",
+      "subtitle": "Centro de Vila 10 ou superior, liberado com Pontos de Desafio de Temporada",
+      "lockedBadge": "Bloqueado",
+      "unlockedBadge": "Liberado",
+      "levelOnly": "Nível 1 (o único nível)",
+      "limits": {
+        "shiny": "Máx. de Shiny Ore",
+        "glowy": "Máx. de Glowy Ore",
+        "starry": "Máx. de Starry Ore"
+      },
+      "calculator": "Calculadora de conversão de minério",
+      "ores": {
+        "shiny": "Shiny Ore",
+        "glowy": "Glowy Ore",
+        "starry": "Starry Ore"
+      },
+      "help": "10 Shiny Ore formam 1 Glowy Ore. 100 Glowy Ore formam 1 Starry Ore."
+    }
+  },
+  "seasonPass": {
+    "title": "Passe de Temporada",
+    "description": "Defina os bônus e benefícios do Passe Dourado que reduzem o tempo das melhorias.",
+    "subline": "{name}, Centro de Vila {townHall}, benefícios do Passe Dourado ativos nesta temporada",
+    "lockedTitle": "O Passe de Temporada está bloqueado",
+    "lockedBody": "O Passe Dourado precisa do Centro de Vila 7. Esta vila está no Centro de Vila {townHall}.",
+    "month": {
+      "title": "{month}",
+      "subtitle": "Os bônus são redefinidos em {reset}, os benefícios continuam.",
+      "key": "Chave do mês",
+      "rolled": "Um novo mês começou. O bônus de construtor e o bônus de pesquisa voltaram a 0%. Os benefícios continuam ativos.",
+      "undoReset": "Desfazer redefinição",
+      "dismiss": "Dispensar",
+      "restored": "Bônus restaurados para este mês.",
+      "undo": "Desfazer"
+    },
+    "boosts": {
+      "title": "Benefícios de bônus",
+      "description": "O Passe Dourado reduz o tempo das melhorias nesta temporada.",
+      "builder": "Bônus de construtor",
+      "research": "Bônus de pesquisa",
+      "applies": "Vale para os tempos de Construtor, Pesquisa e Mascotes, as linhas do tempo da fila e o tempo de criação da Forja.",
+      "saved": "Salvo com este mês.",
+      "value": "{percent, plural, =0 {Desativado} other {{percent}%}}",
+      "option": "{percent, plural, =0 {0%} other {{percent}%}}",
+      "builderEffect": "{percent, plural, =0 {O tempo de criação da Forja é 3d.} other {O tempo de criação da Forja é {time}.}}",
+      "researchEffect": "{percent, plural, =0 {Os tempos de pesquisa e de mascotes não mudam.} other {Os tempos de pesquisa e de mascotes ficam {percent}% menores.}}"
+    },
+    "unlocks": {
+      "title": "Liberações do Desafio de Temporada",
+      "description": "Não faz parte do Passe Dourado",
+      "prospector": "Prospector",
+      "prospectorHelp": "Ajudante para o Centro de Vila 10 ou superior, custa 2.200 Pontos de Desafio de Temporada",
+      "shows": "Aparece na página de Ajudantes"
+    },
+    "perks": {
+      "title": "Benefícios do Passe Dourado",
+      "description": "Benefícios do Passe Dourado ativos nesta temporada",
+      "referenceOnly": "Somente referência",
+      "referenceNote": "Não muda mais nada no app.",
+      "hoggyBank": {
+        "label": "Hoggy Bank",
+        "note": "Guarda recursos enquanto você joga, colete no fim da temporada"
+      },
+      "gemDonations": {
+        "label": "Doações por 1 Gema",
+        "note": "Doe tropas e feitiços por apenas 1 gema cada"
+      },
+      "autoForge": {
+        "label": "Forja Automática",
+        "note": "Converte recursos em Ouro da Capital automaticamente"
+      },
+      "autoForgeEffect": "Ativa a linha da Forja Automática na página da Forja e o indicador na Visão geral.",
+      "requestTimeReduction": {
+        "label": "Redução do Tempo de Pedido",
+        "note": "Reduz o tempo de espera para pedir tropas"
+      }
+    }
+  }
+}

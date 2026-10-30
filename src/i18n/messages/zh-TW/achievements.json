@@ -1,0 +1,49 @@
+{
+  "title": "成就",
+  "description": "追蹤每項成就的星星、數值與獎勵。",
+  "subline": "{name}，{count} 項成就，{stars} / {maxStars} 顆星星，{percent}%",
+  "tiles": {
+    "all": "所有成就",
+    "home": "主村莊",
+    "builder": "建築工人基地",
+    "capital": "部落首都",
+    "gems": "已獲得寶石",
+    "xp": "已獲得經驗值",
+    "stars": "{stars} / {maxStars} 顆星星",
+    "left": "還可獲得 {amount} {unit}",
+    "gemsUnit": "寶石",
+    "xpUnit": "經驗值"
+  },
+  "sections": {
+    "home": "主村莊",
+    "builderBase": "建築工人基地",
+    "clanCapital": "部落首都",
+    "summary": "{count} 項成就，{stars} / {maxStars} 顆星星，{gems} 寶石，{xp} 經驗值",
+    "more": "再顯示 {count} 項{name}成就",
+    "less": "顯示較少"
+  },
+  "card": {
+    "manual": "手動",
+    "nextStar": "下一顆星星",
+    "xp": "經驗值",
+    "gems": "寶石",
+    "edit": "編輯{name}",
+    "done": "完成",
+    "stars": "星星",
+    "starsHelp": "再按一次相同的星星，即可移除一顆星星。",
+    "star": "{number, plural, other {{amount} 顆星星}}",
+    "value": "數值",
+    "target": "目標",
+    "manualLabel": "手動（略過 API 覆寫）",
+    "saves": "變更會在輸入時自動儲存。提高星星數會將目標移到下一階。",
+    "progress": "{name}進度",
+    "starsEarned": "{stars} / 3 顆星星"
+  },
+  "toast": {
+    "stars": "{name}已變更為{stars, plural, other {{amount} 顆星星}}",
+    "targetMoved": "目標已移到 {target}。",
+    "value": "{name}的數值已變更為 {value}",
+    "target": "{name}的目標已變更為 {target}",
+    "undo": "復原"
+  }
+}

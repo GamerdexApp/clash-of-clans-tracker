@@ -1,0 +1,48 @@
+{
+  "title": "Tường Căn Cứ Thợ Xây",
+  "subline": "{name}, Nhà Thợ Xây {builderHall}, cấp tường cao nhất {highest}",
+  "massEdit": "Số lượng tường cũng có thể chỉnh trong Sửa hàng loạt.",
+  "tiles": {
+    "total": "Tổng ở Nhà Thợ Xây này",
+    "totalCaption": "Cấp tường cao nhất {highest}",
+    "placed": "Đã đặt",
+    "placedCaption": "Tường ở một cấp",
+    "notPlaced": "Chưa đặt",
+    "allPlaced": "Đã đặt hết",
+    "stillToPlace": "Còn {amount} {count, plural, other {tường}} cần đặt",
+    "over": "Vượt {count}"
+  },
+  "hideEmpty": "{hidden, plural, =0 {Ẩn các cấp trống dưới cấp thấp nhất của bạn} other {Ẩn các cấp trống dưới cấp thấp nhất của bạn (đã ẩn {hidden})}}",
+  "row": {
+    "level": "Cấp {level}",
+    "own": "Bạn có",
+    "ownLabel": "Tường bạn có ở cấp {level}",
+    "lower": "Bớt một tường cấp {level}",
+    "raise": "Thêm một tường cấp {level}",
+    "nextCost": "Cấp tiếp theo: {price} {resource} mỗi tường",
+    "toMove": "Tường cần chuyển",
+    "toLevel": "Lên cấp",
+    "plusOne": "+1",
+    "move": "Chuyển",
+    "moveAll": "Chuyển tất cả",
+    "preview": "Chuyển {amount} {walls, plural, other {tường}} từ cấp {from} lên {to}: {price} {resource}",
+    "nothingToMove": "Không có gì để chuyển",
+    "noWalls": "Không có tường ở cấp này để chuyển."
+  },
+  "cost": {
+    "title": "Chi phí đưa mọi tường lên cấp {level}",
+    "row": "Cấp {level}, {amount} {walls, plural, other {tường}}",
+    "total": "Tổng",
+    "none": "Mọi tường đã đặt đều ở cấp cao nhất, hoặc chưa đặt tường nào.",
+    "note": "Tường cấp 2 đến 6 tốn Vàng Thợ Xây. Tường cấp 7 trở lên tốn Vàng Thợ Xây hoặc Dung Dịch Thợ Xây."
+  },
+  "empty": {
+    "title": "Chưa có tường",
+    "description": "Đặt cấp Nhà Thợ Xây ở trang Nâng cấp của Căn Cứ Thợ Xây để xem tường."
+  },
+  "toast": {
+    "moved": "Đã chuyển {amount} {walls, plural, other {tường}} từ cấp {from} lên {to}",
+    "counted": "Tường cấp {level} từ {from} thành {to}",
+    "undo": "Hoàn tác"
+  }
+}

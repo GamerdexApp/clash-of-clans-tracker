@@ -1,0 +1,87 @@
+{
+  "header": {
+    "label": "Sections de la page",
+    "features": "Fonctionnalités",
+    "faq": "FAQ",
+    "villages": "Villages",
+    "settings": "Paramètres"
+  },
+  "hero": {
+    "title": "Suivez votre progression dans Clash of Clans",
+    "description": "Gardez chaque village au même endroit : bâtiments, troupes, héros, améliorations et quotidiens pour votre Village principal, votre Base des ouvriers et votre Capitale du clan.",
+    "note": "Gratuit. Sans compte. Toutes les données restent dans votre navigateur.",
+    "screenshotAlt": "La page Aperçu de Clash of Clans Tracker avec la progression du village, les trophées et les succès",
+    "continue": "Continuer avec",
+    "continueLine": "{builderHall, plural, =0 {Hôtel de ville {townHall}, mis à jour {updated}} other {Hôtel de ville {townHall}, Hôtel des ouvriers {builderHall}, mis à jour {updated}}}"
+  },
+  "cta": {
+    "create": "Créer votre premier village",
+    "learnMore": "En savoir plus",
+    "overview": "Aller à l'Aperçu",
+    "newVillage": "Nouveau village"
+  },
+  "features": {
+    "label": "Tout ce qu'il vous faut",
+    "title": "Toute votre progression au même endroit",
+    "description": "De l'Hôtel de ville à la Capitale du clan, chaque niveau suivi est enregistré dès que vous le changez.",
+    "items": {
+      "item1": {
+        "title": "Plusieurs villages",
+        "text": "Créez et gérez autant de villages que vous voulez. Suivez séparément différents comptes et bases."
+      },
+      "item2": {
+        "title": "Suivi de progression",
+        "text": "Suivez précisément ce que vous avez terminé, collecté ou débloqué dans chaque village."
+      },
+      "item3": {
+        "title": "Aperçu",
+        "text": "Voyez votre progression d'un coup d'œil avec des stats récapitulatives, des minuteurs quotidiens et des indicateurs de complétion."
+      },
+      "item4": {
+        "title": "Sauvegarde et synchro",
+        "text": "Exportez votre progression en fichier JSON, ou synchronisez-la entre vos appareils avec votre propre stockage cloud."
+      },
+      "item5": {
+        "title": "Privé",
+        "text": "Vos données restent dans votre navigateur. Le seul appel serveur est la recherche facultative par tag de joueur, qui demande à Supercell vos stats publiques."
+      },
+      "item6": {
+        "title": "Mode sombre",
+        "text": "Confortable de jour comme de nuit. Choisissez clair, sombre ou suivez votre appareil dans les Paramètres."
+      }
+    }
+  },
+  "faq": {
+    "label": "Des questions ?",
+    "title": "Questions fréquentes",
+    "items": {
+      "item1": {
+        "question": "Qu'est-ce que Clash of Clans Tracker ?",
+        "answer": "C'est un outil de suivi de progression pour Clash of Clans. Il vous aide à gérer plusieurs comptes et à suivre vos améliorations, succès, quotidiens et votre progression globale au même endroit."
+      },
+      "item2": {
+        "question": "Comment mes données sont-elles stockées ?",
+        "answer": "Tout est enregistré dans votre navigateur : votre progression reste privée et ne demande aucun compte. Vous pouvez l'exporter et l'importer en fichier JSON pour la sauvegarder. La recherche facultative par tag de joueur envoie le tag à une petite action serveur qui interroge l'API de Supercell pour vos stats publiques."
+      },
+      "item3": {
+        "question": "Puis-je suivre plusieurs villages ?",
+        "answer": "Oui. Créez autant de villages que vous voulez, chacun avec sa propre progression, et passez de l'un à l'autre dans la barre latérale."
+      },
+      "item4": {
+        "question": "Est-ce synchronisé entre les appareils ?",
+        "answer": "Oui, si vous le souhaitez. Ouvrez les Paramètres et connectez GitHub, Google Drive, Dropbox ou OneDrive. Vos données sont stockées dans votre propre compte, et la synchro reste désactivée tant que vous ne l'activez pas."
+      },
+      "item5": {
+        "question": "Cette appli est-elle gratuite ?",
+        "answer": "Oui. Elle est gratuite, sans abonnement, sans publicité et sans inscription."
+      }
+    }
+  },
+  "final": {
+    "title": "Commencez à suivre vos villages dès aujourd'hui",
+    "description": "Sans compte et sans inscription. Votre premier village ne demande qu'un nom."
+  },
+  "updated": {
+    "justNow": "à l'instant"
+  }
+}

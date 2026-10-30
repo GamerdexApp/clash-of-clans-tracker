@@ -1,0 +1,17 @@
+{
+  "stats": {
+    "attacksPerWeek": "الهجمات في الأسبوع",
+    "promoted": "نسبة الأعلى % المرقّون",
+    "demoted": "نسبة الأدنى % المنزَّلون",
+    "trophyRange": "نطاق الكؤوس",
+    "starsForBonus": "النجوم لمكافأة النجوم"
+  },
+  "sections": {
+    "maxLoot": "أقصى غنيمة متاحة",
+    "leagueBonus": "أقصى مكافأة دوري",
+    "weeklyStarBonus": "مكافأة النجوم الأسبوعية",
+    "starBonusReward": "جائزة مكافأة النجوم"
+  },
+  "range": "{min} إلى {max}",
+  "rangeOpen": "{min}+"
+}

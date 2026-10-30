@@ -1,0 +1,32 @@
+{
+  "gate": {
+    "title": "アクティブなビレッジがありません",
+    "description": "このページを表示するには、ビレッジを選ぶか作成してください。",
+    "newVillage": "新しいビレッジ",
+    "chooseVillage": "ビレッジを選ぶ"
+  },
+  "townHallTab": {
+    "title": "タウンホール",
+    "supercharge": "スーパーチャージ",
+    "superchargeDone": "このタウンホールで開放されているスーパーチャージの段階のうち、{current} / {max}が完了しています。",
+    "superchargeProgress": "スーパーチャージの進行状況"
+  },
+  "heroesUnlock": "ヒーローはヒーローホールで開放されます。",
+  "progressLabel": "{name}の進行状況",
+  "countdownLabel": "{name}のカウントダウン",
+  "capitalGold": "キャピタルゴールド",
+  "queue": {
+    "conflict": "競合",
+    "level": "Lv {level}",
+    "levelSupercharge": "Lv {level} スーパーチャージ",
+    "now": "今",
+    "itemTitle": "{name} Lv {level}"
+  },
+  "finishDescription": "{name}、Lv {from}からLv {to}、{method}、{time} {unit}",
+  "lookupError": {
+    "rateLimit": "再取得するまで{seconds}秒お待ちください。",
+    "notFound": "プレイヤー{tag}が見つかりませんでした。",
+    "api": "Supercell APIが{status}を返しました。",
+    "network": "プレイヤー検索がサーバーに接続できませんでした。"
+  }
+}

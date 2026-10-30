@@ -1,0 +1,32 @@
+{
+  "title": "Nghiên cứu",
+  "subline": "{name}, Nhà Chính {townHall}",
+  "tabsLabel": "Các mục Nghiên cứu",
+  "tabs": {
+    "troops": "Quân",
+    "spells": "Phép",
+    "siegeMachines": "Công thành"
+  },
+  "strip": {
+    "title": "Phòng Thí Nghiệm",
+    "noLanes": "Không có làn nghiên cứu nào khả dụng.",
+    "openQueue": "Mở hàng chờ và dòng thời gian",
+    "unassignedHelp": "Một số nghiên cứu được lưu trên làn đang tắt, hoặc trên làn mà nghiên cứu khác đang dùng. Hãy hoàn tất hoặc hủy chúng.",
+    "levelLabel": "Cấp Phòng Thí Nghiệm",
+    "level": "{level} trên {max}",
+    "notTracked": "Chưa đặt",
+    "boostLabel": "Tăng tốc nghiên cứu Gold Pass"
+  },
+  "card": {
+    "notUnlocked": "Chưa mở",
+    "markUnlocked": "Đánh dấu đã mở",
+    "maxAtHall": "Tối đa cấp {level} ở Nhà Chính này",
+    "progress": "Tiến độ {name}"
+  },
+  "empty": {
+    "title": "Chưa có gì ở đây",
+    "none": "Không có gì trong mục này khả dụng ở cấp Nhà Chính này.",
+    "allMax": "Mọi thứ ở đây đã tối đa. Tắt Ẩn tối đa để xem."
+  },
+  "boostValue": "{percent, plural, =0 {Không} other {-{percent}% thời gian và chi phí}}"
+}

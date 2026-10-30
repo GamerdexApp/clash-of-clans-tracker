@@ -1,0 +1,32 @@
+{
+  "title": "Forschung",
+  "subline": "{name}, Rathaus {townHall}",
+  "tabsLabel": "Forschungsbereiche",
+  "tabs": {
+    "troops": "Truppen",
+    "spells": "Zauber",
+    "siegeMachines": "Belagerung"
+  },
+  "strip": {
+    "title": "Labor",
+    "noLanes": "Keine Forschungsbahn verfügbar.",
+    "openQueue": "Warteschlange und Zeitleiste öffnen",
+    "unassignedHelp": "Einige Forschung ist auf einer ausgeschalteten Bahn gespeichert oder auf einer Bahn, die schon eine andere Forschung nutzt. Beende oder brich sie ab.",
+    "levelLabel": "Stufe des Labors",
+    "level": "{level} von {max}",
+    "notTracked": "Nicht gesetzt",
+    "boostLabel": "Goldpass-Forschungs-Boost"
+  },
+  "card": {
+    "notUnlocked": "Nicht freigeschaltet",
+    "markUnlocked": "Als freigeschaltet markieren",
+    "maxAtHall": "Max. St. {level} bei diesem Rathaus",
+    "progress": "Fortschritt von {name}"
+  },
+  "empty": {
+    "title": "Hier ist noch nichts",
+    "none": "Auf dieser Rathausstufe ist in diesem Bereich nichts verfügbar.",
+    "allMax": "Alles hier ist auf Max. Schalte „Max ausblenden“ aus, um es zu sehen."
+  },
+  "boostValue": "{percent, plural, =0 {Keiner} other {-{percent}% Zeit und Kosten}}"
+}

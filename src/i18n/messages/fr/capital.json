@@ -1,0 +1,139 @@
+{
+  "districts": {
+    "title": "Districts",
+    "subline": "{hall, plural, =0 {{name}, Hôtel de la capitale non défini} other {{name}, Hôtel de la capitale {hall}}}",
+    "description": "Districts et zones de votre Capitale du clan."
+  },
+  "troops": {
+    "title": "Troupes et sorts",
+    "subline": "{name}, troupes et sorts de la Capitale du clan",
+    "tiles": {
+      "troops": "Troupes",
+      "spells": "Sorts",
+      "caption": "{current} sur {max} niveaux"
+    },
+    "sections": {
+      "troops": "Troupes",
+      "spells": "Sorts"
+    },
+    "card": {
+      "level": "Niveau de {name}",
+      "raise": "Augmenter {name}",
+      "lower": "Baisser {name}",
+      "maxAt": "Niveau max {level} actuellement",
+      "from": "Depuis {zone}",
+      "progress": "Progression de {name}"
+    },
+    "locked": {
+      "title": "Pas encore disponible",
+      "districtHall": "Nécessite l'Hôtel de district {level} dans {zone}",
+      "capitalHall": "Nécessite l'Hôtel de la capitale {level} pour ouvrir {zone}",
+      "kept": "Le niveau enregistré {level} est conservé"
+    },
+    "empty": {
+      "title": "Tout est au max",
+      "description": "Désactivez Masquer le max pour voir toutes les troupes et tous les sorts."
+    }
+  },
+  "tracking": {
+    "label": "Suivre la Capitale du clan",
+    "onHelp": "La désactiver conserve toutes les données.",
+    "turnOnTitle": "Le suivi de la Capitale du clan est activé",
+    "turnedOn": "Le suivi de la Capitale du clan est activé.",
+    "undo": "Annuler",
+    "offDialog": {
+      "title": "Désactiver le suivi de la Capitale du clan ?",
+      "body": "Les pages de la Capitale du clan, la carte de l'Aperçu et l'onglet Édition en masse sont masqués. Rien n'est supprimé.",
+      "confirm": "Désactiver",
+      "cancel": "Annuler"
+    }
+  },
+  "off": {
+    "title": "Le suivi de la Capitale du clan est désactivé",
+    "description": "Vos districts, troupes et sorts sont conservés. Activez le suivi pour les revoir.",
+    "turnOn": "Activer le suivi",
+    "keptTitle": "Ce qui est conservé",
+    "kept": "Toutes les données de la Capitale du clan restent dans ce village."
+  },
+  "locked": {
+    "title": "La Capitale du clan est verrouillée",
+    "description": "La Capitale du clan s'ouvre à l'Hôtel de ville 3. Ce village est à l'Hôtel de ville {townHall}. Ce qui est déjà enregistré réapparaît à l'Hôtel de ville 3.",
+    "action": "Changer l'Hôtel de ville dans Villages"
+  },
+  "notSet": {
+    "title": "La Capitale du clan n'est pas configurée",
+    "description": "Définissez le niveau de l'Hôtel de la capitale pour suivre districts, troupes et sorts.",
+    "action": "Définir le niveau de l'Hôtel de la capitale"
+  },
+  "hall": {
+    "label": "Hôtel de la capitale",
+    "none": "Aucun",
+    "level": "Niveau {level}",
+    "nextCost": "L'Hôtel de la capitale {level} coûte {cost} Or de la capitale{hasOpens, select, true { et ouvre {opens}} other {}}. Monter un hôtel ne réinitialise jamais les niveaux.",
+    "atTop": "L'Hôtel de la capitale est à son niveau maximal.",
+    "raised": "Hôtel de la capitale passé de {from} à {to}. Aucun niveau n'a été réinitialisé.",
+    "changed": "Hôtel de la capitale changé de {from} à {to}.",
+    "districtRaised": "Hôtel de district de {zone} passé de {from} à {to}.",
+    "districtChanged": "Hôtel de district de {zone} changé de {from} à {to}."
+  },
+  "contributions": {
+    "label": "Contributions",
+    "unit": "Or de la capitale",
+    "help": "Total donné à votre clan. L'import par Tag de joueur le remplit, vous pouvez aussi le saisir."
+  },
+  "tiles": {
+    "progress": "Progression de la capitale",
+    "progressCaption": "{current} sur {max} niveaux",
+    "zones": "Zones ouvertes",
+    "zonesCaption": "{open} sur {total}"
+  },
+  "zones": {
+    "title": "Zones",
+    "help": "Sélectionnez une zone pour la modifier ci-dessous",
+    "hall": "{level, plural, =0 {Aucun Hôtel de district} other {Hôtel de district {level}}}",
+    "peakHall": "Hôtel de la capitale {level}",
+    "locked": "Verrouillé, nécessite l'Hôtel de la capitale {hall}",
+    "levels": "{current} sur {max}"
+  },
+  "panel": {
+    "districtHall": "Hôtel de district",
+    "requires": "Nécessite l'Hôtel de la capitale {hall}",
+    "noHall": "Aucun Hôtel de district",
+    "empty": "Rien à construire ici à ce niveau d'hôtel.",
+    "groupsLabel": "Groupes de bâtiments",
+    "groups": {
+      "defenses": "Défenses",
+      "traps": "Pièges",
+      "army": "Armée",
+      "walls": "Murailles"
+    },
+    "max": "Max",
+    "clear": "Effacer",
+    "maxAll": "Tout au max",
+    "resetAll": "Tout réinitialiser",
+    "instances": "{amount} {count, plural, one {bâtiment} other {bâtiments}}",
+    "maxLevel": "Niveau max {level}",
+    "instance": "{name} {index}",
+    "raise": "Augmenter {name}",
+    "lower": "Baisser {name}",
+    "wallLevel": "Niveau {level}",
+    "wallsLeft": "{left} murailles sur {total} restent à placer",
+    "wallsNote": "Les nombres ne peuvent pas dépasser les murailles restantes.",
+    "wallsNone": "Aucune muraille à ce niveau d'hôtel.",
+    "wallCount": "Murailles de niveau {level}",
+    "wallRaise": "Une muraille de plus au niveau {level}",
+    "wallLower": "Une muraille de moins au niveau {level}",
+    "groupMaxed": "{zone} : {group} mis au max",
+    "groupCleared": "{zone} : {group} effacé"
+  },
+  "confirm": {
+    "title": "Baisser cet hôtel ?",
+    "description": "Ces niveaux ne conviennent plus et seront réinitialisés. Tout le reste est conservé.",
+    "confirm": "Baisser l'hôtel",
+    "cancel": "Garder l'hôtel",
+    "more": "et {count} de plus"
+  },
+  "toast": {
+    "undo": "Annuler"
+  }
+}

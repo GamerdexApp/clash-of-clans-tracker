@@ -1,0 +1,177 @@
+{
+  "goldPass": "{percent, plural, =0 {无黄金令牌加速} other {黄金令牌 -{percent}%}}",
+  "options": {
+    "open": "队列选项",
+    "title": "队列选项",
+    "description": "更改队列排程方式的设置。",
+    "done": "完成"
+  },
+  "totals": {
+    "freeValue": "{free} / {total}",
+    "queued": "排队的升级",
+    "time": "排队时间",
+    "allDone": "所有通道已完成",
+    "none": "没有排队内容",
+    "cost": "排队费用",
+    "noCost": "无费用"
+  },
+  "lane": {
+    "idle": "空闲",
+    "queueEmpty": "此通道上没有排队内容。",
+    "startNow": "立即开始",
+    "remove": "移除",
+    "moveUp": "上移",
+    "moveDown": "下移",
+    "moveToLane": "移到通道",
+    "levels": "{from}级到{to}级",
+    "removed": "{name}已从队列移除",
+    "started": "{name}已开始",
+    "undo": "撤销"
+  },
+  "timeline": {
+    "title": "时间线",
+    "zoomLabel": "时间线长度",
+    "zooms": {
+      "3": "3天",
+      "7": "1周",
+      "14": "2周",
+      "30": "1个月",
+      "90": "3个月"
+    },
+    "conflictsTitle": "冲突",
+    "noConflicts": "没有冲突。每项升级都在所需等级之后开始。",
+    "laneLabel": "{label}时间线",
+    "now": "现在",
+    "idle": "空闲"
+  },
+  "add": {
+    "search": "搜索升级",
+    "hiddenFromAll": "不在“全部”中显示：{names}。",
+    "chooseCategories": "选择类别",
+    "chooseCategoriesHelp": "勾选的类别会显示在“全部”中。未勾选的只显示在各自的标签中。",
+    "add": "添加",
+    "addUpToHere": "添加到此处",
+    "showMore": "显示更多等级",
+    "showMoreUpgrades": "显示更多升级",
+    "nothing": "这里没有可添加的内容。",
+    "nothingDescription": "此视图中的每个等级都已排队、正在进行或尚不可用。",
+    "added": "{count, plural, other {已添加{name}的 {amount} 个等级}}",
+    "close": "完成",
+    "unlockTitle": "未解锁",
+    "unlockHelp": "请先解锁这些内容，才能排队它们的等级。",
+    "markUnlocked": "标记为已解锁",
+    "showAllLocked": "显示全部 {count} 个",
+    "showFewerLocked": "显示更少",
+    "allLabel": "全部"
+  },
+  "lanes": {
+    "builder": {
+      "title": "建筑工人队列",
+      "subline": "{name}，规划每名建筑工人接下来做什么",
+      "back": "返回建筑工人",
+      "free": "空闲建筑工人",
+      "laneBusy": "这名建筑工人正忙。",
+      "goblin": {
+        "label": "哥布林建筑工人",
+        "help": "活动期间增加第七条建筑工人通道。"
+      },
+      "gate": "请先建造一座建筑工人小屋。第一座免费且立即完成。",
+      "add": {
+        "title": "添加升级",
+        "description": "选择建筑工人接下来做什么。你添加的等级会按顺序排队。",
+        "lane": "建筑工人通道",
+        "search": "搜索升级"
+      },
+      "categories": {
+        "defenses": "防御",
+        "armyBuildings": "军队",
+        "resourceBuildings": "资源",
+        "traps": "陷阱",
+        "heroes": "英雄",
+        "townHall": "大本营",
+        "craftedDefenses": "定制",
+        "guardians": "守护者",
+        "supercharges": "超级充能"
+      }
+    },
+    "research": {
+      "title": "研究队列",
+      "subline": "{name}，规划实验室接下来研究什么",
+      "back": "返回研究",
+      "free": "空闲实验室",
+      "laneBusy": "此通道正忙。",
+      "goblin": {
+        "label": "哥布林研究员",
+        "help": "活动期间增加第二条研究通道。"
+      },
+      "gate": "没有可用的研究通道。",
+      "add": {
+        "title": "添加研究",
+        "description": "选择实验室接下来研究什么。你添加的等级会按顺序排队。",
+        "lane": "研究通道",
+        "search": "搜索研究"
+      },
+      "categories": {
+        "troops": "兵种",
+        "spells": "法术",
+        "siegeMachines": "攻城机器"
+      }
+    },
+    "pet": {
+      "title": "宠物队列",
+      "subline": "{name}，规划宠物屋接下来升级什么",
+      "back": "返回宠物",
+      "free": "宠物屋",
+      "laneBusy": "宠物屋正忙。",
+      "gate": "宠物在14级大本营解锁。",
+      "add": {
+        "title": "添加宠物升级",
+        "description": "选择宠物屋接下来升级哪只宠物。你添加的等级会按顺序排队。",
+        "lane": "宠物屋",
+        "search": "搜索宠物"
+      },
+      "categories": {
+        "pets": "宠物"
+      }
+    },
+    "bbBuilder": {
+      "title": "建筑大师基地队列",
+      "subline": "{name}，{hall}级建筑大师大本营，规划每名建筑工人接下来做什么",
+      "back": "返回建筑大师基地",
+      "free": "空闲建筑工人",
+      "laneBusy": "这名建筑工人正忙。",
+      "gate": "建筑大师基地有两名建筑工人。",
+      "add": {
+        "title": "添加升级",
+        "description": "选择建筑大师基地的建筑工人接下来做什么。你添加的等级会按顺序排队。",
+        "lane": "建筑工人",
+        "search": "搜索升级"
+      },
+      "categories": {
+        "defenses": "防御",
+        "armyBuildings": "军队",
+        "resourceBuildings": "资源",
+        "traps": "陷阱",
+        "heroes": "英雄",
+        "other": "其他"
+      }
+    },
+    "bbResearch": {
+      "title": "星空实验室队列",
+      "subline": "{name}，{hall}级建筑大师大本营，规划星空实验室接下来研究什么",
+      "back": "返回兵种",
+      "free": "空闲栏位",
+      "laneBusy": "星空实验室正忙。",
+      "gate": "星空实验室一次只能研究一种兵种。",
+      "add": {
+        "title": "添加研究",
+        "description": "选择星空实验室接下来研究哪种兵种。你添加的等级会按顺序排队。",
+        "lane": "星空实验室",
+        "search": "搜索兵种"
+      },
+      "categories": {
+        "troops": "兵种"
+      }
+    }
+  }
+}

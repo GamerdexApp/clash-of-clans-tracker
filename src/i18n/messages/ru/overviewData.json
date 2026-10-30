@@ -1,0 +1,40 @@
+{
+  "stats": {
+    "level": "Уровень",
+    "warStars": "Звёзды войн",
+    "trophies": "Кубки",
+    "bestTrophies": "Лучшие кубки",
+    "donations": "Пожертвовано",
+    "received": "Получено пожертвований",
+    "war": "Участие в войнах",
+    "attacks": "Победы в атаках",
+    "defenses": "Победы в защите",
+    "builderTrophies": "Кубки строителя",
+    "bestBuilderTrophies": "Лучшие кубки строителя",
+    "contributions": "Вклад в столицу",
+    "warIn": "Да",
+    "warOut": "Нет"
+  },
+  "cards": {
+    "structures": "Постройки",
+    "traps": "Ловушки",
+    "supercharge": "Суперзаряд",
+    "crafted": "Созданная защита",
+    "lab": "Лаборатория",
+    "heroes": "Герои",
+    "equipment": "Снаряжение",
+    "pets": "Питомцы",
+    "walls": "Стены",
+    "districts": "Районы",
+    "troops": "Войска",
+    "spells": "Заклинания"
+  },
+  "subs": {
+    "structures": "Защита, армия, ресурсы",
+    "lab": "Войска, заклинания, осада",
+    "builderLab": "Войска строителя",
+    "walls": "Стен: {total}, макс. уровень {max}",
+    "districts": "Активно {active} из {total}",
+    "available": "Доступно: {count}"
+  }
+}

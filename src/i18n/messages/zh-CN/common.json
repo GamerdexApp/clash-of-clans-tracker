@@ -1,0 +1,32 @@
+{
+  "gate": {
+    "title": "没有当前村庄",
+    "description": "选择一个村庄或创建一个，才能查看此页面。",
+    "newVillage": "新建村庄",
+    "chooseVillage": "选择村庄"
+  },
+  "townHallTab": {
+    "title": "大本营",
+    "supercharge": "超级充能",
+    "superchargeDone": "此大本营等级解锁的超级充能阶段中，已完成 {current} / {max}。",
+    "superchargeProgress": "超级充能进度"
+  },
+  "heroesUnlock": "英雄随英雄大厅解锁。",
+  "progressLabel": "{name}进度",
+  "countdownLabel": "{name}倒计时",
+  "capitalGold": "首都金币",
+  "queue": {
+    "conflict": "冲突",
+    "level": "{level}级",
+    "levelSupercharge": "{level}级超级充能",
+    "now": "现在",
+    "itemTitle": "{name} {level}级"
+  },
+  "finishDescription": "{name}，{from}级到{to}级，{method}，{time} {unit}",
+  "lookupError": {
+    "rateLimit": "请等待 {seconds} 秒后再获取。",
+    "notFound": "未找到玩家 {tag}。",
+    "api": "Supercell API 返回了 {status}。",
+    "network": "玩家查询无法连接到服务器。"
+  }
+}

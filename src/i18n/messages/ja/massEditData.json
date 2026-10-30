@@ -1,0 +1,33 @@
+{
+  "categories": {
+    "defenses": "防衛設備",
+    "army": "軍隊",
+    "resources": "資源",
+    "crafted": "クラフト防衛設備",
+    "traps": "罠",
+    "troops": "兵士",
+    "spells": "スペル",
+    "siege": "攻城兵器",
+    "pets": "ペット",
+    "guardians": "ガーディアン",
+    "heroes": "ヒーロー",
+    "equipment": "装備",
+    "walls": "壁",
+    "buildings": "建物"
+  },
+  "sections": {
+    "armyBuildings": "軍隊の建物",
+    "otherBuildings": "その他の建物"
+  },
+  "level": "レベル {level}",
+  "superchargeRow": "{name}のスーパーチャージ",
+  "profile": {
+    "builderHall": "ビルダーホールのレベル",
+    "trophies": "トロフィー",
+    "bestTrophies": "最高トロフィー",
+    "league": "リーグ",
+    "capitalHall": "キャピタルホール",
+    "districtHall": "{zone}のディストリクトホール",
+    "contributions": "貢献"
+  }
+}

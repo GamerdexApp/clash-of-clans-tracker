@@ -1,0 +1,138 @@
+{
+  "title": "Sunting pukal",
+  "description": "Ubah banyak tahap sekali gus. Tiada apa-apa disimpan sehingga anda menekan Simpan perubahan.",
+  "subline": "{name}, Dewan Bandar {townHall}, perubahan dipentaskan",
+  "scopes": {
+    "home": "Kampung Utama",
+    "builder": "Pangkalan Pembina",
+    "capital": "Ibu Kota Klan"
+  },
+  "scopeNav": "Skop",
+  "requires": "Memerlukan {requirement}",
+  "trackingOff": "Penjejakan dimatikan",
+  "changedCount": "{count, plural, other {{amount} perubahan}}",
+  "chip": "Perubahan belum disimpan",
+  "bar": {
+    "unsaved": "{count, plural, other {{amount} perubahan belum disimpan}}",
+    "none": "Tiada perubahan belum disimpan",
+    "discard": "Buang",
+    "save": "Simpan perubahan"
+  },
+  "saved": "{count, plural, other {{amount} perubahan disimpan}}",
+  "undo": "Buat asal",
+  "discardDialog": {
+    "title": "{count, plural, other {Buang {amount} perubahan belum disimpan?}}",
+    "body": "Setiap baris kembali ke tahap yang disimpan.",
+    "keep": "Teruskan menyunting",
+    "discard": "Buang perubahan"
+  },
+  "leave": {
+    "title": "{count, plural, other {Anda mempunyai {amount} perubahan belum disimpan}}",
+    "body": "Simpan sebelum anda pergi, atau buangnya.",
+    "save": "Simpan dan pergi",
+    "discard": "Buang dan pergi",
+    "keep": "Teruskan menyunting"
+  },
+  "toolbar": {
+    "label": "Tindakan pukal",
+    "selectAll": "Pilih semua {count}",
+    "selected": "{count, plural, other {{amount} baris dipilih}}",
+    "clearSelection": "Kosongkan pilihan",
+    "scopeAll": "Bertindak pada semua {count} baris dalam {category}",
+    "scopeSelected": "{count, plural, other {Bertindak pada {amount} baris dipilih}}",
+    "max": "Maks Semua",
+    "maxSelected": "Maks yang dipilih",
+    "reset": "Set Semula Semua",
+    "resetSelected": "Set semula yang dipilih",
+    "setLevel": "Tetapkan tahap",
+    "levelLabel": "Tahap untuk baris dipilih",
+    "applyLevel": "{count, plural, other {Laksana pada {amount} baris}}",
+    "hallLabel": "Tetapkan ke maks untuk tahap dewan",
+    "hallCurrent": "{hall} {level} (semasa)",
+    "hallOption": "{hall} {level}",
+    "hallPlaceholder": "Pilih {hall}"
+  },
+  "confirm": {
+    "title": "{count, plural, other {Turunkan {amount} baris?}}",
+    "body": "Ini mengubah draf. Tiada apa-apa disimpan sehingga anda menekan Simpan perubahan.",
+    "superchargeNote": "Bangunan yang jatuh di bawah tahap teratasnya juga kehilangan peringkat supercharge.",
+    "apply": "Laksana pada draf",
+    "cancel": "Batal",
+    "line": "{name}: {from} ke {to}",
+    "more": "dan {count} lagi"
+  },
+  "rows": {
+    "notBuilt": "Belum dibina",
+    "toMax": "{count} ke maks",
+    "atMax": "Pada maks",
+    "changed": "Ditukar {from} ke {to}",
+    "level": "Tahap {name}",
+    "raise": "Naikkan {name}",
+    "lower": "Turunkan {name}",
+    "max": "Maks",
+    "select": "Pilih {name}",
+    "selectGroup": "Pilih setiap {name}",
+    "supercharge": "Supercharge",
+    "reachFirst": "Capai tahap {level} dahulu",
+    "slider": "Peluncur {name}",
+    "groupBuilt": "{count} dibina, tahap maks {max}",
+    "expand": "Tunjuk {name}",
+    "collapse": "Sembunyi {name}"
+  },
+  "category": {
+    "atMax": "{done} daripada {total} pada maks untuk {hall} {level}",
+    "rowsAtMax": "{done} daripada {total} pada maks",
+    "empty": "Belum ada apa-apa untuk disunting dalam kategori ini.",
+    "locked": "Memerlukan {requirement}",
+    "lockedSuffix": " (dikunci)",
+    "nav": "Kategori"
+  },
+  "walls": {
+    "total": "Jumlah",
+    "allocated": "Diperuntukkan",
+    "remaining": "Baki",
+    "maxAll": "Maks Semua",
+    "resetAll": "Set Semula Semua",
+    "maxAllHelp": "Memindahkan setiap tembok yang tinggal ke tahap tertinggi",
+    "level": "Tembok tahap {level}"
+  },
+  "builder": {
+    "profile": "Profil Pangkalan Pembina",
+    "hall": "Tahap Dewan Pembina",
+    "hallHelp": "Dewan Pembina {level} menetapkan tahap tertinggi bagi setiap baris di bawah. Menurunkannya bertanya dahulu dan hanya menurunkan baris di atas had baharu.",
+    "none": "Tiada bangunan tersedia pada tahap Dewan Pembina ini",
+    "raise": "Naikkan Dewan Pembina",
+    "lower": "Turunkan Dewan Pembina",
+    "trophies": "Trofi",
+    "bestTrophies": "Trofi terbaik",
+    "league": "Liga",
+    "hallConfirmTitle": "Turunkan Dewan Pembina kepada {level}?"
+  },
+  "hallNames": {
+    "home": "Dewan Bandar",
+    "builder": "Dewan Pembina",
+    "district": "Dewan Daerah",
+    "capital": "Dewan Ibu Kota"
+  },
+  "capital": {
+    "profile": "Profil Ibu Kota Klan",
+    "hall": "Dewan Ibu Kota",
+    "none": "Tiada",
+    "level": "Dewan Ibu Kota {level}",
+    "contributions": "Sumbangan Ibu Kota Klan",
+    "unit": "Emas Ibu Kota",
+    "districtHall": "Dewan Daerah",
+    "districtNone": "Tiada",
+    "districtLevel": "Dewan Daerah {level}",
+    "requiresCapitalHall": "Memerlukan Dewan Ibu Kota {level}",
+    "unlockHint": "Tetapkan {label} di atas untuk membuka bangunan.",
+    "parts": "Bahagian",
+    "off": "Penjejakan Ibu Kota Klan dimatikan",
+    "offBody": "Hidupkan semula penjejakan dari halaman Ibu Kota Klan. Tiada apa-apa dipadam.",
+    "offAction": "Buka Ibu Kota Klan"
+  },
+  "empty": {
+    "title": "Tiada kampung aktif",
+    "description": "Pilih kampung atau cipta satu untuk menggunakan Sunting pukal."
+  }
+}

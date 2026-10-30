@@ -1,0 +1,42 @@
+{
+  "close": "Fechar",
+  "field": {
+    "optional": "Opcional"
+  },
+  "stepper": {
+    "lower": "Diminuir {label}",
+    "raise": "Aumentar {label}",
+    "labelPrefix": "{label}, "
+  },
+  "switch": {
+    "on": "Ativado",
+    "off": "Desativado"
+  },
+  "tabs": {
+    "locked": " (bloqueado)"
+  },
+  "toast": {
+    "dismiss": "Dispensar",
+    "variants": {
+      "success": "Sucesso",
+      "info": "Informação",
+      "warning": "Aviso",
+      "error": "Erro"
+    },
+    "missingProvider": "useToast must be used within a ToastProvider"
+  },
+  "filters": {
+    "filters": "Filtros",
+    "activeCount": "{count} ativos",
+    "clearFilters": "Limpar filtros",
+    "reset": "Redefinir",
+    "description": "As alterações valem na hora. Os filtros não são salvos."
+  },
+  "savedChip": {
+    "automatic": "Salva automaticamente",
+    "justNow": "Salvo agora mesmo",
+    "minutesAgo": "Salvo há {count} min",
+    "at": "Salvo {time}",
+    "failed": "Não salvo, o armazenamento está cheio"
+  }
+}

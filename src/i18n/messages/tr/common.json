@@ -1,0 +1,32 @@
+{
+  "gate": {
+    "title": "Etkin köy yok",
+    "description": "Bu sayfayı görmek için bir köy seç veya yeni bir köy oluştur.",
+    "newVillage": "Yeni köy",
+    "chooseVillage": "Köy seç"
+  },
+  "townHallTab": {
+    "title": "Belediye Binası",
+    "supercharge": "Süper Şarj",
+    "superchargeDone": "Bu Belediye Binası seviyesinde açılan {max} Süper Şarj kademesinden {current} tanesi tamamlandı.",
+    "superchargeProgress": "Süper Şarj ilerlemesi"
+  },
+  "heroesUnlock": "Kahramanlar Kahraman Salonu ile açılır.",
+  "progressLabel": "{name} ilerlemesi",
+  "countdownLabel": "{name} geri sayımı",
+  "capitalGold": "Başkent Altını",
+  "queue": {
+    "conflict": "Çakışma",
+    "level": "Sv {level}",
+    "levelSupercharge": "Sv {level} Süper Şarj",
+    "now": "Şimdi",
+    "itemTitle": "{name} Sv {level}"
+  },
+  "finishDescription": "{name}, Sv {from} - {to}, {method}, {time} {unit}",
+  "lookupError": {
+    "rateLimit": "Tekrar sorgulamadan önce {seconds} sn bekle.",
+    "notFound": "{tag} oyuncusu bulunamadı.",
+    "api": "Supercell API {status} yanıtı verdi.",
+    "network": "Oyuncu sorgusu sunucuya ulaşamadı."
+  }
+}

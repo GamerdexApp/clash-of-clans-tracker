@@ -1,0 +1,49 @@
+{
+  "title": "実績",
+  "description": "すべての実績の星、値、報酬を記録します。",
+  "subline": "{name}、実績{count}件、星{stars} / {maxStars}、{percent}%",
+  "tiles": {
+    "all": "すべての実績",
+    "home": "ホームビレッジ",
+    "builder": "ビルダーベース",
+    "capital": "クランキャピタル",
+    "gems": "獲得したジェム",
+    "xp": "獲得したXP",
+    "stars": "星 {stars} / {maxStars}",
+    "left": "あと{amount} {unit}獲得できます",
+    "gemsUnit": "ジェム",
+    "xpUnit": "XP"
+  },
+  "sections": {
+    "home": "ホームビレッジ",
+    "builderBase": "ビルダーベース",
+    "clanCapital": "クランキャピタル",
+    "summary": "実績{count}件、星 {stars} / {maxStars}、ジェム {gems}、XP {xp}",
+    "more": "{name}の実績をあと{count}件表示",
+    "less": "表示を減らす"
+  },
+  "card": {
+    "manual": "手動",
+    "nextStar": "次の星",
+    "xp": "XP",
+    "gems": "ジェム",
+    "edit": "{name}を編集",
+    "done": "完了",
+    "stars": "星",
+    "starsHelp": "同じ星をもう一度押すと、星を1つ外します。",
+    "star": "{amount} {number, plural, other {星}}",
+    "value": "値",
+    "target": "目標",
+    "manualLabel": "手動(APIの上書きをスキップ)",
+    "saves": "変更は入力と同時に保存されます。星を上げると、目標は次の段階に移ります。",
+    "progress": "{name}の進行状況",
+    "starsEarned": "星 {stars} / 3"
+  },
+  "toast": {
+    "stars": "{name}を{amount} {stars, plural, other {星}}に変更しました",
+    "targetMoved": "目標を{target}に移しました。",
+    "value": "{name}の値を{value}に変更しました",
+    "target": "{name}の目標を{target}に変更しました",
+    "undo": "元に戻す"
+  }
+}

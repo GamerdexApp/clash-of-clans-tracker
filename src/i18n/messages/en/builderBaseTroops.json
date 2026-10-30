@@ -1,0 +1,29 @@
+{
+  "title": "Troops",
+  "subline": "{name}, Builder Hall {hall}",
+  "sublineNotSet": "{name}, Builder Hall not set",
+  "strip": {
+    "title": "Star Laboratory",
+    "noLanes": "The Star Laboratory is not available.",
+    "openQueue": "Open queue and timeline",
+    "unassignedHelp": "More than one troop research is saved on the Star Laboratory. Finish or cancel the extra one.",
+    "levelLabel": "Star Laboratory level",
+    "level": "{level} of {max}",
+    "notSet": "Not set"
+  },
+  "card": {
+    "notUnlocked": "Not unlocked",
+    "markUnlocked": "Mark as unlocked",
+    "maxAtHall": "Max Lv {level} at this Builder Hall",
+    "unlockedBy": "Unlocked by Builder Barracks level {barracks}",
+    "progress": "{name} progress"
+  },
+  "unavailable": {
+    "title": "Not available at this Builder Hall",
+    "requires": "Requires Builder Barracks {barracks}, which needs Builder Hall {hall}"
+  },
+  "empty": {
+    "title": "Nothing here yet",
+    "allMax": "Every troop is at its maximum. Turn off Hide Max to see them."
+  }
+}

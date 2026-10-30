@@ -1,0 +1,255 @@
+{
+  "locked": {
+    "title": "Hằng ngày",
+    "subline": "{name}, Nhà Chính {townHall}, chưa có gì mở ở đây",
+    "open": "Mở",
+    "lockedBadge": "Đã khóa",
+    "now": "Làng này đang ở Nhà Chính {townHall}.",
+    "nowNoHut": "Làng này chưa có Nhà Trợ Thủ.",
+    "needsHut": "Cần Nhà Trợ Thủ",
+    "toBuilder": "Mở Thợ Xây",
+    "cards": {
+      "forge": {
+        "title": "Lò Rèn",
+        "what": "Đổi tài nguyên dư thành Vàng Thủ Đô và nhận Vàng Thủ Đô hằng ngày."
+      },
+      "helpers": {
+        "title": "Trợ Thủ",
+        "what": "Theo dõi Thợ Xây Học Việc, Trợ Lý Phòng Thí Nghiệm, Nhà Giả Kim và Người Thăm Dò."
+      },
+      "seasonPass": {
+        "title": "Season Pass",
+        "what": "Đặt các mức tăng và đặc quyền của Gold Pass giúp rút ngắn thời gian nâng cấp."
+      },
+      "starBonus": {
+        "title": "Thưởng Sao",
+        "what": "Bộ đếm Thưởng Sao hằng ngày nằm ở Tổng quan.",
+        "open": "Mở Tổng quan"
+      }
+    }
+  },
+  "timer": {
+    "notSet": "Đặt giờ làm mới hằng ngày",
+    "setTime": "Đặt giờ làm mới",
+    "setAndUse": "Đặt và đánh dấu đã dùng",
+    "notSetHelp": "Đặt giờ không đánh dấu phần thưởng là đã dùng.",
+    "savedIn": "Giờ được lưu theo {zone}.",
+    "available": "Có thể dùng",
+    "use": "Dùng",
+    "adjust": "Chỉnh",
+    "adjustTitle": "Chỉnh giờ làm mới",
+    "save": "Lưu",
+    "cancel": "Hủy",
+    "resetsAt": "Làm mới hằng ngày lúc {time}, {zone}",
+    "untilReset": "đến lúc làm mới {time}, {zone}",
+    "usedAt": "Đã dùng lúc {time}.",
+    "timeLabel": "Giờ làm mới",
+    "deviceClock": "đồng hồ thiết bị",
+    "used": "Đã đánh dấu {name} là đã dùng",
+    "undo": "Hoàn tác"
+  },
+  "forge": {
+    "title": "Lò Rèn",
+    "description": "Đổi tài nguyên dư thành Vàng Thủ Đô và nhận Vàng Thủ Đô hằng ngày.",
+    "subline": "{builderHall, plural, =0 {{name}, Nhà Chính {townHall}, sản xuất Vàng Thủ Đô} other {{name}, Nhà Chính {townHall}, Nhà Thợ Xây {builderHall}, sản xuất Vàng Thủ Đô}}",
+    "daily": {
+      "title": "Vàng Thủ Đô hằng ngày",
+      "amount": "+{gold} Vàng Thủ Đô mỗi ngày ở Nhà Chính {townHall}",
+      "none": "Vàng Thủ Đô hằng ngày bắt đầu từ Nhà Chính 6.",
+      "name": "Vàng Thủ Đô hằng ngày"
+    },
+    "slots": {
+      "title": "Ô Lò Rèn",
+      "craftingTime": "Thời gian chế tạo 3 ngày",
+      "open": "{open} trên {total} ô đã mở ở Nhà Chính {townHall}",
+      "boost": "Đã áp dụng tăng tốc thợ xây {percent}%: {time}",
+      "slot": "Ô {number}",
+      "requires": "Cần Nhà Chính {townHall}",
+      "locked": "Đã khóa",
+      "idle": "Rảnh",
+      "idleHelp": "Chọn thứ cần rèn",
+      "running": "Đang chạy",
+      "done": "Xong",
+      "result": "Kết quả",
+      "start": "Bắt đầu",
+      "stop": "Dừng",
+      "reset": "Đặt lại",
+      "resource": "Tài nguyên",
+      "rate": "{amount} {resource} đổi {capitalGold} Vàng Thủ Đô, xong sau {time}",
+      "left": "Còn {time}",
+      "ready": "Sẵn sàng: {capitalGold} Vàng Thủ Đô.",
+      "finished": "Đã xong {ago} trước.",
+      "stopped": "Đã dừng ô {number}. Lượt chạy đã xóa.",
+      "resetDone": "Đã đặt lại ô {number}. Lượt chạy {resource} đã xóa.",
+      "runningTitle": "{resource}, {amount}"
+    },
+    "auto": {
+      "title": "Lò Rèn Tự Động",
+      "subtitle": "Đặc quyền Gold Pass, tự lặp lại",
+      "repeats": "{amount} {resource} đổi {capitalGold} Vàng Thủ Đô mỗi {time}",
+      "nextRun": "Lượt tiếp theo tự bắt đầu khi lượt này kết thúc.",
+      "stop": "Dừng Lò Rèn Tự Động",
+      "stopped": "Đã dừng Lò Rèn Tự Động. Chu kỳ đã xóa.",
+      "confirm": {
+        "title": "Dừng Lò Rèn Tự Động?",
+        "body": "Chu kỳ đang chạy sẽ bị xóa: {amount} {resource} đổi {capitalGold} Vàng Thủ Đô, còn {time}. Lò Rèn Tự Động sẽ ngừng lặp cho đến khi bạn bật lại từ trang Lò Rèn. Đặc quyền Gold Pass vẫn bật trong Season Pass.",
+        "undoHint": "Nút Hoàn tác hiện trên màn hình vài giây sau khi bạn dừng.",
+        "keep": "Tiếp tục chạy",
+        "stop": "Dừng Lò Rèn Tự Động"
+      }
+    },
+    "rates": {
+      "title": "Tỉ lệ Lò Rèn",
+      "description": "{builderHall, plural, =0 {Nhà Chính {townHall}, một lượt trong một ô} other {Nhà Chính {townHall} và Nhà Thợ Xây {builderHall}, một lượt trong một ô}}",
+      "autoTitle": "Tỉ lệ Lò Rèn Tự Động",
+      "autoDescription": "Giá Gold Pass, bằng một nửa chi phí thủ công",
+      "resource": "Tài nguyên",
+      "cost": "Chi phí",
+      "capitalGold": "Vàng Thủ Đô",
+      "requires": "Cần {requirement}"
+    }
+  },
+  "helpers": {
+    "title": "Trợ Thủ",
+    "description": "Theo dõi Thợ Xây Học Việc, Trợ Lý Phòng Thí Nghiệm, Nhà Giả Kim và Người Thăm Dò.",
+    "subline": "{builderHall, plural, =0 {{name}, Nhà Chính {townHall}, trợ lý của Nhà Trợ Thủ} other {{name}, Nhà Chính {townHall}, Nhà Thợ Xây {builderHall}, trợ lý của Nhà Trợ Thủ}}",
+    "banner": "Đã xây Nhà Trợ Thủ. Mỗi trợ thủ mở theo Nhà Chính: Trợ Lý Phòng Thí Nghiệm 9, Thợ Xây Học Việc 10, Người Thăm Dò 10, Nhà Giả Kim 11.",
+    "names": {
+      "buildersApprentice": "Thợ Xây Học Việc",
+      "labAssistant": "Trợ Lý Phòng Thí Nghiệm",
+      "alchemist": "Nhà Giả Kim",
+      "prospector": "Người Thăm Dò"
+    },
+    "from": "Từ Nhà Chính {townHall} trở lên",
+    "lockedCard": "Cần Nhà Chính {townHall}",
+    "dailyUse": "Dùng hằng ngày",
+    "level": "Cấp",
+    "levelOption": "Cấp {level}",
+    "levelTownHall": "NC {townHall}",
+    "none": "Không có",
+    "noLevel": "Chọn cấp của bạn để xem chỉ số.",
+    "noLevelCalculator": "Chọn cấp của bạn để dùng máy tính.",
+    "nextLevel": "{gems, select, 0 {Cấp {level} miễn phí} other {Cấp {level} tốn {gems} ngọc}}",
+    "saves": "Tiết kiệm {time} mỗi lần dùng",
+    "levelRequires": "Cần Nhà Chính {townHall}",
+    "assignment": {
+      "builderTitle": "Nâng cấp cần tăng tốc",
+      "researchTitle": "Nghiên cứu cần tăng tốc",
+      "none": "Không có",
+      "builderHelp": "Liệt kê công trình, anh hùng, Nhà Chính, vũ khí Nhà Chính và mô-đun phòng thủ chế tạo đang nâng cấp.",
+      "researchHelp": "Chỉ nghiên cứu: liệt kê quân, phép và máy công thành đang nâng cấp.",
+      "builderEmpty": "Không có nâng cấp thợ xây nào đang chạy để gán.",
+      "researchEmpty": "Không có nghiên cứu phòng thí nghiệm nào đang chạy để gán.",
+      "once": "Dùng 1 lần",
+      "untilDone": "Đến khi xong",
+      "assignedTo": "Đã gán cho",
+      "clearsAfterUse": "Tự xóa sau một lần dùng.",
+      "staysUntilDone": "Giữ đến khi nâng cấp xong.",
+      "clear": "Xóa gán",
+      "cleared": "Đã xóa gán.",
+      "select": "Nâng cấp được gán",
+      "mode": "Chế độ gán",
+      "preview": "Dùng ngay: còn {before} sẽ thành {after}.",
+      "previewDone": "Dùng ngay: còn {before}, nâng cấp hoàn tất.",
+      "upgradeTo": "{name} lên cấp {level}, còn {left}"
+    },
+    "used": {
+      "plain": "Đã đánh dấu {name} là đã dùng",
+      "saved": "Đã dùng {name} cho {target}, tiết kiệm {time}"
+    },
+    "alchemist": {
+      "stats": {
+        "goldElixir": "Tối đa Vàng hoặc Dung Dịch",
+        "darkElixir": "Tối đa Dung Dịch Đen",
+        "bonus": "Thưởng quy đổi"
+      },
+      "calculator": "Máy tính quy đổi",
+      "from": "Từ",
+      "to": "Sang",
+      "amount": "Số lượng cần quy đổi",
+      "result": "{amount} {from} đổi được {output} {to}",
+      "help": "Đã tính thưởng quy đổi {bonus}% và tỉ lệ 150 đổi 1.",
+      "nothingSaved": "Không có gì được lưu ở đây."
+    },
+    "prospector": {
+      "lockedTitle": "Đã khóa cho đến khi bạn mở bằng 2,200 Điểm Thử Thách Mùa",
+      "lockedHelp": "Bật ở trang Season Pass sau khi bạn đã mở trong game.",
+      "toSeasonPass": "Mở Season Pass",
+      "subtitle": "Từ Nhà Chính 10 trở lên, mở bằng Điểm Thử Thách Mùa",
+      "lockedBadge": "Đã khóa",
+      "unlockedBadge": "Đã mở",
+      "levelOnly": "Cấp 1 (cấp duy nhất)",
+      "limits": {
+        "shiny": "Tối đa Shiny ore",
+        "glowy": "Tối đa Glowy ore",
+        "starry": "Tối đa Starry ore"
+      },
+      "calculator": "Máy tính quy đổi ore",
+      "ores": {
+        "shiny": "Shiny ore",
+        "glowy": "Glowy ore",
+        "starry": "Starry ore"
+      },
+      "help": "10 Shiny ore tạo 1 Glowy ore. 100 Glowy ore tạo 1 Starry ore."
+    }
+  },
+  "seasonPass": {
+    "title": "Season Pass",
+    "description": "Đặt các mức tăng và đặc quyền của Gold Pass giúp rút ngắn thời gian nâng cấp.",
+    "subline": "{name}, Nhà Chính {townHall}, đặc quyền Gold Pass đang hoạt động mùa này",
+    "lockedTitle": "Season Pass đã khóa",
+    "lockedBody": "Gold Pass cần Nhà Chính 7. Làng này đang ở Nhà Chính {townHall}.",
+    "month": {
+      "title": "{month}",
+      "subtitle": "Mức tăng được đặt lại vào {reset}, đặc quyền vẫn giữ.",
+      "key": "Mã tháng",
+      "rolled": "Một tháng mới đã bắt đầu. Tăng tốc thợ xây và tăng tốc nghiên cứu đã đặt lại về 0%. Đặc quyền vẫn giữ.",
+      "undoReset": "Hoàn tác đặt lại",
+      "dismiss": "Bỏ qua",
+      "restored": "Đã khôi phục các mức tăng cho tháng này.",
+      "undo": "Hoàn tác"
+    },
+    "boosts": {
+      "title": "Đặc quyền tăng tốc",
+      "description": "Gold Pass rút ngắn thời gian nâng cấp trong mùa này.",
+      "builder": "Tăng tốc thợ xây",
+      "research": "Tăng tốc nghiên cứu",
+      "applies": "Áp dụng cho thời gian Thợ Xây, Nghiên cứu và Thú Cưng, dòng thời gian hàng chờ và thời gian chế tạo của Lò Rèn.",
+      "saved": "Được lưu cùng tháng này.",
+      "value": "{percent, plural, =0 {Tắt} other {{percent}%}}",
+      "option": "{percent, plural, =0 {0%} other {{percent}%}}",
+      "builderEffect": "{percent, plural, =0 {Thời gian chế tạo của Lò Rèn là 3 ngày.} other {Thời gian chế tạo của Lò Rèn là {time}.}}",
+      "researchEffect": "{percent, plural, =0 {Thời gian nghiên cứu và thú cưng không đổi.} other {Thời gian nghiên cứu và thú cưng ngắn hơn {percent}%.}}"
+    },
+    "unlocks": {
+      "title": "Mở khóa từ Thử Thách Mùa",
+      "description": "Không thuộc Gold Pass",
+      "prospector": "Người Thăm Dò",
+      "prospectorHelp": "Trợ thủ cho Nhà Chính 10 trở lên, tốn 2,200 Điểm Thử Thách Mùa",
+      "shows": "Hiện ở trang Trợ Thủ"
+    },
+    "perks": {
+      "title": "Đặc quyền Gold Pass",
+      "description": "Đặc quyền Gold Pass đang hoạt động mùa này",
+      "referenceOnly": "Chỉ để tham khảo",
+      "referenceNote": "Không thay đổi gì khác trong ứng dụng.",
+      "hoggyBank": {
+        "label": "Hoggy Bank",
+        "note": "Tích trữ tài nguyên khi bạn chơi, nhận vào cuối mùa"
+      },
+      "gemDonations": {
+        "label": "Hỗ trợ quân giá 1 ngọc",
+        "note": "Hỗ trợ quân và phép chỉ với 1 ngọc mỗi lần"
+      },
+      "autoForge": {
+        "label": "Lò Rèn Tự Động",
+        "note": "Tự động đổi tài nguyên thành Vàng Thủ Đô"
+      },
+      "autoForgeEffect": "Bật hàng Lò Rèn Tự Động ở trang Lò Rèn và biểu tượng ở Tổng quan.",
+      "requestTimeReduction": {
+        "label": "Giảm thời gian xin quân",
+        "note": "Giảm thời gian chờ xin quân"
+      }
+    }
+  }
+}

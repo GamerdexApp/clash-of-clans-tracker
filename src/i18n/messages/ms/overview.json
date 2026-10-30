@@ -1,0 +1,112 @@
+{
+  "title": "Gambaran keseluruhan",
+  "description": "Kampung anda sekilas pandang: kemajuan, pemasa harian dan setiap statistik yang disimpan.",
+  "subline": "{name}, terbitan, lihat sahaja",
+  "header": {
+    "clanLevel": "{hasRole, select, true {Tahap klan {level}, {role}} other {Tahap klan {level}}}",
+    "achievements": "Pencapaian",
+    "ringCaption": "{stars} daripada {maxStars} bintang",
+    "viewAll": "Lihat semua",
+    "townHall": "DB{level}"
+  },
+  "dailies": {
+    "title": "Harian",
+    "closedTitle": "Harian dibuka pada Dewan Bandar 3",
+    "closedBody": "Tempaan, Pembantu dan Pas Musim dibuka apabila Dewan Bandar meningkat.",
+    "closedLink": "Lihat apa yang dibuka",
+    "groups": {
+      "helpers": "Pembantu",
+      "daily": "Harian",
+      "goldPass": "Gold Pass"
+    },
+    "requires": "Memerlukan {requirement}",
+    "openForge": "Buka Tempaan",
+    "openHelpers": "Buka Pembantu",
+    "unlockProspector": "Buka dalam Pas Musim",
+    "helperHut": "Pondok Pembantu",
+    "townHall": "Dewan Bandar {level}",
+    "starBonus": "Bonus Bintang",
+    "capitalGold": "Emas Ibu Kota",
+    "autoForge": "Tempa Auto",
+    "forgeSlots": "Slot tempaan",
+    "notRunning": "Tidak berjalan",
+    "running": "Berjalan",
+    "stopAuto": "Henti Tempa Auto",
+    "autoLine": "{amount} {resource} kepada {capitalGold} Emas Ibu Kota",
+    "slotsLine": "{running} daripada {open} slot berjalan",
+    "slotsDone": "{done, plural, other {{amount} slot siap}}",
+    "autoPerk": "ganjaran Tempa Auto",
+    "helperPreview": "Guna sekarang: baki {before} menjadi {after}",
+    "goldPass": {
+      "edit": "Sunting di Pas Musim",
+      "builder": "Rangsangan pembina",
+      "research": "Rangsangan kajian",
+      "hoggyBank": "Hoggy Bank",
+      "gemDonations": "Derma 1 Permata",
+      "autoForge": "Tempa Auto",
+      "requestReduction": "Pengurangan Masa Permintaan",
+      "on": "Hidup",
+      "off": "Mati",
+      "resets": "Rangsangan kembali ke 0% pada {date}.",
+      "readOnly": "Membuka Gambaran keseluruhan tidak pernah mengubah kampung atau masa ubah suai terakhirnya."
+    }
+  },
+  "league": {
+    "open": "Tunjuk ganjaran {name}",
+    "homeKind": "Liga Kampung Utama",
+    "builderKind": "Liga Pangkalan Pembina",
+    "noData": "Tiada data untuk liga ini pada Dewan Bandar ini.",
+    "battle": "Keputusan pertempuran",
+    "stars": "Bintang",
+    "attacker": "Emas Pembina penyerang",
+    "defender": "Elixir Pembina pertahanan"
+  },
+  "builder": {
+    "title": "Pangkalan Pembina",
+    "hall": "Dewan Pembina {level}",
+    "trophies": "{trophies} trofi",
+    "daysAt": "Hari pada DP{level}",
+    "notSetTitle": "Dewan Pembina belum ditetapkan",
+    "notSetBody": "Pangkalan Pembina dibuka pada Dewan Bandar 6, tetapi kampung ini mempunyai Dewan Pembina 0. Kemajuan, trofi dan pasukan dipaparkan apabila tahapnya 1 atau lebih tinggi.",
+    "notSetAction": "Tetapkan tahap Dewan Pembina",
+    "lockedBody": "Memerlukan Dewan Bandar 6",
+    "troops": "Pasukan",
+    "heroes": "Wira"
+  },
+  "capital": {
+    "title": "Ibu Kota Klan",
+    "hall": "Dewan Ibu Kota {level}",
+    "notSetTitle": "Ibu Kota Klan belum disediakan",
+    "notSetBody": "Capital Peak belum mempunyai tahap dewan, jadi tiada kemajuan daerah untuk dipaparkan. Tetapkan tahap Dewan Ibu Kota untuk mula menjejaki.",
+    "notSetAction": "Tetapkan tahap Dewan Ibu Kota",
+    "lockedBody": "Memerlukan Dewan Bandar 3",
+    "districtHall": "Dewan Daerah {level}",
+    "notUnlocked": "Belum dibuka",
+    "unlocksAt": "Dibuka pada Dewan Ibu Kota {level}",
+    "needsDistrictHall": "Tetapkan Dewan Daerah untuk bermula",
+    "noData": "Tiada data",
+    "more": "Tunjuk {count} lagi daerah",
+    "showFewer": "Tunjuk lebih sedikit",
+    "openDistricts": "Buka Daerah"
+  },
+  "home": {
+    "title": "Kampung Utama",
+    "townHall": "Dewan Bandar {level}",
+    "daysAt": "Hari pada DB{level}",
+    "perHour": "sejam",
+    "stored": "disimpan",
+    "cards": {
+      "locked": "Memerlukan {requirement}"
+    },
+    "queue": "Buka",
+    "troops": "Pasukan",
+    "spells": "Mantera",
+    "heroes": "Wira",
+    "siege": "Mesin Kepungan",
+    "pets": "Haiwan",
+    "legend": "Garis hijau: pada maksimum untuk Dewan Bandar ini. Garis putus-putus: dikunci. Jam: naik taraf sedang berjalan.",
+    "tile": "{hasRequirement, select, true {{name}, memerlukan {requirement}} other {{name}, tahap {level}{max, plural, =0 {} other { daripada {max}}}}}",
+    "heroLocked": "Memerlukan {requirement}",
+    "petsLocked": "Memerlukan Dewan Bandar 14"
+  }
+}

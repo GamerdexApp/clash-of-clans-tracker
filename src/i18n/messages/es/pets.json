@@ -1,0 +1,30 @@
+{
+  "title": "Mascotas",
+  "subline": "{name}, Ayuntamiento {townHall}",
+  "strip": {
+    "title": "Casa de Mascotas",
+    "openQueue": "Abrir cola y línea de tiempo",
+    "noPetHouse": "Construye primero una Casa de Mascotas. Fija su nivel en la página Constructor, pestaña Ejército.",
+    "unassignedHelp": "Hay más de una mejora de mascota guardada en la Casa de Mascotas. Termina o cancela la sobrante.",
+    "levelLabel": "Nivel de la Casa de Mascotas",
+    "level": "{level} de {max}",
+    "notBuilt": "Sin construir",
+    "boostLabel": "Mejora de investigación del Pase de Oro"
+  },
+  "boostValue": "{percent, plural, =0 {Ninguna} other {-{percent}% de tiempo y coste}}",
+  "locked": {
+    "title": "Las mascotas se desbloquean en el Ayuntamiento 14",
+    "body": "Esta aldea está en el Ayuntamiento {townHall}. Estas son las mascotas que conseguirás.",
+    "needs": "Ayuntamiento {townHall}, Casa de Mascotas {petHouse}"
+  },
+  "card": {
+    "notUnlocked": "Sin desbloquear",
+    "markUnlocked": "Marcar como desbloqueada",
+    "maxAtHall": "Nv máx. {level}",
+    "progress": "Progreso de {name}"
+  },
+  "empty": {
+    "title": "Aún no hay nada aquí",
+    "allMax": "Todas las mascotas están al máximo. Desactiva Ocultar máx. para verlas."
+  }
+}

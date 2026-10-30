@@ -1,0 +1,30 @@
+{
+  "title": "Haustiere",
+  "subline": "{name}, Rathaus {townHall}",
+  "strip": {
+    "title": "Haustierhaus",
+    "openQueue": "Warteschlange und Zeitleiste öffnen",
+    "noPetHouse": "Baue zuerst ein Haustierhaus. Setze seine Stufe auf der Bauarbeiter-Seite im Tab Armee.",
+    "unassignedHelp": "Im Haustierhaus ist mehr als ein Haustier-Upgrade gespeichert. Beende oder brich das zusätzliche ab.",
+    "levelLabel": "Stufe des Haustierhauses",
+    "level": "{level} von {max}",
+    "notBuilt": "Nicht gebaut",
+    "boostLabel": "Goldpass-Forschungs-Boost"
+  },
+  "boostValue": "{percent, plural, =0 {Keiner} other {-{percent}% Zeit und Kosten}}",
+  "locked": {
+    "title": "Haustiere werden bei Rathaus 14 freigeschaltet",
+    "body": "Dieses Dorf hat Rathaus {townHall}. Das sind die Haustiere, die du bekommst.",
+    "needs": "Rathaus {townHall}, Haustierhaus {petHouse}"
+  },
+  "card": {
+    "notUnlocked": "Nicht freigeschaltet",
+    "markUnlocked": "Als freigeschaltet markieren",
+    "maxAtHall": "Max. St. {level}",
+    "progress": "Fortschritt von {name}"
+  },
+  "empty": {
+    "title": "Hier ist noch nichts",
+    "allMax": "Jedes Haustier ist auf Max. Schalte „Max ausblenden“ aus, um sie zu sehen."
+  }
+}

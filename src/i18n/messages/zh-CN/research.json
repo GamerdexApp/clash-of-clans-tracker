@@ -1,0 +1,32 @@
+{
+  "title": "研究",
+  "subline": "{name}，{townHall}级大本营",
+  "tabsLabel": "研究分区",
+  "tabs": {
+    "troops": "兵种",
+    "spells": "法术",
+    "siegeMachines": "攻城机器"
+  },
+  "strip": {
+    "title": "实验室",
+    "noLanes": "没有可用的研究通道。",
+    "openQueue": "打开队列和时间线",
+    "unassignedHelp": "有些研究保存在已关闭的通道上，或保存在已被其他研究占用的通道上。请完成或取消它们。",
+    "levelLabel": "实验室等级",
+    "level": "{level} / {max}",
+    "notTracked": "未设置",
+    "boostLabel": "黄金令牌研究加速"
+  },
+  "card": {
+    "notUnlocked": "未解锁",
+    "markUnlocked": "标记为已解锁",
+    "maxAtHall": "此大本营最高 {level} 级",
+    "progress": "{name}进度"
+  },
+  "empty": {
+    "title": "这里还没有内容",
+    "none": "此大本营等级下，本分区没有可用内容。",
+    "allMax": "这里的所有内容都已满级。关闭“隐藏已满级”即可查看。"
+  },
+  "boostValue": "{percent, plural, =0 {无} other {时间和费用 -{percent}%}}"
+}

@@ -1,0 +1,37 @@
+{
+  "resources": {
+    "gold": "Oro",
+    "elixir": "Elixir",
+    "darkElixir": "Elixir Oscuro",
+    "darkElixirShort": "Oscuro",
+    "builderGold": "Oro del Constructor",
+    "builderGoldShort": "Oro Const.",
+    "builderElixir": "Elixir del Constructor",
+    "builderElixirShort": "Elixir Const.",
+    "capitalGold": "Oro de Capital",
+    "shinyOre": "Shiny Ore",
+    "glowyOre": "Glowy Ore",
+    "starryOre": "Starry Ore"
+  },
+  "halls": {
+    "townHall": "Ayuntamiento {level}",
+    "builderHall": "Sala del Constructor {level}",
+    "capitalHall": "Sala de la Capital {level}",
+    "heroHall": "Sala de Héroes {level}",
+    "starLaboratory": "Laboratorio Estelar {level}",
+    "blacksmith": "Blacksmith"
+  },
+  "places": {
+    "townHall": "Ayuntamiento",
+    "townHallWeapon": "Arma del Ayuntamiento",
+    "builderHall": "Sala del Constructor",
+    "clockTower": "Clock Tower",
+    "laboratory": "Laboratorio",
+    "goblinResearcher": "Investigador Goblin",
+    "goblinBuilder": "Constructor Goblin",
+    "starLaboratory": "Laboratorio Estelar",
+    "petHouse": "Casa de Mascotas",
+    "capitalPeak": "Capital Peak",
+    "builder": "Constructor {id}"
+  }
+}

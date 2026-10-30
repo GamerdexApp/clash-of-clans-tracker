@@ -1,0 +1,66 @@
+{
+  "skipToContent": "Saltar para o conteúdo",
+  "closeMenu": "Fechar menu",
+  "openMenu": "Abrir menu",
+  "menuLabel": "Menu do site",
+  "mainNav": "Principal",
+  "brandTitle": "Clash of Clans",
+  "brandSubtitle": "Tracker",
+  "switcher": {
+    "sectionLabel": "Aldeia",
+    "loading": "A carregar",
+    "none": "Nenhuma aldeia",
+    "noneDetail": "Cria uma para começar",
+    "switch": "Mudar de aldeia",
+    "villages": "Aldeias",
+    "active": "Ativa",
+    "all": "Todas as aldeias",
+    "create": "Nova aldeia",
+    "halls": "{builderHall, plural, =0 {TH {townHall}} other {TH {townHall} · BH {builderHall}}}"
+  },
+  "locked": {
+    "townHall": "Centro da Aldeia {level}",
+    "blacksmith": "Ferreiro",
+    "helperHut": "Cabana dos Ajudantes",
+    "off": "Desligado",
+    "srLabel": "Requer {requirement}"
+  },
+  "footer": {
+    "tagline": "Um acompanhamento de progresso gratuito para o Clash of Clans. Os dados ficam no navegador, ou no teu próprio armazenamento na nuvem se ativar a sincronização.",
+    "support": "Apoio",
+    "about": "Acerca de",
+    "settings": "Definições",
+    "discord": "Discord",
+    "github": "GitHub",
+    "game": "Site oficial do jogo",
+    "privacy": "Política de privacidade",
+    "terms": "Termos de serviço",
+    "disclaimerTitle": "Aviso legal",
+    "disclaimer": "Este projeto não é afiliado, apoiado nem associado à Supercell ou ao Clash of Clans.",
+    "framework": "Feito com a framework Gamerdex, uma base partilhada para acompanhamentos de progresso gratuitos de jogos.",
+    "visitGamerdex": "Visitar o Gamerdex"
+  },
+  "notFound": {
+    "title": "Esta página não existe",
+    "body": "A ligação pode ser antiga ou ter um erro. As aldeias estão seguras e nada foi alterado.",
+    "toOverview": "Ir para o Resumo",
+    "toVillages": "Ir para as Aldeias",
+    "toHome": "Voltar ao início",
+    "didYouMean": "Querias dizer",
+    "noVillage": "Nenhuma aldeia está selecionada, por isso o Resumo não tem nada para mostrar. Escolhe uma na página Aldeias.",
+    "jumpTo": "Ou ir para"
+  },
+  "error": {
+    "title": "Algo correu mal",
+    "body": "A aplicação encontrou um erro. Os dados guardados não foram alterados.",
+    "digest": "digest {digest}",
+    "tryAgain": "Tentar de novo",
+    "download": "Transferir os dados em bruto",
+    "clear": "Limpar dados e reiniciar",
+    "confirmTitle": "Limpar todos os dados guardados?",
+    "confirmBody": "Isto remove tudo o que a aplicação guardou neste navegador. Primeiro é transferida uma cópia dos dados em bruto para os poder reparar mais tarde. As aldeias sincronizadas numa conta na nuvem mantêm-se lá.",
+    "cancel": "Cancelar",
+    "confirm": "Transferir e limpar",
+    "noData": "Não há dados guardados neste navegador."
+  }
+}

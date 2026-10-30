@@ -1,0 +1,63 @@
+{
+  "upgrades": {
+    "title": "升級",
+    "subline": "{name}，建築工人大本營 {hall}",
+    "sublineNotSet": "{name}，尚未設定建築工人大本營",
+    "tabsLabel": "建築工人基地分類",
+    "tabs": {
+      "defenses": "防禦",
+      "army": "軍隊",
+      "resources": "資源",
+      "traps": "陷阱",
+      "heroes": "英雄",
+      "other": "其他"
+    },
+    "strip": {
+      "title": "建築工人",
+      "noBuilders": "建築工人基地有兩位建築工人。",
+      "openQueue": "開啟佇列與時間軸",
+      "unassignedHelp": "部分升級儲存在已被其他升級使用的建築工人上。請完成或取消它們。"
+    }
+  },
+  "locked": {
+    "title": "需要大本營 6",
+    "description": "此村莊目前為大本營 {townHall}。建築工人基地會在大本營 6 解鎖，或在你設定建築工人大本營等級時解鎖。"
+  },
+  "notSet": {
+    "action": "設定建築工人大本營等級",
+    "troopsDescription": "建築工人基地的部隊依建築工人大本營等級而定。請到升級頁面的「其他」分頁設定。",
+    "title": "請選擇建築工人大本營等級以開始追蹤",
+    "description": "請在下方方塊設定建築工人大本營等級，建築工人基地的清單會依此顯示。"
+  },
+  "hall": {
+    "title": "建築工人大本營",
+    "notSet": "未設定",
+    "option": "建築工人大本營 {level}",
+    "since": "在建築工人大本營 {level} 已 {days, plural, other {{amount} 天}}",
+    "confirm": {
+      "title": "要將建築工人大本營變更為 {level} 嗎？",
+      "raising": "提高等級會顯示更多建築與更高的上限，已儲存的內容不會被移除。",
+      "lowering": "降低等級會隱藏超出的建築與上限，已儲存的等級會保留。",
+      "clearing": "清除等級會隱藏所有建築工人基地的清單，已儲存的等級會保留。",
+      "setDays": "將建築工人大本營天數設為今天",
+      "cancel": "取消",
+      "confirm": "變更等級"
+    },
+    "toast": "建築工人大本營 {from, plural, =0 {未設定} other {{from}}} 至 {to, plural, =0 {未設定} other {{to}}}",
+    "undo": "復原"
+  },
+  "other": {
+    "clockTower": "時鐘塔",
+    "clockTowerMax": "此建築工人大本營最高 Lv {level}",
+    "clockTowerProgress": "時鐘塔進度"
+  },
+  "empty": {
+    "title": "這裡還沒有內容",
+    "description": "此建築工人大本營等級沒有這類建築。",
+    "allMax": "這裡的內容都已達最高等級。關閉「隱藏已滿級」即可查看。"
+  },
+  "heroes": {
+    "maxAtHall": "此建築工人大本營最高 Lv {level}",
+    "progress": "{name}進度"
+  }
+}

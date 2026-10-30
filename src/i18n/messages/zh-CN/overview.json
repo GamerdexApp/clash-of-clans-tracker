@@ -1,0 +1,112 @@
+{
+  "title": "总览",
+  "description": "一眼看清你的村庄：进度、每日计时器和所有已存数据。",
+  "subline": "{name}，推算得出，仅供查看",
+  "header": {
+    "clanLevel": "{hasRole, select, true {部落等级 {level}，{role}} other {部落等级 {level}}}",
+    "achievements": "成就",
+    "ringCaption": "{stars} / {maxStars} 星",
+    "viewAll": "查看全部",
+    "townHall": "TH{level}"
+  },
+  "dailies": {
+    "title": "每日任务",
+    "closedTitle": "每日任务在3级大本营开放",
+    "closedBody": "熔炉、助手和赛季通行证会随着大本营等级提升而开放。",
+    "closedLink": "查看已开放的内容",
+    "groups": {
+      "helpers": "助手",
+      "daily": "每日",
+      "goldPass": "黄金令牌"
+    },
+    "requires": "需要{requirement}",
+    "openForge": "打开熔炉",
+    "openHelpers": "打开助手",
+    "unlockProspector": "在赛季通行证中解锁",
+    "helperHut": "助手小屋",
+    "townHall": "{level}级大本营",
+    "starBonus": "星星奖励",
+    "capitalGold": "首都金币",
+    "autoForge": "自动熔炉",
+    "forgeSlots": "熔炉栏位",
+    "notRunning": "未运行",
+    "running": "运行中",
+    "stopAuto": "停止自动熔炉",
+    "autoLine": "{amount} {resource}换 {capitalGold} 首都金币",
+    "slotsLine": "{running} / {open} 个栏位运行中",
+    "slotsDone": "{done, plural, other {{amount} 个栏位已完成}}",
+    "autoPerk": "自动熔炉特权",
+    "helperPreview": "现在使用：剩余 {before} 变为 {after}",
+    "goldPass": {
+      "edit": "在赛季通行证中编辑",
+      "builder": "建筑加速",
+      "research": "研究加速",
+      "hoggyBank": "Hoggy 存钱罐",
+      "gemDonations": "1宝石捐兵",
+      "autoForge": "自动熔炉",
+      "requestReduction": "缩短请求时间",
+      "on": "开",
+      "off": "关",
+      "resets": "加速会在 {date} 回到 0%。",
+      "readOnly": "打开总览不会更改村庄或其最后修改时间。"
+    }
+  },
+  "league": {
+    "open": "显示{name}的奖励",
+    "homeKind": "主村庄联赛",
+    "builderKind": "建筑大师基地联赛",
+    "noData": "此大本营等级下没有该联赛的数据。",
+    "battle": "战斗结果",
+    "stars": "星星",
+    "attacker": "进攻方建筑大师金币",
+    "defender": "防守方建筑大师圣水"
+  },
+  "builder": {
+    "title": "建筑大师基地",
+    "hall": "{level}级建筑大师大本营",
+    "trophies": "{trophies} 奖杯",
+    "daysAt": "BH{level} 天数",
+    "notSetTitle": "未设置建筑大师大本营",
+    "notSetBody": "建筑大师基地在6级大本营开放，但此村庄的建筑大师大本营为0级。等级达到1级或更高后，才会显示进度、奖杯和兵种。",
+    "notSetAction": "设置建筑大师大本营等级",
+    "lockedBody": "需要6级大本营",
+    "troops": "兵种",
+    "heroes": "英雄"
+  },
+  "capital": {
+    "title": "部落首都",
+    "hall": "{level}级首都大厅",
+    "notSetTitle": "部落首都尚未设置",
+    "notSetBody": "首都山峰还没有大厅等级，所以没有区域进度可显示。设置首都大厅等级即可开始追踪。",
+    "notSetAction": "设置首都大厅等级",
+    "lockedBody": "需要3级大本营",
+    "districtHall": "{level}级区域大厅",
+    "notUnlocked": "未解锁",
+    "unlocksAt": "{level}级首都大厅解锁",
+    "needsDistrictHall": "请先设置区域大厅",
+    "noData": "无数据",
+    "more": "再显示 {count} 个区域",
+    "showFewer": "显示更少",
+    "openDistricts": "打开区域"
+  },
+  "home": {
+    "title": "主村庄",
+    "townHall": "{level}级大本营",
+    "daysAt": "TH{level} 天数",
+    "perHour": "每小时",
+    "stored": "已存储",
+    "cards": {
+      "locked": "需要{requirement}"
+    },
+    "queue": "打开",
+    "troops": "兵种",
+    "spells": "法术",
+    "heroes": "英雄",
+    "siege": "攻城机器",
+    "pets": "宠物",
+    "legend": "绿色轮廓：已达到此大本营的上限。虚线轮廓：已锁定。时钟：正在升级。",
+    "tile": "{hasRequirement, select, true {{name}，需要{requirement}} other {{name}，等级 {level}{max, plural, =0 {} other { / {max}}}}}",
+    "heroLocked": "需要{requirement}",
+    "petsLocked": "需要14级大本营"
+  }
+}

@@ -6,6 +6,8 @@ export interface UpgradeStep {
   durationMs: number;
   imageUrl?: string;
   isSupercharge?: boolean;
+  /** The Laboratory or Pet House level this step needs. */
+  requires?: { building: "laboratory" | "pet-house" | "star-laboratory"; level: number };
 }
 
 export interface BuilderSlot {

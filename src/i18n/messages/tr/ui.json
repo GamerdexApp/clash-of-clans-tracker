@@ -1,0 +1,42 @@
+{
+  "close": "Kapat",
+  "field": {
+    "optional": "İsteğe bağlı"
+  },
+  "stepper": {
+    "lower": "{label} azalt",
+    "raise": "{label} artır",
+    "labelPrefix": "{label}, "
+  },
+  "switch": {
+    "on": "Açık",
+    "off": "Kapalı"
+  },
+  "tabs": {
+    "locked": " (kilitli)"
+  },
+  "toast": {
+    "dismiss": "Kapat",
+    "variants": {
+      "success": "Başarılı",
+      "info": "Bilgi",
+      "warning": "Uyarı",
+      "error": "Hata"
+    },
+    "missingProvider": "useToast must be used within a ToastProvider"
+  },
+  "filters": {
+    "filters": "Filtreler",
+    "activeCount": "{count} etkin",
+    "clearFilters": "Filtreleri temizle",
+    "reset": "Sıfırla",
+    "description": "Değişiklikler hemen uygulanır. Filtreler kaydedilmez."
+  },
+  "savedChip": {
+    "automatic": "Otomatik kaydedilir",
+    "justNow": "Az önce kaydedildi",
+    "minutesAgo": "{count} dk önce kaydedildi",
+    "at": "{time} kaydedildi",
+    "failed": "Kaydedilmedi, depolama dolu"
+  }
+}

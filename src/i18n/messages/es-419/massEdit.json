@@ -1,0 +1,138 @@
+{
+  "title": "Edición masiva",
+  "description": "Cambia muchos niveles a la vez. No se guarda nada hasta que presionas Guardar cambios.",
+  "subline": "{name}, Ayuntamiento {townHall}, cambios en borrador",
+  "scopes": {
+    "home": "Aldea Principal",
+    "builder": "Base del Constructor",
+    "capital": "Capital del Clan"
+  },
+  "scopeNav": "Ámbito",
+  "requires": "Requiere {requirement}",
+  "trackingOff": "Seguimiento desactivado",
+  "changedCount": "{count, plural, one {1 cambio} other {{amount} cambios}}",
+  "chip": "Cambios sin guardar",
+  "bar": {
+    "unsaved": "{count, plural, one {1 cambio sin guardar} other {{amount} cambios sin guardar}}",
+    "none": "No hay cambios sin guardar",
+    "discard": "Descartar",
+    "save": "Guardar cambios"
+  },
+  "saved": "{count, plural, one {1 cambio guardado} other {{amount} cambios guardados}}",
+  "undo": "Deshacer",
+  "discardDialog": {
+    "title": "{count, plural, one {¿Descartar 1 cambio sin guardar?} other {¿Descartar {amount} cambios sin guardar?}}",
+    "body": "Cada fila vuelve a su nivel guardado.",
+    "keep": "Seguir editando",
+    "discard": "Descartar cambios"
+  },
+  "leave": {
+    "title": "{count, plural, one {Tienes 1 cambio sin guardar} other {Tienes {amount} cambios sin guardar}}",
+    "body": "Guárdalos antes de salir o descártalos.",
+    "save": "Guardar y salir",
+    "discard": "Descartar y salir",
+    "keep": "Seguir editando"
+  },
+  "toolbar": {
+    "label": "Acciones en bloque",
+    "selectAll": "Seleccionar los {count}",
+    "selected": "{count, plural, one {1 fila seleccionada} other {{amount} filas seleccionadas}}",
+    "clearSelection": "Borrar selección",
+    "scopeAll": "Actúa sobre las {count} filas de {category}",
+    "scopeSelected": "{count, plural, one {Actúa sobre 1 fila seleccionada} other {Actúa sobre {amount} filas seleccionadas}}",
+    "max": "Todo al máx.",
+    "maxSelected": "Máx. a la selección",
+    "reset": "Restablecer todo",
+    "resetSelected": "Restablecer selección",
+    "setLevel": "Definir nivel",
+    "levelLabel": "Nivel para las filas seleccionadas",
+    "applyLevel": "{count, plural, one {Aplicar a 1 fila} other {Aplicar a {amount} filas}}",
+    "hallLabel": "Poner al máximo según el nivel de sala",
+    "hallCurrent": "{hall} {level} (actual)",
+    "hallOption": "{hall} {level}",
+    "hallPlaceholder": "Elige: {hall}"
+  },
+  "confirm": {
+    "title": "{count, plural, one {¿Bajar 1 fila?} other {¿Bajar {amount} filas?}}",
+    "body": "Esto cambia el borrador. No se guarda nada hasta que presionas Guardar cambios.",
+    "superchargeNote": "Un edificio que baja de su nivel máximo también pierde su nivel de sobrecarga.",
+    "apply": "Aplicar al borrador",
+    "cancel": "Cancelar",
+    "line": "{name}: {from} a {to}",
+    "more": "y {count} más"
+  },
+  "rows": {
+    "notBuilt": "No construido",
+    "toMax": "{count} para el máx.",
+    "atMax": "Al máximo",
+    "changed": "Cambió de {from} a {to}",
+    "level": "Nivel de {name}",
+    "raise": "Subir {name}",
+    "lower": "Bajar {name}",
+    "max": "Máx.",
+    "select": "Seleccionar {name}",
+    "selectGroup": "Seleccionar todos: {name}",
+    "supercharge": "Sobrecarga",
+    "reachFirst": "Llega primero al nivel {level}",
+    "slider": "Control deslizante de {name}",
+    "groupBuilt": "{count} construidos, nivel máx. {max}",
+    "expand": "Mostrar {name}",
+    "collapse": "Ocultar {name}"
+  },
+  "category": {
+    "atMax": "{done} de {total} al máximo para {hall} {level}",
+    "rowsAtMax": "{done} de {total} al máximo",
+    "empty": "Aún no hay nada que editar en esta categoría.",
+    "locked": "Requiere {requirement}",
+    "lockedSuffix": " (bloqueado)",
+    "nav": "Categorías"
+  },
+  "walls": {
+    "total": "Total",
+    "allocated": "Asignados",
+    "remaining": "Restantes",
+    "maxAll": "Todo al máx.",
+    "resetAll": "Restablecer todo",
+    "maxAllHelp": "Mueve todos los muros restantes al nivel más alto",
+    "level": "Muros de nivel {level}"
+  },
+  "builder": {
+    "profile": "Perfil de la Base del Constructor",
+    "hall": "Nivel del Taller del Constructor",
+    "hallHelp": "El Taller del Constructor {level} fija el nivel más alto de cada fila de abajo. Al bajarlo se pide confirmación y solo baja las filas por encima del nuevo límite.",
+    "none": "No hay edificios disponibles con este nivel de Taller del Constructor",
+    "raise": "Subir Taller del Constructor",
+    "lower": "Bajar Taller del Constructor",
+    "trophies": "Trofeos",
+    "bestTrophies": "Mejores trofeos",
+    "league": "Liga",
+    "hallConfirmTitle": "¿Bajar el Taller del Constructor a {level}?"
+  },
+  "hallNames": {
+    "home": "Ayuntamiento",
+    "builder": "Taller del Constructor",
+    "district": "Sala del Distrito",
+    "capital": "Sala de la Capital"
+  },
+  "capital": {
+    "profile": "Perfil de la Capital del Clan",
+    "hall": "Sala de la Capital",
+    "none": "Ninguna",
+    "level": "Sala de la Capital {level}",
+    "contributions": "Contribuciones a la Capital del Clan",
+    "unit": "Oro de la Capital",
+    "districtHall": "Sala del Distrito",
+    "districtNone": "Ninguna",
+    "districtLevel": "Sala del Distrito {level}",
+    "requiresCapitalHall": "Requiere Sala de la Capital {level}",
+    "unlockHint": "Define arriba: {label}, para desbloquear edificios.",
+    "parts": "Secciones",
+    "off": "El seguimiento de la Capital del Clan está desactivado",
+    "offBody": "Vuelve a activar el seguimiento desde las páginas de la Capital del Clan. No se eliminó nada.",
+    "offAction": "Abrir Capital del Clan"
+  },
+  "empty": {
+    "title": "No hay aldea activa",
+    "description": "Elige una aldea o crea una para usar la Edición masiva."
+  }
+}

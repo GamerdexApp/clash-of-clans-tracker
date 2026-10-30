@@ -1,3 +1,5 @@
+import type { UpgradeTarget } from "./engine";
+
 interface BaseQueueItem {
   id: string;
   name: string;
@@ -41,7 +43,12 @@ export interface ResourceGroup {
   events: ResourceEvent[];
 }
 
-export type AnyQueueItem = BuilderQueueItem | ResearchQueueItem | PetQueueItem;
+/** A Builder Base item keeps the whole target, since every Builder Base upgrade is found by its target. */
+export interface BuilderBaseQueueItem extends BaseQueueItem {
+  target: UpgradeTarget;
+}
+
+export type AnyQueueItem = BuilderQueueItem | ResearchQueueItem | PetQueueItem | BuilderBaseQueueItem;
 
 export interface TimelineBlock {
   label: string;

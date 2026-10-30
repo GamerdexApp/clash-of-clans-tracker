@@ -1,0 +1,24 @@
+{
+  "levelTo": "{name} {from}→{to}",
+  "toast": {
+    "undo": "Rückgängig",
+    "started": "{name} St. {from} auf {to} gestartet",
+    "finished": "{name} auf St. {level} fertig",
+    "timeSaved": "{time} zur gesparten Zeit addiert.",
+    "cancelled": "{name} St. {from} auf {to} abgebrochen",
+    "levelChanged": "{name} St. {from} auf {to}"
+  },
+  "queue": {
+    "buildPetHouse": "Baue zuerst ein Haustierhaus",
+    "requires": "Braucht {building} {level}",
+    "alreadyUpgrading": "{name} wird schon upgegradet",
+    "finishFirst": "Stufe {level} muss zuerst fertig werden",
+    "alreadyAt": "Schon auf Stufe {level}"
+  },
+  "conflict": {
+    "alreadyAt": "{name} ist schon auf Stufe {level}, daher ist Stufe {target} erledigt.",
+    "removeFix": "Entferne es aus der Warteschlange.",
+    "scheduledBefore": "{name} Stufe {level} ist vor Abschluss von Stufe {earlier} eingeplant.",
+    "moveFix": "Verschiebe Stufe {level} hinter Stufe {earlier}."
+  }
+}

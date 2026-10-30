@@ -1,0 +1,8 @@
+{
+  "days": "{count}ي",
+  "hours": "{count}س",
+  "minutes": "{count}د",
+  "seconds": "{count}ث",
+  "paddedSeconds": "{count}ث",
+  "join": "{first} {second}"
+}

@@ -1,0 +1,236 @@
+{
+  "tab": {
+    "title": "Segerak awan"
+  },
+  "unavailable": "Segerak tidak tersedia dalam binaan ini.",
+  "provider": {
+    "github": {
+      "name": "GitHub",
+      "tile": "Repositori persendirian milik anda, bernama {repository}.",
+      "badge": "Untuk pembangun"
+    },
+    "google": {
+      "name": "Google Drive",
+      "tile": "Folder Gamerdex yang kelihatan dalam Drive anda. Gamerdex hanya melihat fail yang dicipta olehnya.",
+      "badge": "Disyorkan"
+    },
+    "dropbox": {
+      "name": "Dropbox",
+      "tile": "Folder Gamerdex di dalam folder Apps dalam Dropbox anda. Gamerdex hanya melihat folder itu.",
+      "badge": "Folder aplikasi sahaja"
+    },
+    "microsoft": {
+      "name": "OneDrive",
+      "tile": "Folder Gamerdex di dalam folder Apps dalam OneDrive anda. Gamerdex hanya melihat folder itu.",
+      "badge": "Akaun peribadi"
+    }
+  },
+  "connect": {
+    "title": "Segerak merentas peranti",
+    "pill": "Tidak disambungkan",
+    "intro": "Pastikan kampung anda sama pada komputer dan telefon. Segerak adalah pilihan dan percuma. Pilih tempat salinan disimpan.",
+    "pickerLabel": "Tempat menyimpan salinan",
+    "panelTitle": "Sambung {provider}",
+    "another": "Anda boleh memilih pembekal lain sebelum log masuk.",
+    "firstSync": "Pilih apa yang dikekalkan pada segerak pertama jika kedua-dua pihak sudah mempunyai data. Tiada apa-apa diganti sebelum anda memutuskan.",
+    "steps": {
+      "google": {
+        "step1": "Log masuk dengan Google dalam tetingkap ini.",
+        "step2": "Benarkan akses kepada fail yang dicipta Gamerdex. Aplikasi tidak dapat melihat fail anda yang lain.",
+        "button": "Sambung Google Drive"
+      },
+      "github": {
+        "step1": "Cipta repositori persendirian kosong bernama {repository}. Tanda Add a README file.",
+        "step2": "Log masuk dengan GitHub, kemudian beri Gamerdex Sync akses kepada repositori itu sahaja.",
+        "button": "Sambung GitHub"
+      },
+      "dropbox": {
+        "step1": "Log masuk dengan Dropbox dalam tetingkap ini.",
+        "step2": "Benarkan akses kepada folder aplikasi Gamerdex. Aplikasi tidak dapat melihat fail anda yang lain.",
+        "button": "Sambung Dropbox"
+      },
+      "microsoft": {
+        "step1": "Log masuk dengan akaun Microsoft peribadi anda dalam tetingkap ini.",
+        "step2": "Benarkan akses kepada folder aplikasi Gamerdex. Aplikasi tidak dapat melihat fail anda yang lain.",
+        "button": "Sambung OneDrive"
+      }
+    }
+  },
+  "how": {
+    "title": "Cara segerak berfungsi",
+    "points": {
+      "item1": "Kampung anda disimpan sebagai satu fail dalam storan anda sendiri, serta fail kecil untuk senarai peranti.",
+      "item2": "Gamerdex tidak mempunyai pelayan yang menyimpan data anda. Pelayar anda berhubung terus dengan storan anda.",
+      "item3": "Bangunan, pasukan, wira, kelengkapan, haiwan dan pencapaian digabungkan satu demi satu, dan tahap yang lebih tinggi menang. Set semula dibawa bersama apabila peranti lain tidak mengubah tahap itu.",
+      "item4": "Jika kedua-dua peranti mengubah nama, giliran, naik taraf yang berjalan, bilangan trofi atau masa set semula yang sama, anda memilih yang mana satu untuk dikekalkan.",
+      "item5": "Setiap peranti mengekalkan kampung aktifnya sendiri. Segerak tidak pernah mengubahnya.",
+      "item6": "Putuskan sambungan pada bila-bila masa. Kampung anda kekal pada setiap peranti."
+    }
+  },
+  "repository": {
+    "title": "Sediakan repositori data anda",
+    "body": "Data anda disimpan dalam repositori persendirian bernama {name} dalam akaun GitHub anda. Gamerdex Sync hanya dapat mencapai satu repositori itu.",
+    "checking": "Mencari {name}",
+    "checkFailed": "Repositori anda tidak dapat dimuatkan. Semak sambungan anda dan semak semula.",
+    "public": "Repositori {fullName} adalah awam. Jadikan ia persendirian dalam tetapan GitHubnya, kemudian semak semula. Repositori awam tidak boleh digunakan, kerana sesiapa sahaja boleh membaca data anda.",
+    "missing": "Repositori {name} tidak ditemui",
+    "steps": {
+      "create": "Cipta repositori persendirian bernama {name}. Tanda Add a README file.",
+      "install": "Beri Gamerdex Sync akses kepada repositori itu sahaja. Pilih Only select repositories, kemudian pilih {name}.",
+      "recheck": "Kembali ke sini dan semak semula."
+    },
+    "createButton": "Cipta repositori",
+    "installButton": "Pilih repositori di GitHub",
+    "recheckButton": "Semak semula"
+  },
+  "connected": {
+    "repository": "Repositori",
+    "lastSync": "Segerak terakhir",
+    "never": "Belum disegerakkan",
+    "syncNow": "Segerak sekarang",
+    "signOut": "Log keluar",
+    "folder": "Folder {name}",
+    "signInWith": "Log masuk dengan {provider}"
+  },
+  "status": {
+    "idle": "Disegerakkan",
+    "syncing": "Menyegerak",
+    "offline": "Luar talian",
+    "reauth": "Log masuk semula",
+    "needsChoice": "Memerlukan pilihan anda",
+    "error": "Segerak gagal",
+    "signedOut": "Belum log masuk",
+    "needsRepository": "Pilih repositori",
+    "conflicts": "Semak perubahan"
+  },
+  "error": {
+    "rateLimit": "Pembekal menghadkan permintaan. Segerak akan berfungsi semula dalam beberapa minit.",
+    "notFound": "Repositori tidak ditemui. Pilihnya semula.",
+    "server": "Pembekal tidak menjawab dengan betul. Cuba lagi kemudian.",
+    "data": "Data yang disegerakkan tidak sah, jadi tiada apa-apa diubah.",
+    "busy": "Peranti lain terus mengubah data. Cuba lagi sebentar lagi.",
+    "other": "Sesuatu tidak kena. Tiada apa-apa diubah.",
+    "reauth": "Log masuk anda telah tamat. Log masuk semula untuk terus menyegerak.",
+    "forbidden": "GitHub menolak akses ke repositori. Pastikan Gamerdex Sync mempunyai akses Read and write kepada Contents, kemudian segerak semula.",
+    "httpStatus": "GitHub menjawab {status}.",
+    "notFoundFolder": "Fail atau folder dalam {provider} tidak ditemui. Segerak semula.",
+    "forbiddenFolder": "{provider} menolak akses. Log masuk semula dan benarkan akses kepada fail yang dicipta Gamerdex.",
+    "httpStatusFolder": "{provider} menjawab {status}."
+  },
+  "choice": {
+    "title": "Peranti ini dan awan kedua-duanya mempunyai data",
+    "body": "Ini ialah segerak pertama daripada peranti ini. Pilih apa yang hendak dilakukan. Tiada apa-apa dipadam daripada awan sehingga anda memilih.",
+    "merge": "Gabung kedua-duanya",
+    "mergeHint": "Kekalkan semuanya daripada kedua-dua pihak. Tahap yang lebih tinggi menang.",
+    "keepLocal": "Kekalkan peranti ini",
+    "keepLocalHint": "Gantikan data awan dengan data pada peranti ini.",
+    "keepCloud": "Kekalkan awan",
+    "keepCloudHint": "Gantikan data pada peranti ini dengan data awan."
+  },
+  "first": {
+    "thisDevice": "Peranti ini",
+    "cloud": "Awan",
+    "recommended": "Disyorkan",
+    "later": "Putuskan kemudian",
+    "apply": "Laksanakan pilihan",
+    "optionsLabel": "Apa yang dikekalkan"
+  },
+  "villageCount": "{count, plural, other {{amount} kampung}}",
+  "conflicts": {
+    "title": "Perubahan yang tidak dapat digabungkan",
+    "body": "Dua peranti mengubah nilai yang sama. Nilai awan dikekalkan. Pilih nilai peranti ini untuk menggunakannya.",
+    "cloudValue": "Awan",
+    "deviceValue": "Peranti ini",
+    "keepDevice": "Guna nilai peranti ini",
+    "dismiss": "Tutup",
+    "empty": "Tiada",
+    "deletedEdited": "Satu peranti membuang ini dan satu lagi mengubahnya. Versi yang diubah dikekalkan."
+  },
+  "banner": {
+    "title": "{count, plural, other {{amount} perubahan memerlukan keputusan}}",
+    "body": "Dua peranti mengubah nilai yang sama. Nilai awan dikekalkan sehingga anda memutuskan.",
+    "review": "Semak",
+    "waiting": "Segerak pertama menunggu pilihan anda.",
+    "choose": "Pilih"
+  },
+  "villages": {
+    "title": "Kampung",
+    "thisDevice": "Peranti ini",
+    "cloud": "Awan, segerak terakhir",
+    "notInCloud": "Belum ada dalam awan",
+    "review": "Semak",
+    "note": "Memadam kampung membuangnya daripada fail segerak pada segerak seterusnya.",
+    "status": {
+      "synced": "Disegerakkan",
+      "changedHere": "Diubah di sini",
+      "conflict": "Konflik",
+      "newHere": "Baharu di sini"
+    },
+    "describe": "Dewan Bandar {townHall}"
+  },
+  "activity": {
+    "title": "Aktiviti segerak terkini",
+    "empty": "Belum ada apa-apa yang disegerakkan.",
+    "connected": "{provider} disambungkan pada pelayar ini.",
+    "uploaded": "Perubahan daripada peranti ini dimuat naik.",
+    "downloaded": "Perubahan daripada awan dimuat turun.",
+    "merged": "Perubahan kedua-dua pihak digabungkan.",
+    "conflicts": "{count, plural, other {{amount} perubahan memerlukan keputusan.}}",
+    "failed": "Segerak gagal."
+  },
+  "settings": {
+    "title": "Tetapan segerak",
+    "auto": "Segerak secara automatik",
+    "autoHint": "Menyegerak apabila penjejak dibuka dan beberapa saat selepas setiap perubahan.",
+    "focus": "Semak perubahan apabila saya kembali ke tab",
+    "focusHint": "Menarik data awan yang lebih baharu apabila anda kembali ke penjejak.",
+    "metered": "Tunggu saya pada sambungan bermeter",
+    "meteredHint": "Melangkau segerak automatik semasa pelayar melaporkan sambungan penjimat data. Segerak sekarang masih berfungsi."
+  },
+  "lives": {
+    "title": "Tempat data anda disimpan",
+    "storage": "Storan",
+    "folder": "Folder",
+    "dataFile": "Fail data",
+    "metaFile": "Fail meta",
+    "size": "Saiz",
+    "kb": "{amount} KB",
+    "note": "Fail data menyimpan kampung anda dalam bentuk yang boleh digabungkan oleh segerak, jadi ia bukan fail sandaran. Fail meta menyimpan senarai peranti dan tiada data permainan. Log masuk anda tidak pernah ada dalam kedua-dua fail.",
+    "notes": {
+      "google": "Folder Gamerdex kelihatan dalam Drive anda. Gamerdex hanya boleh membuka fail yang dicipta olehnya.",
+      "github": "Pastikan repositori persendirian. Sesiapa yang boleh membukanya boleh membaca data anda.",
+      "dropbox": "Folder Gamerdex berada di dalam folder Apps dalam Dropbox anda. Gamerdex hanya boleh membuka folder itu.",
+      "microsoft": "Folder Gamerdex berada di dalam folder Apps dalam OneDrive anda. Gamerdex hanya boleh membuka folder itu."
+    }
+  },
+  "device": {
+    "title": "Peranti ini",
+    "name": "Nama peranti",
+    "nameHint": "Fail segerak menunjukkan nama ini untuk peranti ini. Menamakan semula mengemas kini fail meta pada segerak seterusnya.",
+    "activeVillage": "Kampung aktif",
+    "noVillage": "Tiada",
+    "login": "Log masuk segerak",
+    "loginValue": "Pada peranti ini sahaja",
+    "loginHint": "Kampung aktif ialah pilihan pada setiap peranti, dan segerak tidak pernah mengubahnya. Log masuk anda kekal pada peranti ini. Ia tidak pernah ada dalam data tersimpan, fail sandaran atau fail segerak."
+  },
+  "disconnect": {
+    "title": "Putuskan sambungan",
+    "body": "Menghentikan segerak pada pelayar ini. Kampung anda kekal pada peranti ini dan dalam awan. Peranti lain terus menyegerak.",
+    "button": "Putuskan {provider}",
+    "hints": {
+      "google": "Untuk memadam salinan awan sendiri, putuskan sambungan, kemudian padam folder Gamerdex dalam Google Drive anda.",
+      "github": "Untuk memadam salinan awan sendiri, putuskan sambungan, kemudian padam folder Gamerdex dalam repositori anda.",
+      "dropbox": "Untuk memadam salinan awan sendiri, putuskan sambungan, kemudian padam folder aplikasi di bawah Apps dalam Dropbox anda.",
+      "microsoft": "Untuk memadam salinan awan sendiri, putuskan sambungan, kemudian padam folder aplikasi di bawah Apps dalam OneDrive anda."
+    }
+  },
+  "callback": {
+    "title": "Log masuk",
+    "working": "Menyiapkan log masuk",
+    "back": "Kembali ke Tetapan",
+    "denied": "Log masuk dibatalkan.",
+    "state": "Log masuk tidak dapat disemak. Mulakan semula dari Tetapan.",
+    "missing": "Log masuk tidak menghantar kod. Mulakan semula dari Tetapan.",
+    "failed": "Log masuk tidak dapat disiapkan. Cuba lagi kemudian."
+  }
+}

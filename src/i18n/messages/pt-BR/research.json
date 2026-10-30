@@ -1,0 +1,32 @@
+{
+  "title": "Pesquisa",
+  "subline": "{name}, Centro de Vila {townHall}",
+  "tabsLabel": "Seções da Pesquisa",
+  "tabs": {
+    "troops": "Tropas",
+    "spells": "Feitiços",
+    "siegeMachines": "Cerco"
+  },
+  "strip": {
+    "title": "Laboratório",
+    "noLanes": "Nenhuma linha de pesquisa está disponível.",
+    "openQueue": "Abrir fila e linha do tempo",
+    "unassignedHelp": "Algumas pesquisas estão salvas em uma linha desativada, ou em uma linha que outra pesquisa já usa. Conclua ou cancele essas pesquisas.",
+    "levelLabel": "Nível do Laboratório",
+    "level": "{level} de {max}",
+    "notTracked": "Não definido",
+    "boostLabel": "Bônus de pesquisa do Passe Dourado"
+  },
+  "card": {
+    "notUnlocked": "Não liberado",
+    "markUnlocked": "Marcar como liberado",
+    "maxAtHall": "Nv máx. {level} neste Centro de Vila",
+    "progress": "Progresso de {name}"
+  },
+  "empty": {
+    "title": "Nada aqui ainda",
+    "none": "Nada nesta seção está disponível neste nível de Centro de Vila.",
+    "allMax": "Tudo aqui está no máximo. Desative Ocultar máx. para ver."
+  },
+  "boostValue": "{percent, plural, =0 {Nenhum} other {-{percent}% de tempo e custo}}"
+}

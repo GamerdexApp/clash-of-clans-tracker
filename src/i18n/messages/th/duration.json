@@ -1,0 +1,8 @@
+{
+  "days": "{count}ว",
+  "hours": "{count}ชม.",
+  "minutes": "{count}น.",
+  "seconds": "{count}วิ",
+  "paddedSeconds": "{count}วิ",
+  "join": "{first} {second}"
+}

@@ -1,0 +1,63 @@
+{
+  "upgrades": {
+    "title": "업그레이드",
+    "subline": "{name}, 빌더 홀 {hall}",
+    "sublineNotSet": "{name}, 빌더 홀 미설정",
+    "tabsLabel": "빌더 기지 섹션",
+    "tabs": {
+      "defenses": "방어",
+      "army": "군대",
+      "resources": "자원",
+      "traps": "함정",
+      "heroes": "영웅",
+      "other": "기타"
+    },
+    "strip": {
+      "title": "빌더",
+      "noBuilders": "빌더 기지에는 빌더가 두 명 있어요.",
+      "openQueue": "대기열과 타임라인 열기",
+      "unassignedHelp": "일부 업그레이드가 다른 업그레이드가 이미 쓰는 빌더에 저장돼 있어요. 끝내거나 취소하세요."
+    }
+  },
+  "locked": {
+    "title": "타운홀 6 필요",
+    "description": "이 마을은 타운홀 {townHall}이에요. 빌더 기지는 타운홀 6에서 열리거나, 빌더 홀 레벨을 설정하면 열려요."
+  },
+  "notSet": {
+    "action": "빌더 홀 레벨 설정",
+    "troopsDescription": "빌더 기지 병력은 빌더 홀 레벨을 따라가요. 업그레이드 페이지의 기타 탭에서 설정하세요.",
+    "title": "빌더 홀 레벨을 골라 추적을 시작하세요",
+    "description": "아래 타일에서 빌더 홀 레벨을 설정하세요. 빌더 기지 목록이 그 레벨을 따라가요."
+  },
+  "hall": {
+    "title": "빌더 홀",
+    "notSet": "미설정",
+    "option": "빌더 홀 {level}",
+    "since": "빌더 홀 {level}에서 {days, plural, other {{amount}일}}",
+    "confirm": {
+      "title": "빌더 홀을 {level}로 바꿀까요?",
+      "raising": "레벨을 올리면 더 많은 건물과 더 높은 한도가 표시돼요. 저장한 내용은 삭제되지 않아요.",
+      "lowering": "레벨을 내리면 그 위의 건물과 한도가 숨겨져요. 저장한 레벨은 유지돼요.",
+      "clearing": "레벨을 지우면 모든 빌더 기지 목록이 숨겨져요. 저장한 레벨은 유지돼요.",
+      "setDays": "빌더 홀 보낸 일수를 오늘로 설정",
+      "cancel": "취소",
+      "confirm": "레벨 변경"
+    },
+    "toast": "빌더 홀 {from, plural, =0 {미설정} other {{from}}}에서 {to, plural, =0 {미설정} other {{to}}}로",
+    "undo": "실행 취소"
+  },
+  "other": {
+    "clockTower": "시계탑",
+    "clockTowerMax": "이 빌더 홀에서 최대 Lv {level}",
+    "clockTowerProgress": "시계탑 진행도"
+  },
+  "empty": {
+    "title": "아직 아무것도 없어요",
+    "description": "이 빌더 홀 레벨에서 쓸 수 있는 이 종류의 건물이 없어요.",
+    "allMax": "여기 있는 항목이 모두 최대예요. 최대 숨기기를 끄면 볼 수 있어요."
+  },
+  "heroes": {
+    "maxAtHall": "이 빌더 홀에서 최대 Lv {level}",
+    "progress": "{name} 진행도"
+  }
+}

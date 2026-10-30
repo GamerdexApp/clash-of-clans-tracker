@@ -1,0 +1,29 @@
+{
+  "title": "Troupes",
+  "subline": "{name}, Hôtel des ouvriers {hall}",
+  "sublineNotSet": "{name}, Hôtel des ouvriers non défini",
+  "strip": {
+    "title": "Laboratoire d'étoiles",
+    "noLanes": "Le Laboratoire d'étoiles n'est pas disponible.",
+    "openQueue": "Ouvrir la file et la chronologie",
+    "unassignedHelp": "Plus d'une recherche de troupe est enregistrée sur le Laboratoire d'étoiles. Terminez ou annulez la recherche en trop.",
+    "levelLabel": "Niveau du Laboratoire d'étoiles",
+    "level": "{level} sur {max}",
+    "notSet": "Non défini"
+  },
+  "card": {
+    "notUnlocked": "Non débloqué",
+    "markUnlocked": "Marquer comme débloqué",
+    "maxAtHall": "Niv. max {level} à cet Hôtel des ouvriers",
+    "unlockedBy": "Débloqué par la Caserne des ouvriers niveau {barracks}",
+    "progress": "Progression de {name}"
+  },
+  "unavailable": {
+    "title": "Indisponible à cet Hôtel des ouvriers",
+    "requires": "Nécessite la Caserne des ouvriers {barracks}, qui demande l'Hôtel des ouvriers {hall}"
+  },
+  "empty": {
+    "title": "Rien ici pour le moment",
+    "allMax": "Toutes les troupes sont au maximum. Désactivez Masquer le max pour les voir."
+  }
+}

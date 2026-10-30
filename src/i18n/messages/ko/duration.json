@@ -1,0 +1,8 @@
+{
+  "days": "{count}일",
+  "hours": "{count}시간",
+  "minutes": "{count}분",
+  "seconds": "{count}초",
+  "paddedSeconds": "{count}초",
+  "join": "{first} {second}"
+}

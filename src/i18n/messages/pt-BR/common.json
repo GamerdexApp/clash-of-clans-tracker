@@ -1,0 +1,32 @@
+{
+  "gate": {
+    "title": "Nenhuma vila ativa",
+    "description": "Escolha uma vila ou crie uma para ver esta página.",
+    "newVillage": "Nova vila",
+    "chooseVillage": "Escolher uma vila"
+  },
+  "townHallTab": {
+    "title": "Centro de Vila",
+    "supercharge": "Supercarga",
+    "superchargeDone": "{current} de {max} etapas de supercarga liberadas neste Centro de Vila estão concluídas.",
+    "superchargeProgress": "Progresso da supercarga"
+  },
+  "heroesUnlock": "Os heróis são liberados com o Salão dos Heróis.",
+  "progressLabel": "Progresso de {name}",
+  "countdownLabel": "Contagem regressiva de {name}",
+  "capitalGold": "Ouro da Capital",
+  "queue": {
+    "conflict": "Conflito",
+    "level": "Nv {level}",
+    "levelSupercharge": "Supercarga Nv {level}",
+    "now": "Agora",
+    "itemTitle": "{name} Nv {level}"
+  },
+  "finishDescription": "{name}, Nv {from} para {to}, {method}, {time} {unit}",
+  "lookupError": {
+    "rateLimit": "Aguarde {seconds} s antes de buscar de novo.",
+    "notFound": "O jogador {tag} não foi encontrado.",
+    "api": "A API da Supercell respondeu {status}.",
+    "network": "A busca do jogador não conseguiu alcançar o servidor."
+  }
+}

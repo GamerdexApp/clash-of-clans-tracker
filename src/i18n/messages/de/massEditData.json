@@ -1,0 +1,33 @@
+{
+  "categories": {
+    "defenses": "Verteidigung",
+    "army": "Armee",
+    "resources": "Ressourcen",
+    "crafted": "Gefertigte Verteidigungen",
+    "traps": "Fallen",
+    "troops": "Truppen",
+    "spells": "Zauber",
+    "siege": "Belagerung",
+    "pets": "Haustiere",
+    "guardians": "Wächter",
+    "heroes": "Helden",
+    "equipment": "Ausrüstung",
+    "walls": "Mauern",
+    "buildings": "Gebäude"
+  },
+  "sections": {
+    "armyBuildings": "Armeegebäude",
+    "otherBuildings": "Andere Gebäude"
+  },
+  "level": "Stufe {level}",
+  "superchargeRow": "Superladung von {name}",
+  "profile": {
+    "builderHall": "Stufe der Bauarbeiterhalle",
+    "trophies": "Trophäen",
+    "bestTrophies": "Beste Trophäen",
+    "league": "Liga",
+    "capitalHall": "Hauptstadthalle",
+    "districtHall": "Bezirkshalle von {zone}",
+    "contributions": "Beiträge"
+  }
+}

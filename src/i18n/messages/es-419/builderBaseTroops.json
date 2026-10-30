@@ -1,0 +1,29 @@
+{
+  "title": "Tropas",
+  "subline": "{name}, Taller del Constructor {hall}",
+  "sublineNotSet": "{name}, Taller del Constructor sin definir",
+  "strip": {
+    "title": "Laboratorio Estelar",
+    "noLanes": "El Laboratorio Estelar no está disponible.",
+    "openQueue": "Abrir cola y línea de tiempo",
+    "unassignedHelp": "Hay más de una investigación de tropa guardada en el Laboratorio Estelar. Termina o cancela la que sobra.",
+    "levelLabel": "Nivel del Laboratorio Estelar",
+    "level": "{level} de {max}",
+    "notSet": "Sin definir"
+  },
+  "card": {
+    "notUnlocked": "No desbloqueada",
+    "markUnlocked": "Marcar como desbloqueada",
+    "maxAtHall": "Nv máx. {level} en este Taller del Constructor",
+    "unlockedBy": "Desbloqueada por el Cuartel del Constructor nivel {barracks}",
+    "progress": "Progreso de {name}"
+  },
+  "unavailable": {
+    "title": "No disponible en este Taller del Constructor",
+    "requires": "Requiere Cuartel del Constructor {barracks}, que necesita Taller del Constructor {hall}"
+  },
+  "empty": {
+    "title": "Aún no hay nada aquí",
+    "allMax": "Todas las tropas están al máximo. Desactiva Ocultar al máximo para verlas."
+  }
+}

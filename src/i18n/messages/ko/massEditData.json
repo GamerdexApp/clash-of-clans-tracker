@@ -1,0 +1,33 @@
+{
+  "categories": {
+    "defenses": "방어",
+    "army": "군대",
+    "resources": "자원",
+    "crafted": "제작 방어",
+    "traps": "함정",
+    "troops": "병력",
+    "spells": "주문",
+    "siege": "시즈",
+    "pets": "펫",
+    "guardians": "수호자",
+    "heroes": "영웅",
+    "equipment": "장비",
+    "walls": "벽",
+    "buildings": "건물"
+  },
+  "sections": {
+    "armyBuildings": "군대 건물",
+    "otherBuildings": "기타 건물"
+  },
+  "level": "레벨 {level}",
+  "superchargeRow": "{name} 슈퍼차지",
+  "profile": {
+    "builderHall": "빌더 홀 레벨",
+    "trophies": "트로피",
+    "bestTrophies": "최고 트로피",
+    "league": "리그",
+    "capitalHall": "캐피탈 홀",
+    "districtHall": "{zone} 지구 홀",
+    "contributions": "기여도"
+  }
+}

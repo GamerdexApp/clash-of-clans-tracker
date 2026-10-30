@@ -1,4 +1,8 @@
 allowBuilds:
+  '@parcel/watcher': false
+  '@swc/core': false
   unrs-resolver: false
+minimumReleaseAgeExclude:
+  - clash-of-clans-data@0.19.1
 overrides:
   deepmerge-ts: ^8.0.0

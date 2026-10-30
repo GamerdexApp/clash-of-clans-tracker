@@ -1,0 +1,32 @@
+{
+  "gate": {
+    "title": "Нет активной деревни",
+    "description": "Выберите деревню или создайте новую, чтобы увидеть эту страницу.",
+    "newVillage": "Новая деревня",
+    "chooseVillage": "Выбрать деревню"
+  },
+  "townHallTab": {
+    "title": "Ратуша",
+    "supercharge": "Суперзаряд",
+    "superchargeDone": "Завершено ступеней суперзаряда, открытых на этой Ратуше: {current} из {max}.",
+    "superchargeProgress": "Прогресс суперзаряда"
+  },
+  "heroesUnlock": "Герои открываются с Залом героев.",
+  "progressLabel": "{name}: прогресс",
+  "countdownLabel": "{name}: обратный отсчёт",
+  "capitalGold": "Золото столицы",
+  "queue": {
+    "conflict": "Конфликт",
+    "level": "Ур. {level}",
+    "levelSupercharge": "Ур. {level}, суперзаряд",
+    "now": "Сейчас",
+    "itemTitle": "{name}, ур. {level}"
+  },
+  "finishDescription": "{name}, ур. {from} → {to}, {method}, {time} {unit}",
+  "lookupError": {
+    "rateLimit": "Подождите {seconds} с перед новым запросом.",
+    "notFound": "Игрок {tag} не найден.",
+    "api": "API Supercell ответил: {status}.",
+    "network": "Не удалось связаться с сервером для поиска игрока."
+  }
+}

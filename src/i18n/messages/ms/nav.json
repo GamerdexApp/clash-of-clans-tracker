@@ -1,0 +1,29 @@
+{
+  "groups": {
+    "homeVillage": "Kampung Utama",
+    "builderBase": "Pangkalan Pembina",
+    "clanCapital": "Ibu Kota Klan",
+    "dailies": "Harian",
+    "tools": "Alat"
+  },
+  "items": {
+    "overview": "Gambaran keseluruhan",
+    "achievements": "Pencapaian",
+    "builder": "Pembina",
+    "research": "Kajian",
+    "pets": "Haiwan",
+    "equipment": "Kelengkapan",
+    "walls": "Tembok",
+    "builderBaseUpgrades": "Naik taraf",
+    "builderBaseTroops": "Pasukan",
+    "builderBaseWalls": "Tembok",
+    "districts": "Daerah",
+    "capitalTroops": "Pasukan dan mantera",
+    "forge": "Tempaan",
+    "helpers": "Pembantu",
+    "seasonPass": "Pas Musim",
+    "massEdit": "Sunting pukal",
+    "settings": "Tetapan"
+  },
+  "villages": "Kampung Saya"
+}

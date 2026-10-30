@@ -1,0 +1,112 @@
+{
+  "title": "Aperçu",
+  "description": "Votre village d'un coup d'œil : progression, minuteurs quotidiens et toutes les stats enregistrées.",
+  "subline": "{name}, calculé, lecture seule",
+  "header": {
+    "clanLevel": "{hasRole, select, true {Niveau du clan {level}, {role}} other {Niveau du clan {level}}}",
+    "achievements": "Succès",
+    "ringCaption": "{stars} sur {maxStars} étoiles",
+    "viewAll": "Tout voir",
+    "townHall": "HdV{level}"
+  },
+  "dailies": {
+    "title": "Quotidiens",
+    "closedTitle": "Les quotidiens s'ouvrent à l'Hôtel de ville 3",
+    "closedBody": "La Forge, les Assistants et le Pass de saison s'ouvrent à mesure que l'Hôtel de ville monte.",
+    "closedLink": "Voir ce qui est ouvert",
+    "groups": {
+      "helpers": "Assistants",
+      "daily": "Quotidien",
+      "goldPass": "Pass Or"
+    },
+    "requires": "Nécessite {requirement}",
+    "openForge": "Ouvrir la Forge",
+    "openHelpers": "Ouvrir Assistants",
+    "unlockProspector": "Débloquer dans Pass de saison",
+    "helperHut": "Cabane des assistants",
+    "townHall": "Hôtel de ville {level}",
+    "starBonus": "Bonus d'étoiles",
+    "capitalGold": "Or de la capitale",
+    "autoForge": "Forge auto",
+    "forgeSlots": "Emplacements de la forge",
+    "notRunning": "À l'arrêt",
+    "running": "En cours",
+    "stopAuto": "Arrêter la Forge auto",
+    "autoLine": "{amount} {resource} vers {capitalGold} Or de la capitale",
+    "slotsLine": "{running} emplacements en cours sur {open}",
+    "slotsDone": "{done, plural, one {1 emplacement est terminé} other {{amount} emplacements sont terminés}}",
+    "autoPerk": "l'avantage Forge auto",
+    "helperPreview": "Utiliser maintenant : {before} restant devient {after}",
+    "goldPass": {
+      "edit": "Modifier dans Pass de saison",
+      "builder": "Boost d'ouvrier",
+      "research": "Boost de recherche",
+      "hoggyBank": "Tirelire de Hoggy",
+      "gemDonations": "Dons à 1 gemme",
+      "autoForge": "Forge auto",
+      "requestReduction": "Réduction du temps de demande",
+      "on": "Activé",
+      "off": "Désactivé",
+      "resets": "Les boosts reviennent à 0 % le {date}.",
+      "readOnly": "Ouvrir l'Aperçu ne modifie jamais le village ni sa date de dernière modification."
+    }
+  },
+  "league": {
+    "open": "Afficher les récompenses de {name}",
+    "homeKind": "Ligue du Village principal",
+    "builderKind": "Ligue de la Base des ouvriers",
+    "noData": "Aucune donnée pour cette ligue à cet Hôtel de ville.",
+    "battle": "Résultats de bataille",
+    "stars": "Étoiles",
+    "attacker": "Or des ouvriers de l'attaquant",
+    "defender": "Élixir des ouvriers du défenseur"
+  },
+  "builder": {
+    "title": "Base des ouvriers",
+    "hall": "Hôtel des ouvriers {level}",
+    "trophies": "{trophies} trophées",
+    "daysAt": "Jours à HO{level}",
+    "notSetTitle": "Hôtel des ouvriers non défini",
+    "notSetBody": "La Base des ouvriers est ouverte à l'Hôtel de ville 6, mais ce village a l'Hôtel des ouvriers 0. La progression, les trophées et les troupes apparaissent dès que le niveau est 1 ou plus.",
+    "notSetAction": "Définir le niveau de l'Hôtel des ouvriers",
+    "lockedBody": "Nécessite l'Hôtel de ville 6",
+    "troops": "Troupes",
+    "heroes": "Héros"
+  },
+  "capital": {
+    "title": "Capitale du clan",
+    "hall": "Hôtel de la capitale {level}",
+    "notSetTitle": "La Capitale du clan n'est pas configurée",
+    "notSetBody": "Le Pic de la capitale n'a pas encore de niveau d'hôtel, donc aucune progression de district à afficher. Définissez le niveau de l'Hôtel de la capitale pour commencer le suivi.",
+    "notSetAction": "Définir le niveau de l'Hôtel de la capitale",
+    "lockedBody": "Nécessite l'Hôtel de ville 3",
+    "districtHall": "Hôtel de district {level}",
+    "notUnlocked": "Non débloqué",
+    "unlocksAt": "Se débloque à l'Hôtel de la capitale {level}",
+    "needsDistrictHall": "Définissez un Hôtel de district pour commencer",
+    "noData": "Aucune donnée",
+    "more": "Afficher {count} districts de plus",
+    "showFewer": "Afficher moins",
+    "openDistricts": "Ouvrir Districts"
+  },
+  "home": {
+    "title": "Village principal",
+    "townHall": "Hôtel de ville {level}",
+    "daysAt": "Jours à HdV{level}",
+    "perHour": "par heure",
+    "stored": "stocké",
+    "cards": {
+      "locked": "Nécessite {requirement}"
+    },
+    "queue": "Ouvrir",
+    "troops": "Troupes",
+    "spells": "Sorts",
+    "heroes": "Héros",
+    "siege": "Engins de siège",
+    "pets": "Familiers",
+    "legend": "Contour vert : au maximum pour cet Hôtel de ville. Contour en pointillés : verrouillé. Horloge : une amélioration est en cours.",
+    "tile": "{hasRequirement, select, true {{name}, nécessite {requirement}} other {{name}, niveau {level}{max, plural, =0 {} other { sur {max}}}}}",
+    "heroLocked": "Nécessite {requirement}",
+    "petsLocked": "Nécessite l'Hôtel de ville 14"
+  }
+}

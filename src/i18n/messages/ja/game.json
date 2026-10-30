@@ -1,0 +1,37 @@
+{
+  "resources": {
+    "gold": "ゴールド",
+    "elixir": "エリクサー",
+    "darkElixir": "ダークエリクサー",
+    "darkElixirShort": "ダーク",
+    "builderGold": "ビルダーゴールド",
+    "builderGoldShort": "Bゴールド",
+    "builderElixir": "ビルダーエリクサー",
+    "builderElixirShort": "Bエリクサー",
+    "capitalGold": "キャピタルゴールド",
+    "shinyOre": "Shiny Ore",
+    "glowyOre": "Glowy Ore",
+    "starryOre": "Starry Ore"
+  },
+  "halls": {
+    "townHall": "タウンホール {level}",
+    "builderHall": "ビルダーホール {level}",
+    "capitalHall": "キャピタルホール {level}",
+    "heroHall": "ヒーローホール {level}",
+    "starLaboratory": "スターラボラトリー {level}",
+    "blacksmith": "Blacksmith"
+  },
+  "places": {
+    "townHall": "タウンホール",
+    "townHallWeapon": "タウンホールの兵器",
+    "builderHall": "ビルダーホール",
+    "clockTower": "Clock Tower",
+    "laboratory": "ラボラトリー",
+    "goblinResearcher": "ゴブリン研究者",
+    "goblinBuilder": "ゴブリンビルダー",
+    "starLaboratory": "スターラボラトリー",
+    "petHouse": "ペットハウス",
+    "capitalPeak": "Capital Peak",
+    "builder": "ビルダー {id}"
+  }
+}

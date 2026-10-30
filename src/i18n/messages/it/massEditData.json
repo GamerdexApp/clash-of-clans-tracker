@@ -1,0 +1,33 @@
+{
+  "categories": {
+    "defenses": "Difese",
+    "army": "Esercito",
+    "resources": "Risorse",
+    "crafted": "Difese Create",
+    "traps": "Trappole",
+    "troops": "Truppe",
+    "spells": "Magie",
+    "siege": "Assedio",
+    "pets": "Animali",
+    "guardians": "Guardiani",
+    "heroes": "Eroi",
+    "equipment": "Equipaggiamento",
+    "walls": "Mura",
+    "buildings": "Edifici"
+  },
+  "sections": {
+    "armyBuildings": "Edifici dell'esercito",
+    "otherBuildings": "Altri edifici"
+  },
+  "level": "Livello {level}",
+  "superchargeRow": "Supercarica di {name}",
+  "profile": {
+    "builderHall": "Livello Sala del Costruttore",
+    "trophies": "Trofei",
+    "bestTrophies": "Trofei migliori",
+    "league": "Lega",
+    "capitalHall": "Sala della Capitale",
+    "districtHall": "Sala del Distretto di {zone}",
+    "contributions": "Contributi"
+  }
+}

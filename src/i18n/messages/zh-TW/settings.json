@@ -1,0 +1,178 @@
+{
+  "title": "設定",
+  "subline": "偏好設定、備份與你的資料",
+  "tabsLabel": "設定分類",
+  "tabs": {
+    "sync": "雲端同步",
+    "preferences": "偏好設定",
+    "data": "備份與資料",
+    "about": "關於"
+  },
+  "appearance": {
+    "title": "外觀",
+    "description": "選擇應用程式的外觀。",
+    "themeLabel": "主題",
+    "themes": {
+      "light": "淺色",
+      "dark": "深色",
+      "system": "系統"
+    },
+    "themeNote": "系統會跟隨你的裝置，目前為{mode}。"
+  },
+  "builders": {
+    "title": "建築工人設定",
+    "description": "為佇列增加一個欄位的活動助手。",
+    "goblinBuilder": "哥布林建築工人",
+    "goblinBuilderHelp": "為建築額外增加一位建築工人（第七位）。",
+    "goblinResearch": "哥布林研究",
+    "goblinResearchHelp": "為實驗室額外增加一個研究欄位。"
+  },
+  "activeHours": {
+    "title": "活躍時段",
+    "description": "設定你每天遊玩的時段。升級在此時段之外完成時，佇列時間軸會加入空檔。",
+    "start": "開始時間",
+    "end": "結束時間",
+    "save": "儲存",
+    "clear": "清除",
+    "status": "依你的本地時鐘，活躍時段為 {start} 至 {end}。",
+    "none": "尚未設定活躍時段，每個小時都算活躍。",
+    "sameTime": "開始與結束時間相同。請選擇兩個不同的時間，或清除時段。",
+    "overnight": "此時段橫跨夜間，從 {start} 到隔天 {end}。",
+    "unsaved": "你有尚未儲存的變更。",
+    "clockChanged": "你的時鐘偏移已變更。活躍時段仍依你的時鐘涵蓋 {start} 至 {end}。"
+  },
+  "data": {
+    "title": "資料管理",
+    "storageNote": {
+      "title": "儲存在此瀏覽器。",
+      "body": "清除瀏覽器資料會移除你的村莊。請不時匯出備份。"
+    },
+    "export": {
+      "title": "匯出",
+      "description": "將所有村莊與設定下載成一個檔案。",
+      "button": "匯出所有村莊",
+      "done": "備份已下載"
+    },
+    "import": {
+      "title": "匯入",
+      "fileLabel": "備份檔案",
+      "chooseFile": "選擇檔案",
+      "noFile": "尚未選擇檔案",
+      "description": "選擇備份檔案。在變更任何內容之前，你可以先檢視。",
+      "review": "檢視匯入內容",
+      "merged": "備份已合併",
+      "replaced": "備份已取代你的資料",
+      "undo": "復原"
+    },
+    "reset": {
+      "title": "重設所有資料",
+      "warning": "刪除此瀏覽器中的所有村莊與設定。",
+      "button": "重設所有資料",
+      "confirmTitle": "要刪除所有內容嗎？",
+      "confirmBody": "這會移除 {names}。你有十秒鐘可以復原。",
+      "cancel": "取消",
+      "confirm": "全部刪除",
+      "done": "所有資料已刪除",
+      "doneMessage": "{count, plural, other {已移除 {amount} 個村莊。}}",
+      "doneMessageDisconnected": "{count, plural, other {已移除 {amount} 個村莊。}}此瀏覽器的同步已中斷連線。",
+      "syncedCopy": "同時刪除 {provider} 上的同步副本",
+      "syncedOn": "同步維持開啟。你的其他裝置會在下次同步時失去這些村莊。如果不確定，請先匯出備份。",
+      "syncedOff": "若不勾選，此瀏覽器的同步會中斷連線，下次同步就不會把村莊帶回來。",
+      "undo": "復原"
+    },
+    "villages": {
+      "title": "村莊",
+      "description": "建立、編輯、切換與刪除村莊。",
+      "manage": "管理村莊"
+    },
+    "villageCount": "{count, plural, other {{amount} 個村莊}}"
+  },
+  "importDialog": {
+    "title": "檢視匯入內容",
+    "fileInfo": "{name}，{size}",
+    "bytes": "{count} B",
+    "kilobytes": "{count} KB",
+    "cancel": "取消",
+    "close": "關閉",
+    "merge": "合併到此裝置",
+    "replace": "取代此裝置",
+    "failedTitle": "無法匯入此檔案。",
+    "errors": {
+      "notJson": "此檔案不是有效的 JSON。",
+      "playthroughsMissing": "此檔案不是 Clash of Clans Tracker 的備份，沒有村莊清單。"
+    },
+    "checksTitle": "檢查通過。",
+    "checks": "檔案列出 {read} 個村莊，其中 {kept} 個可讀取。",
+    "skipped": "{count, plural, other {已略過 {amount} 筆項目。}}",
+    "howToApply": "套用方式",
+    "modeLabel": "匯入模式",
+    "modes": {
+      "merge": "合併",
+      "replace": "取代"
+    },
+    "modeNotes": {
+      "merge": "加入新的村莊，兩邊都有的村莊則保留較新的副本。你的設定與使用中的村莊維持不變。",
+      "replace": "只使用檔案中的內容，不在檔案中的村莊會被移除。"
+    },
+    "whatChanges": "會有哪些變更",
+    "columns": {
+      "village": "村莊",
+      "inFile": "檔案中",
+      "onDevice": "裝置上",
+      "result": "結果"
+    },
+    "notThere": "不存在",
+    "results": {
+      "added": "已新增",
+      "updated": "已依檔案更新",
+      "kept": "已保留",
+      "replaced": "已取代",
+      "removed": "已移除"
+    },
+    "summary": {
+      "added": "新增 {count} 個",
+      "updated": "更新 {count} 個",
+      "kept": "保留 {count} 個",
+      "replaced": "取代 {count} 個",
+      "removed": "移除 {count} 個"
+    },
+    "noVillages": "檔案中沒有村莊。",
+    "undoNote": "匯入後你有十秒鐘可以復原。"
+  },
+  "about": {
+    "version": "版本 {version}",
+    "summary": "Clash of Clans 的免費進度追蹤工具。可跨多個村莊追蹤升級、研究、成就等內容。",
+    "officialGame": "Clash of Clans 官方網站",
+    "disclaimer": "本專案與 Supercell 或 Clash of Clans 無任何隸屬、背書或關聯。"
+  },
+  "region": {
+    "title": "語言與地區",
+    "description": "決定此裝置上應用程式如何顯示文字、數字與日期。這些選項不會隨村莊儲存，也不會匯出或同步。",
+    "language": {
+      "label": "語言",
+      "hint": "應用程式的語言。遊戲中的名稱維持英文。"
+    },
+    "numberFormat": {
+      "label": "數字格式",
+      "hint": "範例：{example}",
+      "options": {
+        "auto": "自動（跟隨語言）",
+        "us": "1,234,567.89（美國）",
+        "european": "1.234.567,89（歐洲）",
+        "french": "1 234 567,89（法國）",
+        "swiss": "1’234’567.89（瑞士）",
+        "indian": "12,34,567.89（印度）"
+      }
+    },
+    "dateFormat": {
+      "label": "日期格式",
+      "hint": "範例：{example}",
+      "options": {
+        "auto": "自動（跟隨語言）",
+        "mdy": "月/日/年",
+        "dmy": "日/月/年",
+        "ymd": "年-月-日"
+      }
+    }
+  }
+}

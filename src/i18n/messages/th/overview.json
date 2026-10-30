@@ -1,0 +1,112 @@
+{
+  "title": "ภาพรวม",
+  "description": "หมู่บ้านของคุณในแวบเดียว: ความคืบหน้า ตัวจับเวลารายวัน และสถิติที่เก็บไว้ทั้งหมด",
+  "subline": "{name}, คำนวณจากข้อมูล, ดูอย่างเดียว",
+  "header": {
+    "clanLevel": "{hasRole, select, true {ระดับแคลน {level}, {role}} other {ระดับแคลน {level}}}",
+    "achievements": "ความสำเร็จ",
+    "ringCaption": "{stars} จาก {maxStars} ดาว",
+    "viewAll": "ดูทั้งหมด",
+    "townHall": "TH{level}"
+  },
+  "dailies": {
+    "title": "ภารกิจประจำวัน",
+    "closedTitle": "ภารกิจประจำวันเปิดที่ทาวน์ฮอลล์ 3",
+    "closedBody": "โรงหลอม ผู้ช่วย และซีซันพาสจะเปิดเมื่อทาวน์ฮอลล์สูงขึ้น",
+    "closedLink": "ดูสิ่งที่เปิดแล้ว",
+    "groups": {
+      "helpers": "ผู้ช่วย",
+      "daily": "รายวัน",
+      "goldPass": "โกลด์พาส"
+    },
+    "requires": "ต้องมี {requirement}",
+    "openForge": "เปิดโรงหลอม",
+    "openHelpers": "เปิดผู้ช่วย",
+    "unlockProspector": "ปลดล็อกในซีซันพาส",
+    "helperHut": "กระท่อมผู้ช่วย",
+    "townHall": "ทาวน์ฮอลล์ {level}",
+    "starBonus": "โบนัสดาว",
+    "capitalGold": "ทองแคปิตอล",
+    "autoForge": "โรงหลอมอัตโนมัติ",
+    "forgeSlots": "ช่องโรงหลอม",
+    "notRunning": "ไม่ได้ทำงาน",
+    "running": "กำลังทำงาน",
+    "stopAuto": "หยุดโรงหลอมอัตโนมัติ",
+    "autoLine": "{amount} {resource} เป็น {capitalGold} ทองแคปิตอล",
+    "slotsLine": "ทำงานอยู่ {running} จาก {open} ช่อง",
+    "slotsDone": "{done, plural, other {เสร็จแล้ว {amount} ช่อง}}",
+    "autoPerk": "สิทธิพิเศษโรงหลอมอัตโนมัติ",
+    "helperPreview": "ใช้ตอนนี้: เหลือ {before} จะเป็น {after}",
+    "goldPass": {
+      "edit": "แก้ไขในซีซันพาส",
+      "builder": "บูสต์ช่างก่อสร้าง",
+      "research": "บูสต์วิจัย",
+      "hoggyBank": "กระปุกฮอกกี้",
+      "gemDonations": "บริจาค 1 เพชร",
+      "autoForge": "โรงหลอมอัตโนมัติ",
+      "requestReduction": "ลดเวลาขอทหาร",
+      "on": "เปิด",
+      "off": "ปิด",
+      "resets": "บูสต์กลับเป็น 0% วันที่ {date}",
+      "readOnly": "การเปิดภาพรวมไม่เปลี่ยนหมู่บ้านหรือเวลาแก้ไขล่าสุดของหมู่บ้าน"
+    }
+  },
+  "league": {
+    "open": "แสดงรางวัลของ {name}",
+    "homeKind": "ลีกหมู่บ้านหลัก",
+    "builderKind": "ลีกบิลเดอร์เบส",
+    "noData": "ไม่มีข้อมูลของลีกนี้ที่ทาวน์ฮอลล์นี้",
+    "battle": "ผลการต่อสู้",
+    "stars": "ดาว",
+    "attacker": "ทองบิลเดอร์ของผู้โจมตี",
+    "defender": "อีลิกเซอร์บิลเดอร์ของผู้ป้องกัน"
+  },
+  "builder": {
+    "title": "บิลเดอร์เบส",
+    "hall": "บิลเดอร์ฮอลล์ {level}",
+    "trophies": "{trophies} ถ้วยรางวัล",
+    "daysAt": "วันที่ BH{level}",
+    "notSetTitle": "ยังไม่ได้ตั้งบิลเดอร์ฮอลล์",
+    "notSetBody": "บิลเดอร์เบสเปิดที่ทาวน์ฮอลล์ 6 แต่หมู่บ้านนี้มีบิลเดอร์ฮอลล์ 0 ความคืบหน้า ถ้วยรางวัล และทหารจะปรากฏเมื่อระดับเป็น 1 ขึ้นไป",
+    "notSetAction": "ตั้งระดับบิลเดอร์ฮอลล์",
+    "lockedBody": "ต้องมีทาวน์ฮอลล์ 6",
+    "troops": "ทหาร",
+    "heroes": "ฮีโร่"
+  },
+  "capital": {
+    "title": "แคลนแคปิตอล",
+    "hall": "แคปิตอลฮอลล์ {level}",
+    "notSetTitle": "ยังไม่ได้ตั้งค่าแคลนแคปิตอล",
+    "notSetBody": "แคปิตอลพีคยังไม่มีระดับฮอลล์ จึงไม่มีความคืบหน้าของดิสทริกต์ให้แสดง ตั้งระดับแคปิตอลฮอลล์เพื่อเริ่มติดตาม",
+    "notSetAction": "ตั้งระดับแคปิตอลฮอลล์",
+    "lockedBody": "ต้องมีทาวน์ฮอลล์ 3",
+    "districtHall": "ดิสทริกต์ฮอลล์ {level}",
+    "notUnlocked": "ยังไม่ปลดล็อก",
+    "unlocksAt": "ปลดล็อกที่แคปิตอลฮอลล์ {level}",
+    "needsDistrictHall": "ตั้งดิสทริกต์ฮอลล์เพื่อเริ่ม",
+    "noData": "ไม่มีข้อมูล",
+    "more": "แสดงดิสทริกต์เพิ่มอีก {count} แห่ง",
+    "showFewer": "แสดงน้อยลง",
+    "openDistricts": "เปิดดิสทริกต์"
+  },
+  "home": {
+    "title": "หมู่บ้านหลัก",
+    "townHall": "ทาวน์ฮอลล์ {level}",
+    "daysAt": "วันที่ TH{level}",
+    "perHour": "ต่อชั่วโมง",
+    "stored": "ที่เก็บไว้",
+    "cards": {
+      "locked": "ต้องมี {requirement}"
+    },
+    "queue": "เปิด",
+    "troops": "ทหาร",
+    "spells": "คาถา",
+    "heroes": "ฮีโร่",
+    "siege": "เครื่องจักรปิดล้อม",
+    "pets": "สัตว์เลี้ยง",
+    "legend": "ขอบเขียว: สูงสุดสำหรับทาวน์ฮอลล์นี้ ขอบประ: ล็อก นาฬิกา: กำลังอัปเกรด",
+    "tile": "{hasRequirement, select, true {{name}, ต้องมี {requirement}} other {{name}, ระดับ {level}{max, plural, =0 {} other { จาก {max}}}}}",
+    "heroLocked": "ต้องมี {requirement}",
+    "petsLocked": "ต้องมีทาวน์ฮอลล์ 14"
+  }
+}

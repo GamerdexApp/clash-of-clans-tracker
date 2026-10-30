@@ -1,0 +1,29 @@
+{
+  "title": "병력",
+  "subline": "{name}, 빌더 홀 {hall}",
+  "sublineNotSet": "{name}, 빌더 홀 미설정",
+  "strip": {
+    "title": "스타 연구소",
+    "noLanes": "스타 연구소를 사용할 수 없어요.",
+    "openQueue": "대기열과 타임라인 열기",
+    "unassignedHelp": "스타 연구소에 병력 연구가 둘 이상 저장돼 있어요. 남는 하나를 끝내거나 취소하세요.",
+    "levelLabel": "스타 연구소 레벨",
+    "level": "{max} 중 {level}",
+    "notSet": "미설정"
+  },
+  "card": {
+    "notUnlocked": "해제 안 됨",
+    "markUnlocked": "해제됨으로 표시",
+    "maxAtHall": "이 빌더 홀에서 최대 Lv {level}",
+    "unlockedBy": "빌더 배럭 레벨 {barracks}에서 해제",
+    "progress": "{name} 진행도"
+  },
+  "unavailable": {
+    "title": "이 빌더 홀에서는 사용할 수 없어요",
+    "requires": "빌더 배럭 {barracks} 필요, 빌더 홀 {hall} 필요"
+  },
+  "empty": {
+    "title": "아직 아무것도 없어요",
+    "allMax": "모든 병력이 최대예요. 최대 숨기기를 끄면 볼 수 있어요."
+  }
+}

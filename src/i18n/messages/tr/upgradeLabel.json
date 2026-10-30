@@ -1,0 +1,24 @@
+{
+  "levelTo": "{name} {from}→{to}",
+  "toast": {
+    "undo": "Geri al",
+    "started": "{name} Sv {from} - {to} başladı",
+    "finished": "{name} Sv {level} seviyesinde bitti",
+    "timeSaved": "{time}, kazanılan zamana eklendi.",
+    "cancelled": "{name} Sv {from} - {to} iptal edildi",
+    "levelChanged": "{name} Sv {from} - {to}"
+  },
+  "queue": {
+    "buildPetHouse": "Önce bir Evcil Hayvan Evi inşa et",
+    "requires": "{building} {level} gerekir",
+    "alreadyUpgrading": "{name} zaten yükseltiliyor",
+    "finishFirst": "Önce seviye {level} bitmeli",
+    "alreadyAt": "Zaten seviye {level} seviyesinde"
+  },
+  "conflict": {
+    "alreadyAt": "{name} zaten seviye {level} seviyesinde, bu yüzden seviye {target} tamam.",
+    "removeFix": "Kuyruktan kaldır.",
+    "scheduledBefore": "{name} seviye {level}, seviye {earlier} bitmeden önceye planlanmış.",
+    "moveFix": "Seviye {level} seviyesini seviye {earlier} sonrasına taşı."
+  }
+}

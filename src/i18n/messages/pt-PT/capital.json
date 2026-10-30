@@ -1,0 +1,139 @@
+{
+  "districts": {
+    "title": "Distritos",
+    "subline": "{hall, plural, =0 {{name}, Centro da Capital não definido} other {{name}, Centro da Capital {hall}}}",
+    "description": "Distritos e zonas da tua Capital do Clã."
+  },
+  "troops": {
+    "title": "Tropas e feitiços",
+    "subline": "{name}, tropas e feitiços da Capital do Clã",
+    "tiles": {
+      "troops": "Tropas",
+      "spells": "Feitiços",
+      "caption": "{current} de {max} níveis"
+    },
+    "sections": {
+      "troops": "Tropas",
+      "spells": "Feitiços"
+    },
+    "card": {
+      "level": "Nível de {name}",
+      "raise": "Aumentar {name}",
+      "lower": "Diminuir {name}",
+      "maxAt": "Nível máx. {level} agora",
+      "from": "De {zone}",
+      "progress": "Progresso de {name}"
+    },
+    "locked": {
+      "title": "Ainda não disponível",
+      "districtHall": "Requer o Centro do Distrito {level} em {zone}",
+      "capitalHall": "Requer o Centro da Capital {level} para abrir {zone}",
+      "kept": "O nível guardado {level} é mantido"
+    },
+    "empty": {
+      "title": "Tudo está no máximo",
+      "description": "Desativa Ocultar máx. para ver todas as tropas e feitiços."
+    }
+  },
+  "tracking": {
+    "label": "Acompanhar a Capital do Clã",
+    "onHelp": "Desligar mantém todos os dados.",
+    "turnOnTitle": "O acompanhamento da Capital do Clã está ligado",
+    "turnedOn": "O acompanhamento da Capital do Clã está ligado.",
+    "undo": "Anular",
+    "offDialog": {
+      "title": "Desligar o acompanhamento da Capital do Clã?",
+      "body": "As páginas da Capital do Clã, o cartão do Resumo e o separador Edição em massa ficam ocultos. Nada é eliminado.",
+      "confirm": "Desligar",
+      "cancel": "Cancelar"
+    }
+  },
+  "off": {
+    "title": "O acompanhamento da Capital do Clã está desligado",
+    "description": "Os distritos, as tropas e os feitiços são mantidos. Liga o acompanhamento para os veres de novo.",
+    "turnOn": "Ligar acompanhamento",
+    "keptTitle": "O que é mantido",
+    "kept": "Todos os dados da Capital do Clã ficam nesta aldeia."
+  },
+  "locked": {
+    "title": "A Capital do Clã está bloqueada",
+    "description": "A Capital do Clã abre no Centro da Aldeia 3. Esta aldeia está no Centro da Aldeia {townHall}. Tudo o que já estiver guardado volta a aparecer no Centro da Aldeia 3.",
+    "action": "Mudar o Centro da Aldeia em Aldeias"
+  },
+  "notSet": {
+    "title": "A Capital do Clã não está configurada",
+    "description": "Define o nível do Centro da Capital para começares a acompanhar distritos, tropas e feitiços.",
+    "action": "Definir nível do Centro da Capital"
+  },
+  "hall": {
+    "label": "Centro da Capital",
+    "none": "Nenhum",
+    "level": "Nível {level}",
+    "nextCost": "O Centro da Capital {level} custa {cost} Ouro da Capital{hasOpens, select, true { e abre {opens}} other {}}. Subir um centro nunca repõe níveis.",
+    "atTop": "O Centro da Capital está no nível máximo.",
+    "raised": "Centro da Capital subiu de {from} para {to}. Nenhum nível foi reposto.",
+    "changed": "Centro da Capital alterado de {from} para {to}.",
+    "districtRaised": "Centro do Distrito {zone} subiu de {from} para {to}.",
+    "districtChanged": "Centro do Distrito {zone} alterado de {from} para {to}."
+  },
+  "contributions": {
+    "label": "Contribuições",
+    "unit": "Ouro da Capital",
+    "help": "Total que deste ao clã. A importação por etiqueta de jogador preenche-o, também o podes escrever."
+  },
+  "tiles": {
+    "progress": "Progresso da Capital",
+    "progressCaption": "{current} de {max} níveis",
+    "zones": "Zonas abertas",
+    "zonesCaption": "{open} de {total}"
+  },
+  "zones": {
+    "title": "Zonas",
+    "help": "Seleciona uma zona para a editares abaixo",
+    "hall": "{level, plural, =0 {Sem Centro do Distrito} other {Centro do Distrito {level}}}",
+    "peakHall": "Centro da Capital {level}",
+    "locked": "Bloqueada, precisa do Centro da Capital {hall}",
+    "levels": "{current} de {max}"
+  },
+  "panel": {
+    "districtHall": "Centro do Distrito",
+    "requires": "Requer o Centro da Capital {hall}",
+    "noHall": "Sem Centro do Distrito",
+    "empty": "Nada para construir aqui neste nível de centro.",
+    "groupsLabel": "Grupos de edifícios",
+    "groups": {
+      "defenses": "Defesas",
+      "traps": "Armadilhas",
+      "army": "Exército",
+      "walls": "Muralhas"
+    },
+    "max": "Máx.",
+    "clear": "Limpar",
+    "maxAll": "Tudo no máx.",
+    "resetAll": "Repor tudo",
+    "instances": "{amount} {count, plural, one {edifício} other {edifícios}}",
+    "maxLevel": "Nível máx. {level}",
+    "instance": "{name} {index}",
+    "raise": "Aumentar {name}",
+    "lower": "Diminuir {name}",
+    "wallLevel": "Nível {level}",
+    "wallsLeft": "Faltam colocar {left} de {total} muralhas",
+    "wallsNote": "As quantidades não podem passar das muralhas restantes.",
+    "wallsNone": "Não há muralhas neste nível de centro.",
+    "wallCount": "Muralhas de nível {level}",
+    "wallRaise": "Mais uma muralha no nível {level}",
+    "wallLower": "Menos uma muralha no nível {level}",
+    "groupMaxed": "{zone}: grupo {group} no máximo",
+    "groupCleared": "{zone}: grupo {group} limpo"
+  },
+  "confirm": {
+    "title": "Baixar este centro?",
+    "description": "Estes níveis já não cabem e serão repostos. Tudo o resto é mantido.",
+    "confirm": "Baixar centro",
+    "cancel": "Manter centro",
+    "more": "e mais {count}"
+  },
+  "toast": {
+    "undo": "Anular"
+  }
+}

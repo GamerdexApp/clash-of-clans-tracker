@@ -1,0 +1,29 @@
+{
+  "groups": {
+    "homeVillage": "Домашняя деревня",
+    "builderBase": "База строителя",
+    "clanCapital": "Столица клана",
+    "dailies": "Ежедневное",
+    "tools": "Инструменты"
+  },
+  "items": {
+    "overview": "Обзор",
+    "achievements": "Достижения",
+    "builder": "Строитель",
+    "research": "Исследования",
+    "pets": "Питомцы",
+    "equipment": "Снаряжение",
+    "walls": "Стены",
+    "builderBaseUpgrades": "Улучшения",
+    "builderBaseTroops": "Войска",
+    "builderBaseWalls": "Стены",
+    "districts": "Районы",
+    "capitalTroops": "Войска и заклинания",
+    "forge": "Кузница",
+    "helpers": "Помощники",
+    "seasonPass": "Сезонный пропуск",
+    "massEdit": "Массовое изменение",
+    "settings": "Настройки"
+  },
+  "villages": "Мои деревни"
+}

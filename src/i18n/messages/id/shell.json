@@ -1,0 +1,66 @@
+{
+  "skipToContent": "Lompat ke konten",
+  "closeMenu": "Tutup menu",
+  "openMenu": "Buka menu",
+  "menuLabel": "Menu situs",
+  "mainNav": "Utama",
+  "brandTitle": "Clash of Clans",
+  "brandSubtitle": "Tracker",
+  "switcher": {
+    "sectionLabel": "Desa",
+    "loading": "Memuat",
+    "none": "Tidak ada desa",
+    "noneDetail": "Buat satu untuk memulai",
+    "switch": "Ganti desa",
+    "villages": "Desa",
+    "active": "Aktif",
+    "all": "Semua desa",
+    "create": "Desa baru",
+    "halls": "{builderHall, plural, =0 {BK {townHall}} other {BK {townHall} · BP {builderHall}}}"
+  },
+  "locked": {
+    "townHall": "Balai Kota {level}",
+    "blacksmith": "Pandai Besi",
+    "helperHut": "Pondok Pembantu",
+    "off": "Mati",
+    "srLabel": "Butuh {requirement}"
+  },
+  "footer": {
+    "tagline": "Pelacak progres gratis untuk Clash of Clans. Datamu tetap di browser, atau di penyimpanan cloud milikmu jika kamu menyalakan sinkron.",
+    "support": "Dukungan",
+    "about": "Tentang",
+    "settings": "Pengaturan",
+    "discord": "Discord",
+    "github": "GitHub",
+    "game": "Situs resmi game",
+    "privacy": "Kebijakan privasi",
+    "terms": "Ketentuan layanan",
+    "disclaimerTitle": "Penafian",
+    "disclaimer": "Proyek ini tidak berafiliasi dengan, didukung oleh, atau terhubung dengan Supercell atau Clash of Clans.",
+    "framework": "Dibuat dengan framework Gamerdex, dasar bersama untuk pelacak progres game gratis.",
+    "visitGamerdex": "Kunjungi Gamerdex"
+  },
+  "notFound": {
+    "title": "Halaman ini tidak ada",
+    "body": "Tautannya mungkin sudah lama atau salah ketik. Desamu aman dan tidak ada yang berubah.",
+    "toOverview": "Buka Ikhtisar",
+    "toVillages": "Buka Desa",
+    "toHome": "Kembali ke beranda",
+    "didYouMean": "Maksudmu",
+    "noVillage": "Tidak ada desa yang dipilih, jadi Ikhtisar tidak punya apa-apa untuk ditampilkan. Pilih satu di halaman Desa.",
+    "jumpTo": "Atau lompat ke"
+  },
+  "error": {
+    "title": "Terjadi kesalahan",
+    "body": "Aplikasi mengalami error. Data tersimpanmu tidak berubah.",
+    "digest": "digest {digest}",
+    "tryAgain": "Coba lagi",
+    "download": "Unduh data mentah",
+    "clear": "Hapus data dan mulai ulang",
+    "confirmTitle": "Hapus semua data tersimpan?",
+    "confirmBody": "Ini menghapus semua yang disimpan aplikasi di browser ini. Salinan data mentah diunduh dulu agar bisa diperbaiki nanti. Desa yang disinkronkan ke akun cloud tetap ada di sana.",
+    "cancel": "Batal",
+    "confirm": "Unduh dan hapus",
+    "noData": "Tidak ada data tersimpan di browser ini."
+  }
+}

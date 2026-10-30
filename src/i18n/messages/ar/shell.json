@@ -1,0 +1,66 @@
+{
+  "skipToContent": "تخطي إلى المحتوى",
+  "closeMenu": "إغلاق القائمة",
+  "openMenu": "فتح القائمة",
+  "menuLabel": "قائمة الموقع",
+  "mainNav": "الرئيسية",
+  "brandTitle": "Clash of Clans",
+  "brandSubtitle": "Tracker",
+  "switcher": {
+    "sectionLabel": "القرية",
+    "loading": "جارٍ التحميل",
+    "none": "لا توجد قرية",
+    "noneDetail": "أنشئ واحدة للبدء",
+    "switch": "تبديل القرية",
+    "villages": "القرى",
+    "active": "نشطة",
+    "all": "كل القرى",
+    "create": "قرية جديدة",
+    "halls": "{builderHall, plural, =0 {ق.م {townHall}} other {ق.م {townHall} · ق.ب {builderHall}}}"
+  },
+  "locked": {
+    "townHall": "قاعة المدينة {level}",
+    "blacksmith": "الحداد",
+    "helperHut": "كوخ المساعدين",
+    "off": "متوقف",
+    "srLabel": "يتطلب {requirement}"
+  },
+  "footer": {
+    "tagline": "متتبع تقدم مجاني للعبة Clash of Clans. تبقى بياناتك في متصفحك، أو في تخزينك السحابي الخاص إذا فعّلت المزامنة.",
+    "support": "الدعم",
+    "about": "حول",
+    "settings": "الإعدادات",
+    "discord": "Discord",
+    "github": "GitHub",
+    "game": "موقع اللعبة الرسمي",
+    "privacy": "سياسة الخصوصية",
+    "terms": "شروط الخدمة",
+    "disclaimerTitle": "إخلاء مسؤولية",
+    "disclaimer": "هذا المشروع غير تابع لـ Supercell أو Clash of Clans ولا مدعوم منهما ولا مرتبط بهما.",
+    "framework": "مبني بإطار Gamerdex، وهو أساس مشترك لمتتبعات تقدم الألعاب المجانية.",
+    "visitGamerdex": "زيارة Gamerdex"
+  },
+  "notFound": {
+    "title": "هذه الصفحة غير موجودة",
+    "body": "قد يكون الرابط قديمًا أو مكتوبًا بشكل خاطئ. قراك بأمان ولم يتغير شيء.",
+    "toOverview": "الذهاب إلى نظرة عامة",
+    "toVillages": "الذهاب إلى القرى",
+    "toHome": "العودة إلى الرئيسية",
+    "didYouMean": "هل تقصد",
+    "noVillage": "لم تُحدد قرية، لذلك لا تعرض نظرة عامة شيئًا. اختر واحدة من صفحة القرى.",
+    "jumpTo": "أو انتقل إلى"
+  },
+  "error": {
+    "title": "حدث خطأ ما",
+    "body": "واجه التطبيق خطأ. لم تتغير بياناتك المحفوظة.",
+    "digest": "المعرّف {digest}",
+    "tryAgain": "حاول مرة أخرى",
+    "download": "تنزيل البيانات الخام",
+    "clear": "مسح البيانات وإعادة التشغيل",
+    "confirmTitle": "مسح كل البيانات المحفوظة؟",
+    "confirmBody": "سيؤدي هذا إلى إزالة كل ما خزّنه التطبيق في هذا المتصفح. تُنزَّل نسخة من البيانات الخام أولًا ليمكن إصلاحها لاحقًا. تبقى القرى المتزامنة مع حساب سحابي هناك.",
+    "cancel": "إلغاء",
+    "confirm": "تنزيل ومسح",
+    "noData": "لا توجد بيانات محفوظة في هذا المتصفح."
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "title": "Ekipman",
+  "subline": "{name}, Belediye Binası {townHall}, Demirci seviyesi {blacksmith}",
+  "massEdit": "Ekipman seviyeleri Toplu düzenlemede de ayarlanabilir.",
+  "locked": {
+    "title": "Demirci gerekir",
+    "description": "Kahraman ekipmanını takip etmek için Demirciyi inşa et. Seviyesini İnşaatçı sayfasında, Ordu sekmesinde ayarla.",
+    "action": "İnşaatçıya git"
+  },
+  "ore": {
+    "title": "Ore stoku",
+    "description": "Elindeki ore. Eksikler yalnızca tavsiyedir ve hiçbir yükseltmeyi engellemez.",
+    "names": {
+      "shiny": "Shiny Ore",
+      "glowing": "Glowy Ore",
+      "starry": "Starry Ore"
+    },
+    "short": {
+      "shiny": "Shiny",
+      "glowing": "Glowing",
+      "starry": "Starry"
+    },
+    "needed": "Listelenen parçalar için gereken: {amount}",
+    "enough": "Stokta yeterli",
+    "shortBy": "{amount} eksik",
+    "deduct": "Yükseltince ore düş",
+    "deductHelp": "Yükseltme, ore miktarını stoktan düşer ve stok hiçbir zaman 0'ın altına inmez. Geri al onu geri koyar."
+  },
+  "hideMax": "Maks. gizle",
+  "heroFilter": "Kahraman",
+  "allHeroes": "Tüm kahramanlar",
+  "section": "{pieces} parça, {owned} sahip olunan",
+  "empty": {
+    "title": "Burada henüz bir şey yok",
+    "allMax": "Her parça maksimumda. Görmek için Maks. gizle seçeneğini kapat."
+  },
+  "card": {
+    "heroLine": "{hero}",
+    "level": "Seviye {level} / {max}",
+    "notOwned": "Sahip değilsin",
+    "max": "Maks",
+    "setLevel": "{name} seviyesi",
+    "stepLevel": "Seviye {level}",
+    "free": "Ücretsiz",
+    "time": "Süre: Anında",
+    "requires": "Demirci {level} gerekir",
+    "moreLevels": "{amount} {count, plural, one {seviye} other {seviye}} daha",
+    "add": "Seviye 1 olarak ekle",
+    "upgradeTo": "Seviye {level} seviyesine yükselt",
+    "lockedUntil": "Demirci {level} olana kadar kilitli",
+    "allows": "Demirci {blacksmith} seviye {level} seviyesine kadar izin verir",
+    "allowsNone": "Demirci {blacksmith} bu parçaya henüz izin vermiyor",
+    "footer": "{amount} {levels, plural, one {seviye} other {seviye}} kaldı",
+    "progress": "{name} ilerlemesi"
+  },
+  "toast": {
+    "upgraded": "{name} Sv {from} - {to}",
+    "levelSet": "{name} Sv {from} - {to}",
+    "undo": "Geri al"
+  }
+}

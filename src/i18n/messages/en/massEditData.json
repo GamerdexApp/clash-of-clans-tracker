@@ -1,0 +1,33 @@
+{
+  "categories": {
+    "defenses": "Defenses",
+    "army": "Army",
+    "resources": "Resources",
+    "crafted": "Crafted Defenses",
+    "traps": "Traps",
+    "troops": "Troops",
+    "spells": "Spells",
+    "siege": "Siege",
+    "pets": "Pets",
+    "guardians": "Guardians",
+    "heroes": "Heroes",
+    "equipment": "Equipment",
+    "walls": "Walls",
+    "buildings": "Buildings"
+  },
+  "sections": {
+    "armyBuildings": "Army buildings",
+    "otherBuildings": "Other buildings"
+  },
+  "level": "Level {level}",
+  "superchargeRow": "{name} supercharge",
+  "profile": {
+    "builderHall": "Builder Hall level",
+    "trophies": "Trophies",
+    "bestTrophies": "Best trophies",
+    "league": "League",
+    "capitalHall": "Capital Hall",
+    "districtHall": "{zone} District Hall",
+    "contributions": "Contributions"
+  }
+}

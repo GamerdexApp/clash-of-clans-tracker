@@ -1,0 +1,139 @@
+{
+  "districts": {
+    "title": "Bölgeler",
+    "subline": "{hall, plural, =0 {{name}, Başkent Salonu ayarlanmadı} other {{name}, Başkent Salonu {hall}}}",
+    "description": "Klan Başkentinin bölgeleri ve alanları."
+  },
+  "troops": {
+    "title": "Birlikler ve büyüler",
+    "subline": "{name}, Klan Başkenti birlikleri ve büyüleri",
+    "tiles": {
+      "troops": "Birlikler",
+      "spells": "Büyüler",
+      "caption": "{max} seviyeden {current}"
+    },
+    "sections": {
+      "troops": "Birlikler",
+      "spells": "Büyüler"
+    },
+    "card": {
+      "level": "{name} seviyesi",
+      "raise": "{name} artır",
+      "lower": "{name} azalt",
+      "maxAt": "Şu an maks. seviye {level}",
+      "from": "Kaynak: {zone}",
+      "progress": "{name} ilerlemesi"
+    },
+    "locked": {
+      "title": "Henüz kullanılamıyor",
+      "districtHall": "{zone} içinde Bölge Salonu {level} gerekir",
+      "capitalHall": "{zone} bölgesini açmak için Başkent Salonu {level} gerekir",
+      "kept": "Kayıtlı seviye {level} korunur"
+    },
+    "empty": {
+      "title": "Her şey maksimumda",
+      "description": "Tüm birlik ve büyüleri görmek için Maks. gizle seçeneğini kapat."
+    }
+  },
+  "tracking": {
+    "label": "Klan Başkentini takip et",
+    "onHelp": "Kapatmak tüm verileri korur.",
+    "turnOnTitle": "Klan Başkenti takibi açık",
+    "turnedOn": "Klan Başkenti takibi açık.",
+    "undo": "Geri al",
+    "offDialog": {
+      "title": "Klan Başkenti takibi kapatılsın mı?",
+      "body": "Klan Başkenti sayfaları, Genel Bakış kartı ve Toplu düzenleme sekmesi gizlenir. Hiçbir şey silinmez.",
+      "confirm": "Kapat",
+      "cancel": "İptal"
+    }
+  },
+  "off": {
+    "title": "Klan Başkenti takibi kapalı",
+    "description": "Bölgelerin, birliklerin ve büyülerin korunur. Tekrar görmek için takibi aç.",
+    "turnOn": "Takibi aç",
+    "keptTitle": "Korunanlar",
+    "kept": "Tüm Klan Başkenti verileri bu köyde kalır."
+  },
+  "locked": {
+    "title": "Klan Başkenti kilitli",
+    "description": "Klan Başkenti Belediye Binası 3 ile açılır. Bu köy Belediye Binası {townHall} seviyesinde. Önceden kaydedilenler Belediye Binası 3 seviyesinde yeniden görünür.",
+    "action": "Köyler sayfasında Belediye Binasını değiştir"
+  },
+  "notSet": {
+    "title": "Klan Başkenti kurulmadı",
+    "description": "Bölgeleri, birlikleri ve büyüleri takip etmeye başlamak için Başkent Salonu seviyeni ayarla.",
+    "action": "Başkent Salonu seviyesini ayarla"
+  },
+  "hall": {
+    "label": "Başkent Salonu",
+    "none": "Yok",
+    "level": "Seviye {level}",
+    "nextCost": "Başkent Salonu {level} {cost} Başkent Altını tutar{hasOpens, select, true { ve {opens} açar} other {}}. Salonu yükseltmek seviyeleri hiçbir zaman sıfırlamaz.",
+    "atTop": "Başkent Salonu en üst seviyede.",
+    "raised": "Başkent Salonu {from} seviyesinden {to} seviyesine yükseltildi. Hiçbir seviye sıfırlanmadı.",
+    "changed": "Başkent Salonu {from} seviyesinden {to} seviyesine değiştirildi.",
+    "districtRaised": "{zone} Bölge Salonu {from} seviyesinden {to} seviyesine yükseltildi.",
+    "districtChanged": "{zone} Bölge Salonu {from} seviyesinden {to} seviyesine değiştirildi."
+  },
+  "contributions": {
+    "label": "Katkılar",
+    "unit": "Başkent Altını",
+    "help": "Klanına verdiğin toplam. Oyuncu Etiketi ile içe aktarma bunu doldurur, elle de yazabilirsin."
+  },
+  "tiles": {
+    "progress": "Başkent ilerlemesi",
+    "progressCaption": "{max} seviyeden {current}",
+    "zones": "Açık alanlar",
+    "zonesCaption": "{total} alandan {open}"
+  },
+  "zones": {
+    "title": "Alanlar",
+    "help": "Aşağıda düzenlemek için bir alan seç",
+    "hall": "{level, plural, =0 {Bölge Salonu yok} other {Bölge Salonu {level}}}",
+    "peakHall": "Başkent Salonu {level}",
+    "locked": "Kilitli, Başkent Salonu {hall} gerekir",
+    "levels": "{max} seviyeden {current}"
+  },
+  "panel": {
+    "districtHall": "Bölge Salonu",
+    "requires": "Başkent Salonu {hall} gerekir",
+    "noHall": "Bölge Salonu yok",
+    "empty": "Bu salon seviyesinde burada inşa edilecek bir şey yok.",
+    "groupsLabel": "Bina grupları",
+    "groups": {
+      "defenses": "Savunmalar",
+      "traps": "Tuzaklar",
+      "army": "Ordu",
+      "walls": "Surlar"
+    },
+    "max": "Maks",
+    "clear": "Temizle",
+    "maxAll": "Tümünü maksla",
+    "resetAll": "Tümünü sıfırla",
+    "instances": "{amount} {count, plural, one {bina} other {bina}}",
+    "maxLevel": "Maks. seviye {level}",
+    "instance": "{name} {index}",
+    "raise": "{name} artır",
+    "lower": "{name} azalt",
+    "wallLevel": "Seviye {level}",
+    "wallsLeft": "{total} surdan {left} tanesi daha yerleştirilecek",
+    "wallsNote": "Sayılar kalan sur sayısını aşamaz.",
+    "wallsNone": "Bu salon seviyesinde sur yok.",
+    "wallCount": "Seviye {level} surlar",
+    "wallRaise": "Seviye {level} için bir sur daha",
+    "wallLower": "Seviye {level} için bir sur eksik",
+    "groupMaxed": "{zone}: {group} maksimuma ayarlandı",
+    "groupCleared": "{zone}: {group} temizlendi"
+  },
+  "confirm": {
+    "title": "Bu salon düşürülsün mü?",
+    "description": "Bu seviyeler artık uymuyor ve sıfırlanacak. Diğer her şey korunur.",
+    "confirm": "Salonu düşür",
+    "cancel": "Salon kalsın",
+    "more": "ve {count} tane daha"
+  },
+  "toast": {
+    "undo": "Geri al"
+  }
+}

@@ -1,0 +1,138 @@
+{
+  "title": "Edição em massa",
+  "description": "Altere vários níveis de uma vez. Nada é salvo até você tocar em Salvar alterações.",
+  "subline": "{name}, Centro de Vila {townHall}, alterações pendentes",
+  "scopes": {
+    "home": "Vila Principal",
+    "builder": "Base do Construtor",
+    "capital": "Capital do Clã"
+  },
+  "scopeNav": "Escopo",
+  "requires": "Requer {requirement}",
+  "trackingOff": "Acompanhamento desativado",
+  "changedCount": "{count, plural, =1 {1 alteração} other {{amount} alterações}}",
+  "chip": "Alterações não salvas",
+  "bar": {
+    "unsaved": "{count, plural, =1 {1 alteração não salva} other {{amount} alterações não salvas}}",
+    "none": "Nenhuma alteração não salva",
+    "discard": "Descartar",
+    "save": "Salvar alterações"
+  },
+  "saved": "{count, plural, =1 {1 alteração salva} other {{amount} alterações salvas}}",
+  "undo": "Desfazer",
+  "discardDialog": {
+    "title": "{count, plural, =1 {Descartar 1 alteração não salva?} other {Descartar {amount} alterações não salvas?}}",
+    "body": "Todas as linhas voltam ao nível salvo.",
+    "keep": "Continuar editando",
+    "discard": "Descartar alterações"
+  },
+  "leave": {
+    "title": "{count, plural, =1 {Você tem 1 alteração não salva} other {Você tem {amount} alterações não salvas}}",
+    "body": "Salve-as antes de sair ou descarte-as.",
+    "save": "Salvar e sair",
+    "discard": "Descartar e sair",
+    "keep": "Continuar editando"
+  },
+  "toolbar": {
+    "label": "Ações em massa",
+    "selectAll": "Selecionar todas as {count}",
+    "selected": "{count, plural, =1 {1 linha selecionada} other {{amount} linhas selecionadas}}",
+    "clearSelection": "Limpar seleção",
+    "scopeAll": "Age em todas as {count} linhas de {category}",
+    "scopeSelected": "{count, plural, =1 {Age em 1 linha selecionada} other {Age em {amount} linhas selecionadas}}",
+    "max": "Maximizar tudo",
+    "maxSelected": "Maximizar selecionadas",
+    "reset": "Redefinir tudo",
+    "resetSelected": "Redefinir selecionadas",
+    "setLevel": "Definir nível",
+    "levelLabel": "Nível para as linhas selecionadas",
+    "applyLevel": "{count, plural, =1 {Aplicar a 1 linha} other {Aplicar a {amount} linhas}}",
+    "hallLabel": "Definir no máximo para o nível do salão",
+    "hallCurrent": "{hall} {level} (atual)",
+    "hallOption": "{hall} {level}",
+    "hallPlaceholder": "Escolha: {hall}"
+  },
+  "confirm": {
+    "title": "{count, plural, =1 {Diminuir 1 linha?} other {Diminuir {amount} linhas?}}",
+    "body": "Isso muda o rascunho. Nada é salvo até você tocar em Salvar alterações.",
+    "superchargeNote": "Uma construção que cai abaixo do nível máximo também perde a etapa de supercarga.",
+    "apply": "Aplicar ao rascunho",
+    "cancel": "Cancelar",
+    "line": "{name}: {from} para {to}",
+    "more": "e mais {count}"
+  },
+  "rows": {
+    "notBuilt": "Não construído",
+    "toMax": "{count} até o máx.",
+    "atMax": "No máx.",
+    "changed": "Alterado de {from} para {to}",
+    "level": "Nível de {name}",
+    "raise": "Aumentar {name}",
+    "lower": "Diminuir {name}",
+    "max": "Máx.",
+    "select": "Selecionar {name}",
+    "selectGroup": "Selecionar todos: {name}",
+    "supercharge": "Supercarga",
+    "reachFirst": "Chegue primeiro ao nível {level}",
+    "slider": "Controle deslizante de {name}",
+    "groupBuilt": "{count} construídos, nível máx. {max}",
+    "expand": "Mostrar {name}",
+    "collapse": "Ocultar {name}"
+  },
+  "category": {
+    "atMax": "{done} de {total} no máx. para {hall} {level}",
+    "rowsAtMax": "{done} de {total} no máx.",
+    "empty": "Nada para editar nesta categoria ainda.",
+    "locked": "Requer {requirement}",
+    "lockedSuffix": " (bloqueado)",
+    "nav": "Categorias"
+  },
+  "walls": {
+    "total": "Total",
+    "allocated": "Alocados",
+    "remaining": "Restantes",
+    "maxAll": "Maximizar tudo",
+    "resetAll": "Redefinir tudo",
+    "maxAllHelp": "Move todos os muros restantes para o nível mais alto",
+    "level": "Muros de nível {level}"
+  },
+  "builder": {
+    "profile": "Perfil da Base do Construtor",
+    "hall": "Nível do Salão do Construtor",
+    "hallHelp": "O Salão do Construtor {level} define o nível mais alto de cada linha abaixo. Diminuí-lo pede confirmação e reduz somente as linhas acima do novo limite.",
+    "none": "Nenhuma construção disponível neste nível de Salão do Construtor",
+    "raise": "Aumentar Salão do Construtor",
+    "lower": "Diminuir Salão do Construtor",
+    "trophies": "Troféus",
+    "bestTrophies": "Melhor de troféus",
+    "league": "Liga",
+    "hallConfirmTitle": "Diminuir o Salão do Construtor para {level}?"
+  },
+  "hallNames": {
+    "home": "Centro de Vila",
+    "builder": "Salão do Construtor",
+    "district": "Salão do Distrito",
+    "capital": "Salão da Capital"
+  },
+  "capital": {
+    "profile": "Perfil da Capital do Clã",
+    "hall": "Salão da Capital",
+    "none": "Nenhum",
+    "level": "Salão da Capital {level}",
+    "contributions": "Contribuições da Capital do Clã",
+    "unit": "Ouro da Capital",
+    "districtHall": "Salão do Distrito",
+    "districtNone": "Nenhum",
+    "districtLevel": "Salão do Distrito {level}",
+    "requiresCapitalHall": "Requer Salão da Capital {level}",
+    "unlockHint": "Defina um valor em {label} acima para liberar construções.",
+    "parts": "Seções",
+    "off": "O acompanhamento da Capital do Clã está desativado",
+    "offBody": "Reative o acompanhamento nas páginas da Capital do Clã. Nada foi excluído.",
+    "offAction": "Abrir Capital do Clã"
+  },
+  "empty": {
+    "title": "Nenhuma vila ativa",
+    "description": "Escolha uma vila ou crie uma para usar a Edição em massa."
+  }
+}

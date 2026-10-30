@@ -1,0 +1,112 @@
+{
+  "title": "Ikhtisar",
+  "description": "Desamu sekilas: progres, timer harian, dan semua statistik tersimpan.",
+  "subline": "{name}, turunan, hanya lihat",
+  "header": {
+    "clanLevel": "{hasRole, select, true {Level klan {level}, {role}} other {Level klan {level}}}",
+    "achievements": "Pencapaian",
+    "ringCaption": "{stars} dari {maxStars} bintang",
+    "viewAll": "Lihat semua",
+    "townHall": "BK{level}"
+  },
+  "dailies": {
+    "title": "Harian",
+    "closedTitle": "Harian terbuka di Balai Kota 3",
+    "closedBody": "Tempa, Pembantu, dan Season Pass terbuka seiring naiknya Balai Kota.",
+    "closedLink": "Lihat yang terbuka",
+    "groups": {
+      "helpers": "Pembantu",
+      "daily": "Harian",
+      "goldPass": "Gold Pass"
+    },
+    "requires": "Butuh {requirement}",
+    "openForge": "Buka Tempa",
+    "openHelpers": "Buka Pembantu",
+    "unlockProspector": "Buka di Season Pass",
+    "helperHut": "Pondok Pembantu",
+    "townHall": "Balai Kota {level}",
+    "starBonus": "Bonus Bintang",
+    "capitalGold": "Emas Ibu Kota",
+    "autoForge": "Tempa Otomatis",
+    "forgeSlots": "Slot Tempa",
+    "notRunning": "Tidak berjalan",
+    "running": "Berjalan",
+    "stopAuto": "Hentikan Tempa Otomatis",
+    "autoLine": "{amount} {resource} menjadi {capitalGold} Emas Ibu Kota",
+    "slotsLine": "{running} dari {open} slot berjalan",
+    "slotsDone": "{done, plural, other {{amount} slot selesai}}",
+    "autoPerk": "keuntungan Tempa Otomatis",
+    "helperPreview": "Pakai sekarang: sisa {before} menjadi {after}",
+    "goldPass": {
+      "edit": "Ubah di Season Pass",
+      "builder": "Boost pembangun",
+      "research": "Boost riset",
+      "hoggyBank": "Hoggy Bank",
+      "gemDonations": "Donasi 1 Permata",
+      "autoForge": "Tempa Otomatis",
+      "requestReduction": "Pengurangan Waktu Permintaan",
+      "on": "Aktif",
+      "off": "Mati",
+      "resets": "Boost kembali ke 0% pada {date}.",
+      "readOnly": "Membuka Ikhtisar tidak pernah mengubah desa atau waktu terakhir diubah."
+    }
+  },
+  "league": {
+    "open": "Tampilkan hadiah {name}",
+    "homeKind": "Liga Desa Utama",
+    "builderKind": "Liga Markas Pembangun",
+    "noData": "Tidak ada data untuk liga ini di Balai Kota ini.",
+    "battle": "Hasil pertempuran",
+    "stars": "Bintang",
+    "attacker": "Emas Pembangun penyerang",
+    "defender": "Elixir Pembangun pemain bertahan"
+  },
+  "builder": {
+    "title": "Markas Pembangun",
+    "hall": "Balai Pembangun {level}",
+    "trophies": "{trophies} trofi",
+    "daysAt": "Hari di BP{level}",
+    "notSetTitle": "Balai Pembangun belum diatur",
+    "notSetBody": "Markas Pembangun terbuka di Balai Kota 6, tetapi desa ini punya Balai Pembangun 0. Progres, trofi, dan pasukan muncul setelah levelnya 1 atau lebih.",
+    "notSetAction": "Atur level Balai Pembangun",
+    "lockedBody": "Butuh Balai Kota 6",
+    "troops": "Pasukan",
+    "heroes": "Pahlawan"
+  },
+  "capital": {
+    "title": "Ibu Kota Klan",
+    "hall": "Balai Ibu Kota {level}",
+    "notSetTitle": "Ibu Kota Klan belum disiapkan",
+    "notSetBody": "Puncak Ibu Kota belum punya level balai, jadi belum ada progres distrik untuk ditampilkan. Atur level Balai Ibu Kota untuk mulai melacak.",
+    "notSetAction": "Atur level Balai Ibu Kota",
+    "lockedBody": "Butuh Balai Kota 3",
+    "districtHall": "Balai Distrik {level}",
+    "notUnlocked": "Belum terbuka",
+    "unlocksAt": "Terbuka di Balai Ibu Kota {level}",
+    "needsDistrictHall": "Atur Balai Distrik untuk memulai",
+    "noData": "Tidak ada data",
+    "more": "Tampilkan {count} distrik lagi",
+    "showFewer": "Tampilkan lebih sedikit",
+    "openDistricts": "Buka Distrik"
+  },
+  "home": {
+    "title": "Desa Utama",
+    "townHall": "Balai Kota {level}",
+    "daysAt": "Hari di BK{level}",
+    "perHour": "per jam",
+    "stored": "tersimpan",
+    "cards": {
+      "locked": "Butuh {requirement}"
+    },
+    "queue": "Buka",
+    "troops": "Pasukan",
+    "spells": "Mantra",
+    "heroes": "Pahlawan",
+    "siege": "Mesin Pengepungan",
+    "pets": "Hewan",
+    "legend": "Garis hijau: maksimal untuk Balai Kota ini. Garis putus-putus: terkunci. Jam: peningkatan sedang berjalan.",
+    "tile": "{hasRequirement, select, true {{name}, butuh {requirement}} other {{name}, level {level}{max, plural, =0 {} other { dari {max}}}}}",
+    "heroLocked": "Butuh {requirement}",
+    "petsLocked": "Butuh Balai Kota 14"
+  }
+}

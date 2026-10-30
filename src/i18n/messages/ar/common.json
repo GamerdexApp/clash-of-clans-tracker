@@ -1,0 +1,32 @@
+{
+  "gate": {
+    "title": "لا توجد قرية نشطة",
+    "description": "اختر قرية أو أنشئ واحدة لعرض هذه الصفحة.",
+    "newVillage": "قرية جديدة",
+    "chooseVillage": "اختيار قرية"
+  },
+  "townHallTab": {
+    "title": "قاعة المدينة",
+    "supercharge": "الشحن الفائق",
+    "superchargeDone": "اكتمل {current} من {max} مستويات شحن فائق مفتوحة عند قاعة المدينة هذه.",
+    "superchargeProgress": "تقدم الشحن الفائق"
+  },
+  "heroesUnlock": "تُفتح الأبطال مع قاعة الأبطال.",
+  "progressLabel": "تقدم {name}",
+  "countdownLabel": "العد التنازلي لـ {name}",
+  "capitalGold": "ذهب العاصمة",
+  "queue": {
+    "conflict": "تعارض",
+    "level": "م {level}",
+    "levelSupercharge": "شحن فائق م {level}",
+    "now": "الآن",
+    "itemTitle": "{name} م {level}"
+  },
+  "finishDescription": "{name}، م {from} إلى {to}، {method}، {time} {unit}",
+  "lookupError": {
+    "rateLimit": "يرجى الانتظار {seconds} ث قبل الجلب مرة أخرى.",
+    "notFound": "لم يُعثر على اللاعب {tag}.",
+    "api": "ردّت واجهة Supercell بالرمز {status}.",
+    "network": "تعذر وصول بحث اللاعب إلى الخادم."
+  }
+}

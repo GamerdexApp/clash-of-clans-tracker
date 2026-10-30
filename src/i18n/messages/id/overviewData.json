@@ -1,0 +1,40 @@
+{
+  "stats": {
+    "level": "Level",
+    "warStars": "Bintang perang",
+    "trophies": "Trofi",
+    "bestTrophies": "Trofi terbaik",
+    "donations": "Donasi",
+    "received": "Donasi diterima",
+    "war": "Preferensi perang",
+    "attacks": "Kemenangan serangan",
+    "defenses": "Kemenangan bertahan",
+    "builderTrophies": "Trofi pembangun",
+    "bestBuilderTrophies": "Trofi pembangun terbaik",
+    "contributions": "Kontribusi Ibu Kota",
+    "warIn": "Ikut",
+    "warOut": "Tidak ikut"
+  },
+  "cards": {
+    "structures": "Bangunan",
+    "traps": "Jebakan",
+    "supercharge": "Supercharge",
+    "crafted": "Pertahanan Rakitan",
+    "lab": "Lab",
+    "heroes": "Pahlawan",
+    "equipment": "Perlengkapan",
+    "pets": "Hewan",
+    "walls": "Tembok",
+    "districts": "Distrik",
+    "troops": "Pasukan",
+    "spells": "Mantra"
+  },
+  "subs": {
+    "structures": "Pertahanan, pasukan, sumber daya",
+    "lab": "Pasukan, mantra, pengepungan",
+    "builderLab": "Pasukan pembangun",
+    "walls": "{total} tembok, level maks {max}",
+    "districts": "{active} dari {total} aktif",
+    "available": "{count} tersedia"
+  }
+}

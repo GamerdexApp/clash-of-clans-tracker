@@ -1,0 +1,17 @@
+{
+  "stats": {
+    "attacksPerWeek": "Атак в неделю",
+    "promoted": "Повышаются лучшие, %",
+    "demoted": "Понижаются худшие, %",
+    "trophyRange": "Диапазон кубков",
+    "starsForBonus": "Звёзд для звёздного бонуса"
+  },
+  "sections": {
+    "maxLoot": "Макс. доступная добыча",
+    "leagueBonus": "Макс. бонус лиги",
+    "weeklyStarBonus": "Еженедельный звёздный бонус",
+    "starBonusReward": "Награда звёздного бонуса"
+  },
+  "range": "{min}–{max}",
+  "rangeOpen": "{min}+"
+}

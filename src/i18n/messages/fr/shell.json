@@ -1,0 +1,66 @@
+{
+  "skipToContent": "Aller au contenu",
+  "closeMenu": "Fermer le menu",
+  "openMenu": "Ouvrir le menu",
+  "menuLabel": "Menu du site",
+  "mainNav": "Principal",
+  "brandTitle": "Clash of Clans",
+  "brandSubtitle": "Tracker",
+  "switcher": {
+    "sectionLabel": "Village",
+    "loading": "Chargement",
+    "none": "Aucun village",
+    "noneDetail": "Créez-en un pour commencer",
+    "switch": "Changer de village",
+    "villages": "Villages",
+    "active": "Actif",
+    "all": "Tous les villages",
+    "create": "Nouveau village",
+    "halls": "{builderHall, plural, =0 {HdV {townHall}} other {HdV {townHall} · HO {builderHall}}}"
+  },
+  "locked": {
+    "townHall": "Hôtel de ville {level}",
+    "blacksmith": "Forgeron",
+    "helperHut": "Cabane des assistants",
+    "off": "Désactivé",
+    "srLabel": "Nécessite {requirement}"
+  },
+  "footer": {
+    "tagline": "Un outil gratuit de suivi de progression pour Clash of Clans. Vos données restent dans votre navigateur, ou dans votre propre stockage cloud si vous activez la synchro.",
+    "support": "Assistance",
+    "about": "À propos",
+    "settings": "Paramètres",
+    "discord": "Discord",
+    "github": "GitHub",
+    "game": "Site officiel du jeu",
+    "privacy": "Politique de confidentialité",
+    "terms": "Conditions d'utilisation",
+    "disclaimerTitle": "Avertissement",
+    "disclaimer": "Ce projet n'est ni affilié, ni approuvé, ni lié à Supercell ou à Clash of Clans.",
+    "framework": "Créé avec le framework Gamerdex, une base partagée pour des outils gratuits de suivi de progression de jeux.",
+    "visitGamerdex": "Visiter Gamerdex"
+  },
+  "notFound": {
+    "title": "Cette page n'existe pas",
+    "body": "Le lien est peut-être ancien ou mal saisi. Vos villages sont en sécurité et rien n'a été modifié.",
+    "toOverview": "Aller à l'Aperçu",
+    "toVillages": "Aller à Villages",
+    "toHome": "Retour à l'accueil",
+    "didYouMean": "Vouliez-vous dire",
+    "noVillage": "Aucun village n'est sélectionné, donc l'Aperçu n'a rien à afficher. Choisissez-en un sur la page Villages.",
+    "jumpTo": "Ou aller à"
+  },
+  "error": {
+    "title": "Une erreur s'est produite",
+    "body": "L'appli a rencontré une erreur. Vos données enregistrées n'ont pas été modifiées.",
+    "digest": "digest {digest}",
+    "tryAgain": "Réessayer",
+    "download": "Télécharger les données brutes",
+    "clear": "Effacer les données et redémarrer",
+    "confirmTitle": "Effacer toutes les données enregistrées ?",
+    "confirmBody": "Cela supprime tout ce que l'appli a stocké dans ce navigateur. Une copie des données brutes est d'abord téléchargée pour pouvoir les réparer plus tard. Les villages synchronisés avec un compte cloud y restent.",
+    "cancel": "Annuler",
+    "confirm": "Télécharger et effacer",
+    "noData": "Il n'y a aucune donnée enregistrée dans ce navigateur."
+  }
+}

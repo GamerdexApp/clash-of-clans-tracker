@@ -1,0 +1,51 @@
+{
+  "title": "البنّاء",
+  "subline": "{name}، قاعة المدينة {townHall}",
+  "tabsLabel": "أقسام البنّاء",
+  "tabs": {
+    "defenses": "الدفاعات",
+    "army": "الجيش",
+    "resources": "الموارد",
+    "crafted": "الدفاعات المصنّعة",
+    "traps": "الفخاخ",
+    "heroes": "الأبطال",
+    "guardians": "الحراس",
+    "townHall": "قاعة المدينة"
+  },
+  "builders": {
+    "title": "البنّاؤون",
+    "boostLabel": "تعزيز بنّاء التصريح الذهبي",
+    "boostValue": "{percent, plural, =0 {لا شيء} other {-{percent}% من الوقت والتكلفة}}",
+    "openQueue": "فتح القائمة والجدول الزمني",
+    "unassignedHelp": "بعض الترقيات محفوظة على بنّاء غير مبني، أو على بنّاء تستخدمه ترقية أخرى. أنهِها أو ألغِها.",
+    "noBuilders": "ليس في هذه القرية بنّاؤون بعد. ابنِ أول كوخ بنّاء من تبويب الدفاعات. هو مجاني وفوري."
+  },
+  "gate": {
+    "requires": "يتطلب قاعة المدينة {townHall}",
+    "where": "هذه القرية على قاعة المدينة {townHall}. بلوغ قاعة المدينة {required} يفتح هذا التبويب.",
+    "fix": "الذهاب إلى تبويب قاعة المدينة"
+  },
+  "empty": {
+    "title": "لا شيء هنا بعد",
+    "description": "لا توجد مبانٍ من هذا النوع عند مستوى قاعة المدينة هذا.",
+    "allMax": "كل مبنى هنا في أقصى مستوى. أوقف إخفاء الأقصى لعرضها."
+  },
+  "card": {
+    "maxAtHall": "أقصى م {level} عند قاعة المدينة هذه",
+    "maxAtBuilderHall": "أقصى م {level} عند قاعة البنّاء هذه",
+    "progress": "تقدم {name}",
+    "notBuilt": "غير مبني",
+    "level": "م {level} من {max}",
+    "build": "بناء",
+    "upgradeTo": "ترقية إلى م {level}",
+    "superchargeTo": "شحن فائق إلى المستوى {tier}",
+    "maxed": "أقصى",
+    "running": "الترقية إلى م {to}",
+    "finish": "إنهاء",
+    "cancel": "إلغاء",
+    "showAll": "عرض كل {count}",
+    "showFewer": "عرض أقل",
+    "instance": "#{number}",
+    "supercharge": "شحن فائق {tier} من {tiers}"
+  }
+}

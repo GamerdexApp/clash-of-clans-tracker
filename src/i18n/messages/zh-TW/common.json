@@ -1,0 +1,32 @@
+{
+  "gate": {
+    "title": "沒有使用中的村莊",
+    "description": "選擇或建立一個村莊，即可查看此頁面。",
+    "newVillage": "新增村莊",
+    "chooseVillage": "選擇村莊"
+  },
+  "townHallTab": {
+    "title": "大本營",
+    "supercharge": "超級強化",
+    "superchargeDone": "此大本營已解鎖的超級強化階級中，已完成 {current} / {max} 個。",
+    "superchargeProgress": "超級強化進度"
+  },
+  "heroesUnlock": "英雄在英雄大廳建成後解鎖。",
+  "progressLabel": "{name}進度",
+  "countdownLabel": "{name}倒數",
+  "capitalGold": "首都金幣",
+  "queue": {
+    "conflict": "衝突",
+    "level": "Lv {level}",
+    "levelSupercharge": "Lv {level} 超級強化",
+    "now": "現在",
+    "itemTitle": "{name} Lv {level}"
+  },
+  "finishDescription": "{name}，Lv {from} 至 {to}，{method}，{time} {unit}",
+  "lookupError": {
+    "rateLimit": "請等待 {seconds} 秒後再次取得。",
+    "notFound": "找不到玩家 {tag}。",
+    "api": "Supercell API 回應了 {status}。",
+    "network": "玩家查詢無法連線到伺服器。"
+  }
+}

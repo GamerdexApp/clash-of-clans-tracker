@@ -1,0 +1,17 @@
+{
+  "stats": {
+    "attacksPerWeek": "Attacks per week",
+    "promoted": "Top % promoted",
+    "demoted": "Bottom % demoted",
+    "trophyRange": "Trophy range",
+    "starsForBonus": "Stars for the star bonus"
+  },
+  "sections": {
+    "maxLoot": "Max available loot",
+    "leagueBonus": "Max league bonus",
+    "weeklyStarBonus": "Weekly star bonus",
+    "starBonusReward": "Star bonus reward"
+  },
+  "range": "{min} to {max}",
+  "rangeOpen": "{min}+"
+}

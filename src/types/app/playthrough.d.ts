@@ -22,7 +22,10 @@ export type HelperAssignmentTarget =
   | { type: "building"; recordKey: "defenses" | "armyBuildings" | "resourceBuildings" | "traps"; buildingId: string; instanceIndex: number }
   | { type: "hero"; name: string }
   | { type: "research"; researchKey: "troops" | "spells" | "siegeMachines"; name: string }
-  | { type: "pet"; name: string };
+  | { type: "pet"; name: string }
+  | { type: "townHall" }
+  | { type: "townHallWeapon" }
+  | { type: "crafted"; defenseId: string; moduleIndex: number };
 
 export interface HelperAssignment {
   target: HelperAssignmentTarget;
@@ -92,6 +95,14 @@ export interface Playthrough {
   bhChangedAt?: string;
   /** Whether the user has opted into tracking Clan Capital */
   clanCapitalEnabled?: boolean;
+  oreStock?: { shiny: number; glowing: number; starry: number };
+  /** Builder Base things that have no place in the saved Builder Base data. */
+  /** The Builder Base queues by lane id: the two builders and the Star Laboratory. */
+  bbQueue?: {
+    builder?: Record<string, import("@/types/app/queue").BuilderBaseQueueItem[]>;
+    research?: Record<string, import("@/types/app/queue").BuilderBaseQueueItem[]>;
+  };
+  bbExtras?: { clockTower?: { level: number; upgrade?: UpgradeState }; builderHallUpgrade?: UpgradeState };
   dailies?: DailiesData;
   data: VillageData;
 }
@@ -103,10 +114,39 @@ export interface ActiveHours {
   endUtcMinutes: number;
 }
 
+export type ThemeChoice = "light" | "dark" | "system";
+
+export interface ActiveHoursLocal {
+  /** "HH:MM" on the local clock */
+  start: string;
+  end: string;
+}
+
+export interface QueueWindows {
+  builder?: string;
+  research?: string;
+  pets?: string;
+  bbBuilder?: string;
+  bbResearch?: string;
+}
+
+export interface UiSettings {
+  hideMax?: boolean;
+  /** Equipment: take the ore out of the stock on upgrade. A missing value reads as on. */
+  deductOre?: boolean;
+  builderTab?: string;
+  massEdit?: { scope?: string; tab?: string; collapsedGroups?: string[] };
+  queueWindows?: QueueWindows;
+  hiddenCategories?: { builder?: string[]; research?: string[] };
+}
+
 export interface AppSettings {
   goblinBuilderEnabled: boolean;
   goblinResearchEnabled: boolean;
   activeHours?: ActiveHours;
+  theme?: ThemeChoice;
+  activeHoursLocal?: ActiveHoursLocal;
+  ui?: UiSettings;
 }
 
 export interface AppData {

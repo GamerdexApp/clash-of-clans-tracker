@@ -1,0 +1,30 @@
+{
+  "title": "Hewan",
+  "subline": "{name}, Balai Kota {townHall}",
+  "strip": {
+    "title": "Rumah Hewan",
+    "openQueue": "Buka antrean dan linimasa",
+    "noPetHouse": "Bangun Rumah Hewan dulu. Atur levelnya di halaman Pembangun, tab Pasukan.",
+    "unassignedHelp": "Lebih dari satu peningkatan hewan tersimpan di Rumah Hewan. Selesaikan atau batalkan yang berlebih.",
+    "levelLabel": "Level Rumah Hewan",
+    "level": "{level} dari {max}",
+    "notBuilt": "Belum dibangun",
+    "boostLabel": "Boost riset Gold Pass"
+  },
+  "boostValue": "{percent, plural, =0 {Tidak ada} other {Waktu dan biaya -{percent}%}}",
+  "locked": {
+    "title": "Hewan terbuka di Balai Kota 14",
+    "body": "Desa ini ada di Balai Kota {townHall}. Ini hewan yang akan kamu dapat.",
+    "needs": "Balai Kota {townHall}, Rumah Hewan {petHouse}"
+  },
+  "card": {
+    "notUnlocked": "Belum terbuka",
+    "markUnlocked": "Tandai terbuka",
+    "maxAtHall": "Maks Lv {level}",
+    "progress": "Progres {name}"
+  },
+  "empty": {
+    "title": "Belum ada apa-apa",
+    "allMax": "Semua hewan sudah maksimal. Matikan Sembunyikan Maks untuk melihatnya."
+  }
+}

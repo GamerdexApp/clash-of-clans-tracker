@@ -1,0 +1,24 @@
+{
+  "levelTo": "{name} {from}→{to}",
+  "toast": {
+    "undo": "Annuler",
+    "started": "{name} niv. {from} à {to} démarré",
+    "finished": "{name} terminé au niv. {level}",
+    "timeSaved": "{time} ajouté au temps économisé.",
+    "cancelled": "{name} niv. {from} à {to} annulé",
+    "levelChanged": "{name} niv. {from} à {to}"
+  },
+  "queue": {
+    "buildPetHouse": "Construisez d'abord une Maison des familiers",
+    "requires": "Nécessite {building} {level}",
+    "alreadyUpgrading": "{name} est déjà en amélioration",
+    "finishFirst": "Le niveau {level} doit d'abord se terminer",
+    "alreadyAt": "Déjà au niveau {level}"
+  },
+  "conflict": {
+    "alreadyAt": "{name} est déjà au niveau {level}, donc le niveau {target} est atteint.",
+    "removeFix": "Retirez-le de la file.",
+    "scheduledBefore": "{name} niveau {level} est planifié avant la fin du niveau {earlier}.",
+    "moveFix": "Placez le niveau {level} après le niveau {earlier}."
+  }
+}

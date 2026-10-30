@@ -1,0 +1,177 @@
+{
+  "goldPass": "{percent, plural, =0 {Nessun potenziamento Pass Oro} other {Pass Oro -{percent}%}}",
+  "options": {
+    "open": "Opzioni della coda",
+    "title": "Opzioni della coda",
+    "description": "Impostazioni che cambiano come viene pianificata la coda.",
+    "done": "Fatto"
+  },
+  "totals": {
+    "freeValue": "{free} di {total}",
+    "queued": "Potenziamenti in coda",
+    "time": "Tempo in coda",
+    "allDone": "Tutte le corsie completate",
+    "none": "Niente in coda",
+    "cost": "Costo in coda",
+    "noCost": "Nessun costo"
+  },
+  "lane": {
+    "idle": "Libera",
+    "queueEmpty": "Niente in coda su questa corsia.",
+    "startNow": "Inizia ora",
+    "remove": "Rimuovi",
+    "moveUp": "Sposta su",
+    "moveDown": "Sposta giù",
+    "moveToLane": "Sposta nella corsia",
+    "levels": "Lv {from} a {to}",
+    "removed": "{name} rimosso dalla coda",
+    "started": "{name} iniziato",
+    "undo": "Annulla"
+  },
+  "timeline": {
+    "title": "Sequenza temporale",
+    "zoomLabel": "Durata della sequenza temporale",
+    "zooms": {
+      "3": "3 giorni",
+      "7": "1 settimana",
+      "14": "2 settimane",
+      "30": "1 mese",
+      "90": "3 mesi"
+    },
+    "conflictsTitle": "Conflitti",
+    "noConflicts": "Nessun conflitto. Ogni potenziamento inizia dopo il livello che richiede.",
+    "laneLabel": "Sequenza temporale di {label}",
+    "now": "Ora",
+    "idle": "Libera"
+  },
+  "add": {
+    "search": "Cerca potenziamenti",
+    "hiddenFromAll": "Nascosti da Tutti: {names}.",
+    "chooseCategories": "Scegli le categorie",
+    "chooseCategoriesHelp": "Le categorie selezionate compaiono in Tutti. Quelle non selezionate compaiono solo nel loro filtro.",
+    "add": "Aggiungi",
+    "addUpToHere": "Aggiungi fino a qui",
+    "showMore": "Mostra più livelli",
+    "showMoreUpgrades": "Mostra più potenziamenti",
+    "nothing": "Niente da aggiungere qui.",
+    "nothingDescription": "Ogni livello di questa vista è in coda, in corso o non ancora disponibile.",
+    "added": "{count, plural, one {{name} aggiunto} other {{amount} livelli di {name} aggiunti}}",
+    "close": "Fatto",
+    "unlockTitle": "Non sbloccato",
+    "unlockHelp": "Sbloccali prima per mettere in coda i loro livelli.",
+    "markUnlocked": "Segna come sbloccato",
+    "showAllLocked": "Mostra tutti ({count})",
+    "showFewerLocked": "Mostra meno",
+    "allLabel": "Tutti"
+  },
+  "lanes": {
+    "builder": {
+      "title": "Coda dei Costruttori",
+      "subline": "{name}, pianifica cosa fa ogni Costruttore dopo",
+      "back": "Torna a Costruttore",
+      "free": "Costruttori liberi",
+      "laneBusy": "Questo Costruttore è occupato.",
+      "goblin": {
+        "label": "Costruttore Goblin",
+        "help": "Aggiunge una settima corsia Costruttore mentre l'evento è attivo."
+      },
+      "gate": "Costruisci prima una Capanna del Costruttore. La prima è gratuita e immediata.",
+      "add": {
+        "title": "Aggiungi potenziamento",
+        "description": "Scegli cosa fa un Costruttore dopo. I livelli che aggiungi vanno in coda in ordine.",
+        "lane": "Corsia Costruttore",
+        "search": "Cerca potenziamenti"
+      },
+      "categories": {
+        "defenses": "Difese",
+        "armyBuildings": "Esercito",
+        "resourceBuildings": "Risorse",
+        "traps": "Trappole",
+        "heroes": "Eroi",
+        "townHall": "Municipio",
+        "craftedDefenses": "Create",
+        "guardians": "Guardiani",
+        "supercharges": "Supercariche"
+      }
+    },
+    "research": {
+      "title": "Coda di ricerca",
+      "subline": "{name}, pianifica cosa ricerca dopo il Laboratorio",
+      "back": "Torna a Ricerca",
+      "free": "Laboratori liberi",
+      "laneBusy": "Questa corsia è occupata.",
+      "goblin": {
+        "label": "Ricercatore Goblin",
+        "help": "Aggiunge una seconda corsia di ricerca mentre l'evento è attivo."
+      },
+      "gate": "Nessuna corsia di ricerca è disponibile.",
+      "add": {
+        "title": "Aggiungi ricerca",
+        "description": "Scegli cosa ricerca dopo il Laboratorio. I livelli che aggiungi vanno in coda in ordine.",
+        "lane": "Corsia di ricerca",
+        "search": "Cerca ricerche"
+      },
+      "categories": {
+        "troops": "Truppe",
+        "spells": "Magie",
+        "siegeMachines": "Assedio"
+      }
+    },
+    "pet": {
+      "title": "Coda degli animali",
+      "subline": "{name}, pianifica cosa potenzia dopo la Casa degli Animali",
+      "back": "Torna ad Animali",
+      "free": "Casa degli Animali",
+      "laneBusy": "La Casa degli Animali è occupata.",
+      "gate": "Gli animali si sbloccano al Municipio 14.",
+      "add": {
+        "title": "Aggiungi potenziamento animale",
+        "description": "Scegli quale animale potenzia dopo la Casa degli Animali. I livelli che aggiungi vanno in coda in ordine.",
+        "lane": "Casa degli Animali",
+        "search": "Cerca animali"
+      },
+      "categories": {
+        "pets": "Animali"
+      }
+    },
+    "bbBuilder": {
+      "title": "Coda della Base del Costruttore",
+      "subline": "{name}, Sala del Costruttore {hall}, pianifica cosa fa ogni Costruttore dopo",
+      "back": "Torna alla Base del Costruttore",
+      "free": "Costruttori liberi",
+      "laneBusy": "Questo Costruttore è occupato.",
+      "gate": "La Base del Costruttore ha due Costruttori.",
+      "add": {
+        "title": "Aggiungi potenziamento",
+        "description": "Scegli cosa fa dopo un Costruttore della Base del Costruttore. I livelli che aggiungi vanno in coda in ordine.",
+        "lane": "Costruttore",
+        "search": "Cerca potenziamenti"
+      },
+      "categories": {
+        "defenses": "Difese",
+        "armyBuildings": "Esercito",
+        "resourceBuildings": "Risorse",
+        "traps": "Trappole",
+        "heroes": "Eroi",
+        "other": "Altro"
+      }
+    },
+    "bbResearch": {
+      "title": "Coda del Laboratorio Stellare",
+      "subline": "{name}, Sala del Costruttore {hall}, pianifica cosa ricerca dopo il Laboratorio Stellare",
+      "back": "Torna a Truppe",
+      "free": "Slot liberi",
+      "laneBusy": "Il Laboratorio Stellare è occupato.",
+      "gate": "Il Laboratorio Stellare ricerca una truppa alla volta.",
+      "add": {
+        "title": "Aggiungi ricerca",
+        "description": "Scegli quale truppa ricerca dopo il Laboratorio Stellare. I livelli che aggiungi vanno in coda in ordine.",
+        "lane": "Laboratorio Stellare",
+        "search": "Cerca truppe"
+      },
+      "categories": {
+        "troops": "Truppe"
+      }
+    }
+  }
+}

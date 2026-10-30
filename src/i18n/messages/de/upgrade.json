@@ -1,0 +1,108 @@
+{
+  "massEdit": {
+    "hint": "Stufen lassen sich auch in der Massenbearbeitung setzen.",
+    "link": "Massenbearbeitung öffnen"
+  },
+  "hideMax": "Max ausblenden",
+  "strip": {
+    "free": "{free} von {total} frei",
+    "idle": "Frei",
+    "unassigned": "Nicht zugewiesen",
+    "taskLevels": "St. {from} auf {to}"
+  },
+  "start": {
+    "title": "Upgrade starten",
+    "levelChange": "{from, plural, =0 {Bauen bis St. {to}} other {St. {from} auf {to}}}",
+    "time": "Zeit",
+    "cost": "Kosten",
+    "doneAt": "Fertig um",
+    "wasBoosted": "war {base}, Goldpass -{percent}%",
+    "wasCost": "{resource}, war {base}",
+    "resource": "{resource}",
+    "storedNote": "diese geboostete Zeit wird gespeichert",
+    "storedNoteUnboosted": "diese Zeit wird gespeichert",
+    "instant": "Dieser Bau braucht keine Zeit. Er ist sofort fertig und nutzt keinen Bauarbeiter.",
+    "lanes": {
+      "builder": {
+        "label": "Bauarbeiter",
+        "choose": "Wähle einen Bauarbeiter zum Starten.",
+        "noneFree": "Alle Bauarbeiter sind beschäftigt. Brich zuerst ein Upgrade ab oder beende es."
+      },
+      "research": {
+        "label": "Forschungsbahn",
+        "choose": "Wähle eine Bahn zum Starten.",
+        "noneFree": "Alle Forschungsbahnen sind beschäftigt. Brich zuerst eine Forschung ab oder beende sie."
+      },
+      "bbBuilder": {
+        "label": "Bauarbeiter",
+        "choose": "Wähle einen Bauarbeiter zum Starten.",
+        "noneFree": "Beide Bauarbeiter sind beschäftigt. Brich zuerst ein Upgrade ab oder beende es."
+      },
+      "bbResearch": {
+        "label": "Sternenlabor",
+        "choose": "Wähle das Sternenlabor zum Starten.",
+        "noneFree": "Das Sternenlabor ist beschäftigt. Brich zuerst die Forschung ab oder beende sie."
+      },
+      "pet": {
+        "label": "Haustierhaus",
+        "choose": "Wähle das Haustierhaus zum Starten.",
+        "noneFree": "Das Haustierhaus ist beschäftigt. Brich zuerst das Haustier-Upgrade ab oder beende es."
+      }
+    },
+    "requires": {
+      "laboratory": "Braucht Labor {level}",
+      "pet-house": "Braucht Haustierhaus {level}",
+      "star-laboratory": "Braucht Sternenlabor {level}",
+      "noPetHouse": "Baue zuerst ein Haustierhaus"
+    },
+    "free": "Kostenlos",
+    "cancel": "Abbrechen",
+    "confirm": "Upgrade starten",
+    "confirmInstant": "Jetzt bauen"
+  },
+  "finish": {
+    "title": "Vorzeitig beenden",
+    "left": "übrig",
+    "methodLabel": "Wie wurde es beendet?",
+    "methods": {
+      "timePassed": {
+        "label": "Zeit abgelaufen",
+        "description": "Der Timer ist im Spiel schon abgelaufen. Es wird nichts ausgegeben."
+      },
+      "gems": {
+        "label": "Edelsteine",
+        "description": "Bezahle im Spiel Edelsteine, um es sofort abzuschließen. Die Kosten sinken, während die Zeit abläuft."
+      },
+      "book": {
+        "label": "Buch des Bauens",
+        "description": "Schließt ein laufendes Gebäude-Upgrade sofort ab."
+      },
+      "hammer": {
+        "label": "Hammer des Bauens",
+        "description": "Upgradet ein Gebäude sofort auf die nächste Stufe."
+      }
+    },
+    "stores": "Was das Dorf speichert",
+    "storesLevel": "Stufe {level}. Der Timer wird gelöscht.",
+    "storesSaved": "{time} werden zur gesparten Zeit addiert.",
+    "storesSavedNone": "Die gesparte Zeit bleibt, wie sie war.",
+    "gemFigure": "Etwa {gems} Edelsteine (Regel der Spieldaten, die Kosten im Spiel können abweichen).",
+    "notTracked": {
+      "timePassed": "",
+      "gems": "Ausgegebene Edelsteine werden nicht verfolgt.",
+      "book": "Vorhandene Bücher werden nicht verfolgt.",
+      "hammer": "Vorhandene Hämmer werden nicht verfolgt."
+    },
+    "keep": "Weiter upgraden",
+    "confirm": "Upgrade beenden"
+  },
+  "cancel": {
+    "title": "Dieses Upgrade abbrechen?",
+    "body": "Das Abbrechen stoppt den Timer. {name} bleibt auf St. {level} und {builder} ist wieder frei.",
+    "refundTitle": "Erstattung im Spiel: 50%",
+    "refundBody": "Das Abbrechen in Clash of Clans gibt {refund} {resource} der bezahlten {paid} zurück. Diese App verfolgt deine Ressourcen nicht, prüfe daher nach dem Abbrechen deine Lager.",
+    "undoNote": "Nach dem Abbrechen kannst du 10 Sekunden lang rückgängig machen. Danach starte das Upgrade neu.",
+    "keep": "Weiter upgraden",
+    "confirm": "Upgrade abbrechen"
+  }
+}

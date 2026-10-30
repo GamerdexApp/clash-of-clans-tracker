@@ -1,0 +1,48 @@
+{
+  "title": "Muros de la Base del Constructor",
+  "subline": "{name}, Taller del Constructor {builderHall}, nivel de muro más alto {highest}",
+  "massEdit": "Las cantidades de muros también se pueden ajustar en Edición masiva.",
+  "tiles": {
+    "total": "Total en este Taller del Constructor",
+    "totalCaption": "Nivel de muro más alto {highest}",
+    "placed": "Colocados",
+    "placedCaption": "Muros en un nivel",
+    "notPlaced": "Sin colocar",
+    "allPlaced": "Todos colocados",
+    "stillToPlace": "{amount} {count, plural, one {muro por colocar} other {muros por colocar}}",
+    "over": "Sobran {count}"
+  },
+  "hideEmpty": "{hidden, plural, =0 {Ocultar niveles vacíos por debajo del más bajo} other {Ocultar niveles vacíos por debajo del más bajo ({hidden} ocultos)}}",
+  "row": {
+    "level": "Nivel {level}",
+    "own": "Tienes",
+    "ownLabel": "Muros que tienes en el nivel {level}",
+    "lower": "Un muro menos de nivel {level}",
+    "raise": "Un muro más de nivel {level}",
+    "nextCost": "Siguiente nivel: {price} {resource} por muro",
+    "toMove": "Muros a mover",
+    "toLevel": "Al nivel",
+    "plusOne": "+1",
+    "move": "Mover",
+    "moveAll": "Mover todos",
+    "preview": "Mover {amount} {walls, plural, one {muro} other {muros}} del nivel {from} al {to}: {price} {resource}",
+    "nothingToMove": "Nada que mover",
+    "noWalls": "No hay muros en este nivel para mover."
+  },
+  "cost": {
+    "title": "Costo de llevar todos los muros al nivel {level}",
+    "row": "Nivel {level}, {amount} {walls, plural, one {muro} other {muros}}",
+    "total": "Total",
+    "none": "Todos los muros colocados están en el nivel máximo, o aún no hay ninguno colocado.",
+    "note": "Los muros de nivel 2 a 6 cuestan Oro del Constructor. Los de nivel 7 o más cuestan Oro del Constructor o Elixir del Constructor."
+  },
+  "empty": {
+    "title": "Aún no hay muros",
+    "description": "Define el nivel de tu Taller del Constructor en la página Mejoras de la Base del Constructor para ver sus muros."
+  },
+  "toast": {
+    "moved": "{amount} {walls, plural, one {muro movido} other {muros movidos}} del nivel {from} al {to}",
+    "counted": "Muros de nivel {level}: de {from} a {to}",
+    "undo": "Deshacer"
+  }
+}

@@ -1,0 +1,178 @@
+{
+  "title": "设置",
+  "subline": "偏好设置、备份和你的数据",
+  "tabsLabel": "设置分区",
+  "tabs": {
+    "sync": "云同步",
+    "preferences": "偏好设置",
+    "data": "备份和数据",
+    "about": "关于"
+  },
+  "appearance": {
+    "title": "外观",
+    "description": "选择应用的外观。",
+    "themeLabel": "主题",
+    "themes": {
+      "light": "浅色",
+      "dark": "深色",
+      "system": "跟随系统"
+    },
+    "themeNote": "“跟随系统”会使用你设备的设置。现在是{mode}。"
+  },
+  "builders": {
+    "title": "建筑工人设置",
+    "description": "为你的队列增加一个位置的活动助手。",
+    "goblinBuilder": "哥布林建筑工人",
+    "goblinBuilderHelp": "为建筑多增加一个建筑工人位置，即第七个。",
+    "goblinResearch": "哥布林研究",
+    "goblinResearchHelp": "在实验室多增加一个研究位置。"
+  },
+  "activeHours": {
+    "title": "活跃时段",
+    "description": "设置你每天玩游戏的时段。升级在此时段之外完成时，队列时间线会加入间隔。",
+    "start": "开始时间",
+    "end": "结束时间",
+    "save": "保存",
+    "clear": "清除",
+    "status": "按你的本地时钟，活跃时段为 {start} 至 {end}。",
+    "none": "未设置活跃时段。每个小时都算活跃。",
+    "sameTime": "开始和结束时间相同。请选择两个不同的时间，或清除时段。",
+    "overnight": "此时段跨夜，从 {start} 到次日 {end}。",
+    "unsaved": "有尚未保存的更改。",
+    "clockChanged": "你的时钟偏移已改变。按你的时钟，活跃时段仍为 {start} 至 {end}。"
+  },
+  "data": {
+    "title": "数据管理",
+    "storageNote": {
+      "title": "保存在此浏览器中。",
+      "body": "清除浏览器数据会删除你的村庄。请不时导出一份备份。"
+    },
+    "export": {
+      "title": "导出",
+      "description": "将所有村庄和你的设置下载为一个文件。",
+      "button": "导出所有村庄",
+      "done": "备份已下载"
+    },
+    "import": {
+      "title": "导入",
+      "fileLabel": "备份文件",
+      "chooseFile": "选择文件",
+      "noFile": "未选择文件",
+      "description": "选择一个备份文件。在任何内容改变之前，你可以先检查。",
+      "review": "检查导入",
+      "merged": "备份已合并",
+      "replaced": "备份已替换你的数据",
+      "undo": "撤销"
+    },
+    "reset": {
+      "title": "重置所有数据",
+      "warning": "删除此浏览器中的所有村庄和设置。",
+      "button": "重置所有数据",
+      "confirmTitle": "删除所有内容？",
+      "confirmBody": "这会删除{names}。你可以在十秒内撤销。",
+      "cancel": "取消",
+      "confirm": "全部删除",
+      "done": "所有数据已删除",
+      "doneMessage": "已删除 {amount} {count, plural, other {个村庄}}。",
+      "doneMessageDisconnected": "已删除 {amount} {count, plural, other {个村庄}}。此浏览器上的同步已断开。",
+      "syncedCopy": "同时删除 {provider} 中的同步副本",
+      "syncedOn": "同步保持开启。你的其他设备会在下次同步时失去这些村庄。如果不确定，请先导出备份。",
+      "syncedOff": "不勾选时，此浏览器上的同步会断开，这样下次同步不会把村庄带回来。",
+      "undo": "撤销"
+    },
+    "villages": {
+      "title": "村庄",
+      "description": "创建、编辑、切换和删除村庄。",
+      "manage": "管理村庄"
+    },
+    "villageCount": "{amount} {count, plural, other {个村庄}}"
+  },
+  "importDialog": {
+    "title": "检查导入",
+    "fileInfo": "{name}，{size}",
+    "bytes": "{count} B",
+    "kilobytes": "{count} KB",
+    "cancel": "取消",
+    "close": "关闭",
+    "merge": "合并到此设备",
+    "replace": "替换此设备",
+    "failedTitle": "无法导入此文件。",
+    "errors": {
+      "notJson": "此文件不是有效的 JSON。",
+      "playthroughsMissing": "此文件不是 Clash of Clans Tracker 的备份。其中没有村庄列表。"
+    },
+    "checksTitle": "检查通过。",
+    "checks": "文件列出了 {read} 个村庄，其中 {kept} 个可以读取。",
+    "skipped": "已跳过 {amount} {count, plural, other {个条目}}。",
+    "howToApply": "应用方式",
+    "modeLabel": "导入模式",
+    "modes": {
+      "merge": "合并",
+      "replace": "替换"
+    },
+    "modeNotes": {
+      "merge": "添加新的村庄；两边都有的村庄保留较新的副本。你的设置和当前村庄不变。",
+      "replace": "只使用文件中的内容。文件中没有的村庄会被删除。"
+    },
+    "whatChanges": "会有哪些变化",
+    "columns": {
+      "village": "村庄",
+      "inFile": "文件中",
+      "onDevice": "设备上",
+      "result": "结果"
+    },
+    "notThere": "没有",
+    "results": {
+      "added": "已添加",
+      "updated": "已从文件更新",
+      "kept": "已保留",
+      "replaced": "已替换",
+      "removed": "已删除"
+    },
+    "summary": {
+      "added": "添加 {count}",
+      "updated": "更新 {count}",
+      "kept": "保留 {count}",
+      "replaced": "替换 {count}",
+      "removed": "删除 {count}"
+    },
+    "noVillages": "文件中没有村庄。",
+    "undoNote": "你可以在十秒内撤销导入。"
+  },
+  "about": {
+    "version": "版本 {version}",
+    "summary": "一款免费的 Clash of Clans 进度追踪工具。可在多个村庄中追踪升级、研究、成就等内容。",
+    "officialGame": "Clash of Clans 官方网站",
+    "disclaimer": "本项目与 Supercell 或 Clash of Clans 没有隶属、认可或关联关系。"
+  },
+  "region": {
+    "title": "语言和地区",
+    "description": "应用在此设备上如何显示文字、数字和日期。这些选择不会随村庄保存，也不会导出或同步。",
+    "language": {
+      "label": "语言",
+      "hint": "应用的语言。游戏中的名称保持英文。"
+    },
+    "numberFormat": {
+      "label": "数字格式",
+      "hint": "示例：{example}",
+      "options": {
+        "auto": "自动（跟随语言）",
+        "us": "1,234,567.89（美国）",
+        "european": "1.234.567,89（欧洲）",
+        "french": "1 234 567,89（法国）",
+        "swiss": "1’234’567.89（瑞士）",
+        "indian": "12,34,567.89（印度）"
+      }
+    },
+    "dateFormat": {
+      "label": "日期格式",
+      "hint": "示例：{example}",
+      "options": {
+        "auto": "自动（跟随语言）",
+        "mdy": "月/日/年",
+        "dmy": "日/月/年",
+        "ymd": "年-月-日"
+      }
+    }
+  }
+}

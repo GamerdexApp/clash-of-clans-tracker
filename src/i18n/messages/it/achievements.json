@@ -1,0 +1,49 @@
+{
+  "title": "Imprese",
+  "description": "Segui stelle, valori e ricompense di ogni impresa.",
+  "subline": "{name}, {count} imprese, {stars} di {maxStars} stelle, {percent}%",
+  "tiles": {
+    "all": "Tutte le imprese",
+    "home": "Villaggio Principale",
+    "builder": "Base del Costruttore",
+    "capital": "Capitale del Clan",
+    "gems": "Gemme ottenute",
+    "xp": "XP ottenuti",
+    "stars": "{stars} di {maxStars} stelle",
+    "left": "Ancora da ottenere: {amount} {unit}",
+    "gemsUnit": "gemme",
+    "xpUnit": "XP"
+  },
+  "sections": {
+    "home": "Villaggio Principale",
+    "builderBase": "Base del Costruttore",
+    "clanCapital": "Capitale del Clan",
+    "summary": "{count} imprese, {stars} / {maxStars} stelle, {gems} gemme, {xp} XP",
+    "more": "Mostra altre {count} imprese di {name}",
+    "less": "Mostra meno"
+  },
+  "card": {
+    "manual": "Manuale",
+    "nextStar": "Prossima stella",
+    "xp": "XP",
+    "gems": "gemme",
+    "edit": "Modifica {name}",
+    "done": "Fatto",
+    "stars": "Stelle",
+    "starsHelp": "Tocca di nuovo la stessa stella per toglierne una.",
+    "star": "{amount} {number, plural, one {stella} other {stelle}}",
+    "value": "Valore",
+    "target": "Obiettivo",
+    "manualLabel": "Manuale (ignora i dati API)",
+    "saves": "Le modifiche si salvano mentre scrivi. Aumentando le stelle, l'Obiettivo passa al livello successivo.",
+    "progress": "Progresso di {name}",
+    "starsEarned": "{stars} di 3 stelle"
+  },
+  "toast": {
+    "stars": "{name} impostata a {amount} {stars, plural, one {stella} other {stelle}}",
+    "targetMoved": "Obiettivo spostato a {target}.",
+    "value": "Valore di {name} impostato a {value}",
+    "target": "Obiettivo di {name} impostato a {target}",
+    "undo": "Annulla"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "title": "Mascotes",
+  "subline": "{name}, Centro de Vila {townHall}",
+  "strip": {
+    "title": "Casa de Mascotes",
+    "openQueue": "Abrir fila e linha do tempo",
+    "noPetHouse": "Construa primeiro uma Casa de Mascotes. Defina o nível dela na página Construtor, aba Exército.",
+    "unassignedHelp": "Há mais de uma melhoria de mascote salva na Casa de Mascotes. Conclua ou cancele a extra.",
+    "levelLabel": "Nível da Casa de Mascotes",
+    "level": "{level} de {max}",
+    "notBuilt": "Não construída",
+    "boostLabel": "Bônus de pesquisa do Passe Dourado"
+  },
+  "boostValue": "{percent, plural, =0 {Nenhum} other {-{percent}% de tempo e custo}}",
+  "locked": {
+    "title": "Os mascotes são liberados no Centro de Vila 14",
+    "body": "Esta vila está no Centro de Vila {townHall}. Estes são os mascotes que você vai ganhar.",
+    "needs": "Centro de Vila {townHall}, Casa de Mascotes {petHouse}"
+  },
+  "card": {
+    "notUnlocked": "Não liberado",
+    "markUnlocked": "Marcar como liberado",
+    "maxAtHall": "Nv máx. {level}",
+    "progress": "Progresso de {name}"
+  },
+  "empty": {
+    "title": "Nada aqui ainda",
+    "allMax": "Todos os mascotes estão no máximo. Desative Ocultar máx. para vê-los."
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "categories": {
+    "defenses": "Defesas",
+    "army": "Exército",
+    "resources": "Recursos",
+    "crafted": "Defesas Fabricadas",
+    "traps": "Armadilhas",
+    "troops": "Tropas",
+    "spells": "Feitiços",
+    "siege": "Cerco",
+    "pets": "Mascotes",
+    "guardians": "Guardiões",
+    "heroes": "Heróis",
+    "equipment": "Equipamento",
+    "walls": "Muralhas",
+    "buildings": "Edifícios"
+  },
+  "sections": {
+    "armyBuildings": "Edifícios do exército",
+    "otherBuildings": "Outros edifícios"
+  },
+  "level": "Nível {level}",
+  "superchargeRow": "Sobrecarga de {name}",
+  "profile": {
+    "builderHall": "Nível do Centro do Construtor",
+    "trophies": "Troféus",
+    "bestTrophies": "Melhores troféus",
+    "league": "Liga",
+    "capitalHall": "Centro da Capital",
+    "districtHall": "Centro do Distrito {zone}",
+    "contributions": "Contribuições"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "title": "Investigação",
+  "subline": "{name}, Centro da Aldeia {townHall}",
+  "tabsLabel": "Secções da Investigação",
+  "tabs": {
+    "troops": "Tropas",
+    "spells": "Feitiços",
+    "siegeMachines": "Cerco"
+  },
+  "strip": {
+    "title": "Laboratório",
+    "noLanes": "Nenhuma faixa de investigação disponível.",
+    "openQueue": "Abrir fila e cronologia",
+    "unassignedHelp": "Há investigação guardada numa faixa desligada, ou numa faixa que outra investigação já usa. Conclua-a ou cancela-a.",
+    "levelLabel": "Nível do Laboratório",
+    "level": "{level} de {max}",
+    "notTracked": "Não definido",
+    "boostLabel": "Bónus de investigação do Passe de Ouro"
+  },
+  "card": {
+    "notUnlocked": "Não desbloqueado",
+    "markUnlocked": "Marcar como desbloqueado",
+    "maxAtHall": "Nív. máx. {level} neste Centro da Aldeia",
+    "progress": "Progresso de {name}"
+  },
+  "empty": {
+    "title": "Ainda não há nada aqui",
+    "none": "Nada nesta secção está disponível neste nível de Centro da Aldeia.",
+    "allMax": "Tudo aqui está no máximo. Desativa Ocultar máx. para ver."
+  },
+  "boostValue": "{percent, plural, =0 {Nenhum} other {-{percent}% de tempo e custo}}"
+}

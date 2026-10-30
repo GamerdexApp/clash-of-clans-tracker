@@ -1,0 +1,30 @@
+{
+  "title": "Familiers",
+  "subline": "{name}, Hôtel de ville {townHall}",
+  "strip": {
+    "title": "Maison des familiers",
+    "openQueue": "Ouvrir la file et la chronologie",
+    "noPetHouse": "Construisez d'abord une Maison des familiers. Définissez son niveau sur la page Ouvrier, onglet Armée.",
+    "unassignedHelp": "Plus d'une amélioration de familier est enregistrée sur la Maison des familiers. Terminez ou annulez celle en trop.",
+    "levelLabel": "Niveau de la Maison des familiers",
+    "level": "{level} sur {max}",
+    "notBuilt": "Non construite",
+    "boostLabel": "Boost de recherche du Pass Or"
+  },
+  "boostValue": "{percent, plural, =0 {Aucun} other {-{percent} % de temps et de coût}}",
+  "locked": {
+    "title": "Les familiers se débloquent à l'Hôtel de ville 14",
+    "body": "Ce village est à l'Hôtel de ville {townHall}. Voici les familiers que vous obtiendrez.",
+    "needs": "Hôtel de ville {townHall}, Maison des familiers {petHouse}"
+  },
+  "card": {
+    "notUnlocked": "Non débloqué",
+    "markUnlocked": "Marquer comme débloqué",
+    "maxAtHall": "Niv. max {level}",
+    "progress": "Progression de {name}"
+  },
+  "empty": {
+    "title": "Rien ici pour le moment",
+    "allMax": "Tous les familiers sont au maximum. Désactivez Masquer le max pour les voir."
+  }
+}

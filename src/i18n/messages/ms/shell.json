@@ -1,0 +1,66 @@
+{
+  "skipToContent": "Langkau ke kandungan",
+  "closeMenu": "Tutup menu",
+  "openMenu": "Buka menu",
+  "menuLabel": "Menu laman",
+  "mainNav": "Utama",
+  "brandTitle": "Clash of Clans",
+  "brandSubtitle": "Tracker",
+  "switcher": {
+    "sectionLabel": "Kampung",
+    "loading": "Memuatkan",
+    "none": "Tiada kampung",
+    "noneDetail": "Cipta satu untuk bermula",
+    "switch": "Tukar kampung",
+    "villages": "Kampung",
+    "active": "Aktif",
+    "all": "Semua kampung",
+    "create": "Kampung baharu",
+    "halls": "{builderHall, plural, =0 {DB {townHall}} other {DB {townHall} · DP {builderHall}}}"
+  },
+  "locked": {
+    "townHall": "Dewan Bandar {level}",
+    "blacksmith": "Tukang Besi",
+    "helperHut": "Pondok Pembantu",
+    "off": "Mati",
+    "srLabel": "Memerlukan {requirement}"
+  },
+  "footer": {
+    "tagline": "Penjejak kemajuan percuma untuk Clash of Clans. Data anda kekal dalam pelayar anda, atau dalam storan awan anda sendiri jika anda menghidupkan segerak.",
+    "support": "Sokongan",
+    "about": "Perihal",
+    "settings": "Tetapan",
+    "discord": "Discord",
+    "github": "GitHub",
+    "game": "Laman rasmi permainan",
+    "privacy": "Dasar privasi",
+    "terms": "Terma perkhidmatan",
+    "disclaimerTitle": "Penafian",
+    "disclaimer": "Projek ini tidak berkaitan dengan, disokong oleh, atau dihubungkan dengan Supercell atau Clash of Clans.",
+    "framework": "Dibina dengan rangka kerja Gamerdex, asas bersama untuk penjejak kemajuan permainan percuma.",
+    "visitGamerdex": "Lawati Gamerdex"
+  },
+  "notFound": {
+    "title": "Halaman ini tidak wujud",
+    "body": "Pautan mungkin lama atau tersalah taip. Kampung anda selamat dan tiada apa-apa berubah.",
+    "toOverview": "Pergi ke Gambaran keseluruhan",
+    "toVillages": "Pergi ke Kampung",
+    "toHome": "Kembali ke laman utama",
+    "didYouMean": "Adakah maksud anda",
+    "noVillage": "Tiada kampung dipilih, jadi Gambaran keseluruhan tiada apa-apa untuk dipaparkan. Pilih satu di halaman Kampung.",
+    "jumpTo": "Atau lompat ke"
+  },
+  "error": {
+    "title": "Ada yang tidak kena",
+    "body": "Aplikasi menemui ralat. Data tersimpan anda tidak berubah.",
+    "digest": "digest {digest}",
+    "tryAgain": "Cuba lagi",
+    "download": "Muat turun data mentah",
+    "clear": "Kosongkan data dan mula semula",
+    "confirmTitle": "Kosongkan semua data tersimpan?",
+    "confirmBody": "Ini membuang semua yang disimpan aplikasi dalam pelayar ini. Salinan data mentah dimuat turun dahulu supaya boleh dibaiki kemudian. Kampung yang disegerakkan ke akaun awan kekal di sana.",
+    "cancel": "Batal",
+    "confirm": "Muat turun dan kosongkan",
+    "noData": "Tiada data tersimpan dalam pelayar ini."
+  }
+}

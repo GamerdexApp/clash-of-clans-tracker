@@ -1,0 +1,40 @@
+{
+  "stats": {
+    "level": "等級",
+    "warStars": "戰爭星星",
+    "trophies": "獎盃",
+    "bestTrophies": "最佳獎盃",
+    "donations": "捐贈",
+    "received": "已收到的捐贈",
+    "war": "戰爭偏好",
+    "attacks": "攻擊勝場",
+    "defenses": "防守勝場",
+    "builderTrophies": "建築工人獎盃",
+    "bestBuilderTrophies": "最佳建築工人獎盃",
+    "contributions": "首都貢獻",
+    "warIn": "參戰",
+    "warOut": "不參戰"
+  },
+  "cards": {
+    "structures": "建築",
+    "traps": "陷阱",
+    "supercharge": "超級強化",
+    "crafted": "打造防禦",
+    "lab": "實驗室",
+    "heroes": "英雄",
+    "equipment": "裝備",
+    "pets": "寵物",
+    "walls": "城牆",
+    "districts": "區域",
+    "troops": "部隊",
+    "spells": "法術"
+  },
+  "subs": {
+    "structures": "防禦、軍隊、資源",
+    "lab": "部隊、法術、攻城",
+    "builderLab": "建築工人部隊",
+    "walls": "{total} 段城牆，最高等級 {max}",
+    "districts": "{active} / {total} 已啟用",
+    "available": "{count} 個可用"
+  }
+}

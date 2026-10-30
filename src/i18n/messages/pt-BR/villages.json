@@ -1,0 +1,119 @@
+{
+  "title": "Minhas Vilas",
+  "subline": "{amount} {count, plural, one {vila} other {vilas}}",
+  "sublineActive": "{amount} {count, plural, one {vila} other {vilas}}, {name} está ativa",
+  "newVillage": "Nova vila",
+  "empty": {
+    "title": "Ainda sem vilas",
+    "deletedTitle": "Não restam vilas",
+    "description": "Crie uma vila para começar a acompanhar melhorias, pesquisas e conquistas.",
+    "restore": "Restaurar de um backup"
+  },
+  "filters": {
+    "search": "Buscar vilas",
+    "sortLabel": "Ordenar por",
+    "sort": {
+      "lastModified": "Última modificação",
+      "createdAt": "Data de criação",
+      "name": "Nome"
+    },
+    "showing": "Mostrando {shown} de {total}",
+    "clear": "Limpar busca"
+  },
+  "noMatch": {
+    "title": "Nenhuma vila corresponde a \"{query}\"",
+    "description": "Confira a grafia ou limpe a busca."
+  },
+  "card": {
+    "active": "Ativa",
+    "openOverview": "Abrir visão geral",
+    "setActive": "Tornar ativa",
+    "edit": "Editar",
+    "delete": "Excluir",
+    "halls": "{builderHall, plural, =0 {Centro de Vila {townHall}} other {Centro de Vila {townHall}, Salão do Construtor {builderHall}}}",
+    "daysAtTownHall": "Dias no Centro de Vila",
+    "daysAtBuilderHall": "Dias no Salão do Construtor",
+    "notSet": "Não definido",
+    "clanCapital": "Capital do Clã",
+    "clanCapitalStates": {
+      "on": "Ativada",
+      "off": "Desativada",
+      "locked": "Bloqueada"
+    },
+    "created": "Criada em {date}",
+    "lastModified": "Modificada em {date}",
+    "switched": "{name} agora está ativa"
+  },
+  "fields": {
+    "name": "Nome da vila",
+    "namePlaceholder": "Minha conta principal",
+    "nameRequired": "Digite um nome para a vila.",
+    "description": "Descrição",
+    "descriptionPlaceholder": "Adicione uma descrição para esta vila",
+    "townHallLevel": "Nível do Centro de Vila",
+    "builderHallLevel": "Nível do Salão do Construtor",
+    "builderHallHelp": "A Base do Construtor é liberada no Centro de Vila 6.",
+    "townHallUpgraded": "Centro de Vila melhorado",
+    "builderHallUpgraded": "Salão do Construtor melhorado",
+    "level": "Nível {level}",
+    "trackCapital": "Acompanhar a Capital do Clã",
+    "trackCapitalHelp": "Desativar oculta as páginas da Capital do Clã e mantém seus dados.",
+    "trackCapitalLocked": "Requer Centro de Vila 3",
+    "cancel": "Cancelar"
+  },
+  "create": {
+    "title": "Nova vila",
+    "submit": "Criar vila",
+    "modeLabel": "Como começar",
+    "modes": {
+      "fresh": "Começar do zero",
+      "import": "Importar"
+    },
+    "modeNotes": {
+      "fresh": "Comece com dados vazios.",
+      "import": "Leia uma tag de jogador, com um arquivo de construções opcional."
+    },
+    "makeActive": "Tornar esta a vila ativa",
+    "done": "{name} criada",
+    "importNeedsLookup": "Busque primeiro uma tag de jogador."
+  },
+  "lookup": {
+    "step1": "Passo 1: Buscar dados do jogador",
+    "step2": "Passo 2: Dados das construções (opcional)",
+    "tagLabel": "Tag do jogador",
+    "tagPlaceholder": "#PPV2YV9R",
+    "fetch": "Buscar",
+    "refresh": "Atualizar",
+    "wait": "Aguarde {seconds} s",
+    "serverNote": "A busca envia a tag ao servidor do Gamerdex, que consulta a API da Supercell. Nada além disso sai do seu navegador.",
+    "unavailable": "A busca de jogador não está disponível agora. Tente de novo mais tarde.",
+    "found": "{name}, Centro de Vila {townHall}{builderHall, plural, =0 {} other {, Salão do Construtor {builderHall}}}. {achievements} conquistas e {troops} tropas lidas.",
+    "buildingHelp": "A API de jogador não traz níveis de construções. Escolha um backup de vila nas Configurações ou o arquivo exportData.json do jogo.",
+    "buildingLabel": "Arquivo de dados das construções",
+    "buildingLoaded": "Dados das construções carregados de {name}.",
+    "buildingInvalid": "Este arquivo não contém dados de construções. Use um backup de vila das Configurações ou o exportData.json do jogo.",
+    "buildingNotJson": "Este arquivo não é um JSON válido."
+  },
+  "edit": {
+    "title": "Editar vila",
+    "submit": "Salvar",
+    "refreshTitle": "Atualizar pela tag do jogador",
+    "updatedTitle": "Atualizado",
+    "untouchedTitle": "Nunca alterado",
+    "dateSet": "A data de melhoria foi definida como hoje. Você pode mudá-la.",
+    "done": "{name} salva"
+  },
+  "delete": {
+    "title": "Excluir vila",
+    "description": "Isso remove a vila deste navegador.",
+    "question": "Excluir {name}? Suas melhorias, pesquisas, conquistas e diárias serão removidas.",
+    "activeNext": "{next} passa a ser a vila ativa.",
+    "activeLast": "Nenhuma vila ficará ativa.",
+    "exportFirst": "Exporte um backup antes",
+    "cancel": "Cancelar",
+    "confirm": "Excluir vila",
+    "done": "{name} excluída",
+    "doneMessage": "Você pode desfazer por dez segundos.",
+    "undo": "Desfazer"
+  }
+}

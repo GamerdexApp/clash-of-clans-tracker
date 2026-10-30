@@ -1,0 +1,42 @@
+{
+  "close": "Fermer",
+  "field": {
+    "optional": "Facultatif"
+  },
+  "stepper": {
+    "lower": "Baisser {label}",
+    "raise": "Augmenter {label}",
+    "labelPrefix": "{label}, "
+  },
+  "switch": {
+    "on": "Activé",
+    "off": "Désactivé"
+  },
+  "tabs": {
+    "locked": " (verrouillé)"
+  },
+  "toast": {
+    "dismiss": "Fermer",
+    "variants": {
+      "success": "Succès",
+      "info": "Info",
+      "warning": "Avertissement",
+      "error": "Erreur"
+    },
+    "missingProvider": "useToast must be used within a ToastProvider"
+  },
+  "filters": {
+    "filters": "Filtres",
+    "activeCount": "{count} actifs",
+    "clearFilters": "Effacer les filtres",
+    "reset": "Réinitialiser",
+    "description": "Les changements s'appliquent au fur et à mesure. Les filtres ne sont pas enregistrés."
+  },
+  "savedChip": {
+    "automatic": "Enregistrement automatique",
+    "justNow": "Enregistré à l'instant",
+    "minutesAgo": "Enregistré il y a {count} min",
+    "at": "Enregistré à {time}",
+    "failed": "Non enregistré, stockage plein"
+  }
+}

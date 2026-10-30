@@ -1,0 +1,29 @@
+{
+  "groups": {
+    "homeVillage": "Desa Utama",
+    "builderBase": "Markas Pembangun",
+    "clanCapital": "Ibu Kota Klan",
+    "dailies": "Harian",
+    "tools": "Alat"
+  },
+  "items": {
+    "overview": "Ikhtisar",
+    "achievements": "Pencapaian",
+    "builder": "Pembangun",
+    "research": "Riset",
+    "pets": "Hewan",
+    "equipment": "Perlengkapan",
+    "walls": "Tembok",
+    "builderBaseUpgrades": "Peningkatan",
+    "builderBaseTroops": "Pasukan",
+    "builderBaseWalls": "Tembok",
+    "districts": "Distrik",
+    "capitalTroops": "Pasukan dan mantra",
+    "forge": "Tempa",
+    "helpers": "Pembantu",
+    "seasonPass": "Season Pass",
+    "massEdit": "Edit massal",
+    "settings": "Pengaturan"
+  },
+  "villages": "Desa Saya"
+}

@@ -1,0 +1,236 @@
+{
+  "tab": {
+    "title": "Sincronizzazione cloud"
+  },
+  "unavailable": "La sincronizzazione non è disponibile in questa versione.",
+  "provider": {
+    "github": {
+      "name": "GitHub",
+      "tile": "Un repository privato di tua proprietà, chiamato {repository}.",
+      "badge": "Per sviluppatori"
+    },
+    "google": {
+      "name": "Google Drive",
+      "tile": "Una cartella Gamerdex visibile nel tuo Drive. Gamerdex vede solo i file che crea.",
+      "badge": "Consigliato"
+    },
+    "dropbox": {
+      "name": "Dropbox",
+      "tile": "Una cartella Gamerdex dentro la cartella Apps del tuo Dropbox. Gamerdex vede solo quella cartella.",
+      "badge": "Solo cartella app"
+    },
+    "microsoft": {
+      "name": "OneDrive",
+      "tile": "Una cartella Gamerdex dentro la cartella Apps del tuo OneDrive. Gamerdex vede solo quella cartella.",
+      "badge": "Account personali"
+    }
+  },
+  "connect": {
+    "title": "Sincronizza tra dispositivi",
+    "pill": "Non connesso",
+    "intro": "Mantieni i tuoi villaggi uguali sul computer e sul telefono. La sincronizzazione è facoltativa e gratuita. Scegli dove tenere la copia.",
+    "pickerLabel": "Dove tenere la copia",
+    "panelTitle": "Connetti {provider}",
+    "another": "Puoi scegliere un altro servizio prima di accedere.",
+    "firstSync": "Se entrambe le parti hanno già dati, scegli cosa tenere alla prima sincronizzazione. Nulla viene sostituito prima che tu decida.",
+    "steps": {
+      "google": {
+        "step1": "Accedi con Google in questa finestra.",
+        "step2": "Consenti l'accesso ai file che Gamerdex crea. L'app non può vedere i tuoi altri file.",
+        "button": "Connetti Google Drive"
+      },
+      "github": {
+        "step1": "Crea un repository privato vuoto chiamato {repository}. Seleziona Add a README file.",
+        "step2": "Accedi con GitHub, poi dai a Gamerdex Sync l'accesso solo a quel repository.",
+        "button": "Connetti GitHub"
+      },
+      "dropbox": {
+        "step1": "Accedi con Dropbox in questa finestra.",
+        "step2": "Consenti l'accesso alla cartella app di Gamerdex. L'app non può vedere i tuoi altri file.",
+        "button": "Connetti Dropbox"
+      },
+      "microsoft": {
+        "step1": "Accedi con il tuo account Microsoft personale in questa finestra.",
+        "step2": "Consenti l'accesso alla cartella app di Gamerdex. L'app non può vedere i tuoi altri file.",
+        "button": "Connetti OneDrive"
+      }
+    }
+  },
+  "how": {
+    "title": "Come funziona la sincronizzazione",
+    "points": {
+      "item1": "I tuoi villaggi vengono salvati come un unico file nel tuo spazio di archiviazione, più un piccolo file con l'elenco dei dispositivi.",
+      "item2": "Gamerdex non ha alcun server che conserva i tuoi dati. Il browser parla direttamente con il tuo spazio di archiviazione.",
+      "item3": "Istanze degli edifici, truppe, eroi, equipaggiamento, animali e imprese si uniscono uno per uno e vince il livello più alto. Un azzeramento viene mantenuto quando l'altro dispositivo non ha cambiato quel livello.",
+      "item4": "Se entrambi i dispositivi cambiano lo stesso nome, coda, potenziamento in corso, numero di trofei o orario di azzeramento, scegli tu quale tenere.",
+      "item5": "Ogni dispositivo mantiene il proprio villaggio attivo. La sincronizzazione non lo cambia mai.",
+      "item6": "Disconnetti quando vuoi. I tuoi villaggi restano su ogni dispositivo."
+    }
+  },
+  "repository": {
+    "title": "Configura il tuo repository dati",
+    "body": "I tuoi dati sono conservati in un repository privato chiamato {name} nel tuo account GitHub. Gamerdex Sync può accedere solo a quel repository.",
+    "checking": "Cerco {name}",
+    "checkFailed": "Non è stato possibile caricare i tuoi repository. Controlla la connessione e verifica di nuovo.",
+    "public": "Il repository {fullName} è pubblico. Rendilo privato nelle sue impostazioni GitHub, poi verifica di nuovo. Un repository pubblico non può essere usato, perché chiunque potrebbe leggere i tuoi dati.",
+    "missing": "Il repository {name} non è stato trovato",
+    "steps": {
+      "create": "Crea un repository privato chiamato {name}. Seleziona Add a README file.",
+      "install": "Dai a Gamerdex Sync l'accesso solo a quel repository. Scegli Only select repositories, poi seleziona {name}.",
+      "recheck": "Torna qui e verifica di nuovo."
+    },
+    "createButton": "Crea repository",
+    "installButton": "Scegli i repository su GitHub",
+    "recheckButton": "Verifica di nuovo"
+  },
+  "connected": {
+    "repository": "Repository",
+    "lastSync": "Ultima sincronizzazione",
+    "never": "Non ancora sincronizzato",
+    "syncNow": "Sincronizza ora",
+    "signOut": "Esci",
+    "folder": "Cartella {name}",
+    "signInWith": "Accedi con {provider}"
+  },
+  "status": {
+    "idle": "Sincronizzato",
+    "syncing": "Sincronizzazione",
+    "offline": "Offline",
+    "reauth": "Accedi di nuovo",
+    "needsChoice": "Serve una tua scelta",
+    "error": "Sincronizzazione non riuscita",
+    "signedOut": "Non hai effettuato l'accesso",
+    "needsRepository": "Scegli un repository",
+    "conflicts": "Controlla le modifiche"
+  },
+  "error": {
+    "rateLimit": "Il servizio sta limitando le richieste. La sincronizzazione tornerà a funzionare tra qualche minuto.",
+    "notFound": "Il repository non è stato trovato. Sceglilo di nuovo.",
+    "server": "Il servizio non ha risposto correttamente. Riprova più tardi.",
+    "data": "I dati sincronizzati non sono validi, quindi non è stato cambiato nulla.",
+    "busy": "Un altro dispositivo continua a modificare i dati. Riprova tra un momento.",
+    "other": "Qualcosa è andato storto. Non è stato cambiato nulla.",
+    "reauth": "L'accesso è terminato. Accedi di nuovo per continuare a sincronizzare.",
+    "forbidden": "GitHub ha rifiutato l'accesso al repository. Controlla che Gamerdex Sync abbia accesso in lettura e scrittura a Contents, poi sincronizza di nuovo.",
+    "httpStatus": "GitHub ha risposto {status}.",
+    "notFoundFolder": "Un file o una cartella in {provider} non è stato trovato. Sincronizza di nuovo.",
+    "forbiddenFolder": "{provider} ha rifiutato l'accesso. Accedi di nuovo e consenti l'accesso ai file che Gamerdex crea.",
+    "httpStatusFolder": "{provider} ha risposto {status}."
+  },
+  "choice": {
+    "title": "Sia questo dispositivo sia il cloud hanno dati",
+    "body": "Questa è la prima sincronizzazione da questo dispositivo. Scegli cosa fare. Nulla viene eliminato dal cloud finché non scegli.",
+    "merge": "Unisci entrambi",
+    "mergeHint": "Mantieni tutto da entrambi. Vince il livello più alto.",
+    "keepLocal": "Tieni questo dispositivo",
+    "keepLocalHint": "Sostituisci i dati del cloud con quelli di questo dispositivo.",
+    "keepCloud": "Tieni il cloud",
+    "keepCloudHint": "Sostituisci i dati di questo dispositivo con quelli del cloud."
+  },
+  "first": {
+    "thisDevice": "Questo dispositivo",
+    "cloud": "Cloud",
+    "recommended": "Consigliato",
+    "later": "Decidi dopo",
+    "apply": "Applica scelta",
+    "optionsLabel": "Cosa tenere"
+  },
+  "villageCount": "{count, plural, one {{amount} villaggio} other {{amount} villaggi}}",
+  "conflicts": {
+    "title": "Modifiche che non è stato possibile unire",
+    "body": "Due dispositivi hanno cambiato lo stesso valore. È stato mantenuto il valore del cloud. Scegli il valore di questo dispositivo per usarlo al suo posto.",
+    "cloudValue": "Cloud",
+    "deviceValue": "Questo dispositivo",
+    "keepDevice": "Usa il valore di questo dispositivo",
+    "dismiss": "Chiudi",
+    "empty": "Niente",
+    "deletedEdited": "Un dispositivo l'ha rimosso e un altro l'ha modificato. È stata mantenuta la versione modificata."
+  },
+  "banner": {
+    "title": "{count, plural, one {{amount} modifica richiede una decisione} other {{amount} modifiche richiedono una decisione}}",
+    "body": "Due dispositivi hanno cambiato lo stesso valore. Il valore del cloud resta finché non decidi.",
+    "review": "Controlla",
+    "waiting": "La prima sincronizzazione attende la tua scelta.",
+    "choose": "Scegli"
+  },
+  "villages": {
+    "title": "Villaggi",
+    "thisDevice": "Questo dispositivo",
+    "cloud": "Cloud, ultima sincronizzazione",
+    "notInCloud": "Non ancora nel cloud",
+    "review": "Controlla",
+    "note": "Eliminare un villaggio lo rimuove dal file di sincronizzazione alla prossima sincronizzazione.",
+    "status": {
+      "synced": "Sincronizzato",
+      "changedHere": "Modificato qui",
+      "conflict": "Conflitto",
+      "newHere": "Nuovo qui"
+    },
+    "describe": "Municipio {townHall}"
+  },
+  "activity": {
+    "title": "Attività di sincronizzazione recente",
+    "empty": "Ancora nulla è stato sincronizzato.",
+    "connected": "{provider} connesso su questo browser.",
+    "uploaded": "Caricate le modifiche di questo dispositivo.",
+    "downloaded": "Scaricate le modifiche dal cloud.",
+    "merged": "Unite le modifiche di entrambe le parti.",
+    "conflicts": "{count, plural, one {{amount} modifica richiede una decisione.} other {{amount} modifiche richiedono una decisione.}}",
+    "failed": "La sincronizzazione non è riuscita."
+  },
+  "settings": {
+    "title": "Impostazioni di sincronizzazione",
+    "auto": "Sincronizza automaticamente",
+    "autoHint": "Sincronizza all'apertura del tracker e pochi secondi dopo ogni modifica.",
+    "focus": "Controlla le modifiche quando torno alla scheda",
+    "focusHint": "Scarica i dati più recenti dal cloud quando torni al tracker.",
+    "metered": "Aspetta su una connessione a consumo",
+    "meteredHint": "Salta le sincronizzazioni automatiche mentre il browser segnala una connessione con risparmio dati. Sincronizza ora funziona comunque."
+  },
+  "lives": {
+    "title": "Dove vivono i tuoi dati",
+    "storage": "Archiviazione",
+    "folder": "Cartella",
+    "dataFile": "File dati",
+    "metaFile": "File meta",
+    "size": "Dimensione",
+    "kb": "{amount} KB",
+    "note": "Il file dati contiene i tuoi villaggi in una forma che la sincronizzazione può unire, quindi non è un file di backup. Il file meta contiene l'elenco dei dispositivi e nessun dato di gioco. Il tuo accesso non è mai in nessuno dei due file.",
+    "notes": {
+      "google": "La cartella Gamerdex è visibile nel tuo Drive. Gamerdex può aprire solo i file che ha creato.",
+      "github": "Tieni il repository privato. Chiunque possa aprirlo può leggere i tuoi dati.",
+      "dropbox": "La cartella Gamerdex è dentro la cartella Apps del tuo Dropbox. Gamerdex può aprire solo quella cartella.",
+      "microsoft": "La cartella Gamerdex è dentro la cartella Apps del tuo OneDrive. Gamerdex può aprire solo quella cartella."
+    }
+  },
+  "device": {
+    "title": "Questo dispositivo",
+    "name": "Nome del dispositivo",
+    "nameHint": "I file di sincronizzazione mostrano questo nome per questo dispositivo. Rinominarlo aggiorna il file meta alla prossima sincronizzazione.",
+    "activeVillage": "Villaggio attivo",
+    "noVillage": "Nessuno",
+    "login": "Accesso alla sincronizzazione",
+    "loginValue": "Solo su questo dispositivo",
+    "loginHint": "Il villaggio attivo è una scelta di ogni dispositivo e la sincronizzazione non lo cambia mai. Il tuo accesso resta su questo dispositivo. Non è mai nei dati salvati, nel file di backup o nei file di sincronizzazione."
+  },
+  "disconnect": {
+    "title": "Disconnetti",
+    "body": "Interrompe la sincronizzazione su questo browser. I tuoi villaggi restano su questo dispositivo e nel cloud. Gli altri dispositivi continuano a sincronizzare.",
+    "button": "Disconnetti {provider}",
+    "hints": {
+      "google": "Per eliminare tu la copia nel cloud, disconnetti, poi elimina la cartella Gamerdex nel tuo Google Drive.",
+      "github": "Per eliminare tu la copia nel cloud, disconnetti, poi elimina la cartella Gamerdex nel tuo repository.",
+      "dropbox": "Per eliminare tu la copia nel cloud, disconnetti, poi elimina la cartella dell'app dentro Apps nel tuo Dropbox.",
+      "microsoft": "Per eliminare tu la copia nel cloud, disconnetti, poi elimina la cartella dell'app dentro Apps nel tuo OneDrive."
+    }
+  },
+  "callback": {
+    "title": "Accesso in corso",
+    "working": "Completamento dell'accesso",
+    "back": "Torna alle Impostazioni",
+    "denied": "L'accesso è stato annullato.",
+    "state": "Non è stato possibile verificare l'accesso. Ricomincia dalle Impostazioni.",
+    "missing": "L'accesso non ha inviato alcun codice. Ricomincia dalle Impostazioni.",
+    "failed": "Non è stato possibile completare l'accesso. Riprova più tardi."
+  }
+}

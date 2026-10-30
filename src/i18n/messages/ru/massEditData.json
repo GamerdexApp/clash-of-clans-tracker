@@ -1,0 +1,33 @@
+{
+  "categories": {
+    "defenses": "Защита",
+    "army": "Армия",
+    "resources": "Ресурсы",
+    "crafted": "Созданная защита",
+    "traps": "Ловушки",
+    "troops": "Войска",
+    "spells": "Заклинания",
+    "siege": "Осада",
+    "pets": "Питомцы",
+    "guardians": "Стражи",
+    "heroes": "Герои",
+    "equipment": "Снаряжение",
+    "walls": "Стены",
+    "buildings": "Здания"
+  },
+  "sections": {
+    "armyBuildings": "Армейские здания",
+    "otherBuildings": "Прочие здания"
+  },
+  "level": "Уровень {level}",
+  "superchargeRow": "{name}: суперзаряд",
+  "profile": {
+    "builderHall": "Уровень Зала строителя",
+    "trophies": "Кубки",
+    "bestTrophies": "Лучшие кубки",
+    "league": "Лига",
+    "capitalHall": "Столичный зал",
+    "districtHall": "Зал района {zone}",
+    "contributions": "Вклад"
+  }
+}

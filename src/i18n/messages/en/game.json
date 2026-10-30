@@ -1,0 +1,37 @@
+{
+  "resources": {
+    "gold": "Gold",
+    "elixir": "Elixir",
+    "darkElixir": "Dark Elixir",
+    "darkElixirShort": "Dark",
+    "builderGold": "Builder Gold",
+    "builderGoldShort": "B. Gold",
+    "builderElixir": "Builder Elixir",
+    "builderElixirShort": "B. Elixir",
+    "capitalGold": "Capital Gold",
+    "shinyOre": "Shiny Ore",
+    "glowyOre": "Glowy Ore",
+    "starryOre": "Starry Ore"
+  },
+  "halls": {
+    "townHall": "Town Hall {level}",
+    "builderHall": "Builder Hall {level}",
+    "capitalHall": "Capital Hall {level}",
+    "heroHall": "Hero Hall {level}",
+    "starLaboratory": "Star Laboratory {level}",
+    "blacksmith": "Blacksmith"
+  },
+  "places": {
+    "townHall": "Town Hall",
+    "townHallWeapon": "Town Hall weapon",
+    "builderHall": "Builder Hall",
+    "clockTower": "Clock Tower",
+    "laboratory": "Laboratory",
+    "goblinResearcher": "Goblin Researcher",
+    "goblinBuilder": "Goblin Builder",
+    "starLaboratory": "Star Laboratory",
+    "petHouse": "Pet House",
+    "capitalPeak": "Capital Peak",
+    "builder": "Builder {id}"
+  }
+}

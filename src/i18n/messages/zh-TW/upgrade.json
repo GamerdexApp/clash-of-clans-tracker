@@ -1,0 +1,108 @@
+{
+  "massEdit": {
+    "hint": "等級也可以在批次編輯中設定。",
+    "link": "開啟批次編輯"
+  },
+  "hideMax": "隱藏已滿級",
+  "strip": {
+    "free": "{free} / {total} 空閒",
+    "idle": "空閒",
+    "unassigned": "未指派",
+    "taskLevels": "Lv {from} 至 {to}"
+  },
+  "start": {
+    "title": "開始升級",
+    "levelChange": "{from, plural, =0 {建造至 Lv {to}} other {Lv {from} 至 {to}}}",
+    "time": "時間",
+    "cost": "費用",
+    "doneAt": "完成時間",
+    "wasBoosted": "原為 {base}，黃金通行證 -{percent}%",
+    "wasCost": "{resource}，原為 {base}",
+    "resource": "{resource}",
+    "storedNote": "儲存的是加速後的時間",
+    "storedNoteUnboosted": "儲存的是這個時間",
+    "instant": "這項建造不需要時間，會立即完成，也不佔用建築工人。",
+    "lanes": {
+      "builder": {
+        "label": "建築工人",
+        "choose": "請選擇一位建築工人以開始。",
+        "noneFree": "所有建築工人都在忙碌。請先取消或完成一項升級。"
+      },
+      "research": {
+        "label": "研究通道",
+        "choose": "請選擇一條通道以開始。",
+        "noneFree": "所有研究通道都在忙碌。請先取消或完成一項研究。"
+      },
+      "bbBuilder": {
+        "label": "建築工人",
+        "choose": "請選擇一位建築工人以開始。",
+        "noneFree": "兩位建築工人都在忙碌。請先取消或完成一項升級。"
+      },
+      "bbResearch": {
+        "label": "星空實驗室",
+        "choose": "請選擇星空實驗室以開始。",
+        "noneFree": "星空實驗室正在忙碌。請先取消或完成研究。"
+      },
+      "pet": {
+        "label": "寵物屋",
+        "choose": "請選擇寵物屋以開始。",
+        "noneFree": "寵物屋正在忙碌。請先取消或完成寵物升級。"
+      }
+    },
+    "requires": {
+      "laboratory": "需要實驗室 {level}",
+      "pet-house": "需要寵物屋 {level}",
+      "star-laboratory": "需要星空實驗室 {level}",
+      "noPetHouse": "請先建造寵物屋"
+    },
+    "free": "免費",
+    "cancel": "取消",
+    "confirm": "開始升級",
+    "confirmInstant": "立即建造"
+  },
+  "finish": {
+    "title": "提前完成",
+    "left": "剩餘",
+    "methodLabel": "是如何完成的？",
+    "methods": {
+      "timePassed": {
+        "label": "時間已到",
+        "description": "遊戲中的計時器已經跑完，不花費任何東西。"
+      },
+      "gems": {
+        "label": "寶石",
+        "description": "在遊戲中花費寶石立即完成。費用會隨剩餘時間減少而下降。"
+      },
+      "book": {
+        "label": "建築之書",
+        "description": "立即完成進行中的建築升級。"
+      },
+      "hammer": {
+        "label": "建築之錘",
+        "description": "立即將建築升到下一級。"
+      }
+    },
+    "stores": "村莊會儲存的內容",
+    "storesLevel": "等級 {level}，計時器已清除。",
+    "storesSaved": "{time} 會加入已節省時間。",
+    "storesSavedNone": "已節省時間維持不變。",
+    "gemFigure": "約 {gems} 寶石（依遊戲資料規則，遊戲內實際費用可能不同）。",
+    "notTracked": {
+      "timePassed": "",
+      "gems": "不會追蹤花費的寶石。",
+      "book": "不會追蹤擁有的書。",
+      "hammer": "不會追蹤擁有的錘子。"
+    },
+    "keep": "繼續升級",
+    "confirm": "完成升級"
+  },
+  "cancel": {
+    "title": "要取消這項升級嗎？",
+    "body": "取消會停止計時器。{name}維持在 Lv {level}，{builder}也會恢復空閒。",
+    "refundTitle": "遊戲內退款：50%",
+    "refundBody": "在 Clash of Clans 取消會退還你已支付 {paid} 中的 {refund} {resource}。此應用程式不會追蹤你的資源，所以取消後請自行檢查你的儲存庫。",
+    "undoNote": "取消後 10 秒內可以復原，之後請重新開始升級。",
+    "keep": "繼續升級",
+    "confirm": "取消升級"
+  }
+}

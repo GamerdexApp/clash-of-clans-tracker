@@ -1,0 +1,138 @@
+{
+  "title": "تعديل جماعي",
+  "description": "غيّر مستويات كثيرة دفعة واحدة. لا يُحفظ شيء حتى تضغط على حفظ التغييرات.",
+  "subline": "{name}، قاعة المدينة {townHall}، تغييرات مرحلية",
+  "scopes": {
+    "home": "القرية الرئيسية",
+    "builder": "قاعدة البنّاء",
+    "capital": "عاصمة العشيرة"
+  },
+  "scopeNav": "النطاق",
+  "requires": "يتطلب {requirement}",
+  "trackingOff": "التتبع متوقف",
+  "changedCount": "{count, plural, zero {{amount} تغيير} one {تغيير واحد} two {تغييران} few {{amount} تغييرات} many {{amount} تغييرًا} other {{amount} تغيير}}",
+  "chip": "تغييرات غير محفوظة",
+  "bar": {
+    "unsaved": "{count, plural, zero {{amount} تغيير غير محفوظ} one {تغيير واحد غير محفوظ} two {تغييران غير محفوظين} few {{amount} تغييرات غير محفوظة} many {{amount} تغييرًا غير محفوظ} other {{amount} تغيير غير محفوظ}}",
+    "none": "لا توجد تغييرات غير محفوظة",
+    "discard": "تجاهل",
+    "save": "حفظ التغييرات"
+  },
+  "saved": "{count, plural, zero {تم حفظ {amount} تغيير} one {تم حفظ تغيير واحد} two {تم حفظ تغييرين} few {تم حفظ {amount} تغييرات} many {تم حفظ {amount} تغييرًا} other {تم حفظ {amount} تغيير}}",
+  "undo": "تراجع",
+  "discardDialog": {
+    "title": "{count, plural, zero {تجاهل {amount} تغيير غير محفوظ؟} one {تجاهل تغيير واحد غير محفوظ؟} two {تجاهل تغييرين غير محفوظين؟} few {تجاهل {amount} تغييرات غير محفوظة؟} many {تجاهل {amount} تغييرًا غير محفوظ؟} other {تجاهل {amount} تغيير غير محفوظ؟}}",
+    "body": "يعود كل صف إلى مستواه المحفوظ.",
+    "keep": "متابعة التعديل",
+    "discard": "تجاهل التغييرات"
+  },
+  "leave": {
+    "title": "{count, plural, zero {لديك {amount} تغيير غير محفوظ} one {لديك تغيير واحد غير محفوظ} two {لديك تغييران غير محفوظين} few {لديك {amount} تغييرات غير محفوظة} many {لديك {amount} تغييرًا غير محفوظ} other {لديك {amount} تغيير غير محفوظ}}",
+    "body": "احفظها قبل المغادرة، أو تجاهلها.",
+    "save": "حفظ ومغادرة",
+    "discard": "تجاهل ومغادرة",
+    "keep": "متابعة التعديل"
+  },
+  "toolbar": {
+    "label": "إجراءات جماعية",
+    "selectAll": "تحديد كل {count}",
+    "selected": "{count, plural, zero {{amount} صف محدد} one {صف واحد محدد} two {صفان محددان} few {{amount} صفوف محددة} many {{amount} صفًا محددًا} other {{amount} صف محدد}}",
+    "clearSelection": "مسح التحديد",
+    "scopeAll": "يعمل على كل {count} صفوف في {category}",
+    "scopeSelected": "{count, plural, zero {يعمل على {amount} صف محدد} one {يعمل على صف واحد محدد} two {يعمل على صفين محددين} few {يعمل على {amount} صفوف محددة} many {يعمل على {amount} صفًا محددًا} other {يعمل على {amount} صف محدد}}",
+    "max": "أقصى الكل",
+    "maxSelected": "أقصى المحدد",
+    "reset": "إعادة ضبط الكل",
+    "resetSelected": "إعادة ضبط المحدد",
+    "setLevel": "ضبط المستوى",
+    "levelLabel": "المستوى للصفوف المحددة",
+    "applyLevel": "{count, plural, zero {تطبيق على {amount} صف} one {تطبيق على صف واحد} two {تطبيق على صفين} few {تطبيق على {amount} صفوف} many {تطبيق على {amount} صفًا} other {تطبيق على {amount} صف}}",
+    "hallLabel": "ضبط على الأقصى لمستوى القاعة",
+    "hallCurrent": "{hall} {level} (الحالية)",
+    "hallOption": "{hall} {level}",
+    "hallPlaceholder": "اختر {hall}"
+  },
+  "confirm": {
+    "title": "{count, plural, zero {خفض {amount} صف؟} one {خفض صف واحد؟} two {خفض صفين؟} few {خفض {amount} صفوف؟} many {خفض {amount} صفًا؟} other {خفض {amount} صف؟}}",
+    "body": "هذا يغيّر المسودة. لا يُحفظ شيء حتى تضغط على حفظ التغييرات.",
+    "superchargeNote": "المبنى الذي ينزل عن أعلى مستوى له يفقد أيضًا مستوى الشحن الفائق.",
+    "apply": "تطبيق على المسودة",
+    "cancel": "إلغاء",
+    "line": "{name}: {from} إلى {to}",
+    "more": "و{count} أخرى"
+  },
+  "rows": {
+    "notBuilt": "غير مبني",
+    "toMax": "{count} للوصول إلى الأقصى",
+    "atMax": "في الأقصى",
+    "changed": "تغيّر من {from} إلى {to}",
+    "level": "مستوى {name}",
+    "raise": "رفع {name}",
+    "lower": "خفض {name}",
+    "max": "أقصى",
+    "select": "تحديد {name}",
+    "selectGroup": "تحديد كل {name}",
+    "supercharge": "الشحن الفائق",
+    "reachFirst": "بلغ المستوى {level} أولًا",
+    "slider": "شريط تمرير {name}",
+    "groupBuilt": "{count} مبنية، أقصى مستوى {max}",
+    "expand": "عرض {name}",
+    "collapse": "إخفاء {name}"
+  },
+  "category": {
+    "atMax": "{done} من {total} في الأقصى لـ {hall} {level}",
+    "rowsAtMax": "{done} من {total} في الأقصى",
+    "empty": "لا شيء للتعديل في هذه الفئة بعد.",
+    "locked": "يتطلب {requirement}",
+    "lockedSuffix": " (مقفل)",
+    "nav": "الفئات"
+  },
+  "walls": {
+    "total": "الإجمالي",
+    "allocated": "الموزّع",
+    "remaining": "المتبقي",
+    "maxAll": "أقصى الكل",
+    "resetAll": "إعادة ضبط الكل",
+    "maxAllHelp": "ينقل كل جدار متبقٍ إلى أعلى مستوى",
+    "level": "جدران المستوى {level}"
+  },
+  "builder": {
+    "profile": "ملف قاعدة البنّاء",
+    "hall": "مستوى قاعة البنّاء",
+    "hallHelp": "قاعة البنّاء {level} تحدد أعلى مستوى لكل صف أدناه. خفضها يسأل أولًا ويخفض الصفوف فوق الحد الجديد فقط.",
+    "none": "لا توجد مبانٍ متاحة عند مستوى قاعة البنّاء هذا",
+    "raise": "رفع قاعة البنّاء",
+    "lower": "خفض قاعة البنّاء",
+    "trophies": "الكؤوس",
+    "bestTrophies": "أفضل الكؤوس",
+    "league": "الدوري",
+    "hallConfirmTitle": "خفض قاعة البنّاء إلى {level}؟"
+  },
+  "hallNames": {
+    "home": "قاعة المدينة",
+    "builder": "قاعة البنّاء",
+    "district": "قاعة الحي",
+    "capital": "قاعة العاصمة"
+  },
+  "capital": {
+    "profile": "ملف عاصمة العشيرة",
+    "hall": "قاعة العاصمة",
+    "none": "لا شيء",
+    "level": "قاعة العاصمة {level}",
+    "contributions": "مساهمات عاصمة العشيرة",
+    "unit": "ذهب العاصمة",
+    "districtHall": "قاعة الحي",
+    "districtNone": "لا شيء",
+    "districtLevel": "قاعة الحي {level}",
+    "requiresCapitalHall": "يتطلب قاعة العاصمة {level}",
+    "unlockHint": "حدد {label} أعلاه لفتح المباني.",
+    "parts": "الأقسام",
+    "off": "تتبع عاصمة العشيرة متوقف",
+    "offBody": "أعد تفعيل التتبع من صفحات عاصمة العشيرة. لم يُحذف شيء.",
+    "offAction": "فتح عاصمة العشيرة"
+  },
+  "empty": {
+    "title": "لا توجد قرية نشطة",
+    "description": "اختر قرية أو أنشئ واحدة لاستخدام التعديل الجماعي."
+  }
+}

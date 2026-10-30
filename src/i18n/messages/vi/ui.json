@@ -1,0 +1,42 @@
+{
+  "close": "Đóng",
+  "field": {
+    "optional": "Tùy chọn"
+  },
+  "stepper": {
+    "lower": "Giảm {label}",
+    "raise": "Tăng {label}",
+    "labelPrefix": "{label}, "
+  },
+  "switch": {
+    "on": "Bật",
+    "off": "Tắt"
+  },
+  "tabs": {
+    "locked": " (đã khóa)"
+  },
+  "toast": {
+    "dismiss": "Bỏ qua",
+    "variants": {
+      "success": "Thành công",
+      "info": "Thông tin",
+      "warning": "Cảnh báo",
+      "error": "Lỗi"
+    },
+    "missingProvider": "useToast must be used within a ToastProvider"
+  },
+  "filters": {
+    "filters": "Bộ lọc",
+    "activeCount": "{count} đang bật",
+    "clearFilters": "Xóa bộ lọc",
+    "reset": "Đặt lại",
+    "description": "Thay đổi có hiệu lực ngay. Bộ lọc không được lưu."
+  },
+  "savedChip": {
+    "automatic": "Tự động lưu",
+    "justNow": "Vừa lưu xong",
+    "minutesAgo": "Đã lưu {count} phút trước",
+    "at": "Đã lưu {time}",
+    "failed": "Chưa lưu, bộ nhớ đã đầy"
+  }
+}

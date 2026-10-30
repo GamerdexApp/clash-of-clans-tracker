@@ -1,0 +1,49 @@
+{
+  "title": "Başarımlar",
+  "description": "Her başarımın yıldızlarını, değerlerini ve ödüllerini takip et.",
+  "subline": "{name}, {count} başarım, {maxStars} yıldızdan {stars}, %{percent}",
+  "tiles": {
+    "all": "Tüm başarımlar",
+    "home": "Ana Köy",
+    "builder": "İnşaatçı Üssü",
+    "capital": "Klan Başkenti",
+    "gems": "Kazanılan elmas",
+    "xp": "Kazanılan XP",
+    "stars": "{maxStars} yıldızdan {stars}",
+    "left": "Kazanılacak {amount} {unit} kaldı",
+    "gemsUnit": "elmas",
+    "xpUnit": "XP"
+  },
+  "sections": {
+    "home": "Ana Köy",
+    "builderBase": "İnşaatçı Üssü",
+    "clanCapital": "Klan Başkenti",
+    "summary": "{count} başarım, {stars} / {maxStars} yıldız, {gems} elmas, {xp} XP",
+    "more": "{count} {name} başarımı daha göster",
+    "less": "Daha az göster"
+  },
+  "card": {
+    "manual": "Elle",
+    "nextStar": "Sonraki yıldız",
+    "xp": "XP",
+    "gems": "elmas",
+    "edit": "{name} düzenle",
+    "done": "Bitti",
+    "stars": "Yıldız",
+    "starsHelp": "Bir yıldızı kaldırmak için aynı yıldıza tekrar bas.",
+    "star": "{amount} {number, plural, one {yıldız} other {yıldız}}",
+    "value": "Değer",
+    "target": "Hedef",
+    "manualLabel": "Elle (API değerini atla)",
+    "saves": "Değişiklikler yazdıkça kaydedilir. Yıldızı artırmak Hedefi sonraki kademeye taşır.",
+    "progress": "{name} ilerlemesi",
+    "starsEarned": "3 yıldızdan {stars}"
+  },
+  "toast": {
+    "stars": "{name} {amount} {stars, plural, one {yıldız} other {yıldız}} oldu",
+    "targetMoved": "Hedef {target} değerine taşındı.",
+    "value": "{name} değeri {value} oldu",
+    "target": "{name} hedefi {target} oldu",
+    "undo": "Geri al"
+  }
+}

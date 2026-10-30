@@ -1,0 +1,119 @@
+{
+  "title": "Мои деревни",
+  "subline": "{amount} {count, plural, one {деревня} few {деревни} many {деревень} other {деревни}}",
+  "sublineActive": "{amount} {count, plural, one {деревня} few {деревни} many {деревень} other {деревни}}, активна: {name}",
+  "newVillage": "Новая деревня",
+  "empty": {
+    "title": "Деревень пока нет",
+    "deletedTitle": "Деревень не осталось",
+    "description": "Создайте деревню, чтобы отслеживать улучшения, исследования и достижения.",
+    "restore": "Восстановить из резервной копии"
+  },
+  "filters": {
+    "search": "Поиск деревень",
+    "sortLabel": "Сортировка",
+    "sort": {
+      "lastModified": "По изменению",
+      "createdAt": "По дате создания",
+      "name": "По имени"
+    },
+    "showing": "Показано {shown} из {total}",
+    "clear": "Очистить поиск"
+  },
+  "noMatch": {
+    "title": "Нет деревень по запросу «{query}»",
+    "description": "Проверьте написание или очистите поиск."
+  },
+  "card": {
+    "active": "Активна",
+    "openOverview": "Открыть обзор",
+    "setActive": "Сделать активной",
+    "edit": "Изменить",
+    "delete": "Удалить",
+    "halls": "{builderHall, plural, =0 {Ратуша {townHall}} other {Ратуша {townHall}, Зал строителя {builderHall}}}",
+    "daysAtTownHall": "Дней на Ратуше",
+    "daysAtBuilderHall": "Дней на Зале строителя",
+    "notSet": "Не задан",
+    "clanCapital": "Столица клана",
+    "clanCapitalStates": {
+      "on": "Вкл.",
+      "off": "Выкл.",
+      "locked": "Закрыто"
+    },
+    "created": "Создана {date}",
+    "lastModified": "Изменена {date}",
+    "switched": "{name} теперь активна"
+  },
+  "fields": {
+    "name": "Имя деревни",
+    "namePlaceholder": "Мой основной аккаунт",
+    "nameRequired": "Введите имя деревни.",
+    "description": "Описание",
+    "descriptionPlaceholder": "Добавьте описание этой деревни",
+    "townHallLevel": "Уровень Ратуши",
+    "builderHallLevel": "Уровень Зала строителя",
+    "builderHallHelp": "База строителя открывается на Ратуше 6.",
+    "townHallUpgraded": "Ратуша улучшена",
+    "builderHallUpgraded": "Зал строителя улучшен",
+    "level": "Уровень {level}",
+    "trackCapital": "Отслеживать столицу клана",
+    "trackCapitalHelp": "Если выключить, страницы столицы клана скроются, а данные сохранятся.",
+    "trackCapitalLocked": "Нужна Ратуша 3",
+    "cancel": "Отмена"
+  },
+  "create": {
+    "title": "Новая деревня",
+    "submit": "Создать деревню",
+    "modeLabel": "Как начать",
+    "modes": {
+      "fresh": "С нуля",
+      "import": "Импорт"
+    },
+    "modeNotes": {
+      "fresh": "Начать с пустыми данными.",
+      "import": "Считать тег игрока, при желании с файлом зданий."
+    },
+    "makeActive": "Сделать эту деревню активной",
+    "done": "{name} создана",
+    "importNeedsLookup": "Сначала получите данные по тегу игрока."
+  },
+  "lookup": {
+    "step1": "Шаг 1: получить данные игрока",
+    "step2": "Шаг 2: данные о зданиях (необязательно)",
+    "tagLabel": "Тег игрока",
+    "tagPlaceholder": "#PPV2YV9R",
+    "fetch": "Получить",
+    "refresh": "Обновить",
+    "wait": "Подождите {seconds} с",
+    "serverNote": "Поиск отправляет тег на сервер Gamerdex, а он запрашивает API Supercell. Больше ничего не покидает ваш браузер.",
+    "unavailable": "Поиск игрока сейчас недоступен. Повторите позже.",
+    "found": "{name}, Ратуша {townHall}{builderHall, plural, =0 {} other {, Зал строителя {builderHall}}}. Прочитано достижений: {achievements}, войск: {troops}.",
+    "buildingHelp": "В API игрока нет уровней зданий. Выберите резервную копию деревни из настроек или файл exportData.json из игры.",
+    "buildingLabel": "Файл с данными о зданиях",
+    "buildingLoaded": "Данные о зданиях загружены из {name}.",
+    "buildingInvalid": "Этот файл не содержит данных о зданиях. Используйте резервную копию деревни из настроек или exportData.json из игры.",
+    "buildingNotJson": "Файл не является корректным JSON."
+  },
+  "edit": {
+    "title": "Изменить деревню",
+    "submit": "Сохранить",
+    "refreshTitle": "Обновить по тегу игрока",
+    "updatedTitle": "Обновлено",
+    "untouchedTitle": "Не затронуто",
+    "dateSet": "Дата улучшения установлена на сегодня. Её можно изменить.",
+    "done": "{name} сохранена"
+  },
+  "delete": {
+    "title": "Удалить деревню",
+    "description": "Деревня будет удалена из этого браузера.",
+    "question": "Удалить {name}? Её улучшения, исследования, достижения и ежедневное будут удалены.",
+    "activeNext": "{next} станет активной деревней.",
+    "activeLast": "Активной деревни не будет.",
+    "exportFirst": "Сначала сделайте резервную копию",
+    "cancel": "Отмена",
+    "confirm": "Удалить деревню",
+    "done": "{name} удалена",
+    "doneMessage": "Это можно отменить в течение десяти секунд.",
+    "undo": "Отменить"
+  }
+}

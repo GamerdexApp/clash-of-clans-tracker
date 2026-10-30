@@ -1,0 +1,139 @@
+{
+  "districts": {
+    "title": "Distrik",
+    "subline": "{hall, plural, =0 {{name}, Balai Ibu Kota belum diatur} other {{name}, Balai Ibu Kota {hall}}}",
+    "description": "Distrik dan zona Ibu Kota Klanmu."
+  },
+  "troops": {
+    "title": "Pasukan dan mantra",
+    "subline": "{name}, pasukan dan mantra Ibu Kota Klan",
+    "tiles": {
+      "troops": "Pasukan",
+      "spells": "Mantra",
+      "caption": "{current} dari {max} level"
+    },
+    "sections": {
+      "troops": "Pasukan",
+      "spells": "Mantra"
+    },
+    "card": {
+      "level": "Level {name}",
+      "raise": "Naikkan {name}",
+      "lower": "Turunkan {name}",
+      "maxAt": "Level maks {level} sekarang",
+      "from": "Dari {zone}",
+      "progress": "Progres {name}"
+    },
+    "locked": {
+      "title": "Belum tersedia",
+      "districtHall": "Butuh Balai Distrik {level} di {zone}",
+      "capitalHall": "Butuh Balai Ibu Kota {level} untuk membuka {zone}",
+      "kept": "Level tersimpan {level} tetap ada"
+    },
+    "empty": {
+      "title": "Semuanya sudah maksimal",
+      "description": "Matikan Sembunyikan Maks untuk melihat semua pasukan dan mantra."
+    }
+  },
+  "tracking": {
+    "label": "Lacak Ibu Kota Klan",
+    "onHelp": "Mematikannya tetap menyimpan semua data.",
+    "turnOnTitle": "Pelacakan Ibu Kota Klan aktif",
+    "turnedOn": "Pelacakan Ibu Kota Klan aktif.",
+    "undo": "Urungkan",
+    "offDialog": {
+      "title": "Matikan pelacakan Ibu Kota Klan?",
+      "body": "Halaman Ibu Kota Klan, kartu Ikhtisar, dan tab Edit massal disembunyikan. Tidak ada yang dihapus.",
+      "confirm": "Matikan",
+      "cancel": "Batal"
+    }
+  },
+  "off": {
+    "title": "Pelacakan Ibu Kota Klan mati",
+    "description": "Distrik, pasukan, dan mantramu tetap tersimpan. Nyalakan pelacakan untuk melihatnya lagi.",
+    "turnOn": "Nyalakan pelacakan",
+    "keptTitle": "Yang tetap tersimpan",
+    "kept": "Semua data Ibu Kota Klan tetap ada di desa ini."
+  },
+  "locked": {
+    "title": "Ibu Kota Klan terkunci",
+    "description": "Ibu Kota Klan terbuka di Balai Kota 3. Desa ini ada di Balai Kota {townHall}. Data yang sudah tersimpan muncul lagi di Balai Kota 3.",
+    "action": "Ubah Balai Kota di Desa"
+  },
+  "notSet": {
+    "title": "Ibu Kota Klan belum disiapkan",
+    "description": "Atur level Balai Ibu Kota untuk mulai melacak distrik, pasukan, dan mantra.",
+    "action": "Atur level Balai Ibu Kota"
+  },
+  "hall": {
+    "label": "Balai Ibu Kota",
+    "none": "Tidak ada",
+    "level": "Level {level}",
+    "nextCost": "Balai Ibu Kota {level} berbiaya {cost} Emas Ibu Kota{hasOpens, select, true { dan membuka {opens}} other {}}. Menaikkan balai tidak pernah mereset level.",
+    "atTop": "Balai Ibu Kota sudah di level tertinggi.",
+    "raised": "Balai Ibu Kota naik dari {from} ke {to}. Tidak ada level yang direset.",
+    "changed": "Balai Ibu Kota diubah dari {from} ke {to}.",
+    "districtRaised": "Balai Distrik {zone} naik dari {from} ke {to}.",
+    "districtChanged": "Balai Distrik {zone} diubah dari {from} ke {to}."
+  },
+  "contributions": {
+    "label": "Kontribusi",
+    "unit": "Emas Ibu Kota",
+    "help": "Total yang kamu berikan ke klan. Impor Player Tag mengisinya, kamu juga bisa mengetiknya."
+  },
+  "tiles": {
+    "progress": "Progres Ibu Kota",
+    "progressCaption": "{current} dari {max} level",
+    "zones": "Zona terbuka",
+    "zonesCaption": "{open} dari {total}"
+  },
+  "zones": {
+    "title": "Zona",
+    "help": "Pilih zona untuk mengubahnya di bawah",
+    "hall": "{level, plural, =0 {Tanpa Balai Distrik} other {Balai Distrik {level}}}",
+    "peakHall": "Balai Ibu Kota {level}",
+    "locked": "Terkunci, butuh Balai Ibu Kota {hall}",
+    "levels": "{current} dari {max}"
+  },
+  "panel": {
+    "districtHall": "Balai Distrik",
+    "requires": "Butuh Balai Ibu Kota {hall}",
+    "noHall": "Tanpa Balai Distrik",
+    "empty": "Belum ada yang bisa dibangun di level balai ini.",
+    "groupsLabel": "Kelompok bangunan",
+    "groups": {
+      "defenses": "Pertahanan",
+      "traps": "Jebakan",
+      "army": "Pasukan",
+      "walls": "Tembok"
+    },
+    "max": "Maks",
+    "clear": "Kosongkan",
+    "maxAll": "Maks Semua",
+    "resetAll": "Reset Semua",
+    "instances": "{amount} {count, plural, other {bangunan}}",
+    "maxLevel": "Level maks {level}",
+    "instance": "{name} {index}",
+    "raise": "Naikkan {name}",
+    "lower": "Turunkan {name}",
+    "wallLevel": "Level {level}",
+    "wallsLeft": "{left} dari {total} tembok belum dipasang",
+    "wallsNote": "Jumlah tidak bisa melebihi sisa tembok.",
+    "wallsNone": "Tidak ada tembok di level balai ini.",
+    "wallCount": "Tembok level {level}",
+    "wallRaise": "Tambah satu tembok di level {level}",
+    "wallLower": "Kurangi satu tembok di level {level}",
+    "groupMaxed": "{zone}: {group} diatur ke maks",
+    "groupCleared": "{zone}: {group} dikosongkan"
+  },
+  "confirm": {
+    "title": "Turunkan balai ini?",
+    "description": "Level ini tidak lagi cocok dan akan direset. Sisanya tetap ada.",
+    "confirm": "Turunkan balai",
+    "cancel": "Pertahankan balai",
+    "more": "dan {count} lagi"
+  },
+  "toast": {
+    "undo": "Urungkan"
+  }
+}

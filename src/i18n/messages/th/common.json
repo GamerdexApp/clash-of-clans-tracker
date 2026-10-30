@@ -1,0 +1,32 @@
+{
+  "gate": {
+    "title": "ไม่มีหมู่บ้านที่ใช้งานอยู่",
+    "description": "เลือกหมู่บ้านหรือสร้างใหม่เพื่อดูหน้านี้",
+    "newVillage": "หมู่บ้านใหม่",
+    "chooseVillage": "เลือกหมู่บ้าน"
+  },
+  "townHallTab": {
+    "title": "ทาวน์ฮอลล์",
+    "supercharge": "ซูเปอร์ชาร์จ",
+    "superchargeDone": "ซูเปอร์ชาร์จที่ปลดล็อกในทาวน์ฮอลล์นี้เสร็จแล้ว {current} จาก {max} ขั้น",
+    "superchargeProgress": "ความคืบหน้าซูเปอร์ชาร์จ"
+  },
+  "heroesUnlock": "ฮีโร่ปลดล็อกด้วยฮีโร่ฮอลล์",
+  "progressLabel": "ความคืบหน้า {name}",
+  "countdownLabel": "นับถอยหลัง {name}",
+  "capitalGold": "ทองแคปิตอล",
+  "queue": {
+    "conflict": "ขัดแย้ง",
+    "level": "Lv {level}",
+    "levelSupercharge": "ซูเปอร์ชาร์จ Lv {level}",
+    "now": "ตอนนี้",
+    "itemTitle": "{name} Lv {level}"
+  },
+  "finishDescription": "{name}, Lv {from} ไป {to}, {method}, {time} {unit}",
+  "lookupError": {
+    "rateLimit": "กรุณารอ {seconds} วินาทีก่อนดึงข้อมูลอีกครั้ง",
+    "notFound": "ไม่พบผู้เล่น {tag}",
+    "api": "Supercell API ตอบกลับ {status}",
+    "network": "การค้นหาผู้เล่นเชื่อมต่อเซิร์ฟเวอร์ไม่ได้"
+  }
+}

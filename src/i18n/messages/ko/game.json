@@ -1,0 +1,37 @@
+{
+  "resources": {
+    "gold": "골드",
+    "elixir": "엘릭서",
+    "darkElixir": "다크 엘릭서",
+    "darkElixirShort": "다크",
+    "builderGold": "빌더 골드",
+    "builderGoldShort": "빌더 골드",
+    "builderElixir": "빌더 엘릭서",
+    "builderElixirShort": "빌더 엘릭서",
+    "capitalGold": "캐피탈 골드",
+    "shinyOre": "Shiny Ore",
+    "glowyOre": "Glowy Ore",
+    "starryOre": "Starry Ore"
+  },
+  "halls": {
+    "townHall": "타운홀 {level}",
+    "builderHall": "빌더 홀 {level}",
+    "capitalHall": "캐피탈 홀 {level}",
+    "heroHall": "영웅 홀 {level}",
+    "starLaboratory": "스타 연구소 {level}",
+    "blacksmith": "대장장이"
+  },
+  "places": {
+    "townHall": "타운홀",
+    "townHallWeapon": "타운홀 무기",
+    "builderHall": "빌더 홀",
+    "clockTower": "시계탑",
+    "laboratory": "연구소",
+    "goblinResearcher": "고블린 연구원",
+    "goblinBuilder": "고블린 빌더",
+    "starLaboratory": "스타 연구소",
+    "petHouse": "펫 하우스",
+    "capitalPeak": "Capital Peak",
+    "builder": "빌더 {id}"
+  }
+}

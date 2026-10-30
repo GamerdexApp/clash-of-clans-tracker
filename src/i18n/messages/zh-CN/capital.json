@@ -1,0 +1,139 @@
+{
+  "districts": {
+    "title": "区域",
+    "subline": "{hall, plural, =0 {{name}，未设置首都大厅} other {{name}，{hall}级首都大厅}}",
+    "description": "你的部落首都的区域和地带。"
+  },
+  "troops": {
+    "title": "兵种和法术",
+    "subline": "{name}，部落首都兵种和法术",
+    "tiles": {
+      "troops": "兵种",
+      "spells": "法术",
+      "caption": "{current} / {max} 级"
+    },
+    "sections": {
+      "troops": "兵种",
+      "spells": "法术"
+    },
+    "card": {
+      "level": "{name}等级",
+      "raise": "提高{name}",
+      "lower": "降低{name}",
+      "maxAt": "当前最高 {level} 级",
+      "from": "来自{zone}",
+      "progress": "{name}进度"
+    },
+    "locked": {
+      "title": "暂不可用",
+      "districtHall": "需要{zone}的{level}级区域大厅",
+      "capitalHall": "需要{level}级首都大厅才能开启{zone}",
+      "kept": "已保存的 {level} 级会保留"
+    },
+    "empty": {
+      "title": "全部已满级",
+      "description": "关闭“隐藏已满级”即可查看所有兵种和法术。"
+    }
+  },
+  "tracking": {
+    "label": "追踪部落首都",
+    "onHelp": "关闭后所有数据都会保留。",
+    "turnOnTitle": "部落首都追踪已开启",
+    "turnedOn": "部落首都追踪已开启。",
+    "undo": "撤销",
+    "offDialog": {
+      "title": "关闭部落首都追踪？",
+      "body": "部落首都页面、总览卡片和批量编辑标签页会被隐藏。不会删除任何内容。",
+      "confirm": "关闭",
+      "cancel": "取消"
+    }
+  },
+  "off": {
+    "title": "部落首都追踪已关闭",
+    "description": "你的区域、兵种和法术都已保留。开启追踪即可再次查看。",
+    "turnOn": "开启追踪",
+    "keptTitle": "保留的内容",
+    "kept": "所有部落首都数据都保留在此村庄中。"
+  },
+  "locked": {
+    "title": "部落首都已锁定",
+    "description": "部落首都在3级大本营开启。此村庄为{townHall}级大本营。已保存的内容会在3级大本营时再次显示。",
+    "action": "在村庄中更改大本营等级"
+  },
+  "notSet": {
+    "title": "部落首都尚未设置",
+    "description": "设置首都大厅等级，即可开始追踪区域、兵种和法术。",
+    "action": "设置首都大厅等级"
+  },
+  "hall": {
+    "label": "首都大厅",
+    "none": "无",
+    "level": "{level}级",
+    "nextCost": "{level}级首都大厅需要 {cost} 首都金币{hasOpens, select, true {，并开启{opens}} other {}}。提升大厅不会重置任何等级。",
+    "atTop": "首都大厅已是最高等级。",
+    "raised": "首都大厅已从 {from} 级提升到 {to} 级。没有等级被重置。",
+    "changed": "首都大厅已从 {from} 级改为 {to} 级。",
+    "districtRaised": "{zone}区域大厅已从 {from} 级提升到 {to} 级。",
+    "districtChanged": "{zone}区域大厅已从 {from} 级改为 {to} 级。"
+  },
+  "contributions": {
+    "label": "贡献",
+    "unit": "首都金币",
+    "help": "你给部落的总量。通过玩家标签导入会自动填写，你也可以手动输入。"
+  },
+  "tiles": {
+    "progress": "首都进度",
+    "progressCaption": "{current} / {max} 级",
+    "zones": "已开启地带",
+    "zonesCaption": "{open} / {total}"
+  },
+  "zones": {
+    "title": "地带",
+    "help": "选择一个地带，在下方编辑",
+    "hall": "{level, plural, =0 {无区域大厅} other {{level}级区域大厅}}",
+    "peakHall": "{level}级首都大厅",
+    "locked": "已锁定，需要{hall}级首都大厅",
+    "levels": "{current} / {max}"
+  },
+  "panel": {
+    "districtHall": "区域大厅",
+    "requires": "需要{hall}级首都大厅",
+    "noHall": "无区域大厅",
+    "empty": "此大厅等级下没有可建造的内容。",
+    "groupsLabel": "建筑分组",
+    "groups": {
+      "defenses": "防御",
+      "traps": "陷阱",
+      "army": "军队",
+      "walls": "城墙"
+    },
+    "max": "满级",
+    "clear": "清除",
+    "maxAll": "全部满级",
+    "resetAll": "全部重置",
+    "instances": "{amount} {count, plural, other {座建筑}}",
+    "maxLevel": "最高 {level} 级",
+    "instance": "{name} {index}",
+    "raise": "提高{name}",
+    "lower": "降低{name}",
+    "wallLevel": "{level}级",
+    "wallsLeft": "还有 {left} / {total} 段城墙待放置",
+    "wallsNote": "数量不能超过剩余的城墙数。",
+    "wallsNone": "此大厅等级下没有城墙。",
+    "wallCount": "{level}级城墙数量",
+    "wallRaise": "{level}级城墙加一段",
+    "wallLower": "{level}级城墙减一段",
+    "groupMaxed": "{zone}：{group}已设为满级",
+    "groupCleared": "{zone}：{group}已清除"
+  },
+  "confirm": {
+    "title": "降低此大厅？",
+    "description": "这些等级已不再适用，将被重置。其他内容都会保留。",
+    "confirm": "降低大厅",
+    "cancel": "保持大厅",
+    "more": "以及另外 {count} 项"
+  },
+  "toast": {
+    "undo": "撤销"
+  }
+}

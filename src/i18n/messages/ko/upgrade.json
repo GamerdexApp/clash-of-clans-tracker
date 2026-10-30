@@ -1,0 +1,108 @@
+{
+  "massEdit": {
+    "hint": "레벨은 일괄 편집에서도 설정할 수 있어요.",
+    "link": "일괄 편집 열기"
+  },
+  "hideMax": "최대 숨기기",
+  "strip": {
+    "free": "{total}개 중 {free}개 비어 있음",
+    "idle": "비어 있음",
+    "unassigned": "미지정",
+    "taskLevels": "Lv {from}에서 {to}"
+  },
+  "start": {
+    "title": "업그레이드 시작",
+    "levelChange": "{from, plural, =0 {Lv {to}까지 건설} other {Lv {from}에서 {to}}}",
+    "time": "시간",
+    "cost": "비용",
+    "doneAt": "완료 시각",
+    "wasBoosted": "기존 {base}, 골드 패스 -{percent}%",
+    "wasCost": "{resource}, 기존 {base}",
+    "resource": "{resource}",
+    "storedNote": "이 부스트 적용 시간이 저장돼요",
+    "storedNoteUnboosted": "이 시간이 저장돼요",
+    "instant": "이 건설은 시간이 걸리지 않아요. 즉시 완료되며 빌더를 쓰지 않아요.",
+    "lanes": {
+      "builder": {
+        "label": "빌더",
+        "choose": "시작할 빌더를 고르세요.",
+        "noneFree": "모든 빌더가 작업 중이에요. 먼저 업그레이드를 취소하거나 끝내세요."
+      },
+      "research": {
+        "label": "연구 레인",
+        "choose": "시작할 레인을 고르세요.",
+        "noneFree": "모든 연구 레인이 작업 중이에요. 먼저 연구를 취소하거나 끝내세요."
+      },
+      "bbBuilder": {
+        "label": "빌더",
+        "choose": "시작할 빌더를 고르세요.",
+        "noneFree": "두 빌더 모두 작업 중이에요. 먼저 업그레이드를 취소하거나 끝내세요."
+      },
+      "bbResearch": {
+        "label": "스타 연구소",
+        "choose": "시작할 스타 연구소를 고르세요.",
+        "noneFree": "스타 연구소가 작업 중이에요. 먼저 연구를 취소하거나 끝내세요."
+      },
+      "pet": {
+        "label": "펫 하우스",
+        "choose": "시작할 펫 하우스를 고르세요.",
+        "noneFree": "펫 하우스가 작업 중이에요. 먼저 펫 업그레이드를 취소하거나 끝내세요."
+      }
+    },
+    "requires": {
+      "laboratory": "연구소 {level} 필요",
+      "pet-house": "펫 하우스 {level} 필요",
+      "star-laboratory": "스타 연구소 {level} 필요",
+      "noPetHouse": "먼저 펫 하우스를 지으세요"
+    },
+    "free": "무료",
+    "cancel": "취소",
+    "confirm": "업그레이드 시작",
+    "confirmInstant": "지금 건설"
+  },
+  "finish": {
+    "title": "일찍 완료",
+    "left": "남음",
+    "methodLabel": "어떻게 끝났나요?",
+    "methods": {
+      "timePassed": {
+        "label": "시간 경과",
+        "description": "게임에서 타이머가 이미 끝났어요. 소모되는 것은 없어요."
+      },
+      "gems": {
+        "label": "보석",
+        "description": "게임에서 보석을 내고 지금 완료해요. 남은 시간이 줄수록 비용도 줄어요."
+      },
+      "book": {
+        "label": "건설의 책",
+        "description": "진행 중인 건물 업그레이드를 즉시 완료해요."
+      },
+      "hammer": {
+        "label": "건설의 망치",
+        "description": "건물을 다음 레벨로 즉시 업그레이드해요."
+      }
+    },
+    "stores": "마을에 저장되는 내용",
+    "storesLevel": "레벨 {level}. 타이머를 지워요.",
+    "storesSaved": "{time}을 단축 시간에 더해요.",
+    "storesSavedNone": "단축 시간은 그대로예요.",
+    "gemFigure": "약 보석 {gems}개 (게임 데이터 규칙 기준이며 실제 게임 비용은 다를 수 있어요).",
+    "notTracked": {
+      "timePassed": "",
+      "gems": "사용한 보석은 기록하지 않아요.",
+      "book": "보유한 책은 기록하지 않아요.",
+      "hammer": "보유한 망치는 기록하지 않아요."
+    },
+    "keep": "계속 업그레이드",
+    "confirm": "업그레이드 완료"
+  },
+  "cancel": {
+    "title": "이 업그레이드를 취소할까요?",
+    "body": "취소하면 타이머가 멈춰요. {name}은 Lv {level}로 남고 {builder}은 다시 비어요.",
+    "refundTitle": "게임 내 환급: 50%",
+    "refundBody": "Clash of Clans에서 취소하면 낸 {paid} 중 {resource} {refund}을 돌려받아요. 이 앱은 자원을 기록하지 않으니 취소한 뒤 저장소를 확인하세요.",
+    "undoNote": "취소한 뒤 10초 동안 실행 취소할 수 있어요. 그 이후에는 업그레이드를 다시 시작하세요.",
+    "keep": "계속 업그레이드",
+    "confirm": "업그레이드 취소"
+  }
+}

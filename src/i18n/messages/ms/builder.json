@@ -1,0 +1,51 @@
+{
+  "title": "Pembina",
+  "subline": "{name}, Dewan Bandar {townHall}",
+  "tabsLabel": "Bahagian Pembina",
+  "tabs": {
+    "defenses": "Pertahanan",
+    "army": "Tentera",
+    "resources": "Sumber",
+    "crafted": "Pertahanan Buatan",
+    "traps": "Perangkap",
+    "heroes": "Wira",
+    "guardians": "Penjaga",
+    "townHall": "Dewan Bandar"
+  },
+  "builders": {
+    "title": "Pembina",
+    "boostLabel": "Rangsangan pembina Gold Pass",
+    "boostValue": "{percent, plural, =0 {Tiada} other {-{percent}% masa dan kos}}",
+    "openQueue": "Buka giliran dan garis masa",
+    "unassignedHelp": "Sesetengah naik taraf disimpan pada pembina yang belum dibina, atau pada pembina yang sudah digunakan naik taraf lain. Siapkan atau batalkannya.",
+    "noBuilders": "Kampung ini belum mempunyai pembina. Bina Pondok Pembina pertama dari tab Pertahanan. Ia percuma dan serta-merta."
+  },
+  "gate": {
+    "requires": "Memerlukan Dewan Bandar {townHall}",
+    "where": "Kampung ini berada pada Dewan Bandar {townHall}. Capai Dewan Bandar {required} untuk membuka tab ini.",
+    "fix": "Pergi ke tab Dewan Bandar"
+  },
+  "empty": {
+    "title": "Belum ada apa-apa di sini",
+    "description": "Tiada bangunan jenis ini pada tahap Dewan Bandar ini.",
+    "allMax": "Setiap bangunan di sini sudah pada tahap maksimum. Matikan Sembunyi Maks untuk melihatnya."
+  },
+  "card": {
+    "maxAtHall": "Maks Thp {level} pada Dewan Bandar ini",
+    "maxAtBuilderHall": "Maks Thp {level} pada Dewan Pembina ini",
+    "progress": "Kemajuan {name}",
+    "notBuilt": "Belum dibina",
+    "level": "Thp {level} daripada {max}",
+    "build": "Bina",
+    "upgradeTo": "Naik taraf ke Thp {level}",
+    "superchargeTo": "Supercharge ke peringkat {tier}",
+    "maxed": "Maks",
+    "running": "Menaik taraf ke Thp {to}",
+    "finish": "Siapkan",
+    "cancel": "Batal",
+    "showAll": "Tunjuk semua {count}",
+    "showFewer": "Tunjuk lebih sedikit",
+    "instance": "#{number}",
+    "supercharge": "Supercharge {tier} daripada {tiers}"
+  }
+}

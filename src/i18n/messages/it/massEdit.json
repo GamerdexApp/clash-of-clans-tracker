@@ -1,0 +1,138 @@
+{
+  "title": "Modifica di massa",
+  "description": "Cambia molti livelli in una volta. Nulla viene salvato finché non premi Salva modifiche.",
+  "subline": "{name}, Municipio {townHall}, modifiche in sospeso",
+  "scopes": {
+    "home": "Villaggio Principale",
+    "builder": "Base del Costruttore",
+    "capital": "Capitale del Clan"
+  },
+  "scopeNav": "Ambito",
+  "requires": "Richiede {requirement}",
+  "trackingOff": "Tracciamento spento",
+  "changedCount": "{count, plural, one {1 modifica} other {{amount} modifiche}}",
+  "chip": "Modifiche non salvate",
+  "bar": {
+    "unsaved": "{count, plural, one {1 modifica non salvata} other {{amount} modifiche non salvate}}",
+    "none": "Nessuna modifica non salvata",
+    "discard": "Scarta",
+    "save": "Salva modifiche"
+  },
+  "saved": "{count, plural, one {1 modifica salvata} other {{amount} modifiche salvate}}",
+  "undo": "Annulla",
+  "discardDialog": {
+    "title": "{count, plural, one {Scartare 1 modifica non salvata?} other {Scartare {amount} modifiche non salvate?}}",
+    "body": "Ogni riga torna al livello salvato.",
+    "keep": "Continua a modificare",
+    "discard": "Scarta modifiche"
+  },
+  "leave": {
+    "title": "{count, plural, one {Hai 1 modifica non salvata} other {Hai {amount} modifiche non salvate}}",
+    "body": "Salvale prima di uscire, oppure scartale.",
+    "save": "Salva ed esci",
+    "discard": "Scarta ed esci",
+    "keep": "Continua a modificare"
+  },
+  "toolbar": {
+    "label": "Azioni di gruppo",
+    "selectAll": "Seleziona tutte ({count})",
+    "selected": "{count, plural, one {1 riga selezionata} other {{amount} righe selezionate}}",
+    "clearSelection": "Deseleziona",
+    "scopeAll": "Agisce su tutte le {count} righe in {category}",
+    "scopeSelected": "{count, plural, one {Agisce su 1 riga selezionata} other {Agisce su {amount} righe selezionate}}",
+    "max": "Max tutto",
+    "maxSelected": "Max selezionate",
+    "reset": "Reimposta tutto",
+    "resetSelected": "Reimposta selezionate",
+    "setLevel": "Imposta livello",
+    "levelLabel": "Livello per le righe selezionate",
+    "applyLevel": "{count, plural, one {Applica a 1 riga} other {Applica a {amount} righe}}",
+    "hallLabel": "Imposta al massimo per il livello della sala",
+    "hallCurrent": "{hall} {level} (attuale)",
+    "hallOption": "{hall} {level}",
+    "hallPlaceholder": "Scegli: {hall}"
+  },
+  "confirm": {
+    "title": "{count, plural, one {Abbassare 1 riga?} other {Abbassare {amount} righe?}}",
+    "body": "Questo cambia la bozza. Nulla viene salvato finché non premi Salva modifiche.",
+    "superchargeNote": "Un edificio che scende sotto il livello massimo perde anche il suo livello di supercarica.",
+    "apply": "Applica alla bozza",
+    "cancel": "Annulla",
+    "line": "{name}: da {from} a {to}",
+    "more": "e altre {count}"
+  },
+  "rows": {
+    "notBuilt": "Non costruito",
+    "toMax": "{count} al massimo",
+    "atMax": "Al massimo",
+    "changed": "Cambiato da {from} a {to}",
+    "level": "Livello di {name}",
+    "raise": "Aumenta {name}",
+    "lower": "Diminuisci {name}",
+    "max": "Max",
+    "select": "Seleziona {name}",
+    "selectGroup": "Seleziona ogni {name}",
+    "supercharge": "Supercarica",
+    "reachFirst": "Raggiungi prima il livello {level}",
+    "slider": "Cursore di {name}",
+    "groupBuilt": "{count} costruiti, livello massimo {max}",
+    "expand": "Mostra {name}",
+    "collapse": "Nascondi {name}"
+  },
+  "category": {
+    "atMax": "{done} di {total} al massimo per {hall} {level}",
+    "rowsAtMax": "{done} di {total} al massimo",
+    "empty": "Ancora niente da modificare in questa categoria.",
+    "locked": "Richiede {requirement}",
+    "lockedSuffix": " (bloccato)",
+    "nav": "Categorie"
+  },
+  "walls": {
+    "total": "Totale",
+    "allocated": "Assegnate",
+    "remaining": "Rimanenti",
+    "maxAll": "Max tutto",
+    "resetAll": "Reimposta tutto",
+    "maxAllHelp": "Sposta ogni muro rimanente al livello più alto",
+    "level": "Mura di livello {level}"
+  },
+  "builder": {
+    "profile": "Profilo Base del Costruttore",
+    "hall": "Livello Sala del Costruttore",
+    "hallHelp": "La Sala del Costruttore {level} imposta il livello più alto di ogni riga qui sotto. Abbassarla chiede conferma e abbassa solo le righe sopra il nuovo limite.",
+    "none": "Nessun edificio disponibile a questo livello di Sala del Costruttore",
+    "raise": "Aumenta Sala del Costruttore",
+    "lower": "Diminuisci Sala del Costruttore",
+    "trophies": "Trofei",
+    "bestTrophies": "Trofei migliori",
+    "league": "Lega",
+    "hallConfirmTitle": "Abbassare la Sala del Costruttore a {level}?"
+  },
+  "hallNames": {
+    "home": "Municipio",
+    "builder": "Sala del Costruttore",
+    "district": "Sala del Distretto",
+    "capital": "Sala della Capitale"
+  },
+  "capital": {
+    "profile": "Profilo Capitale del Clan",
+    "hall": "Sala della Capitale",
+    "none": "Nessuna",
+    "level": "Sala della Capitale {level}",
+    "contributions": "Contributi alla Capitale del Clan",
+    "unit": "Oro Capitale",
+    "districtHall": "Sala del Distretto",
+    "districtNone": "Nessuna",
+    "districtLevel": "Sala del Distretto {level}",
+    "requiresCapitalHall": "Richiede la Sala della Capitale {level}",
+    "unlockHint": "Imposta {label} qui sopra per sbloccare gli edifici.",
+    "parts": "Sezioni",
+    "off": "Il tracciamento della Capitale del Clan è spento",
+    "offBody": "Riattiva il tracciamento dalle pagine della Capitale del Clan. Nulla è stato eliminato.",
+    "offAction": "Apri Capitale del Clan"
+  },
+  "empty": {
+    "title": "Nessun villaggio attivo",
+    "description": "Scegli un villaggio o creane uno per usare Modifica di massa."
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "skipToContent": "Zum Inhalt springen",
+  "closeMenu": "Menü schließen",
+  "openMenu": "Menü öffnen",
+  "menuLabel": "Seitenmenü",
+  "mainNav": "Hauptmenü",
+  "brandTitle": "Clash of Clans",
+  "brandSubtitle": "Tracker",
+  "switcher": {
+    "sectionLabel": "Dorf",
+    "loading": "Lädt",
+    "none": "Kein Dorf",
+    "noneDetail": "Erstelle eins, um zu starten",
+    "switch": "Dorf wechseln",
+    "villages": "Dörfer",
+    "active": "Aktiv",
+    "all": "Alle Dörfer",
+    "create": "Neues Dorf",
+    "halls": "{builderHall, plural, =0 {RH {townHall}} other {RH {townHall} · BH {builderHall}}}"
+  },
+  "locked": {
+    "townHall": "Rathaus {level}",
+    "blacksmith": "Schmied",
+    "helperHut": "Helferhütte",
+    "off": "Aus",
+    "srLabel": "Braucht {requirement}"
+  },
+  "footer": {
+    "tagline": "Ein kostenloser Fortschrittstracker für Clash of Clans. Deine Daten bleiben in deinem Browser oder in deinem eigenen Cloud-Speicher, wenn du den Sync einschaltest.",
+    "support": "Support",
+    "about": "Info",
+    "settings": "Einstellungen",
+    "discord": "Discord",
+    "github": "GitHub",
+    "game": "Offizielle Spieleseite",
+    "privacy": "Datenschutz",
+    "terms": "Nutzungsbedingungen",
+    "disclaimerTitle": "Haftungsausschluss",
+    "disclaimer": "Dieses Projekt steht in keiner Verbindung zu Supercell oder Clash of Clans und wird weder von ihnen unterstützt noch gebilligt.",
+    "framework": "Gebaut mit dem Gamerdex-Framework, einer gemeinsamen Basis für kostenlose Spiel-Fortschrittstracker.",
+    "visitGamerdex": "Gamerdex besuchen"
+  },
+  "notFound": {
+    "title": "Diese Seite gibt es nicht",
+    "body": "Der Link ist vielleicht alt oder falsch getippt. Deine Dörfer sind sicher und nichts wurde geändert.",
+    "toOverview": "Zur Übersicht",
+    "toVillages": "Zu Dörfer",
+    "toHome": "Zurück zur Startseite",
+    "didYouMean": "Meintest du",
+    "noVillage": "Kein Dorf ist gewählt, daher hat die Übersicht nichts zu zeigen. Wähle eins auf der Seite Dörfer.",
+    "jumpTo": "Oder springe zu"
+  },
+  "error": {
+    "title": "Etwas ist schiefgelaufen",
+    "body": "Die App ist auf einen Fehler gestoßen. Deine gespeicherten Daten wurden nicht geändert.",
+    "digest": "Digest {digest}",
+    "tryAgain": "Erneut versuchen",
+    "download": "Rohdaten herunterladen",
+    "clear": "Daten löschen und neu starten",
+    "confirmTitle": "Alle gespeicherten Daten löschen?",
+    "confirmBody": "Das entfernt alles, was die App in diesem Browser gespeichert hat. Vorher wird eine Kopie der Rohdaten heruntergeladen, damit sie später repariert werden können. Mit einem Cloud-Konto synchronisierte Dörfer bleiben dort erhalten.",
+    "cancel": "Abbrechen",
+    "confirm": "Herunterladen und löschen",
+    "noData": "In diesem Browser sind keine Daten gespeichert."
+  }
+}

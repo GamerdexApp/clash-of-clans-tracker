@@ -1,0 +1,108 @@
+{
+  "massEdit": {
+    "hint": "Tahap juga boleh ditetapkan dalam Sunting pukal.",
+    "link": "Buka Sunting pukal"
+  },
+  "hideMax": "Sembunyi Maks",
+  "strip": {
+    "free": "{free} daripada {total} bebas",
+    "idle": "Bebas",
+    "unassigned": "Tidak ditugaskan",
+    "taskLevels": "Thp {from} ke {to}"
+  },
+  "start": {
+    "title": "Mulakan naik taraf",
+    "levelChange": "{from, plural, =0 {Bina ke Thp {to}} other {Thp {from} ke {to}}}",
+    "time": "Masa",
+    "cost": "Kos",
+    "doneAt": "Siap pada",
+    "wasBoosted": "asalnya {base}, Gold Pass -{percent}%",
+    "wasCost": "{resource}, asalnya {base}",
+    "resource": "{resource}",
+    "storedNote": "masa dirangsang ini disimpan",
+    "storedNoteUnboosted": "masa ini disimpan",
+    "instant": "Pembinaan ini tidak mengambil masa. Ia siap serta-merta dan tidak menggunakan pembina.",
+    "lanes": {
+      "builder": {
+        "label": "Pembina",
+        "choose": "Pilih pembina untuk bermula.",
+        "noneFree": "Setiap pembina sibuk. Batalkan atau siapkan naik taraf dahulu."
+      },
+      "research": {
+        "label": "Lorong kajian",
+        "choose": "Pilih lorong untuk bermula.",
+        "noneFree": "Setiap lorong kajian sibuk. Batalkan atau siapkan kajian dahulu."
+      },
+      "bbBuilder": {
+        "label": "Pembina",
+        "choose": "Pilih pembina untuk bermula.",
+        "noneFree": "Kedua-dua pembina sibuk. Batalkan atau siapkan naik taraf dahulu."
+      },
+      "bbResearch": {
+        "label": "Makmal Bintang",
+        "choose": "Pilih Makmal Bintang untuk bermula.",
+        "noneFree": "Makmal Bintang sibuk. Batalkan atau siapkan kajian dahulu."
+      },
+      "pet": {
+        "label": "Rumah Haiwan",
+        "choose": "Pilih Rumah Haiwan untuk bermula.",
+        "noneFree": "Rumah Haiwan sibuk. Batalkan atau siapkan naik taraf haiwan dahulu."
+      }
+    },
+    "requires": {
+      "laboratory": "Memerlukan Makmal {level}",
+      "pet-house": "Memerlukan Rumah Haiwan {level}",
+      "star-laboratory": "Memerlukan Makmal Bintang {level}",
+      "noPetHouse": "Bina Rumah Haiwan dahulu"
+    },
+    "free": "Percuma",
+    "cancel": "Batal",
+    "confirm": "Mulakan naik taraf",
+    "confirmInstant": "Bina sekarang"
+  },
+  "finish": {
+    "title": "Siapkan awal",
+    "left": "lagi",
+    "methodLabel": "Bagaimana ia siap?",
+    "methods": {
+      "timePassed": {
+        "label": "Masa Berlalu",
+        "description": "Pemasa sudah tamat dalam permainan. Tiada apa-apa dibelanjakan."
+      },
+      "gems": {
+        "label": "Permata",
+        "description": "Bayar permata dalam permainan untuk menyiapkannya sekarang. Kos berkurang apabila masa berkurang."
+      },
+      "book": {
+        "label": "Book of Building",
+        "description": "Menyiapkan naik taraf bangunan yang sedang berjalan dengan serta-merta."
+      },
+      "hammer": {
+        "label": "Hammer of Building",
+        "description": "Menaik taraf bangunan ke tahap seterusnya dengan serta-merta."
+      }
+    },
+    "stores": "Apa yang disimpan kampung",
+    "storesLevel": "Tahap {level}. Pemasa dikosongkan.",
+    "storesSaved": "{time} ditambah pada masa dijimatkan.",
+    "storesSavedNone": "Masa dijimatkan kekal seperti sebelumnya.",
+    "gemFigure": "Kira-kira {gems} permata (peraturan data permainan, kos dalam permainan mungkin berbeza).",
+    "notTracked": {
+      "timePassed": "",
+      "gems": "Permata yang dibelanjakan tidak dijejaki.",
+      "book": "Buku yang dimiliki tidak dijejaki.",
+      "hammer": "Tukul yang dimiliki tidak dijejaki."
+    },
+    "keep": "Teruskan naik taraf",
+    "confirm": "Siapkan naik taraf"
+  },
+  "cancel": {
+    "title": "Batalkan naik taraf ini?",
+    "body": "Membatalkan menghentikan pemasa. {name} kekal pada Thp {level} dan {builder} bebas semula.",
+    "refundTitle": "Bayaran balik dalam permainan: 50%",
+    "refundBody": "Membatalkan dalam Clash of Clans memulangkan {refund} {resource} daripada {paid} yang anda bayar. Aplikasi ini tidak menjejaki sumber anda, jadi semak storan anda selepas membatalkan.",
+    "undoNote": "Anda boleh membuat asal selama 10 saat selepas membatalkan. Selepas itu, mulakan semula naik taraf.",
+    "keep": "Teruskan naik taraf",
+    "confirm": "Batalkan naik taraf"
+  }
+}

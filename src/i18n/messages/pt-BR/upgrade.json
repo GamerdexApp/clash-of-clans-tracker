@@ -1,0 +1,108 @@
+{
+  "massEdit": {
+    "hint": "Os níveis também podem ser definidos na Edição em massa.",
+    "link": "Abrir Edição em massa"
+  },
+  "hideMax": "Ocultar máx.",
+  "strip": {
+    "free": "{free} de {total} livres",
+    "idle": "Livre",
+    "unassigned": "Não atribuída",
+    "taskLevels": "Nv {from} para {to}"
+  },
+  "start": {
+    "title": "Iniciar melhoria",
+    "levelChange": "{from, plural, =0 {Construir até Nv {to}} other {Nv {from} para {to}}}",
+    "time": "Tempo",
+    "cost": "Custo",
+    "doneAt": "Termina em",
+    "wasBoosted": "era {base}, Passe Dourado -{percent}%",
+    "wasCost": "{resource}, era {base}",
+    "resource": "{resource}",
+    "storedNote": "este tempo com bônus é o que fica salvo",
+    "storedNoteUnboosted": "este tempo é o que fica salvo",
+    "instant": "Esta construção não leva tempo. Ela termina na hora e não usa construtor.",
+    "lanes": {
+      "builder": {
+        "label": "Construtor",
+        "choose": "Escolha um construtor para iniciar.",
+        "noneFree": "Todos os construtores estão ocupados. Cancele ou conclua uma melhoria primeiro."
+      },
+      "research": {
+        "label": "Linha de pesquisa",
+        "choose": "Escolha uma linha para iniciar.",
+        "noneFree": "Todas as linhas de pesquisa estão ocupadas. Cancele ou conclua uma pesquisa primeiro."
+      },
+      "bbBuilder": {
+        "label": "Construtor",
+        "choose": "Escolha um construtor para iniciar.",
+        "noneFree": "Os dois construtores estão ocupados. Cancele ou conclua uma melhoria primeiro."
+      },
+      "bbResearch": {
+        "label": "Laboratório Estelar",
+        "choose": "Escolha o Laboratório Estelar para iniciar.",
+        "noneFree": "O Laboratório Estelar está ocupado. Cancele ou conclua a pesquisa primeiro."
+      },
+      "pet": {
+        "label": "Casa de Mascotes",
+        "choose": "Escolha a Casa de Mascotes para iniciar.",
+        "noneFree": "A Casa de Mascotes está ocupada. Cancele ou conclua a melhoria de mascote primeiro."
+      }
+    },
+    "requires": {
+      "laboratory": "Requer Laboratório {level}",
+      "pet-house": "Requer Casa de Mascotes {level}",
+      "star-laboratory": "Requer Laboratório Estelar {level}",
+      "noPetHouse": "Construa primeiro uma Casa de Mascotes"
+    },
+    "free": "Grátis",
+    "cancel": "Cancelar",
+    "confirm": "Iniciar melhoria",
+    "confirmInstant": "Construir agora"
+  },
+  "finish": {
+    "title": "Concluir antes",
+    "left": "restantes",
+    "methodLabel": "Como terminou?",
+    "methods": {
+      "timePassed": {
+        "label": "Tempo passou",
+        "description": "O cronômetro já acabou no jogo. Nada é gasto."
+      },
+      "gems": {
+        "label": "Gemas",
+        "description": "Pague gemas no jogo para concluir agora. O custo cai conforme o tempo diminui."
+      },
+      "book": {
+        "label": "Livro de Construção",
+        "description": "Conclui na hora uma melhoria de construção em andamento."
+      },
+      "hammer": {
+        "label": "Martelo de Construção",
+        "description": "Melhora na hora uma construção para o próximo nível."
+      }
+    },
+    "stores": "O que a vila guarda",
+    "storesLevel": "Nível {level}. O cronômetro é limpo.",
+    "storesSaved": "{time} são somados ao tempo economizado.",
+    "storesSavedNone": "O tempo economizado continua como estava.",
+    "gemFigure": "Cerca de {gems} gemas (regra dos dados do jogo, o custo no jogo pode ser diferente).",
+    "notTracked": {
+      "timePassed": "",
+      "gems": "As gemas gastas não são acompanhadas.",
+      "book": "Os livros que você tem não são acompanhados.",
+      "hammer": "Os martelos que você tem não são acompanhados."
+    },
+    "keep": "Continuar melhorando",
+    "confirm": "Concluir melhoria"
+  },
+  "cancel": {
+    "title": "Cancelar esta melhoria?",
+    "body": "Cancelar interrompe o cronômetro. {name} continua no Nv {level} e {builder} fica livre de novo.",
+    "refundTitle": "Reembolso no jogo: 50%",
+    "refundBody": "Cancelar no Clash of Clans devolve {refund} {resource} dos {paid} que você pagou. Este app não acompanha seus recursos, então confira seus armazéns depois de cancelar.",
+    "undoNote": "Você pode desfazer por 10 segundos depois de cancelar. Depois disso, inicie a melhoria de novo.",
+    "keep": "Continuar melhorando",
+    "confirm": "Cancelar melhoria"
+  }
+}

@@ -1,11 +1,11 @@
 {
-  "name": "Stardew Valley Companion",
-  "short_name": "SV Companion",
-  "description": "A free progress tracker for Stardew Valley",
+  "name": "Clash of Clans Tracker",
+  "short_name": "CoC Tracker",
+  "description": "A free progress tracker for Clash of Clans",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#f5f0e1",
-  "theme_color": "#4a7c31",
+  "background_color": "#faf4e4",
+  "theme_color": "#5a3a1e",
   "icons": [
     {
       "src": "/android-chrome-192x192.png",

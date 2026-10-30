@@ -1,0 +1,87 @@
+{
+  "header": {
+    "label": "Seções da página",
+    "features": "Recursos",
+    "faq": "Perguntas frequentes",
+    "villages": "Vilas",
+    "settings": "Configurações"
+  },
+  "hero": {
+    "title": "Acompanhe seu progresso no Clash of Clans",
+    "description": "Mantenha todas as vilas em um só lugar: construções, tropas, heróis, melhorias e diárias da sua Vila Principal, da Base do Construtor e da Capital do Clã.",
+    "note": "Grátis. Sem conta. Todos os dados ficam no seu navegador.",
+    "screenshotAlt": "A página Visão geral do Clash of Clans Tracker com o progresso da vila, os troféus e as conquistas",
+    "continue": "Continuar com",
+    "continueLine": "{builderHall, plural, =0 {Centro de Vila {townHall}, atualizada {updated}} other {Centro de Vila {townHall}, Salão do Construtor {builderHall}, atualizada {updated}}}"
+  },
+  "cta": {
+    "create": "Crie sua primeira vila",
+    "learnMore": "Saiba mais",
+    "overview": "Ir para a Visão geral",
+    "newVillage": "Nova vila"
+  },
+  "features": {
+    "label": "Tudo o que você precisa",
+    "title": "Todo o seu progresso em um só lugar",
+    "description": "Do Centro de Vila à Capital do Clã, cada nível que você acompanha é salvo no instante em que você o altera.",
+    "items": {
+      "item1": {
+        "title": "Várias vilas",
+        "text": "Crie e gerencie vilas sem limite. Acompanhe contas e bases diferentes separadamente."
+      },
+      "item2": {
+        "title": "Acompanhamento do progresso",
+        "text": "Acompanhe exatamente o que você concluiu, coletou ou liberou em cada vila."
+      },
+      "item3": {
+        "title": "Visão geral",
+        "text": "Veja seu progresso de relance, com estatísticas resumidas, cronômetros diários e indicadores de conclusão."
+      },
+      "item4": {
+        "title": "Backup e sincronização",
+        "text": "Exporte seu progresso como um arquivo JSON, ou sincronize entre dispositivos com o seu próprio armazenamento na nuvem."
+      },
+      "item5": {
+        "title": "Privado",
+        "text": "Seus dados ficam no seu navegador. A única chamada ao servidor é a busca opcional pela tag do jogador, que pede à Supercell as suas estatísticas públicas."
+      },
+      "item6": {
+        "title": "Modo escuro",
+        "text": "Confortável de usar de dia ou de noite. Escolha claro, escuro ou siga o seu dispositivo nas Configurações."
+      }
+    }
+  },
+  "faq": {
+    "label": "Tem dúvidas?",
+    "title": "Perguntas frequentes",
+    "items": {
+      "item1": {
+        "question": "O que é o Clash of Clans Tracker?",
+        "answer": "É um acompanhador de progresso para Clash of Clans. Ele ajuda você a gerenciar várias contas e a acompanhar melhorias, conquistas, diárias e todo o seu progresso em um só lugar."
+      },
+      "item2": {
+        "question": "Como ele guarda os meus dados?",
+        "answer": "Tudo é salvo no seu navegador, então o seu progresso é privado e não precisa de conta. Você pode exportar e importar como um arquivo JSON para backup. A busca opcional pela tag do jogador envia a tag a uma pequena ação de servidor que pede à API da Supercell as suas estatísticas públicas."
+      },
+      "item3": {
+        "question": "Posso acompanhar várias vilas?",
+        "answer": "Sim. Crie quantas vilas quiser, cada uma com o seu próprio progresso, e alterne entre elas na barra lateral."
+      },
+      "item4": {
+        "question": "Ele sincroniza entre dispositivos?",
+        "answer": "Sim, se você quiser. Abra as Configurações e conecte GitHub, Google Drive, Dropbox ou OneDrive. Seus dados ficam na sua própria conta, e a sincronização continua desativada até você ativá-la."
+      },
+      "item5": {
+        "question": "Este app é grátis?",
+        "answer": "Sim. É grátis, sem assinatura, sem anúncios e sem cadastro."
+      }
+    }
+  },
+  "final": {
+    "title": "Comece a acompanhar suas vilas hoje",
+    "description": "Sem conta e sem cadastro. Sua primeira vila só precisa de um nome."
+  },
+  "updated": {
+    "justNow": "agora mesmo"
+  }
+}

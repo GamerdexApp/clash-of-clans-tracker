@@ -1,0 +1,32 @@
+{
+  "title": "研究",
+  "subline": "{name}，大本營 {townHall}",
+  "tabsLabel": "研究分類",
+  "tabs": {
+    "troops": "部隊",
+    "spells": "法術",
+    "siegeMachines": "攻城"
+  },
+  "strip": {
+    "title": "實驗室",
+    "noLanes": "沒有可用的研究通道。",
+    "openQueue": "開啟佇列與時間軸",
+    "unassignedHelp": "部分研究儲存在已關閉的通道上，或已被其他研究使用的通道上。請完成或取消它們。",
+    "levelLabel": "實驗室等級",
+    "level": "{level} / {max}",
+    "notTracked": "未設定",
+    "boostLabel": "黃金通行證研究加速"
+  },
+  "card": {
+    "notUnlocked": "未解鎖",
+    "markUnlocked": "標記為已解鎖",
+    "maxAtHall": "此大本營最高 Lv {level}",
+    "progress": "{name}進度"
+  },
+  "empty": {
+    "title": "這裡還沒有內容",
+    "none": "此大本營等級沒有這個分類的內容。",
+    "allMax": "這裡的內容都已達最高等級。關閉「隱藏已滿級」即可查看。"
+  },
+  "boostValue": "{percent, plural, =0 {無} other {時間與費用 -{percent}%}}"
+}
