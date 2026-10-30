@@ -14,7 +14,7 @@ import { ScrollRegion } from "@/comps/ui/ScrollRegion";
 import type { ImportDialogProps } from "@/types/components/settings";
 
 const text = settingsText.importDialog;
-const MODE_OPTIONS = (["merge", "replace"] as const).map((id) => ({ id, label: text.modes[id] }));
+const modeOptions = () => (["merge", "replace"] as const).map((id) => ({ id, label: text.modes[id] }));
 const KILOBYTE = 1024;
 
 const formatSize = (bytes: number) =>
@@ -70,7 +70,7 @@ export const ImportDialog = ({ file, current, mode, onModeChange, onClose, onCon
 					</Note>
 					<div className="flex flex-col gap-2">
 						<h3 className="font-medium">{text.howToApply}</h3>
-						<RadioGroup label={text.modeLabel} options={MODE_OPTIONS} value={mode} onChange={onModeChange} />
+						<RadioGroup label={text.modeLabel} options={modeOptions()} value={mode} onChange={onModeChange} />
 						<p className="text-muted">{text.modeNotes[mode]}</p>
 					</div>
 					<div className="flex flex-col gap-2">

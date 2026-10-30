@@ -1,233 +1,328 @@
-import { formatNumber } from "@/lib/format";
+import { messages } from "@/i18n/text";
 
-export const dailiesText = {
+export const dailiesText = messages<{
   locked: {
-    title: "Dailies",
-    subline: (name: string, townHall: number) => `${name}, Town Hall ${townHall}, nothing here is open yet`,
-    open: "Open",
-    lockedBadge: "Locked",
-    now: (townHall: number) => `This village is at Town Hall ${townHall}.`,
-    nowNoHut: "This village has no Helper Hut yet.",
-    needsHut: "Needs the Helper Hut",
-    toBuilder: "Open Builder",
+    title: string;
+    subline: (name: string, townHall: number) => string;
+    open: string;
+    lockedBadge: string;
+    now: (townHall: number) => string;
+    nowNoHut: string;
+    needsHut: string;
+    toBuilder: string;
     cards: {
-      forge: { title: "Forge", what: "Turn spare resources into Capital Gold and collect the daily Capital Gold." },
-      helpers: { title: "Helpers", what: "Track the Builder's Apprentice, Lab Assistant, Alchemist and Prospector." },
-      seasonPass: { title: "Season Pass", what: "Set the Gold Pass boosts and perks that shorten upgrade times." },
-      starBonus: { title: "Star Bonus", what: "The Star Bonus daily timer lives in the Overview.", open: "Open Overview" },
-    },
-  },
+      forge: {
+        title: string;
+        what: string;
+      };
+      helpers: {
+        title: string;
+        what: string;
+      };
+      seasonPass: {
+        title: string;
+        what: string;
+      };
+      starBonus: {
+        title: string;
+        what: string;
+        open: string;
+      };
+    };
+  };
   timer: {
-    notSet: "Time your daily reset",
-    setTime: "Set reset time",
-    setAndUse: "Set and mark used",
-    notSetHelp: "Setting the time does not mark the reward as used.",
-    savedIn: (zone: string) => `The time is saved in ${zone}.`,
-    available: "Available",
-    use: "Use",
-    adjust: "Adjust",
-    adjustTitle: "Adjust reset time",
-    save: "Save",
-    cancel: "Cancel",
-    resetsAt: (time: string, zone: string) => `Resets daily at ${time}, ${zone}`,
-    untilReset: (time: string, zone: string) => `until reset at ${time}, ${zone}`,
-    usedAt: (time: string) => `Used at ${time}.`,
-    timeLabel: "Reset time",
-    deviceClock: "device clock",
-    used: (name: string) => `${name} marked used`,
-    undo: "Undo",
-  },
+    notSet: string;
+    setTime: string;
+    setAndUse: string;
+    notSetHelp: string;
+    savedIn: (zone: string) => string;
+    available: string;
+    use: string;
+    adjust: string;
+    adjustTitle: string;
+    save: string;
+    cancel: string;
+    resetsAt: (time: string, zone: string) => string;
+    untilReset: (time: string, zone: string) => string;
+    usedAt: (time: string) => string;
+    timeLabel: string;
+    deviceClock: string;
+    used: (name: string) => string;
+    undo: string;
+  };
   forge: {
-    title: "Forge",
-    description: "Turn spare resources into Capital Gold and collect the daily Capital Gold.",
-    subline: (name: string, townHall: number, builderHall: number) =>
-      builderHall > 0
-        ? `${name}, Town Hall ${townHall}, Builder Hall ${builderHall}, Capital Gold production`
-        : `${name}, Town Hall ${townHall}, Capital Gold production`,
+    title: string;
+    description: string;
+    subline: (name: string, townHall: number, builderHall: number) => string;
     daily: {
-      title: "Capital Gold daily",
-      amount: (gold: number, townHall: number) => `+${formatNumber(gold)} Capital Gold every day at Town Hall ${townHall}`,
-      none: "The daily Capital Gold starts at Town Hall 6.",
-      name: "Daily Capital Gold",
-    },
+      title: string;
+      amount: (gold: number, townHall: number) => string;
+      none: string;
+      name: string;
+    };
     slots: {
-      title: "Forge slots",
-      craftingTime: "3-day crafting time",
-      open: (open: number, total: number, townHall: number) => `${open} of ${total} slots open at Town Hall ${townHall}`,
-      boost: (percent: number, time: string) => `${percent}% builder boost applied: ${time}`,
-      slot: (number: number) => `Slot ${number}`,
-      requires: (townHall: number) => `Requires Town Hall ${townHall}`,
-      locked: "Locked",
-      idle: "Idle",
-      idleHelp: "Choose what to forge",
-      running: "Running",
-      done: "Done",
-      result: "Result",
-      start: "Start",
-      stop: "Stop",
-      reset: "Reset",
-      resource: "Resource",
-      rate: (amount: string, resource: string, capitalGold: string, time: string) =>
-        `${amount} ${resource} for ${capitalGold} Capital Gold, ready in ${time}`,
-      left: (time: string) => `${time} left`,
-      ready: (capitalGold: string) => `Ready: ${capitalGold} Capital Gold.`,
-      finished: (ago: string) => `Finished ${ago} ago.`,
-      stopped: (number: number) => `Slot ${number} stopped. Run cleared.`,
-      resetDone: (number: number, resource: string) => `Slot ${number} reset. ${resource} run cleared.`,
-      runningTitle: (resource: string, amount: string) => `${resource}, ${amount}`,
-    },
+      title: string;
+      craftingTime: string;
+      open: (open: number, total: number, townHall: number) => string;
+      boost: (percent: number, time: string) => string;
+      slot: (number: number) => string;
+      requires: (townHall: number) => string;
+      locked: string;
+      idle: string;
+      idleHelp: string;
+      running: string;
+      done: string;
+      result: string;
+      start: string;
+      stop: string;
+      reset: string;
+      resource: string;
+      rate: (
+        amount: string,
+        resource: string,
+        capitalGold: string,
+        time: string,
+      ) => string;
+      left: (time: string) => string;
+      ready: (capitalGold: string) => string;
+      finished: (ago: string) => string;
+      stopped: (number: number) => string;
+      resetDone: (number: number, resource: string) => string;
+      runningTitle: (resource: string, amount: string) => string;
+    };
     auto: {
-      title: "Auto Forge",
-      subtitle: "Gold Pass perk, repeats on its own",
-      repeats: (amount: string, resource: string, capitalGold: string, time: string) =>
-        `${amount} ${resource} for ${capitalGold} Capital Gold every ${time}`,
-      nextRun: "Next run starts on its own when this one ends.",
-      stop: "Stop Auto Forge",
-      stopped: "Auto Forge stopped. Cycle cleared.",
+      title: string;
+      subtitle: string;
+      repeats: (
+        amount: string,
+        resource: string,
+        capitalGold: string,
+        time: string,
+      ) => string;
+      nextRun: string;
+      stop: string;
+      stopped: string;
       confirm: {
-        title: "Stop Auto Forge?",
-        body: (amount: string, resource: string, capitalGold: string, time: string) =>
-          `The running cycle will be cleared: ${amount} ${resource} for ${capitalGold} Capital Gold, with ${time} left. Auto Forge stops repeating until you start it again from the Forge page. The Gold Pass perk stays on in Season Pass.`,
-        undoHint: "An Undo button stays on screen for a few seconds after you stop it.",
-        keep: "Keep running",
-        stop: "Stop Auto Forge",
-      },
-    },
+        title: string;
+        body: (
+          amount: string,
+          resource: string,
+          capitalGold: string,
+          time: string,
+        ) => string;
+        undoHint: string;
+        keep: string;
+        stop: string;
+      };
+    };
     rates: {
-      title: "Forge rates",
-      description: (townHall: number, builderHall: number) =>
-        builderHall > 0
-          ? `Town Hall ${townHall} and Builder Hall ${builderHall}, one run in a slot`
-          : `Town Hall ${townHall}, one run in a slot`,
-      autoTitle: "Auto Forge rates",
-      autoDescription: "Gold Pass price, half the manual cost",
-      resource: "Resource",
-      cost: "Cost",
-      capitalGold: "Capital Gold",
-      requires: (requirement: string) => `Requires ${requirement}`,
-    },
-  },
+      title: string;
+      description: (townHall: number, builderHall: number) => string;
+      autoTitle: string;
+      autoDescription: string;
+      resource: string;
+      cost: string;
+      capitalGold: string;
+      requires: (requirement: string) => string;
+    };
+  };
   helpers: {
-    title: "Helpers",
-    description: "Track the Builder's Apprentice, Lab Assistant, Alchemist and Prospector.",
-    subline: (name: string, townHall: number, builderHall: number) =>
-      builderHall > 0
-        ? `${name}, Town Hall ${townHall}, Builder Hall ${builderHall}, Helper Hut assistants`
-        : `${name}, Town Hall ${townHall}, Helper Hut assistants`,
-    banner: "Helper Hut built. Each helper unlocks by Town Hall: Lab Assistant 9, Builder's Apprentice 10, Prospector 10, Alchemist 11.",
+    title: string;
+    description: string;
+    subline: (name: string, townHall: number, builderHall: number) => string;
+    banner: string;
     names: {
-      buildersApprentice: "Builder's Apprentice",
-      labAssistant: "Lab Assistant",
-      alchemist: "Alchemist",
-      prospector: "Prospector",
-    },
-    from: (townHall: number) => `Town Hall ${townHall} and up`,
-    lockedCard: (townHall: number) => `Requires Town Hall ${townHall}`,
-    dailyUse: "Daily use",
-    level: "Level",
-    levelOption: (level: number) => `Level ${level}`,
-    levelTownHall: (townHall: number) => `TH ${townHall}`,
-    none: "None",
-    noLevel: "Select your level to see stats.",
-    noLevelCalculator: "Select your level to use the calculator.",
-    nextLevel: (level: number, gems: string) => (gems === "0" ? `Level ${level} is free` : `Level ${level} costs ${gems} gems`),
-    saves: (time: string) => `Saves ${time} per use`,
-    levelRequires: (townHall: number) => `Requires Town Hall ${townHall}`,
+      buildersApprentice: string;
+      labAssistant: string;
+      alchemist: string;
+      prospector: string;
+    };
+    from: (townHall: number) => string;
+    lockedCard: (townHall: number) => string;
+    dailyUse: string;
+    level: string;
+    levelOption: (level: number) => string;
+    levelTownHall: (townHall: number) => string;
+    none: string;
+    noLevel: string;
+    noLevelCalculator: string;
+    nextLevel: (level: number, gems: string) => string;
+    saves: (time: string) => string;
+    levelRequires: (townHall: number) => string;
     assignment: {
-      builderTitle: "Upgrade to speed up",
-      researchTitle: "Research to speed up",
-      none: "None",
-      builderHelp: "Lists buildings, heroes, Town Hall, the Town Hall weapon and crafted defense modules that are upgrading now.",
-      researchHelp: "Research only: lists troops, spells and siege machines that are upgrading now.",
-      builderEmpty: "No active builder upgrades to assign.",
-      researchEmpty: "No active lab research to assign.",
-      once: "1-time use",
-      untilDone: "Until done",
-      assignedTo: "Assigned to",
-      clearsAfterUse: "Clears after one use.",
-      staysUntilDone: "Stays until the upgrade finishes.",
-      clear: "Clear assignment",
-      cleared: "Assignment cleared.",
-      select: "Assigned upgrade",
-      mode: "Assignment mode",
-      preview: (before: string, after: string) => `Use now: ${before} left becomes ${after}.`,
-      previewDone: (before: string) => `Use now: ${before} left, the upgrade finishes.`,
-      upgradeTo: (name: string, level: number, left: string) => `${name} to level ${level}, ${left} left`,
-    },
+      builderTitle: string;
+      researchTitle: string;
+      none: string;
+      builderHelp: string;
+      researchHelp: string;
+      builderEmpty: string;
+      researchEmpty: string;
+      once: string;
+      untilDone: string;
+      assignedTo: string;
+      clearsAfterUse: string;
+      staysUntilDone: string;
+      clear: string;
+      cleared: string;
+      select: string;
+      mode: string;
+      preview: (before: string, after: string) => string;
+      previewDone: (before: string) => string;
+      upgradeTo: (name: string, level: number, left: string) => string;
+    };
     used: {
-      plain: (name: string) => `${name} marked used`,
-      saved: (name: string, target: string, time: string) => `${name} used on ${target}, ${time} saved`,
-    },
+      plain: (name: string) => string;
+      saved: (name: string, target: string, time: string) => string;
+    };
     alchemist: {
-      stats: { goldElixir: "Gold or Elixir max", darkElixir: "Dark Elixir max", bonus: "Conversion bonus" },
-      calculator: "Conversion calculator",
-      from: "From",
-      to: "To",
-      amount: "Amount to convert",
-      result: (amount: string, from: string, output: string, to: string) => `${amount} ${from} gives ${output} ${to}`,
-      help: (bonus: number) => `Includes the ${bonus}% conversion bonus and the 150 to 1 rate.`,
-      nothingSaved: "Nothing here is saved.",
-    },
+      stats: {
+        goldElixir: string;
+        darkElixir: string;
+        bonus: string;
+      };
+      calculator: string;
+      from: string;
+      to: string;
+      amount: string;
+      result: (
+        amount: string,
+        from: string,
+        output: string,
+        to: string,
+      ) => string;
+      help: (bonus: number) => string;
+      nothingSaved: string;
+    };
     prospector: {
-      lockedTitle: "Locked until you unlock it with 2,200 Season Challenge Points",
-      lockedHelp: "Switch it on on the Season Pass page after you have unlocked it in game.",
-      toSeasonPass: "Open Season Pass",
-      subtitle: "Town Hall 10 and up, unlocked with Season Challenge Points",
-      lockedBadge: "Locked",
-      unlockedBadge: "Unlocked",
-      levelOnly: "Level 1 (the only level)",
-      limits: { shiny: "Shiny ore max", glowy: "Glowy ore max", starry: "Starry ore max" },
-      calculator: "Ore conversion calculator",
-      ores: { shiny: "Shiny ore", glowy: "Glowy ore", starry: "Starry ore" },
-      help: "10 Shiny ore make 1 Glowy ore. 100 Glowy ore make 1 Starry ore.",
-    },
-  },
+      lockedTitle: string;
+      lockedHelp: string;
+      toSeasonPass: string;
+      subtitle: string;
+      lockedBadge: string;
+      unlockedBadge: string;
+      levelOnly: string;
+      limits: {
+        shiny: string;
+        glowy: string;
+        starry: string;
+      };
+      calculator: string;
+      ores: {
+        shiny: string;
+        glowy: string;
+        starry: string;
+      };
+      help: string;
+    };
+  };
   seasonPass: {
-    title: "Season Pass",
-    description: "Set the Gold Pass boosts and perks that shorten upgrade times.",
-    subline: (name: string, townHall: number) => `${name}, Town Hall ${townHall}, Gold Pass perks active this season`,
-    lockedTitle: "Season Pass is locked",
-    lockedBody: (townHall: number) => `Gold Pass needs Town Hall 7. This village is at Town Hall ${townHall}.`,
+    title: string;
+    description: string;
+    subline: (name: string, townHall: number) => string;
+    lockedTitle: string;
+    lockedBody: (townHall: number) => string;
     month: {
-      title: (month: string) => month,
-      subtitle: (reset: string) => `Boosts reset on ${reset}, perks stay on.`,
-      key: "Month key",
-      rolled: "A new month started. Builder boost and research boost were reset to 0%. Perks stay on.",
-      undoReset: "Undo reset",
-      dismiss: "Dismiss",
-      restored: "Boosts brought back for this month.",
-      undo: "Undo",
-    },
+      title: (month: string) => string;
+      subtitle: (reset: string) => string;
+      key: string;
+      rolled: string;
+      undoReset: string;
+      dismiss: string;
+      restored: string;
+      undo: string;
+    };
     boosts: {
-      title: "Boost perks",
-      description: "Gold Pass shortens upgrade times this season.",
-      builder: "Builder boost",
-      research: "Research boost",
-      applies: "Applies to Builder, Research and Pets times, the queue timelines and the Forge crafting time.",
-      saved: "Saved with this month.",
-      value: (percent: number) => (percent === 0 ? "Off" : `${percent}%`),
-      option: (percent: number) => (percent === 0 ? "0%" : `${percent}%`),
-      builderEffect: (percent: number, time: string) => (percent === 0 ? "Forge crafting time is 3d." : `Forge crafting time is ${time}.`),
-      researchEffect: (percent: number) =>
-        percent === 0 ? "Research and pet times are unchanged." : `Research and pet times are ${percent}% shorter.`,
-    },
+      title: string;
+      description: string;
+      builder: string;
+      research: string;
+      applies: string;
+      saved: string;
+      value: (percent: number) => string;
+      option: (percent: number) => string;
+      builderEffect: (percent: number, time: string) => string;
+      researchEffect: (percent: number) => string;
+    };
     unlocks: {
-      title: "Season Challenge unlocks",
-      description: "Not part of the Gold Pass",
-      prospector: "Prospector",
-      prospectorHelp: "Helper for Town Hall 10 and up, costs 2,200 Season Challenge Points",
-      shows: "Shows on the Helpers page",
-    },
+      title: string;
+      description: string;
+      prospector: string;
+      prospectorHelp: string;
+      shows: string;
+    };
     perks: {
-      title: "Gold Pass perks",
-      description: "Gold Pass perks active this season",
-      referenceOnly: "Reference only",
-      referenceNote: "Changes nothing else in the app.",
-      hoggyBank: { label: "Hoggy Bank", note: "Stores resources while you play, collect at season end" },
-      gemDonations: { label: "1-Gem Donations", note: "Donate troops and spells for just 1 gem each" },
-      autoForge: { label: "Auto Forge", note: "Automatically converts resources to Capital Gold" },
-      autoForgeEffect: "Turns on the Auto Forge row on the Forge page and the Overview chip.",
-      requestTimeReduction: { label: "Request Time Reduction", note: "Reduces the troop request cooldown timer" },
-    },
+      title: string;
+      description: string;
+      referenceOnly: string;
+      referenceNote: string;
+      hoggyBank: {
+        label: string;
+        note: string;
+      };
+      gemDonations: {
+        label: string;
+        note: string;
+      };
+      autoForge: {
+        label: string;
+        note: string;
+      };
+      autoForgeEffect: string;
+      requestTimeReduction: {
+        label: string;
+        note: string;
+      };
+    };
+  };
+}>("dailies", {
+  fns: {
+    "locked.subline": ["name", "townHall"],
+    "locked.now": ["townHall"],
+    "timer.savedIn": ["zone"],
+    "timer.resetsAt": ["time", "zone"],
+    "timer.untilReset": ["time", "zone"],
+    "timer.usedAt": ["time"],
+    "timer.used": ["name"],
+    "forge.subline": ["name", "townHall", "builderHall"],
+    "forge.daily.amount": ["gold:number", "townHall"],
+    "forge.slots.open": ["open", "total", "townHall"],
+    "forge.slots.boost": ["percent", "time"],
+    "forge.slots.slot": ["number"],
+    "forge.slots.requires": ["townHall"],
+    "forge.slots.rate": ["amount", "resource", "capitalGold", "time"],
+    "forge.slots.left": ["time"],
+    "forge.slots.ready": ["capitalGold"],
+    "forge.slots.finished": ["ago"],
+    "forge.slots.stopped": ["number"],
+    "forge.slots.resetDone": ["number", "resource"],
+    "forge.slots.runningTitle": ["resource", "amount"],
+    "forge.auto.repeats": ["amount", "resource", "capitalGold", "time"],
+    "forge.auto.confirm.body": ["amount", "resource", "capitalGold", "time"],
+    "forge.rates.description": ["townHall", "builderHall"],
+    "forge.rates.requires": ["requirement"],
+    "helpers.subline": ["name", "townHall", "builderHall"],
+    "helpers.from": ["townHall"],
+    "helpers.lockedCard": ["townHall"],
+    "helpers.levelOption": ["level"],
+    "helpers.levelTownHall": ["townHall"],
+    "helpers.nextLevel": ["level", "gems"],
+    "helpers.saves": ["time"],
+    "helpers.levelRequires": ["townHall"],
+    "helpers.assignment.preview": ["before", "after"],
+    "helpers.assignment.previewDone": ["before"],
+    "helpers.assignment.upgradeTo": ["name", "level", "left"],
+    "helpers.used.plain": ["name"],
+    "helpers.used.saved": ["name", "target", "time"],
+    "helpers.alchemist.result": ["amount", "from", "output", "to"],
+    "helpers.alchemist.help": ["bonus"],
+    "seasonPass.subline": ["name", "townHall"],
+    "seasonPass.lockedBody": ["townHall"],
+    "seasonPass.month.title": ["month"],
+    "seasonPass.month.subtitle": ["reset"],
+    "seasonPass.boosts.value": ["percent"],
+    "seasonPass.boosts.option": ["percent"],
+    "seasonPass.boosts.builderEffect": ["percent", "time"],
+    "seasonPass.boosts.researchEffect": ["percent"],
   },
-} as const;
+  arrays: [],
+});

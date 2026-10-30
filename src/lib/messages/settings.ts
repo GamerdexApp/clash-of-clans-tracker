@@ -1,137 +1,174 @@
-export const settingsText = {
-  title: "Settings",
-  subline: "Preferences, backups and your data",
-  tabsLabel: "Settings sections",
-  tabs: { sync: "Cloud sync", preferences: "Preferences", data: "Backup and data", about: "About" },
+import { messages } from "@/i18n/text";
+
+export const settingsText = messages<{
+  title: string;
+  subline: string;
+  tabsLabel: string;
+  tabs: {
+    sync: string;
+    preferences: string;
+    data: string;
+    about: string;
+  };
   appearance: {
-    title: "Appearance",
-    description: "Choose how the app looks.",
-    themeLabel: "Theme",
-    themes: { light: "Light", dark: "Dark", system: "System" },
-    themeNote: (mode: string) => `System follows your device. It is ${mode} now.`,
-  },
+    title: string;
+    description: string;
+    themeLabel: string;
+    themes: {
+      light: string;
+      dark: string;
+      system: string;
+    };
+    themeNote: (mode: string) => string;
+  };
   builders: {
-    title: "Builder settings",
-    description: "Event helpers that add a slot to your queues.",
-    goblinBuilder: "Goblin Builder",
-    goblinBuilderHelp: "Adds one extra builder slot, the seventh, for buildings.",
-    goblinResearch: "Goblin Research",
-    goblinResearchHelp: "Adds one extra research slot in the Laboratory.",
-  },
+    title: string;
+    description: string;
+    goblinBuilder: string;
+    goblinBuilderHelp: string;
+    goblinResearch: string;
+    goblinResearchHelp: string;
+  };
   activeHours: {
-    title: "Active hours",
-    description:
-      "Set the hours you play each day. Queue timelines add a gap when an upgrade finishes outside this window.",
-    start: "Start time",
-    end: "End time",
-    save: "Save",
-    clear: "Clear",
-    status: (start: string, end: string) => `Active from ${start} to ${end}, on your local clock.`,
-    none: "No active hours set. Every hour counts as active.",
-    sameTime: "Start and end are the same. Choose two different times, or clear the window.",
-    overnight: (start: string, end: string) => `This window runs overnight, from ${start} to ${end} the next day.`,
-    unsaved: "You have changes that are not saved.",
-    clockChanged: (start: string, end: string) =>
-      `Your clock offset changed. Active hours still cover ${start} to ${end} on your clock.`,
-  },
+    title: string;
+    description: string;
+    start: string;
+    end: string;
+    save: string;
+    clear: string;
+    status: (start: string, end: string) => string;
+    none: string;
+    sameTime: string;
+    overnight: (start: string, end: string) => string;
+    unsaved: string;
+    clockChanged: (start: string, end: string) => string;
+  };
   data: {
-    title: "Data management",
+    title: string;
     storageNote: {
-      title: "Stored in this browser.",
-      body: "Clearing the browser data removes your villages. Export a backup now and then.",
-    },
+      title: string;
+      body: string;
+    };
     export: {
-      title: "Export",
-      description: "Download every village and your settings as one file.",
-      button: "Export all villages",
-      done: "Backup downloaded",
-    },
+      title: string;
+      description: string;
+      button: string;
+      done: string;
+    };
     import: {
-      title: "Import",
-      fileLabel: "Backup file",
-      chooseFile: "Choose file",
-      noFile: "No file chosen",
-      description: "Choose a backup file. You review it before anything changes.",
-      review: "Review import",
-      merged: "Backup merged",
-      replaced: "Backup replaced your data",
-      undo: "Undo",
-    },
+      title: string;
+      fileLabel: string;
+      chooseFile: string;
+      noFile: string;
+      description: string;
+      review: string;
+      merged: string;
+      replaced: string;
+      undo: string;
+    };
     reset: {
-      title: "Reset all data",
-      warning: "Deletes every village and setting in this browser.",
-      button: "Reset all data",
-      confirmTitle: "Delete everything?",
-      confirmBody: (names: string) => `This removes ${names}. You can undo it for ten seconds.`,
-      cancel: "Cancel",
-      confirm: "Delete everything",
-      done: "All data deleted",
-      doneMessage: (count: number) => `${count} ${count === 1 ? "village" : "villages"} removed.`,
-      doneMessageDisconnected: (count: number) =>
-        `${count} ${count === 1 ? "village" : "villages"} removed. Sync is disconnected on this browser.`,
-      syncedCopy: (provider: string) => `Also delete the synced copy in ${provider}`,
-      syncedOn:
-        "Sync stays on. Your other devices lose these villages at their next sync. Export a backup first if you are not sure.",
-      syncedOff: "Without this, sync is disconnected on this browser so the next sync cannot bring the villages back.",
-      undo: "Undo",
-    },
+      title: string;
+      warning: string;
+      button: string;
+      confirmTitle: string;
+      confirmBody: (names: string) => string;
+      cancel: string;
+      confirm: string;
+      done: string;
+      doneMessage: (count: number) => string;
+      doneMessageDisconnected: (count: number) => string;
+      syncedCopy: (provider: string) => string;
+      syncedOn: string;
+      syncedOff: string;
+      undo: string;
+    };
     villages: {
-      title: "Villages",
-      description: "Create, edit, switch and delete villages.",
-      manage: "Manage villages",
-    },
-    villageCount: (count: number) => `${count} ${count === 1 ? "village" : "villages"}`,
-  },
+      title: string;
+      description: string;
+      manage: string;
+    };
+    villageCount: (count: number) => string;
+  };
   importDialog: {
-    title: "Review import",
-    fileInfo: (name: string, size: string) => `${name}, ${size}`,
-    bytes: (count: number) => `${count} B`,
-    kilobytes: (count: number) => `${count} KB`,
-    cancel: "Cancel",
-    close: "Close",
-    merge: "Merge into this device",
-    replace: "Replace this device",
-    failedTitle: "This file cannot be imported.",
+    title: string;
+    fileInfo: (name: string, size: string) => string;
+    bytes: (count: number) => string;
+    kilobytes: (count: number) => string;
+    cancel: string;
+    close: string;
+    merge: string;
+    replace: string;
+    failedTitle: string;
     errors: {
-      notJson: "This file is not valid JSON.",
-      playthroughsMissing: "This file is not a Clash of Clans Tracker backup. It has no villages list.",
-    },
-    checksTitle: "Checks passed.",
-    checks: (read: number, kept: number) => `The file lists ${read} villages and ${kept} can be read.`,
-    skipped: (count: number) => `${count} ${count === 1 ? "entry was" : "entries were"} skipped.`,
-    howToApply: "How to apply",
-    modeLabel: "Import mode",
-    modes: { merge: "Merge", replace: "Replace" },
+      notJson: string;
+      playthroughsMissing: string;
+    };
+    checksTitle: string;
+    checks: (read: number, kept: number) => string;
+    skipped: (count: number) => string;
+    howToApply: string;
+    modeLabel: string;
+    modes: {
+      merge: string;
+      replace: string;
+    };
     modeNotes: {
-      merge:
-        "Adds villages that are new and keeps the later copy of a village that exists in both. Your settings and active village stay.",
-      replace: "Uses only what is in the file. Villages that are not in the file are removed.",
-    },
-    whatChanges: "What changes",
-    columns: { village: "Village", inFile: "In file", onDevice: "On device", result: "Result" },
-    notThere: "Not there",
+      merge: string;
+      replace: string;
+    };
+    whatChanges: string;
+    columns: {
+      village: string;
+      inFile: string;
+      onDevice: string;
+      result: string;
+    };
+    notThere: string;
     results: {
-      added: "Added",
-      updated: "Updated from file",
-      kept: "Kept",
-      replaced: "Replaced",
-      removed: "Removed",
-    },
+      added: string;
+      updated: string;
+      kept: string;
+      replaced: string;
+      removed: string;
+    };
     summary: {
-      added: (count: number) => `${count} added`,
-      updated: (count: number) => `${count} updated`,
-      kept: (count: number) => `${count} kept`,
-      replaced: (count: number) => `${count} replaced`,
-      removed: (count: number) => `${count} removed`,
-    },
-    noVillages: "The file has no villages.",
-    undoNote: "You can undo the import for ten seconds.",
-  },
+      added: (count: number) => string;
+      updated: (count: number) => string;
+      kept: (count: number) => string;
+      replaced: (count: number) => string;
+      removed: (count: number) => string;
+    };
+    noVillages: string;
+    undoNote: string;
+  };
   about: {
-    version: (version: string) => `Version ${version}`,
-    summary:
-      "A free progress tracker for Clash of Clans. Track upgrades, research, achievements and more across several villages.",
-    officialGame: "Official Clash of Clans site",
-    disclaimer: "This project is not affiliated with, endorsed by, or connected to Supercell or Clash of Clans.",
+    version: (version: string) => string;
+    summary: string;
+    officialGame: string;
+    disclaimer: string;
+  };
+}>("settings", {
+  fns: {
+    "appearance.themeNote": ["mode"],
+    "activeHours.status": ["start", "end"],
+    "activeHours.overnight": ["start", "end"],
+    "activeHours.clockChanged": ["start", "end"],
+    "data.reset.confirmBody": ["names"],
+    "data.reset.doneMessage": ["count:plural"],
+    "data.reset.doneMessageDisconnected": ["count:plural"],
+    "data.reset.syncedCopy": ["provider"],
+    "data.villageCount": ["count:plural"],
+    "importDialog.fileInfo": ["name", "size"],
+    "importDialog.bytes": ["count"],
+    "importDialog.kilobytes": ["count"],
+    "importDialog.checks": ["read", "kept"],
+    "importDialog.skipped": ["count:plural"],
+    "importDialog.summary.added": ["count"],
+    "importDialog.summary.updated": ["count"],
+    "importDialog.summary.kept": ["count"],
+    "importDialog.summary.replaced": ["count"],
+    "importDialog.summary.removed": ["count"],
+    "about.version": ["version"],
   },
-} as const;
+  arrays: [],
+});

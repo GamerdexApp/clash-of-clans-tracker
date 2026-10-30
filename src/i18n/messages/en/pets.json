@@ -1,0 +1,30 @@
+{
+  "title": "Pets",
+  "subline": "{name}, Town Hall {townHall}",
+  "strip": {
+    "title": "Pet House",
+    "openQueue": "Open queue and timeline",
+    "noPetHouse": "Build a Pet House first. Set its level on the Builder page, Army tab.",
+    "unassignedHelp": "More than one pet upgrade is saved on the Pet House. Finish or cancel the extra one.",
+    "levelLabel": "Pet House level",
+    "level": "{level} of {max}",
+    "notBuilt": "Not built",
+    "boostLabel": "Gold Pass research boost"
+  },
+  "boostValue": "{percent, plural, =0 {None} other {-{percent}% time and cost}}",
+  "locked": {
+    "title": "Pets unlock at Town Hall 14",
+    "body": "This village is at Town Hall {townHall}. These are the pets you will get.",
+    "needs": "Town Hall {townHall}, Pet House {petHouse}"
+  },
+  "card": {
+    "notUnlocked": "Not unlocked",
+    "markUnlocked": "Mark as unlocked",
+    "maxAtHall": "Max Lv {level}",
+    "progress": "{name} progress"
+  },
+  "empty": {
+    "title": "Nothing here yet",
+    "allMax": "Every pet is at its maximum. Turn off Hide Max to see them."
+  }
+}

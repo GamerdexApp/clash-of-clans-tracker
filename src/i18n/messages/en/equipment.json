@@ -1,0 +1,61 @@
+{
+  "title": "Equipment",
+  "subline": "{name}, Town Hall {townHall}, Blacksmith level {blacksmith}",
+  "massEdit": "Equipment levels can also be set in Mass edit.",
+  "locked": {
+    "title": "Requires the Blacksmith",
+    "description": "Build the Blacksmith to track hero equipment. Set its level on the Builder page, Army tab.",
+    "action": "Go to Builder"
+  },
+  "ore": {
+    "title": "Ore stock",
+    "description": "The ore you hold. Shortages are advice only and never block an upgrade.",
+    "names": {
+      "shiny": "Shiny Ore",
+      "glowing": "Glowing Ore",
+      "starry": "Starry Ore"
+    },
+    "short": {
+      "shiny": "Shiny",
+      "glowing": "Glowing",
+      "starry": "Starry"
+    },
+    "needed": "Needed for the pieces listed: {amount}",
+    "enough": "Enough in stock",
+    "shortBy": "Short by {amount}",
+    "deduct": "Deduct ore when I upgrade",
+    "deductHelp": "An upgrade takes its ore out of the stock, never below 0. Undo puts it back."
+  },
+  "hideMax": "Hide Max",
+  "heroFilter": "Hero",
+  "allHeroes": "All heroes",
+  "section": "{pieces} pieces, {owned} owned",
+  "empty": {
+    "title": "Nothing here yet",
+    "allMax": "Every piece is at its maximum. Turn off Hide Max to see them."
+  },
+  "card": {
+    "heroLine": "{hero}",
+    "level": "Level {level} of {max}",
+    "notOwned": "Not owned",
+    "max": "Max",
+    "setLevel": "{name} level",
+    "stepLevel": "Level {level}",
+    "free": "Free",
+    "time": "Time: Instant",
+    "requires": "Requires Blacksmith {level}",
+    "moreLevels": "{amount} more {count, plural, one {level} other {levels}}",
+    "add": "Add at level 1",
+    "upgradeTo": "Upgrade to level {level}",
+    "lockedUntil": "Locked until Blacksmith {level}",
+    "allows": "Blacksmith {blacksmith} allows up to level {level}",
+    "allowsNone": "Blacksmith {blacksmith} does not allow this piece yet",
+    "footer": "{amount} {levels, plural, one {level} other {levels}} left",
+    "progress": "{name} progress"
+  },
+  "toast": {
+    "upgraded": "{name} Lv {from} to {to}",
+    "levelSet": "{name} Lv {from} to {to}",
+    "undo": "Undo"
+  }
+}

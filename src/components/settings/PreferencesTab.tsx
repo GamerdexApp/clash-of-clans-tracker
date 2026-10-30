@@ -12,7 +12,7 @@ import { SettingsCard } from "./SettingsCard";
 
 const text = settingsText;
 const THEMES: ThemeChoice[] = ["light", "dark", "system"];
-const THEME_OPTIONS = THEMES.map((id) => ({ id, label: text.appearance.themes[id] }));
+const themeOptions = () => THEMES.map((id) => ({ id, label: text.appearance.themes[id] }));
 
 const Appearance = () => {
 	const { appSettings, updateSettings } = usePlaythrough();
@@ -22,7 +22,7 @@ const Appearance = () => {
 		<SettingsCard title={text.appearance.title} description={text.appearance.description}>
 			<RadioGroup
 				label={text.appearance.themeLabel}
-				options={THEME_OPTIONS}
+				options={themeOptions()}
 				value={appSettings.theme ?? "system"}
 				onChange={(theme) => updateSettings({ theme })}
 			/>

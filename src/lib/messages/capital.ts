@@ -1,128 +1,184 @@
-export const capitalText = {
+import { messages } from "@/i18n/text";
+
+export const capitalText = messages<{
   districts: {
-    title: "Districts",
-    subline: (name: string, hall: number) => (hall > 0 ? `${name}, Capital Hall ${hall}` : `${name}, Capital Hall not set`),
-    description: "Districts and zones of your Clan Capital.",
-  },
+    title: string;
+    subline: (name: string, hall: number) => string;
+    description: string;
+  };
   troops: {
-    title: "Troops and spells",
-    subline: (name: string) => `${name}, Clan Capital troops and spells`,
+    title: string;
+    subline: (name: string) => string;
     tiles: {
-      troops: "Troops",
-      spells: "Spells",
-      caption: (current: number, max: number) => `${current} of ${max} levels`,
-    },
-    sections: { troops: "Troops", spells: "Spells" },
+      troops: string;
+      spells: string;
+      caption: (current: number, max: number) => string;
+    };
+    sections: {
+      troops: string;
+      spells: string;
+    };
     card: {
-      level: (name: string) => `${name} level`,
-      raise: (name: string) => `Raise ${name}`,
-      lower: (name: string) => `Lower ${name}`,
-      maxAt: (level: number) => `Max level ${level} now`,
-      from: (zone: string) => `From ${zone}`,
-      progress: (name: string) => `${name} progress`,
-    },
+      level: (name: string) => string;
+      raise: (name: string) => string;
+      lower: (name: string) => string;
+      maxAt: (level: number) => string;
+      from: (zone: string) => string;
+      progress: (name: string) => string;
+    };
     locked: {
-      title: "Not available yet",
-      districtHall: (level: number, zone: string) => `Requires District Hall ${level} in ${zone}`,
-      capitalHall: (level: number, zone: string) => `Requires Capital Hall ${level} to open ${zone}`,
-      kept: (level: number) => `Saved level ${level} is kept`,
-    },
-    empty: { title: "Everything is maxed", description: "Turn off Hide Max to see every troop and spell." },
-  },
+      title: string;
+      districtHall: (level: number, zone: string) => string;
+      capitalHall: (level: number, zone: string) => string;
+      kept: (level: number) => string;
+    };
+    empty: {
+      title: string;
+      description: string;
+    };
+  };
   tracking: {
-    label: "Track Clan Capital",
-    onHelp: "Turning it off keeps all data.",
-    turnOnTitle: "Clan Capital tracking is on",
-    turnedOn: "Clan Capital tracking is on.",
-    undo: "Undo",
+    label: string;
+    onHelp: string;
+    turnOnTitle: string;
+    turnedOn: string;
+    undo: string;
     offDialog: {
-      title: "Turn off Clan Capital tracking?",
-      body: "The Clan Capital pages, the Overview card and the Mass edit tab are hidden. Nothing is deleted.",
-      confirm: "Turn off",
-      cancel: "Cancel",
-    },
-  },
+      title: string;
+      body: string;
+      confirm: string;
+      cancel: string;
+    };
+  };
   off: {
-    title: "Clan Capital tracking is off",
-    description: "Your districts, troops and spells are kept. Turn tracking on to see them again.",
-    turnOn: "Turn on tracking",
-    keptTitle: "What is kept",
-    kept: "All Clan Capital data stays in this village.",
-  },
+    title: string;
+    description: string;
+    turnOn: string;
+    keptTitle: string;
+    kept: string;
+  };
   locked: {
-    title: "Clan Capital is locked",
-    description: (townHall: number) =>
-      `Clan Capital opens at Town Hall 3. This village is at Town Hall ${townHall}. Anything already saved shows again at Town Hall 3.`,
-    action: "Change Town Hall in Villages",
-  },
+    title: string;
+    description: (townHall: number) => string;
+    action: string;
+  };
   notSet: {
-    title: "Clan Capital is not set up",
-    description: "Set your Capital Hall level to start tracking districts, troops and spells.",
-    action: "Set Capital Hall level",
-  },
+    title: string;
+    description: string;
+    action: string;
+  };
   hall: {
-    label: "Capital Hall",
-    none: "None",
-    level: (level: number) => `Level ${level}`,
-    nextCost: (level: number, cost: string, opens: string[]) =>
-      `Capital Hall ${level} costs ${cost} Capital Gold${opens.length > 0 ? ` and opens ${opens.join(", ")}` : ""}. Raising a hall never resets levels.`,
-    atTop: "The Capital Hall is at its top level.",
-    raised: (from: number, to: number) => `Capital Hall raised from ${from} to ${to}. No levels were reset.`,
-    changed: (from: number, to: number) => `Capital Hall changed from ${from} to ${to}.`,
-    districtRaised: (zone: string, from: number, to: number) => `${zone} District Hall raised from ${from} to ${to}.`,
-    districtChanged: (zone: string, from: number, to: number) => `${zone} District Hall changed from ${from} to ${to}.`,
-  },
+    label: string;
+    none: string;
+    level: (level: number) => string;
+    nextCost: (level: number, cost: string, opens: string[]) => string;
+    atTop: string;
+    raised: (from: number, to: number) => string;
+    changed: (from: number, to: number) => string;
+    districtRaised: (zone: string, from: number, to: number) => string;
+    districtChanged: (zone: string, from: number, to: number) => string;
+  };
   contributions: {
-    label: "Contributions",
-    unit: "Capital Gold",
-    help: "Total you gave your clan. The Player Tag import fills it in, you can also type it.",
-  },
+    label: string;
+    unit: string;
+    help: string;
+  };
   tiles: {
-    progress: "Capital progress",
-    progressCaption: (current: number, max: number) => `${current.toLocaleString()} of ${max.toLocaleString()} levels`,
-    zones: "Open zones",
-    zonesCaption: (open: number, total: number) => `${open} of ${total}`,
-  },
+    progress: string;
+    progressCaption: (current: number, max: number) => string;
+    zones: string;
+    zonesCaption: (open: number, total: number) => string;
+  };
   zones: {
-    title: "Zones",
-    help: "Select a zone to edit it below",
-    hall: (level: number) => (level > 0 ? `District Hall ${level}` : "No District Hall"),
-    peakHall: (level: number) => `Capital Hall ${level}`,
-    locked: (hall: number) => `Locked, needs Capital Hall ${hall}`,
-    levels: (current: number, max: number) => `${current.toLocaleString()} of ${max.toLocaleString()}`,
-  },
+    title: string;
+    help: string;
+    hall: (level: number) => string;
+    peakHall: (level: number) => string;
+    locked: (hall: number) => string;
+    levels: (current: number, max: number) => string;
+  };
   panel: {
-    districtHall: "District Hall",
-    requires: (hall: number) => `Requires Capital Hall ${hall}`,
-    noHall: "No District Hall",
-    empty: "Nothing to build here at this hall level.",
-    groupsLabel: "Building groups",
-    groups: { defenses: "Defenses", traps: "Traps", army: "Army", walls: "Walls" },
-    max: "Max",
-    clear: "Clear",
-    maxAll: "Max All",
-    resetAll: "Reset All",
-    instances: (count: number) => `${count} ${count === 1 ? "building" : "buildings"}`,
-    maxLevel: (level: number) => `Max level ${level}`,
-    instance: (name: string, index: number) => `${name} ${index + 1}`,
-    raise: (name: string) => `Raise ${name}`,
-    lower: (name: string) => `Lower ${name}`,
-    wallLevel: (level: number) => `Level ${level}`,
-    wallsLeft: (left: number, total: number) => `${left} of ${total} walls still to place`,
-    wallsNote: "Counts cannot go above the remaining walls.",
-    wallsNone: "No walls at this hall level.",
-    wallCount: (level: number) => `Walls on level ${level}`,
-    wallRaise: (level: number) => `One more wall on level ${level}`,
-    wallLower: (level: number) => `One fewer wall on level ${level}`,
-    groupMaxed: (zone: string, group: string) => `${zone}: ${group} set to max`,
-    groupCleared: (zone: string, group: string) => `${zone}: ${group} cleared`,
-  },
+    districtHall: string;
+    requires: (hall: number) => string;
+    noHall: string;
+    empty: string;
+    groupsLabel: string;
+    groups: {
+      defenses: string;
+      traps: string;
+      army: string;
+      walls: string;
+    };
+    max: string;
+    clear: string;
+    maxAll: string;
+    resetAll: string;
+    instances: (count: number) => string;
+    maxLevel: (level: number) => string;
+    instance: (name: string, index: number) => string;
+    raise: (name: string) => string;
+    lower: (name: string) => string;
+    wallLevel: (level: number) => string;
+    wallsLeft: (left: number, total: number) => string;
+    wallsNote: string;
+    wallsNone: string;
+    wallCount: (level: number) => string;
+    wallRaise: (level: number) => string;
+    wallLower: (level: number) => string;
+    groupMaxed: (zone: string, group: string) => string;
+    groupCleared: (zone: string, group: string) => string;
+  };
   confirm: {
-    title: "Lower this hall?",
-    description: "These levels no longer fit and will be reset. Everything else is kept.",
-    confirm: "Lower hall",
-    cancel: "Keep hall",
-    more: (count: number) => `and ${count} more`,
+    title: string;
+    description: string;
+    confirm: string;
+    cancel: string;
+    more: (count: number) => string;
+  };
+  toast: {
+    undo: string;
+  };
+}>("capital", {
+  fns: {
+    "districts.subline": ["name", "hall"],
+    "troops.subline": ["name"],
+    "troops.tiles.caption": ["current", "max"],
+    "troops.card.level": ["name"],
+    "troops.card.raise": ["name"],
+    "troops.card.lower": ["name"],
+    "troops.card.maxAt": ["level"],
+    "troops.card.from": ["zone"],
+    "troops.card.progress": ["name"],
+    "troops.locked.districtHall": ["level", "zone"],
+    "troops.locked.capitalHall": ["level", "zone"],
+    "troops.locked.kept": ["level"],
+    "locked.description": ["townHall"],
+    "hall.level": ["level"],
+    "hall.nextCost": ["level", "cost", "opens:list"],
+    "hall.raised": ["from", "to"],
+    "hall.changed": ["from", "to"],
+    "hall.districtRaised": ["zone", "from", "to"],
+    "hall.districtChanged": ["zone", "from", "to"],
+    "tiles.progressCaption": ["current:number", "max:number"],
+    "tiles.zonesCaption": ["open", "total"],
+    "zones.hall": ["level"],
+    "zones.peakHall": ["level"],
+    "zones.locked": ["hall"],
+    "zones.levels": ["current:number", "max:number"],
+    "panel.requires": ["hall"],
+    "panel.instances": ["count:plural"],
+    "panel.maxLevel": ["level"],
+    "panel.instance": ["name", "index:plusOne"],
+    "panel.raise": ["name"],
+    "panel.lower": ["name"],
+    "panel.wallLevel": ["level"],
+    "panel.wallsLeft": ["left", "total"],
+    "panel.wallCount": ["level"],
+    "panel.wallRaise": ["level"],
+    "panel.wallLower": ["level"],
+    "panel.groupMaxed": ["zone", "group"],
+    "panel.groupCleared": ["zone", "group"],
+    "confirm.more": ["count"],
   },
-  toast: { undo: "Undo" },
-} as const;
+  arrays: [],
+});

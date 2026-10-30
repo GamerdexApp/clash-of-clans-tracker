@@ -1,0 +1,51 @@
+{
+  "title": "Builder",
+  "subline": "{name}, Town Hall {townHall}",
+  "tabsLabel": "Builder sections",
+  "tabs": {
+    "defenses": "Defenses",
+    "army": "Army",
+    "resources": "Resources",
+    "crafted": "Crafted Defenses",
+    "traps": "Traps",
+    "heroes": "Heroes",
+    "guardians": "Guardians",
+    "townHall": "Town Hall"
+  },
+  "builders": {
+    "title": "Builders",
+    "boostLabel": "Gold Pass builder boost",
+    "boostValue": "{percent, plural, =0 {None} other {-{percent}% time and cost}}",
+    "openQueue": "Open queue and timeline",
+    "unassignedHelp": "Some upgrades are saved on a builder that is not built, or on a builder another upgrade already uses. Finish or cancel them.",
+    "noBuilders": "This village has no builders yet. Build the first Builder's Hut from the Defenses tab. It is free and instant."
+  },
+  "gate": {
+    "requires": "Requires Town Hall {townHall}",
+    "where": "This village is at Town Hall {townHall}. Reach Town Hall {required} to unlock this tab.",
+    "fix": "Go to the Town Hall tab"
+  },
+  "empty": {
+    "title": "Nothing here yet",
+    "description": "No buildings of this kind are available at this Town Hall level.",
+    "allMax": "Every building here is at its maximum. Turn off Hide Max to see them."
+  },
+  "card": {
+    "maxAtHall": "Max Lv {level} at this Town Hall",
+    "maxAtBuilderHall": "Max Lv {level} at this Builder Hall",
+    "progress": "{name} progress",
+    "notBuilt": "Not built",
+    "level": "Lv {level} of {max}",
+    "build": "Build",
+    "upgradeTo": "Upgrade to Lv {level}",
+    "superchargeTo": "Supercharge to tier {tier}",
+    "maxed": "Max",
+    "running": "Upgrading to Lv {to}",
+    "finish": "Finish",
+    "cancel": "Cancel",
+    "showAll": "Show all {count}",
+    "showFewer": "Show fewer",
+    "instance": "#{number}",
+    "supercharge": "Supercharge {tier} of {tiers}"
+  }
+}

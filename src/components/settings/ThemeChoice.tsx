@@ -7,7 +7,7 @@ import type { ThemeChoice as ThemeOption } from "@/types/app";
 
 const text = settingsText.appearance;
 
-const OPTIONS: { id: ThemeOption; label: string }[] = [
+const themeOptions = (): { id: ThemeOption; label: string }[] => [
 	{ id: "light", label: text.themes.light },
 	{ id: "dark", label: text.themes.dark },
 	{ id: "system", label: text.themes.system },
@@ -19,7 +19,7 @@ export const ThemeChoice = () => {
 	return (
 		<SegmentedControl
 			label={text.themeLabel}
-			options={OPTIONS}
+			options={themeOptions()}
 			value={appSettings.theme ?? "system"}
 			onChange={(theme) => updateSettings({ theme })}
 		/>

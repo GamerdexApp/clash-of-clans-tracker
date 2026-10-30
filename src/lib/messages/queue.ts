@@ -1,157 +1,197 @@
-export const queueText = {
-  goldPass: (percent: number) => (percent > 0 ? `Gold Pass -${percent}%` : "No Gold Pass boost"),
+import { messages } from "@/i18n/text";
+
+export const queueText = messages<{
+  goldPass: (percent: number) => string;
   options: {
-    open: "Queue options",
-    title: "Queue options",
-    description: "Settings that change how the queue is scheduled.",
-    done: "Done",
-  },
+    open: string;
+    title: string;
+    description: string;
+    done: string;
+  };
   totals: {
-    freeValue: (free: number, total: number) => `${free} of ${total}`,
-    queued: "Queued upgrades",
-    time: "Queued time",
-    allDone: "All lanes done",
-    none: "Nothing queued",
-    cost: "Queued cost",
-    noCost: "No cost",
-  },
+    freeValue: (free: number, total: number) => string;
+    queued: string;
+    time: string;
+    allDone: string;
+    none: string;
+    cost: string;
+    noCost: string;
+  };
   lane: {
-    idle: "Free",
-    queueEmpty: "Nothing queued on this lane.",
-    startNow: "Start now",
-    remove: "Remove",
-    moveUp: "Move up",
-    moveDown: "Move down",
-    moveToLane: "Move to lane",
-    levels: (from: number, to: number) => `Lv ${from} to ${to}`,
-    removed: (name: string) => `${name} removed from the queue`,
-    started: (name: string) => `${name} started`,
-    undo: "Undo",
-  },
+    idle: string;
+    queueEmpty: string;
+    startNow: string;
+    remove: string;
+    moveUp: string;
+    moveDown: string;
+    moveToLane: string;
+    levels: (from: number, to: number) => string;
+    removed: (name: string) => string;
+    started: (name: string) => string;
+    undo: string;
+  };
   timeline: {
-    title: "Timeline",
-    zoomLabel: "Timeline length",
-    zooms: { "3": "3 days", "7": "1 week", "14": "2 weeks", "30": "1 month", "90": "3 months" },
-    conflictsTitle: "Conflicts",
-    noConflicts: "No conflicts. Every upgrade starts after the level it needs.",
-    laneLabel: (label: string) => `${label} timeline`,
-    now: "Now",
-    idle: "Free",
-  },
+    title: string;
+    zoomLabel: string;
+    zooms: {
+      "3": string;
+      "7": string;
+      "14": string;
+      "30": string;
+      "90": string;
+    };
+    conflictsTitle: string;
+    noConflicts: string;
+    laneLabel: (label: string) => string;
+    now: string;
+    idle: string;
+  };
   add: {
-    search: "Search upgrades",
-    hiddenFromAll: (names: string) => `Hidden from All: ${names}.`,
-    chooseCategories: "Choose categories",
-    chooseCategoriesHelp: "Checked categories show in All. Unchecked ones only show in their own chip.",
-    add: "Add",
-    addUpToHere: "Add up to here",
-    showMore: "Show more levels",
-    showMoreUpgrades: "Show more upgrades",
-    nothing: "Nothing to add here.",
-    nothingDescription: "Every level in this view is queued, running or not available yet.",
-    added: (count: number, name: string) => (count === 1 ? `${name} added` : `${count} levels of ${name} added`),
-    close: "Done",
-    unlockTitle: "Not unlocked",
-    unlockHelp: "Unlock these first to queue their levels.",
-    markUnlocked: "Mark as unlocked",
-    showAllLocked: (count: number) => `Show all ${count}`,
-    showFewerLocked: "Show fewer",
-    allLabel: "All",
-  },
+    search: string;
+    hiddenFromAll: (names: string) => string;
+    chooseCategories: string;
+    chooseCategoriesHelp: string;
+    add: string;
+    addUpToHere: string;
+    showMore: string;
+    showMoreUpgrades: string;
+    nothing: string;
+    nothingDescription: string;
+    added: (count: number, name: string) => string;
+    close: string;
+    unlockTitle: string;
+    unlockHelp: string;
+    markUnlocked: string;
+    showAllLocked: (count: number) => string;
+    showFewerLocked: string;
+    allLabel: string;
+  };
   lanes: {
     builder: {
-      title: "Builder queue",
-      subline: (name: string) => `${name}, plan what each builder does next`,
-      back: "Back to Builder",
-      free: "Free builders",
-      laneBusy: "This builder is busy.",
-      goblin: { label: "Goblin Builder", help: "Adds a seventh builder lane while the event runs." },
-      gate: "Build a Builder's Hut first. The first one is free and instant.",
+      title: string;
+      subline: (name: string) => string;
+      back: string;
+      free: string;
+      laneBusy: string;
+      goblin: {
+        label: string;
+        help: string;
+      };
+      gate: string;
       add: {
-        title: "Add upgrade",
-        description: "Choose what a builder does next. Levels you add are queued in order.",
-        lane: "Builder lane",
-        search: "Search upgrades",
-      },
+        title: string;
+        description: string;
+        lane: string;
+        search: string;
+      };
       categories: {
-        defenses: "Defenses",
-        armyBuildings: "Army",
-        resourceBuildings: "Resources",
-        traps: "Traps",
-        heroes: "Heroes",
-        townHall: "Town Hall",
-        craftedDefenses: "Crafted",
-        guardians: "Guardians",
-        supercharges: "Supercharges",
-      },
-    },
+        defenses: string;
+        armyBuildings: string;
+        resourceBuildings: string;
+        traps: string;
+        heroes: string;
+        townHall: string;
+        craftedDefenses: string;
+        guardians: string;
+        supercharges: string;
+      };
+    };
     research: {
-      title: "Research queue",
-      subline: (name: string) => `${name}, plan what the Laboratory researches next`,
-      back: "Back to Research",
-      free: "Free labs",
-      laneBusy: "This lane is busy.",
-      goblin: { label: "Goblin Researcher", help: "Adds a second research lane while the event runs." },
-      gate: "No research lane is available.",
+      title: string;
+      subline: (name: string) => string;
+      back: string;
+      free: string;
+      laneBusy: string;
+      goblin: {
+        label: string;
+        help: string;
+      };
+      gate: string;
       add: {
-        title: "Add research",
-        description: "Choose what the Laboratory researches next. Levels you add are queued in order.",
-        lane: "Research lane",
-        search: "Search research",
-      },
-      categories: { troops: "Troops", spells: "Spells", siegeMachines: "Siege" },
-    },
-    pet: {
-      title: "Pet queue",
-      subline: (name: string) => `${name}, plan what the Pet House upgrades next`,
-      back: "Back to Pets",
-      free: "Pet House",
-      laneBusy: "The Pet House is busy.",
-      gate: "Pets unlock at Town Hall 14.",
-      add: {
-        title: "Add pet upgrade",
-        description: "Choose which pet the Pet House upgrades next. Levels you add are queued in order.",
-        lane: "Pet House",
-        search: "Search pets",
-      },
-      categories: { pets: "Pets" },
-    },
-    bbBuilder: {
-      title: "Builder Base queue",
-      subline: (name: string, hall: number) => `${name}, Builder Hall ${hall}, plan what each builder does next`,
-      back: "Back to Builder Base",
-      free: "Free builders",
-      laneBusy: "This builder is busy.",
-      gate: "The Builder Base has two builders.",
-      add: {
-        title: "Add upgrade",
-        description: "Choose what a Builder Base builder does next. Levels you add are queued in order.",
-        lane: "Builder",
-        search: "Search upgrades",
-      },
+        title: string;
+        description: string;
+        lane: string;
+        search: string;
+      };
       categories: {
-        defenses: "Defenses",
-        armyBuildings: "Army",
-        resourceBuildings: "Resources",
-        traps: "Traps",
-        heroes: "Heroes",
-        other: "Other",
-      },
-    },
-    bbResearch: {
-      title: "Star Laboratory queue",
-      subline: (name: string, hall: number) => `${name}, Builder Hall ${hall}, plan what the Star Laboratory researches next`,
-      back: "Back to Troops",
-      free: "Free slots",
-      laneBusy: "The Star Laboratory is busy.",
-      gate: "The Star Laboratory researches one troop at a time.",
+        troops: string;
+        spells: string;
+        siegeMachines: string;
+      };
+    };
+    pet: {
+      title: string;
+      subline: (name: string) => string;
+      back: string;
+      free: string;
+      laneBusy: string;
+      gate: string;
       add: {
-        title: "Add research",
-        description: "Choose which troop the Star Laboratory researches next. Levels you add are queued in order.",
-        lane: "Star Laboratory",
-        search: "Search troops",
-      },
-      categories: { troops: "Troops" },
-    },
+        title: string;
+        description: string;
+        lane: string;
+        search: string;
+      };
+      categories: {
+        pets: string;
+      };
+    };
+    bbBuilder: {
+      title: string;
+      subline: (name: string, hall: number) => string;
+      back: string;
+      free: string;
+      laneBusy: string;
+      gate: string;
+      add: {
+        title: string;
+        description: string;
+        lane: string;
+        search: string;
+      };
+      categories: {
+        defenses: string;
+        armyBuildings: string;
+        resourceBuildings: string;
+        traps: string;
+        heroes: string;
+        other: string;
+      };
+    };
+    bbResearch: {
+      title: string;
+      subline: (name: string, hall: number) => string;
+      back: string;
+      free: string;
+      laneBusy: string;
+      gate: string;
+      add: {
+        title: string;
+        description: string;
+        lane: string;
+        search: string;
+      };
+      categories: {
+        troops: string;
+      };
+    };
+  };
+}>("queue", {
+  fns: {
+    goldPass: ["percent"],
+    "totals.freeValue": ["free", "total"],
+    "lane.levels": ["from", "to"],
+    "lane.removed": ["name"],
+    "lane.started": ["name"],
+    "timeline.laneLabel": ["label"],
+    "add.hiddenFromAll": ["names"],
+    "add.added": ["count:plural", "name"],
+    "add.showAllLocked": ["count"],
+    "lanes.builder.subline": ["name"],
+    "lanes.research.subline": ["name"],
+    "lanes.pet.subline": ["name"],
+    "lanes.bbBuilder.subline": ["name", "hall"],
+    "lanes.bbResearch.subline": ["name", "hall"],
   },
-} as const;
+  arrays: [],
+});

@@ -1,0 +1,48 @@
+{
+  "title": "Builder Base walls",
+  "subline": "{name}, Builder Hall {builderHall}, Highest wall level {highest}",
+  "massEdit": "Wall counts can also be adjusted in Mass edit.",
+  "tiles": {
+    "total": "Total at this Builder Hall",
+    "totalCaption": "Highest wall level {highest}",
+    "placed": "Placed",
+    "placedCaption": "Walls on a level",
+    "notPlaced": "Not placed",
+    "allPlaced": "All placed",
+    "stillToPlace": "{amount} {count, plural, one {wall} other {walls}} still to place",
+    "over": "Over by {count}"
+  },
+  "hideEmpty": "{hidden, plural, =0 {Hide empty levels below your lowest} other {Hide empty levels below your lowest ({hidden} hidden)}}",
+  "row": {
+    "level": "Level {level}",
+    "own": "You own",
+    "ownLabel": "Walls you own on level {level}",
+    "lower": "One fewer wall on level {level}",
+    "raise": "One more wall on level {level}",
+    "nextCost": "Next level: {price} {resource} per wall",
+    "toMove": "Walls to move",
+    "toLevel": "To level",
+    "plusOne": "+1",
+    "move": "Move",
+    "moveAll": "Move all",
+    "preview": "Move {amount} {walls, plural, one {wall} other {walls}} from level {from} to {to}: {price} {resource}",
+    "nothingToMove": "Nothing to move",
+    "noWalls": "No walls on this level to move."
+  },
+  "cost": {
+    "title": "Cost to bring all walls to level {level}",
+    "row": "Level {level}, {amount} {walls, plural, one {wall} other {walls}}",
+    "total": "Total",
+    "none": "Every placed wall is at the top level, or none are placed yet.",
+    "note": "Level 2 to 6 walls cost Builder Gold. Level 7 and up cost Builder Gold or Builder Elixir."
+  },
+  "empty": {
+    "title": "No walls yet",
+    "description": "Set your Builder Hall level on the Builder Base Upgrades page to see its walls."
+  },
+  "toast": {
+    "moved": "{amount} {walls, plural, one {wall} other {walls}} moved from level {from} to {to}",
+    "counted": "Level {level} walls {from} to {to}",
+    "undo": "Undo"
+  }
+}

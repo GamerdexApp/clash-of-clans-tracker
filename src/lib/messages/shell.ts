@@ -1,70 +1,76 @@
-export const shellText = {
-  skipToContent: "Skip to content",
-  closeMenu: "Close menu",
-  openMenu: "Open menu",
-  menuLabel: "Site menu",
-  mainNav: "Main",
-  brandTitle: "Clash of Clans",
-  brandSubtitle: "Tracker",
+import { messages } from "@/i18n/text";
+
+export const shellText = messages<{
+  skipToContent: string;
+  closeMenu: string;
+  openMenu: string;
+  menuLabel: string;
+  mainNav: string;
+  brandTitle: string;
+  brandSubtitle: string;
   switcher: {
-    sectionLabel: "Village",
-    loading: "Loading",
-    none: "No village",
-    noneDetail: "Create one to start",
-    switch: "Switch village",
-    villages: "Villages",
-    active: "Active",
-    all: "All villages",
-    create: "New village",
-    halls: (townHall: number, builderHall: number) =>
-      builderHall > 0 ? `TH ${townHall} · BH ${builderHall}` : `TH ${townHall}`,
-  },
+    sectionLabel: string;
+    loading: string;
+    none: string;
+    noneDetail: string;
+    switch: string;
+    villages: string;
+    active: string;
+    all: string;
+    create: string;
+    halls: (townHall: number, builderHall: number) => string;
+  };
   locked: {
-    townHall: (level: number) => `Town Hall ${level}`,
-    blacksmith: "Blacksmith",
-    helperHut: "Helper Hut",
-    off: "Off",
-    srLabel: (requirement: string) => `Requires ${requirement}`,
-  },
+    townHall: (level: number) => string;
+    blacksmith: string;
+    helperHut: string;
+    off: string;
+    srLabel: (requirement: string) => string;
+  };
   footer: {
-    tagline:
-      "A free progress tracker for Clash of Clans. Your data stays in your browser, or in your own cloud storage if you turn on sync.",
-    support: "Support",
-    about: "About",
-    settings: "Settings",
-    discord: "Discord",
-    github: "GitHub",
-    game: "Official game site",
-    privacy: "Privacy policy",
-    terms: "Terms of service",
-    disclaimerTitle: "Disclaimer",
-    disclaimer:
-      "This project is not affiliated with, endorsed by, or connected to Supercell or Clash of Clans.",
-    framework: "Built with the Gamerdex framework, a shared base for free game progress trackers.",
-    visitGamerdex: "Visit Gamerdex",
-  },
+    tagline: string;
+    support: string;
+    about: string;
+    settings: string;
+    discord: string;
+    github: string;
+    game: string;
+    privacy: string;
+    terms: string;
+    disclaimerTitle: string;
+    disclaimer: string;
+    framework: string;
+    visitGamerdex: string;
+  };
   notFound: {
-    title: "This page does not exist",
-    body: "The link may be old or mistyped. Your villages are safe and nothing was changed.",
-    toOverview: "Go to Overview",
-    toVillages: "Go to Villages",
-    toHome: "Back to home",
-    didYouMean: "Did you mean",
-    noVillage: "No village is selected, so Overview has nothing to show. Pick one on the Villages page.",
-    jumpTo: "Or jump to",
-  },
+    title: string;
+    body: string;
+    toOverview: string;
+    toVillages: string;
+    toHome: string;
+    didYouMean: string;
+    noVillage: string;
+    jumpTo: string;
+  };
   error: {
-    title: "Something went wrong",
-    body: "The app hit an error. Your saved data has not been changed.",
-    digest: (digest: string) => `digest ${digest}`,
-    tryAgain: "Try again",
-    download: "Download the raw data",
-    clear: "Clear data and restart",
-    confirmTitle: "Clear all saved data?",
-    confirmBody:
-      "This removes everything the app stored in this browser. A copy of the raw data is downloaded first so it can be repaired later. Villages synced to a cloud account stay there.",
-    cancel: "Cancel",
-    confirm: "Download and clear",
-    noData: "There is no saved data in this browser.",
+    title: string;
+    body: string;
+    digest: (digest: string) => string;
+    tryAgain: string;
+    download: string;
+    clear: string;
+    confirmTitle: string;
+    confirmBody: string;
+    cancel: string;
+    confirm: string;
+    noData: string;
+  };
+}>("shell", {
+  fns: {
+    "switcher.halls": ["townHall", "builderHall"],
+    "locked.townHall": ["level"],
+    "locked.srLabel": ["requirement"],
+    "error.digest": ["digest"],
   },
-} as const;
+  arrays: [],
+});

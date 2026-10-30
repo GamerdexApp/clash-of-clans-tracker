@@ -1,0 +1,49 @@
+{
+  "title": "Achievements",
+  "description": "Track the stars, values and rewards of every achievement.",
+  "subline": "{name}, {count} achievements, {stars} of {maxStars} stars, {percent}%",
+  "tiles": {
+    "all": "All achievements",
+    "home": "Home Village",
+    "builder": "Builder Base",
+    "capital": "Clan Capital",
+    "gems": "Gems earned",
+    "xp": "XP earned",
+    "stars": "{stars} of {maxStars} stars",
+    "left": "{amount} {unit} still to earn",
+    "gemsUnit": "gems",
+    "xpUnit": "XP"
+  },
+  "sections": {
+    "home": "Home Village",
+    "builderBase": "Builder Base",
+    "clanCapital": "Clan Capital",
+    "summary": "{count} achievements, {stars} / {maxStars} stars, {gems} gems, {xp} XP",
+    "more": "Show {count} more {name} achievements",
+    "less": "Show fewer"
+  },
+  "card": {
+    "manual": "Manual",
+    "nextStar": "Next star",
+    "xp": "XP",
+    "gems": "gems",
+    "edit": "Edit {name}",
+    "done": "Done",
+    "stars": "Stars",
+    "starsHelp": "Press the same star again to remove one star.",
+    "star": "{amount} {number, plural, one {star} other {stars}}",
+    "value": "Value",
+    "target": "Target",
+    "manualLabel": "Manual (skip API override)",
+    "saves": "Changes save as you type. Raising the stars moves Target to the next tier.",
+    "progress": "{name} progress",
+    "starsEarned": "{stars} of 3 stars"
+  },
+  "toast": {
+    "stars": "{name} changed to {amount} {stars, plural, one {star} other {stars}}",
+    "targetMoved": "Target moved to {target}.",
+    "value": "{name} value changed to {value}",
+    "target": "{name} target changed to {target}",
+    "undo": "Undo"
+  }
+}

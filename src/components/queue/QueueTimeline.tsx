@@ -7,7 +7,7 @@ import type { QueueTimelineProps } from "@/types/components/upgradeQueue";
 
 const text = queueText.timeline;
 const ZOOMS = ["3", "7", "14", "30", "90"] as const;
-const ZOOM_OPTIONS = ZOOMS.map((id) => ({ id, label: text.zooms[id] }));
+const zoomOptions = () => ZOOMS.map((id) => ({ id, label: text.zooms[id] }));
 const DAY_MS = 86_400_000;
 
 export const QueueTimeline = ({ schedule, now, zoomDays, onZoomChange }: QueueTimelineProps) => {
@@ -22,7 +22,7 @@ export const QueueTimeline = ({ schedule, now, zoomDays, onZoomChange }: QueueTi
 				<h2 className="text-base font-semibold">{text.title}</h2>
 				<SegmentedControl
 					label={text.zoomLabel}
-					options={ZOOM_OPTIONS}
+					options={zoomOptions()}
 					value={String(zoomDays) as (typeof ZOOMS)[number]}
 					onChange={(id) => onZoomChange(Number(id))}
 				/>

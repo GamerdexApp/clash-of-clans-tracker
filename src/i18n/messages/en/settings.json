@@ -1,4 +1,150 @@
 {
+  "title": "Settings",
+  "subline": "Preferences, backups and your data",
+  "tabsLabel": "Settings sections",
+  "tabs": {
+    "sync": "Cloud sync",
+    "preferences": "Preferences",
+    "data": "Backup and data",
+    "about": "About"
+  },
+  "appearance": {
+    "title": "Appearance",
+    "description": "Choose how the app looks.",
+    "themeLabel": "Theme",
+    "themes": {
+      "light": "Light",
+      "dark": "Dark",
+      "system": "System"
+    },
+    "themeNote": "System follows your device. It is {mode} now."
+  },
+  "builders": {
+    "title": "Builder settings",
+    "description": "Event helpers that add a slot to your queues.",
+    "goblinBuilder": "Goblin Builder",
+    "goblinBuilderHelp": "Adds one extra builder slot, the seventh, for buildings.",
+    "goblinResearch": "Goblin Research",
+    "goblinResearchHelp": "Adds one extra research slot in the Laboratory."
+  },
+  "activeHours": {
+    "title": "Active hours",
+    "description": "Set the hours you play each day. Queue timelines add a gap when an upgrade finishes outside this window.",
+    "start": "Start time",
+    "end": "End time",
+    "save": "Save",
+    "clear": "Clear",
+    "status": "Active from {start} to {end}, on your local clock.",
+    "none": "No active hours set. Every hour counts as active.",
+    "sameTime": "Start and end are the same. Choose two different times, or clear the window.",
+    "overnight": "This window runs overnight, from {start} to {end} the next day.",
+    "unsaved": "You have changes that are not saved.",
+    "clockChanged": "Your clock offset changed. Active hours still cover {start} to {end} on your clock."
+  },
+  "data": {
+    "title": "Data management",
+    "storageNote": {
+      "title": "Stored in this browser.",
+      "body": "Clearing the browser data removes your villages. Export a backup now and then."
+    },
+    "export": {
+      "title": "Export",
+      "description": "Download every village and your settings as one file.",
+      "button": "Export all villages",
+      "done": "Backup downloaded"
+    },
+    "import": {
+      "title": "Import",
+      "fileLabel": "Backup file",
+      "chooseFile": "Choose file",
+      "noFile": "No file chosen",
+      "description": "Choose a backup file. You review it before anything changes.",
+      "review": "Review import",
+      "merged": "Backup merged",
+      "replaced": "Backup replaced your data",
+      "undo": "Undo"
+    },
+    "reset": {
+      "title": "Reset all data",
+      "warning": "Deletes every village and setting in this browser.",
+      "button": "Reset all data",
+      "confirmTitle": "Delete everything?",
+      "confirmBody": "This removes {names}. You can undo it for ten seconds.",
+      "cancel": "Cancel",
+      "confirm": "Delete everything",
+      "done": "All data deleted",
+      "doneMessage": "{amount} {count, plural, one {village} other {villages}} removed.",
+      "doneMessageDisconnected": "{amount} {count, plural, one {village} other {villages}} removed. Sync is disconnected on this browser.",
+      "syncedCopy": "Also delete the synced copy in {provider}",
+      "syncedOn": "Sync stays on. Your other devices lose these villages at their next sync. Export a backup first if you are not sure.",
+      "syncedOff": "Without this, sync is disconnected on this browser so the next sync cannot bring the villages back.",
+      "undo": "Undo"
+    },
+    "villages": {
+      "title": "Villages",
+      "description": "Create, edit, switch and delete villages.",
+      "manage": "Manage villages"
+    },
+    "villageCount": "{amount} {count, plural, one {village} other {villages}}"
+  },
+  "importDialog": {
+    "title": "Review import",
+    "fileInfo": "{name}, {size}",
+    "bytes": "{count} B",
+    "kilobytes": "{count} KB",
+    "cancel": "Cancel",
+    "close": "Close",
+    "merge": "Merge into this device",
+    "replace": "Replace this device",
+    "failedTitle": "This file cannot be imported.",
+    "errors": {
+      "notJson": "This file is not valid JSON.",
+      "playthroughsMissing": "This file is not a Clash of Clans Tracker backup. It has no villages list."
+    },
+    "checksTitle": "Checks passed.",
+    "checks": "The file lists {read} villages and {kept} can be read.",
+    "skipped": "{amount} {count, plural, one {entry was} other {entries were}} skipped.",
+    "howToApply": "How to apply",
+    "modeLabel": "Import mode",
+    "modes": {
+      "merge": "Merge",
+      "replace": "Replace"
+    },
+    "modeNotes": {
+      "merge": "Adds villages that are new and keeps the later copy of a village that exists in both. Your settings and active village stay.",
+      "replace": "Uses only what is in the file. Villages that are not in the file are removed."
+    },
+    "whatChanges": "What changes",
+    "columns": {
+      "village": "Village",
+      "inFile": "In file",
+      "onDevice": "On device",
+      "result": "Result"
+    },
+    "notThere": "Not there",
+    "results": {
+      "added": "Added",
+      "updated": "Updated from file",
+      "kept": "Kept",
+      "replaced": "Replaced",
+      "removed": "Removed"
+    },
+    "summary": {
+      "added": "{count} added",
+      "updated": "{count} updated",
+      "kept": "{count} kept",
+      "replaced": "{count} replaced",
+      "removed": "{count} removed"
+    },
+    "noVillages": "The file has no villages.",
+    "undoNote": "You can undo the import for ten seconds."
+  },
+  "about": {
+    "version": "Version {version}",
+    "summary": "A free progress tracker for Clash of Clans. Track upgrades, research, achievements and more across several villages.",
+    "officialGame": "Official Clash of Clans site",
+    "disclaimer": "This project is not affiliated with, endorsed by, or connected to Supercell or Clash of Clans."
+  },
   "region": {
     "title": "Language and region",
     "description": "How the app shows text, numbers and dates on this device. These choices are not saved with your villages, not exported and not synced.",

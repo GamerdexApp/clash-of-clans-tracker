@@ -22,7 +22,7 @@ import { VillageCard } from "./VillageCard";
 
 const text = villagesText;
 const SORTS: SortOption[] = ["lastModified", "createdAt", "name"];
-const SORT_OPTIONS = SORTS.map((id) => ({ id, label: text.filters.sort[id] }));
+const sortOptions = () => SORTS.map((id) => ({ id, label: text.filters.sort[id] }));
 
 export const VillagesPage = () => {
 	const { playthroughs, activePlaythrough, setActivePlaythrough, deletePlaythrough, updateData } =
@@ -107,7 +107,7 @@ export const VillagesPage = () => {
 							/>
 							<SegmentedControl
 								label={text.filters.sortLabel}
-								options={SORT_OPTIONS}
+								options={sortOptions()}
 								value={sort}
 								onChange={setSort}
 							/>

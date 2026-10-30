@@ -15,7 +15,7 @@ import { HelperShell } from "./HelperShell";
 
 const text = dailiesText.helpers;
 
-const ores = oreOrder.map((id) => ({ id, label: text.prospector.ores[id] }));
+const ores = () => oreOrder.map((id) => ({ id, label: text.prospector.ores[id] }));
 
 export const ProspectorCard = ({ village, now }: { village: Playthrough; now: Date }) => {
 	const actions = useDailiesActions(village);
@@ -54,7 +54,7 @@ export const ProspectorCard = ({ village, now }: { village: Playthrough; now: Da
 					</section>
 					<ConversionCalculator
 						title={text.prospector.calculator}
-						options={ores}
+						options={ores()}
 						limit={oreInputMax}
 						step={() => 1}
 						output={oreOutput}

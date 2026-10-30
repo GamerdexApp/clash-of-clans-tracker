@@ -1,0 +1,66 @@
+{
+  "skipToContent": "Skip to content",
+  "closeMenu": "Close menu",
+  "openMenu": "Open menu",
+  "menuLabel": "Site menu",
+  "mainNav": "Main",
+  "brandTitle": "Clash of Clans",
+  "brandSubtitle": "Tracker",
+  "switcher": {
+    "sectionLabel": "Village",
+    "loading": "Loading",
+    "none": "No village",
+    "noneDetail": "Create one to start",
+    "switch": "Switch village",
+    "villages": "Villages",
+    "active": "Active",
+    "all": "All villages",
+    "create": "New village",
+    "halls": "{builderHall, plural, =0 {TH {townHall}} other {TH {townHall} · BH {builderHall}}}"
+  },
+  "locked": {
+    "townHall": "Town Hall {level}",
+    "blacksmith": "Blacksmith",
+    "helperHut": "Helper Hut",
+    "off": "Off",
+    "srLabel": "Requires {requirement}"
+  },
+  "footer": {
+    "tagline": "A free progress tracker for Clash of Clans. Your data stays in your browser, or in your own cloud storage if you turn on sync.",
+    "support": "Support",
+    "about": "About",
+    "settings": "Settings",
+    "discord": "Discord",
+    "github": "GitHub",
+    "game": "Official game site",
+    "privacy": "Privacy policy",
+    "terms": "Terms of service",
+    "disclaimerTitle": "Disclaimer",
+    "disclaimer": "This project is not affiliated with, endorsed by, or connected to Supercell or Clash of Clans.",
+    "framework": "Built with the Gamerdex framework, a shared base for free game progress trackers.",
+    "visitGamerdex": "Visit Gamerdex"
+  },
+  "notFound": {
+    "title": "This page does not exist",
+    "body": "The link may be old or mistyped. Your villages are safe and nothing was changed.",
+    "toOverview": "Go to Overview",
+    "toVillages": "Go to Villages",
+    "toHome": "Back to home",
+    "didYouMean": "Did you mean",
+    "noVillage": "No village is selected, so Overview has nothing to show. Pick one on the Villages page.",
+    "jumpTo": "Or jump to"
+  },
+  "error": {
+    "title": "Something went wrong",
+    "body": "The app hit an error. Your saved data has not been changed.",
+    "digest": "digest {digest}",
+    "tryAgain": "Try again",
+    "download": "Download the raw data",
+    "clear": "Clear data and restart",
+    "confirmTitle": "Clear all saved data?",
+    "confirmBody": "This removes everything the app stored in this browser. A copy of the raw data is downloaded first so it can be repaired later. Villages synced to a cloud account stay there.",
+    "cancel": "Cancel",
+    "confirm": "Download and clear",
+    "noData": "There is no saved data in this browser."
+  }
+}

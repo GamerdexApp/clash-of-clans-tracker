@@ -1,107 +1,147 @@
-export const overviewText = {
-  title: "Overview",
-  description: "Your village at a glance: progress, daily timers and every stored stat.",
-  subline: (name: string) => `${name}, derived, view only`,
+import { messages } from "@/i18n/text";
+
+export const overviewText = messages<{
+  title: string;
+  description: string;
+  subline: (name: string) => string;
   header: {
-    clanLevel: (level: number, role: string) => (role ? `Clan level ${level}, ${role}` : `Clan level ${level}`),
-    achievements: "Achievements",
-    ringCaption: (stars: number, maxStars: number) => `${stars} of ${maxStars} stars`,
-    viewAll: "View all",
-    townHall: (level: number) => `TH${level}`,
-  },
+    clanLevel: (level: number, role: string) => string;
+    achievements: string;
+    ringCaption: (stars: number, maxStars: number) => string;
+    viewAll: string;
+    townHall: (level: number) => string;
+  };
   dailies: {
-    title: "Dailies",
-    closedTitle: "Dailies open at Town Hall 3",
-    closedBody: "Forge, Helpers and the Season Pass open as the Town Hall rises.",
-    closedLink: "See what is open",
-    groups: { helpers: "Helpers", daily: "Daily", goldPass: "Gold Pass" },
-    requires: (requirement: string) => `Requires ${requirement}`,
-    openForge: "Open Forge",
-    openHelpers: "Open Helpers",
-    unlockProspector: "Unlock in Season Pass",
-    helperHut: "Helper Hut",
-    townHall: (level: number) => `Town Hall ${level}`,
-    starBonus: "Star Bonus",
-    capitalGold: "Capital Gold",
-    autoForge: "Auto Forge",
-    forgeSlots: "Forge slots",
-    notRunning: "Not running",
-    running: "Running",
-    stopAuto: "Stop Auto Forge",
-    autoLine: (amount: string, resource: string, capitalGold: string) => `${amount} ${resource} to ${capitalGold} Capital Gold`,
-    slotsLine: (running: number, open: number) => `${running} of ${open} slots running`,
-    slotsDone: (done: number) => (done === 1 ? "1 slot is done" : `${done} slots are done`),
-    autoPerk: "the Auto Forge perk",
-    helperPreview: (before: string, after: string) => `Use now: ${before} left becomes ${after}`,
+    title: string;
+    closedTitle: string;
+    closedBody: string;
+    closedLink: string;
+    groups: {
+      helpers: string;
+      daily: string;
+      goldPass: string;
+    };
+    requires: (requirement: string) => string;
+    openForge: string;
+    openHelpers: string;
+    unlockProspector: string;
+    helperHut: string;
+    townHall: (level: number) => string;
+    starBonus: string;
+    capitalGold: string;
+    autoForge: string;
+    forgeSlots: string;
+    notRunning: string;
+    running: string;
+    stopAuto: string;
+    autoLine: (amount: string, resource: string, capitalGold: string) => string;
+    slotsLine: (running: number, open: number) => string;
+    slotsDone: (done: number) => string;
+    autoPerk: string;
+    helperPreview: (before: string, after: string) => string;
     goldPass: {
-      edit: "Edit on Season Pass",
-      builder: "Builder boost",
-      research: "Research boost",
-      hoggyBank: "Hoggy Bank",
-      gemDonations: "1-Gem Donations",
-      autoForge: "Auto Forge",
-      requestReduction: "Request Time Reduction",
-      on: "On",
-      off: "Off",
-      resets: (date: string) => `Boosts return to 0% on ${date}.`,
-      readOnly: "Opening Overview never changes the village or its last modified time.",
-    },
-  },
+      edit: string;
+      builder: string;
+      research: string;
+      hoggyBank: string;
+      gemDonations: string;
+      autoForge: string;
+      requestReduction: string;
+      on: string;
+      off: string;
+      resets: (date: string) => string;
+      readOnly: string;
+    };
+  };
   league: {
-    open: (name: string) => `Show rewards of ${name}`,
-    homeKind: "Home Village league",
-    builderKind: "Builder Base league",
-    noData: "No data for this league at this Town Hall.",
-    battle: "Battle results",
-    stars: "Stars",
-    attacker: "Attacker Builder Gold",
-    defender: "Defender Builder Elixir",
-  },
+    open: (name: string) => string;
+    homeKind: string;
+    builderKind: string;
+    noData: string;
+    battle: string;
+    stars: string;
+    attacker: string;
+    defender: string;
+  };
   builder: {
-    title: "Builder Base",
-    hall: (level: number) => `Builder Hall ${level}`,
-    trophies: (trophies: number) => `${trophies.toLocaleString()} trophies`,
-    daysAt: (level: number) => `Days at BH${level}`,
-    notSetTitle: "Builder Hall not set",
-    notSetBody: "Builder Base is open at Town Hall 6, but this village has Builder Hall 0. Progress, trophies and troops appear once the level is 1 or higher.",
-    notSetAction: "Set Builder Hall level",
-    lockedBody: "Requires Town Hall 6",
-    troops: "Troops",
-    heroes: "Heroes",
-  },
+    title: string;
+    hall: (level: number) => string;
+    trophies: (trophies: number) => string;
+    daysAt: (level: number) => string;
+    notSetTitle: string;
+    notSetBody: string;
+    notSetAction: string;
+    lockedBody: string;
+    troops: string;
+    heroes: string;
+  };
   capital: {
-    title: "Clan Capital",
-    hall: (level: number) => `Capital Hall ${level}`,
-    notSetTitle: "Clan Capital is not set up",
-    notSetBody: "Capital Peak has no hall level yet, so there is no district progress to show. Set the Capital Hall level to start tracking.",
-    notSetAction: "Set Capital Hall level",
-    lockedBody: "Requires Town Hall 3",
-    districtHall: (level: number) => `District Hall ${level}`,
-    notUnlocked: "Not unlocked",
-    unlocksAt: (level: number) => `Unlocks at Capital Hall ${level}`,
-    needsDistrictHall: "Set a District Hall to start",
-    noData: "No data",
-    more: (count: number) => `Show ${count} more districts`,
-    showFewer: "Show fewer",
-    openDistricts: "Open Districts",
-  },
+    title: string;
+    hall: (level: number) => string;
+    notSetTitle: string;
+    notSetBody: string;
+    notSetAction: string;
+    lockedBody: string;
+    districtHall: (level: number) => string;
+    notUnlocked: string;
+    unlocksAt: (level: number) => string;
+    needsDistrictHall: string;
+    noData: string;
+    more: (count: number) => string;
+    showFewer: string;
+    openDistricts: string;
+  };
   home: {
-    title: "Home Village",
-    townHall: (level: number) => `Town Hall ${level}`,
-    daysAt: (level: number) => `Days at TH${level}`,
-    perHour: "per hour",
-    stored: "stored",
-    cards: { locked: (requirement: string) => `Requires ${requirement}` },
-    queue: "Open",
-    troops: "Troops",
-    spells: "Spells",
-    heroes: "Heroes",
-    siege: "Siege Machines",
-    pets: "Pets",
-    legend: "Green outline: at the maximum for this Town Hall. Dashed outline: locked. Clock: an upgrade is running.",
-    tile: (name: string, level: number, max: number, requirement?: string) =>
-      requirement ? `${name}, requires ${requirement}` : `${name}, level ${level}${max > 0 ? ` of ${max}` : ""}`,
-    heroLocked: (requirement: string) => `Requires ${requirement}`,
-    petsLocked: "Requires Town Hall 14",
+    title: string;
+    townHall: (level: number) => string;
+    daysAt: (level: number) => string;
+    perHour: string;
+    stored: string;
+    cards: {
+      locked: (requirement: string) => string;
+    };
+    queue: string;
+    troops: string;
+    spells: string;
+    heroes: string;
+    siege: string;
+    pets: string;
+    legend: string;
+    tile: (
+      name: string,
+      level: number,
+      max: number,
+      requirement?: string,
+    ) => string;
+    heroLocked: (requirement: string) => string;
+    petsLocked: string;
+  };
+}>("overview", {
+  fns: {
+    subline: ["name"],
+    "header.clanLevel": ["level", "role"],
+    "header.ringCaption": ["stars", "maxStars"],
+    "header.townHall": ["level"],
+    "dailies.requires": ["requirement"],
+    "dailies.townHall": ["level"],
+    "dailies.autoLine": ["amount", "resource", "capitalGold"],
+    "dailies.slotsLine": ["running", "open"],
+    "dailies.slotsDone": ["done:plural"],
+    "dailies.helperPreview": ["before", "after"],
+    "dailies.goldPass.resets": ["date"],
+    "league.open": ["name"],
+    "builder.hall": ["level"],
+    "builder.trophies": ["trophies:number"],
+    "builder.daysAt": ["level"],
+    "capital.hall": ["level"],
+    "capital.districtHall": ["level"],
+    "capital.unlocksAt": ["level"],
+    "capital.more": ["count"],
+    "home.townHall": ["level"],
+    "home.daysAt": ["level"],
+    "home.cards.locked": ["requirement"],
+    "home.tile": ["name", "level", "max", "requirement"],
+    "home.heroLocked": ["requirement"],
   },
-} as const;
+  arrays: [],
+});

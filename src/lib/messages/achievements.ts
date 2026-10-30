@@ -1,51 +1,80 @@
-export const achievementsText = {
-  title: "Achievements",
-  description: "Track the stars, values and rewards of every achievement.",
-  subline: (name: string, count: number, stars: number, maxStars: number, percent: number) =>
-    `${name}, ${count} achievements, ${stars} of ${maxStars} stars, ${percent}%`,
+import { messages } from "@/i18n/text";
+
+export const achievementsText = messages<{
+  title: string;
+  description: string;
+  subline: (
+    name: string,
+    count: number,
+    stars: number,
+    maxStars: number,
+    percent: number,
+  ) => string;
   tiles: {
-    all: "All achievements",
-    home: "Home Village",
-    builder: "Builder Base",
-    capital: "Clan Capital",
-    gems: "Gems earned",
-    xp: "XP earned",
-    stars: (stars: number, maxStars: number) => `${stars} of ${maxStars} stars`,
-    left: (amount: string, unit: string) => `${amount} ${unit} still to earn`,
-    gemsUnit: "gems",
-    xpUnit: "XP",
-  },
+    all: string;
+    home: string;
+    builder: string;
+    capital: string;
+    gems: string;
+    xp: string;
+    stars: (stars: number, maxStars: number) => string;
+    left: (amount: string, unit: string) => string;
+    gemsUnit: string;
+    xpUnit: string;
+  };
   sections: {
-    home: "Home Village",
-    builderBase: "Builder Base",
-    clanCapital: "Clan Capital",
-    summary: (count: number, stars: number, maxStars: number, gems: string, xp: string) =>
-      `${count} achievements, ${stars} / ${maxStars} stars, ${gems} gems, ${xp} XP`,
-    more: (count: number, name: string) => `Show ${count} more ${name} achievements`,
-    less: "Show fewer",
-  },
+    home: string;
+    builderBase: string;
+    clanCapital: string;
+    summary: (
+      count: number,
+      stars: number,
+      maxStars: number,
+      gems: string,
+      xp: string,
+    ) => string;
+    more: (count: number, name: string) => string;
+    less: string;
+  };
   card: {
-    manual: "Manual",
-    nextStar: "Next star",
-    xp: "XP",
-    gems: "gems",
-    edit: (name: string) => `Edit ${name}`,
-    done: "Done",
-    stars: "Stars",
-    starsHelp: "Press the same star again to remove one star.",
-    star: (number: number) => `${number} ${number === 1 ? "star" : "stars"}`,
-    value: "Value",
-    target: "Target",
-    manualLabel: "Manual (skip API override)",
-    saves: "Changes save as you type. Raising the stars moves Target to the next tier.",
-    progress: (name: string) => `${name} progress`,
-    starsEarned: (stars: number) => `${stars} of 3 stars`,
-  },
+    manual: string;
+    nextStar: string;
+    xp: string;
+    gems: string;
+    edit: (name: string) => string;
+    done: string;
+    stars: string;
+    starsHelp: string;
+    star: (number: number) => string;
+    value: string;
+    target: string;
+    manualLabel: string;
+    saves: string;
+    progress: (name: string) => string;
+    starsEarned: (stars: number) => string;
+  };
   toast: {
-    stars: (name: string, stars: number) => `${name} changed to ${stars} ${stars === 1 ? "star" : "stars"}`,
-    targetMoved: (target: string) => `Target moved to ${target}.`,
-    value: (name: string, value: string) => `${name} value changed to ${value}`,
-    target: (name: string, target: string) => `${name} target changed to ${target}`,
-    undo: "Undo",
+    stars: (name: string, stars: number) => string;
+    targetMoved: (target: string) => string;
+    value: (name: string, value: string) => string;
+    target: (name: string, target: string) => string;
+    undo: string;
+  };
+}>("achievements", {
+  fns: {
+    subline: ["name", "count", "stars", "maxStars", "percent"],
+    "tiles.stars": ["stars", "maxStars"],
+    "tiles.left": ["amount", "unit"],
+    "sections.summary": ["count", "stars", "maxStars", "gems", "xp"],
+    "sections.more": ["count", "name"],
+    "card.edit": ["name"],
+    "card.star": ["number:plural"],
+    "card.progress": ["name"],
+    "card.starsEarned": ["stars"],
+    "toast.stars": ["name", "stars:plural"],
+    "toast.targetMoved": ["target"],
+    "toast.value": ["name", "value"],
+    "toast.target": ["name", "target"],
   },
-} as const;
+  arrays: [],
+});

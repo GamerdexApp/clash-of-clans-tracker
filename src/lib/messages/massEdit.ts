@@ -1,126 +1,184 @@
-export const massEditText = {
-  title: "Mass edit",
-  description: "Change many levels at once. Nothing is saved until you press Save changes.",
-  subline: (name: string, townHall: number) => `${name}, Town Hall ${townHall}, staged changes`,
-  scopes: { home: "Home Village", builder: "Builder Base", capital: "Clan Capital" },
-  scopeNav: "Scope",
-  requires: (requirement: string) => `Requires ${requirement}`,
-  trackingOff: "Tracking off",
-  changedCount: (count: number) => (count === 1 ? "1 change" : `${count} changes`),
-  chip: "Unsaved changes",
+import { messages } from "@/i18n/text";
+
+export const massEditText = messages<{
+  title: string;
+  description: string;
+  subline: (name: string, townHall: number) => string;
+  scopes: {
+    home: string;
+    builder: string;
+    capital: string;
+  };
+  scopeNav: string;
+  requires: (requirement: string) => string;
+  trackingOff: string;
+  changedCount: (count: number) => string;
+  chip: string;
   bar: {
-    unsaved: (count: number) => (count === 1 ? "1 unsaved change" : `${count} unsaved changes`),
-    none: "No unsaved changes",
-    discard: "Discard",
-    save: "Save changes",
-  },
-  saved: (count: number) => (count === 1 ? "Saved 1 change" : `Saved ${count} changes`),
-  undo: "Undo",
+    unsaved: (count: number) => string;
+    none: string;
+    discard: string;
+    save: string;
+  };
+  saved: (count: number) => string;
+  undo: string;
   discardDialog: {
-    title: (count: number) => (count === 1 ? "Discard 1 unsaved change?" : `Discard ${count} unsaved changes?`),
-    body: "Every row goes back to its saved level.",
-    keep: "Keep editing",
-    discard: "Discard changes",
-  },
+    title: (count: number) => string;
+    body: string;
+    keep: string;
+    discard: string;
+  };
   leave: {
-    title: (count: number) => (count === 1 ? "You have 1 unsaved change" : `You have ${count} unsaved changes`),
-    body: "Save them before you leave, or discard them.",
-    save: "Save and leave",
-    discard: "Discard and leave",
-    keep: "Keep editing",
-  },
+    title: (count: number) => string;
+    body: string;
+    save: string;
+    discard: string;
+    keep: string;
+  };
   toolbar: {
-    label: "Bulk actions",
-    selectAll: (count: number) => `Select all ${count}`,
-    selected: (count: number) => (count === 1 ? "1 row selected" : `${count} rows selected`),
-    clearSelection: "Clear selection",
-    scopeAll: (count: number, category: string) => `Acts on all ${count} rows in ${category}`,
-    scopeSelected: (count: number) => (count === 1 ? "Acts on 1 selected row" : `Acts on ${count} selected rows`),
-    max: "Max All",
-    maxSelected: "Max selected",
-    reset: "Reset All",
-    resetSelected: "Reset selected",
-    setLevel: "Set level",
-    levelLabel: "Level for selected rows",
-    applyLevel: (count: number) => (count === 1 ? "Apply to 1 row" : `Apply to ${count} rows`),
-    hallLabel: "Set to max for hall level",
-    hallCurrent: (hall: string, level: number) => `${hall} ${level} (current)`,
-    hallOption: (hall: string, level: number) => `${hall} ${level}`,
-    hallPlaceholder: (hall: string) => `Choose a ${hall}`,
-  },
+    label: string;
+    selectAll: (count: number) => string;
+    selected: (count: number) => string;
+    clearSelection: string;
+    scopeAll: (count: number, category: string) => string;
+    scopeSelected: (count: number) => string;
+    max: string;
+    maxSelected: string;
+    reset: string;
+    resetSelected: string;
+    setLevel: string;
+    levelLabel: string;
+    applyLevel: (count: number) => string;
+    hallLabel: string;
+    hallCurrent: (hall: string, level: number) => string;
+    hallOption: (hall: string, level: number) => string;
+    hallPlaceholder: (hall: string) => string;
+  };
   confirm: {
-    title: (count: number) => (count === 1 ? "Lower 1 row?" : `Lower ${count} rows?`),
-    body: "This changes the draft. Nothing is saved until you press Save changes.",
-    superchargeNote: "A building that drops below its top level also loses its supercharge tier.",
-    apply: "Apply to draft",
-    cancel: "Cancel",
-    line: (name: string, from: number, to: number) => `${name}: ${from} to ${to}`,
-    more: (count: number) => `and ${count} more`,
-  },
+    title: (count: number) => string;
+    body: string;
+    superchargeNote: string;
+    apply: string;
+    cancel: string;
+    line: (name: string, from: number, to: number) => string;
+    more: (count: number) => string;
+  };
   rows: {
-    notBuilt: "Not built",
-    toMax: (count: number) => `${count} to max`,
-    atMax: "At max",
-    changed: (from: number, to: number) => `Changed ${from} to ${to}`,
-    level: (name: string) => `${name} level`,
-    raise: (name: string) => `Raise ${name}`,
-    lower: (name: string) => `Lower ${name}`,
-    max: "Max",
-    select: (name: string) => `Select ${name}`,
-    selectGroup: (name: string) => `Select every ${name}`,
-    supercharge: "Supercharge",
-    reachFirst: (level: number) => `Reach level ${level} first`,
-    slider: (name: string) => `${name} slider`,
-    groupBuilt: (count: number, max: number) => `${count} built, max level ${max}`,
-    expand: (name: string) => `Show ${name}`,
-    collapse: (name: string) => `Hide ${name}`,
-  },
+    notBuilt: string;
+    toMax: (count: number) => string;
+    atMax: string;
+    changed: (from: number, to: number) => string;
+    level: (name: string) => string;
+    raise: (name: string) => string;
+    lower: (name: string) => string;
+    max: string;
+    select: (name: string) => string;
+    selectGroup: (name: string) => string;
+    supercharge: string;
+    reachFirst: (level: number) => string;
+    slider: (name: string) => string;
+    groupBuilt: (count: number, max: number) => string;
+    expand: (name: string) => string;
+    collapse: (name: string) => string;
+  };
   category: {
-    atMax: (done: number, total: number, hall: string, level: number) => `${done} of ${total} at max for ${hall} ${level}`,
-    rowsAtMax: (done: number, total: number) => `${done} of ${total} at max`,
-    empty: "Nothing to edit in this category yet.",
-    locked: (requirement: string) => `Requires ${requirement}`,
-    lockedSuffix: " (locked)",
-    nav: "Categories",
-  },
+    atMax: (done: number, total: number, hall: string, level: number) => string;
+    rowsAtMax: (done: number, total: number) => string;
+    empty: string;
+    locked: (requirement: string) => string;
+    lockedSuffix: string;
+    nav: string;
+  };
   walls: {
-    total: "Total",
-    allocated: "Allocated",
-    remaining: "Remaining",
-    maxAll: "Max All",
-    resetAll: "Reset All",
-    maxAllHelp: "Moves every remaining wall to the highest level",
-    level: (level: number) => `Level ${level} walls`,
-  },
+    total: string;
+    allocated: string;
+    remaining: string;
+    maxAll: string;
+    resetAll: string;
+    maxAllHelp: string;
+    level: (level: number) => string;
+  };
   builder: {
-    profile: "Builder Base profile",
-    hall: "Builder Hall level",
-    hallHelp: (level: number) => `Builder Hall ${level} sets the highest level of every row below. Lowering it asks first and lowers only the rows above the new limit.`,
-    none: "No buildings available at this Builder Hall level",
-    raise: "Raise Builder Hall",
-    lower: "Lower Builder Hall",
-    trophies: "Trophies",
-    bestTrophies: "Best trophies",
-    league: "League",
-    hallConfirmTitle: (level: number) => `Lower Builder Hall to ${level}?`,
-  },
-  hallNames: { home: "Town Hall", builder: "Builder Hall", district: "District Hall", capital: "Capital Hall" },
+    profile: string;
+    hall: string;
+    hallHelp: (level: number) => string;
+    none: string;
+    raise: string;
+    lower: string;
+    trophies: string;
+    bestTrophies: string;
+    league: string;
+    hallConfirmTitle: (level: number) => string;
+  };
+  hallNames: {
+    home: string;
+    builder: string;
+    district: string;
+    capital: string;
+  };
   capital: {
-    profile: "Clan Capital profile",
-    hall: "Capital Hall",
-    none: "None",
-    level: (level: number) => `Capital Hall ${level}`,
-    contributions: "Clan Capital contributions",
-    unit: "Capital Gold",
-    districtHall: "District Hall",
-    districtNone: "None",
-    districtLevel: (level: number) => `District Hall ${level}`,
-    requiresCapitalHall: (level: number) => `Requires Capital Hall ${level}`,
-    unlockHint: (label: string) => `Set a ${label} above to unlock buildings.`,
-    parts: "Sections",
-    off: "Clan Capital tracking is off",
-    offBody: "Turn tracking back on from the Clan Capital pages. Nothing was deleted.",
-    offAction: "Open Clan Capital",
+    profile: string;
+    hall: string;
+    none: string;
+    level: (level: number) => string;
+    contributions: string;
+    unit: string;
+    districtHall: string;
+    districtNone: string;
+    districtLevel: (level: number) => string;
+    requiresCapitalHall: (level: number) => string;
+    unlockHint: (label: string) => string;
+    parts: string;
+    off: string;
+    offBody: string;
+    offAction: string;
+  };
+  empty: {
+    title: string;
+    description: string;
+  };
+}>("massEdit", {
+  fns: {
+    subline: ["name", "townHall"],
+    requires: ["requirement"],
+    changedCount: ["count:plural"],
+    "bar.unsaved": ["count:plural"],
+    saved: ["count:plural"],
+    "discardDialog.title": ["count:plural"],
+    "leave.title": ["count:plural"],
+    "toolbar.selectAll": ["count"],
+    "toolbar.selected": ["count:plural"],
+    "toolbar.scopeAll": ["count", "category"],
+    "toolbar.scopeSelected": ["count:plural"],
+    "toolbar.applyLevel": ["count:plural"],
+    "toolbar.hallCurrent": ["hall", "level"],
+    "toolbar.hallOption": ["hall", "level"],
+    "toolbar.hallPlaceholder": ["hall"],
+    "confirm.title": ["count:plural"],
+    "confirm.line": ["name", "from", "to"],
+    "confirm.more": ["count"],
+    "rows.toMax": ["count"],
+    "rows.changed": ["from", "to"],
+    "rows.level": ["name"],
+    "rows.raise": ["name"],
+    "rows.lower": ["name"],
+    "rows.select": ["name"],
+    "rows.selectGroup": ["name"],
+    "rows.reachFirst": ["level"],
+    "rows.slider": ["name"],
+    "rows.groupBuilt": ["count", "max"],
+    "rows.expand": ["name"],
+    "rows.collapse": ["name"],
+    "category.atMax": ["done", "total", "hall", "level"],
+    "category.rowsAtMax": ["done", "total"],
+    "category.locked": ["requirement"],
+    "walls.level": ["level"],
+    "builder.hallHelp": ["level"],
+    "builder.hallConfirmTitle": ["level"],
+    "capital.level": ["level"],
+    "capital.districtLevel": ["level"],
+    "capital.requiresCapitalHall": ["level"],
+    "capital.unlockHint": ["label"],
   },
-  empty: { title: "No active village", description: "Choose a village or create one to use Mass edit." },
-} as const;
+  arrays: [],
+});

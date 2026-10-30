@@ -1,67 +1,149 @@
-export const wallsText = {
-  title: "Walls",
-  subline: (name: string, townHall: number, highest: number) =>
-    `${name}, Town Hall ${townHall}, Highest wall level ${highest}`,
-  massEdit: "Wall counts can also be adjusted in Mass edit.",
-  tiles: {
-    total: "Total at this Town Hall",
-    totalCaption: (highest: number) => `Highest wall level ${highest}`,
-    placed: "Placed",
-    placedCaption: "Walls on a level",
-    notPlaced: "Not placed",
-    allPlaced: "All placed",
-    stillToPlace: (count: number) => `${count} ${count === 1 ? "wall" : "walls"} still to place`,
-    over: (count: number) => `Over by ${count}`,
-  },
-  hideEmpty: (hidden: number) => (hidden > 0 ? `Hide empty levels below your lowest (${hidden} hidden)` : "Hide empty levels below your lowest"),
-  row: {
-    level: (level: number) => `Level ${level}`,
-    own: "You own",
-    ownLabel: (level: number) => `Walls you own on level ${level}`,
-    lower: (level: number) => `One fewer wall on level ${level}`,
-    raise: (level: number) => `One more wall on level ${level}`,
-    nextCost: (price: string, resource: string) => `Next level: ${price} ${resource} per wall`,
-    toMove: "Walls to move",
-    toLevel: "To level",
-    plusOne: "+1",
-    move: "Move",
-    moveAll: "Move all",
-    preview: (walls: number, from: number, to: number, price: string, resource: string) =>
-      `Move ${walls} ${walls === 1 ? "wall" : "walls"} from level ${from} to ${to}: ${price} ${resource}`,
-    nothingToMove: "Nothing to move",
-    noWalls: "No walls on this level to move.",
-  },
-  cost: {
-    title: (level: number) => `Cost to bring all walls to level ${level}`,
-    row: (level: number, walls: number) => `Level ${level}, ${walls} ${walls === 1 ? "wall" : "walls"}`,
-    total: "Total",
-    none: "Every placed wall is at the top level, or none are placed yet.",
-    note: "Level 2 to 4 walls cost Gold. Level 5 and up cost Gold or Elixir.",
-  },
-  empty: {
-    title: "No walls yet",
-    description: "Walls unlock at Town Hall 2.",
-  },
-  toast: {
-    moved: (walls: number, from: number, to: number) =>
-      `${walls} ${walls === 1 ? "wall" : "walls"} moved from level ${from} to ${to}`,
-    counted: (level: number, from: number, to: number) => `Level ${level} walls ${from} to ${to}`,
-    undo: "Undo",
-  },
-} as const;
+import { messages } from "@/i18n/text";
 
-export const builderWallsText = {
-  ...wallsText,
-  title: "Builder Base walls",
-  subline: (name: string, builderHall: number, highest: number) =>
-    `${name}, Builder Hall ${builderHall}, Highest wall level ${highest}`,
-  tiles: { ...wallsText.tiles, total: "Total at this Builder Hall" },
+export const wallsText = messages<{
+  title: string;
+  subline: (name: string, townHall: number, highest: number) => string;
+  massEdit: string;
+  tiles: {
+    total: string;
+    totalCaption: (highest: number) => string;
+    placed: string;
+    placedCaption: string;
+    notPlaced: string;
+    allPlaced: string;
+    stillToPlace: (count: number) => string;
+    over: (count: number) => string;
+  };
+  hideEmpty: (hidden: number) => string;
+  row: {
+    level: (level: number) => string;
+    own: string;
+    ownLabel: (level: number) => string;
+    lower: (level: number) => string;
+    raise: (level: number) => string;
+    nextCost: (price: string, resource: string) => string;
+    toMove: string;
+    toLevel: string;
+    plusOne: string;
+    move: string;
+    moveAll: string;
+    preview: (
+      walls: number,
+      from: number,
+      to: number,
+      price: string,
+      resource: string,
+    ) => string;
+    nothingToMove: string;
+    noWalls: string;
+  };
   cost: {
-    ...wallsText.cost,
-    note: "Level 2 to 6 walls cost Builder Gold. Level 7 and up cost Builder Gold or Builder Elixir.",
-  },
+    title: (level: number) => string;
+    row: (level: number, walls: number) => string;
+    total: string;
+    none: string;
+    note: string;
+  };
   empty: {
-    title: "No walls yet",
-    description: "Set your Builder Hall level on the Builder Base Upgrades page to see its walls.",
+    title: string;
+    description: string;
+  };
+  toast: {
+    moved: (walls: number, from: number, to: number) => string;
+    counted: (level: number, from: number, to: number) => string;
+    undo: string;
+  };
+}>("walls", {
+  fns: {
+    subline: ["name", "townHall", "highest"],
+    "tiles.totalCaption": ["highest"],
+    "tiles.stillToPlace": ["count:plural"],
+    "tiles.over": ["count"],
+    hideEmpty: ["hidden"],
+    "row.level": ["level"],
+    "row.ownLabel": ["level"],
+    "row.lower": ["level"],
+    "row.raise": ["level"],
+    "row.nextCost": ["price", "resource"],
+    "row.preview": ["walls:plural", "from", "to", "price", "resource"],
+    "cost.title": ["level"],
+    "cost.row": ["level", "walls:plural"],
+    "toast.moved": ["walls:plural", "from", "to"],
+    "toast.counted": ["level", "from", "to"],
   },
-} as const;
+  arrays: [],
+});
+
+export const builderWallsText = messages<{
+  title: string;
+  subline: (name: string, builderHall: number, highest: number) => string;
+  massEdit: string;
+  tiles: {
+    total: string;
+    totalCaption: (highest: number) => string;
+    placed: string;
+    placedCaption: string;
+    notPlaced: string;
+    allPlaced: string;
+    stillToPlace: (count: number) => string;
+    over: (count: number) => string;
+  };
+  hideEmpty: (hidden: number) => string;
+  row: {
+    level: (level: number) => string;
+    own: string;
+    ownLabel: (level: number) => string;
+    lower: (level: number) => string;
+    raise: (level: number) => string;
+    nextCost: (price: string, resource: string) => string;
+    toMove: string;
+    toLevel: string;
+    plusOne: string;
+    move: string;
+    moveAll: string;
+    preview: (
+      walls: number,
+      from: number,
+      to: number,
+      price: string,
+      resource: string,
+    ) => string;
+    nothingToMove: string;
+    noWalls: string;
+  };
+  cost: {
+    title: (level: number) => string;
+    row: (level: number, walls: number) => string;
+    total: string;
+    none: string;
+    note: string;
+  };
+  empty: {
+    title: string;
+    description: string;
+  };
+  toast: {
+    moved: (walls: number, from: number, to: number) => string;
+    counted: (level: number, from: number, to: number) => string;
+    undo: string;
+  };
+}>("builderWalls", {
+  fns: {
+    subline: ["name", "builderHall", "highest"],
+    "tiles.totalCaption": ["highest"],
+    "tiles.stillToPlace": ["count:plural"],
+    "tiles.over": ["count"],
+    hideEmpty: ["hidden"],
+    "row.level": ["level"],
+    "row.ownLabel": ["level"],
+    "row.lower": ["level"],
+    "row.raise": ["level"],
+    "row.nextCost": ["price", "resource"],
+    "row.preview": ["walls:plural", "from", "to", "price", "resource"],
+    "cost.title": ["level"],
+    "cost.row": ["level", "walls:plural"],
+    "toast.moved": ["walls:plural", "from", "to"],
+    "toast.counted": ["level", "from", "to"],
+  },
+  arrays: [],
+});

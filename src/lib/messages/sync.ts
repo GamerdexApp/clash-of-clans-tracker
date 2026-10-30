@@ -1,240 +1,268 @@
+import { messages } from "@/i18n/text";
 import type { SyncProviderId } from "@/lib/sync/providers";
 
-const plural = (count: number, one: string, other: string) => (count === 1 ? one : other);
-
-export const syncText = {
-  tab: { title: "Cloud sync" },
-  unavailable: "Sync is not available in this build.",
+export const syncText = messages<{
+  tab: {
+    title: string;
+  };
+  unavailable: string;
   provider: {
     github: {
-      name: "GitHub",
-      tile: (repository: string) => `A private repository that you own, named ${repository}.`,
-      badge: "For developers",
-    },
+      name: string;
+      tile: (repository: string) => string;
+      badge: string;
+    };
     google: {
-      name: "Google Drive",
-      tile: () => "A visible Gamerdex folder in your Drive. Gamerdex sees only the files that it creates.",
-      badge: "Recommended",
-    },
+      name: string;
+      tile: () => string;
+      badge: string;
+    };
     dropbox: {
-      name: "Dropbox",
-      tile: () => "A Gamerdex folder inside the Apps folder of your Dropbox. Gamerdex sees only that folder.",
-      badge: "App folder only",
-    },
+      name: string;
+      tile: () => string;
+      badge: string;
+    };
     microsoft: {
-      name: "OneDrive",
-      tile: () => "A Gamerdex folder inside the Apps folder of your OneDrive. Gamerdex sees only that folder.",
-      badge: "Personal accounts",
-    },
-  } satisfies Record<SyncProviderId, { name: string; tile: (repository: string) => string; badge: string }>,
+      name: string;
+      tile: () => string;
+      badge: string;
+    };
+  };
   connect: {
-    title: "Sync across devices",
-    pill: "Not connected",
-    intro: "Keep your villages the same on your computer and your phone. Sync is optional and free. Pick where the copy lives.",
-    pickerLabel: "Where to keep the copy",
-    panelTitle: (provider: string) => `Connect ${provider}`,
-    another: "You can pick another provider before you sign in.",
-    firstSync: "Choose what to keep on the first sync if both sides already have data. Nothing is replaced before you decide.",
+    title: string;
+    pill: string;
+    intro: string;
+    pickerLabel: string;
+    panelTitle: (provider: string) => string;
+    another: string;
+    firstSync: string;
     steps: {
       google: {
-        step1: () => "Sign in with Google in this window.",
-        step2: () => "Allow access to the files that Gamerdex creates. The app cannot see your other files.",
-        button: "Connect Google Drive",
-      },
+        step1: () => string;
+        step2: () => string;
+        button: string;
+      };
       github: {
-        step1: (repository: string) => `Create an empty private repository named ${repository}. Tick Add a README file.`,
-        step2: () => "Sign in with GitHub, then give Gamerdex Sync access to that repository only.",
-        button: "Connect GitHub",
-      },
+        step1: (repository: string) => string;
+        step2: () => string;
+        button: string;
+      };
       dropbox: {
-        step1: () => "Sign in with Dropbox in this window.",
-        step2: () => "Allow access to the Gamerdex app folder. The app cannot see your other files.",
-        button: "Connect Dropbox",
-      },
+        step1: () => string;
+        step2: () => string;
+        button: string;
+      };
       microsoft: {
-        step1: () => "Sign in with your personal Microsoft account in this window.",
-        step2: () => "Allow access to the Gamerdex app folder. The app cannot see your other files.",
-        button: "Connect OneDrive",
-      },
-    } satisfies Record<SyncProviderId, { step1: (repository: string) => string; step2: () => string; button: string }>,
-  },
+        step1: () => string;
+        step2: () => string;
+        button: string;
+      };
+    };
+  };
   how: {
-    title: "How sync works",
-    points: [
-      "Your villages are saved as one file in your own storage, plus a small file for the list of devices.",
-      "Gamerdex has no server that stores your data. Your browser talks to your storage directly.",
-      "Building instances, troops, heroes, equipment, pets and achievements merge one by one, and the higher level wins. A reset carries over when the other device did not change that level.",
-      "If both devices change the same name, queue, running upgrade, trophy count or reset time, you choose which one to keep.",
-      "Each device keeps its own active village. Sync never changes it.",
-      "Disconnect at any time. Your villages stay on every device.",
-    ],
-  },
+    title: string;
+    points: readonly string[];
+  };
   repository: {
-    title: "Set up your data repository",
-    body: (name: string) =>
-      `Your data is kept in a private repository named ${name} in your GitHub account. Gamerdex Sync can only reach that one repository.`,
-    checking: (name: string) => `Looking for ${name}`,
-    checkFailed: "Your repositories could not be loaded. Check your connection and check again.",
-    public: (fullName: string) =>
-      `The repository ${fullName} is public. Make it private in its GitHub settings, then check again. A public repository cannot be used, because anyone could read your data.`,
-    missing: (name: string) => `The repository ${name} was not found`,
+    title: string;
+    body: (name: string) => string;
+    checking: (name: string) => string;
+    checkFailed: string;
+    public: (fullName: string) => string;
+    missing: (name: string) => string;
     steps: {
-      create: (name: string) => `Create a private repository named ${name}. Tick Add a README file.`,
-      install: (name: string) =>
-        `Give Gamerdex Sync access to that repository only. Choose Only select repositories, then pick ${name}.`,
-      recheck: "Come back here and check again.",
-    },
-    createButton: "Create repository",
-    installButton: "Choose repositories on GitHub",
-    recheckButton: "Check again",
-  },
+      create: (name: string) => string;
+      install: (name: string) => string;
+      recheck: string;
+    };
+    createButton: string;
+    installButton: string;
+    recheckButton: string;
+  };
   connected: {
-    repository: "Repository",
-    lastSync: "Last sync",
-    never: "Not synced yet",
-    syncNow: "Sync now",
-    signOut: "Sign out",
-    folder: (name: string) => `Folder ${name}`,
-    signInWith: (provider: string) => `Sign in with ${provider}`,
-  },
+    repository: string;
+    lastSync: string;
+    never: string;
+    syncNow: string;
+    signOut: string;
+    folder: (name: string) => string;
+    signInWith: (provider: string) => string;
+  };
   status: {
-    idle: "Synced",
-    syncing: "Syncing",
-    offline: "Offline",
-    reauth: "Sign in again",
-    needsChoice: "Needs your choice",
-    error: "Sync failed",
-    signedOut: "Not signed in",
-    needsRepository: "Choose a repository",
-    conflicts: "Review changes",
-  },
+    idle: string;
+    syncing: string;
+    offline: string;
+    reauth: string;
+    needsChoice: string;
+    error: string;
+    signedOut: string;
+    needsRepository: string;
+    conflicts: string;
+  };
   error: {
-    rateLimit: "The provider is limiting requests. Sync will work again in a few minutes.",
-    notFound: "The repository was not found. Choose it again.",
-    server: "The provider did not answer correctly. Try again later.",
-    data: "The synced data is not valid, so nothing was changed.",
-    busy: "Another device keeps changing the data. Try again in a moment.",
-    other: "Something went wrong. Nothing was changed.",
-    reauth: "Your sign in ended. Sign in again to keep syncing.",
-    forbidden:
-      "GitHub refused access to the repository. Check that Gamerdex Sync has Read and write access to Contents, then sync again.",
-    httpStatus: (status: string) => `GitHub answered ${status}.`,
-    notFoundFolder: (provider: string) => `A file or folder in ${provider} was not found. Sync again.`,
-    forbiddenFolder: (provider: string) => `${provider} refused access. Sign in again and allow access to the files that Gamerdex creates.`,
-    httpStatusFolder: (provider: string, status: string) => `${provider} answered ${status}.`,
-  },
+    rateLimit: string;
+    notFound: string;
+    server: string;
+    data: string;
+    busy: string;
+    other: string;
+    reauth: string;
+    forbidden: string;
+    httpStatus: (status: string) => string;
+    notFoundFolder: (provider: string) => string;
+    forbiddenFolder: (provider: string) => string;
+    httpStatusFolder: (provider: string, status: string) => string;
+  };
   choice: {
-    title: "This device and the cloud both have data",
-    body: "This is the first sync from this device. Pick what to do. Nothing is deleted from the cloud until you choose.",
-    merge: "Merge both",
-    mergeHint: "Keep everything from both. The higher level wins.",
-    keepLocal: "Keep this device",
-    keepLocalHint: "Replace the cloud data with the data on this device.",
-    keepCloud: "Keep the cloud",
-    keepCloudHint: "Replace the data on this device with the cloud data.",
-  },
+    title: string;
+    body: string;
+    merge: string;
+    mergeHint: string;
+    keepLocal: string;
+    keepLocalHint: string;
+    keepCloud: string;
+    keepCloudHint: string;
+  };
   first: {
-    thisDevice: "This device",
-    cloud: "Cloud",
-    recommended: "Recommended",
-    later: "Decide later",
-    apply: "Apply choice",
-    optionsLabel: "What to keep",
-  },
-  villageCount: (count: number, amount: string) => plural(count, `${amount} village`, `${amount} villages`),
+    thisDevice: string;
+    cloud: string;
+    recommended: string;
+    later: string;
+    apply: string;
+    optionsLabel: string;
+  };
+  villageCount: (count: number, amount: string) => string;
   conflicts: {
-    title: "Changes that could not be merged",
-    body: "Two devices changed the same value. The cloud value was kept. Pick this device's value to use it instead.",
-    cloudValue: "Cloud",
-    deviceValue: "This device",
-    keepDevice: "Use this device's value",
-    dismiss: "Dismiss",
-    empty: "Nothing",
-    deletedEdited: "One device removed this and another changed it. The changed version was kept.",
-  },
+    title: string;
+    body: string;
+    cloudValue: string;
+    deviceValue: string;
+    keepDevice: string;
+    dismiss: string;
+    empty: string;
+    deletedEdited: string;
+  };
   banner: {
-    title: (count: number, amount: string) =>
-      plural(count, `${amount} change needs a decision`, `${amount} changes need a decision`),
-    body: "Two devices changed the same value. The cloud value is kept until you decide.",
-    review: "Review",
-    waiting: "The first sync is waiting for your choice.",
-    choose: "Choose",
-  },
+    title: (count: number, amount: string) => string;
+    body: string;
+    review: string;
+    waiting: string;
+    choose: string;
+  };
   villages: {
-    title: "Villages",
-    thisDevice: "This device",
-    cloud: "Cloud, last sync",
-    notInCloud: "Not in the cloud yet",
-    review: "Review",
-    note: "Deleting a village removes it from the sync file on the next sync.",
-    status: { synced: "Synced", changedHere: "Changed here", conflict: "Conflict", newHere: "New here" },
-    describe: (townHall: string) => `Town Hall ${townHall}`,
-  },
+    title: string;
+    thisDevice: string;
+    cloud: string;
+    notInCloud: string;
+    review: string;
+    note: string;
+    status: {
+      synced: string;
+      changedHere: string;
+      conflict: string;
+      newHere: string;
+    };
+    describe: (townHall: string) => string;
+  };
   activity: {
-    title: "Recent sync activity",
-    empty: "Nothing has synced yet.",
-    connected: (provider: string) => `Connected ${provider} on this browser.`,
-    uploaded: "Uploaded changes from this device.",
-    downloaded: "Downloaded changes from the cloud.",
-    merged: "Merged the changes of both sides.",
-    conflicts: (count: number, amount: string) =>
-      plural(count, `${amount} change needs a decision.`, `${amount} changes need a decision.`),
-    failed: "The sync failed.",
-  },
+    title: string;
+    empty: string;
+    connected: (provider: string) => string;
+    uploaded: string;
+    downloaded: string;
+    merged: string;
+    conflicts: (count: number, amount: string) => string;
+    failed: string;
+  };
   settings: {
-    title: "Sync settings",
-    auto: "Sync automatically",
-    autoHint: "Syncs when the tracker opens and a few seconds after each change.",
-    focus: "Check for changes when I return to the tab",
-    focusHint: "Pulls newer cloud data when you switch back to the tracker.",
-    metered: "Wait for me on a metered connection",
-    meteredHint: "Skips automatic syncs while the browser reports a data saver connection. Sync now still works.",
-  },
+    title: string;
+    auto: string;
+    autoHint: string;
+    focus: string;
+    focusHint: string;
+    metered: string;
+    meteredHint: string;
+  };
   lives: {
-    title: "Where your data lives",
-    storage: "Storage",
-    folder: "Folder",
-    dataFile: "Data file",
-    metaFile: "Meta file",
-    size: "Size",
-    kb: (amount: string) => `${amount} KB`,
-    note: "The data file holds your villages in a form that the sync can merge, so it is not a backup file. The meta file holds the list of devices and no game data. Your sign in is never in either file.",
+    title: string;
+    storage: string;
+    folder: string;
+    dataFile: string;
+    metaFile: string;
+    size: string;
+    kb: (amount: string) => string;
+    note: string;
     notes: {
-      google: "The Gamerdex folder is visible in your Drive. Gamerdex can open only the files that it created.",
-      github: "Keep the repository private. Anyone who can open it can read your data.",
-      dropbox: "The Gamerdex folder is inside the Apps folder of your Dropbox. Gamerdex can open only that folder.",
-      microsoft: "The Gamerdex folder is inside the Apps folder of your OneDrive. Gamerdex can open only that folder.",
-    } satisfies Record<SyncProviderId, string>,
-  },
+      google: string;
+      github: string;
+      dropbox: string;
+      microsoft: string;
+    };
+  };
   device: {
-    title: "This device",
-    name: "Device name",
-    nameHint: "The sync files show this name for this device. Renaming it updates the meta file on the next sync.",
-    activeVillage: "Active village",
-    noVillage: "None",
-    login: "Sync login",
-    loginValue: "On this device only",
-    loginHint:
-      "The active village is a choice on each device, and sync never changes it. Your sign in stays on this device. It is never in the saved data, the backup file or the sync files.",
-  },
+    title: string;
+    name: string;
+    nameHint: string;
+    activeVillage: string;
+    noVillage: string;
+    login: string;
+    loginValue: string;
+    loginHint: string;
+  };
   disconnect: {
-    title: "Disconnect",
-    body: "Stops syncing on this browser. Your villages stay on this device and in the cloud. Other devices keep syncing.",
-    button: (provider: string) => `Disconnect ${provider}`,
+    title: string;
+    body: string;
+    button: (provider: string) => string;
     hints: {
-      google: "To delete the cloud copy yourself, disconnect, then delete the Gamerdex folder in your Google Drive.",
-      github: "To delete the cloud copy yourself, disconnect, then delete the Gamerdex folder in your repository.",
-      dropbox: "To delete the cloud copy yourself, disconnect, then delete the app folder under Apps in your Dropbox.",
-      microsoft: "To delete the cloud copy yourself, disconnect, then delete the app folder under Apps in your OneDrive.",
-    } satisfies Record<SyncProviderId, string>,
-  },
+      google: string;
+      github: string;
+      dropbox: string;
+      microsoft: string;
+    };
+  };
   callback: {
-    title: "Signing in",
-    working: "Finishing the sign in",
-    back: "Back to Settings",
-    denied: "The sign in was cancelled.",
-    state: "The sign in could not be checked. Start again from Settings.",
-    missing: "The sign in sent no code. Start again from Settings.",
-    failed: "The sign in could not be finished. Try again later.",
+    title: string;
+    working: string;
+    back: string;
+    denied: string;
+    state: string;
+    missing: string;
+    failed: string;
+  };
+}>("sync", {
+  fns: {
+    "provider.github.tile": ["repository"],
+    "provider.google.tile": [],
+    "provider.dropbox.tile": [],
+    "provider.microsoft.tile": [],
+    "connect.panelTitle": ["provider"],
+    "connect.steps.google.step1": [],
+    "connect.steps.google.step2": [],
+    "connect.steps.github.step1": ["repository"],
+    "connect.steps.github.step2": [],
+    "connect.steps.dropbox.step1": [],
+    "connect.steps.dropbox.step2": [],
+    "connect.steps.microsoft.step1": [],
+    "connect.steps.microsoft.step2": [],
+    "repository.body": ["name"],
+    "repository.checking": ["name"],
+    "repository.public": ["fullName"],
+    "repository.missing": ["name"],
+    "repository.steps.create": ["name"],
+    "repository.steps.install": ["name"],
+    "connected.folder": ["name"],
+    "connected.signInWith": ["provider"],
+    "error.httpStatus": ["status"],
+    "error.notFoundFolder": ["provider"],
+    "error.forbiddenFolder": ["provider"],
+    "error.httpStatusFolder": ["provider", "status"],
+    villageCount: ["count:plural", "amount"],
+    "banner.title": ["count:plural", "amount"],
+    "villages.describe": ["townHall"],
+    "activity.connected": ["provider"],
+    "activity.conflicts": ["count:plural", "amount"],
+    "lives.kb": ["amount"],
+    "disconnect.button": ["provider"],
   },
-} as const;
+  arrays: ["how.points"],
+});

@@ -1,0 +1,112 @@
+{
+  "title": "Overview",
+  "description": "Your village at a glance: progress, daily timers and every stored stat.",
+  "subline": "{name}, derived, view only",
+  "header": {
+    "clanLevel": "{role, select, true {Clan level {level}, {role}} other {Clan level {level}}}",
+    "achievements": "Achievements",
+    "ringCaption": "{stars} of {maxStars} stars",
+    "viewAll": "View all",
+    "townHall": "TH{level}"
+  },
+  "dailies": {
+    "title": "Dailies",
+    "closedTitle": "Dailies open at Town Hall 3",
+    "closedBody": "Forge, Helpers and the Season Pass open as the Town Hall rises.",
+    "closedLink": "See what is open",
+    "groups": {
+      "helpers": "Helpers",
+      "daily": "Daily",
+      "goldPass": "Gold Pass"
+    },
+    "requires": "Requires {requirement}",
+    "openForge": "Open Forge",
+    "openHelpers": "Open Helpers",
+    "unlockProspector": "Unlock in Season Pass",
+    "helperHut": "Helper Hut",
+    "townHall": "Town Hall {level}",
+    "starBonus": "Star Bonus",
+    "capitalGold": "Capital Gold",
+    "autoForge": "Auto Forge",
+    "forgeSlots": "Forge slots",
+    "notRunning": "Not running",
+    "running": "Running",
+    "stopAuto": "Stop Auto Forge",
+    "autoLine": "{amount} {resource} to {capitalGold} Capital Gold",
+    "slotsLine": "{running} of {open} slots running",
+    "slotsDone": "{done, plural, one {1 slot is done} other {{amount} slots are done}}",
+    "autoPerk": "the Auto Forge perk",
+    "helperPreview": "Use now: {before} left becomes {after}",
+    "goldPass": {
+      "edit": "Edit on Season Pass",
+      "builder": "Builder boost",
+      "research": "Research boost",
+      "hoggyBank": "Hoggy Bank",
+      "gemDonations": "1-Gem Donations",
+      "autoForge": "Auto Forge",
+      "requestReduction": "Request Time Reduction",
+      "on": "On",
+      "off": "Off",
+      "resets": "Boosts return to 0% on {date}.",
+      "readOnly": "Opening Overview never changes the village or its last modified time."
+    }
+  },
+  "league": {
+    "open": "Show rewards of {name}",
+    "homeKind": "Home Village league",
+    "builderKind": "Builder Base league",
+    "noData": "No data for this league at this Town Hall.",
+    "battle": "Battle results",
+    "stars": "Stars",
+    "attacker": "Attacker Builder Gold",
+    "defender": "Defender Builder Elixir"
+  },
+  "builder": {
+    "title": "Builder Base",
+    "hall": "Builder Hall {level}",
+    "trophies": "{trophies} trophies",
+    "daysAt": "Days at BH{level}",
+    "notSetTitle": "Builder Hall not set",
+    "notSetBody": "Builder Base is open at Town Hall 6, but this village has Builder Hall 0. Progress, trophies and troops appear once the level is 1 or higher.",
+    "notSetAction": "Set Builder Hall level",
+    "lockedBody": "Requires Town Hall 6",
+    "troops": "Troops",
+    "heroes": "Heroes"
+  },
+  "capital": {
+    "title": "Clan Capital",
+    "hall": "Capital Hall {level}",
+    "notSetTitle": "Clan Capital is not set up",
+    "notSetBody": "Capital Peak has no hall level yet, so there is no district progress to show. Set the Capital Hall level to start tracking.",
+    "notSetAction": "Set Capital Hall level",
+    "lockedBody": "Requires Town Hall 3",
+    "districtHall": "District Hall {level}",
+    "notUnlocked": "Not unlocked",
+    "unlocksAt": "Unlocks at Capital Hall {level}",
+    "needsDistrictHall": "Set a District Hall to start",
+    "noData": "No data",
+    "more": "Show {count} more districts",
+    "showFewer": "Show fewer",
+    "openDistricts": "Open Districts"
+  },
+  "home": {
+    "title": "Home Village",
+    "townHall": "Town Hall {level}",
+    "daysAt": "Days at TH{level}",
+    "perHour": "per hour",
+    "stored": "stored",
+    "cards": {
+      "locked": "Requires {requirement}"
+    },
+    "queue": "Open",
+    "troops": "Troops",
+    "spells": "Spells",
+    "heroes": "Heroes",
+    "siege": "Siege Machines",
+    "pets": "Pets",
+    "legend": "Green outline: at the maximum for this Town Hall. Dashed outline: locked. Clock: an upgrade is running.",
+    "tile": "{requirement, select, true {{name}, requires {requirement}} other {{name}, level {level}{max, plural, =0 {} other { of {max}}}}}",
+    "heroLocked": "Requires {requirement}",
+    "petsLocked": "Requires Town Hall 14"
+  }
+}

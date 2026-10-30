@@ -22,7 +22,7 @@ import { PlayerLookup } from "./PlayerLookup";
 import { VillageFields } from "./VillageFields";
 
 const text = villagesText.create;
-const MODE_OPTIONS = [
+const modeOptions = () => [
 	{ id: "fresh" as const, label: text.modes.fresh },
 	{ id: "import" as const, label: text.modes.import },
 ];
@@ -113,7 +113,7 @@ const CreateDialogContent = ({ onClose }: { onClose: () => void }) => {
 			<form id={formId} onSubmit={submit} noValidate className="flex flex-col gap-4">
 				<RadioGroup
 					label={text.modeLabel}
-					options={MODE_OPTIONS}
+					options={modeOptions()}
 					value={mode}
 					onChange={changeMode}
 				/>

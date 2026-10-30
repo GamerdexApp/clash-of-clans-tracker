@@ -1,115 +1,154 @@
-export const villagesText = {
-  title: "My Villages",
-  subline: (count: number) => `${count} ${count === 1 ? "village" : "villages"}`,
-  sublineActive: (count: number, name: string) =>
-    `${count} ${count === 1 ? "village" : "villages"}, ${name} is active`,
-  newVillage: "New village",
+import { messages } from "@/i18n/text";
+
+export const villagesText = messages<{
+  title: string;
+  subline: (count: number) => string;
+  sublineActive: (count: number, name: string) => string;
+  newVillage: string;
   empty: {
-    title: "No villages yet",
-    deletedTitle: "No villages left",
-    description: "Create a village to start tracking upgrades, research and achievements.",
-    restore: "Restore from a backup",
-  },
+    title: string;
+    deletedTitle: string;
+    description: string;
+    restore: string;
+  };
   filters: {
-    search: "Search villages",
-    sortLabel: "Sort by",
-    sort: { lastModified: "Last modified", createdAt: "Date created", name: "Name" },
-    showing: (shown: number, total: number) => `Showing ${shown} of ${total}`,
-    clear: "Clear search",
-  },
+    search: string;
+    sortLabel: string;
+    sort: {
+      lastModified: string;
+      createdAt: string;
+      name: string;
+    };
+    showing: (shown: number, total: number) => string;
+    clear: string;
+  };
   noMatch: {
-    title: (query: string) => `No villages match "${query}"`,
-    description: "Check the spelling or clear the search.",
-  },
+    title: (query: string) => string;
+    description: string;
+  };
   card: {
-    active: "Active",
-    openOverview: "Open overview",
-    setActive: "Set active",
-    edit: "Edit",
-    delete: "Delete",
-    halls: (townHall: number, builderHall: number) =>
-      builderHall > 0 ? `Town Hall ${townHall}, Builder Hall ${builderHall}` : `Town Hall ${townHall}`,
-    daysAtTownHall: "Days at Town Hall",
-    daysAtBuilderHall: "Days at Builder Hall",
-    notSet: "Not set",
-    clanCapital: "Clan Capital",
-    clanCapitalStates: { on: "On", off: "Off", locked: "Locked" },
-    created: (date: string) => `Created ${date}`,
-    lastModified: (date: string) => `Modified ${date}`,
-    switched: (name: string) => `${name} is now active`,
-  },
+    active: string;
+    openOverview: string;
+    setActive: string;
+    edit: string;
+    delete: string;
+    halls: (townHall: number, builderHall: number) => string;
+    daysAtTownHall: string;
+    daysAtBuilderHall: string;
+    notSet: string;
+    clanCapital: string;
+    clanCapitalStates: {
+      on: string;
+      off: string;
+      locked: string;
+    };
+    created: (date: string) => string;
+    lastModified: (date: string) => string;
+    switched: (name: string) => string;
+  };
   fields: {
-    name: "Village name",
-    namePlaceholder: "My main account",
-    nameRequired: "Enter a name for the village.",
-    description: "Description",
-    descriptionPlaceholder: "Add a description for this village",
-    townHallLevel: "Town Hall level",
-    builderHallLevel: "Builder Hall level",
-    builderHallHelp: "The Builder Base unlocks at Town Hall 6.",
-    townHallUpgraded: "Town Hall upgraded",
-    builderHallUpgraded: "Builder Hall upgraded",
-    level: (level: number) => `Level ${level}`,
-    trackCapital: "Track Clan Capital",
-    trackCapitalHelp: "Turning it off hides the Clan Capital pages and keeps your data.",
-    trackCapitalLocked: "Requires Town Hall 3",
-    cancel: "Cancel",
-  },
+    name: string;
+    namePlaceholder: string;
+    nameRequired: string;
+    description: string;
+    descriptionPlaceholder: string;
+    townHallLevel: string;
+    builderHallLevel: string;
+    builderHallHelp: string;
+    townHallUpgraded: string;
+    builderHallUpgraded: string;
+    level: (level: number) => string;
+    trackCapital: string;
+    trackCapitalHelp: string;
+    trackCapitalLocked: string;
+    cancel: string;
+  };
   create: {
-    title: "New village",
-    submit: "Create village",
-    modeLabel: "How to start",
-    modes: { fresh: "Fresh start", import: "Import" },
+    title: string;
+    submit: string;
+    modeLabel: string;
+    modes: {
+      fresh: string;
+      import: string;
+    };
     modeNotes: {
-      fresh: "Start with empty data.",
-      import: "Read a player tag, with an optional building file.",
-    },
-    makeActive: "Make this the active village",
-    done: (name: string) => `${name} created`,
-    importNeedsLookup: "Fetch a player tag first.",
-  },
+      fresh: string;
+      import: string;
+    };
+    makeActive: string;
+    done: (name: string) => string;
+    importNeedsLookup: string;
+  };
   lookup: {
-    step1: "Step 1: Fetch player data",
-    step2: "Step 2: Building data (optional)",
-    tagLabel: "Player tag",
-    tagPlaceholder: "#PPV2YV9R",
-    fetch: "Fetch",
-    refresh: "Refresh",
-    wait: (seconds: number) => `Wait ${seconds} s`,
-    serverNote:
-      "The lookup sends the tag to the Gamerdex server, which asks the Supercell API. Nothing else leaves your browser.",
-    unavailable: "The player lookup is not available right now. Try again later.",
-    found: (name: string, townHall: number, builderHall: number, achievements: number, troops: number) =>
-      `${name}, Town Hall ${townHall}${builderHall ? `, Builder Hall ${builderHall}` : ""}. ${achievements} achievements and ${troops} troops read.`,
-    buildingHelp:
-      "The player API has no building levels. Choose a village backup from Settings or the exportData.json file from the game.",
-    buildingLabel: "Building data file",
-    buildingLoaded: (name: string) => `Building data loaded from ${name}.`,
-    buildingInvalid:
-      "This file is not building data. Use a village backup from Settings or exportData.json from the game.",
-    buildingNotJson: "This file is not valid JSON.",
-  },
+    step1: string;
+    step2: string;
+    tagLabel: string;
+    tagPlaceholder: string;
+    fetch: string;
+    refresh: string;
+    wait: (seconds: number) => string;
+    serverNote: string;
+    unavailable: string;
+    found: (
+      name: string,
+      townHall: number,
+      builderHall: number,
+      achievements: number,
+      troops: number,
+    ) => string;
+    buildingHelp: string;
+    buildingLabel: string;
+    buildingLoaded: (name: string) => string;
+    buildingInvalid: string;
+    buildingNotJson: string;
+  };
   edit: {
-    title: "Edit village",
-    submit: "Save",
-    refreshTitle: "Refresh from player tag",
-    updatedTitle: "Updated",
-    untouchedTitle: "Never touched",
-    dateSet: "The upgraded date is set to today. You can change it.",
-    done: (name: string) => `${name} saved`,
-  },
+    title: string;
+    submit: string;
+    refreshTitle: string;
+    updatedTitle: string;
+    untouchedTitle: string;
+    dateSet: string;
+    done: (name: string) => string;
+  };
   delete: {
-    title: "Delete village",
-    description: "This removes the village from this browser.",
-    question: (name: string) =>
-      `Delete ${name}? Its upgrades, research, achievements and dailies are removed.`,
-    activeNext: (next: string) => `${next} becomes the active village.`,
-    activeLast: "No village will be active.",
-    exportFirst: "Export a backup first",
-    cancel: "Cancel",
-    confirm: "Delete village",
-    done: (name: string) => `${name} deleted`,
-    doneMessage: "You can undo this for ten seconds.",
-    undo: "Undo",
+    title: string;
+    description: string;
+    question: (name: string) => string;
+    activeNext: (next: string) => string;
+    activeLast: string;
+    exportFirst: string;
+    cancel: string;
+    confirm: string;
+    done: (name: string) => string;
+    doneMessage: string;
+    undo: string;
+  };
+}>("villages", {
+  fns: {
+    subline: ["count:plural"],
+    sublineActive: ["count:plural", "name"],
+    "filters.showing": ["shown", "total"],
+    "noMatch.title": ["query"],
+    "card.halls": ["townHall", "builderHall"],
+    "card.created": ["date"],
+    "card.lastModified": ["date"],
+    "card.switched": ["name"],
+    "fields.level": ["level"],
+    "create.done": ["name"],
+    "lookup.wait": ["seconds"],
+    "lookup.found": [
+      "name",
+      "townHall",
+      "builderHall",
+      "achievements",
+      "troops",
+    ],
+    "lookup.buildingLoaded": ["name"],
+    "edit.done": ["name"],
+    "delete.question": ["name"],
+    "delete.activeNext": ["next"],
+    "delete.done": ["name"],
   },
-} as const;
+  arrays: [],
+});

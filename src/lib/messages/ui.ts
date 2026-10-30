@@ -1,35 +1,54 @@
-export const uiText = {
-  close: "Close",
-  field: { optional: "Optional" },
+import { messages } from "@/i18n/text";
+
+export const uiText = messages<{
+  close: string;
+  field: {
+    optional: string;
+  };
   stepper: {
-    lower: (label: string) => `Lower ${label}`,
-    raise: (label: string) => `Raise ${label}`,
-    labelPrefix: (label: string) => `${label}, `,
-  },
-  switch: { on: "On", off: "Off" },
-  tabs: { locked: " (locked)" },
+    lower: (label: string) => string;
+    raise: (label: string) => string;
+    labelPrefix: (label: string) => string;
+  };
+  switch: {
+    on: string;
+    off: string;
+  };
+  tabs: {
+    locked: string;
+  };
   toast: {
-    dismiss: "Dismiss",
+    dismiss: string;
     variants: {
-      success: "Success",
-      info: "Info",
-      warning: "Warning",
-      error: "Error",
-    },
-    missingProvider: "useToast must be used within a ToastProvider",
-  },
+      success: string;
+      info: string;
+      warning: string;
+      error: string;
+    };
+    missingProvider: string;
+  };
   filters: {
-    filters: "Filters",
-    activeCount: (count: number) => `${count} active`,
-    clearFilters: "Clear filters",
-    reset: "Reset",
-    description: "Changes apply as you go. Filters are not saved.",
-  },
+    filters: string;
+    activeCount: (count: number) => string;
+    clearFilters: string;
+    reset: string;
+    description: string;
+  };
   savedChip: {
-    automatic: "Saves automatically",
-    justNow: "Saved just now",
-    minutesAgo: (count: number) => `Saved ${count} min ago`,
-    at: (time: string) => `Saved ${time}`,
-    failed: "Not saved, storage is full",
+    automatic: string;
+    justNow: string;
+    minutesAgo: (count: number) => string;
+    at: (time: string) => string;
+    failed: string;
+  };
+}>("ui", {
+  fns: {
+    "stepper.lower": ["label"],
+    "stepper.raise": ["label"],
+    "stepper.labelPrefix": ["label"],
+    "filters.activeCount": ["count"],
+    "savedChip.minutesAgo": ["count"],
+    "savedChip.at": ["time"],
   },
-} as const;
+  arrays: [],
+});

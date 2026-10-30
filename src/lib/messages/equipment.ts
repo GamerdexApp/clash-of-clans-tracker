@@ -1,54 +1,85 @@
-export const equipmentText = {
-  title: "Equipment",
-  subline: (name: string, townHall: number, blacksmith: number) =>
-    `${name}, Town Hall ${townHall}, Blacksmith level ${blacksmith}`,
-  massEdit: "Equipment levels can also be set in Mass edit.",
+import { messages } from "@/i18n/text";
+
+export const equipmentText = messages<{
+  title: string;
+  subline: (name: string, townHall: number, blacksmith: number) => string;
+  massEdit: string;
   locked: {
-    title: "Requires the Blacksmith",
-    description: "Build the Blacksmith to track hero equipment. Set its level on the Builder page, Army tab.",
-    action: "Go to Builder",
-  },
+    title: string;
+    description: string;
+    action: string;
+  };
   ore: {
-    title: "Ore stock",
-    description: "The ore you hold. Shortages are advice only and never block an upgrade.",
-    names: { shiny: "Shiny Ore", glowing: "Glowing Ore", starry: "Starry Ore" },
-    short: { shiny: "Shiny", glowing: "Glowing", starry: "Starry" },
-    needed: (amount: string) => `Needed for the pieces listed: ${amount}`,
-    enough: "Enough in stock",
-    shortBy: (amount: string) => `Short by ${amount}`,
-    deduct: "Deduct ore when I upgrade",
-    deductHelp: "An upgrade takes its ore out of the stock, never below 0. Undo puts it back.",
-  },
-  hideMax: "Hide Max",
-  heroFilter: "Hero",
-  allHeroes: "All heroes",
-  section: (pieces: number, owned: number) => `${pieces} pieces, ${owned} owned`,
+    title: string;
+    description: string;
+    names: {
+      shiny: string;
+      glowing: string;
+      starry: string;
+    };
+    short: {
+      shiny: string;
+      glowing: string;
+      starry: string;
+    };
+    needed: (amount: string) => string;
+    enough: string;
+    shortBy: (amount: string) => string;
+    deduct: string;
+    deductHelp: string;
+  };
+  hideMax: string;
+  heroFilter: string;
+  allHeroes: string;
+  section: (pieces: number, owned: number) => string;
   empty: {
-    title: "Nothing here yet",
-    allMax: "Every piece is at its maximum. Turn off Hide Max to see them.",
-  },
+    title: string;
+    allMax: string;
+  };
   card: {
-    heroLine: (hero: string) => hero,
-    level: (level: number, max: number) => `Level ${level} of ${max}`,
-    notOwned: "Not owned",
-    max: "Max",
-    setLevel: (name: string) => `${name} level`,
-    stepLevel: (level: number) => `Level ${level}`,
-    free: "Free",
-    time: "Time: Instant",
-    requires: (level: number) => `Requires Blacksmith ${level}`,
-    moreLevels: (count: number) => `${count} more ${count === 1 ? "level" : "levels"}`,
-    add: "Add at level 1",
-    upgradeTo: (level: number) => `Upgrade to level ${level}`,
-    lockedUntil: (level: number) => `Locked until Blacksmith ${level}`,
-    allows: (blacksmith: number, level: number) => `Blacksmith ${blacksmith} allows up to level ${level}`,
-    allowsNone: (blacksmith: number) => `Blacksmith ${blacksmith} does not allow this piece yet`,
-    footer: (levels: number) => `${levels} ${levels === 1 ? "level" : "levels"} left`,
-    progress: (name: string) => `${name} progress`,
-  },
+    heroLine: (hero: string) => string;
+    level: (level: number, max: number) => string;
+    notOwned: string;
+    max: string;
+    setLevel: (name: string) => string;
+    stepLevel: (level: number) => string;
+    free: string;
+    time: string;
+    requires: (level: number) => string;
+    moreLevels: (count: number) => string;
+    add: string;
+    upgradeTo: (level: number) => string;
+    lockedUntil: (level: number) => string;
+    allows: (blacksmith: number, level: number) => string;
+    allowsNone: (blacksmith: number) => string;
+    footer: (levels: number) => string;
+    progress: (name: string) => string;
+  };
   toast: {
-    upgraded: (name: string, from: number, to: number) => `${name} Lv ${from} to ${to}`,
-    levelSet: (name: string, from: number, to: number) => `${name} Lv ${from} to ${to}`,
-    undo: "Undo",
+    upgraded: (name: string, from: number, to: number) => string;
+    levelSet: (name: string, from: number, to: number) => string;
+    undo: string;
+  };
+}>("equipment", {
+  fns: {
+    subline: ["name", "townHall", "blacksmith"],
+    "ore.needed": ["amount"],
+    "ore.shortBy": ["amount"],
+    section: ["pieces", "owned"],
+    "card.heroLine": ["hero"],
+    "card.level": ["level", "max"],
+    "card.setLevel": ["name"],
+    "card.stepLevel": ["level"],
+    "card.requires": ["level"],
+    "card.moreLevels": ["count:plural"],
+    "card.upgradeTo": ["level"],
+    "card.lockedUntil": ["level"],
+    "card.allows": ["blacksmith", "level"],
+    "card.allowsNone": ["blacksmith"],
+    "card.footer": ["levels:plural"],
+    "card.progress": ["name"],
+    "toast.upgraded": ["name", "from", "to"],
+    "toast.levelSet": ["name", "from", "to"],
   },
-} as const;
+  arrays: [],
+});

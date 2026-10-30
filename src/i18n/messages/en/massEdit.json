@@ -1,0 +1,138 @@
+{
+  "title": "Mass edit",
+  "description": "Change many levels at once. Nothing is saved until you press Save changes.",
+  "subline": "{name}, Town Hall {townHall}, staged changes",
+  "scopes": {
+    "home": "Home Village",
+    "builder": "Builder Base",
+    "capital": "Clan Capital"
+  },
+  "scopeNav": "Scope",
+  "requires": "Requires {requirement}",
+  "trackingOff": "Tracking off",
+  "changedCount": "{count, plural, one {1 change} other {{amount} changes}}",
+  "chip": "Unsaved changes",
+  "bar": {
+    "unsaved": "{count, plural, one {1 unsaved change} other {{amount} unsaved changes}}",
+    "none": "No unsaved changes",
+    "discard": "Discard",
+    "save": "Save changes"
+  },
+  "saved": "{count, plural, one {Saved 1 change} other {Saved {amount} changes}}",
+  "undo": "Undo",
+  "discardDialog": {
+    "title": "{count, plural, one {Discard 1 unsaved change?} other {Discard {amount} unsaved changes?}}",
+    "body": "Every row goes back to its saved level.",
+    "keep": "Keep editing",
+    "discard": "Discard changes"
+  },
+  "leave": {
+    "title": "{count, plural, one {You have 1 unsaved change} other {You have {amount} unsaved changes}}",
+    "body": "Save them before you leave, or discard them.",
+    "save": "Save and leave",
+    "discard": "Discard and leave",
+    "keep": "Keep editing"
+  },
+  "toolbar": {
+    "label": "Bulk actions",
+    "selectAll": "Select all {count}",
+    "selected": "{count, plural, one {1 row selected} other {{amount} rows selected}}",
+    "clearSelection": "Clear selection",
+    "scopeAll": "Acts on all {count} rows in {category}",
+    "scopeSelected": "{count, plural, one {Acts on 1 selected row} other {Acts on {amount} selected rows}}",
+    "max": "Max All",
+    "maxSelected": "Max selected",
+    "reset": "Reset All",
+    "resetSelected": "Reset selected",
+    "setLevel": "Set level",
+    "levelLabel": "Level for selected rows",
+    "applyLevel": "{count, plural, one {Apply to 1 row} other {Apply to {amount} rows}}",
+    "hallLabel": "Set to max for hall level",
+    "hallCurrent": "{hall} {level} (current)",
+    "hallOption": "{hall} {level}",
+    "hallPlaceholder": "Choose a {hall}"
+  },
+  "confirm": {
+    "title": "{count, plural, one {Lower 1 row?} other {Lower {amount} rows?}}",
+    "body": "This changes the draft. Nothing is saved until you press Save changes.",
+    "superchargeNote": "A building that drops below its top level also loses its supercharge tier.",
+    "apply": "Apply to draft",
+    "cancel": "Cancel",
+    "line": "{name}: {from} to {to}",
+    "more": "and {count} more"
+  },
+  "rows": {
+    "notBuilt": "Not built",
+    "toMax": "{count} to max",
+    "atMax": "At max",
+    "changed": "Changed {from} to {to}",
+    "level": "{name} level",
+    "raise": "Raise {name}",
+    "lower": "Lower {name}",
+    "max": "Max",
+    "select": "Select {name}",
+    "selectGroup": "Select every {name}",
+    "supercharge": "Supercharge",
+    "reachFirst": "Reach level {level} first",
+    "slider": "{name} slider",
+    "groupBuilt": "{count} built, max level {max}",
+    "expand": "Show {name}",
+    "collapse": "Hide {name}"
+  },
+  "category": {
+    "atMax": "{done} of {total} at max for {hall} {level}",
+    "rowsAtMax": "{done} of {total} at max",
+    "empty": "Nothing to edit in this category yet.",
+    "locked": "Requires {requirement}",
+    "lockedSuffix": " (locked)",
+    "nav": "Categories"
+  },
+  "walls": {
+    "total": "Total",
+    "allocated": "Allocated",
+    "remaining": "Remaining",
+    "maxAll": "Max All",
+    "resetAll": "Reset All",
+    "maxAllHelp": "Moves every remaining wall to the highest level",
+    "level": "Level {level} walls"
+  },
+  "builder": {
+    "profile": "Builder Base profile",
+    "hall": "Builder Hall level",
+    "hallHelp": "Builder Hall {level} sets the highest level of every row below. Lowering it asks first and lowers only the rows above the new limit.",
+    "none": "No buildings available at this Builder Hall level",
+    "raise": "Raise Builder Hall",
+    "lower": "Lower Builder Hall",
+    "trophies": "Trophies",
+    "bestTrophies": "Best trophies",
+    "league": "League",
+    "hallConfirmTitle": "Lower Builder Hall to {level}?"
+  },
+  "hallNames": {
+    "home": "Town Hall",
+    "builder": "Builder Hall",
+    "district": "District Hall",
+    "capital": "Capital Hall"
+  },
+  "capital": {
+    "profile": "Clan Capital profile",
+    "hall": "Capital Hall",
+    "none": "None",
+    "level": "Capital Hall {level}",
+    "contributions": "Clan Capital contributions",
+    "unit": "Capital Gold",
+    "districtHall": "District Hall",
+    "districtNone": "None",
+    "districtLevel": "District Hall {level}",
+    "requiresCapitalHall": "Requires Capital Hall {level}",
+    "unlockHint": "Set a {label} above to unlock buildings.",
+    "parts": "Sections",
+    "off": "Clan Capital tracking is off",
+    "offBody": "Turn tracking back on from the Clan Capital pages. Nothing was deleted.",
+    "offAction": "Open Clan Capital"
+  },
+  "empty": {
+    "title": "No active village",
+    "description": "Choose a village or create one to use Mass edit."
+  }
+}

@@ -1,104 +1,128 @@
-export const upgradeText = {
+import { messages } from "@/i18n/text";
+
+export const upgradeText = messages<{
   massEdit: {
-    hint: "Levels can also be set in Mass edit.",
-    link: "Open Mass edit",
-  },
-  hideMax: "Hide Max",
+    hint: string;
+    link: string;
+  };
+  hideMax: string;
   strip: {
-    free: (free: number, total: number) => `${free} of ${total} free`,
-    idle: "Free",
-    unassigned: "Unassigned",
-    taskLevels: (from: number, to: number) => `Lv ${from} to ${to}`,
-  },
+    free: (free: number, total: number) => string;
+    idle: string;
+    unassigned: string;
+    taskLevels: (from: number, to: number) => string;
+  };
   start: {
-    title: "Start upgrade",
-    levelChange: (from: number, to: number) => (from === 0 ? `Build to Lv ${to}` : `Lv ${from} to ${to}`),
-    time: "Time",
-    cost: "Cost",
-    doneAt: "Done at",
-    wasBoosted: (base: string, percent: number) => `was ${base}, Gold Pass -${percent}%`,
-    wasCost: (base: string, resource: string) => `${resource}, was ${base}`,
-    resource: (resource: string) => resource,
-    storedNote: "this boosted time is stored",
-    storedNoteUnboosted: "this time is stored",
-    instant: "This build takes no time. It finishes at once and uses no builder.",
+    title: string;
+    levelChange: (from: number, to: number) => string;
+    time: string;
+    cost: string;
+    doneAt: string;
+    wasBoosted: (base: string, percent: number) => string;
+    wasCost: (base: string, resource: string) => string;
+    resource: (resource: string) => string;
+    storedNote: string;
+    storedNoteUnboosted: string;
+    instant: string;
     lanes: {
       builder: {
-        label: "Builder",
-        choose: "Choose a builder to start.",
-        noneFree: "Every builder is busy. Cancel or finish an upgrade first.",
-      },
+        label: string;
+        choose: string;
+        noneFree: string;
+      };
       research: {
-        label: "Research lane",
-        choose: "Choose a lane to start.",
-        noneFree: "Every research lane is busy. Cancel or finish a research first.",
-      },
+        label: string;
+        choose: string;
+        noneFree: string;
+      };
       bbBuilder: {
-        label: "Builder",
-        choose: "Choose a builder to start.",
-        noneFree: "Both builders are busy. Cancel or finish an upgrade first.",
-      },
+        label: string;
+        choose: string;
+        noneFree: string;
+      };
       bbResearch: {
-        label: "Star Laboratory",
-        choose: "Choose the Star Laboratory to start.",
-        noneFree: "The Star Laboratory is busy. Cancel or finish the research first.",
-      },
+        label: string;
+        choose: string;
+        noneFree: string;
+      };
       pet: {
-        label: "Pet House",
-        choose: "Choose the Pet House to start.",
-        noneFree: "The Pet House is busy. Cancel or finish the pet upgrade first.",
-      },
-    },
+        label: string;
+        choose: string;
+        noneFree: string;
+      };
+    };
     requires: {
-      laboratory: (level: number) => `Requires Laboratory ${level}`,
-      "pet-house": (level: number) => `Requires Pet House ${level}`,
-      "star-laboratory": (level: number) => `Requires Star Laboratory ${level}`,
-      noPetHouse: "Build a Pet House first",
-    },
-    free: "Free",
-    cancel: "Cancel",
-    confirm: "Start upgrade",
-    confirmInstant: "Build now",
-  },
+      laboratory: (level: number) => string;
+      "pet-house": (level: number) => string;
+      "star-laboratory": (level: number) => string;
+      noPetHouse: string;
+    };
+    free: string;
+    cancel: string;
+    confirm: string;
+    confirmInstant: string;
+  };
   finish: {
-    title: "Finish early",
-    left: "left",
-    methodLabel: "How did it finish?",
+    title: string;
+    left: string;
+    methodLabel: string;
     methods: {
       timePassed: {
-        label: "Time Passed",
-        description: "The timer already ran out in the game. Nothing is spent.",
-      },
+        label: string;
+        description: string;
+      };
       gems: {
-        label: "Gems",
-        description: "Pay gems in the game to complete it now. The cost falls as time runs down.",
-      },
-      book: { label: "Book of Building", description: "Instantly completes a running building upgrade." },
-      hammer: { label: "Hammer of Building", description: "Instantly upgrades a building to its next level." },
-    },
-    stores: "What the village stores",
-    storesLevel: (level: number) => `Level ${level}. The timer is cleared.`,
-    storesSaved: (time: string) => `${time} is added to time saved.`,
-    storesSavedNone: "Time saved stays as it was.",
-    gemFigure: (gems: number) => `About ${gems} gems (game data rule, in game cost may differ).`,
+        label: string;
+        description: string;
+      };
+      book: {
+        label: string;
+        description: string;
+      };
+      hammer: {
+        label: string;
+        description: string;
+      };
+    };
+    stores: string;
+    storesLevel: (level: number) => string;
+    storesSaved: (time: string) => string;
+    storesSavedNone: string;
+    gemFigure: (gems: number) => string;
     notTracked: {
-      timePassed: "",
-      gems: "Gems spent are not tracked.",
-      book: "Books owned are not tracked.",
-      hammer: "Hammers owned are not tracked.",
-    },
-    keep: "Keep upgrading",
-    confirm: "Finish upgrade",
-  },
+      timePassed: string;
+      gems: string;
+      book: string;
+      hammer: string;
+    };
+    keep: string;
+    confirm: string;
+  };
   cancel: {
-    title: "Cancel this upgrade?",
-    body: (name: string, level: number, builder: string) =>
-      `Cancelling stops the timer. ${name} stays at Lv ${level} and ${builder} is free again.`,
-    refundTitle: "Refund in the game: 50%",
-    refundBody: (refund: string, paid: string, resource: string) =>
-      `Cancelling in Clash of Clans gives back ${refund} ${resource} of the ${paid} you paid. This app does not track your resources, so check your storages after you cancel.`,
-    undoNote: "You can undo for 10 seconds after cancelling. After that, start the upgrade again.",
-    keep: "Keep upgrading",
-    confirm: "Cancel upgrade",
+    title: string;
+    body: (name: string, level: number, builder: string) => string;
+    refundTitle: string;
+    refundBody: (refund: string, paid: string, resource: string) => string;
+    undoNote: string;
+    keep: string;
+    confirm: string;
+  };
+}>("upgrade", {
+  fns: {
+    "strip.free": ["free", "total"],
+    "strip.taskLevels": ["from", "to"],
+    "start.levelChange": ["from", "to"],
+    "start.wasBoosted": ["base", "percent"],
+    "start.wasCost": ["base", "resource"],
+    "start.resource": ["resource"],
+    "start.requires.laboratory": ["level"],
+    "start.requires.pet-house": ["level"],
+    "start.requires.star-laboratory": ["level"],
+    "finish.storesLevel": ["level"],
+    "finish.storesSaved": ["time"],
+    "finish.gemFigure": ["gems"],
+    "cancel.body": ["name", "level", "builder"],
+    "cancel.refundBody": ["refund", "paid", "resource"],
   },
-} as const;
+  arrays: [],
+});
