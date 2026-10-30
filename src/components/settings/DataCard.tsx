@@ -5,12 +5,15 @@ import type { ChangeEvent } from "react";
 import { LuDownload, LuUpload } from "react-icons/lu";
 
 import { usePlaythrough } from "@/lib/contexts/PlaythroughContext";
+import { useOptionalSync } from "@/lib/contexts/SyncContext";
 import { settingsText } from "@/lib/messages/settings";
+import { syncText } from "@/lib/messages/sync";
 import { backupFileName, downloadBackup } from "@/service/backup";
 import type { ImportMode } from "@/service/backup";
 import { defaultSettings } from "@/service/migrate";
 import { Badge } from "@/comps/ui/Badge";
 import { Button } from "@/comps/ui/Button";
+import { Checkbox } from "@/comps/ui/Checkbox";
 import { Note } from "@/comps/ui/Note";
 import { useToast } from "@/comps/ui/Toast";
 import type { AppData } from "@/types/app";
@@ -30,6 +33,9 @@ export const DataCard = () => {
 	const [reviewedFile, setReviewedFile] = useState<ImportFile | null>(null);
 	const [importMode, setImportMode] = useState<ImportMode>("merge");
 	const [confirmingReset, setConfirmingReset] = useState(false);
+	const [alsoDeleteSyncedCopy, setAlsoDeleteSyncedCopy] = useState(false);
+	const sync = useOptionalSync();
+	const syncProvider = sync?.status === "signedOut" ? null : (sync?.provider ?? null);
 
 	const exportBackup = () => {
 		showToast({ variant: "success", title: text.export.done, message: downloadBackup(appData) });
@@ -59,14 +65,23 @@ export const DataCard = () => {
 		});
 	};
 
+	/**
+	 * With sync on, keeping the synced copy disconnects this browser, so the next sync cannot bring
+	 * the villages back. Deleting it keeps sync on, so the empty data reaches the other devices.
+	 */
 	const confirmReset = () => {
+		const disconnect = syncProvider !== null && !alsoDeleteSyncedCopy;
 		const previous = updateData(() => EMPTY_DATA);
 		if (!previous) return;
+		if (disconnect) sync?.signOut();
 		setConfirmingReset(false);
+		setAlsoDeleteSyncedCopy(false);
 		showToast({
 			variant: "warning",
 			title: text.reset.done,
-			message: text.reset.doneMessage(previous.playthroughs.length),
+			message: disconnect
+				? text.reset.doneMessageDisconnected(previous.playthroughs.length)
+				: text.reset.doneMessage(previous.playthroughs.length),
 			action: { label: text.reset.undo, onAction: () => updateData(() => previous) },
 		});
 	};
@@ -120,6 +135,18 @@ export const DataCard = () => {
 					<Note tone="warning" title={text.reset.confirmTitle}>
 						<span className="flex flex-col gap-3">
 							<span>{text.reset.confirmBody(names)}</span>
+							{syncProvider && (
+								<span className="flex flex-col gap-1">
+									<Checkbox
+										label={text.reset.syncedCopy(syncText.provider[syncProvider].name)}
+										checked={alsoDeleteSyncedCopy}
+										onChange={setAlsoDeleteSyncedCopy}
+									/>
+									<span className="text-muted">
+										{alsoDeleteSyncedCopy ? text.reset.syncedOn : text.reset.syncedOff}
+									</span>
+								</span>
+							)}
 							<span className="flex flex-wrap gap-2">
 								<Button data-autofocus onClick={() => setConfirmingReset(false)}>
 									{text.reset.cancel}

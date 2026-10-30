@@ -67,6 +67,12 @@ export const settingsText = {
       confirm: "Delete everything",
       done: "All data deleted",
       doneMessage: (count: number) => `${count} ${count === 1 ? "village" : "villages"} removed.`,
+      doneMessageDisconnected: (count: number) =>
+        `${count} ${count === 1 ? "village" : "villages"} removed. Sync is disconnected on this browser.`,
+      syncedCopy: (provider: string) => `Also delete the synced copy in ${provider}`,
+      syncedOn:
+        "Sync stays on. Your other devices lose these villages at their next sync. Export a backup first if you are not sure.",
+      syncedOff: "Without this, sync is disconnected on this browser so the next sync cannot bring the villages back.",
       undo: "Undo",
     },
     villages: {

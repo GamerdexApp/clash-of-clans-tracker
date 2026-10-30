@@ -33,7 +33,8 @@ class Device {
   ) {}
 
   document(): AppData {
-    return structuredClone({ playthroughs: this.playthroughs, activePlaythroughId: this.activePlaythroughId });
+    // Saved data always passes through JSON, which drops undefined fields.
+    return JSON.parse(JSON.stringify({ playthroughs: this.playthroughs, activePlaythroughId: this.activePlaythroughId }));
   }
 
   async sync(cloud: MemoryProvider, firstSync?: FirstSyncChoice): Promise<SyncResult> {
@@ -206,6 +207,24 @@ describe("Sync between two devices", () => {
     await synced(b.sync(cloud));
     expect(b.activePlaythroughId).toBe("v1");
     expect(a.activePlaythroughId).toBeNull();
+  });
+
+  it("deletes a village on the other device when nothing there changed it", async () => {
+    const { cloud, a, b } = await twoDevices();
+    a.playthroughs = [];
+    await synced(a.sync(cloud));
+    await synced(b.sync(cloud));
+    expect(b.playthroughs).toEqual([]);
+  });
+
+  it("keeps a village that one device deleted and the other edited, and reports it", async () => {
+    const { cloud, a, b } = await twoDevices();
+    a.playthroughs = [];
+    b.get("v1").data.homeVillage.defenses.cannon[0].level = 8;
+    await synced(a.sync(cloud));
+    const result = await synced(b.sync(cloud));
+    expect(b.playthroughs).toHaveLength(1);
+    expect(result.conflicts.map((conflict) => conflict.kind)).toContain("delete-edit");
   });
 
   it("asks before replacing anything on a first sync when both sides have data", async () => {
