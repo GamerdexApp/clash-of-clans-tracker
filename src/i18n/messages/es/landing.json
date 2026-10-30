@@ -10,6 +10,7 @@
     "title": "Sigue tu progreso en Clash of Clans",
     "description": "Ten todas tus aldeas en un solo sitio: edificios, tropas, héroes, mejoras y diarias de tu Aldea Principal, Base del Constructor y Capital del Clan.",
     "note": "Gratis. Sin cuenta. Todos los datos se quedan en tu navegador.",
+    "screenshotAlt": "La página Resumen de Clash of Clans Tracker con el progreso de la aldea, los trofeos y los logros",
     "continue": "Continuar con",
     "continueLine": "{builderHall, plural, =0 {Ayuntamiento {townHall}, actualizada {updated}} other {Ayuntamiento {townHall}, Sala del Constructor {builderHall}, actualizada {updated}}}"
   },

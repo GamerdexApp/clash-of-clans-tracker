@@ -1,12 +1,9 @@
 import type { MetadataRoute } from "next";
+import { SITE_URL } from "@/data/site";
 
-const robots = (): MetadataRoute.Robots  => {
-	return {
-		rules: {
-			userAgent: "*",
-			allow: "/",
-		},
-		sitemap: "https://coc.gamerdex.app/sitemap.xml",
-	};
-}
+const robots = (): MetadataRoute.Robots => ({
+  rules: { userAgent: "*", allow: "/" },
+  sitemap: `${SITE_URL}/sitemap.xml`,
+});
+
 export default robots;

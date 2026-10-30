@@ -1,6 +1,7 @@
 "use client";
 
 import { formatRelative } from "@/lib/format";
+import Image from "next/image";
 import Link from "next/link";
 import { useId, useState } from "react";
 import type { IconType } from "react-icons";
@@ -129,6 +130,14 @@ const Hero = ({ active, returning, ready }: { active: Playthrough | null; return
 		{returning && active && <ContinueCard village={active} />}
 		<Actions returning={returning} ready={ready} />
 		<p className="text-muted text-sm">{text.hero.note}</p>
+		<Image
+			src="/site-screenshot.png"
+			alt={text.hero.screenshotAlt}
+			width={1200}
+			height={630}
+			priority
+			className="border-line mt-6 h-auto w-full max-w-5xl rounded-xl border shadow-lg"
+		/>
 	</section>
 );
 

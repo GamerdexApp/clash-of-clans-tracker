@@ -12,6 +12,7 @@ export const landingText = messages<{
     title: string;
     description: string;
     note: string;
+    screenshotAlt: string;
     continue: string;
     continueLine: (
       townHall: number,

@@ -10,6 +10,7 @@
     "title": "Track Your Clash of Clans Progress",
     "description": "Keep every village in one place: buildings, troops, heroes, upgrades and dailies for your Home Village, Builder Base and Clan Capital.",
     "note": "Free. No account. All data stays in your browser.",
+    "screenshotAlt": "The Overview page of Clash of Clans Tracker showing village progress, trophies and achievements",
     "continue": "Continue with",
     "continueLine": "{builderHall, plural, =0 {Town Hall {townHall}, updated {updated}} other {Town Hall {townHall}, Builder Hall {builderHall}, updated {updated}}}"
   },

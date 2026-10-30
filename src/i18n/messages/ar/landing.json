@@ -10,6 +10,7 @@
     "title": "تتبع تقدمك في Clash of Clans",
     "description": "احتفظ بكل قراك في مكان واحد: المباني والقوات والأبطال والترقيات والمهام اليومية لقريتك الرئيسية وقاعدة البنّاء وعاصمة العشيرة.",
     "note": "مجاني. بلا حساب. تبقى كل البيانات في متصفحك.",
+    "screenshotAlt": "صفحة النظرة العامة في Clash of Clans Tracker تعرض تقدم القرية والكؤوس والإنجازات",
     "continue": "المتابعة مع",
     "continueLine": "{builderHall, plural, =0 {قاعة المدينة {townHall}، حُدّثت {updated}} other {قاعة المدينة {townHall}، قاعة البنّاء {builderHall}، حُدّثت {updated}}}"
   },

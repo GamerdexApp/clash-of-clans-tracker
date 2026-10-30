@@ -10,6 +10,7 @@
     "title": "追踪你的 Clash of Clans 进度",
     "description": "把所有村庄集中在一处：主村庄、建筑大师基地和部落首都的建筑、兵种、英雄、升级和每日任务。",
     "note": "免费。无需账号。所有数据都保存在你的浏览器中。",
+    "screenshotAlt": "Clash of Clans Tracker 的概览页面，显示村庄进度、奖杯和成就",
     "continue": "继续使用",
     "continueLine": "{builderHall, plural, =0 {{townHall}级大本营，更新于{updated}} other {{townHall}级大本营，{builderHall}级建筑大师大本营，更新于{updated}}}"
   },

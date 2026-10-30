@@ -10,6 +10,7 @@
     "title": "Jejaki Kemajuan Clash of Clans Anda",
     "description": "Simpan setiap kampung di satu tempat: bangunan, pasukan, wira, naik taraf dan harian untuk Kampung Utama, Pangkalan Pembina dan Ibu Kota Klan anda.",
     "note": "Percuma. Tanpa akaun. Semua data kekal dalam pelayar anda.",
+    "screenshotAlt": "Halaman Gambaran Keseluruhan Clash of Clans Tracker yang memaparkan kemajuan kampung, trofi dan pencapaian",
     "continue": "Teruskan dengan",
     "continueLine": "{builderHall, plural, =0 {Dewan Bandar {townHall}, dikemas kini {updated}} other {Dewan Bandar {townHall}, Dewan Pembina {builderHall}, dikemas kini {updated}}}"
   },

@@ -10,6 +10,7 @@
     "title": "追蹤你的 Clash of Clans 進度",
     "description": "把每個村莊集中在一處：主村莊、建築工人基地與部落首都的建築、部隊、英雄、升級與每日事項。",
     "note": "免費。免註冊帳號。所有資料都留在你的瀏覽器。",
+    "screenshotAlt": "Clash of Clans Tracker 的總覽頁面，顯示村莊進度、獎盃和成就",
     "continue": "繼續使用",
     "continueLine": "{builderHall, plural, =0 {大本營 {townHall}，更新於{updated}} other {大本營 {townHall}，建築工人大本營 {builderHall}，更新於{updated}}}"
   },

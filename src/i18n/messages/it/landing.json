@@ -10,6 +10,7 @@
     "title": "Segui i tuoi progressi in Clash of Clans",
     "description": "Tieni ogni villaggio in un unico posto: edifici, truppe, eroi, potenziamenti e giornalieri per il tuo Villaggio Principale, la Base del Costruttore e la Capitale del Clan.",
     "note": "Gratis. Nessun account. Tutti i dati restano nel tuo browser.",
+    "screenshotAlt": "La pagina Panoramica di Clash of Clans Tracker con i progressi del villaggio, i trofei e gli obiettivi",
     "continue": "Continua con",
     "continueLine": "{builderHall, plural, =0 {Municipio {townHall}, aggiornato {updated}} other {Municipio {townHall}, Sala del Costruttore {builderHall}, aggiornato {updated}}}"
   },

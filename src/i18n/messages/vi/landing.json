@@ -10,6 +10,7 @@
     "title": "Theo dõi tiến độ Clash of Clans của bạn",
     "description": "Giữ mọi làng ở một nơi: công trình, quân, anh hùng, nâng cấp và nhiệm vụ hằng ngày cho Làng Chính, Căn Cứ Thợ Xây và Thủ Đô Bang Hội.",
     "note": "Miễn phí. Không cần tài khoản. Mọi dữ liệu nằm trong trình duyệt của bạn.",
+    "screenshotAlt": "Trang Tổng quan của Clash of Clans Tracker hiển thị tiến độ làng, danh hiệu cúp và thành tựu",
     "continue": "Tiếp tục với",
     "continueLine": "{builderHall, plural, =0 {Nhà Chính {townHall}, cập nhật {updated}} other {Nhà Chính {townHall}, Nhà Thợ Xây {builderHall}, cập nhật {updated}}}"
   },

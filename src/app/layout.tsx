@@ -8,6 +8,7 @@ import { STORAGE_KEY } from "@/service/storage";
 import { ActiveHoursSync } from "@/comps/layout/ActiveHoursSync";
 import { LegacyKeysMigration } from "@/comps/layout/LegacyKeysMigration";
 import { ExpiredUpgradeSync } from "@/comps/layout/ExpiredUpgradeSync";
+import { SITE_URL } from "@/data/site";
 import { ThemeSync } from "@/comps/layout/ThemeSync";
 import { ToastProvider } from "@/comps/ui/Toast";
 import "./globals.css";
@@ -33,16 +34,15 @@ const lilita = Lilita_One({
 // Runs before the first paint so a dark theme never flashes light.
 const applyThemeBeforePaint = `try{var s=JSON.parse(localStorage.getItem("${STORAGE_KEY}")||"{}").settings;var t=s&&s.theme||"system";var d=t==="dark"||(t==="system"&&matchMedia("(prefers-color-scheme: dark)").matches);document.documentElement.classList.toggle("dark",d)}catch(e){}`;
 
-const siteUrl = "https://coc.gamerdex.app";
 
 export const metadata: Metadata = {
-	metadataBase: new URL(siteUrl),
+	metadataBase: new URL(SITE_URL),
 	title: {
 		default: "Clash of Clans Tracker",
 		template: "%s | Clash of Clans Tracker",
 	},
 	description:
-		"Track your Clash of Clans progress — manage upgrades, achievements, and multiple accounts in one place.",
+		"Track your Clash of Clans progress. Manage upgrades, achievements, and multiple accounts in one place.",
 	keywords: [
 		"Clash of Clans",
 		"Clash of Clans tracker",
@@ -75,12 +75,13 @@ export const metadata: Metadata = {
 		siteName: "Clash of Clans Tracker",
 		title: "Clash of Clans Tracker",
 		description:
-			"Track your Clash of Clans progress — manage upgrades, achievements, and multiple accounts in one place.",
-		url: siteUrl,
+			"Track your Clash of Clans progress. Manage upgrades, achievements, and multiple accounts in one place.",
+		url: SITE_URL,
 		images: [
 			{
-				url: "/Site Screenshot.png",
+				url: "/site-screenshot.png",
 				width: 1200,
+				height: 630,
 				alt: "Clash of Clans Tracker dashboard preview",
 			},
 		],
@@ -89,8 +90,8 @@ export const metadata: Metadata = {
 		card: "summary_large_image",
 		title: "Clash of Clans Tracker",
 		description:
-			"Track your Clash of Clans progress — manage upgrades, achievements, and multiple accounts in one place.",
-		images: ["/Site Screenshot.png"],
+			"Track your Clash of Clans progress. Manage upgrades, achievements, and multiple accounts in one place.",
+		images: ["/site-screenshot.png"],
 	},
 };
 

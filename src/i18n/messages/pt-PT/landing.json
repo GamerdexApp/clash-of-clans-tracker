@@ -10,6 +10,7 @@
     "title": "Acompanha o Teu Progresso no Clash of Clans",
     "description": "Junta todas as aldeias num só lugar: edifícios, tropas, heróis, melhorias e diárias da Aldeia Principal, da Base do Construtor e da Capital do Clã.",
     "note": "Grátis. Sem conta. Todos os dados ficam no teu navegador.",
+    "screenshotAlt": "A página Resumo do Clash of Clans Tracker com o progresso da aldeia, os troféus e as conquistas",
     "continue": "Continuar com",
     "continueLine": "{builderHall, plural, =0 {Centro da Aldeia {townHall}, atualizada {updated}} other {Centro da Aldeia {townHall}, Centro do Construtor {builderHall}, atualizada {updated}}}"
   },

@@ -10,6 +10,7 @@
     "title": "Clash of Clans İlerlemeni Takip Et",
     "description": "Tüm köylerini tek yerde tut: Ana Köy, İnşaatçı Üssü ve Klan Başkenti için binalar, birlikler, kahramanlar, yükseltmeler ve günlükler.",
     "note": "Ücretsiz. Hesap yok. Tüm veriler tarayıcında kalır.",
+    "screenshotAlt": "Clash of Clans Tracker'ın köy ilerlemesini, kupaları ve başarımları gösteren Genel Bakış sayfası",
     "continue": "Devam et:",
     "continueLine": "{builderHall, plural, =0 {Belediye Binası {townHall}, güncellendi {updated}} other {Belediye Binası {townHall}, İnşaatçı Salonu {builderHall}, güncellendi {updated}}}"
   },

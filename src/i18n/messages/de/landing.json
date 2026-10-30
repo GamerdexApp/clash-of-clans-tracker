@@ -10,6 +10,7 @@
     "title": "Verfolge deinen Clash-of-Clans-Fortschritt",
     "description": "Behalte jedes Dorf an einem Ort: Gebäude, Truppen, Helden, Upgrades und Tägliches für dein Heimatdorf, deine Bauarbeiterbasis und deine Clanhauptstadt.",
     "note": "Kostenlos. Kein Konto. Alle Daten bleiben in deinem Browser.",
+    "screenshotAlt": "Die Übersichtsseite des Clash of Clans Trackers mit Dorffortschritt, Trophäen und Erfolgen",
     "continue": "Weiter mit",
     "continueLine": "{builderHall, plural, =0 {Rathaus {townHall}, aktualisiert {updated}} other {Rathaus {townHall}, Bauarbeiterhalle {builderHall}, aktualisiert {updated}}}"
   },

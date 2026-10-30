@@ -10,6 +10,7 @@
     "title": "Clash of Clans の進行状況を記録",
     "description": "ホームビレッジ、ビルダーベース、クランキャピタルの建物、兵士、ヒーロー、アップグレード、デイリーを、すべてのビレッジ分まとめて管理できます。",
     "note": "無料。アカウント不要。データはすべてブラウザに保存されます。",
+    "screenshotAlt": "村の進行状況、トロフィー、実績を表示する Clash of Clans Tracker の概要ページ",
     "continue": "続きから",
     "continueLine": "{builderHall, plural, =0 {タウンホール {townHall}、{updated}に更新} other {タウンホール {townHall}、ビルダーホール {builderHall}、{updated}に更新}}"
   },

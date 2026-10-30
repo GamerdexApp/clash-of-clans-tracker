@@ -10,6 +10,7 @@
     "title": "Acompanhe seu progresso no Clash of Clans",
     "description": "Mantenha todas as vilas em um só lugar: construções, tropas, heróis, melhorias e diárias da sua Vila Principal, da Base do Construtor e da Capital do Clã.",
     "note": "Grátis. Sem conta. Todos os dados ficam no seu navegador.",
+    "screenshotAlt": "A página Visão geral do Clash of Clans Tracker com o progresso da vila, os troféus e as conquistas",
     "continue": "Continuar com",
     "continueLine": "{builderHall, plural, =0 {Centro de Vila {townHall}, atualizada {updated}} other {Centro de Vila {townHall}, Salão do Construtor {builderHall}, atualizada {updated}}}"
   },

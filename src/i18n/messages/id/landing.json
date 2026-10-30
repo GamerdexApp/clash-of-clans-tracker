@@ -10,6 +10,7 @@
     "title": "Lacak Progres Clash of Clans-mu",
     "description": "Simpan semua desa di satu tempat: bangunan, pasukan, pahlawan, peningkatan, dan harian untuk Desa Utama, Markas Pembangun, dan Ibu Kota Klan.",
     "note": "Gratis. Tanpa akun. Semua data tetap di browsermu.",
+    "screenshotAlt": "Halaman Ikhtisar Clash of Clans Tracker yang menampilkan progres desa, trofi, dan pencapaian",
     "continue": "Lanjutkan dengan",
     "continueLine": "{builderHall, plural, =0 {Balai Kota {townHall}, diperbarui {updated}} other {Balai Kota {townHall}, Balai Pembangun {builderHall}, diperbarui {updated}}}"
   },
